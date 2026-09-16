@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/pokebobo/',
+  base: process.env.VITE_BASE || './',
   plugins: [react()],
   server: { port: 4173, strictPort: true },
   build: { chunkSizeWarningLimit: 15000 },
