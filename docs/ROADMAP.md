@@ -4,7 +4,7 @@
 
 **Pedido:** centralizar o projeto em [erereck/pokebobo](https://github.com/erereck/pokebobo) e encerrar a atualização/distribuição do HTML standalone.
 
-**Aplicado:** código, assets, testes, licenças, relatórios e documentação preparados na raiz do repositório; imagens da interface em `docs/images/`. README atualizado para clonar e executar o jogo. `npm run verify` agora faz arquitetura, testes e build Vite. A instrução de não regenerar nem enviar o standalone está em AGENTS.md e no .gitignore; o gerador antigo permanece somente como referência.
+**Aplicado:** código, assets, testes, licenças, relatórios e documentação publicados na `main` do repositório; imagens da interface em `docs/images/`. Importação inicial no commit `e1a20f0`, com 761 arquivos e envio remoto confirmado. README atualizado para clonar e executar o jogo. `npm run verify` agora faz arquitetura, testes e build Vite. A instrução de não regenerar nem enviar o standalone está em AGENTS.md e no .gitignore; o gerador antigo permanece somente como referência.
 
 **Escopo:** nenhuma mudança no jogo ou no schema dos saves; continua 0.3.0. `index.html` é a entrada necessária do Vite e faz parte do código. `Pokebobo.html`, ZIPs de distribuição, `node_modules/` e `dist/` ficam fora do repositório.
 

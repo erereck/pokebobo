@@ -9,6 +9,7 @@
 - `.gitignore` exclui dependências instaladas, `dist/`, variáveis locais, logs, ZIP de distribuição e `Pokebobo.html`.
 - Nenhuma alteração de gameplay ou UI nesta entrega; versão e saves continuam na 0.3.0/schema 3. As verificações de navegador abaixo são da entrega anterior, não foram repetidas para essa mudança de distribuição.
 - Não foi configurada hospedagem pública; o README documenta clone, instalação, execução e preview locais.
+- Importação na `main` confirmada por `git ls-remote`: commit inicial `e1a20f0d6eb7fd58d00908631e12630ab6c1eee7`, 761 arquivos. Nenhum standalone, ZIP, segredo local, `node_modules/` ou `dist/` no índice enviado.
 
 ## Validação anterior da interface · 14/09/2026
 
