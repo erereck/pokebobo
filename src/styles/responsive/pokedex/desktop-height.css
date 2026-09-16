@@ -1,0 +1,114 @@
+@media (min-width: 901px) and (max-height: 900px) {
+  .app-shell {
+    height: calc(100dvh - 32px);
+    width: min(1440px, calc(100% - 32px));
+    margin: 16px auto;
+    padding: 0 16px 10px;
+  }
+  .dex-header {
+    height: 70px;
+    margin-bottom: 12px;
+  }
+  .dex-lens {
+    width: 48px;
+    height: 48px;
+  }
+  .game-navigation {
+    height: 64px;
+    padding-top: 10px;
+  }
+  .play-main {
+    padding: 12px;
+  }
+  .career-screen {
+    gap: 7px;
+    height: 100%;
+    min-height: 0;
+  }
+  .career-screen > * {
+    flex-shrink: 0;
+  }
+  .city-hero {
+    min-height: 92px;
+    flex: 1;
+  }
+  .city-hero-copy {
+    padding: 12px;
+  }
+  .city-hero h1 {
+    font-size: 28px;
+    margin: 4px 0;
+  }
+  .city-hero p,
+  .location-label {
+    display: none;
+  }
+  .gym-readiness {
+    margin-top: 6px;
+  }
+  .week-budget {
+    padding: 6px 10px;
+  }
+  .week-budget .section-label {
+    display: none;
+  }
+  .action {
+    min-height: 65px;
+    padding: 7px;
+    gap: 3px 7px;
+  }
+  .action strong {
+    font-size: 13px;
+    padding-top: 8px;
+  }
+  .action small {
+    font-size: 10px;
+  }
+  .action-cost {
+    top: 5px;
+    right: 7px;
+    font-size: 8px;
+  }
+  .action-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .action-grid {
+    gap: 8px;
+  }
+  .career-screen > .notice {
+    max-height: 32px;
+    padding: 5px 8px;
+  }
+  .career-screen .route-hint,
+  .career-screen > .fine-print {
+    display: none;
+  }
+  .challenge-button {
+    min-height: 48px;
+    padding: 9px 12px;
+  }
+  .companion-party button {
+    min-height: 50px;
+  }
+  .companion-party .sprite {
+    width: 40px;
+    height: 40px;
+  }
+  .companion-empty {
+    height: 27px;
+  }
+  .trainer-display {
+    margin-top: 12px;
+    padding: 8px;
+  }
+  .speaker-grille {
+    margin-top: 12px;
+  }
+  .title-copy {
+    padding: 24px;
+  }
+  .registration {
+    padding: 22px;
+  }
+}

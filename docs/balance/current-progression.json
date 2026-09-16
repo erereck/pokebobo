@@ -1,0 +1,220 @@
+{
+  "method": "Orçamento de níveis, não simulação de batalhas. Assume todas as vitórias, inicial presente desde a origem, nenhuma emboscada, mesmo número de treinos por cidade. Não mede taxa de vitória.",
+  "samplesPerStrategy": 10000,
+  "progression": {
+    "initialLevel": 10,
+    "maxLevel": 100,
+    "trainingMin": 1,
+    "trainingMax": 3,
+    "travelLevels": 0,
+    "gymVictoryLevels": 1,
+    "leagueVictoryLevels": 1,
+    "ambushVictoryLevels": 0,
+    "gymCatchupThreshold": 10,
+    "gymCatchupLevels": 6,
+    "earlyTargetLevel": 10,
+    "leagueFirstLevel": 50,
+    "leagueLevelStep": 3,
+    "aceBonus": 2,
+    "captureMinLevel": 8,
+    "captureTargetOffset": -1,
+    "captureLevelSpread": 3
+  },
+  "freeLevelsBeforeLeague": 18,
+  "noTraining": {
+    "gyms": [
+      {
+        "gym": 1,
+        "player": 10
+      },
+      {
+        "gym": 2,
+        "player": 11
+      },
+      {
+        "gym": 3,
+        "player": 12
+      },
+      {
+        "gym": 4,
+        "player": 13
+      },
+      {
+        "gym": 5,
+        "player": 14
+      },
+      {
+        "gym": 6,
+        "player": 15
+      },
+      {
+        "gym": 7,
+        "player": 16
+      },
+      {
+        "gym": 8,
+        "player": 17
+      }
+    ],
+    "leagueEntry": 18,
+    "championEntry": 22
+  },
+  "strategies": [
+    {
+      "trainingPerCity": 0,
+      "firstGym": {
+        "min": 10,
+        "p10": 10,
+        "median": 10,
+        "p90": 10,
+        "max": 10,
+        "mean": 10,
+        "percent99OrMore": 0
+      },
+      "eighthGym": {
+        "min": 17,
+        "p10": 17,
+        "median": 17,
+        "p90": 17,
+        "max": 17,
+        "mean": 17,
+        "percent99OrMore": 0
+      },
+      "leagueEntry": {
+        "min": 18,
+        "p10": 18,
+        "median": 18,
+        "p90": 18,
+        "max": 18,
+        "mean": 18,
+        "percent99OrMore": 0
+      },
+      "championEntry": {
+        "min": 22,
+        "p10": 22,
+        "median": 22,
+        "p90": 22,
+        "max": 22,
+        "mean": 22,
+        "percent99OrMore": 0
+      }
+    },
+    {
+      "trainingPerCity": 1,
+      "firstGym": {
+        "min": 13,
+        "p10": 14,
+        "median": 16,
+        "p90": 18,
+        "max": 19,
+        "mean": 16,
+        "percent99OrMore": 0
+      },
+      "eighthGym": {
+        "min": 28,
+        "p10": 34,
+        "median": 37,
+        "p90": 40,
+        "max": 46,
+        "mean": 36.99,
+        "percent99OrMore": 0
+      },
+      "leagueEntry": {
+        "min": 29,
+        "p10": 35,
+        "median": 38,
+        "p90": 41,
+        "max": 47,
+        "mean": 37.99,
+        "percent99OrMore": 0
+      },
+      "championEntry": {
+        "min": 33,
+        "p10": 39,
+        "median": 42,
+        "p90": 45,
+        "max": 51,
+        "mean": 41.99,
+        "percent99OrMore": 0
+      }
+    },
+    {
+      "trainingPerCity": 2,
+      "firstGym": {
+        "min": 16,
+        "p10": 19,
+        "median": 22,
+        "p90": 25,
+        "max": 28,
+        "mean": 22,
+        "percent99OrMore": 0
+      },
+      "eighthGym": {
+        "min": 44,
+        "p10": 52,
+        "median": 57,
+        "p90": 62,
+        "max": 70,
+        "mean": 57,
+        "percent99OrMore": 0
+      },
+      "leagueEntry": {
+        "min": 45,
+        "p10": 53,
+        "median": 58,
+        "p90": 63,
+        "max": 71,
+        "mean": 58,
+        "percent99OrMore": 0
+      },
+      "championEntry": {
+        "min": 49,
+        "p10": 57,
+        "median": 62,
+        "p90": 67,
+        "max": 75,
+        "mean": 62,
+        "percent99OrMore": 0
+      }
+    },
+    {
+      "trainingPerCity": 3,
+      "firstGym": {
+        "min": 19,
+        "p10": 25,
+        "median": 28,
+        "p90": 31,
+        "max": 36,
+        "mean": 27.99,
+        "percent99OrMore": 0
+      },
+      "eighthGym": {
+        "min": 62,
+        "p10": 71,
+        "median": 77,
+        "p90": 83,
+        "max": 93,
+        "mean": 77.02,
+        "percent99OrMore": 0
+      },
+      "leagueEntry": {
+        "min": 63,
+        "p10": 72,
+        "median": 78,
+        "p90": 84,
+        "max": 94,
+        "mean": 78.02,
+        "percent99OrMore": 0
+      },
+      "championEntry": {
+        "min": 67,
+        "p10": 76,
+        "median": 82,
+        "p90": 88,
+        "max": 98,
+        "mean": 82.02,
+        "percent99OrMore": 0
+      }
+    }
+  ]
+}

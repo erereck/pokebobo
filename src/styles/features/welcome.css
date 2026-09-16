@@ -1,0 +1,226 @@
+.welcome {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(320px, 1fr);
+  gap: 28px;
+  flex: 1;
+  min-height: 0;
+  padding: 0 4px 12px;
+  overflow: auto;
+}
+.title-screen {
+  border: 8px solid var(--rubber);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+  overflow: hidden;
+  box-shadow: 0 2px 0 var(--dex-highlight);
+}
+.title-screen-status {
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  background: var(--rubber);
+  color: #bdcfca;
+  font: 9px var(--mono);
+  letter-spacing: 0.07em;
+}
+.title-screen-status i {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--lens);
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.title-scene {
+  position: relative;
+  flex: 1;
+  min-height: 320px;
+  overflow: hidden;
+  background: var(--lcd-dim);
+}
+.title-scene > .landscape {
+  position: absolute;
+  inset: 0;
+  filter: saturate(0.8) brightness(0.8);
+  opacity: 0.65;
+}
+.title-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #112f36c9, transparent),
+    linear-gradient(0deg, #173b3bc9, transparent 55%);
+}
+.title-copy {
+  position: relative;
+  padding: 36px;
+  color: var(--white);
+}
+.title-kicker {
+  font: 10px var(--mono);
+  letter-spacing: 0.2em;
+  color: #b8e0d6;
+}
+.title-copy h1 {
+  font: 400 clamp(36px, 4.2vw, 62px)/1.02 var(--pixel);
+  letter-spacing: -4px;
+  margin: 20px 0;
+  text-shadow: 4px 5px 0 #173738;
+}
+.title-copy h1 > span {
+  color: var(--amber);
+}
+.title-copy h1 i {
+  font-style: normal;
+  color: #ef6a78;
+}
+.title-copy p {
+  font-size: 16px;
+  color: #e2ebda;
+}
+.title-starters {
+  position: absolute;
+  bottom: 42px;
+  right: 12px;
+  left: 12px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  filter: drop-shadow(0 7px 0 #16363333);
+}
+.title-starters .sprite {
+  width: clamp(92px, 10vw, 148px);
+  height: clamp(92px, 10vw, 148px);
+}
+.title-starters .sprite:nth-child(2) {
+  transform: translateY(-12px);
+}
+.title-cartridge {
+  position: absolute;
+  bottom: 14px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font: 10px var(--mono);
+  letter-spacing: 0.1em;
+  color: #eff5df;
+}
+.title-instructions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--rubber);
+  color: #b1c6c0;
+  font: 9px var(--mono);
+}
+.title-instructions b {
+  color: var(--amber);
+  margin-right: 4px;
+}
+.registration {
+  background: var(--lcd);
+  border: 8px solid var(--rubber);
+  border-radius: 12px;
+  padding: 28px;
+  align-self: center;
+  box-shadow: 0 2px 0 var(--dex-highlight);
+}
+.registration h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+.registration > p {
+  color: var(--ink-soft);
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+.registration label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.registration input {
+  background: var(--lcd-dim);
+  border: 1px solid #9aad98;
+  border-bottom: 3px solid #7e9280;
+  border-radius: 5px;
+  padding: 12px;
+  width: 100%;
+  min-height: 48px;
+  color: var(--ink);
+  font-size: 16px;
+  box-shadow: var(--inset);
+}
+.mode-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0 8px;
+  gap: 8px;
+}
+.mode-heading label {
+  margin: 0;
+}
+.mode-heading > span {
+  font-size: 9px;
+  color: var(--muted);
+}
+.mode-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+.mode-options button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 44px;
+  background: var(--lcd-bright);
+  border: 1px solid var(--lcd-line);
+  border-radius: 5px;
+  font-size: 12px;
+}
+.mode-options button.selected {
+  background: var(--ink);
+  color: var(--lcd-bright);
+  border-color: var(--ink);
+}
+.mode-desc {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin: 12px 0 20px;
+  min-height: 36px;
+}
+.start-button {
+  width: 100%;
+  font-size: 15px;
+  min-height: 52px;
+}
+.registration-foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  color: var(--ink-soft);
+  margin-top: 20px;
+}
+.save-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--hp);
+}

@@ -1,0 +1,25 @@
+@media (max-width: 900px) {
+  .setup-heading {
+    padding: 12px;
+  }
+  .setup-heading h1 {
+    font-size: 23px;
+  }
+  .setup-heading .eyebrow {
+    font-size: 9px;
+  }
+}
+@media (max-width: 900px) {
+  .starter-card h2 {
+    white-space: nowrap;
+    font-size: clamp(11px, 3vw, 16px);
+    letter-spacing: -0.045em;
+  }
+  .starter-card .types {
+    gap: 2px;
+  }
+  .starter-card .type {
+    font-size: 8px;
+    padding: 2px 3px;
+  }
+}

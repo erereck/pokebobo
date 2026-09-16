@@ -1,0 +1,330 @@
+.setup {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  background: var(--lcd);
+  border: 8px solid var(--rubber);
+  border-radius: 12px;
+  padding: 24px;
+  scrollbar-width: thin;
+}
+.setup-steps {
+  display: flex;
+  gap: 24px;
+  border-bottom: 1px solid var(--lcd-line);
+  padding-bottom: 16px;
+}
+.setup-steps > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.setup-steps b {
+  display: grid;
+  place-items: center;
+  background: var(--lcd-dim);
+  border-radius: 4px;
+  width: 28px;
+  height: 28px;
+  font: 12px var(--mono);
+}
+.setup-steps .current {
+  color: var(--ink);
+  font-weight: 700;
+}
+.setup-steps .current b {
+  background: var(--ink);
+  color: var(--lcd);
+}
+.setup-steps .done b {
+  background: var(--hp);
+  color: white;
+}
+.setup-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 24px 0;
+}
+.setup-heading h1 {
+  margin: 8px 0;
+  font-size: 30px;
+}
+.setup-heading p {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.draft-counter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--dex-red);
+  flex-shrink: 0;
+}
+.draft-counter b {
+  font: 700 40px var(--display);
+}
+.draft-counter span {
+  font: 9px var(--mono);
+}
+.city-choices,
+.starter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.city-choice {
+  background: var(--lcd-bright);
+  border: 2px solid var(--lcd-line);
+  border-bottom-width: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+}
+.city-choice:hover {
+  border-color: var(--hp);
+  background: white;
+}
+.city-image {
+  height: 190px;
+  position: relative;
+  overflow: hidden;
+}
+.city-region,
+.city-pick-number {
+  position: absolute;
+  top: 10px;
+  background: var(--rubber);
+  color: var(--lcd);
+  font: 10px var(--mono);
+  border-radius: 3px;
+  padding: 5px 7px;
+}
+.city-region {
+  left: 10px;
+}
+.city-pick-number {
+  right: 10px;
+  background: var(--amber);
+  color: var(--amber-ink);
+}
+.city-choice-text {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.city-choice-text h2 {
+  font-size: 22px;
+  margin: 5px 0;
+}
+.city-choice-text p {
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+.choice-arrow {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background: var(--lcd-dim);
+  border-radius: 5px;
+}
+.setup-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+}
+.setup-bottom > span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+.setup-bottom .button {
+  min-width: 240px;
+}
+.setup-tip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-top: 20px;
+}
+.starter-card {
+  background: var(--lcd-bright);
+  border: 2px solid var(--lcd-line);
+  border-bottom-width: 5px;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.starter-card.selected {
+  background: #e1edd1;
+  border-color: var(--hp);
+  box-shadow: 0 0 0 2px #42865322;
+}
+.starter-card:hover {
+  border-color: var(--hp);
+}
+.starter-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ink-soft);
+}
+.selection-circle {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--lcd-line);
+  border-radius: 50%;
+}
+.selected .selection-circle {
+  background: var(--hp);
+  color: white;
+  border-color: var(--hp);
+}
+.starter-portrait {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 160px;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 3px,
+      #24473705 3px,
+      #24473705 4px
+    ),
+    radial-gradient(circle, #cbdcbc 0 45%, transparent 46%);
+  border-radius: 6px;
+}
+.starter-portrait .sprite {
+  width: 160px;
+  height: 160px;
+}
+.starter-card h2 {
+  font-size: 24px;
+}
+.starter-card p {
+  font-size: 12px;
+  line-height: 1.45;
+  text-align: center;
+  max-width: 260px;
+}
+.starter-stats {
+  font: 10px var(--mono);
+  color: var(--ink-soft);
+  margin-top: auto;
+}
+.starter-stats > span {
+  margin: 0 8px;
+}
+.draft-timeline {
+  margin-top: 20px;
+  padding: 12px;
+  background: var(--lcd-dim);
+  border-radius: 6px;
+}
+.draft-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+}
+.draft-chips > span {
+  padding: 5px 8px;
+  border: 1px solid var(--lcd-line);
+  font-size: 11px;
+  border-radius: 3px;
+  background: var(--lcd);
+}
+.draft-chips > .latest {
+  background: var(--ink);
+  color: var(--lcd);
+}
+.draft-chips > .unknown {
+  border-style: dashed;
+}
+.draft-chips > .draft-remaining {
+  border: 0;
+  background: transparent;
+}
+.ready-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.departure-card {
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--rubber);
+  color: var(--lcd);
+  position: relative;
+  align-self: start;
+}
+.departure-card > .landscape {
+  height: 100px;
+  opacity: 0.7;
+}
+.departure-card > div {
+  padding: 20px;
+  position: relative;
+}
+.departure-card h2 {
+  font-size: 28px;
+  margin: 10px 0;
+  max-width: 75%;
+}
+.departure-card .section-label {
+  color: var(--lens);
+}
+.departure-card .sprite {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  width: 110px;
+  height: 110px;
+}
+.departure-card p {
+  font-size: 12px;
+  margin: 14px 0;
+}
+.departure-card .button {
+  margin-top: 8px;
+}
+.setup-heading {
+  background: var(--rubber);
+  padding: 16px;
+  border-radius: 7px;
+  color: var(--lcd-bright);
+  box-shadow: inset 0 0 0 1px var(--rubber-line);
+}
+.setup-heading .eyebrow {
+  color: var(--lens);
+}
+.setup-heading p {
+  color: #bccfc2;
+}
+.draft-counter {
+  color: var(--amber);
+}

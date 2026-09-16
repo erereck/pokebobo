@@ -1,0 +1,230 @@
+.button {
+  border: 1px solid transparent;
+  min-height: 48px;
+  padding: 12px 16px;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+  box-shadow: 0 3px 0 #a5b294;
+}
+.button.primary {
+  background: var(--amber);
+  border-color: #b8a053;
+  color: var(--amber-ink);
+  box-shadow: 0 3px 0 #a48a43;
+}
+.button.primary:hover:not(:disabled) {
+  background: #ffdf86;
+}
+.button.secondary {
+  background: var(--lcd-bright);
+  border-color: var(--lcd-line);
+}
+.button.secondary:hover:not(:disabled) {
+  background: white;
+}
+.button.danger {
+  background: #f4dce0;
+  color: var(--danger);
+  border-color: #d9a7af;
+}
+.text-button,
+.icon-button {
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 700;
+}
+.text-button:hover,
+.icon-button:hover {
+  background: #21362f10;
+}
+.button-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: var(--lcd-dim);
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 700;
+}
+.tag.red {
+  background: #f4dce0;
+  color: var(--danger);
+}
+.notice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: var(--lcd-dim);
+  border-left: 3px solid var(--hp);
+  border-radius: 4px;
+  font-size: 12px;
+}
+.notice p {
+  margin: 0;
+}
+.fine-print {
+  color: var(--ink-soft);
+  font-size: 12px;
+  text-align: center;
+  margin: 12px 0;
+}
+.error-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: #fff0d0;
+  color: #762736;
+  font-weight: 600;
+}
+.error-banner button {
+  min-width: 44px;
+  min-height: 44px;
+  border: 0;
+  background: transparent;
+}
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.type {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 3px;
+  background: var(--type-bg, #d8dfd0);
+  color: var(--type-ink, #394b3b);
+  border: 1px solid #18292a18;
+}
+.type-normal,
+.move-normal {
+  --type-bg: #e2e3d5;
+  --type-ink: #4e5342;
+  --type-color: #849475;
+}
+.type-fire,
+.move-fire {
+  --type-bg: #f9dccb;
+  --type-ink: #944025;
+  --type-color: #d87442;
+}
+.type-water,
+.move-water {
+  --type-bg: #d0e8f0;
+  --type-ink: #285870;
+  --type-color: #4b9bc4;
+}
+.type-grass,
+.move-grass {
+  --type-bg: #d6e7c3;
+  --type-ink: #3f642e;
+  --type-color: #6c9a4d;
+}
+.type-electric,
+.move-electric {
+  --type-bg: #f7edb3;
+  --type-ink: #73601c;
+  --type-color: #c3a638;
+}
+.type-ice,
+.move-ice {
+  --type-bg: #d5f0ed;
+  --type-ink: #2f6768;
+  --type-color: #5db2ac;
+}
+.type-fighting,
+.move-fighting {
+  --type-bg: #f0d6d2;
+  --type-ink: #914335;
+  --type-color: #bc5b48;
+}
+.type-poison,
+.move-poison {
+  --type-bg: #ebd8ed;
+  --type-ink: #75477b;
+  --type-color: #a269ab;
+}
+.type-ground,
+.move-ground {
+  --type-bg: #eee0c4;
+  --type-ink: #75602e;
+  --type-color: #ac8b4b;
+}
+.type-flying,
+.move-flying {
+  --type-bg: #e0e2f4;
+  --type-ink: #555e8f;
+  --type-color: #939aca;
+}
+.type-psychic,
+.move-psychic {
+  --type-bg: #f4d6e5;
+  --type-ink: #954869;
+  --type-color: #c96b91;
+}
+.type-bug,
+.move-bug {
+  --type-bg: #e4eac3;
+  --type-ink: #59652b;
+  --type-color: #97a449;
+}
+.type-rock,
+.move-rock {
+  --type-bg: #e4dec9;
+  --type-ink: #6b603a;
+  --type-color: #a09766;
+}
+.type-ghost,
+.move-ghost {
+  --type-bg: #e1ddee;
+  --type-ink: #5d4e7e;
+  --type-color: #8674a6;
+}
+.type-dragon,
+.move-dragon {
+  --type-bg: #dddff4;
+  --type-ink: #4d5394;
+  --type-color: #777fc2;
+}
+.type-dark,
+.move-dark {
+  --type-bg: #dcd9d7;
+  --type-ink: #554e48;
+  --type-color: #807369;
+}
+.type-steel,
+.move-steel {
+  --type-bg: #dbe5e6;
+  --type-ink: #4d6469;
+  --type-color: #839da0;
+}
+.type-fairy,
+.move-fairy {
+  --type-bg: #f2ddea;
+  --type-ink: #83516f;
+  --type-color: #c58eb0;
+}

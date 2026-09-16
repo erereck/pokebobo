@@ -1,0 +1,85 @@
+@media (max-width: 900px) {
+  .pokemon-details {
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 10px;
+  }
+  .pokemon-info {
+    display: contents;
+  }
+  .pokemon-scan {
+    grid-column: 1;
+    grid-row: 1/3;
+    min-height: 128px;
+    height: 100%;
+    align-self: stretch;
+  }
+  .pokemon-scan .sprite {
+    width: 96px;
+    height: 96px;
+  }
+  .scan-caption {
+    display: none;
+  }
+  .pokemon-name {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .pokemon-name h2 {
+    font-size: 22px;
+  }
+  .pokemon-level {
+    font-size: 24px;
+  }
+  .pokemon-traits {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 6px 0;
+    gap: 8px;
+  }
+  .pokemon-traits b {
+    font-size: 11px;
+  }
+  .pokemon-traits small {
+    font-size: 8px;
+  }
+  .pokemon-details .section-head,
+  .pokemon-details .equipped-moves,
+  .pokemon-details .button {
+    grid-column: 1/-1;
+  }
+  .roster-selector button {
+    flex-direction: row;
+    min-height: 52px;
+    gap: 3px;
+    text-align: left;
+  }
+  .roster-selector .sprite {
+    width: 32px;
+    height: 32px;
+  }
+  .roster-selector strong {
+    font-size: 10px;
+  }
+  .roster-selector small {
+    font-size: 9px;
+  }
+  .equipped-moves {
+    gap: 6px;
+  }
+  .bag-compartments {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bag-compartments .item-display {
+    height: 80px;
+  }
+  .bag-compartments .item-display svg {
+    width: 32px;
+    height: 32px;
+  }
+  .bag-compartments h2 {
+    font-size: 17px;
+  }
+  .bag-compartments p {
+    font-size: 11px;
+  }
+}

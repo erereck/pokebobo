@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "date": "2026-09-13",
+  "tests": {
+    "passed": 31,
+    "failed": 0
+  },
+  "architectureModules": 145,
+  "monteCarloRuns": 400,
+  "monteCarloCensored": 0,
+  "htmlBytes": 9807520,
+  "coverCount": 6,
+  "coverBytes": 838373,
+  "browser": {
+    "viewports": [
+      "320x568",
+      "375x667",
+      "390x844",
+      "1365x768",
+      "1365x950"
+    ],
+    "externalRequestsOffline": 0,
+    "physicalDevices": false
+  }
+}

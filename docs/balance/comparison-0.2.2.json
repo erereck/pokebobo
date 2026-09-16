@@ -1,0 +1,623 @@
+{
+  "baseline": "0.2.1",
+  "version": "0.2.2",
+  "seed": 20260913,
+  "runsPerStrategy": 200,
+  "mode": "normal",
+  "comparison": [
+    {
+      "strategy": "training",
+      "before": {
+        "wins": 0,
+        "winRate": 0,
+        "meanBadges": 3.675
+      },
+      "after": {
+        "wins": 2,
+        "winRate": 1,
+        "ci": [
+          0.27,
+          3.57
+        ],
+        "meanBadges": 3.8
+      },
+      "becameWin": 2,
+      "becameLoss": 0,
+      "opponents": [
+        {
+          "name": "Misty",
+          "before": {
+            "kind": "gym",
+            "name": "Misty",
+            "encounters": 37,
+            "completed": 37,
+            "censored": 0,
+            "playerDefeats": 11,
+            "defeatRate": 29.73,
+            "defeatRate95": [
+              17.49,
+              45.78
+            ],
+            "medianTurns": 2,
+            "medianPlayerLevel": 37,
+            "meanPartySize": 1
+          },
+          "after": {
+            "kind": "gym",
+            "name": "Misty",
+            "encounters": 37,
+            "completed": 37,
+            "censored": 0,
+            "playerDefeats": 4,
+            "defeatRate": 10.81,
+            "defeatRate95": [
+              4.29,
+              24.71
+            ],
+            "medianTurns": 3,
+            "medianPlayerLevel": 37,
+            "meanPartySize": 1
+          }
+        },
+        {
+          "name": "Gardenia",
+          "before": {
+            "kind": "gym",
+            "name": "Gardenia",
+            "encounters": 36,
+            "completed": 36,
+            "censored": 0,
+            "playerDefeats": 7,
+            "defeatRate": 19.44,
+            "defeatRate95": [
+              9.75,
+              35.03
+            ],
+            "medianTurns": 4,
+            "medianPlayerLevel": 36,
+            "meanPartySize": 1
+          },
+          "after": {
+            "kind": "gym",
+            "name": "Gardenia",
+            "encounters": 36,
+            "completed": 36,
+            "censored": 0,
+            "playerDefeats": 8,
+            "defeatRate": 22.22,
+            "defeatRate95": [
+              11.72,
+              38.09
+            ],
+            "medianTurns": 5,
+            "medianPlayerLevel": 36,
+            "meanPartySize": 1
+          }
+        },
+        {
+          "name": "Kahili",
+          "before": {
+            "kind": "league",
+            "name": "Kahili",
+            "encounters": 8,
+            "completed": 8,
+            "censored": 0,
+            "playerDefeats": 2,
+            "defeatRate": 25,
+            "defeatRate95": [
+              7.15,
+              59.07
+            ],
+            "medianTurns": 6,
+            "medianPlayerLevel": 80,
+            "meanPartySize": 1
+          },
+          "after": {
+            "kind": "league",
+            "name": "Kahili",
+            "encounters": 7,
+            "completed": 7,
+            "censored": 0,
+            "playerDefeats": 3,
+            "defeatRate": 42.86,
+            "defeatRate95": [
+              15.82,
+              74.95
+            ],
+            "medianTurns": 5,
+            "medianPlayerLevel": 80,
+            "meanPartySize": 1
+          }
+        },
+        {
+          "name": "Lance",
+          "before": {
+            "kind": "league",
+            "name": "Lance",
+            "encounters": 4,
+            "completed": 4,
+            "censored": 0,
+            "playerDefeats": 4,
+            "defeatRate": 100,
+            "defeatRate95": [
+              51.01,
+              100
+            ],
+            "medianTurns": 5,
+            "medianPlayerLevel": 87,
+            "meanPartySize": 1
+          },
+          "after": {
+            "kind": "league",
+            "name": "Lance",
+            "encounters": 4,
+            "completed": 4,
+            "censored": 0,
+            "playerDefeats": 3,
+            "defeatRate": 75,
+            "defeatRate95": [
+              30.06,
+              95.44
+            ],
+            "medianTurns": 7,
+            "medianPlayerLevel": 87,
+            "meanPartySize": 1
+          }
+        }
+      ]
+    },
+    {
+      "strategy": "balanced",
+      "before": {
+        "wins": 23,
+        "winRate": 11.5,
+        "meanBadges": 6.1
+      },
+      "after": {
+        "wins": 21,
+        "winRate": 10.5,
+        "ci": [
+          6.97,
+          15.52
+        ],
+        "meanBadges": 6.555
+      },
+      "becameWin": 5,
+      "becameLoss": 7,
+      "opponents": [
+        {
+          "name": "Misty",
+          "before": {
+            "kind": "gym",
+            "name": "Misty",
+            "encounters": 44,
+            "completed": 44,
+            "censored": 0,
+            "playerDefeats": 11,
+            "defeatRate": 25,
+            "defeatRate95": [
+              14.57,
+              39.44
+            ],
+            "medianTurns": 5,
+            "medianPlayerLevel": 25,
+            "meanPartySize": 3.8863636363636362
+          },
+          "after": {
+            "kind": "gym",
+            "name": "Misty",
+            "encounters": 44,
+            "completed": 44,
+            "censored": 0,
+            "playerDefeats": 0,
+            "defeatRate": 0,
+            "defeatRate95": [
+              0,
+              8.03
+            ],
+            "medianTurns": 4,
+            "medianPlayerLevel": 25,
+            "meanPartySize": 3.8863636363636362
+          }
+        },
+        {
+          "name": "Gardenia",
+          "before": {
+            "kind": "gym",
+            "name": "Gardenia",
+            "encounters": 39,
+            "completed": 39,
+            "censored": 0,
+            "playerDefeats": 5,
+            "defeatRate": 12.82,
+            "defeatRate95": [
+              5.6,
+              26.71
+            ],
+            "medianTurns": 7,
+            "medianPlayerLevel": 24,
+            "meanPartySize": 3.923076923076923
+          },
+          "after": {
+            "kind": "gym",
+            "name": "Gardenia",
+            "encounters": 39,
+            "completed": 39,
+            "censored": 0,
+            "playerDefeats": 4,
+            "defeatRate": 10.26,
+            "defeatRate95": [
+              4.06,
+              23.58
+            ],
+            "medianTurns": 7,
+            "medianPlayerLevel": 24,
+            "meanPartySize": 3.923076923076923
+          }
+        },
+        {
+          "name": "Kahili",
+          "before": {
+            "kind": "league",
+            "name": "Kahili",
+            "encounters": 41,
+            "completed": 41,
+            "censored": 0,
+            "playerDefeats": 5,
+            "defeatRate": 12.2,
+            "defeatRate95": [
+              5.32,
+              25.54
+            ],
+            "medianTurns": 11,
+            "medianPlayerLevel": 70,
+            "meanPartySize": 4
+          },
+          "after": {
+            "kind": "league",
+            "name": "Kahili",
+            "encounters": 46,
+            "completed": 46,
+            "censored": 0,
+            "playerDefeats": 11,
+            "defeatRate": 23.91,
+            "defeatRate95": [
+              13.91,
+              37.94
+            ],
+            "medianTurns": 12,
+            "medianPlayerLevel": 70,
+            "meanPartySize": 4
+          }
+        },
+        {
+          "name": "Lance",
+          "before": {
+            "kind": "league",
+            "name": "Lance",
+            "encounters": 26,
+            "completed": 26,
+            "censored": 0,
+            "playerDefeats": 24,
+            "defeatRate": 92.31,
+            "defeatRate95": [
+              75.86,
+              97.86
+            ],
+            "medianTurns": 12,
+            "medianPlayerLevel": 73,
+            "meanPartySize": 4
+          },
+          "after": {
+            "kind": "league",
+            "name": "Lance",
+            "encounters": 23,
+            "completed": 23,
+            "censored": 0,
+            "playerDefeats": 20,
+            "defeatRate": 86.96,
+            "defeatRate95": [
+              67.87,
+              95.46
+            ],
+            "medianTurns": 11,
+            "medianPlayerLevel": 73,
+            "meanPartySize": 4
+          }
+        }
+      ]
+    },
+    {
+      "strategy": "coverage",
+      "before": {
+        "wins": 36,
+        "winRate": 18,
+        "meanBadges": 5.845
+      },
+      "after": {
+        "wins": 31,
+        "winRate": 15.5,
+        "ci": [
+          11.14,
+          21.16
+        ],
+        "meanBadges": 6.53
+      },
+      "becameWin": 5,
+      "becameLoss": 10,
+      "opponents": [
+        {
+          "name": "Misty",
+          "before": {
+            "kind": "gym",
+            "name": "Misty",
+            "encounters": 44,
+            "completed": 44,
+            "censored": 0,
+            "playerDefeats": 18,
+            "defeatRate": 40.91,
+            "defeatRate95": [
+              27.69,
+              55.59
+            ],
+            "medianTurns": 7,
+            "medianPlayerLevel": 24,
+            "meanPartySize": 4.454545454545454
+          },
+          "after": {
+            "kind": "gym",
+            "name": "Misty",
+            "encounters": 44,
+            "completed": 44,
+            "censored": 0,
+            "playerDefeats": 0,
+            "defeatRate": 0,
+            "defeatRate95": [
+              0,
+              8.03
+            ],
+            "medianTurns": 5,
+            "medianPlayerLevel": 24,
+            "meanPartySize": 4.454545454545454
+          }
+        },
+        {
+          "name": "Gardenia",
+          "before": {
+            "kind": "gym",
+            "name": "Gardenia",
+            "encounters": 39,
+            "completed": 39,
+            "censored": 0,
+            "playerDefeats": 5,
+            "defeatRate": 12.82,
+            "defeatRate95": [
+              5.6,
+              26.71
+            ],
+            "medianTurns": 7,
+            "medianPlayerLevel": 24,
+            "meanPartySize": 4.384615384615385
+          },
+          "after": {
+            "kind": "gym",
+            "name": "Gardenia",
+            "encounters": 39,
+            "completed": 39,
+            "censored": 0,
+            "playerDefeats": 4,
+            "defeatRate": 10.26,
+            "defeatRate95": [
+              4.06,
+              23.58
+            ],
+            "medianTurns": 7,
+            "medianPlayerLevel": 24,
+            "meanPartySize": 4.384615384615385
+          }
+        },
+        {
+          "name": "Kahili",
+          "before": {
+            "kind": "league",
+            "name": "Kahili",
+            "encounters": 42,
+            "completed": 42,
+            "censored": 0,
+            "playerDefeats": 6,
+            "defeatRate": 14.29,
+            "defeatRate95": [
+              6.72,
+              27.84
+            ],
+            "medianTurns": 13,
+            "medianPlayerLevel": 64,
+            "meanPartySize": 5.904761904761905
+          },
+          "after": {
+            "kind": "league",
+            "name": "Kahili",
+            "encounters": 51,
+            "completed": 51,
+            "censored": 0,
+            "playerDefeats": 10,
+            "defeatRate": 19.61,
+            "defeatRate95": [
+              11.02,
+              32.46
+            ],
+            "medianTurns": 13,
+            "medianPlayerLevel": 64,
+            "meanPartySize": 5.901960784313726
+          }
+        },
+        {
+          "name": "Lance",
+          "before": {
+            "kind": "league",
+            "name": "Lance",
+            "encounters": 31,
+            "completed": 31,
+            "censored": 0,
+            "playerDefeats": 29,
+            "defeatRate": 93.55,
+            "defeatRate95": [
+              79.28,
+              98.21
+            ],
+            "medianTurns": 16,
+            "medianPlayerLevel": 69,
+            "meanPartySize": 5.870967741935484
+          },
+          "after": {
+            "kind": "league",
+            "name": "Lance",
+            "encounters": 42,
+            "completed": 42,
+            "censored": 0,
+            "playerDefeats": 39,
+            "defeatRate": 92.86,
+            "defeatRate95": [
+              80.99,
+              97.54
+            ],
+            "medianTurns": 16,
+            "medianPlayerLevel": 68,
+            "meanPartySize": 5.857142857142857
+          }
+        }
+      ]
+    },
+    {
+      "strategy": "random",
+      "before": {
+        "wins": 0,
+        "winRate": 0,
+        "meanBadges": 1.47
+      },
+      "after": {
+        "wins": 0,
+        "winRate": 0,
+        "ci": [
+          0,
+          1.88
+        ],
+        "meanBadges": 1.56
+      },
+      "becameWin": 0,
+      "becameLoss": 0,
+      "opponents": [
+        {
+          "name": "Misty",
+          "before": {
+            "kind": "gym",
+            "name": "Misty",
+            "encounters": 30,
+            "completed": 30,
+            "censored": 0,
+            "playerDefeats": 23,
+            "defeatRate": 76.67,
+            "defeatRate95": [
+              59.07,
+              88.21
+            ],
+            "medianTurns": 7,
+            "medianPlayerLevel": 20,
+            "meanPartySize": 3.7
+          },
+          "after": {
+            "kind": "gym",
+            "name": "Misty",
+            "encounters": 29,
+            "completed": 29,
+            "censored": 0,
+            "playerDefeats": 8,
+            "defeatRate": 27.59,
+            "defeatRate95": [
+              14.7,
+              45.72
+            ],
+            "medianTurns": 8,
+            "medianPlayerLevel": 20,
+            "meanPartySize": 3.7586206896551726
+          }
+        },
+        {
+          "name": "Gardenia",
+          "before": {
+            "kind": "gym",
+            "name": "Gardenia",
+            "encounters": 24,
+            "completed": 24,
+            "censored": 0,
+            "playerDefeats": 19,
+            "defeatRate": 79.17,
+            "defeatRate95": [
+              59.53,
+              90.76
+            ],
+            "medianTurns": 10,
+            "medianPlayerLevel": 20,
+            "meanPartySize": 4
+          },
+          "after": {
+            "kind": "gym",
+            "name": "Gardenia",
+            "encounters": 24,
+            "completed": 24,
+            "censored": 0,
+            "playerDefeats": 17,
+            "defeatRate": 70.83,
+            "defeatRate95": [
+              50.83,
+              85.09
+            ],
+            "medianTurns": 13,
+            "medianPlayerLevel": 20,
+            "meanPartySize": 4
+          }
+        },
+        {
+          "name": "Kahili",
+          "before": {
+            "kind": "league",
+            "name": "Kahili",
+            "encounters": 1,
+            "completed": 1,
+            "censored": 0,
+            "playerDefeats": 1,
+            "defeatRate": 100,
+            "defeatRate95": [
+              20.65,
+              100
+            ],
+            "medianTurns": 13,
+            "medianPlayerLevel": 44,
+            "meanPartySize": 6
+          },
+          "after": {
+            "kind": "league",
+            "name": "Kahili",
+            "encounters": 2,
+            "completed": 2,
+            "censored": 0,
+            "playerDefeats": 2,
+            "defeatRate": 100,
+            "defeatRate95": [
+              34.24,
+              100
+            ],
+            "medianTurns": 16,
+            "medianPlayerLevel": 47,
+            "meanPartySize": 6
+          }
+        },
+        {
+          "name": "Lance",
+          "before": null,
+          "after": null
+        }
+      ]
+    }
+  ]
+}

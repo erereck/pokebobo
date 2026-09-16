@@ -1,0 +1,91 @@
+@media (max-width: 360px) {
+  .dex-header {
+    gap: 8px;
+  }
+  .dex-brand > span {
+    display: none;
+  }
+  .brand {
+    font-size: 21px;
+  }
+  .dex-header-tools {
+    gap: 4px;
+  }
+  .hardware-button {
+    min-width: 40px;
+    padding: 7px;
+  }
+  .dex-main-panel {
+    border-width: 5px;
+  }
+  .mission-stock {
+    gap: 7px;
+  }
+  .mission-hud {
+    padding: 0 4px;
+  }
+  .mission-place > svg {
+    display: none;
+  }
+  .hud-week {
+    font-size: 8px;
+  }
+  .health-card {
+    padding: 5px;
+  }
+  .health-card strong {
+    font-size: 10px;
+  }
+  .health-card > div > span {
+    font-size: 7px;
+  }
+  .health-card > small {
+    font-size: 8px;
+  }
+  .turn-marker > span {
+    display: none;
+  }
+  .battle-control-heading h2 {
+    font-size: 11px;
+  }
+  .move-button > span {
+    gap: 3px;
+  }
+  .move-button .type {
+    font-size: 8px;
+  }
+  .setup-steps {
+    gap: 4px;
+  }
+  .setup-steps > span {
+    font-size: 8px;
+  }
+  .setup-steps b {
+    width: 20px;
+    height: 20px;
+  }
+  .starter-card .types {
+    justify-content: center;
+  }
+  .starter-stats {
+    font-size: 7px;
+  }
+  .city-choice-text h2 {
+    font-size: 17px;
+  }
+  .mode-heading > span {
+    display: none;
+  }
+  .game-navigation button {
+    font-size: 9px;
+  }
+  .bag-compartments {
+    grid-template-columns: 1fr;
+  }
+  .item-display {
+    height: 60px;
+  }
+  .bag-compartments article {
+    gap: 8px;
+  }
+}

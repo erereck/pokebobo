@@ -1,0 +1,789 @@
+@media (max-width: 900px) {
+  .app-shell {
+    width: 100%;
+    height: 100dvh;
+    min-height: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    padding: 0 10px 10px;
+    box-shadow: inset 0 2px 0 var(--dex-highlight);
+  }
+  .dex-header {
+    height: 64px;
+    margin-bottom: 10px;
+    gap: 12px;
+  }
+  .dex-lens {
+    width: 44px;
+    height: 44px;
+    border-width: 4px;
+    padding: 3px;
+  }
+  .dex-sensors {
+    gap: 7px;
+  }
+  .sensor-lights {
+    gap: 4px;
+  }
+  .sensor-lights i {
+    width: 8px;
+    height: 8px;
+    border-width: 1px;
+  }
+  .brand {
+    font-size: 23px;
+  }
+  .dex-brand > span {
+    font-size: 7px;
+    letter-spacing: 0.05em;
+  }
+  .dex-brand > span b {
+    margin-left: 4px;
+  }
+  .hardware-button {
+    padding: 8px;
+    gap: 0;
+  }
+  .hardware-button > span {
+    display: none;
+  }
+  .dex-header-tools {
+    gap: 6px;
+  }
+  .game-shell {
+    display: flex;
+  }
+  .dex-main-panel {
+    width: 100%;
+    border-width: 6px;
+    border-radius: 10px;
+  }
+  .dex-hinge,
+  .dex-companion {
+    display: none;
+  }
+  .mission-hud {
+    padding: 0 6px;
+    font-size: 11px;
+    height: 30px;
+    min-height: 30px;
+  }
+  .mission-place,
+  .mission-stock > span {
+    gap: 5px;
+  }
+  .mission-stock {
+    gap: 10px;
+  }
+  .hud-week {
+    font-size: 9px;
+  }
+  .save-light {
+    display: none;
+  }
+  .play-main {
+    padding: 12px;
+  }
+  .game-navigation {
+    height: 64px;
+    gap: 6px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+  .game-navigation button {
+    flex: 1;
+    min-width: 0;
+    min-height: 48px;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 6px;
+  }
+  .game-navigation button svg {
+    width: 20px;
+    height: 20px;
+  }
+  .game-navigation::before {
+    display: none;
+  }
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    overflow: auto;
+  }
+  .title-screen {
+    min-height: 240px;
+    flex: 1;
+    flex-shrink: 0;
+    border-width: 6px;
+  }
+  .title-screen-status {
+    height: 24px;
+    font-size: 8px;
+  }
+  .title-scene {
+    min-height: 185px;
+  }
+  .title-copy {
+    padding: 16px;
+  }
+  .title-kicker {
+    font-size: 8px;
+  }
+  .title-copy h1 {
+    font-size: 32px;
+    letter-spacing: -3px;
+    margin: 10px 0;
+  }
+  .title-copy h1 br {
+    display: none;
+  }
+  .title-copy p {
+    font-size: 12px;
+  }
+  .title-starters {
+    left: auto;
+    right: 2px;
+    bottom: 27px;
+  }
+  .title-starters .sprite {
+    width: 76px;
+    height: 76px;
+  }
+  .title-cartridge {
+    font-size: 8px;
+    bottom: 9px;
+  }
+  .title-instructions {
+    font-size: 7px;
+    gap: 8px;
+    padding: 8px;
+  }
+  .registration {
+    align-self: stretch;
+    border-width: 6px;
+    padding: 16px;
+  }
+  .registration h2 {
+    font-size: 25px;
+    margin: 6px 0;
+  }
+  .registration > p {
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+  .registration > .section-label {
+    font-size: 9px;
+  }
+  .mode-heading {
+    margin-top: 16px;
+  }
+  .mode-desc {
+    margin: 10px 0;
+    min-height: 0;
+    font-size: 11px;
+  }
+  .registration-foot {
+    margin-top: 12px;
+  }
+  .start-button {
+    min-height: 48px;
+  }
+  .setup {
+    padding: 14px;
+    border-width: 6px;
+  }
+  .setup-steps {
+    gap: 12px;
+    padding-bottom: 12px;
+    justify-content: space-between;
+  }
+  .setup-steps > span {
+    font-size: 10px;
+    gap: 5px;
+  }
+  .setup-steps b {
+    width: 24px;
+    height: 24px;
+    font-size: 10px;
+  }
+  .setup-heading {
+    margin: 16px 0;
+  }
+  .setup-heading h1 {
+    font-size: 24px;
+  }
+  .setup-heading p {
+    font-size: 12px;
+  }
+  .setup-heading .eyebrow {
+    font-size: 9px;
+  }
+  .city-choices {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .city-choice {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    border-bottom-width: 3px;
+  }
+  .city-image {
+    height: 100%;
+    min-height: 100px;
+  }
+  .city-region {
+    top: auto;
+    bottom: 6px;
+    left: 6px;
+    font-size: 8px;
+    padding: 3px 4px;
+  }
+  .city-pick-number {
+    top: 6px;
+    left: 6px;
+    right: auto;
+    font-size: 8px;
+  }
+  .city-choice-text {
+    padding: 12px;
+    gap: 5px;
+  }
+  .city-choice-text h2 {
+    font-size: 21px;
+  }
+  .city-choice-text p {
+    font-size: 11px;
+  }
+  .city-choice-text .section-label {
+    font-size: 8px;
+  }
+  .choice-arrow {
+    width: 24px;
+    height: 24px;
+  }
+  .choice-arrow svg {
+    width: 18px;
+  }
+  .setup-bottom {
+    gap: 8px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+  .setup-bottom > span {
+    font-size: 11px;
+  }
+  .setup-tip {
+    margin-top: 12px;
+    font-size: 10px;
+  }
+  .starter-grid {
+    gap: 8px;
+  }
+  .starter-card {
+    padding: 8px;
+    gap: 8px;
+  }
+  .starter-card h2 {
+    font-size: 16px;
+    overflow-wrap: anywhere;
+  }
+  .starter-portrait {
+    height: 95px;
+  }
+  .starter-portrait .sprite {
+    width: 100px;
+    height: 100px;
+  }
+  .starter-top .mono {
+    font-size: 8px;
+  }
+  .starter-card .type {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+  .starter-card p {
+    font-size: 10px;
+  }
+  .starter-stats {
+    font-size: 8px;
+    text-align: center;
+  }
+  .starter-stats > span {
+    margin: 0 2px;
+  }
+  .starter-card .selection-circle {
+    width: 18px;
+    height: 18px;
+  }
+  .setup-starter .setup-bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .setup-starter .setup-bottom .button {
+    min-width: 0;
+  }
+  .draft-timeline {
+    margin-top: 14px;
+    padding: 8px;
+  }
+  .draft-timeline .section-label {
+    font-size: 9px;
+  }
+  .draft-chips {
+    gap: 4px;
+    margin-top: 7px;
+  }
+  .draft-chips > span {
+    font-size: 9px;
+    padding: 3px 5px;
+  }
+  .draft-chips > svg {
+    width: 10px;
+  }
+  .ready-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+  .departure-card > div {
+    padding: 16px;
+  }
+  .departure-card > .landscape {
+    height: 70px;
+  }
+  .departure-card h2 {
+    font-size: 23px;
+  }
+  .departure-card .sprite {
+    width: 90px;
+    height: 90px;
+  }
+  .career-screen {
+    gap: 8px;
+    min-height: 0;
+    height: 100%;
+  }
+  .career-screen > * {
+    flex-shrink: 0;
+  }
+  .city-hero {
+    min-height: 120px;
+    flex: 1;
+  }
+  .city-hero-copy {
+    padding: 12px;
+    max-width: 100%;
+  }
+  .city-hero h1 {
+    font-size: 29px;
+    margin: 6px 0;
+  }
+  .city-hero p {
+    font-size: 11px;
+    max-width: 250px;
+  }
+  .location-label {
+    font-size: 8px;
+  }
+  .week-budget {
+    padding: 8px;
+  }
+  .week-budget .section-label {
+    display: none;
+  }
+  .week-budget strong {
+    font-size: 15px;
+  }
+  .week-budget > div:first-child {
+    display: block;
+  }
+  .final-week {
+    display: block;
+    font-size: 10px;
+  }
+  .action-grid {
+    gap: 8px;
+  }
+  .action {
+    min-height: 86px;
+    grid-template-columns: 24px 1fr;
+    gap: 3px 6px;
+    padding: 9px;
+  }
+  .action-icon {
+    width: 24px;
+    height: 28px;
+  }
+  .action-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .action strong {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-right: 0;
+  }
+  .action small {
+    font-size: 10px;
+  }
+  .action-cost {
+    font-size: 8px;
+    top: 6px;
+    right: 8px;
+  }
+  .action-heading h2 {
+    font-size: 15px;
+  }
+  .action-heading .mono {
+    font-size: 9px;
+  }
+  .career-screen > .notice {
+    max-height: 44px;
+    padding: 6px 8px;
+  }
+  .career-screen .route-hint,
+  .career-screen > .fine-print,
+  .page-meta {
+    display: none;
+  }
+  .challenge-button {
+    min-height: 52px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .challenge-button small {
+    font-size: 10px;
+  }
+  .gym-readiness {
+    gap: 4px;
+    font-size: 10px;
+    margin-top: 7px;
+  }
+  .gym-readiness span {
+    padding: 3px 5px;
+  }
+  .battle-screen {
+    gap: 6px;
+  }
+  .is-battle .play-main {
+    padding: 8px;
+  }
+  .battle-topline h1 {
+    font-size: 19px;
+  }
+  .battle-topline h1 > span {
+    font-size: 11px;
+  }
+  .battle-topline .section-label {
+    font-size: 8px;
+  }
+  .turn-marker {
+    padding: 5px 7px;
+    gap: 5px;
+  }
+  .turn-marker > span {
+    font-size: 8px;
+  }
+  .turn-marker strong {
+    font-size: 22px;
+  }
+  .battle-field {
+    min-height: 110px;
+  }
+  .health-card {
+    padding: 6px 7px;
+    width: 51%;
+    border-width: 1px;
+    border-bottom-width: 3px;
+  }
+  .health-card strong {
+    font-size: 11px;
+  }
+  .health-card > div > span {
+    font-size: 8px;
+  }
+  .health-card > small {
+    font-size: 9px;
+    margin-top: 3px;
+  }
+  .hp-line {
+    margin-top: 4px;
+  }
+  .combatant {
+    left: 3%;
+    right: 3%;
+    gap: 6px;
+  }
+  .battle-sprite {
+    width: 43%;
+  }
+  .battle-sprite .sprite {
+    width: 100%;
+    max-height: 140px;
+  }
+  .battle-comment {
+    min-height: 32px;
+    max-height: 44px;
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+  .battle-controls {
+    padding: 4px 6px 8px;
+  }
+  .battle-control-heading {
+    min-height: 42px;
+  }
+  .battle-control-heading h2 {
+    font-size: 14px;
+  }
+  .battle-tools button {
+    min-height: 40px;
+    height: 40px;
+  }
+  .moves-grid {
+    gap: 6px;
+  }
+  .move-button {
+    min-height: 64px;
+    padding: 7px;
+    border-left-width: 4px;
+    gap: 5px;
+  }
+  .move-button strong {
+    font-size: 11px;
+  }
+  .move-button small {
+    font-size: 9px;
+  }
+  .move-button kbd {
+    display: none;
+  }
+  .switch-options {
+    gap: 6px;
+  }
+  .switch-options button {
+    min-height: 64px;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    padding: 4px 2px;
+  }
+  .switch-options .sprite {
+    width: 32px;
+    height: 32px;
+  }
+  .switch-options button > span {
+    text-align: center;
+    gap: 2px;
+  }
+  .switch-options b {
+    font-size: 9px;
+  }
+  .switch-options small {
+    font-size: 8px;
+  }
+  .screen-heading {
+    margin-bottom: 14px;
+  }
+  .screen-heading h1 {
+    font-size: 25px;
+  }
+  .screen-heading p {
+    font-size: 12px;
+  }
+  .roster-selector {
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .roster-selector button {
+    gap: 3px;
+    padding: 4px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .roster-selector .sprite {
+    width: 40px;
+    height: 40px;
+  }
+  .roster-selector strong {
+    font-size: 10px;
+  }
+  .roster-selector small {
+    font-size: 9px;
+  }
+  .pokemon-details {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .pokemon-scan {
+    min-height: 110px;
+    height: 110px;
+  }
+  .pokemon-scan .sprite {
+    width: 110px;
+    height: 110px;
+  }
+  .scan-caption {
+    bottom: 8px;
+    right: 8px;
+    font-size: 8px;
+  }
+  .scan-number {
+    top: 8px;
+    left: 8px;
+    font-size: 9px;
+  }
+  .pokemon-info {
+    gap: 10px;
+  }
+  .pokemon-name h2 {
+    font-size: 24px;
+  }
+  .pokemon-traits {
+    padding: 10px 0;
+  }
+  .equipped-moves > div {
+    padding: 8px;
+  }
+  .equipped-moves strong {
+    font-size: 11px;
+  }
+  .bag-compartments {
+    gap: 10px;
+  }
+  .bag-compartments article {
+    padding: 10px;
+    gap: 10px;
+  }
+  .item-display {
+    height: 100px;
+    gap: 12px;
+  }
+  .item-display svg {
+    width: 40px;
+    height: 40px;
+  }
+  .item-display strong {
+    font-size: 32px;
+  }
+  .bag-compartments h2 {
+    font-size: 19px;
+  }
+  .bag-compartments p {
+    font-size: 12px;
+  }
+  .bag-compartments .button {
+    font-size: 11px;
+    padding: 8px;
+    gap: 5px;
+  }
+  .bag-compartments .button svg {
+    display: none;
+  }
+  .encounter-scene {
+    height: 100px;
+    margin-bottom: 12px;
+  }
+  .encounter-mon {
+    padding: 8px;
+    gap: 8px;
+  }
+  .encounter-mon > .sprite {
+    width: 64px;
+    height: 64px;
+  }
+  .encounter-mon h2 {
+    font-size: 20px;
+  }
+  .encounter-mon .section-label {
+    font-size: 8px;
+  }
+  .capture-call {
+    font-size: 10px;
+  }
+  .encounter-mon small {
+    font-size: 10px;
+  }
+  .result-screen {
+    padding: 6px;
+    gap: 12px;
+  }
+  .result-screen h1 {
+    font-size: 30px;
+  }
+  .result-emblem {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+  }
+  .result-emblem > svg {
+    width: 32px;
+  }
+  .result-team .sprite {
+    width: 44px;
+    height: 44px;
+  }
+  .result-receipt {
+    padding: 10px;
+  }
+  .result-receipt > div {
+    font-size: 12px;
+    gap: 8px;
+  }
+  .result-receipt > p {
+    font-size: 11px;
+  }
+  .ending {
+    padding: 16px;
+  }
+  .ending h1 {
+    font-size: 28px;
+  }
+  .ending-passport {
+    padding: 12px;
+  }
+  .ending-passport .mono {
+    font-size: 8px;
+  }
+  .ending-party .sprite {
+    width: 44px;
+    height: 44px;
+  }
+  .record-grid strong {
+    font-size: 24px;
+  }
+  .record-grid span {
+    font-size: 10px;
+  }
+  .journal article {
+    gap: 10px;
+    padding: 10px;
+  }
+  .journal article > p {
+    font-size: 12px;
+  }
+  .journal .tag {
+    display: none;
+  }
+  .region-paper {
+    padding: 10px;
+  }
+  .route-stop {
+    padding: 8px;
+    gap: 10px;
+  }
+  .route-stop:not(:last-child)::after {
+    left: 22px;
+  }
+  .route-stop strong {
+    font-size: 13px;
+  }
+  .route-stop small {
+    font-size: 10px;
+  }
+}

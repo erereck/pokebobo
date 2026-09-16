@@ -1,0 +1,51 @@
+@media (max-width: 900px) and (max-height: 700px) {
+  .setup-heading p {
+    display: none;
+  }
+  .setup-origin .setup-bottom > span {
+    display: none;
+  }
+  .setup-origin .setup-bottom {
+    justify-content: flex-end;
+    margin-top: 8px;
+  }
+  .setup-steps {
+    padding-bottom: 6px;
+  }
+  .region-screen .screen-heading .eyebrow,
+  .region-screen .screen-heading p {
+    display: none;
+  }
+  .region-screen .screen-heading {
+    margin-bottom: 10px;
+  }
+  .region-screen .screen-heading h1 {
+    font-size: 22px;
+    margin: 0;
+  }
+  .region-map {
+    height: 290px;
+  }
+  .region-screen > .notice {
+    padding: 6px;
+    font-size: 10px;
+  }
+  .region-screen > .notice p {
+    font-size: 10px;
+  }
+  .map-node strong {
+    font-size: 10px;
+  }
+  .map-node-marker {
+    width: 26px;
+    height: 26px;
+    font-size: 9px;
+  }
+  .map-node small {
+    font-size: 6px;
+  }
+  .map-node {
+    gap: 3px;
+    transform: translate(-50%, -13px);
+  }
+}

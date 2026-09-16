@@ -1,0 +1,31 @@
+@media (max-width: 1100px) {
+  .game-shell {
+    grid-template-columns: minmax(0, 1fr) 14px 240px;
+    gap: 8px;
+  }
+  .companion-party strong {
+    font-size: 11px;
+  }
+  .companion-party small {
+    font-size: 9px;
+  }
+  .badge-strip {
+    gap: 7px;
+  }
+  .badge {
+    width: 20px;
+    height: 20px;
+  }
+  .game-navigation::before {
+    display: none;
+  }
+  .welcome {
+    gap: 16px;
+  }
+  .title-copy h1 {
+    font-size: 44px;
+  }
+  .city-image {
+    height: 140px;
+  }
+}

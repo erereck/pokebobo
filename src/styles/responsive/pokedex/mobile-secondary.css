@@ -1,0 +1,160 @@
+@media (max-width: 900px) {
+  .app-shell {
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+    padding-top: env(safe-area-inset-top);
+  }
+}
+@media (max-width: 900px) and (max-height: 700px) {
+  .app-shell {
+    padding-bottom: max(8px, env(safe-area-inset-bottom));
+  }
+  .phase-encounter.view-journey .screen-heading {
+    margin-bottom: 6px;
+  }
+  .phase-encounter.view-journey .screen-heading h1 {
+    font-size: 21px;
+    margin: 3px 0;
+  }
+  .phase-encounter.view-journey .screen-heading p {
+    font-size: 11px;
+  }
+  .phase-encounter .encounter-scene {
+    display: none;
+  }
+  .encounter-options {
+    gap: 6px;
+  }
+  .replace-choice {
+    font-size: 11px;
+    gap: 4px;
+  }
+  .replace-choice small {
+    font-size: 9px;
+  }
+  .replace-choice select {
+    padding: 6px;
+  }
+  .encounter-mon {
+    padding: 5px 7px;
+    min-height: 68px;
+  }
+  .encounter-mon > .sprite {
+    width: 46px;
+    height: 46px;
+  }
+  .encounter-mon h2 {
+    font-size: 17px;
+    margin: 1px 0;
+  }
+  .encounter-mon .section-label {
+    display: none;
+  }
+  .encounter-mon small {
+    font-size: 9px;
+    margin-top: 3px;
+  }
+  .encounter-mon .type {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+  .phase-encounter.view-journey > .fine-print {
+    font-size: 9px;
+    line-height: 1.4;
+    margin: 6px 0;
+  }
+  .phase-encounter.view-journey > .button {
+    min-height: 44px;
+    padding: 8px;
+  }
+  .ending {
+    padding: 10px;
+    gap: 8px;
+  }
+  .ending > .result-emblem {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+  }
+  .ending > .result-emblem svg {
+    width: 20px;
+  }
+  .ending > .eyebrow {
+    font-size: 9px;
+  }
+  .ending h1 {
+    font-size: 22px;
+  }
+  .ending > p {
+    display: none;
+  }
+  .ending-passport {
+    padding: 10px;
+  }
+  .ending-passport .brand {
+    font-size: 18px;
+  }
+  .ending-passport h2 {
+    margin: 6px 0;
+    font-size: 20px;
+  }
+  .ending-passport .badge-strip {
+    margin: 8px 0;
+  }
+  .ending .record-grid {
+    padding: 8px 0;
+    margin: 6px 0;
+  }
+  .ending .record-grid strong {
+    font-size: 21px;
+  }
+  .ending-party .sprite {
+    width: 38px;
+    height: 38px;
+  }
+  .ending > .button {
+    min-height: 44px;
+    font-size: 12px;
+    padding: 8px;
+  }
+  .ending .unlock-note {
+    padding: 6px;
+    font-size: 11px;
+  }
+  .ending .unlock-note p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 900px) and (max-height: 700px) {
+  .is-league .city-hero {
+    min-height: 60px;
+  }
+  .is-league .league-lineup {
+    gap: 4px;
+  }
+  .is-league .league-lineup > div {
+    min-height: 34px;
+    padding: 4px 7px;
+    gap: 6px;
+  }
+  .is-league .league-lineup > div > span:first-child {
+    width: 20px;
+    font-size: 10px;
+  }
+  .is-league .league-lineup > div > div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    column-gap: 6px;
+    row-gap: 0;
+  }
+  .is-league .league-lineup strong {
+    font-size: 12px;
+  }
+  .is-league .league-lineup small {
+    font-size: 8px;
+  }
+  .is-league .league-lineup .tag {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+}

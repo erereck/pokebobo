@@ -1,0 +1,18 @@
+{
+  "auditedGymSets": 122,
+  "date": "2026-09-14",
+  "physicalDevices": false,
+  "testsFailed": 0,
+  "htmlBytes": 9808898,
+  "auditedStarters": 21,
+  "offlineExternalRequests": 0,
+  "testsPassed": 38,
+  "simulations": {
+    "normal": 800,
+    "censored": 0,
+    "nuzlocke": 400,
+    "rush": 400
+  },
+  "version": "0.2.1",
+  "architectureModules": 147
+}

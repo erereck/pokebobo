@@ -1,0 +1,20 @@
+@media (max-width: 900px) {
+  .hud-badges {
+    font-size: 9px;
+  }
+  .hud-badges svg {
+    width: 12px;
+  }
+  .mission-stock {
+    gap: 8px;
+  }
+  .map-node strong {
+    font-size: 11px;
+  }
+  .map-node small {
+    font-size: 7px;
+  }
+  .region-screen > .notice {
+    font-size: 11px;
+  }
+}

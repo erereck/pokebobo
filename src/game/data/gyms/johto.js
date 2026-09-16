@@ -1,0 +1,108 @@
+import { gym } from "./createGym.js";
+
+export const JOHTO_GYMS = [
+  {
+    id: "violet",
+    name: "Violet",
+    region: "Johto",
+    leader: "Falkner",
+    order: 1,
+    team: ["Pidgey", "Pidgeotto"],
+    levels: [9, 13],
+    biome: "meadow",
+    source: "HeartGold / SoulSilver",
+    sourceUrl:
+      "https://pokemondb.net/heartgold-soulsilver/gymleaders-elitefour",
+  },
+  {
+    id: "azalea",
+    name: "Azalea",
+    region: "Johto",
+    leader: "Bugsy",
+    order: 2,
+    team: ["Metapod", "Kakuna", "Scyther"],
+    levels: [15, 15, 17],
+    biome: "forest",
+    source: "HeartGold / SoulSilver",
+    sourceUrl:
+      "https://pokemondb.net/heartgold-soulsilver/gymleaders-elitefour",
+  },
+  {
+    id: "goldenrod",
+    name: "Goldenrod",
+    region: "Johto",
+    leader: "Whitney",
+    order: 3,
+    team: ["Clefairy", "Miltank"],
+    levels: [17, 19],
+    biome: "meadow",
+    source: "HeartGold / SoulSilver",
+    sourceUrl:
+      "https://pokemondb.net/heartgold-soulsilver/gymleaders-elitefour",
+  },
+  {
+    id: "ecruteak",
+    name: "Ecruteak",
+    region: "Johto",
+    leader: "Morty",
+    order: 4,
+    team: ["Gastly", "Haunter", "Haunter", "Gengar"],
+    levels: [21, 21, 23, 25],
+    biome: "forest",
+    source: "HeartGold / SoulSilver",
+    sourceUrl:
+      "https://pokemondb.net/heartgold-soulsilver/gymleaders-elitefour",
+  },
+  {
+    id: "cianwood",
+    name: "Cianwood",
+    region: "Johto",
+    leader: "Chuck",
+    order: 5,
+    team: ["Primeape", "Poliwrath"],
+    levels: [29, 31],
+    biome: "coast",
+    source: "HeartGold / SoulSilver",
+    sourceUrl:
+      "https://pokemondb.net/heartgold-soulsilver/gymleaders-elitefour",
+  },
+  {
+    id: "olivine",
+    name: "Olivine",
+    region: "Johto",
+    leader: "Jasmine",
+    order: 6,
+    team: ["Magnemite", "Magnemite", "Steelix"],
+    levels: [30, 30, 35],
+    biome: "coast",
+    source: "HeartGold / SoulSilver",
+    sourceUrl:
+      "https://pokemondb.net/heartgold-soulsilver/gymleaders-elitefour",
+  },
+  {
+    id: "mahogany",
+    name: "Mahogany",
+    region: "Johto",
+    leader: "Pryce",
+    order: 7,
+    team: ["Seel", "Dewgong", "Piloswine"],
+    levels: [30, 32, 34],
+    biome: "snow",
+    source: "HeartGold / SoulSilver",
+    sourceUrl:
+      "https://pokemondb.net/heartgold-soulsilver/gymleaders-elitefour",
+  },
+  {
+    id: "blackthorn",
+    name: "Blackthorn",
+    region: "Johto",
+    leader: "Clair",
+    order: 8,
+    team: ["Dragonair", "Dragonair", "Gyarados", "Kingdra"],
+    levels: [38, 38, 38, 41],
+    biome: "mountain",
+    source: "HeartGold / SoulSilver",
+    sourceUrl:
+      "https://pokemondb.net/heartgold-soulsilver/gymleaders-elitefour",
+  },
+].map(gym);

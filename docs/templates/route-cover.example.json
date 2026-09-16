@@ -1,0 +1,20 @@
+{
+  "status": "planned-example-not-installed",
+  "routeId": "",
+  "cityId": "",
+  "localFile": "",
+  "sourcePage": "",
+  "sourceGame": "",
+  "sourceGameVersion": "",
+  "originalCreator": "",
+  "extractorOrContributor": "",
+  "creditText": "",
+  "termsUrl": "",
+  "termsCheckedAt": "",
+  "permittedUseNotes": "",
+  "crop": {"x": 0, "y": 0, "width": 0, "height": 0},
+  "focalPoint": {"x": 0.5, "y": 0.5},
+  "pixelArt": true,
+  "alt": "",
+  "fallbackBiome": "meadow"
+}

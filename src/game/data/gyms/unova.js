@@ -1,0 +1,40 @@
+import { gym } from "./createGym.js";
+
+export const UNOVA_GYMS = [
+  {
+    id: "nimbasa",
+    name: "Nimbasa",
+    region: "Unova",
+    leader: "Elesa",
+    order: 4,
+    team: ["Emolga", "Emolga", "Zebstrika"],
+    levels: [25, 25, 27],
+    biome: "meadow",
+    source: "Black / White",
+    sourceUrl: "https://pokemondb.net/black-white/gymleaders-elitefour",
+  },
+  {
+    id: "driftveil",
+    name: "Driftveil",
+    region: "Unova",
+    leader: "Clay",
+    order: 5,
+    team: ["Krokorok", "Palpitoad", "Excadrill"],
+    levels: [29, 29, 31],
+    biome: "coast",
+    source: "Black / White",
+    sourceUrl: "https://pokemondb.net/black-white/gymleaders-elitefour",
+  },
+  {
+    id: "mistralton",
+    name: "Mistralton",
+    region: "Unova",
+    leader: "Skyla",
+    order: 6,
+    team: ["Swoobat", "Unfezant", "Swanna"],
+    levels: [33, 33, 35],
+    biome: "meadow",
+    source: "Black / White",
+    sourceUrl: "https://pokemondb.net/black-white/gymleaders-elitefour",
+  },
+].map(gym);

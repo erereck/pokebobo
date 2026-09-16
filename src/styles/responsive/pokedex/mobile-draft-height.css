@@ -1,0 +1,11 @@
+@media (max-width: 900px) and (max-height: 700px) {
+  .setup-heading {
+    padding: 10px;
+  }
+  .setup-heading h1 {
+    font-size: 20px;
+  }
+  .setup-heading p {
+    font-size: 10px;
+  }
+}

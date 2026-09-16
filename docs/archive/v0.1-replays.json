@@ -1,0 +1,6257 @@
+[
+  {
+    "seed": 1234,
+    "steps": [
+      {
+        "action": {
+          "type": "NEW",
+          "name": "Regressão",
+          "seed": 1234
+        },
+        "hash": "e9ffa90b897d920707eae4b8f57e9bbd134ce7f71bad77ec2d71dd82d9efb750"
+      },
+      {
+        "action": {
+          "type": "ORIGIN",
+          "id": "pallet"
+        },
+        "hash": "dac315c1183884166b2194450e1ad092d60b9f93c893e7dc73323ed18c38d295"
+      },
+      {
+        "action": {
+          "type": "STARTER",
+          "name": "Bulbasaur"
+        },
+        "hash": "8fc1c13f346a217eebc2c37e02d7ab7366abb97714a30aa5258925de2ec38cc4"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "sandgem"
+        },
+        "hash": "8c68acee24fc2fd3838daef59753ab1cb1bf889b59e5831a145cdb3c0d00103a"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "snowpoint"
+        },
+        "hash": "fd925f90ed20a9de4a1e846270223baa8494f45baa8f8c1ef1fc948742c8ccab"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "cinnabar"
+        },
+        "hash": "fcf97b07e525919625e9d01bc1bf0c97f13394fe905c9f58ed0dbdebf146dfb4"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "pastoria"
+        },
+        "hash": "4e9de2ae1e77adde9429c26adbe552d6b507f064fb38b18d16c0becaaa4e985b"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "fuchsia"
+        },
+        "hash": "2568f074ceaeb55bb3debd136e480c700b5df5ddab42ec88dd71541cfaa7f2a2"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "sunyshore"
+        },
+        "hash": "fae1c898e846ac47963ddcaf9f121b71c2b044c676786b4d64cf56d1d5032314"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "goldenrod"
+        },
+        "hash": "5cd2b862e9db3dd59eeca708be8cd466d5338f1570b0831658d64716e0417752"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "cerulean"
+        },
+        "hash": "c7328f9461c7d0a90a818874ab32fd47ff53f0a6c3520a658d60032f5175b927"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "blackthorn"
+        },
+        "hash": "b4803210f00a77b8f02f19860a99b986b3be21abfdb860074d9a7638bfce7cea"
+      },
+      {
+        "action": {
+          "type": "BEGIN"
+        },
+        "hash": "921d691412aeab617f089222de6b662043d145806fd317268823887b6912c5e0"
+      },
+      {
+        "action": {
+          "type": "EXPLORE"
+        },
+        "hash": "d74f8a2ad430cef6f295f4950c2dc5714359fdcc68a2ee1103d309ffd6d590b9"
+      },
+      {
+        "action": {
+          "type": "CAPTURE",
+          "index": 0
+        },
+        "hash": "896d6a9601e50b7bcaf412c67f50b590921642c473151ea295226eeb316ae307"
+      },
+      {
+        "action": {
+          "type": "EXPLORE"
+        },
+        "hash": "77efdbd8b82c1090f1db588ab940d281c4c370c609376fd976ae034c67717ee6"
+      },
+      {
+        "action": {
+          "type": "CAPTURE",
+          "index": 1
+        },
+        "hash": "1adf7343110a33a262ebf00e4d82fe16a85c46b6255088d802a101b2d5291593"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "0f847a61df5423641bd1263cbd3dd94411f7e8360c2593c2ad0d0202d0f99188"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "e8540e8cdaf95db847a766fc395e33a6bcec17555dc3924aa79be4bc70eff518"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "149af39e4118ae71530eba8c7a4e338e661673c7cd67086f3434044971ad4feb"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "4991218de5aa6f543e6479ed456c25446e015b7667d31cbfdeeb60909235ed68"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "6e872e6d404ef08aa2e14fe0d897d9abef15f839d7b06c243f6ec288d16563c5"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "866f99f67e13d7ad666e6502be6bd9cb56b1d7b3e61fc51198b55a35844f2f61"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "604bc154dbd7fdd1b11b69d94fcd4e7fdcb7640b6801307a7e0dcc942458b1ca"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "734e8c3a74566a2e96563f7da0f06f69f3cc1fd851bc2770422d024b2e19d395"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "8c6bc360c1b707c3870f24e23d8a6d40e6211cc9d27c5d209cb2b12292115078"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "41d63d6046505231c1e46e28b9f0d7d594fcdaf81978880db25556c4d0905140"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "ae9baa642ccdcd7bf4b96bb27fcf974affa056c7a01d7526b15384b84f552d98"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "94ab86ff4bb30907efe9472417d9c6c158cc6dd93e83bcf2b9f3a811419984a4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "69357f68167cb9bc7b2a48cd18e9feaf362493553d4c9709b308175b1b6f0ef0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "a6f5453217ab4876768033242ecc058b3ab6c5f9b6bc9198d54c9fb7edddd68d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "d149d41d5bb1b761819cb4318ef78931ea28eef94aee5998ddd1077377f52653"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "8c04df10c267e0fbbf84d87c1416ba731307a3123012e631912f3620e4eb6eec"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "7533469aa037fb133689b726cbb480268eb85f9b67563a2ae897b4e306e69dc8"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "df2173a54adac696ba9f4bb404865a49329aeed4ed81f6c5988ee67aeadb8615"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "ecc50ea0e37f192d94e5ff929350f272d0e98ee51ede3c5ee57d5cf479320376"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "1105e2e8d6e78fbb30064bbd420d87b1c3fba0acaeed120e54f7f0b62d8c0306"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "caac6f0de8914be2b59b00a6637271e2e5186a90b43a075297dbd0be988e5a78"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "9be0b5c56d6c54d21b0bf8a5ae8b0563a36e376acbe24e234979c0024c5bad7a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "bc73dd030504711e21f541cd6cfe997f495135694c1b9532a3688f33ed881779"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "cea01603746ede792d5aba180394fe279ea5e235d3c68a940da250b3c08c170d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "56eb2c543846c7a1cd9a8dd1c3481423b8ce595a5d6c1b55bf721af2b37216a5"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "eebd90545e17315af499d986649514136a6a368891c683010b07acb81d0788ca"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "aee3dfea20a3cd96a244fa0bd3e3592fd2aa897ee83a223e7a67f930278c5307"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "b2c9ebe9f3f67ffdced74ecb1d77ca6ce3e4afa15d85d9ce4d708cd87402fd05"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "8e274ca0f0e88aee080a4beb7d786fadf45bdfd9a385bdce0ef34262a80c212a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a381711a9a2e1f9b6d84874b1f712d5e86b731b15dad3d82206b630453400f25"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "5ad10c6430979a3b7aa1aeb9cc158e054350dac5a60544a0da504669ca6c9c89"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3a7101c8487215a0d1a8116bfda9800d123d233968a6ce24a896df2db49bc87b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "afbed2d221097612345b29d1e5d17a9721f008f051f100224d1881e6e105edbf"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "0f10e67060e565e48298afc72f75abdfbdcfdfc7b9233f326c1696ee143e3926"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d1cdfb121d64ebd69731df31662a8bd2a251f065e6a881600cc873bbf8afd105"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "0bf33652adfca2985cb5c95f3d1523e7061a1520b3ee94441fd280c17697a8ae"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "dd538c939c747f751d486a11dc20166cda4dcf58c0d41d1aff0aa8884c7de6f7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a2f0db1da67537f7d4f217ffdd8f5732724feef34d59704fc73b11257b9f8a10"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3f2d029a7208880d402b994f1c331a00f5493f130c697e6c3668f57cf76721bc"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e8da14661c0f37f79235fdd79c89da4495ad16a4d8969fe7c2e8dd466a0d2ad0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e7b7fbb48ac697131946974e095cbee2d94fc90bc4b2516cee579dbca86154fe"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "1ab85aec32eff54b81192e8c869b7fea8a93d54ac5f1080546a0432db1588be2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6ee8d0748ce08e0ce6283b07f152220a55ec245e1157f6f6c2fc717a4b017d4b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "45fd188f7bdec24544f21e229bef2d833a293f01e9df91b8550d8bd13c468616"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "0fa7cb219f24a47b453292910edcf8ff5ddf97d6f767c3a2c519e9108de3a9d7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "9f3f9cf8713dd7ffc4fbd0c418ad8b6de2a52d18351cb78a9a314ff0cad0bd5c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7a78a818c86c3062a3e56369b5084b6c5a75617449f2b6ddddd5f8c157178f44"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "53d8369ac492072c66437ee68f7299df63ec2964a38e1f9d34feeabc5469b393"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d633193bbdc79d3865970caf6917c0768df6345ac97749c0c731d88c3f888cf6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bf971ee2b84579eb37c0497055df7cecfe5569d57e297908128f08fa3e645448"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "4709dde91dbd28c47c652efab6110fd47c7a5e9f484ace79d3cd1cc4769fe18c"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "42950159a8d1892f28933965dd1ba6f3ed60dbf866a580e2b4fd2fd199930da3"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "8f670ef57b74ed3c8cc53344acc9cda3337ff6ecfa7d34e64df76552614a8a6f"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "14d426d6b0a9a637974d8dc661587affe604fe019f35e1abe1c52e92bd15402b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "fbc7d10ea8dbd57cec8bad7a998f2b3afa89327a34d8bce1035f35b020e43d2e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "ac6521b1e9a5deb318201e4b3f2430d538f054fb1374da08c7833834c71bc2f8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "0c86d7a7dbcc94fbd175a0ccca99691cdeb74cc0c116bceb8a787118664a0446"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "209f24b0f27dbe6c6ddbd88031360a0c0af5cd092c3c8574306b4f2efd3b5b26"
+      },
+      {
+        "action": {
+          "type": "PREPARE"
+        },
+        "hash": "f7772cecb9d52aaacf19dc70c4d1557de250cb1a0fa3add1aba5754092994c9b"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "b7d89eac0f519d5ee28aeffe04f27e97a4ef6a88118a60317ebb5c166562c738"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "ada0ea8b6c3003ca6f1232a8e2f4f58273e4011658461463a63e4b6e9cca8849"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bd1087a1c311de4ea3175b37e1df8de259512b1d2569f551f6e2434b7661d777"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "ac1ff338674a9a8b7c3705a86963fc5dfdbb95337e9ade336330453f68caf191"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "626f1ee7ac8619c524352e6de867404f327ae4a34be9c7b8e2b52da35042a882"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "ab3af364bab028e34eeda4d6467cf66413cc962970356c88360ac37f30229c8e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "42ba703c2a36a4448de50e494f043ec231f5804fc7509b4ec8631a19c62165bc"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bb419476a09a78307c953885f5a1ce62dc56f10d788f4233ea96eedc78a9d297"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "c8be6f05dd3990f9e8fcea060ce29a6b74ced0fc4a78b9ae6748e1a133dfca48"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "57895726f19c5ce7984c13bc71f387313d9320093b8b43e51bf51f2ca58f9f2f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "364d451d6586768c2745ec0c81c6a7094be1668a30a6ebd6243bf680fc32620d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c122b3f3c776b15c6f60ae66dc8aa8d8b20bc35ff68875220240e2b08292a724"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a5c4bf03010ceed2a17db035dd818c508d81b9a8927cd50c47c1b9e536fec855"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "078f9d50c5f04ebcea03298c5d425de028e2e3f9ae88de0591b2afd5c6000ec3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "ca599251804657f4da567bf744e3291a53b79ba0f67dfe536f6a8a7dfdf3fa1a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "1721814d9a35315a1c4fbfa3b005b7e90a0666a677f12018152f86f25fa07b94"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a28f5ea88786ee76307b8525733645a6bb6a525a90cc01a6b65eee5014b344a4"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "90d319196197deda5dc4e6accd306a8cbc626dfb66e7cd9c37d7f02e0d7fadfc"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "be7a9a0668ed269c7d0ef71b6423ab2ec5c5e810bb9e33de237d2a0fd3eca657"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "ddca7cd14507ddd536bf2aeaa798004b3402fa137b6ddcd6cf952d5d3a0a6dd5"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "660ebaf8c62883da2d888d694b54c07ca6e8c57bd3d53831beb2cbe9d12013b4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a98288486f4df43e76ffb57049abbefedd109ec5a493adbd69f775f283eaf13a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "0ec218792048b99be43f7d4a572116cb469ffb3c1b3b320738414c03d6548017"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "05a65bd49e9c0834b7b659f5cce5db13747548383950fdf99bfa599f6dd4d30e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f722dad51eb7392693fc9cd84267ed1b481cf387155325fdee9fc25ebc6dd889"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "bd9251eafeabb989c113e2cb4f4c76fced8723dfca908c30fdc48fa1732b782d"
+      },
+      {
+        "action": {
+          "type": "PREPARE"
+        },
+        "hash": "6fe1b3cf158298a641e44d32c01cb0ef41129b8ccd39f4e38b54007a3dcf3c2b"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "f53f599ce3c4eef0640b824816681ff87e4f7a3c5511c40eac4c5c3343dfed4d"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "d4d18cca75d12b5eeedf0d17ee518529e2f59991cb3451e750414821834868c5"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d930ce7702f725f62adb661da38d1c1b715aa6cd5749f4e71614f4087f277130"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4404259fef0526ef845a28afbb9d516ef9b29984d2e12f36d6abddf5b56faf29"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "36707b22b363d339d6808f02f4c4f2cdae04a66a0698084ac0798df7b666eabc"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a09c39599e2acd6a1e6ffe91a437e01f46eaec013576bef3ee469ef4db5ed376"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "bae13f2d40b88ef12d884d08e073f28b3724b2c8c3b111a7de51a9cff5a7aef6"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "8dcf212ae8b12c7c81f102739af3b85ad02178bd89bf328e451603c78ba82042"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "b0ddcbee3758e1d98594e0e23fef10c70549815110e016da875dc8883957aa4d"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "adab80f760c1c7a6c3f3138daa657604a0d5eaf100949c5ff5faa1a4c85bcf2c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "dc5d58459f29fb6488d1a60f20719a8585dd7ad167538972d28b18d5aa2175e2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "35a0ee0e8c119946ef29a858c185be9663de07535f70091619e938a9de0fcad5"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bd22cff3197d5bd428369bb469c0e3e606494b549b199e20100d1e0f962c35d4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6283cd4170f66ded642a8f8fe68ea2ee1eff6ed1bb4905ebbf4ebb41517a7a8e"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "851875376c12d3126ffb72a647ad7fa43710a32dfe0d1310ee0fe25325f50469"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "06f99b1c66555c5b35732587c176c4833f627190d8d9f7adbf42f88233fdc657"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "d411ef41d4f1028442f38fa62540e8ea8c23da685fc70c14685b086364e0884a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "49e6175c2211653c3fdc103cf35e9660040e4b43c4d052d0d3c03ac064a2cc3d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "22a770f4439e5c6bfa4a448d7f3a936e94a10aeffb611178958c5bf67ef6ff00"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "1418968409a4fbac037b1245fc3aa0ccca144d208b200a971ac5b8963973e47c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "9e9f58254205fcc110903003674d700f78846a9407a3bf1b5f5dd934010bb7c8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "6ef0a5aed95b5665706919d3e173535a0ce1ae82db5d9ab83df60d25b084a0e9"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "75ca129ae3b5d81ba6322a193744ce8ce0671b8fa3415c7e067c354f5caea635"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "b204f12cbdafaf86e6b966925d54e991ddfbe3f341bab78f2b25c46bd8c87831"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "5f9ae78ce3a6fbe7b65c215e47fd2630ae9a854c9ee2739adf3ef692a24cc6da"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "8c19d5521ea0717538de441447dab44184d827308917e110fca823c5e9ac33de"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "79dcc40de9c9cd202b5d749775d49c41029ce7656b8fac5b09bcc53020cd3069"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "1abf2c5dcbed83d0aec7389bd5bf9d1ab632bb69a420340de4c903f821104e3e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3552d8927f0c071d2698f9d38f4cc31daf26c55b37aa2f898d0b6eb16d80b270"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "901fa3cbeb360b4d114f14ecec16fdd05a7e7e4aefa4f0c0bfb279cfdecd2e96"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4d514d92fb0386990661969cf8d2d70318cec67968bfaef25d0b1252fb8a6931"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d6ef741d969ef400e9d24969808066d88ec3b8b3443be983551e1f82d2333d14"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3e634d4ae933962771ba2701123efc1865b9f4bfc860804d4135b696919fc075"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4675fc621b4e8826981e6b76e599bbc46e60f1a2eddf4b7d86ec6c871acd37e0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d163a982a26234eedae1a0fc6c21530501ffe7b9be10f80c7734f8b962ea62b6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "0f223bee783e99d4c1763c79ab4d1348ac7705920d0c12a19e04d640a3651401"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "36e8db68b0cfc1638953ae601b4140a58d7f691d55617a0e81d171427948d95d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a29fccc742e7ce9e62b7b010f5ee2eb3bfb5d0a734d01d7f67fb27b56badd1ba"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f6d557bbc229ab6fb5a44393381f50b2c3f01fdf01bb9e7cdc7db17e58d31266"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "71f154f2f1bba3c99fe9c4384d43d9c545ba769d84629d143efb532a58df6d81"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "59891a8af1bfae85e8ab16b50d50e2db1191a07663d00821380bf002105971aa"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f68198a62e60104e573c9f73d5a946c936efbd490162558c6673b81c18d270b3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 3"
+        },
+        "hash": "81d85373e64ef847e82b8866e300344f8a096868a9c5d71bc0b529e1b684dd2c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "61b6a04e53c4f7b5b565be58e85b468e915490cb71ba00847b6712728734fcbb"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "4be4e7d56a57c60f83b5509431631b60bcd379c10164b3505c74ca879ee7f06e"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "ddc37278bb4eb0a930b3bc73ce3904799874d00eadd3e3a647a8200cb01a71b5"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "1e715d8ad31cc5877257aaf759fc3da7f17dbb6f95f84d0571318fa4f415a04c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f5acec6b172fa7011ce8bb8f24ec1c80c2d303e1f940cf3ab2c5712347a0f3e6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b73a70fe6f215ba3615ec140a546aedb21dcaa8b7daf208b9d78456ff4a9bf4e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "54ff2c7837bc90cea4cea23a9704c07e83bda64a123e95e2fbb2cb32e97f6995"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "27a6bf3f69616a15b28ee729bf46044fca20dc0f30ff4d5d63d850c0ee7ee550"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d0615feab5b5dbdf9024e29ab43a29c232cba1ee5e142ce63b598afa43b206dc"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "eaa2c828df3dcb86632e808de3409de6f92ec72d02a4fe80ceedb7f2ca98b124"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c47b96ef1677a78ddd8c352c6e5632d03eb0be2b9f92605a9c5632d2c9939036"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f9059ba779a1049bbb23c80acac2bbd101aa85b0ad1427aa792ac50d020ba8d1"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "df4653eca649485230556cbdfaba85bfb3b8eaf2a82d9303bd72c502065ad096"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "248dc5c21b7184c55307d32f0b3ef1dc1bf72130caafabe39109e40965f99b39"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "25a12f46fbbe3e116d1cfc020a63ba0e257ea5e8930580a4c6b7ef9213029bf3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4921b2fb3d5d743b51c7b761d809303f1f2d10d22fb7cd321e09869138f1d002"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "1eafcc5ecee8ea8488cf0b15ba32b9f640f0304f485a414214f6f5690fa9bb01"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "cd397fff221560db16fdea39304528274b160fbb5a4bb9b1baba7f4d3db402ed"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "be581ce7bb863ea12b4ee2063a4566620da0decc2341e6e1907cd8f0434032a7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b70d486e7619f52a35d8631b3471641dc8341bc3b56b0ea7e7dfd615bcd3f3a3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "750ba7a0c4c2a89975b571c74e38054c143d71d7da6a4aa0d4c14fee524f6db4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4f9c4d2f87d1415e3aab74991d7a5b30d53b912290bddfc1bedb9a69729d1590"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c1405fd326caae321ec62324efcd80e0293551743f90e7b01604e89b9b6058e8"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "c1aa607353ada05e1a271439d9dbb8add90b2bb185b0c032a6bba71a0ede50c9"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "72e3c6eff5e2422b5c66ab7d1fbf33863c07c17fe97919603d4bed1de6ccd4c0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "27e9f71d34857eb741326b9466b77fe94c7866fcab1f1f7f6615f96b4f20bba4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "426b615e6b5ce47ddc44254f4cad8014432a3c2db5b5f0eb596adddb31caf665"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c5a610103c1801c62c2cfdfb4cbf7b6d4ce5f19daecb54b3d5abe180e8fee7f4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "90c40b12fb22c2fc3cce256fa1e4acbb3ebf19b43c8a002ba4a5e578adc4db09"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "fc7eb481db449977b5e36084d368bf8ef77fd952e52778c47854033317a078ac"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c54e4e5f9da83b523834ad0b2ad614716943dc7cac87ec9281ca5f805e67ce39"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a3218ca08d5ffc0951246151c3d773706e5fa7b793dd1199ee7660203f058308"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c1560fbde1d2dc28bda3c58657d72bc6cc1d866d262691e0778d03453b317f68"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3d46528664cfcccdbf2c73aef35893f98aeef77aea3a0c49ed05a6be26022c3e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "38dd79263abbccef40afa01b4009bf61fe96c57c96fdf59ccc82228f47e6ac32"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "5c4c82e374b9667e307d9ba523667cecef370396b90b1b03256a2b9ed08aaea3"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "ca4b352b5abceaacc3b58dee4b4d149590392ac76222aaaaebfd6f0c47764ae8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7f7c03309f16ede865d7ec7d35b3ccd39ed07bc112a77944c8f0679abc45e088"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9f90821caccaa1d2239c6f5c7b77c7b973338202d23b4fb55eb7539823379b59"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "0646f6a18149b8388e24cdadc00e09f7e65085282b5fc70d4e23bf6e6d2105fd"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "c826587971c9906e032aa7dd966f949a758c3feb81742914311ad0139cffd1db"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "6ff7a012d8c4ad91ef4dc7249f8ed04612a972e0de1a3004628bae5680042539"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "93fc17b77dd89731d4a5b71ca050d0df772195b54dc6fde3a4f7e5cf0c62ea43"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "a973d27397dca76e0af6c580b02ddc52414302e3da45a7b3b23a8fbfa863ccaa"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4f5161c5b48d6f6eafbb656d0c0a79b7c2647952ec22a9bb549ff19b9bbd0aaf"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2bfe0ea6dc0fa058c92ee8ebad2f744315553c0baede8902a66e330f6781bb7f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "02866c57fd65a1b7b2913effdaea5bc65e5e8bd2888238779caa21fdea7c9534"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c1a4526e0256e719cdd6475d72ac78e50dedef99d44f5f055d0765e32f23e920"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 3"
+        },
+        "hash": "64ee24765c932399f39be15ebcab6965bb4c4cc84e33f062c932bf488cde4c74"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "314e826552af4c015ab345fc5d5f1bbf3a1fd02fd6e8458bcc882d8c143bf0b7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "aabb3720dd4d9f2b678fafe81f1698a8980d3895ef6a793c2a9ba53c80ec8403"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a38aff66415cd9114b3224ac47ae3fb95e82dae1f2ba3ee0952b4ea22307a3a5"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a4ce28e40c5aba6c667f36d5800071962eadd68d7328cd4b950c9405c87321c0"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "5e2fff4c95dd888c86ed34fee39f425cf8eafb850f303ad7967a12c385e09002"
+      }
+    ]
+  },
+  {
+    "seed": 811,
+    "steps": [
+      {
+        "action": {
+          "type": "NEW",
+          "name": "Regressão",
+          "seed": 811
+        },
+        "hash": "0d936ef18a1b51a971de50e5d733a39e500f25bb6ef80bce592fb60a2fa9f53c"
+      },
+      {
+        "action": {
+          "type": "ORIGIN",
+          "id": "pallet"
+        },
+        "hash": "ff26e4a58d6205395853eb38bfbda9dc1270cb74601f718460eecf1e9daed80c"
+      },
+      {
+        "action": {
+          "type": "STARTER",
+          "name": "Bulbasaur"
+        },
+        "hash": "cbebf3a7f2d2a80205222ac7f3d5b97fad07d0cf5f648086127a89b449ed06dd"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "sandgem"
+        },
+        "hash": "acd01e108563a0f32cb13581f66ae52bf3d60f144fa407a92e7bef2c4a8876a7"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "goldenrod"
+        },
+        "hash": "89a2d48a83eb2fb091faae25b11a230ecb01c327d72ea2fb941cec359033df08"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "eterna"
+        },
+        "hash": "c62c78ad25e0e7e38e58943f52b54d94f07eba1efefac8360f6a01cd01cceaa8"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "snowpoint"
+        },
+        "hash": "338f6f6b396ad2a2fc75274a5dfa10a271ce22dc1d7a526ccd925d5a46518cdc"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "fortree"
+        },
+        "hash": "f6fd4e527339b93da6732c34fe3d790ac744a16f92324a3e857bf066c2e58610"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "cinnabar"
+        },
+        "hash": "6dc9101a92c1e34503dff65a6a84494147791e97ff0cc67075df6b96b160703d"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "nimbasa"
+        },
+        "hash": "5c67d62065c09255df9ed1154dc9d5aa517d55cd4aa899a3d4873c9cf3df4a24"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "driftveil"
+        },
+        "hash": "9807533255846cc8e436b133f126f61709f05e6b202bbd84b76c3e1227c1ae7b"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "hulbury"
+        },
+        "hash": "da8be90cb63ef7707e1e152b8d3732b4698f8c2796112a3bdd60610456b4bdee"
+      },
+      {
+        "action": {
+          "type": "BEGIN"
+        },
+        "hash": "eee282efa2ad0d33e0bb48001133df3ee30809e1230e3d970a0c47ccfc872d81"
+      },
+      {
+        "action": {
+          "type": "EXPLORE"
+        },
+        "hash": "035163846e30ae6abb85797b00a2d2a4fa37dea23478a3cb3858282e2fe06149"
+      },
+      {
+        "action": {
+          "type": "CAPTURE",
+          "index": 0
+        },
+        "hash": "06b58ea2c070136cd1a62df0d3bd9b9c165a2173c249758b416ae73d3967ea19"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "c0024e2ce2cf16923d496e533a7018ac99d0699d454da00ce4f682b71f8e08a1"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "88b5e84105a5ff9b0cb8e73581998057e4324efcb098f8c828a651ec41c94e35"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "de7135b291d66744cdcf80a5c8c6aa8f20dd5a50024e4af5603242a876b5ab26"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "81674c3a80238198eda043c347c769040e04bc7da6a48c25ee55a6494dad8051"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "af314649e581051b867fc479373ac398c6eff4242be1c9e9157b8cad401ab835"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7951962a09fdae291d5dfba352249ea88706855b941d0abc86aec23442fc0ec3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4d1ad63848de40cdbb7a5a4c0876245c503904e72014cdd00d63dcacf41a6c28"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "80e812eac0efbf8d75f9b7c0fd4aa4dc358abea1345a3d4e2c1808adfc876ddd"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "fd75f2d629e912c4ec67a4b3f994d4f041edaddcfb9d6f2f3f0ec4c75caf5710"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "5eebbbe6c68e7a2d23dae62051f733789731d4a74c66d0ec33dbb3aec6bb8f48"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "be90784a3a4d428bb50ba05a0f4483ccffd1a70512b95cf6aea9a0e881d0401f"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "48d18072fd2673b5efffd2a7c684c9aa7b3b15f75b25791b3a3151fc4f0120b1"
+      },
+      {
+        "action": {
+          "type": "EXPLORE"
+        },
+        "hash": "e11aea72d423302b822d3ca01142f81d5f9f450057830cc24c1f71d2dd25f1d8"
+      },
+      {
+        "action": {
+          "type": "CAPTURE",
+          "index": 0
+        },
+        "hash": "b2c0cb950b8ac63f76d74a301fa471bf71ed5975401fafa2ac323135e3808684"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "34d5e34aaf3124be72eeb664e38e12cb77227b277022caefa09676926176d625"
+      },
+      {
+        "action": {
+          "type": "PREPARE"
+        },
+        "hash": "9bec0dcdb1000e0fe7ae5da59d55f7bb38e4af13ce1ab620827306c5796c806e"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "2f41df9ff4f2403b521fc5832a60f78baedc84ab6a76e3daaffaf3466dd6763a"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "198572c1690019e2001b23e415a6ddae0ef174fd280390ee184f3615d3b0adb4"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "ee729a9e4165f1880a9049698211cd921212b3009f6460370ad1272741990ef3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "af2fa53710586f7bd0958c8155ac2418a08a64eef044db000d92c93795a9bd1e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "fdb7d8f925f40dce0891e02c240fe76a1bfdf99caee7f3d782f917a150c4bfec"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "dddf09fec344a61aa118023695ba399a9b39ac983e8ebe2c3835e218f6d5f0a9"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "4116ce0fdf216ba065209d9a96b8d6f047a7aa55f45665afc8d64a99579c972e"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "105733d037acf2d31994daf01ca7175fa54a3dce25319f34ba578d2a726cd1ce"
+      },
+      {
+        "action": {
+          "type": "PREPARE"
+        },
+        "hash": "7408c9867ffb52b10788c235c52301b308be883683dc02053b4a2bd0d2325cf0"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "be846570464a725f9d4a3b12effa94fc1b590ac52ffafb1d154d9f08bfb463f0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "d4fc9b55efc590563787943cb76dbf117a296cadd33b94da2b7dc7ad0f862144"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "ede3ac68f43e6fb92d76b99791171555c67b13fc341ed4cefd429717f681e8ab"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "a32dce0d46a55b4e60c6b805cb4436130da8c29e71d216d9a458432ca84c20bd"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "e5d7aa16da7470019c9e026a16407c62973d7edd766928275500219d6e537b34"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "9f72ad64a4474489c5f2858bf54d969beaa4959669e9245604ff3bf703a2f84c"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "442d3e1f426c0a5cc9ba81502fa0afb98f213878414631fcb8a9365d037ddc1b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "cb7fad784a552fbd0a8e6cecdd0a57eae865ebd4a6d8027b91f66c5b195d10c1"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a99afde7a7cb8004d02a5cc33d0d075c2b0898c67d2f43bf926b7ebe3f2d947a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9ec4d3cc6004cd3c78aa486a0df0fc2acd9464646bc8a7db59d5eed76e503309"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "3ce594896cf2b1b8abe21dd49312c7688d85d9a17db16857d0180cb4738f6f65"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "fa62f96790f480d980ec5bc411329cf089f6963b33375795f8713c395cc7342a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "41743fa9a62c9bdc189624c654aacc7950a388f2bf0d4637262b6f8fdee56ea6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7908cca3bb76daf7b8d7c2ef2d68c6ce631eb723fd3c710954f6329619e9c0f4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "042659f325e641d913c9e216baefb32643754b2f73947f08a7499d78f29b2e79"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "495ca42956ccf9b6da9cdcd351161224e7b45882be15e0754420085e161be3be"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e6495cbadb34547dd9355109648cebe9bf6afa14cedcc9beb14849b8d8fa9f56"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "55a4de555a2170374f29e736e69584fb4f9b44051f101a529341f77196308fab"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "fc67d931b163fd4c31c89d644f39f93560c1ad68ef26d18298cce327558e646a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e9202eda8e19d6cf14666b323ce03c8201fab759f0e95c503dbaf7be6d09cb49"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "980459392c4b222c459e22dc709c12b16536498016d0304361c4280e3aa55aae"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3d66e46b4c116a074a15916d9a8894ca1b51766338ce0c95152dc9c1c810e7cf"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "60ec96db9513e8ad0bc8d1dcd3a0daeb51383a64ec36ba9f3a5278093994114a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "a9242443dce1a5b69453eac4429fab049bd550699c5a48c2d059c92d38bffb23"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "13fe578e881e1d80ec301fe28f7bc950d6e863efe3e46028809fc40e335d094f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2b4d0c28883ec5c6564632d832a456629700c1f401a2054f5765ef26eabb034a"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "b9e27b4c3c9c3e170348d7e4dbf37c004e69eb26bce9948ec0f06dde478a5087"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "78fc9351f99294770802d3ecaa7a41b20e3d5faef65d6244ec96494131cecb21"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "18f1c981a033e42077181153b043445432a1dfa98b81aeaa0b8d8ad10f0be6a4"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "5e3987133bdf3d9e8023111ae7834b815aa82bf126b547b4b6a1768ad844ff36"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "535a7ffd10f5da3fcfa9e47672100da82cc67cce7c63fded4a52b9314e314f18"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "c266d183762acc63a6c9ba6682b35e7b8d9329d0ffc90529e6c2464a030af9d7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "359bd51e36c3a18bff93afd1e535e0786b6a60aff9f6fc3d6271fbc846dd1041"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "02c146d356722341017eaa3716481eca5286afe6e07205fa78fe8aa46de72907"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "90d8c3dc7223468e3bba7f02f766f194e71d39e317b473e25285129cdecef432"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "a716f907cac0babbcab8265ba68199a6721f304a7f63bd80462a6b32b9b980d0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "86fe7a109acf8fa07830f77a4cf88cbd468eba64ed81194d1cf622d9cbefc0cf"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "f1b0e86a00aba5e492df675b45009eeccf0b074712411997a2f4a120748e347a"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "7d5a1a7462a4d8c6a784eaa21f58c815a5f93a32cc8915c3efd25db7eaabd648"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "d931e95d4f225a570404f93e34a99b2e2656dd0689d6a202a64d2f0fc03ad0fe"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "966778a217dba3927e9bf1fec2a2c485c02a79fab96981dd92821f9aa66b62d3"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "994e5bd008cb202ff043799e98f8711353f4bbb7c99504b344e102702d87e952"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "34ef0fabb6a54089cb9fd38638db81ab41985e8643b440e2ecbfa1a319586a5b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "44b5e6f74d3771ae867107ba023e8b32868e4de27f337041a5705f7e4137d04c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "cacdebe47507512e2257dad520da4efcd4edd40a33534255206ffdbe3cccd8a9"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "67e711acb40d0e59c0c7ae34e35e0b411137600438a8a450566461718f3e20a8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "752da3bd38314f05b6218b59eec635f396c43289ba02c5bdd59d70611d808a7f"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "bbd6384ca2bcc3c57bedb480992df57c1fda426cfc690005876c67a266383f7e"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "62b299d7e9600e9f13ba66986ee5079dec8c5d01c679d28aab194c5e1076dda6"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "63a41ba83e960ff8cac2bfcb3b5b303fd80737d604ea0e4a251e70a406315790"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "7e01d567f931f61159e88fbfe318ae4befc162b768dd886b337a1608f606269d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "fb1a03f45ac257f3cc66d88d93d1b1da1f4a1ad970d54fd52c286548d821d0e2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "69ff496f91c0fb030815bae286518da43d9180bfffe91072684c48b77622bf4b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "84b26ae21f9f45c76600f17c9a139b85e24098a4950f31c7da9f3e28a18056a6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d88b881e812f204e465f74261e466c707b3bb5eb0af2f7069f74c7bcf5b27ed2"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "d2777b498e50f7b5445dbd79d37f0802912c1571f2a0969c0644484cff0d66a0"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "0bdcdc85066fce4c1182bd41f9499ac81e9cfd4b563562464de86593f4ff0057"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "551975c6af34f1e5769774ddedb1d39c67c7c6f15e27cb19b195b7e85323fbc1"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9dd7ddde1f84e38df1b2c9f6100e3402e6acb39d2f3ff868d085fd9d761caa21"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8c46aa4a58b71255ce7a6d18d384bcb67d82060635c491a1c45773a7be322ab2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4506165076fb9c63bdc60b91963eaeef6b27575adc3c7cbb84605e1f217360da"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4db7dcd46b6d61ca074c0557baec6086d9a705f3acd1919eee9750d81268c681"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4ad41620dd0977f5883665147a3c790cc041c2c5eb71b5b4aed0a16ee7251e9c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "eb7065f1f201d40762634ad7b1ba5a149472c21e4c3ffb8061b138b7bf56fdcd"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "1220cf3924f4d2f27ad5947c9f81ea8faee82e41b8149b57399399f60c271975"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "94e1fe40fb55c970aa81498497d278121dc8fe06218a8d56d5b8483e7f7534e9"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a7f849daade44807dbaa3791ac76b3942d7703b13296c3bfdd2992aa9395cd47"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "68fe6e15404c06611bc01c59bd7847507cedbfa021119cf8beadce267a5480e9"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f625fc3601e55e3ff2b13e8ce8909868901a27ca58ae3948f5db5801adca9176"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "32ee94bc82000f47f088a4f55125db2f6e4b340569705852b957be407e6fc595"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "afcf64b3a6294e11bf1b3231f5786e0face796a7382c0e43b3e1d5c5acaaf7fe"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "24218b228288b3d341b0e7d100518acf2d1c52c4e4b924b9275afa3254e4aa8d"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "5a1b46e4fda73c8d014ad1cbc00f3812bf903582f99905c6999aa74b13a95bee"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "71458d819424e57f96e0b3985e4d47632d293eecb4455d204a70ca07e86dc215"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "8f6a90f6634fc233180256f0878eb763f6f58865a5f2de7b6a81c83f0b345793"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "49b5f5de174b2c614572ff007c1c5baa54d789535eccc7e0bda30f13cb17af7a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8fbd27f3a996be91128678563204587d2a3e8257501ae8f72e4eb7944645bef9"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "67fed507f2117cf76279cc28faa8edd519dd028790e97c440ec0be7328907d81"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b1e34df8262d10b6ea0388a8a26579ca7efa6b479404e0b0eab0b01f9aff90d6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e3766918cb4d662da3763862d66ac2bdd2168aa68d1064655c447e4cbcec1858"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9d48389b2c8f6047d55a67d0c0419febe34f8262d160991ac7b48ea97a9da32e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3f802b5a129024bee045fa82d274117e14ab7519529623eceb90200fe7e3e08b"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "79611dc4a74d105c6884880b4d8a6499524cf88ff6fc312dc4a8c133a8ba2258"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "e3c7e63eceb118bd553cb7f3b349f64f86840d73a529936dc7cd501e6fccaaac"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7915c315df91bdc596d0adbaa3970a0c7a92656975ca44c6b5bf212699b19a09"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "aa16378d16d733f22893996f2bdea99de8d179981ae7b9b38cdc3217164cf70c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3f9e5a49d0df1f8fed09fa689e3fa0ab2c97a3855d1cbb1f501bbf9f394e9780"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b3ee6c927ff062ccbc394d4be957908f1120183e14cc6651fd4c653b6589aab8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "22a2fcd121dae405084654365ee5e87dee27395655262fc0f80867332ae80ae4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8cc1aa29dedf0489278f1c50fe8ccdc0dcb80c9947efdfb8712426e33b08248a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a48d7dbbac9fb4bb3352fedaf17a6158f9ec9ac06867f0457341a9382a51d289"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "8f8118cb153113c003f09481e437fd8663ced9e623beedeb3cb029bc63c678bc"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "fda06b81271d8ce464f95e7c6f2395b109bb788780d68092e56785678aa2b889"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6965d4438778db10e764f2f121a4ce38d7165e153390f41b86224a31243366d4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "ee8bdb53c249d5fedec96e5732bc93679d00dcc13c6c4f9113a262832e69dea1"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "5d7c1fb1adb3278752978f0e00f0a2620a27a2e816061d56bad7c3306e06373f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e552482395a65d33f2c812d5981adbe19508c984eeffb8a8fecb50e71b362380"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f518e32f199e7a8fb43e6e9cc63559dcb064d87a8b7ec95d398b552af433a08c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a22e5c59017162bbaaa9a19de7d6d60becfc895a2372b4d1d7626f3cddd292c6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b99fe1fca6dbcb310332198ebc8579eddfe7f3867d69b1aab4d96623c066df91"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6b59d8553c8e3a0faac23e425637f7f7faeea884b13ec3421c7cceaea503dcd8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c21ad23bcb413dfe8e0336dae83ce5839249ab3c4d501c32a3a9730c997be478"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "43ac3aa34f0f0b60966f4b3fd8650d89cd400fa6cafb18d574afb848363559ba"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "5977ab291f6f6a3c3c1ee12220d523746e5f174c40733a0bbe7ad535ea3a6d65"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "45b53a7bd1fab492031876c88507c745355a4b53bb301fb2e5ad5501f47fab09"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "4c7f1698a8f0ddd7a602fe1939132eea536cdcaf29bf8b38e0659279793ee5bf"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "fabadded0d407487a19a3bf1d2f692bdc15ab2a1c59e7c5fb668a01c5f2c72b2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6bd6482e54e5af84733c1d4ede9dd5a15a26eea91e0cc95fb3b47b432607aeb7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "645d92dfbd9432e43156c37c0667f92d4aeb756071399122d8bf7920c1cd9e4d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "2c67686a78d5f6169e362a88f2b247a5d39840936031f3ca0ff57c50b6d75310"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3064e004390725627708972af8a2b577bc9394e974efadf24f76fd6aeceb06e4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f35810696efff90c52b9e7382e10afb0a859c89c53415b0c8cace88a691e8211"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "6f86ac98e0d9ff40505ffaa882faaeacdcfe163b39f0d06034c885d70db95be3"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "8818c8354430561838df75b281678bbe61529aa0cd742cffbd9b84e3c4b17fa6"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "a7ae1f8be2764c2da71bbdd8cfcd2562e5671048c274c272a7e2e3e2c80aa163"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "443c8ec33cad79f25aaf5bbf5123eed39fafef115e7ee02e53225d025584a73f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e6af691d850878188e9cfde0639cc199cccb3e6f70a92151654eb296118e9ac7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3a9b059b285592c96431d2057929eba9b18e4b2e10a76597b5ebc44f44cb0ebe"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bed9f356d6ff20cc49aad03dea300d168ccb0c6f984d55ac4c7642685d84f244"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "fa5be5fb772fe9770ea32cfd27fad50b973b16bcc98b864a7982d281ea9e4832"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "78f432f44ffcdcfac0319b5ce061b1eca7f90e15fe4c4392e0356bd1f19993bb"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9077302f969b98feb58a1c13fad1d830d89044715dc4bcbab0d6cbfa004fe434"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "710ee0bd1eff36b21bde095ed319425fdcbd21352fa15d899fc02fd4d0581985"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "48569394fe60ec19f93fe12a742fdb51b77da4b7fe4fcf12bbd8c8946595615a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "20bea37d87a4d25e3573a69d7f55815f46ed93c44d9fb3b34f6a43516f92203d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "582baf7afae286365669d6004c5484fcc5fe64718c938fe5bbc084a57a4a1a65"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "decad8664c7b952c52def1cb68eca110741517f953531ea3c996a749858fc39d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "49b1557bbb75bef1b1f7f293c61c3de7a04b7b1f919343aff9786ddca0c113c6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "65c510d29e0f7631ac30bf3aa4d87a8fb2666731c527e99add65e112f4fe1978"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "ee13ae06362270d109f75bd808e053c093e67c9646d02de0f465b372e091bec6"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "38fb68709166e7f60b94a30c6434d4fb2134cf51abb19311b2a14a1a219e9c18"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f5c76b405d90943e15fcf87a652fe8f9fbef26879b54381880bdc71c89ed46c8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3f2fea44459e8bb88f41edf2e54677f712ffe7efdedd5ba84e1ab4b0049a7254"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "c191212b2c43999f85d71325ca45b8ed31ae4024f0e330742fed47efc3765e78"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "dbdb6614363dfd380b0d5aa64ca5b5d1cba11c9070a5cf04e813c3184815a22c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "2238a96ddc9ab1ea1fdd13cd8bf516fe4ff06c5c58b651fb959a761d69c0546e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2ba703b1bf32f8ad6af308a10dd603f3642301b725780b1262bb92454a8f5d1d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d6db503d2ac9848b6bbfd834151651786a5686c59bff32b473aafbfb39ac3280"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2412fbedb85c7b958b29bdee094b55bce7316560ed6183a057e51a09aa0188b8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "615ad221d675496cf85dfdfd81a20070cf6b73ef287dff61ca0fb2574668a6fa"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "47efc854371174d0580097470df7e5b489b98eb7d1ffc1d28b45cdd4de906f6d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "1e4518a93e3f323121906303af59c3353410b0f81eff2d58b7408dc78bd23020"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "4a5d870ac6058db405de9e9c7425bc4ae95d7d3ef0ab17e6e9f098909d5dac07"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "238f066209fc1be70676022177bf32688b666080c599eeb0738a1b7ba0937398"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "b2fbe571cdb9f69b5c4724636e7dba11733505de7a9c86c05ed4affc21ec79de"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "41e7cd682a7f44b339633d6f4cda0ead4f56bb6724135807088222413bad7f6f"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "052cf71072484d3b8471377dc86d9d24a2855270f33db22e21da5fc119a960f4"
+      }
+    ]
+  },
+  {
+    "seed": 99,
+    "steps": [
+      {
+        "action": {
+          "type": "NEW",
+          "name": "Regressão",
+          "seed": 99
+        },
+        "hash": "0c879eef1eb8cb845ac8aa7e3a54ddc5e73be5b02649ccbbea9572ffe9b7cddd"
+      },
+      {
+        "action": {
+          "type": "ORIGIN",
+          "id": "pallet"
+        },
+        "hash": "a0132461b1a84503b6f03a581415429525080ff43e089b423e9cdaf80baef04c"
+      },
+      {
+        "action": {
+          "type": "STARTER",
+          "name": "Bulbasaur"
+        },
+        "hash": "d2058ff554101e8909f8dda91efaa4779028999814546e9b8dc382915e5f153e"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "sandgem"
+        },
+        "hash": "b47ec97e15854f13454fc94af9db25f9a4284c0f6e54a3eba5362e9e6953f2d5"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "dewford"
+        },
+        "hash": "258ede6992a8a40fb4ea0a0ba838705ee658d11c10aabe947a5cdf32c8d069f5"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "petalburg"
+        },
+        "hash": "ab28f71ec47d89af30aa31192891a53e34a4662dc20780d57f91ac0f340c758e"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "sunyshore"
+        },
+        "hash": "712a0c8ee1a51101c85cea0f376abca12e1ca3d67fb68dcc798d9fb55266b96d"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "mistralton"
+        },
+        "hash": "efaddd48d2809958b7dbabf33cc5f9a02b475409e39dc1f513197b0fafa77c13"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "sootopolis"
+        },
+        "hash": "a89ad6c90c65d61f5f254165ee7e51eaf5d47409f8a561515baa0e93857493f5"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "mauville"
+        },
+        "hash": "9a09d5037d5883558fe8b9efa66ad8d85f82952f0a26159ca323ef8c8a8dc1c1"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "fuchsia"
+        },
+        "hash": "372d36287afeb87dd7b96978f6f68d97e568a628ed06d11cd78de529c5ca1daf"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "lavaridge"
+        },
+        "hash": "59945fed696c490cea8195209f2be75c94e0f141a0908dba26447a565ea791bc"
+      },
+      {
+        "action": {
+          "type": "BEGIN"
+        },
+        "hash": "07be0603571c788dda2de681cda21914a14e494693f8a5deccd2925c211117cf"
+      },
+      {
+        "action": {
+          "type": "EXPLORE"
+        },
+        "hash": "609602950b26db9fd367c987528f1a0282d13d55237b0772d9e2a34057b191f4"
+      },
+      {
+        "action": {
+          "type": "CAPTURE",
+          "index": 0
+        },
+        "hash": "23d8847d8f7786abb7c57562e140d272963e9cd9f1174ef3d36ac52b8a3ef8a7"
+      },
+      {
+        "action": {
+          "type": "EXPLORE"
+        },
+        "hash": "f75ced58f3d5b272d74f1afe47f8a6f2f976033ca558a2dffc0293a47bb17378"
+      },
+      {
+        "action": {
+          "type": "CAPTURE",
+          "index": 1
+        },
+        "hash": "6ced687da9ac4dcde6280bce21d8ed7dd89e495489262983b29d63d27c4b1543"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "1879f46458062b5b5de536afdc1aa8642009303bfe50d59cc309187465b3f8ee"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "2c081f723157835929eb3b3a016957fd72518df0b5a53e27e5537ec40346ee78"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "ac13a046367ba840afa183e454ef6f995bfe5d2e790ee49c6be3c25f394a36c2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "f65ef5af8cce7bc0a38cafe72e2dcdc031fe62551e0e3ad6adc38c36d82929b2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "32949ce58ac7d73e3bed231940ea66a175d62264cb7076a97b88bf9a457960e1"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "e5a2c262aa00f3be364b9f7711f1ae0ac35bb29f5217689441821de5a38d12bc"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "17815905b48bed7d5cd3a0f148a9b200e6ba94159363d2e4c74c318ce7935c55"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "af14ea7adc2343bb577bdba936d7cadc0f66050cdf84c59789395856f75fd26e"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "8f36244e610f5be9f7fba017234e0b3f0cb140f6d28f715f1f181fb7792eb656"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "a5c1c09fdb6f5a61a8ec68fd50386efaeb8a2fc767fe115b89cc154edeb12f4f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a15a5afb459eea2497ee6fc756506a15967b86bd48f6514e3c6d1b3fb393d44e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9ab6b4f1efcab0a3286b54363d028b32ffb650b8775d53b12d34196d4531791e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "55b94896b546e18e5b325f07134a203f2b0a3b829475603e9a90689816742439"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "892db80adbe1497240617049ee49b9d1dc4364412ce5690f5f82a22644741aa9"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "fd37e00aa9ba5c2f6505ea42d7591faa2bbf72406613663e24b1dda09ad0c2a7"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "031d8474b23199a38bc498b62578e3e0d4ae3b378b56bf9c4dfbd4ad12109d98"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "f12c4c1d7277235e2ccaa779b9317c6c99b6dcf5aff29de2ee735b37702483d2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "11003e9b4d5322e0947f25860b00d5d0ddf97ef56cacf63d16b8cf2206965633"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "04527d8ec364a827e342da522643304266a04aca489f4bdc11d9ae56bcbb9aaf"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a3dfc4c9c1cc5f7787ca3d3ab7bc9618cbcdeb270cb0e4f2ae5f7fc733f3d968"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "69b83f64f80065fb0c0c7adf9680a84a772129dac76e41f7fd00eee64cfd123d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d1feeea13b4ac657f29daf7953c4c4c27c7bf6c44220ba2b6a31721ed353517e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "5c394a62be9141b1b4db261ac55b72693557d09b447076ca9d2157f938244594"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "ce4b532e64bc4348f8393d59073e0cec07ef6f8645ef2c643065d77b5c893817"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2604ea19bf060a5b2e6940a8ac7002b00ff78248777ae9c894e8516af21008ea"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "23f1a3a4c40686f8b9d14a501e9d111d488c6dca68791634d6b5382844e2811a"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "d4dee4cf0310999bc851616d17345c7f2dc9a70c381c164f299be18835608e41"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "706f55c34a1599233ec30789e52314eda4a08ddefc8a1c5fe54ccbbb2e8401be"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "92a1ca01c79362c7dd6944467d4a47ee2dce9a766b9612578faf956843516743"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "253a75de4a8478de718e2b52a7b7841e22d445ecba3f7d7adb1d8d7fc8f52209"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3300fdc9bbfbf8de2a1ff9277c63b6f7fef03223fdb6c02dbf6bd71b9451e9c4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d5a16283b7df01f8f7c65d35a88e985efa6a7769dce243333f0b5d420c68c8bc"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "be6d5f76ef522777041922bf9c23c5ac247c9b0ea81480742c15263cd9160b15"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "29530faa7f70b72378ba8da0fcb461ec7c45c0af64dfe2cf676571fe8591ddff"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bc236efb3b866fa62fe489ac4e5ac62e67f4b87adac8a02c3aec42e6b540708b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "47a9cb981d2131815b1a96ea4507fd7ccb6d1293b3d1d03ae385eff8164ff1e7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "ab8c6eb68b2d7fa703fcaaa425ba892b48fd32fd56bbafafee6ece902cc9183f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "366de5fa038ff9e92a5c7bffd723e0ad59095f459d223a809e2f78a864e884e4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f9a701d7f36e1ea6f3478e25f1bda7df0ff7936872635382977e90d58a376153"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c574a2c02cba7c85c668d1b94b4549a0e48ba7fe3c9f9e1292f098f29e0b1820"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9fa419f6b0ace2e100326194d8d1733cb0dbc18880c1cfc81b4327b9cc144f8c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "645fd8da01204d7efb5aa1eeea14211449984c3671e518715fa614a565b152c7"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "a9828a681a6458fc128f711ce76423f31e6b19a50f21cda73d7b393ff5680e2c"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "957f03297bfe28a5bbba0e49013070241f9a4bb1a99837980e35e7d3987f7d20"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "c0cd1a6cba972496dc6d2fb42cd505c5f3ae1a62ba12dcffa4aebbaf137135a5"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "cfc1fac40e64418368bc441c7718f424bec6287ba19c89cac5acf0550e2c1827"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "6ae590657f2b9a1d53d1000194d2fc7319a4b0c177aef0cdea34746b41cb0171"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "2989b36b3cdb37e5f7194c904410b6f223816d486d3b86647c570e7f297e6e01"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "884ecd2db8e4d599830667676c3e4fd8e31db2658293991ae48b9b1121907c3c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b0c6bba78388a869a6cccda2163a2f039ec00ee53506d29349d68dd413c8156c"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "68aece7c906106e47735596437318de723fea24ea4d0f3d000f7208047e7047d"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "08bee9e06cda5bb0242be284ced86a873cfa24d6db1f20ad2fca81634469bfb2"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "01cbb6b8ec34c2e57a69850f1b81b58bfeed8e41b68030c9a4288f3da8cea160"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "904629d21c6a21a7267ac2c157b2f692c7aa6ff879aa6ea11a7defc4598166c6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "cb16968680295f094dfd01402da66e062678f2ec024ac68937fd3e1295d3edca"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "549622c0496a30348e16fb96ec71383a9704d16aff655591769a63fd31168494"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "87eda0f3982a9ca971bc9f4450b22cc8092d609460304552a1a8bbcecfaf6812"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "777697e9c0aa2f5d4677c067a67640cd3f50aff33ebc8df8d06ec025ec6cb57b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "82486f0598ecb7c81fcc4cc37c840218176abe5b2f445866909b4a6a2e13d2a0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2ad039a5c5f79119b0807b7a03a94f2bda6fe2dfc986c51b21a3098094ec7c0f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6d642f0c57cd319d7a932f714248e0f7438dabdc5139facd2835cec42c2d824a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8815493db48df3bdcb93615254afb7ec6b91547e80e3d0aa111b6d4f7ed89127"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "aa0f5e98f48101d8e61da8f17a7b44937ebf4b9de85daf088e7f867ad414e742"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c780ff9a2a937e0aae6ea5266beba14955f901d15c7f592eaa532651749289c3"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "82616414da6e58079d6b95e1c94c001a2d7db8c2b83161ff818ce3799aaba038"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "a53ed734b1002f69652e4c791fd39e146c1519945f5c1d94bb36788e3336d0b4"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "1c2fca4401144f48ba8fcad4c02ac562bd823850e5af0e98945ae39905fdc53d"
+      },
+      {
+        "action": {
+          "type": "PREPARE"
+        },
+        "hash": "bba7c562e3fe8ef49303c5b0d7037c665d82cbd0bb34fa461c83ab2aee37040c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "cbb8335c40648568524984bd8f2abfbc0cc709fcb081945a77d3b8174f2145f3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4f4c53a47ba732954f77a677f46d25b1f1911d62dc2ac84544230f9f4d5b91dd"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bb3ef6262ccc2269fdddcf27e0c9ef897b5f1890a86270119b984b227be03cda"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "951c77eb6f73fa2817ab2e8b74a25eeab6cfb46bf24163eeb568f99fdac3fff0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d66cbe15a762c6530b630b077ad31031b4573e54074833de258f8a76eacf643f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "12f194ebfd8350acb1d2cae122d54260bc3adaf83b219f59752e13038733c0a8"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "00a8b06bb368bb9d66921b0599de9b5862119efd3fcbd0d658542abb5864dbb0"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "a62985d7ab0b15d475114a9bf321edfd20bd8af2d82f88b27ccb868419624ec7"
+      },
+      {
+        "action": {
+          "type": "PREPARE"
+        },
+        "hash": "dfb93c6459704f2bb07ca45b3ed3b35ff0885269938bffe04181424f3c54efd9"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "5f0a333ee79b8235fce045bde28ffe8a63d44679927c12586ed614bac89bc1d1"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "135f355b5dca9bca443fd336b488484a36cf96199b1b3b8282c5978bc9e36c90"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "f2245b626cc823d938d8d2369518cdb33ba987c2c42e8d93db61f5b67c73a724"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "2060a6f34240013d636c4692311b0f86d9fd6d2011c7204ad6eef2753138f950"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "6dc833f9fdc69067c233be2f7dd957eac8b6877e30f9d9c249e636ce47700939"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "e99f241adb1dc32c6180ca92dc3367a1fac29c5dfc4c222c8a7795267b20a56e"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "f668b4d02be3d0e64cc05b05ad0e9a8c851fac755665fd79651dcfd69ddf11c0"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "8827ad197750734239623ab1a350f1270afd7c93db3d1ca56d4a169ec3366226"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "1788cb4a157e7701cb217cbc998a37566e15e7a119cfdeb9e32b15b7f062d7cc"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "806fd904c6b4174b126fc0abfa1e270d43cdfd547a8f77cc4f128e1a1bc5b5d4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "3d5fb0566ca82c2e6d778eb2058bf3e254c3ade1f21a3d095d1349251b3d73c2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2e00e353a32e926e0b85b97fa191d85476adf2a39311dc2a7a943eb2b4955a56"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bb6355666e338e7474238cb7c8f03e56483952b0efcc417c42b2e26dbf866ca2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "2e9355f40107489ab11b02f563679cc925f07ba334a1efe7d46f46546af05358"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "3282b8d004bdc003d5f89876091bf4b1aacfdc52d8de793570967c80dca82ede"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "8193b156b535563b129fc3b698f4bd6e32d9399a5c876933fca782be1c500c4f"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "03952965c0b05baf961aa03c1d7f9f0f733733a174c42afce93ed791dd4ecce5"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "09de925c12a1108afde30df784239c5215458cdea9bea2c7d0023c60fe9cfa6a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "ec0223aabe828730ba27d6bcb8cd2c80ea1f409221d047b749ea19e6da415ee0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "cb26383410f4e9925d43eb59c7e0337d506e86cb5cee882c20894102114a95ca"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "44cb90524c493439d1ac7cda96d92a7cc15195a7e9ebb9db3144a2add2657ffe"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "73d583f3d06463bf79e7dcbf9e8bacfd9fb4eb6dd58bd6c34e08c7f7b6e28c6a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "cb685abd401e7eb177486bdc110e2e366179e4b5f028c53794c492cdd4ed17b1"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "50b28f7c683c8bbc773ab1f2507283ea4e5b07f1de4415d979a67bb2266c2501"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "155a715becf5fae00890a27f24fcba8d2b9a7d13da66f76fc2d9b9c7068faaee"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "872e5beaacb8de133293c00bdc8b804aa68438296d298a90b07f14dcc8da711f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "cad3a9913b1a0f1626e723e28ac71e08b09950b777c8696a3ae487dd36551532"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "b0d88e52c7e617ee7f85809f03232e9b7e6ab6da3f20c80b2d38686791111c53"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "f872d4d9d284593c3fd466ade18cba75193ed76a1a962dbb61b0e801d49da559"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b6a1cd86e2ae4216e209ca536eb60f24fb3601dc12f4adf02f18692570908678"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "24b4e6f032540205efee66159c97676bfa05ee6f7949556206dcffd4f23b0f73"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "b4f088c746b7bdb2785280ed9a3fdd1ac6dc988a37376209162c13ccc37097b4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "65e3f79b1e1b08038f91620b42397e038575d25eb7f56aa216dca353f1a57a04"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e9605b1d73552507ebfd8ee76b4dfd0e19ec841dd2c794dab77e6b0321613885"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7d733a0e45fbf32587c3a020c35ff45ed116c585f62bbc56ccd7599b0f3c07f8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e697f25a9a2633a571b418bff751ecf852b7e0ac0fb29cb49d85d869c7b32e24"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "6b6d35d80f110c45897789f0c08c3843c17cae10c10024a406e0487be938d422"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "970eba449008b6278d2bc5c7014ef8fe24159ac4e6f9356a430d6918cb8bce41"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "bb51e2906c5a8972315909e044312c9a38c9c614f03ec78b74af1f5e22e89189"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "4d4c597c4fddcba6fcb36c955776cf5c936d8641e18d256f3e460dae4ee7ef1c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "79aa243594fdf81e165d8748b41c39fc21d93218471ef823f31d432e9b9e9b40"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "88ec7691a28e967421018d6fb0f1d530657dcd861ff9f0bd1e494692f8996a8d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "616c22b4a38cb7a3f0b024f5cdc5ec7f40b308c720a0dd5ae826a015236cf621"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 4"
+        },
+        "hash": "31c7cdebef917139a4e76ed0af8752d77c20aa871000f60220ae25f9223b2074"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "85e3eb417347221b65758fb2c62dcb4b4169b17476a554971c194c2a9ad2ba04"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8a618d3f9d63bd6b09d33f5bf64517b85cbcffe6071aade7c054d35726d55c7d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "cbbb50c79b286c5496ae53404c7d83b2b51e415b7cb72d7eb192a7913e47bede"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f101058ba932a57c18849f817a0c82e035b30bd7c18f8a00c6f0b56d66f064a2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "980140b81b88ee8ffc9941a10c826f70f7c35efda986df9b196d7bbf5f620f90"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c0d86f7926635b7ce477280ba9cb9f83ed037edc116439950ae41c1c609873d7"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "658ab0db0643506b17fe457f489b35900373b8ed74bff87975e09c62a311b02e"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "3a20fa5251fd8abb147930d64d659e62b4942cd0145e506c94bab4acc4f34d8f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "85288761f5e3941e5e8b81d0ef2631b633fa80cb2dfeab6a63adb3afce25f0a1"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "f1088f9b5465688db59dbccc529c53e2449def8537469fb5cd02236b0a515c35"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "b1ec709bcc295ed71dd0ae880432a4de0feed933a423ea519042622b9b5858ad"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "d00b6e9828b16a1b193b0ffeb9d98c0803b0bc65da0757acfaba907f25b9c984"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8869f24093eadc77e756c33746497a541291a47c3e322c95897f020783e8cab0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a600bdd9eb5cb01a0dd2dd71cb0d82c88f6476280d8e26e68b8749d8f3929277"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9096e497a71e6fa04e70b1ce35ce351e640c9a18fbcc06b2c876f1279e5d746c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8d9006624f0ca5f04d5f89dbb3cad2a286dadf2fae4c5e634c18a7bd8a726ab6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "3c21e470cd6afdb1c85226adb0acb3d242ad3567712ff2b3cd86445a13ed2e23"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "21b668050cade17021e6390f8c1a73ce9391099bc0c93c42796df725544f78df"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "7ddffa3f6bdf5343d09dd123101f11a6468a0e2e4e0815c9090851fe9e1087bc"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "510376f63301bcc94102841d6faa7a47c58f9445d3aba96e4df9fc326a1488ce"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "2d69e4d7c5c5a1927382d1bd0d46815e02b4af30aa37f6fd595a4822b2ea4019"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "03cb205090c0b0d32345d36c4a95f9a79bf2382bf26c1727d7d196da20d588a4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "66ced5be2a8d7a07f1fa6febfbe4b5dad3fe20f681dc3623757a81f5462302fd"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "ae92579acc34b0dc88510be84609b1af5f1f508793cc6b411e6d5df92d234ea8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "154e1c8f11806de614825eed99ead41a2c19bc1702385569899c9281a191bd93"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "1aaabf17e7ea960c3e7bf22dc36083776ccb4f231b520d0b0a24431b2fc78f18"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "6753f31ce200c5793e05c4c3e0b6fbbde073bab44e35ae80b19ed83b38c2cffa"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "db44bd221718767ad518ab3aab99ab30e2fa20fb869ea9bf6cad0e3ed321aa8e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c129c3b74d2d5a77134ee73b265d2cf1664d1580650738120253ffde6b5569f7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "11dc57789a8c6d7754ae184af51788067ea97327b8a9d0c7f70aea76e737c3b0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6d5f8bc888112f93fc381015245b739dfc16ad77ae7e8c2c0d067521e7d41a64"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "88ff628b2bf2b22923e164fcd9c97389a4118ed1d99612cd7074ce48d5eaf83a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "fa8427d473de94525e42647a1f8a9ad162e1214a9686b3e124edd295ba5afea8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b71a247a97a1028568d21841def88ed27670b4066dcb725ab3e983d133def247"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6fe09fc08c750815e08d98c8f86b36ed0a7433f46c40d4f4ab25c25f7856174f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d599e1b2fda4af48f120493ee940182441c5a60064dd0425b8f02408c2f63488"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "5de64fd1b28d2b51fada7e1601c3ee1e6d8b68898776775ab8b1df5360c48616"
+      }
+    ]
+  },
+  {
+    "seed": 402,
+    "steps": [
+      {
+        "action": {
+          "type": "NEW",
+          "name": "Regressão",
+          "seed": 402
+        },
+        "hash": "1a1ca6e1e6009332db6512d2c97a4acdd398710ee7f5a28db2afa194a5f5f5ba"
+      },
+      {
+        "action": {
+          "type": "ORIGIN",
+          "id": "pallet"
+        },
+        "hash": "9f4efbe933c31e840494d84b90a3728554b74f8e58bfc426e26f6208761ce46c"
+      },
+      {
+        "action": {
+          "type": "STARTER",
+          "name": "Bulbasaur"
+        },
+        "hash": "2e6a45c377c850cddf0f4ad58c338b2955b91c05b7eab3e1a9b7f6370b97ea72"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "sandgem"
+        },
+        "hash": "d646e9da5f5cd41ade5372fdc3015b16c4a8bfa73448d678e479c4a0ba391569"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "dewford"
+        },
+        "hash": "b516b42a07fd054f1ba59112f5f59fabcbac47c27acacb13b3e441ebaf824b55"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "pewter"
+        },
+        "hash": "3df6f269400465e940a830f799de5fe7375adf6620488465b6d8326859e1c860"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "nimbasa"
+        },
+        "hash": "e41173172c6511f3078aad09afa5ecf3b39c30a896e590aedce61c45cdd648d8"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "driftveil"
+        },
+        "hash": "d705df67f31ba9e01148fe38ab79419ad1e8f8d7a57e51822c3887edee795c80"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "cerulean"
+        },
+        "hash": "75119fc9ae72a88f62ce0d49853d4ebf50e0b425a4801dc17604b31d943a1bff"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "ecruteak"
+        },
+        "hash": "2eba9409066f4ef36a1eab74ac1d76038f11d616f5a38fc739aab2414e6157e6"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "sunyshore"
+        },
+        "hash": "aa33bf078473075c2e893a72fe37ce77c9134fcf5c5490d7ee18d8e3ef0ec602"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "oreburgh"
+        },
+        "hash": "8b9612f9e851c1bc3744f21ba0a9ea4b88c97e170bca305693612b21f14b2a3c"
+      },
+      {
+        "action": {
+          "type": "BEGIN"
+        },
+        "hash": "836679d0c32908696c9ab7fe3c0ada88aead48d7aaafa2212b16c4232e94aa35"
+      },
+      {
+        "action": {
+          "type": "EXPLORE"
+        },
+        "hash": "1ab6d012f0109c9180aa27dc126f86d957a0133ff3c9ecc009d759cf07652e2e"
+      },
+      {
+        "action": {
+          "type": "CAPTURE",
+          "index": 0
+        },
+        "hash": "160058d13c6cd729d3ab35e4ed3db1df7dd853336ca4553995a566f64c11e915"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "68ecc60d45ed7147df6ea3ff1b1b3576f6336b589f462ce428dca6875154f768"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "af2d9a964c2b6b138ccd4db22aaf138a19ac958f86615b0849ef1c027adf249b"
+      },
+      {
+        "action": {
+          "type": "EXPLORE"
+        },
+        "hash": "022bc4e1b3b516b6b4a453eec9e721da6fe33ea05c2f8349e5d79e8bbf234a8d"
+      },
+      {
+        "action": {
+          "type": "CAPTURE",
+          "index": 0
+        },
+        "hash": "7a988c502b19db3135e36290a5eeb2cace02883b59b5f83349995cd7ad3adbff"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "d7f4b589f25bb23493fb0e3eccd4aa8ce094a2551c08fbcb8081725ea3bb0e68"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "970ee99b7300ece7a423364111fd89b674ba6ffcf0ef574ca38adc48e22576ed"
+      },
+      {
+        "action": {
+          "type": "PREPARE"
+        },
+        "hash": "eff24f23ad6e11cb7fb349b0cac4d51e515832b692b5c64fc9eb32c3d790e386"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "232c79a0be208e0c6d2ca843025bbb3e3d78dc210816be7c751c9163d0cc687f"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "5141663240fc08c11fcf9c5541a5d7a2d62ce26f44eae58f3ad774b88f7956ad"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2c441d6278a75b1b84376e496cf8d844f8dc47e93a0b5c441b2422cea9ad6efd"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f9859ebdd3057d3420f02864fd8a5ea2de6d6888013fde00fdfd328cded8cb27"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2ce6848c7ed6816ad5e716b97b333ce25f359f6f9805f5691997088db1f93f0e"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "d47b1f0f31fb4d689349a82041d41b820e589a1cdffd3a716610b42b793cfa03"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "1af945c13351382d2bd26314a948be32c1020e0a2dda1d1b0c5940e2c1e3074c"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "741460aa25e4fa970e5807ffa9645cb8ba98ec8f8ef95a37c9b817ca66656d61"
+      },
+      {
+        "action": {
+          "type": "PREPARE"
+        },
+        "hash": "5efbd8ca0bf2e3b0c0fd562ec2b272f02cc6895407bc4245e673b5fcbc14f31d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "472b7b38c38332e286f6c78d96fcfe9ad0f05ef61308f0a6c2e5aa64c44a1e97"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f76de4504baf028f84dc774d2a662dc05bee3a3a457df0723524f508b8a4c1c8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2da8ddea6ec986d9f725e891618af6079b85af61f67e7a7c8a10104a0ca81046"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "5b9311988d82a676f749e91f30a3376ad501bc2f610890a30d298ae3d21a94b8"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "27d088fc3cd939853611745ada768e1eea1dc24d8cb1f13ca0d6c18f1c4d08e3"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "6d84594ddae7b52068d0e9121a6d58fd66ff2dfa62cc3712c323e9ca0fdb0790"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "5a87934ba8e887b518c896bd1168ecc7208855eb86d518cb57a50c8ba59d1215"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "059d4a7b5fffe1be5eb5bea0034f04c7801a71c0e9ab2f2a745582ff7112a91a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "35d3b7f7730e430b20220e77f450708820b3968226500ac12fd1cdd89eb9f3ee"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "a92bbaa67cbee2d3aa82fbeb86a2520afaf2fdcd73c2c87b024ebe5eb75c7db6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7a3703186499dfb7dfc382aaf7e079d13f5e8ab27ef5e03198cb3e62d6e6bf8f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2c87fc8d6a524ac66250d63025e2e63d4832075dea66dbfd23139e8eba301d14"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "0bf366b25e3f38747132fd588242d737104f502ffb7384dc9ec348e62d919ea3"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "fd27cb7b555e840ed6c6da045165b12bd1a291c1d3f280b71a1a27dce36885df"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "4cb8616c489590cbf29773f985eae3bc3f6a9596dafdd6cae7d3e57931424ca7"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "8b2e383d858d66fa3525f5468e1928936ccfbccc0eee770d2a37413e4b6186c2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b75ce3b4ce474f5587a8055e9141afbb5037589e35d0e7b7fbb3777eea6e82ad"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7a4cd1e683779edb3f9c3a5bb733ad46ae720a0d32fe8ed435142c6ad1668fa3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7f7513d43684b3148a62a38ce8f7d1b55298f545446765d07f35fca01e0060ee"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9664e8db5e85d7e5c74c054424c02186644fbf08e3c3d36f0e903105275c860b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "291daebcc746d482c22157076f0826dc2649d7bb44904168551949247daa770a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b56e83fe08c19434029aef4f9326ecfdf48740dd403df6d7ab323871a8f5bb4f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "dd57fbb2834cf7d5b51b8c72577d46407c4c60b04fffd3145624fc57a06a515c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "91ff9c32ca4dee2685832d29bc8e00ce58f5a0794d84da7b49add76ac381c734"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "48c3154a8169b98d26d05ea4c1f62a02f38530484c6b1831ea18244f8c19e651"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c48bf54db94775f7da3f316f0c458ed4a3a644e21918de32759d1844021c8443"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2681a89856a89de3cc64d80054f293f7da00f082dccebdfb31bd2bd6de5c7844"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8de4dd7d63610ff5834243bef5d209a15a6bf4faf6943d3954f20f5d146a8fb0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4078cd28989161800c3b529c35a0c1a0684e1c93d8a2cf452de959a6a6822bd0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f31ab2e57651732d8a1c0d3892f9b810b796e57c23fd1c38058e957ae16612b6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "97c716271fe4303cea7440a879ad7b50fc01af7c2f594bbe9471358f7799db89"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f2c9240ee71fc99494bbc910312cad75e6bc86e6f59ae857cba1034bc6b5dfea"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "2d12dd5f3a2024babc5c37857b64bc7b305820f24479f58b0e43e2b59c85af27"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "30408c680c1ad8550620a7b16a6c5dcfd5d376d17287fc1d7dd284831b7ce60b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7adfe3385277cf8e9a5fa56f431bd7d656648fdc18fe3ff1dea456c276749b78"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8890b7bfffb690c1456d8aad735698b7152ce5945a13aee574727648b57fdcc9"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "152f8a99201fccce60f65fa207cdd99637f88381d52277ef6a5c9dffa67ab35f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "eb6b88f2aff17403fae41912ef5324201a019ea5d4851bb66c7cd68a159be9c8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "76773183250acfca25c43838e0dee0f3deb80512a4d694031ad7fa8b2a0e6bd6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f0d95a48d72e83605390a8460c1c46d1db85389d720f62ed1a378b9400d5cbd3"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "8c34807a092e54caf4c13feb967f35bf56b9e862a291dcf0f964ed33fb52ea63"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "4bfabf4fc2efc6c2484e798ce517a05ba2c3cc9c5c05ad998485a92228346df3"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "a64cd7960b1d29fdb7ede95e501c19f8ccf68f7a5037b24503c5c6a4124c173d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "260d08d722f6a48471436bfb88d4b56fd79a8ced6914ae6c14b6e0a78c25d916"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6cc6ed842940c8f588423f0720cf81f0942a10109c9fb14626f57fb83252b928"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "31008dcb20afe209b5ce1d67d112ccf866ee0bf6b46567ff5423609242e47b9b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2b86ccc2ee4322377d9b9a4654c5d2030c567e564cac339b52b88c6b39798f70"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "39be7f55a93f65d750a0dc4cae4e4675925d6bc3c98683b7cdacd352fb65398f"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "8991745ff7fbca570ffcc541b8e14cc62850cf05749440bded3eb49fabcb09d5"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "6003ce1dfd98a65f187b3d5735c4d94a79e33be27af1cfb4205efb2f3bc7d92c"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "56b3c2ff33f025f24ea6a7e8e9a411053578ffc55aba70e3823d6067b1eed0a4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "02ecd9498943d50ab753dfe0e179df1f9348e1566183422a8b755a55962cafff"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "88b5c163bd8439d223b4f8dc7bd736f630d587d951df864ec7c23c818e040dce"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9354cff05d0f7eddf92619bfb09c30c865f71b182eea59cb3b575c1a8a0ccc9b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2390dc358719d33cc8863f930a9abd51aab8f28f6370ce2daf04a60e462af031"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3f3b2cdc0fcfded1c1fb2566c2d48c3995edd694dd96febda4a4f8fc43adfd28"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e7de7d7b17cc7fe0805daa377e453afafd5b644895947c9455b201dae7279f76"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "fd6ffd6140a15eb8f8d1998aae673116f59dc66e98e254c8ebc62bdbe88714e0"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "a8556df30e50d2d0fcd4b43ac769199cf414c2f4672e2a6318cc22c4d5d540e7"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "c6977f4c8c1f189d0eca20511a7e6ee3736824c1393336559ffeea655290b68b"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "61cf755cc1dd616ff6ec35bec80cf012b16261817f0a5dafc4a6b7641cb31311"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "967655751c767d4d09b98f94ff1eafae5fe789a6c0873a09c505a0d29678dd8b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8a580a73b54246900e7620c65f099f5e6890b5463e5588041df37a351c1ae50a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6895715a7de1584abf6dc878be13ef3ea7f66422c40ac34288e0e9befa85b5d4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6fb18f3a7748fb01266b053517ce75e25c338c7a056fd40e1712e27010042ded"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c34da3344663032750fb9097381cdd6a20693acbb75178003736d40e2c21a623"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4a30d3f2e07e2ed9c8c5b881f8497bb25ad1fd21690dfb63932104e5a0efca79"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3cdc2fa29e53ab922dd7068d6f0e8893d4128d0f406527ad29dfb8ee1499398d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6c9f15d3d7baf7278404ce5c37c568d100844c11d8309c2355f9f368ca246cc2"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "73a1853c2f1ab430d652a624f4a9dc1486a7c96b24d82aa9197140d5c5e902e9"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "1c17d24638727d5e9ac5d1a0cd38ac8cef7ed621106205b9d6ae179411d04ea3"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "86e01c67fed1bb4af81144d41494a2ca7ef4c856f4e05f8d9d447a7b59a56290"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "4ff8d61686e53f75ef2fd2a77e52593c49d8e0666dc43e767b49d3236aac2a10"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3f9605dec50c8da5beef315176016316c86e48c22bc2a66e766460dc24d75b48"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "cd39513b9610d0f49751fe34a0c937d717b9339e3bcaec1048e125cfcf8f8c6b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "0005453b01487e3446f0214e59ac390556e4863e9dc60c743a076e45ab714ad5"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "55a04ebebbb24973438940bb4d4844768f2f932cb86e7ccfcd94046a8b985f68"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "f846953f260b19ffbebdc0fc240692d3d352edd91cabbc75330a4883f0d291a0"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "e2958b09ba5fe19fff61a2f074ff26bf5be3a62ac5707d966610672746be0257"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e7929abecc37a44523d2c15f9af4bb970e0db19f1cbce89780788406820ebab9"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3260ac8f02117a656dd3b1772f7d3b459d8ddaadadb6a3bd569f359e1b7b534e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "fcfbee7bedfe7ed5ad5683699cc27c764645a73676e819d5c5332edfc0d5acdb"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8817fe722447ea9063b8fb480fa71d03ec8c442b2b480548de45a7eb17cbf21b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "55748089d19fb4c84d371474f02e31ea4190c3a754669a303dcb1032b21c7955"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "88f95fc50c644f2d1d8f1febc46124cddbbb6b248c277b62f7bcec255cc9bc3a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "122e6398d4a42282ea0d61fde73b563ebb566e3b2d599242ec80edf0dd6178af"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "46c5943a4fecd29f6fd7f208b9b99b1499eaa71cb8c20dde9549c60948af653f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "fbdfca426f0c246f8651d6750043e99d678911fc27ceb372aa6bfc7794f31242"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "865a909c1658cc8730f6c2abe27c3404e7738fdfdd46776dc8c87a00e269a018"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "0cd5d5e28ea18e72581ede79174bc5bb65f719d95c09f3735894a8c179572a3a"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "c3f7124748fc96432715d56cdf6572863341f3f51331774cadbce8d9b9e343fd"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6157761ab31109beb1145ba79caf76d8bbde4dd79c23820c5ff2cd75ca63d0ce"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "612a356de53e8e1e5196870ecc005699a79b78952460bfaf1bcf962661d21006"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7cf629eab33b510af870710c95a297bfd04a147bddffc1e5e3fad462ccba5a67"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "71505a9371f26ff6952d673082ab32c900daaf9f3f7b611a179f3766aa9b7241"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "238095255c237701bed55302dbc23947e715d44e987ab25ef5a0d9da4bb67b3a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "65de7dbde4d526c8e2207daf5cf971d405de7747e48be4d31d38b3099ae45d05"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2a91802cf63fd1d136d6399bc1239f797bac63870526dc6f4dc3052d63a313eb"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "1584c8e3334942b3207bdf25d34847821fefab0b126de59a87af28c0e27a7793"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "371c37bac0def06d6a70c6ff55ccd6043beb466e421e51034c61ad68cc4f6926"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b8a54a03adbb0c42042c8ccdb030ac837b1b46f34fe4b9e4df73d65dbf8a63a9"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2811b22dcf38139a418d9cd44cfecc3c730afb4d48963ecb43492f45b2882323"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bb6d0dd9b48bdf1684b98b8b963cda67bd4ee2141844b95582db36295a470a0d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f81bb76595b910d3cff06d03359b6528bba84939e6f6f5640ffd7f354bb4fce0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c111c05eb677d32e5e4826527183958040ebae78069463d293c70d37896b094d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "027764a9a04c770ab00c870f15945aa5f588183c57628d64389f8b58dbe9d6c2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "af085cc9319179c9439df636037dade9ace71db63a45f49695fcff330a01ba8b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "d4d089e55d2d5723e3fca00a06f77950181554808e7b2c08217b7617ade99740"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "10c841b6167a5760e45cbfeda01c698e312bcd27cd58fdb5b1a67dc662b5de2e"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "f50e1c26accc41a4bfde288ca7a4a384615372ffd234cc699865c32720dd354d"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "70b77aa147686a6ba8638b1102c5c227193853ae670442decb43c16e05a3f99f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "c697c1c29049ded7ed9434ec8f53fce863ccf6eb15b991c7649a20b057fdc754"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "1d44b44d97e0b458a6e518e5845586cfd5293a64a466fb3a406e7558732aac67"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "aa1b3b31406ec5eb59b11d0f60488139590bcc51e137e7c23a2a353ee22fbc2c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "deadd8c082f1b5f0f23ee64f7dcdf5101d8b200149b846f0f90a581c47da35b4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "0ce81b86d10fd7d44fe89ed91e215d284836fc0862c55e14681751647c1af898"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d4de6ab597affbe5a7e72a3ea0682ac550adb1545dc2eee3ce8a0efcafed05d7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b8779464d2e2e066467fe9f5d243474d8990eaf76d339290b725ce2b3d400857"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "2eb408ce13ef2fa88f85fcbad8fdf2a774118c057b4ea4f1f2410f53373dd96b"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "9d75c2f0844ad31549920a9fd5a2fd68173873a4a8239146387b845342dc8c87"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "3d07899822431a0a940340b4892c68d7c7d81c122ddaea20b479b588fb980369"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "c9cb373c08913a8992b45e71a73bb23e669ced9bd5c4ee928c52e4ef94d56044"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b56f0ef73b94cf73ab8b0f654fbb6716f7f9bacac9238567e1c9af6f4ae88dad"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "18ff33e9667e4267040bf0750ab22265b73607eadc724208089afbec2efc1483"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "cba597a5ba5b2885287c1e860224902428055e852e1e27d51c8224c902a14b8b"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "df366c8e66c8f5f71c475d5abc89cee050352ba5390bb43d79f2e82685e5ba3f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "feebf1913980e573fc37601054c837eddf5c79027eb680e8cb8ac176db147948"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4f47a10b03b06fcf5ecab3649de5bb7bef3e5a2756775a6769ec6ebbdb2a6153"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "60430b5892742e420d743e6d93f3747615565f5ba048c8c4b77ebea1d9e17cfd"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4976c9293893a24cf5eea75f96ef4b1485a619704382f1953f70d15bf24dead8"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "b33666104838572156eb5faa56d6d2d86710b2129ade53432803973ab769aa3d"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "984be26e94183c09243b8800cae504be9f940eb2e2dcff8c958883dcdf6374f4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "79636d9cd2c296467231f6beb8a03334f180d461fc46f23a076ae8489e84dc87"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "11a20e236bc1333a022d3e33d6174c882bcc14db080812fe4212dd97d4dc9876"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "3278f3e1b5fda6ffd5fc1c101d024f6aef361134c6066a65ca1366f6d8656d14"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "b6a01205b924d9a5966d9e250477c344314afc3445fee39e6b29226b2841d6bf"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "ac1f81de9ecb7fd58c8e4b0ec42d3d8e452083f6332035f0950d1ad601c81649"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8aa703c8103e63f5735c2db1d813dfba965a57c3b4ae1ea01bed7ac8d58f4868"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6dd444876814957a03ae5d854948115a9baf74cfa536a120f7763347e8a5b27f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "8655884bd6ec2054744d352221276b5445d418e5062aa9ad69d39088dc31e6f8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4a720fdb05047400ba1cb800006ee745ecc75992abe4ecaad1724be82fb81214"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d9410d5896d54c6e69dcafc27dea13d86f0f7e9926d1c07f032267d1fb5a3489"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "cabda365fc12c1bd78995e4700722ffc1a5f623d9cffbc45808c270de5fbd6fe"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c74dcfe6cd590903f33b8eb36f8e664cce5bea504b5950969279bbaaf8fbb019"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "cf6728364eb06184104ad563900f44da0539a1da1d76d25c6bc35844bb02a328"
+      }
+    ]
+  },
+  {
+    "seed": 510,
+    "steps": [
+      {
+        "action": {
+          "type": "NEW",
+          "name": "Regressão",
+          "seed": 510
+        },
+        "hash": "6413f3a3c472ab7ebfbe9b03d780bf046292135bf9aae175aefdf5e5ba94251a"
+      },
+      {
+        "action": {
+          "type": "ORIGIN",
+          "id": "pallet"
+        },
+        "hash": "76ce1bd4c42601c42aec9ae21e8661aac6e69ed3d4809a149bf0f09390aadecd"
+      },
+      {
+        "action": {
+          "type": "STARTER",
+          "name": "Bulbasaur"
+        },
+        "hash": "7007845b6764bb64a9bea1919989c8a94dc08ad3d1712032a5b9e68cf212aa82"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "sandgem"
+        },
+        "hash": "0b6e381a17fc5c09750fa205d1c83420e91aeadb1cce1dc7879c56433719b8a0"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "violet"
+        },
+        "hash": "aba1aa86604c4f201cea17138536f52327b01c92f2a3235d891b3745943a464a"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "dewford"
+        },
+        "hash": "7afae805d5a3a8db0e52598789d41448fd756480ac3d7c51e9521ffcfc9717fa"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "lavaridge"
+        },
+        "hash": "f82179064213e98903c2c17bd5c2b4da520e571f93d72c2834d8a1ed6e507bc8"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "hearthome"
+        },
+        "hash": "a17b978c9d62ef23e576e57688f112c313839177e86b81d900d982f4a4e6adfc"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "turffield"
+        },
+        "hash": "2b90a7a8af15a820499f03445819feec00eb65da82d5afec6f4802a186fb7c13"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "fuchsia"
+        },
+        "hash": "6b86ad32446293dff9371da327c725990f00dffd8e6c00ac3c69775a1a3b9f98"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "blackthorn"
+        },
+        "hash": "1c2d027921c2ec1f528e815cafea80dd13d7f5c42188a414fcaadbf593f59edb"
+      },
+      {
+        "action": {
+          "type": "DRAFT",
+          "id": "pastoria"
+        },
+        "hash": "abf170fdc4454b425654c7713f207026cc038a0b1992ab5fb0233ac37c4472aa"
+      },
+      {
+        "action": {
+          "type": "BEGIN"
+        },
+        "hash": "48cded5bcf3bdd33037a8672afb641ca7ddc4d9c64f1292cd4a050ede790be64"
+      },
+      {
+        "action": {
+          "type": "EXPLORE"
+        },
+        "hash": "c3cb59c8e90af5555318cde8e31d0b10d2c42b6f1499b1ecc013423c30ed4db4"
+      },
+      {
+        "action": {
+          "type": "CAPTURE",
+          "index": 0
+        },
+        "hash": "2b78b903345b98cd313b7b1babc08fa0612a369d45a535e5f20020eb5099d0ef"
+      },
+      {
+        "action": {
+          "type": "EXPLORE"
+        },
+        "hash": "9741bf8773822e3e9ad3aaace0cb24820a7f1322c523ca2e00958eeab931841b"
+      },
+      {
+        "action": {
+          "type": "CAPTURE",
+          "index": 1
+        },
+        "hash": "518227d25746dc368b737c55d9dedaab4d3a94ceb21abc616357ac74466d8faa"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "89e3c6e02d60b8359a4af003da37a5460cc9d395c3cddd0ae3918252dca6177a"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "070eeacf74ce68149f23b26cfb9f8198ccda0ee81231919ad3574c03f9bcbdad"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "6e839da7b72cba17e7e4dfd35ac297ea36e01ad19dbdfa6a35787e89408ba7ce"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "290253c9574c2f7e9310e0f2e3b831ef1c362797c78548f9a8c8bc9a60eaf5f8"
+      },
+      {
+        "action": {
+          "type": "PREPARE"
+        },
+        "hash": "74e7682721728527616e19e7b6ecfcea6de077755af256d36552e169d614bd39"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "9f822eaefb0bdbeab6f4a9342080210cf0630016a1a4e98a13c2c509c3601f8d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b859ebfcb0a8025664200f35fa5373270d5ee67a0878a343850c00fe82ad8033"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "cc184c27c6b8a7fd2b011e33581f5fbf295c3b0c3651b5aa0f5d99faabf5d6c4"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "a02355f5da7fa35be51dfef827190aa6332bf769e526233712730b933305ef0c"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "4e41becdae204d755bf64f81f812a62ec8606e67e26394ae45c78361a1c4d7d9"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c25bf69a442f13e81b2a63d9dcfacaf5c3875b9417791c92a496f260af83f95f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4381559301e944f62db99df890df63e3849c3f705ecea6d09924d87aacdd2231"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "8d6691f22b5d6fbc78d83906128f77428acb86aee9e6372d71f736c5617b9ff0"
+      },
+      {
+        "action": {
+          "type": "PREPARE"
+        },
+        "hash": "51119193fa87bf641c3d81cd5a05cf4223c5f4923b542eeebe77c3a15e79b8f7"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "ecaebe6ec5a2969a67e342d87848bb5a50d9a87a46974a9eb85dfa97c369274a"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "c69ff65047f23a3bc8582f4dd05aa2fca94c2aca5503c6f14ff9da17a35aadd3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "977dfd0296c21669c61d03c94eaf0ea2a5dd73f7e02931242d5517999f9b3c71"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b454b0ba822bace79d757bf720780d92ce36640a2d391daf37a3aecec22f17f7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "515e8dd132ceaaf9659e18dca0b628539e00d287c65a8536bc89afbf4b736c51"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "86f74f2e964d368f6383740d30e6fb30ff620822b29956a1d8f0d96482278c99"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "31368fe155d69a763624d6e764990fe7157cb2265e92a0659b21c31326aa14a2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e3c7f94276c33389bc22ff6bd8fca11574d891f568fd54a54f446cecc1770f9c"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "2ef2795456cb8681199fb8d0fcfd38e62433df594b67851f692bd05e54b0ef9e"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "9a7f762b2236ec50ed7c2fc5daa74159020d003e6863e707ca7e6dfacd251fce"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "3d995e1adc6c8ee41bdc5f8f1f72d53fde751cc5dff7ce8d4371566b522888e4"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "b7c75fba49bd3b3016e16a4c2c77c80946f2b74373ce87145e122a4cde33ca69"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "18a55e82f303bef0c4e214aba82fbdce66f5fc9d0562805709de8da1c3c2de91"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4c3110418ab337afa0e9f89f5a39a4f26eabf780284c4761d95f1325bd455131"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "cf0f468ac7c34d707bd7189368cd7661be87a968135dc0fec4289dcde204827f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c26245c516280f1eeba617090b999cebf0f9c8e83f3143b1cf31cec519b489df"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "1da63c8bd7476c41cb31f63f49cea6635a39be1734c4adca2c36ef8695179e67"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "e822c6fe485bdb2e07646a0c103578c6293502041a349337a6e87adb34468ada"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "0ce475a05255933eee54b4daf0d09d928ea99c5301607eccde6f1b84e7139801"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "ff804108a1b58ab47344936d92456be30c9cdcc03f2bdd854552ae782147dad8"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "f41f885e92fd6cbd2ea4dcbbf9fc90ba29e58d69538d3d9007c87731e0b199f5"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "45e56727d093178df87b1d2c2e44042189d9589705f2787a9753796db0129989"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "5abb9fa1c2651e341e3c90668806fe27d5c4097dd119923427d090ec37eb88ff"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9461e07051fc407472ae14601d9e8163e5ae7e8a419b2d507ac272b68bf30255"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e7a6aa66635b22c197d928d5f2ebb7d00f00a153aabc808232b8e3b7ff527ddc"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "84c061249454a212dc3af3655634457742dda5306357a6a215a8b29da46db613"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "1194577661e50055ee92dd10be9314f7b051f769c8c7396368a9aeb906269094"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "ab3797611af25da4d3d184286eb9c058f369fa1209893b034bd9a34151b97930"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "837a2d1a07790b3d84db544bd838fd33a287284ec8b9b1bdefdf4be021c2328a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "4a112a089fe56005803770e4dcd7ac699d2b6eb4f1957d96ab4b78bf52e9c78e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bbbeeb5c6450bbac5932f55f5a775abbe0a3413f0acab6cbaaca73055fe2d93d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "161fcb8918d5756fa67e5a63d615808ec2f8b8d965d77daf8c011fe4681650f4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "70a8cf1dd55f0ec32c0178bd5f33b244c59eafcbef95a973a013b73959f16711"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "020f6552cc1c3b6cdcb7c9fb856e6c561c27dc6ee5b02dbc6bc8e088c80dae8e"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "ae73d92937c16946bd734420643cb08af988df487185ff84f77fcefba92ce16e"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "8d70841247d4e8aebe05ccf60346b80f3362ed05462877c3fa0c504d845fa55c"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "77a03e1e5a7a4152707e4f72cf785b23a49b3d208b121967793ce0a8f00ec555"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "c7f984d156b3efca23fedaaa618fd31c743b4f738f07176c68dafa3bfffbe1b6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "80513c1fd11e7d576000e09cc49a85166379762c8cd8938a150ba3eab672cfeb"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "09dba60d43bf758bf26fd8923e0796af2b8f2d4b865262d56a7512ccc3fd3874"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "1bac917c7b23851a5634e5fce4d68cab01430d5d8f055094b2eebea90e758737"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "3700becc16c9c9409239dde3e701fefe6f13946150fae5f10c14e6a16281477d"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "5b9039a8b74a908f26d9f418ec2e84111051b3d54c9fcbdb244cdcba898d7207"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "7936bb8441c14fbd0320bd8366ee922556064d4f76deed84d4ad9556e9be38da"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "178f145ce73a0a0abba18d11198c2e67179cb4d7cf1ba59de455b90b0c5afbc3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "6ed35cb65be194cdb0fcd324cff0d5c95fb6c12a713c61d0af8e9c1b39be877f"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "bf720345709ddb6f8d5b46725fd5b6e483f09f5048618c2627d5d109870515b5"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "0d88f23676accabe66a652314a7a5c10aa83d09b9820c3616969e7db6bedb238"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "df6d0ed9be75b193d8f482288e876bcdd4973df657f8e0a5e1b02c79df8324c6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b1d486ec4ecc651dd650fd228ff16bc714d5f5e9346871b49f1fa6568fe27435"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f148dd6c9ad43e29a2c74f7d56c7145bdb171f84a34b9a8235664d1da7d43028"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "da9e145e9ca0d13d4238b3e5f6ac2524192b03f289bfc0e5a1d5536521919c38"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "3f52c8a0934fc0f8fd3d3f891171735fd67217f6b10cf8aab35dfe934d292710"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "875e7fe07ee9fc2338c70168c1bde5ba56c315fbcc4b3806b3d4d882316b42c2"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "6fe48814d6afbbab9264f1aa87da6fce2223ae0c0e51672ad9ffe359cacda2b6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "8501db1bb5100a54ecd7af11c3b702d4cd049807a1c923b7d97ac6f278566d92"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "b94ba4f63fb35cef5c1fdc72b3dc77d0c4cf21afc0a370bafc14b39b6a6f48d6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8c7515a5703de16b9ae08c34d753993552638b6eb0b959df6b65e9e58286a998"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "03281fb4b23cba67242ef632123b1f9d56bb479d733388483ea08bd077cf9374"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "dd42c4930b4336601b8495034045195991c7408d525838ff2207e10389967144"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "c4be2a8339e82b2d7ff6a544b86f37f6175c36683ff4aa08b43957079ad8039f"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "5f5d3afd07d5c064fa90c39e3841b9fd82e4f5a1e7636970df2e09c89d82be7d"
+      },
+      {
+        "action": {
+          "type": "TRAIN"
+        },
+        "hash": "96d1ca33c04fe9e2fd82cdf347384dfe95ce854c590d38de6baffcc26162a43a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a5cf184e056895ec3fb380daeeefe66495853b1c1ceecc62ee6297ab0ca3c7b3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a33f5ee277f075dfec24bb877747c9f830da170a2fd28eea9e0dc0b0729fde01"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3112e463742b0f71b47884dee80c41a0ea32e048ce37d9796283373cd95b6aae"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a607deebe98926df2c56186662974d9a323e96eb2036efb940f5fc556c29b5ab"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "52d87022dc2033174553404f654c359c2b67c005fda1b1f562d4f8a22d453049"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "fb7e908515c9cf5c33158fe899c28c1f58d6f2afdf348dfd17839df3b93f0731"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "9f974f38fea18904d79f7020b30dafb4aa37d3afee5513e29416ac1fd73b5925"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "9a6b4f75168e01d919506073d73584e9b2e337bff0969df3f4105bdd2615086e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "381af3efa1b81038dacb1e56816e58fa24a1d839472b86bb4dddfa7f228986f0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "5347e0e179e6ecf0150c8ed0ee606e995acd41f6c8c93b0a6a892974ddd000f0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "b94fd1926be26a80f5dfd4c46f7353565573de09ba10d451864d05948878c1e8"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 4"
+        },
+        "hash": "1731f9353dc54de753ce3dd47766fb9d8c29a504e9796d8b8d78f8a11ab7b4a5"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f951a5333e90248ccfbf2ff6a721ccc2bf97c1c2b9bc3ba97a6d7720a37bdc42"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c9e2462df7ece2e6920d8de211c0ca4e02bc4bf3c86d0ae5e3769609e0b6b446"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "0c8ff0550f5bd1dd0c4303bf6fdec070551c226550d46fb9ad9cd0cf7c4d2cda"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "2e719accb265c52e52d1bda902ea4701a81d9bd04f9d656ea6e49c52eb96236a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "115c6f2d0dbc80e6abd4cc8f402f70873e234ec6ee1cc90db2c93348ef3e6533"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "562afa5f41e00ee3ebbbd4e0dc4fe7673488849c0a4d3cc01665d7c727171ed0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d9a4ab55dffb44bc3c21c87d9f6f178ab09e69228229324d278498d9ede70733"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bcf6c2e03c0ec4ed3875338d3cd27001764847568e4f18a64209aeec83a61224"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "fe563522146a79ed6247399910e0dc1b3a8bf6f52596cdd6937cf00596f94931"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9e841a3494b8d120750e99d4f77d520fdc95d903d3841d5e411e6e25e39e6fa6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6db947c70c6ed7d49b3252d83fa9da06e99e28fe7ac5527a8e610834ae86e684"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d180251d6a556409a6a07f856181eefed020845e5948aa2eba479b9d93a24e03"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9431444ec15e1c9d871405cea01d6f01ddbe27b4aac04ea329997d387cf30d0d"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a0dd3ea2448e40368646652a8d1bbb8386e69118e4f327c1a6904f7c423c71f3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "dd9cde8fe3ce30a5df3458dc348f4c25187b443eec3e2ae869572b1ab8d767e9"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "798a2dd4339ff23291da3238b476d3b044b8bff2f1d8c61086bd4238cf1548df"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e757f42e54f3dae2378663d82b57c2164274de2bdfd1c313d40254eb07b06ce7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "02946be574040d775a3e5af8767e4356ad5d1707054fb064f7ea94e4fb37a3ba"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "0c0f9003429410852c4148ef4174620716677d94ee8ec4e8adc78cce780b99b1"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "7cc8c1fe6acbeacb10da8f7317f215d4af1c57ef2b6deee3e49870f3cc9bb0d2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "2d51219a28c5207f6b43180954c79a0305b2e17d186d13d9cfbfe801049df680"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "292e8c544cdf7b3e60e5405219ceaf734ebd26c22befa4b9791bc85bed064d17"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "56140f342f40fa013e4518d8d77b6a5f4ff20caeaeb74df32dc254bb5dcaea82"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "6c16e19b2da88be394e99379351b547743e1e186123cf205043aa420ec41abe4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "638d89ad3cdee3ff9df0abb5bd380490a5531b90d6c84019088ba023fb352044"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "4b7ee55030c3eb633efab259be2b51c9bfb81471be55b1fd307ecacc0f92b957"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "3519f3950a2a6e6b99e9a20246cc09b3dbad541908b13d11f59dc82701ac18d0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "d9bcbf4e5da899a761a5321e89307ae10da2e7db6770d87df942abdd9c292bfb"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "daed36fafcc4587916d529905732895ac454527367df08b69455fd1e7d6bf482"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "d9112a133e21bec6f7c0c14b5cef38729b50e17fc6895828b29f3351ab96ae9a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "70afcb0516c13787a22cf93a44ddf8b1efb114ba2013accf0f9000712fe0dd30"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "e99e59a8676b344c788ccee859182df6cadc7ebc1d073ee1e33f00bdca44f675"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "ac66db0d6a043a6bfaf249fd41e37dc07c121f87e1cac87263debfeb23a02d1e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "6b7ce5d89729be62f816c75a71cc0024277b2bb5bd2b99e21465940c45143412"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "5e8bcc4500188c5e70a9aceed5c7264644f148b2c51ac78dd9bcf8e4d43bee87"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "5c60d63b542e2f7edb6563e7e53a99d3cf19d36b4adbc795ecc05afc2d457f4c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "1833abea877ff71c3629647b4b1a9f3f7ceb0513e72a67139cd7d7b488544068"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "bf965e4814b23af09de346b097e77a6dd83d7e7ad2c5e455b10907e95026454c"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "60d577581ee3c115e89066d632113ffdbfa5bb1bb659926e65344c7dd37529e4"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b1b39f97f1e1498af61a0b83065dec87e11c904368d1116a950231f6299bfa43"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "f7a6a1752199e3ac7dad8ed9bbd863e6df8eba23176a59fa89660ad3a71f6bab"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "e47ce1e8602ba44dd9d32b6b2ecf04f23ef33dd2ed6f4f03af2d641fdfc66c59"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "80018277ddda03d755687bc4f5c3d443dc9d5ffab1cd73323637c0d843293709"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "24e160c98a91093250e0cd094172781dfc7fd7d8eb1cc05c92c4079c43995ee7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "a1d5e81f8014db71a6fc5e6ae666529d99fe4dca109c4eb64ac8b79bbdabf6d5"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "b4243f1a79840339a0997ec7f2f363fe29c6a3ee28a2c8d8902d39bb6b399251"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "5504514bc6d2abd31135a549014aa5fccc6c5725e53b40827498f1f4e1d95fe1"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "a391452796eb10def440a392634468420079b66b09d1108865bd141f98a8e1ec"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "6586019705b0966fc6d5e6003e7ac1af2c7428de2cf8f1c7a41788d844941be6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "39e54645793e162cdd9fd6b5345ace4672cbbd2c4f12489986694fea60a0138e"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "eef2145cef1c23ce1a209cc2fa6518252c0eb094136f117500034088d9465054"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8a5f402663283a91efd67872a24d6e48c7368f8ccbd90cc74d3fd28eb7dc4cd2"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "cfa6b82fa5463372516644f90e965de4e3ff113b8cc976a43b414db575dc7687"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "1ea8b9d978442fec76ea106885d1038b96c9c810ac8825d935e4faa8fdfab8d3"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "9cda10fef2f8d460ace8600647dd12f298d2c73dc7a93cf46073c309978909cc"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "618344129f422d567549fa83229264cc25ce7e5f41384b9248950aaaa81f5e87"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "b5344fb873fec29fad1060157d37246a6f97fc4fa69da1bafb53198a6a078319"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "c42e9a805004cae056fa5e436938174221e07275e2af2d063e503b80e5d37309"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "8c474e218dbd3a813bb44af58ec281254f343faf3835b678a05c4b37fcd19c96"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "421eb4a457b742008cb475efec546bd5e7d5e98e8dd0f0badce9aa467a723270"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "d3758eb7500f652294b64dc8af8ed89f4cdf36e87567a067211d3cef49f32e4a"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "a3fccae6a52db639bb2e6f4e201df3193b81bcc3875eb2b7dd8310715d9bdaa8"
+      },
+      {
+        "action": {
+          "type": "CHALLENGE"
+        },
+        "hash": "e04b120f6ae8a01403f258759745eac3d5d377bafeef0c3da35b81990e7e2afd"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "efe6ae3c04df98d40e077f9bd0f90a8102091ab46e5f33bf83b1d2dcfecad8b7"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "d059e24b779174f09ba4d563cb28bfbafffef36e9a86e29f7d33c9831b2399df"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "854e842c620b49abd5dc05a064e721ccfebb2ce7d8d0f49e82d37e9aee7713c0"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 2"
+        },
+        "hash": "4a904c0872e4b3f6ce959329516d4d55aeca17e73b1679e0045544b5300b4370"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "00e4c421b7ccb5a9d87ecbd8e694738d212f89df01929506cb76a4b072eb7c13"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "1cf13d4bfa3e2d553f8920de2ff343fc554d022d8b3efad37424a92ac6766000"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "ffb1d284bf418b463f7e2c1556a1360c82420658704963176852ab9d5cb402db"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "910ae25054cb64bffd8546bc1e34c002827e928a79b46e36575d3134dcfb51fa"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "c00205d6d50f5ef271dd063183cb2dd7984372f7fec80d37f58feffa3a8eb0ce"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "aa581860b59550430c9bf1b9f2c704ebc6d9cb4765369bb6857ac614643496c6"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 2"
+        },
+        "hash": "b46abd0601f74c73aadcb264dad9733bf6c8d4c7cab17fc8e4b46c233ed838db"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "switch 3"
+        },
+        "hash": "5b54f941bc6a953fe8e92347510c5ff4c88104e51b444c8e998f7a53c44eeb1a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "3873f478c36f786b8042f5495b8e538d7252a927032ef4e2fd28e956162a6d0f"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "44cde2a6d33112e5cbdac5a1dc85dd42eaf9adaa77b44b9f6bd0b6bb92be7c83"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "8d33c0a2ba036f51944c18776d28426faf5b77ee1c15a2423d147afdc05985fb"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "862f928b369472914e6d11f0602a3e38a8f9887c41f84e434dcbd620f30cb92a"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "22a6b432a5765d8a547c7c50a4805ba16938ffa74d02bd858fa6cf761d4dd2bd"
+      },
+      {
+        "action": {
+          "type": "BATTLE_CHOICE",
+          "choice": "move 1"
+        },
+        "hash": "ed9688fb4323b8ef2c16a0f4090e815ee109e848bc4c59b0f126281837bd70cd"
+      },
+      {
+        "action": {
+          "type": "RESULT"
+        },
+        "hash": "3e17811693e8cdd7d115914b140489fd5fb0eee39765625c43789965cdd1d40f"
+      }
+    ]
+  }
+]
