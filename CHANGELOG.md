@@ -1,5 +1,17 @@
 # Histórico
 
+## 0.5.0 — Legado · 18/09/2026
+
+- Evoluções por troca, pedra/item, amizade, golpe conhecido e outras condições especiais passam a acontecer diretamente por nível; níveis originais existentes continuam valendo.
+- Linhas ramificadas escolhem um caminho determinístico por Pokémon, sem inventário de pedras, troca externa ou menu extra.
+- Hall da Fama visual acessível pelo cabeçalho, Opções e tela de encerramento; ele registra campeões e jornadas que terminaram sem o título.
+- Novos registros guardam time com níveis, modo, seed, rota, progresso da Liga, motivo do fim, acontecimentos e destaques do diário. Histórico antigo continua legível.
+- Arquivo de carreiras ampliado de 20 para 100 jornadas.
+- SAVE_VERSION 4 introduz migração: diferença de versão não reinicia mais automaticamente um save reconhecível.
+- Antes de migrar, o JSON antigo é preservado em uma chave de recuperação; JSON corrompido também recebe essa cópia antes do fallback.
+- Migração completa estruturas ausentes das Semanas Vivas sem apagar run, histórico, seed ou equipe.
+- Verificação: 158 módulos válidos, 59/59 testes, build Vite com 2.036 módulos e auditoria de progressão concluída.
+
 ## 0.4.0 — Semanas Vivas · 18/09/2026
 
 - 57 acontecimentos semanais com 2–3 decisões, raridades, condições de contexto e anti-repetição dos 10 eventos recentes.
