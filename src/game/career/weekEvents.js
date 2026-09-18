@@ -248,8 +248,7 @@ export function claimEventBattleReward(r) {
 }
 
 export function captureChanceForRun(r, baseChance) {
-  ensureWeekEventState(r);
-  return Math.min(0.98, baseChance + (r.eventBoosts.capture || 0));
+  return Math.min(0.98, baseChance + (r.eventBoosts?.capture || 0));
 }
 
 export function consumeEventBoost(r, key) {
