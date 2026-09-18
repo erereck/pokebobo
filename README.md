@@ -1,6 +1,6 @@
-# Pokébobo — 0.3.0 · Pokédex de campo
+# Pokébobo — 0.4.0 · Semanas Vivas
 
-Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região e tente sobreviver às consequências.
+Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região e tente sobreviver às consequências. Agora as próprias semanas também podem virar histórias.
 
 A 0.3.0 refaz o jogo como uma Pokédex aberta: carcaça vermelha, visor de campo, painel de equipe e cinco teclas fixas. Abertura, escolhas, jornada, batalha e telas de consulta usam o mesmo sistema. Quatro golpes juntos no celular, atalhos 1–4 no PC, mapa da run, ficha individual de Pokémon e mochila com estoque e ações. O C03 acrescenta resolução visual do turno em sequência, com ataque, HP, status, queda, troca e velocidade 1×/2×. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 148 módulos JavaScript/JSX e 29 arquivos CSS ativos.
 
@@ -12,7 +12,7 @@ Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde edit
 
 ## Jogar
 
-**Saves da 0.2.2 continuam funcionando na 0.3.0.** A regra de jogo e o schema 3 foram preservados. **Saves anteriores à 0.2.2 reiniciam: os sets e replays antigos usam outra regra de aprendizado.** Conforme a decisão de testar uma regra por vez, não há motor antigo nem migração paralela. Opções → Zerar progresso de teste permite começar novamente, com confirmação.
+**Saves atuais continuam funcionando na 0.4.0.** O schema 3 foi preservado; campos de acontecimentos são inicializados quando necessários. **Saves anteriores à 0.2.2 reiniciam: os sets e replays antigos usam outra regra de aprendizado.** Conforme a decisão de testar uma regra por vez, não há motor antigo nem migração paralela. Opções → Zerar progresso de teste permite começar novamente, com confirmação.
 
 Requer Node.js 22.13+ e npm. Para rodar o jogo:
 
@@ -30,6 +30,8 @@ O save fica no navegador; **Opções → Exportar progresso** guarda uma cópia 
 **A partir de 15/09/2026, o HTML standalone deixou de ser atualizado ou distribuído, por decisão do usuário.** O fluxo oficial é a aplicação web. O script legado de standalone permanece apenas como referência e não participa da verificação.
 
 ## O que funciona
+
+- **Semanas Vivas:** 57 acontecimentos sorteados pela seed, com raridades, anti-repetição, escolhas e consequências. A chance base é 72% por semana (82% na Correria). Eventos podem conceder ou consumir recursos, melhorar treino/captura/busca, abrir encontro extra, devolver ou gastar uma ação, iniciar batalha e destravar follow-ups futuros.
 
 - Nome do treinador, sete conjuntos de iniciais (gerações 1–5, 7 e 8).
 - Draft: cidade inicial, passagem e oito ginásios, sem repetir cidades e sem exibir os tipos dos líderes. Cada oferta reúne líderes da mesma posição nos jogos de origem.
