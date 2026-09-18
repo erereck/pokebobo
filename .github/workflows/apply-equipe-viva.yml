@@ -36,6 +36,13 @@ jobs:
           cp -a "$ROOT/src/." src/
           cp -a "$ROOT/scripts/." scripts/
           cp -a "$ROOT/tests/." tests/
+
+          # Correções incrementais produzidas depois do ZIP cumulativo.
+          # Elas precisam sobrepor o payload antes da verificação.
+          if [ -d patches/equipe-viva/overrides ]; then
+            cp -a patches/equipe-viva/overrides/. ./
+          fi
+
           node - <<'NODE'
           const fs = require("node:fs");
           const path = "package-lock.json";
