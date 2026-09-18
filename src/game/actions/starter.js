@@ -11,6 +11,7 @@ export function handleStarter(s, action, state) {
     r.route[0].starters.includes(action.name)
   ) {
     r.party = [makeMon(action.name, PROGRESSION.initialLevel, "mon0")];
+    r.starterName = action.name;
     r.phase = "draft";
     r.offers = sample(r, VILLAGES, 3).map((x) => x.id);
     return s;
