@@ -1,5 +1,22 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 18/09/2026 — C03: turno em sequência
+
+**Pedido:** concluir e mergear o C03, que estava parcialmente resolvido desde a 0.2.0/0.3.0.
+
+**Aplicado:** a interface agora pré-simula a escolha com o mesmo replay determinístico do motor e apresenta a resolução antes de confirmar a decisão no estado real. Ataque, mudança de HP, status, cura, queda e troca aparecem em ordem; o último nocaute permanece visível antes da tela de resultado. Durante essa sequência, novos comandos ficam bloqueados e voltam imediatamente quando a apresentação termina.
+
+**Velocidade e acessibilidade:** a batalha ganhou alternância 1×/2× persistida apenas como preferência local de interface, sem alterar save ou regras. prefers-reduced-motion remove o movimento via CSS e encurta as pausas da sequência.
+
+**Estrutura:** o protocolo do Showdown é convertido em eventos de apresentação com índice estável. O registro textual passa a usar a mesma fonte desses eventos, evitando duas traduções divergentes. O snapshot de batalha inclui apenas eventos derivados; nenhuma informação nova entra no save e nenhuma decisão do motor muda.
+
+**Verificação:** GitHub Actions executou npm run verify: arquitetura válida com **151 módulos**, **47 testes passaram**, zero falhas e build Vite concluído. Quatro testes novos cobrem ordem/lado/HP dos eventos, blocos split, dano/status/queda/troca e seleção apenas dos eventos do turno novo.
+
+**Limites desta entrega:** a validação automatizada cobre motor, parser e build, mas não substitui uma run em aparelho físico. A animação usa o estado exato disponível no protocolo; efeitos cosméticos que não geram evento específico continuam representados pelo texto do registro. O teste físico mobile segue pendente.
+
+**Próximas sugestões:** Q03 em celular físico passa a ser a prioridade imediata. Depois, R04 (Hall da Fama visual) e C09 (escolha simples de golpe) continuam sendo os refinamentos de maior impacto sem inflar o escopo.
+
+
 ## Entrega de 15/09/2026 — repositório e fluxo web
 
 **Pedido:** centralizar o projeto em [erereck/pokebobo](https://github.com/erereck/pokebobo) e encerrar a atualização/distribuição do HTML standalone.
