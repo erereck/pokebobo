@@ -1,5 +1,22 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 18/09/2026 — 0.5.0: Legado de Carreira
+
+**Direção:** resolver dois sistemas que ainda pareciam provisórios — evolução especial e encerramento da carreira — e, junto deles, impedir que uma atualização futura apague progresso apenas porque o número do schema mudou.
+
+**Evoluções especiais:** amizade, pedra, troca, golpe conhecido, item equipado e condições equivalentes foram convertidos em evolução direta por nível. A regra usa **20** para amizade, **28** para golpe/condição, **30** para item equipado e **32** para pedra/troca. Linhas ramificadas usam um nível comum e o ID persistente do Pokémon escolhe deterministicamente o caminho daquele espécime. Isso cobre Eevee, Kirlia, Snorunt, Gloom, Poliwhirl, Pikachu, Clamperl, Applin e demais ramificações presentes no catálogo sem menu nem item novo.
+
+**Hall da Fama:** o arquivo passa a guardar até **100 carreiras** e não exclui derrotas. Campeões, derrotas normais, Nuzlocke sem sobreviventes e abandonos recebem cartões próprios. Novos registros guardam equipe final com níveis, modo, seed, origem, inicial, semanas, insígnias, quantidade de acontecimentos e último adversário. Históricos antigos continuam aparecendo como registros legados.
+
+**Persistência:** SAVE_VERSION sobe de 3 para **4**. A diferença de versão deixa de ser motivo para reset: o loader normaliza campos conhecidos, preserva meta/histórico e mantém a run quando sua estrutura básica é reconhecível. Antes da primeira migração, o JSON antigo é copiado para `pokebobo.save.backup.v1`. Se apenas a run ativa estiver incompleta, ela pode ser descartada sem apagar o arquivo de carreiras.
+
+**Verificação:** `npm run check` passou com **159 módulos**; `npm test` passou com **61/61 testes** e zero falhas; o build Vite transformou **2.037 módulos**. Testes novos cobrem métodos especiais, ramificações determinísticas, todas as famílias evolutivas elegíveis do catálogo, migração de schemas 1/2/3, backup do payload antigo e arquivo detalhado de derrotas/abandono.
+
+**Progressão:** a auditoria-base permanece inalterada: entrada mediana na Liga em nível **18 / 38 / 58 / 78** para 0 / 1 / 2 / 3 treinos por cidade. Ela mede o orçamento-base e não os níveis extras das Semanas Vivas.
+
+**Próximos candidatos:** teste físico mobile continua pendente. Depois dele, C09 (escolha simples de golpe) e uma medição específica da economia das Semanas Vivas são os próximos refinamentos de maior impacto.
+
+
 ## Entrega de 18/09/2026 — 0.4.0: Semanas Vivas
 
 **Direção:** aprofundar o espaço entre ginásios em vez de empilhar mais conteúdo de batalha. A jornada agora reage às semanas gastas e às decisões anteriores.
