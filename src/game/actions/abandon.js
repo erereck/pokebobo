@@ -8,7 +8,7 @@ export function handleAbandon(s, action, state) {
     !["ended", "origin", "starter", "draft", "ready"].includes(r.phase)
   ) {
     note(r, "Você guardou a mochila. Esta run terminou por aqui.");
-    finishRun(s, false);
+    finishRun(s, false, "abandoned");
     return s;
   }
   return state;
