@@ -1,3 +1,3 @@
 import packageInfo from "../../package.json" with { type: "json" };
 export const VERSION = packageInfo.version;
-export const RELEASE_NAME = "Pokédex de campo";
+export const RELEASE_NAME = "Semanas Vivas";
