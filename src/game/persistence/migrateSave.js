@@ -18,8 +18,11 @@ function normalizeHistory(history = []) {
       opponent: entry.opponent || "",
       mode: entry.mode || "normal",
       seed: finite(entry.seed, 0),
+      origin: entry.origin || "",
       city: entry.city || "",
+      starter: entry.starter || "",
       reason: entry.reason || "",
+      events: finite(entry.events),
       team: Array.isArray(entry.team) ? entry.team : [],
     }));
 }
