@@ -81,7 +81,6 @@ function template(r, text = "") {
 }
 
 export function weekEventView(r) {
-  ensureWeekEventState(r);
   const state = r.weekEvent;
   const event = state && byId.get(state.id);
   if (!event) return null;
