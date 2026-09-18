@@ -125,12 +125,14 @@ test("time completo exige escolher substituto e falha de captura preserva os sei
   assert.equal(success.run.party[5].id, "mon5");
 });
 
-test("save antigo reinicia no schema atual, sem manter outro conjunto de regras", () => {
+test("save antigo migra para o schema atual sem perder a run", () => {
   for (const version of [1, 2]) {
     const old = { ...drafted(), version };
-    assert.deepEqual(
-      loadSave({ getItem: () => JSON.stringify(old) }),
-      initialState(),
-    );
+    const loaded = loadSave({ getItem: () => JSON.stringify(old) });
+    assert.equal(loaded.version, initialState().version);
+    assert.equal(loaded.run.name, old.run.name);
+    assert.equal(loaded.run.seed, old.run.seed);
+    assert.deepEqual(loaded.run.party, old.run.party);
+    assert.deepEqual(loaded.run.route, old.run.route);
   }
 });
