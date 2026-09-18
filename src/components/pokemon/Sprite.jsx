@@ -15,40 +15,62 @@ function spriteFileId(name) {
   return forme ? `${base}-${forme}` : base;
 }
 
-function frontSprite(mon) {
+function localFront(mon) {
   return (
     window.POKEBOBO_SPRITES?.[mon.num] ||
     `${import.meta.env.BASE_URL}sprites/${mon.num}.png`
   );
 }
 
-function backSprite(mon, name) {
-  return (
-    window.POKEBOBO_BACK_SPRITES?.[mon.num] ||
-    `https://play.pokemonshowdown.com/sprites/gen5ani-back/${spriteFileId(name)}.gif`
-  );
+function showdownSprite(name, back) {
+  const side = back ? "ani-back" : "ani";
+  return `https://play.pokemonshowdown.com/sprites/${side}/${spriteFileId(name)}.gif`;
 }
 
-export function Sprite({ name, className = "", back = false }) {
+function pokeApiBack(mon) {
+  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${mon.num}.png`;
+}
+
+function sourcesFor(mon, name, { back, animated }) {
+  const local = localFront(mon);
+
+  if (back)
+    return [
+      window.POKEBOBO_BACK_SPRITES?.[mon.num],
+      showdownSprite(name, true),
+      pokeApiBack(mon),
+      local,
+    ].filter(Boolean);
+
+  if (animated)
+    return [showdownSprite(name, false), local];
+
+  return [local];
+}
+
+export function Sprite({
+  name,
+  className = "",
+  back = false,
+  animated = false,
+}) {
   const mon = catalog[name];
   if (!mon) return <Ball size={48} />;
 
-  const fallback = frontSprite(mon);
+  const sources = sourcesFor(mon, name, { back, animated });
   return (
     <img
       draggable="false"
       className={cx("sprite", back && "sprite-back", className)}
-      src={back ? backSprite(mon, name) : fallback}
-      onError={
-        back
-          ? (event) => {
-              const image = event.currentTarget;
-              if (image.dataset.backFallback === "1") return;
-              image.dataset.backFallback = "1";
-              image.src = fallback;
-            }
-          : undefined
-      }
+      src={sources[0]}
+      data-source-index="0"
+      onError={(event) => {
+        const image = event.currentTarget;
+        const nextIndex = Number(image.dataset.sourceIndex || 0) + 1;
+        if (nextIndex >= sources.length) return;
+        image.dataset.sourceIndex = String(nextIndex);
+        image.src = sources[nextIndex];
+      }}
       alt={back ? `${name} de costas` : name}
     />
   );
