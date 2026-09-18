@@ -23,7 +23,7 @@ export function handleResult(s, action, state) {
           ? "Seu último Pokémon caiu. A run Nuzlocke terminou sem sobreviventes."
           : `${r.battle.name} encerrou a run. O mapa foi seu. A história também.`,
       );
-      finishRun(s, false);
+      finishRun(s, false, noSurvivors(r) ? "nuzlocke" : "defeat");
       return s;
     }
     const survivors = r.outcome.player
@@ -63,7 +63,8 @@ export function handleResult(s, action, state) {
         r,
         `${r.battle.name} ficou para trás. Equipe recuperada. ${training}`,
       );
-      if (r.leagueIndex === CAMPAIGN_RULES.leagueBattles) finishRun(s, true);
+      if (r.leagueIndex === CAMPAIGN_RULES.leagueBattles)
+        finishRun(s, true, "champion");
       else r.phase = "career";
     } else {
       train(r, PROGRESSION.ambushVictoryLevels);

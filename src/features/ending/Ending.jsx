@@ -6,8 +6,9 @@ import { BadgeStrip } from "../../components/progress/BadgeStrip.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { Lock } from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import { Medal } from "lucide-react";
 
-export function Ending({ run: r, meta, onNew }) {
+export function Ending({ run: r, meta, onNew, onHall }) {
   return (
     <main className="ending">
       <div className={cx("result-emblem", !r.won && "lost")}>
@@ -62,10 +63,16 @@ export function Ending({ run: r, meta, onNew }) {
           </div>
         </div>
       )}
+      <div className="ending-actions">
+        <button className="button secondary" onClick={onHall}>
+          <Medal size={18} />
+          Ver Hall da Fama
+        </button>
       <button className="button primary" onClick={onNew}>
         Outra região. Outra história.
         <ArrowRight size={19} />
       </button>
+      </div>
     </main>
   );
 }

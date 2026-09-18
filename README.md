@@ -1,8 +1,8 @@
-# Pokébobo — 0.4.0 · Semanas Vivas
+# Pokébobo — 0.5.0 · Legado
 
-Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região e tente sobreviver às consequências. Agora as próprias semanas também podem virar histórias.
+Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
 
-A 0.4.0 mantém a Pokédex de campo da 0.3.0 e faz a carreira reagir às semanas gastas: são 57 acontecimentos com escolhas, riscos, recompensas e consequências futuras. O C03 continua apresentando cada turno em sequência, com ataque, HP, status, queda, troca e velocidade 1×/2×. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 156 módulos JavaScript/JSX e 30 arquivos CSS ativos.
+A 0.5.0 mantém as 57 Semanas Vivas e adiciona três pilares: evoluções especiais convertidas para nível, Hall da Fama para todas as jornadas encerradas e migração de save entre versões. As batalhas continuam com resolução visual em sequência e sprites animados do Showdown quando disponíveis. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 158 módulos JavaScript/JSX e 31 arquivos CSS ativos.
 
 Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde editar](docs/ONDE-EDITAR.md) e [pesquisa de capas de rotas](docs/ARTES-E-ROTAS.md).
 
@@ -12,7 +12,7 @@ Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde edit
 
 ## Jogar
 
-**Saves atuais continuam funcionando na 0.4.0.** O schema 3 foi preservado; campos de acontecimentos são inicializados quando necessários. **Saves anteriores à 0.2.2 reiniciam: os sets e replays antigos usam outra regra de aprendizado.** Conforme a decisão de testar uma regra por vez, não há motor antigo nem migração paralela. Opções → Zerar progresso de teste permite começar novamente, com confirmação.
+**Saves deixam de ser descartados só porque a versão mudou.** A 0.5.0 usa schema 4 e migra saves reconhecíveis para a estrutura atual, completando campos ausentes sem apagar run, equipe, seed ou histórico. Antes de uma migração, o JSON anterior é guardado em `pokebobo.save.backup.v1`; até um JSON corrompido é preservado ali antes do fallback. A partir daqui, novas mudanças de schema devem ganhar migração em vez de reset. Opções → Zerar progresso de teste continua existindo, mas só por ação explícita.
 
 Requer Node.js 22.13+ e npm. Para rodar o jogo:
 
@@ -31,6 +31,8 @@ O save fica no navegador; **Opções → Exportar progresso** guarda uma cópia 
 
 ## O que funciona
 
+- **Legado:** o Hall da Fama arquiva campeões e runs não-campeãs com equipe final, níveis, insígnias, semanas, modo, rota e outros detalhes disponíveis.
+- **Evoluções especiais por nível:** troca, pedras/itens, amizade, golpe conhecido e condições especiais viram níveis substitutos; não é necessário coletar pedra ou realizar troca.
 - **Semanas Vivas:** 57 acontecimentos sorteados pela seed, com raridades, anti-repetição, escolhas e consequências. A chance base é 72% por semana (82% na Correria). Eventos podem conceder ou consumir recursos, melhorar treino/captura/busca, abrir encontro extra, devolver ou gastar uma ação, iniciar batalha e destravar follow-ups futuros.
 
 - Nome do treinador, sete conjuntos de iniciais (gerações 1–5, 7 e 8).
@@ -54,7 +56,7 @@ O save fica no navegador; **Opções → Exportar progresso** guarda uma cópia 
 
 As batalhas usam regras singles da geração 8. Não há multiplayer, Dynamax, Mega Evolução nem editor de golpes. Os golpes são escolhidos automaticamente a partir dos learnsets por nível do Showdown, buscando STAB e cobertura, e não reproduzem um moveset histórico único. O gerador escolhe uma geração comum à linhagem (8, com fallback para 7), conserva níveis herdados e distingue golpes de evolução dos lembretes. Lembretes exclusivos ficam fora da seleção automática. A origem de cada golpe está no catálogo e na auditoria; veja REGRAS-DE-GOLPES.md. Mossdeep conserva o elenco de Emerald em batalha singles. Ainda não há todas as equipes de todas as gerações.
 
-Evoluções simples por nível estão prontas. Troca, pedra, amizade e condições especiais não evoluem automaticamente. Não existe PC/reserva. Capturas podem substituir um integrante escolhido. Toda vitória recupera a equipe, com exceção dos removidos pelo Nuzlocke. Na rodada 0.2.2 foram simuladas 800 campanhas com batalhas reais no Clássico; a rodada anterior dos três modos fica como referência histórica. Isso testa políticas automáticas e identifica problemas; não determina a taxa de vitória de pessoas. As políticas automáticas ainda precisam ser ajustadas à economia da Correria e à sobrevivência da Nuzlocke.
+Todas as evoluções do recorte jogável são resolvidas por nível. Métodos originais como troca, pedra/item, amizade, golpe conhecido e outras condições recebem níveis substitutos; quando o dado original já possui nível mínimo, ele é mantido. Linhas ramificadas escolhem automaticamente um caminho determinístico por Pokémon. Não existe PC/reserva. Capturas podem substituir um integrante escolhido. Toda vitória recupera a equipe, com exceção dos removidos pelo Nuzlocke. Na rodada 0.2.2 foram simuladas 800 campanhas com batalhas reais no Clássico; a rodada anterior dos três modos fica como referência histórica. Isso testa políticas automáticas e identifica problemas; não determina a taxa de vitória de pessoas. As políticas automáticas ainda precisam ser ajustadas à economia da Correria e à sobrevivência da Nuzlocke.
 
 O save local é para uso individual e pode ser editado pelo dono do aparelho. Não há verificação competitiva contra adulteração.
 
@@ -100,7 +102,7 @@ No PowerShell com política de scripts restrita, use `npm.cmd`.
 | `scripts/check-architecture.mjs`                             | Verifica imports locais, ciclos e dependências entre camadas                 |
 | `scripts/audit-progression.mjs`                              | Mede orçamento de níveis de quatro estratégias                               |
 | `scripts/monte-carlo.mjs` e `simulation/`                    | Campanhas com combates reais, políticas, seeds e relatório JSON              |
-| `tests/`                                                     | 43 testes por domínio; fixtures históricas da 0.1 arquivadas em docs/archive |
+| `tests/`                                                     | 59 testes por domínio; fixtures históricas da 0.1 arquivadas em docs/archive |
 | `docs/`                                                      | Guia de edição, arquitetura, backlog e pesquisa de assets                    |
 
 As APIs antigas em `game/engine.js`, `data.js`, `pokemon.js` e `battle.js` continuam como reexports pequenos. Consulte [ONDE-EDITAR.md](docs/ONDE-EDITAR.md) para encontrar o arquivo de cada alteração.
@@ -122,6 +124,6 @@ Pokébobo é um projeto de fã e não é afiliado à Nintendo, Game Freak ou The
 
 ## Verificação realizada
 
-Testes automatizados para draft sem repetições, limite semanal, captura e última semana, evolução, replay determinístico do Showdown, derrota definitiva, troca forçada, campanha com oito ginásios e Liga, desbloqueios e persistência. A campanha completa automatizada usa uma equipe forte de teste para conferir as transições; ela não mede a dificuldade de uma run normal.
+Testes automatizados para draft sem repetições, limite semanal, captura e última semana, evolução comum/especial, replay determinístico do Showdown, derrota definitiva, troca forçada, campanha com oito ginásios e Liga, Hall da Fama, migração/recuperação de saves, desbloqueios e persistência. A campanha completa automatizada usa uma equipe forte de teste para conferir as transições; ela não mede a dificuldade de uma run normal.
 
 Inspeção no navegador em 390 px e desktop, incluindo seleção de inicial, draft, exploração, captura, batalha com múltiplos Pokémon, troca, vitória e recarregamento durante o combate. Consulte `VALIDACAO.md` para o resultado final.

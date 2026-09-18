@@ -360,6 +360,16 @@
   font-size: 12px;
   margin-top: 5px;
 }
+.ending-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.ending-actions .button {
+  min-height: 44px;
+}
 .region-map {
   height: clamp(320px, 50dvh, 480px);
   position: relative;

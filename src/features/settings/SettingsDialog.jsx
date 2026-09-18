@@ -1,11 +1,14 @@
 import { VERSION, RELEASE_NAME } from "../../app/version.js";
 import { Modal } from "../../components/ui/Modal.jsx";
-import { Download } from "lucide-react";
+import { Download, Trophy } from "lucide-react";
 
 export function SettingsDialog({ setModal, exportSave, state, playing }) {
   return (
     <Modal title="Opções e progresso" onClose={() => setModal(null)}>
-      <p>O save fica neste navegador, inclusive no meio de uma batalha.</p>
+      <p>
+        O save fica neste navegador e agora é migrado entre versões
+        compatíveis, inclusive no meio de uma batalha.
+      </p>
       <button className="button secondary full" onClick={exportSave}>
         <Download size={18} />
         Exportar progresso
@@ -24,6 +27,13 @@ export function SettingsDialog({ setModal, exportSave, state, playing }) {
           <span>melhor marca</span>
         </div>
       </div>
+      <button
+        className="button secondary full"
+        onClick={() => setModal("hall")}
+      >
+        <Trophy size={18} />
+        Abrir Hall da Fama
+      </button>
       {playing && (
         <button
           className="button danger full"
@@ -36,24 +46,6 @@ export function SettingsDialog({ setModal, exportSave, state, playing }) {
         <p className="muted small">
           Seed desta run: <strong>{state.run.seed}</strong>
         </p>
-      )}
-      {state.meta.history.length > 0 && (
-        <details className="run-history">
-          <summary>Minhas últimas viagens</summary>
-          {state.meta.history.map((run) => (
-            <p key={run.id}>
-              <strong>
-                #{run.id} · {run.won ? "Campeão" : run.badges + "/8 insígnias"}
-              </strong>
-              <br />
-              {run.team.join(" · ")}
-              <br />
-              <small>
-                {run.opponent} · semana {run.week}
-              </small>
-            </p>
-          ))}
-        </details>
       )}
       <button
         className="button secondary full"

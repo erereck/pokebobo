@@ -1,0 +1,278 @@
+.hall-dialog {
+  width: min(940px, calc(100% - 24px));
+}
+.hall-of-fame {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.hall-banner {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid #b79b4f;
+  border-bottom: 4px solid #8c7436;
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, #fff4c5aa, transparent 58%),
+    var(--lcd-bright);
+}
+.hall-trophy {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--amber);
+  color: #705819;
+  border: 5px double #a38737;
+  box-shadow: 4px 5px 0 #74612225;
+}
+.hall-banner h3 {
+  margin: 5px 0;
+  font-size: 21px;
+}
+.hall-banner p {
+  color: var(--ink-soft);
+  font-size: 12px;
+}
+.hall-stats {
+  display: flex;
+  gap: 7px;
+}
+.hall-stats > span {
+  min-width: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  border-radius: 6px;
+  background: #ffffff70;
+  border: 1px solid #c9bb84;
+  font: 9px var(--mono);
+  color: var(--ink-soft);
+}
+.hall-stats strong {
+  font: 700 23px var(--display);
+  color: var(--ink);
+}
+.hall-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.hall-card {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--lcd-line);
+  border-bottom: 4px solid #879986;
+  border-radius: 9px;
+  background: var(--lcd-bright);
+  box-shadow: 2px 3px 0 #233b2b15;
+}
+.hall-card.is-champion {
+  border-color: #b99d47;
+  border-bottom-color: #8b7129;
+  background:
+    linear-gradient(150deg, #fff2b770, transparent 55%),
+    var(--lcd-bright);
+}
+.hall-card > header,
+.hall-card > footer,
+.hall-trainer,
+.hall-facts,
+.hall-route {
+  display: flex;
+  align-items: center;
+}
+.hall-card > header {
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--lcd-line);
+}
+.hall-run-number {
+  font: 9px var(--mono);
+  color: var(--ink-soft);
+}
+.hall-result {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font: 700 9px var(--mono);
+}
+.is-champion .hall-result {
+  color: #856719;
+}
+.hall-trainer {
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 2px 6px;
+}
+.hall-trainer span {
+  font: 9px var(--mono);
+  color: var(--ink-soft);
+}
+.hall-trainer h3 {
+  margin-top: 2px;
+  font-size: 20px;
+}
+.hall-trainer > svg {
+  color: #af8622;
+}
+.hall-card .badge-strip {
+  margin: 8px 0 10px;
+}
+.hall-team {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  min-height: 58px;
+  align-items: end;
+  padding: 7px 4px;
+  background: var(--lcd-dim);
+  border: 1px solid var(--lcd-line);
+  border-radius: 6px;
+}
+.hall-team > div {
+  min-width: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.hall-team .sprite {
+  width: 52px;
+  height: 52px;
+  max-width: 100%;
+  object-fit: contain;
+}
+.hall-team small {
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  padding: 1px 3px;
+  border-radius: 3px;
+  background: #152a22d9;
+  color: white;
+  font: 7px var(--mono);
+}
+.hall-facts {
+  justify-content: space-around;
+  gap: 8px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--lcd-line);
+}
+.hall-facts span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 9px;
+  color: var(--ink-soft);
+}
+.hall-facts b {
+  font: 700 17px var(--display);
+  color: var(--ink);
+}
+.hall-route {
+  align-items: flex-start;
+  gap: 7px;
+  padding: 9px 0;
+  color: var(--ink-soft);
+}
+.hall-route svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+.hall-route p {
+  font-size: 10px;
+  line-height: 1.45;
+}
+.hall-highlights {
+  border-top: 1px dashed var(--lcd-line);
+  padding-top: 7px;
+}
+.hall-highlights summary {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+}
+.hall-highlights p {
+  margin: 6px 0;
+  font-size: 10px;
+  color: var(--ink-soft);
+}
+.hall-highlights p b {
+  margin-right: 4px;
+  color: var(--ink);
+}
+.hall-card > footer {
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 9px;
+  font-size: 10px;
+  color: var(--ink-soft);
+}
+.hall-card > footer small {
+  flex-shrink: 0;
+  font: 8px var(--mono);
+}
+.hall-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  padding: 36px 12px;
+  text-align: center;
+  color: var(--ink-soft);
+}
+.hall-empty h3 {
+  color: var(--ink);
+}
+.hall-empty p {
+  font-size: 12px;
+}
+@media (max-width: 720px) {
+  .hall-dialog {
+    width: min(620px, calc(100% - 16px));
+    padding: 14px;
+  }
+  .hall-banner {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+  .hall-stats {
+    grid-column: 1 / -1;
+    justify-content: stretch;
+  }
+  .hall-stats > span {
+    flex: 1;
+  }
+  .hall-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .hall-trophy {
+    width: 54px;
+    height: 54px;
+  }
+  .hall-banner {
+    padding: 12px;
+    gap: 10px;
+  }
+  .hall-banner h3 {
+    font-size: 17px;
+  }
+  .hall-stats > span {
+    min-width: 0;
+    padding: 6px 3px;
+  }
+  .hall-team .sprite {
+    width: 44px;
+    height: 44px;
+  }
+}

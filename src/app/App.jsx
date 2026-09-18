@@ -14,6 +14,7 @@ import { SettingsDialog } from "../features/settings/SettingsDialog.jsx";
 import { AbandonDialog } from "../features/settings/AbandonDialog.jsx";
 
 import { ResetDialog } from "../features/settings/ResetDialog.jsx";
+import { HallOfFame } from "../features/hall/HallOfFame.jsx";
 import { initialState } from "../game/state/initialState.js";
 
 export function App() {
@@ -84,6 +85,7 @@ export function App() {
         <Ending
           run={run}
           meta={state.meta}
+          onHall={() => setModal("hall")}
           onNew={() => {
             setName(run.name);
             setState((s) => ({
@@ -114,6 +116,9 @@ export function App() {
         </div>
       )}
       {playing && <GameNavigation tab={tab} setTab={setTab} run={run} />}
+      {modal === "hall" && (
+        <HallOfFame meta={state.meta} onClose={() => setModal(null)} />
+      )}
       {modal === "help" && <HelpDialog setModal={setModal} />}
       {modal === "settings" && (
         <SettingsDialog

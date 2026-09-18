@@ -1,4 +1,22 @@
-# Validação — Pokébobo 0.4.0
+# Validação — Pokébobo 0.5.0
+
+## 0.5.0 — Legado · 18/09/2026
+
+- Pull request validado pelo workflow `Verify`.
+- `npm run check`: **158 módulos**, imports válidos, sem ciclos e sem dependências de UI no motor.
+- `npm test`: **59 testes passaram, zero falhas**.
+- `npm run build`: Vite concluiu com **2.036 módulos transformados** em 8,14 s na execução registrada.
+- `npm run balance:audit`: concluído sem regressão do orçamento-base de níveis. Esse audit não mede o ganho de força causado pela espécie evoluída.
+- Evoluções especiais agora têm nível substituto; testes localizam evoluções especiais reais no catálogo em vez de depender de uma espécie hardcoded.
+- Linhas ramificadas usam seleção determinística pelo id do Pokémon, preservando o mesmo caminho após reload.
+- O Hall registra tanto campeão quanto run não-campeã. Snapshots novos incluem equipe com níveis, rota, modo, seed, progresso da Liga, motivo de encerramento, acontecimentos e destaques do diário.
+- Histórico legado com nomes simples de Pokémon continua aceito pelo Hall.
+- SAVE_VERSION é **4**. Testes cobrem migração v3→v4, schemas antigos reconhecíveis, preenchimento das estruturas de evento e preservação de run/seed/equipe/histórico.
+- Antes de migrar, o JSON anterior é copiado para `pokebobo.save.backup.v1`. JSON inválido também é preservado nessa chave antes do fallback para estado inicial.
+- O antigo teste que exigia reset de saves 1/2 foi substituído por um teste que exige preservação, alinhado ao novo contrato de produto.
+
+**Limitações:** esta entrega não incluiu uma run humana completa, teste físico em celular nem inspeção visual automatizada do Hall. O CI confirma lógica, estrutura, build e CSS compilável. O novo sistema de evolução pode alterar dificuldade real por mudar espécies mais cedo; uma futura rodada de Monte Carlo deve medir essa diferença, e não apenas o orçamento de níveis.
+
 
 ## 0.4.0 — Semanas Vivas · 18/09/2026
 

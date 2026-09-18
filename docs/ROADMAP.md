@@ -1,5 +1,21 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 18/09/2026 — 0.5.0: Legado
+
+**Direção:** transformar progressão e histórico em sistemas permanentes, sem criar grind de item para evolução e sem sacrificar saves a cada mudança de schema.
+
+**Evoluções especiais por nível:** evoluções por amizade, golpe conhecido, item/pedra, troca e outras condições recebem um nível substituto. A prioridade é simplicidade: nenhum item de evolução, trade externo ou submenu novo. Se a própria espécie já possui nível mínimo no dado do Showdown, esse nível continua sendo usado. Para linhas com mais de um destino, cada Pokémon recebe um caminho determinístico baseado no próprio id; o mesmo Pokémon não troca de ramo depois de recarregar.
+
+**Hall da Fama / arquivo de carreiras:** R04 deixa de ser pendência. O cabeçalho ganhou acesso permanente ao Hall, também disponível em Opções e no encerramento da run. Campeões recebem destaque, mas derrotas, Nuzlockes encerradas e runs abandonadas também entram no mesmo arquivo. Novas entradas guardam equipe final com níveis, modo, seed, rota, etapa da Liga, motivo do fim, número de acontecimentos e até oito momentos recentes do diário. Entradas antigas continuam visíveis com os dados que já possuíam.
+
+**Persistência:** SAVE_VERSION passa a 4. A regra antiga de rejeitar qualquer versão diferente foi removida. Saves reconhecíveis são normalizados para o schema atual e estruturas ausentes das Semanas Vivas são preenchidas. Antes da migração, o JSON anterior é copiado para `pokebobo.save.backup.v1`; conteúdo corrompido também é preservado nessa chave antes do fallback. A regra daqui em diante é: mudança de schema exige migração, não reset automático.
+
+**Arquivo:** o histórico cresce de 20 para 100 jornadas. Isso preserva espaço para um Hall útil sem deixar o localStorage crescer indefinidamente.
+
+**Verificação:** workflow Verify verde com **158 módulos**, **59/59 testes**, build Vite com **2.036 módulos transformados** e auditoria de progressão concluída. Os novos testes cobrem evolução especial, caminhos com nível substituto, migração v3→v4, migração de schemas antigos reconhecíveis, cópia de recuperação, campeão com snapshot rico e run sem título no Hall.
+
+**Limites:** a auditoria de progressão mede orçamento de níveis, não a força adicional que uma evolução especial pode trazer para uma equipe real. Não houve nova campanha humana nem inspeção visual em aparelho físico do Hall nesta entrega; o layout está coberto por build e CSS responsivo.
+
 ## Entrega de 18/09/2026 — 0.4.0: Semanas Vivas
 
 **Direção:** aprofundar o espaço entre ginásios em vez de empilhar mais conteúdo de batalha. A jornada agora reage às semanas gastas e às decisões anteriores.
@@ -122,7 +138,7 @@ Ganhos reais e bloqueio de treino no teto, encerramento Nuzlocke sem sobrevivent
 ## Decisões de escopo
 
 - **B01:** sem limite de nível por etapa nesta versão. A correção adotada reduz bônus gratuitos e aumenta o líder em +6 uma vez quando o maior nível do jogador supera seu ás original em pelo menos 10. Nível 99 continua possível; não foi tornado impossível por uma trava.
-- **B05 / Q09:** não manter perfis antigos de regras nem migrações, por decisão expressa do usuário. Save incompatível reinicia. Há botão de reset de teste com confirmação. Fixtures da 0.1 permanecem arquivadas como evidência histórica.
+- **B05 / Q09:** decisão substituída na 0.5.0. Saves reconhecíveis agora migram para o schema atual e recebem cópia de recuperação antes da conversão. O reset permanece somente como ação explícita do usuário.
 - **D05:** ofertas são filtradas pela posição original; ainda não há proteção contra combinações difíceis nem garantia de counter.
 - **D07:** captura segue 86%, uma tentativa por espécie e uma bola. A simplicidade foi preservada.
 - **C08:** emboscadas perderam a recompensa de níveis; chance e intervalo permanecem.
@@ -135,7 +151,7 @@ Ganhos reais e bloqueio de treino no teto, encerramento Nuzlocke sem sobrevivent
 | D09  | Nível selvagem acompanha o desafio original; evoluções simples aparecem após três insígnias. | Medir utilidade das substituições tardias e ajustar o atraso diante de times muito treinados. |
 | C03  | Mensagens recentes compactas e registro completo separado.                                   | Sequência animada de dano, status, queda e troca.                                             |
 | C05  | Inicialização compartilhada e simulação incremental para Monte Carlo.                        | Medir replay longo em aparelhos físicos; UI ainda reconstrói combate a cada decisão.          |
-| R04  | Últimas 20 viagens consultáveis em Opções.                                                   | Hall da Fama com mapa e decisões da carreira.                                                 |
+| R04  | Hall da Fama visual concluído na 0.5.0, incluindo campeões e jornadas sem título.             | Futuro: compartilhamento/exportação visual de uma entrada específica.                          |
 | R06  | Seed da run visível em Opções e presente nos dados de simulação.                             | Compartilhar resumo visual e iniciar run a partir de seed na UI.                              |
 | Q08  | Capas locais entram no bundler; inspeção offline e catálogo de sprites.                      | Automatizar também o teste de rede e dos recortes visuais.                                    |
 
