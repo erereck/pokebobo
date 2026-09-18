@@ -1,8 +1,8 @@
-# Pokébobo — 0.4.0 · Semanas Vivas
+# Pokébobo — 0.5.0 · Legado de Carreira
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região e tente sobreviver às consequências. Agora as próprias semanas também podem virar histórias.
 
-A 0.4.0 mantém a Pokédex de campo da 0.3.0 e faz a carreira reagir às semanas gastas: são 57 acontecimentos com escolhas, riscos, recompensas e consequências futuras. O C03 continua apresentando cada turno em sequência, com ataque, HP, status, queda, troca e velocidade 1×/2×. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 156 módulos JavaScript/JSX e 30 arquivos CSS ativos.
+A 0.5.0 mantém as Semanas Vivas e fecha três buracos antigos: evoluções especiais agora acontecem só por nível, o Hall da Fama arquiva vitórias e derrotas com a equipe final, e saves antigos passam por migração em vez de serem apagados por diferença de versão. O C03 continua apresentando cada turno em sequência, com ataque, HP, status, queda, troca e velocidade 1×/2×. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 156 módulos JavaScript/JSX e 30 arquivos CSS ativos.
 
 Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde editar](docs/ONDE-EDITAR.md) e [pesquisa de capas de rotas](docs/ARTES-E-ROTAS.md).
 
@@ -12,7 +12,7 @@ Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde edit
 
 ## Jogar
 
-**Saves atuais continuam funcionando na 0.4.0.** O schema 3 foi preservado; campos de acontecimentos são inicializados quando necessários. **Saves anteriores à 0.2.2 reiniciam: os sets e replays antigos usam outra regra de aprendizado.** Conforme a decisão de testar uma regra por vez, não há motor antigo nem migração paralela. Opções → Zerar progresso de teste permite começar novamente, com confirmação.
+**Saves da 0.4.0 continuam funcionando na 0.5.0.** O schema sobe de 3 para 4 com migração aditiva; antes da primeira migração o payload antigo fica preservado em um slot de backup. Atualização de versão não zera mais automaticamente o progresso. **Saves anteriores à 0.2.2 reiniciam: os sets e replays antigos usam outra regra de aprendizado.** Conforme a decisão de testar uma regra por vez, não há motor antigo nem migração paralela. Opções → Zerar progresso de teste permite começar novamente, com confirmação.
 
 Requer Node.js 22.13+ e npm. Para rodar o jogo:
 
@@ -54,7 +54,7 @@ O save fica no navegador; **Opções → Exportar progresso** guarda uma cópia 
 
 As batalhas usam regras singles da geração 8. Não há multiplayer, Dynamax, Mega Evolução nem editor de golpes. Os golpes são escolhidos automaticamente a partir dos learnsets por nível do Showdown, buscando STAB e cobertura, e não reproduzem um moveset histórico único. O gerador escolhe uma geração comum à linhagem (8, com fallback para 7), conserva níveis herdados e distingue golpes de evolução dos lembretes. Lembretes exclusivos ficam fora da seleção automática. A origem de cada golpe está no catálogo e na auditoria; veja REGRAS-DE-GOLPES.md. Mossdeep conserva o elenco de Emerald em batalha singles. Ainda não há todas as equipes de todas as gerações.
 
-Evoluções simples por nível estão prontas. Troca, pedra, amizade e condições especiais não evoluem automaticamente. Não existe PC/reserva. Capturas podem substituir um integrante escolhido. Toda vitória recupera a equipe, com exceção dos removidos pelo Nuzlocke. Na rodada 0.2.2 foram simuladas 800 campanhas com batalhas reais no Clássico; a rodada anterior dos três modos fica como referência histórica. Isso testa políticas automáticas e identifica problemas; não determina a taxa de vitória de pessoas. As políticas automáticas ainda precisam ser ajustadas à economia da Correria e à sobrevivência da Nuzlocke.
+Todas as evoluções da campanha usam nível. Amizade, pedra, troca, item equipado, horário e golpe específico foram convertidos em faixas fixas de nível (20/28/30/32, conforme o método). Em linhas ramificadas, o ID do próprio Pokémon escolhe de forma determinística qual evolução aquele espécime seguirá. Não existe PC/reserva. Capturas podem substituir um integrante escolhido. Toda vitória recupera a equipe, com exceção dos removidos pelo Nuzlocke. Na rodada 0.2.2 foram simuladas 800 campanhas com batalhas reais no Clássico; a rodada anterior dos três modos fica como referência histórica. Isso testa políticas automáticas e identifica problemas; não determina a taxa de vitória de pessoas. As políticas automáticas ainda precisam ser ajustadas à economia da Correria e à sobrevivência da Nuzlocke.
 
 O save local é para uso individual e pode ser editado pelo dono do aparelho. Não há verificação competitiva contra adulteração.
 
