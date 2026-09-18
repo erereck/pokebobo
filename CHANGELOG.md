@@ -1,5 +1,17 @@
 # Histórico
 
+## 0.5.0 — Legado de Carreira · 18/09/2026
+
+- Evoluções por pedra, amizade, troca, golpe conhecido, item equipado, localização e outras condições especiais passam a acontecer diretamente por nível.
+- Métodos especiais usam níveis fixos: amizade 20, golpe/condição 28, item equipado 30, pedra/troca 32; linhas ramificadas abrem em um nível comum e escolhem o caminho pelo ID persistente do Pokémon.
+- Hall da Fama redesenhado como arquivo de até 100 carreiras. Campeões e runs encerradas aparecem juntos, com tratamento visual diferente.
+- Novos registros guardam equipe final com níveis, modo, seed, origem, inicial, semanas, insígnias, eventos e último adversário.
+- Históricos antigos continuam visíveis como registros legados.
+- SAVE_VERSION sobe para 4 com migração aditiva. Diferença de versão deixa de resetar o save.
+- Antes da primeira migração, o JSON original é copiado para um slot de backup local.
+- Se uma run antiga estiver estruturalmente inválida, o histórico e os recordes ainda são recuperados em vez de zerar tudo.
+
+
 ## 0.4.0 — Semanas Vivas · 18/09/2026
 
 - 57 acontecimentos semanais com 2–3 decisões, raridades, condições de contexto e anti-repetição dos 10 eventos recentes.
