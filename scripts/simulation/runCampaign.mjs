@@ -109,9 +109,14 @@ export function runCampaign(seed, strategy, mode = "normal", maxTurns = 180) {
         : choosePreparation(run, strategy, rng);
       actions[action.type] = (actions[action.type] || 0) + 1;
       act(action);
-    } else if (run.phase === "encounter")
+    } else if (run.phase === "encounter") {
       act(chooseCapture(run, strategy, rng));
-    else throw Error("Unexpected simulation phase: " + run.phase);
+    } else if (run.phase === "event") {
+      const choiceId = run.weekEvent?.choices?.[0];
+      if (!choiceId) throw Error("Weekly event has no available choice");
+      actions.EVENT_CHOICE = (actions.EVENT_CHOICE || 0) + 1;
+      act({ type: "EVENT_CHOICE", choiceId });
+    } else throw Error("Unexpected simulation phase: " + run.phase);
   }
   if (steps >= 200) censored = true;
   const run = state.run;
