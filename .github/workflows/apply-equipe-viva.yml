@@ -41,7 +41,7 @@ jobs:
           const path = "package-lock.json";
           let text = fs.readFileSync(path, "utf8");
           let count = 0;
-          text = text.replace(/"version": "0\.4\.0"/g, (match) =>
+          text = text.replace(/"version": "0\.5\.0"/g, (match) =>
             ++count <= 2 ? '"version": "0.6.0"' : match
           );
           if (count < 2) throw new Error("package-lock root versions not found");
