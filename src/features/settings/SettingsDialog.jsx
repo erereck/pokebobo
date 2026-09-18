@@ -1,6 +1,7 @@
 import { VERSION, RELEASE_NAME } from "../../app/version.js";
 import { Modal } from "../../components/ui/Modal.jsx";
 import { Download } from "lucide-react";
+import { HallOfFame } from "../ending/HallOfFame.jsx";
 
 export function SettingsDialog({ setModal, exportSave, state, playing }) {
   return (
@@ -39,20 +40,8 @@ export function SettingsDialog({ setModal, exportSave, state, playing }) {
       )}
       {state.meta.history.length > 0 && (
         <details className="run-history">
-          <summary>Minhas últimas viagens</summary>
-          {state.meta.history.map((run) => (
-            <p key={run.id}>
-              <strong>
-                #{run.id} · {run.won ? "Campeão" : run.badges + "/8 insígnias"}
-              </strong>
-              <br />
-              {run.team.join(" · ")}
-              <br />
-              <small>
-                {run.opponent} · semana {run.week}
-              </small>
-            </p>
-          ))}
+          <summary>Hall da Fama e carreiras</summary>
+          <HallOfFame history={state.meta.history} compact />
         </details>
       )}
       <button
