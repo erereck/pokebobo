@@ -2,7 +2,7 @@
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região e tente sobreviver às consequências. Agora as próprias semanas também podem virar histórias.
 
-A 0.5.0 mantém as Semanas Vivas e fecha três buracos antigos: evoluções especiais agora acontecem só por nível, o Hall da Fama arquiva vitórias e derrotas com a equipe final, e saves antigos passam por migração em vez de serem apagados por diferença de versão. O C03 continua apresentando cada turno em sequência, com ataque, HP, status, queda, troca e velocidade 1×/2×. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 156 módulos JavaScript/JSX e 30 arquivos CSS ativos.
+A 0.5.0 mantém as Semanas Vivas e fecha três buracos antigos: evoluções especiais agora acontecem só por nível, o Hall da Fama arquiva vitórias e derrotas com a equipe final, e saves antigos passam por migração em vez de serem apagados por diferença de versão. O C03 continua apresentando cada turno em sequência, com ataque, HP, status, queda, troca e velocidade 1×/2×. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 159 módulos JavaScript/JSX e 30 arquivos CSS ativos.
 
 Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde editar](docs/ONDE-EDITAR.md) e [pesquisa de capas de rotas](docs/ARTES-E-ROTAS.md).
 
@@ -12,7 +12,7 @@ Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde edit
 
 ## Jogar
 
-**Saves da 0.4.0 continuam funcionando na 0.5.0.** O schema sobe de 3 para 4 com migração aditiva; antes da primeira migração o payload antigo fica preservado em um slot de backup. Atualização de versão não zera mais automaticamente o progresso. **Saves anteriores à 0.2.2 reiniciam: os sets e replays antigos usam outra regra de aprendizado.** Conforme a decisão de testar uma regra por vez, não há motor antigo nem migração paralela. Opções → Zerar progresso de teste permite começar novamente, com confirmação.
+**Saves da 0.4.0 continuam funcionando na 0.5.0.** O schema sobe de 3 para 4 com migração aditiva; antes da primeira migração o payload antigo fica preservado em um slot de backup. Diferença de versão, sozinha, não zera mais o progresso. Se uma run antiga estiver estruturalmente incompleta, a run ativa pode ser descartada, mas histórico, vitórias e melhor marca são preservados. Opções → Zerar progresso continua sendo a única limpeza intencional do jogador.
 
 Requer Node.js 22.13+ e npm. Para rodar o jogo:
 
@@ -45,6 +45,7 @@ O save fica no navegador; **Opções → Exportar progresso** guarda uma cópia 
 - Batalhas reais do Pokémon Showdown via `@pkmn/sim`, inteiramente no navegador. Golpes, PP, habilidades, tipos, status, prioridade, dano, trocas e itens seguem o motor.
 - Saves reproduzíveis de batalha por seed e histórico de decisões. Recarregar não rerrola a luta.
 - Derrota definitiva; diário da run, recordes e oito insígnias.
+- Hall da Fama permanente com até 100 carreiras: campeões, derrotas, Nuzlocke sem sobreviventes e abandonos aparecem juntos, com equipe final, níveis, modo, seed, origem, semanas e último rival quando disponíveis.
 - Liga: quatro membros diferentes sorteados entre onze opções, seguidos por um de três campeões. Os elencos usam as espécies dos jogos indicados; os níveis e golpes foram adaptados à progressão.
 - Vitória libera Correria (duas semanas) e Nuzlocke (Pokémon derrotados saem do time).
 - Fontes, sprites e seis mapas de Emerald locais, incluídos no build web. Paisagens de referência, com créditos e fallback SVG.
