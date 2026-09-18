@@ -9,7 +9,7 @@ export function handleExplore(s, action, state) {
     r.encounters.some((e) => !e.used) &&
     r.balls > 0
   ) {
-    spend(r);
+    spend(r, "explore");
     r.phase = "encounter";
     return s;
   }
