@@ -1,5 +1,18 @@
 # Validação — Pokébobo 0.3.0
 
+## C03 — sequência visual do turno · 18/09/2026
+
+- Pull request validado pelo workflow Verify com Node.js 22.13.0.
+- npm run check: **151 módulos**, imports válidos, sem ciclos e sem dependências de UI no motor.
+- npm test: **47 testes passaram, zero falhas**. Quatro casos novos cobrem eventos de apresentação, HP privado em blocos split, aplicação visual de dano/status/queda/troca e recorte dos eventos novos de cada turno.
+- npm run build: Vite concluiu o build de produção; 2.029 módulos transformados.
+- A pré-simulação usa restoreBattle + battleSnapshot sobre uma cópia da especificação e depois envia a mesma escolha ao reducer. O motor, a seed, as decisões salvas e o schema permanecem inalterados.
+- A interface bloqueia golpe/troca/registro enquanto a sequência está em andamento. 1×/2× fica em localStorage separado do save.
+- prefers-reduced-motion continua desabilitando animações e transições; as pausas de apresentação são reduzidas para no máximo 120 ms por evento.
+
+**Limitação:** esta execução não incluiu aparelho físico nem inspeção visual automatizada do PR. Q03 continua sendo o próximo teste manual prioritário; o CI confirma estrutura, lógica, testes e build, não sensação de timing em hardware real.
+
+
 ## Entrega no GitHub · 15/09/2026
 
 - `npm run verify` executado no novo fluxo: arquitetura com 148 módulos válida, **43 testes passaram, zero falhas**, build Vite concluído.
