@@ -165,25 +165,21 @@
   font-weight: 700;
   color: var(--hp);
 }
-.hp-line progress {
+.hp-meter {
   height: 7px;
   width: 100%;
-  appearance: none;
-  border: 0;
   border-radius: 4px;
   overflow: hidden;
   background: var(--lcd-dim);
 }
-.hp-line progress::-webkit-progress-bar {
-  background: var(--lcd-dim);
-}
-.hp-line progress::-webkit-progress-value {
+.hp-meter > span {
+  display: block;
+  height: 100%;
   background: var(--hp);
+  border-radius: inherit;
+  transition: width 360ms var(--ease);
 }
-.hp-line progress::-moz-progress-bar {
-  background: var(--hp);
-}
-.hp-line progress.low::-webkit-progress-value {
+.hp-meter.low > span {
   background: var(--danger);
 }
 .health-card > small {
@@ -358,6 +354,97 @@
   padding: 8px 0;
   border-bottom: 1px solid var(--lcd-line);
   font-size: 13px;
+}
+.battle-speed {
+  min-width: 42px;
+  justify-content: center;
+}
+.combatant.is-attack.ally .battle-sprite .sprite {
+  animation: battle-attack-ally 300ms var(--ease);
+}
+.combatant.is-attack.enemy .battle-sprite .sprite {
+  animation: battle-attack-enemy 300ms var(--ease);
+}
+.combatant.is-hit .battle-sprite .sprite {
+  animation: battle-hit 360ms var(--ease);
+}
+.combatant.is-status .health-card {
+  animation: battle-status 440ms var(--ease);
+}
+.combatant.is-heal .health-card {
+  animation: battle-heal 400ms var(--ease);
+}
+.combatant.is-faint .battle-sprite .sprite {
+  animation: battle-faint 600ms var(--ease) forwards;
+}
+.combatant.is-switch .battle-sprite .sprite {
+  animation: send-out 420ms var(--ease);
+}
+@keyframes battle-attack-ally {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  45% {
+    transform: translate(16px, -6px) scale(1.04);
+  }
+}
+@keyframes battle-attack-enemy {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  45% {
+    transform: translate(-16px, 6px) scale(1.04);
+  }
+}
+@keyframes battle-hit {
+  0%,
+  100% {
+    transform: translateX(0);
+    filter: drop-shadow(2px 4px 0 #26412f44);
+  }
+  25% {
+    transform: translateX(-7px);
+    filter: brightness(1.8) drop-shadow(2px 4px 0 #26412f44);
+  }
+  55% {
+    transform: translateX(6px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+}
+@keyframes battle-status {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-3px);
+  }
+  60% {
+    transform: translateX(3px);
+  }
+}
+@keyframes battle-heal {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  45% {
+    filter: brightness(1.3);
+  }
+}
+@keyframes battle-faint {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(22px);
+  }
 }
 @keyframes send-out {
   from {
