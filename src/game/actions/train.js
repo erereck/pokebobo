@@ -10,7 +10,7 @@ import { consumeEventBoost } from "../career/weekEvents.js";
 export function handleTrain(s, action, state) {
   let r = s.run;
   if (action.type === "TRAIN" && r.phase === "career" && !r.inLeague) {
-    if (!canTrain(r.party)) return state;
+    if (!canTrain([...(r.party || []), ...(r.box || [])])) return state;
     spend(r, "train");
     const baseLevels =
       PROGRESSION.trainingMin +

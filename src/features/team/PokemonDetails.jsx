@@ -1,10 +1,28 @@
+import { Dex } from "@pkmn/sim";
 import catalog from "../../game/catalog.json" with { type: "json" };
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
 import { Flag, ArrowUp } from "lucide-react";
+
+function displayMove(data, id) {
+  const local = data.moves.find((move) => move.id === id);
+  if (local) return local;
+  const dex = Dex.moves.get(id);
+  return dex?.exists
+    ? {
+        id,
+        name: dex.name,
+        type: dex.type,
+        category: dex.category,
+        power: dex.basePower,
+        accuracy: dex.accuracy,
+      }
+    : { id, name: id };
+}
+
 export function PokemonDetails({ mon, run, act }) {
   const data = catalog[mon.name],
-    lead = run.party[0].id === mon.id;
+    lead = run.party[0]?.id === mon.id;
   return (
     <section className="pokemon-details" aria-label={"Ficha de " + mon.name}>
       <div className="pokemon-scan">
@@ -45,19 +63,16 @@ export function PokemonDetails({ mon, run, act }) {
         </div>
         <div className="equipped-moves">
           {mon.moves.map((id) => {
-            const m = data.moves.find((m) => m.id === id);
+            const m = displayMove(data, id);
             return (
               <div key={id}>
-                <strong>{m?.name || id}</strong>
-                {m && <TypeTag type={m.type} />}
+                <strong>{m.name || id}</strong>
+                {m.type && <TypeTag type={m.type} />}
                 <small>
-                  {m?.category === "Status"
+                  {m.category === "Status"
                     ? "Status"
-                    : "Poder " + (m?.power || "—")}{" "}
-                  ·{" "}
-                  {m?.accuracy === true
-                    ? "Não erra"
-                    : (m?.accuracy || "—") + "% precisão"}
+                    : "Poder " + (m.power || "—")}{" "}
+                  · {m.accuracy === true ? "Não erra" : (m.accuracy || "—") + "% precisão"}
                 </small>
               </div>
             );
@@ -68,7 +83,7 @@ export function PokemonDetails({ mon, run, act }) {
           disabled={lead || run.phase !== "career"}
           onClick={() => act({ type: "LEAD", id: mon.id })}
         >
-          {lead ? <Flag size={17} /> : <ArrowUp size={17} />}{" "}
+          {lead ? <Flag size={17} /> : <ArrowUp size={17} />} {" "}
           {lead
             ? "Abre as batalhas"
             : run.phase !== "career"

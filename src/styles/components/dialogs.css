@@ -86,3 +86,228 @@ dialog > .button {
 .cover-credits p {
   font-size: 12px;
 }
+
+.hall-dialog {
+  width: min(920px, calc(100% - 24px));
+}
+.hall-hero {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+  border: 1px solid #a9924f;
+  border-bottom: 4px solid #806c35;
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, #fff7cfb8, transparent 58%),
+    var(--lcd-bright);
+}
+.hall-trophy {
+  width: 68px;
+  height: 68px;
+  flex: 0 0 68px;
+  display: grid;
+  place-items: center;
+  border: 4px double #a88d42;
+  border-radius: 50%;
+  background: var(--amber);
+  color: #6d5720;
+  box-shadow: 0 5px 0 #7b682d33;
+}
+.hall-hero h3 {
+  font-size: clamp(22px, 4vw, 34px);
+  margin: 5px 0 8px;
+}
+.hall-hero p {
+  max-width: 660px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.hall-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 14px 0;
+}
+.hall-summary > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 11px;
+  border: 1px solid var(--lcd-line);
+  border-radius: 7px;
+  background: var(--lcd-dim);
+}
+.hall-summary strong {
+  font: 700 25px var(--display);
+}
+.hall-summary span {
+  text-align: center;
+  font-size: 10px;
+  color: var(--ink-soft);
+}
+.hall-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+.hall-card {
+  position: relative;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--lcd-line);
+  border-bottom: 4px solid #879483;
+  border-radius: 9px;
+  background: var(--lcd-bright);
+  overflow: hidden;
+}
+.hall-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: #8d9b89;
+}
+.hall-card.is-champion {
+  border-color: #ad944c;
+  border-bottom-color: #826a2f;
+  background:
+    linear-gradient(145deg, #fff7c866, transparent 52%),
+    var(--lcd-bright);
+  box-shadow: 0 6px 20px #8e74221a;
+}
+.hall-card.is-champion::before {
+  background: var(--amber);
+}
+.hall-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.hall-run-number {
+  font: 9px var(--mono);
+  color: var(--ink-soft);
+}
+.hall-ending {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: var(--lcd-dim);
+  font: 700 8px var(--mono);
+  letter-spacing: 0.06em;
+}
+.is-champion .hall-ending {
+  background: var(--amber);
+  color: #5d4b1c;
+}
+.hall-card h3 {
+  margin: 10px 0 4px;
+  font-size: 22px;
+  overflow-wrap: anywhere;
+}
+.hall-card > p {
+  min-height: 34px;
+  color: var(--ink-soft);
+  font-size: 11px;
+  line-height: 1.45;
+}
+.hall-team {
+  min-height: 62px;
+  display: flex;
+  align-items: end;
+  gap: 1px;
+  margin: 10px 0;
+  padding: 7px 5px;
+  border-block: 1px solid var(--lcd-line);
+  overflow-x: auto;
+}
+.hall-team > div {
+  flex: 1 0 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 46px;
+}
+.hall-team .sprite {
+  width: 48px;
+  height: 48px;
+}
+.hall-team small {
+  max-width: 52px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font: 8px var(--mono);
+  white-space: nowrap;
+  color: var(--ink-soft);
+}
+.hall-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.hall-facts span {
+  padding: 4px 6px;
+  border: 1px solid var(--lcd-line);
+  border-radius: 4px;
+  background: var(--lcd-dim);
+  font: 8px var(--mono);
+}
+.hall-opponent {
+  display: block;
+  margin-top: 9px;
+  color: var(--ink-soft);
+  font-size: 10px;
+}
+.hall-empty {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px dashed var(--lcd-line);
+  border-radius: 8px;
+  text-align: center;
+  color: var(--ink-soft);
+}
+.hall-empty b {
+  color: var(--ink);
+}
+.hall-empty p {
+  font-size: 12px;
+}
+@media (max-width: 560px) {
+  .hall-dialog {
+    padding: 14px;
+  }
+  .hall-hero {
+    align-items: flex-start;
+    padding: 12px;
+  }
+  .hall-trophy {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+  .hall-trophy svg {
+    width: 24px;
+    height: 24px;
+  }
+  .hall-summary {
+    gap: 4px;
+  }
+  .hall-summary > div {
+    padding: 8px 4px;
+  }
+  .hall-summary strong {
+    font-size: 20px;
+  }
+  .hall-grid {
+    grid-template-columns: 1fr;
+  }
+}

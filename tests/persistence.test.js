@@ -4,7 +4,10 @@ import { initialState } from "../src/game/engine.js";
 import assert from "node:assert/strict";
 import { SAVE_KEY } from "../src/game/engine.js";
 import { loadSave } from "../src/game/engine.js";
-import { SAVE_BACKUP_KEY, SAVE_VERSION } from "../src/game/persistence/constants.js";
+import {
+  SAVE_BACKUP_KEY,
+  SAVE_VERSION,
+} from "../src/game/persistence/constants.js";
 
 test("mods permanecem trancados antes do título; save guarda e carrega a run", () => {
   const s = reducer(initialState(), {
@@ -25,53 +28,79 @@ test("mods permanecem trancados antes do título; save guarda e carrega a run", 
   );
 });
 
-
-test("save v3 migra para o schema atual sem apagar run nem histórico antigo", () => {
-  const old = reducer(initialState(), {
+test("save antigo migra sem apagar carreira e cria backup pré-migração", () => {
+  const legacy = reducer(initialState(), {
     type: "NEW",
     name: "Legado",
-    seed: 99,
+    seed: 77,
   });
-  old.version = 3;
-  old.meta.history = [
+  legacy.version = 3;
+  delete legacy.run.eventBoosts;
+  delete legacy.run.eventFlags;
+  legacy.meta.history = [
     {
-      id: 7,
-      name: "Antigo",
+      id: 12,
+      name: "Arquivo",
       won: false,
-      badges: 5,
+      badges: 6,
       week: 19,
-      opponent: "Líder",
-      team: ["Bulbasaur"],
+      opponent: "Sabrina",
+      team: ["Pikachu", "Kadabra"],
     },
   ];
-  delete old.run.eventBoosts;
-  delete old.run.eventFlags;
-  delete old.run.eventHistory;
-
-  const store = new Map([[SAVE_KEY, JSON.stringify(old)]]);
-  const disk = {
+  const store = new Map([[SAVE_KEY, JSON.stringify(legacy)]]);
+  const storage = {
     getItem: (key) => store.get(key) || null,
     setItem: (key, value) => store.set(key, value),
   };
-  const loaded = loadSave(disk);
-
+  const loaded = loadSave(storage);
   assert.equal(loaded.version, SAVE_VERSION);
+  assert.equal(loaded.meta.history[0].name, "Arquivo");
+  assert.equal(loaded.meta.history[0].badges, 6);
   assert.equal(loaded.run.name, "Legado");
-  assert.equal(loaded.run.seed, 99);
-  assert.deepEqual(loaded.meta.history[0].team, ["Bulbasaur"]);
-  assert.equal(loaded.meta.history[0].won, false);
-  assert.deepEqual(loaded.run.eventFlags, {});
-  assert.equal(loaded.run.eventBoosts.capture, 0);
-  assert.equal(store.get(SAVE_BACKUP_KEY), JSON.stringify(old));
+  assert.deepEqual(loaded.run.box, []);
+  assert.deepEqual(loaded.run.pendingMoveChoices, []);
+  assert.equal(loaded.run.pendingBattleKind, null);
+  assert.deepEqual(loaded.run.eventBoosts, {
+    capture: 0,
+    training: 0,
+    forage: 0,
+    ambushShield: 0,
+  });
+  assert.equal(store.get(SAVE_BACKUP_KEY), JSON.stringify(legacy));
 });
 
-test("save corrompido ganha cópia de recuperação antes do fallback", () => {
-  const store = new Map([[SAVE_KEY, "{quebrou"]]);
+test("backup automático recupera progresso se a cópia principal corromper", () => {
+  const legacy = {
+    version: 3,
+    meta: {
+      runs: 4,
+      wins: 1,
+      best: 8,
+      history: [
+        {
+          id: 4,
+          name: "Campeão antigo",
+          won: true,
+          badges: 8,
+          week: 28,
+          opponent: "Blue",
+          team: ["Venusaur"],
+        },
+      ],
+    },
+    run: null,
+  };
   const disk = {
-    getItem: (key) => store.get(key) || null,
-    setItem: (key, value) => store.set(key, value),
+    getItem: (key) =>
+      key === SAVE_KEY
+        ? "{corrompido"
+        : key === SAVE_BACKUP_KEY
+          ? JSON.stringify(legacy)
+          : null,
   };
   const loaded = loadSave(disk);
-  assert.equal(loaded.run, null);
-  assert.equal(store.get(SAVE_BACKUP_KEY), "{quebrou");
+  assert.equal(loaded.meta.runs, 4);
+  assert.equal(loaded.meta.wins, 1);
+  assert.equal(loaded.meta.history[0].name, "Campeão antigo");
 });

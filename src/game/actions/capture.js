@@ -14,10 +14,15 @@ import {
 export function handleCapture(s, action, state) {
   let r = s.run;
   if (action.type === "CAPTURE" && r.phase === "encounter") {
+    if (!Array.isArray(r.box)) r.box = [];
     const e = r.encounters[action.index];
     const replacement = r.party.findIndex((mon) => mon.id === action.replaceId);
-    const full = r.party.length >= CAMPAIGN_RULES.partySize;
-    if (!e || e.used || (full && replacement < 0) || !r.balls) return state;
+    const fullParty = r.party.length >= CAMPAIGN_RULES.partySize;
+    const fullBox = r.box.length >= CAMPAIGN_RULES.boxSize;
+    const needsRelease = fullParty && fullBox;
+    if (!e || e.used || (needsRelease && replacement < 0) || !r.balls)
+      return state;
+
     r.balls--;
     e.used = true;
     const captureChance = captureChanceForRun(r, ENCOUNTER_RULES.captureChance);
@@ -34,12 +39,27 @@ export function handleCapture(s, action, state) {
         ),
         `mon${r.nextMon++}`,
       );
-      const leaving = full ? r.party[replacement].name : null;
-      if (full) r.party[replacement] = m;
-      else r.party.push(m);
+
+      let destinationText = "Uma Poké Bola a menos, uma companhia a mais.";
+      if (!fullParty) {
+        r.party.push(m);
+      } else if (replacement >= 0) {
+        const leaving = r.party[replacement];
+        r.party[replacement] = m;
+        if (!fullBox) {
+          r.box.push({ ...leaving, item: "" });
+          destinationText = `${leaving.name} foi para a reserva.`;
+        } else {
+          destinationText = `${leaving.name} seguiu seu próprio caminho; equipe e reserva estavam lotadas.`;
+        }
+      } else {
+        r.box.push(m);
+        destinationText = `${e.name} foi direto para a reserva (${r.box.length}/${CAMPAIGN_RULES.boxSize}).`;
+      }
+
       note(
         r,
-        `${e.name} entrou para a equipe! ${leaving ? `${leaving} seguiu seu próprio caminho.` : "Uma Poké Bola a menos, uma companhia a mais."}${captureBonus ? ` Bônus de evento aplicado: +${Math.round(captureBonus * 100)}%.` : ""}`,
+        `${e.name} foi capturado! ${destinationText}${captureBonus ? ` Bônus de evento aplicado: +${Math.round(captureBonus * 100)}%.` : ""}`,
       );
     } else {
       note(

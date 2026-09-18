@@ -16,6 +16,9 @@ import { handleBattleChoice } from "../actions/battle-choice.js";
 import { handleResult } from "../actions/result.js";
 import { handleAbandon } from "../actions/abandon.js";
 import { handleEventChoice } from "../actions/event-choice.js";
+import { handleMoveChoice } from "../actions/move-choice.js";
+import { handleBox } from "../actions/box.js";
+import { handleReorderParty } from "../actions/reorder-party.js";
 
 const handlers = {
   NEW: handleNew,
@@ -36,6 +39,11 @@ const handlers = {
   RESULT: handleResult,
   ABANDON: handleAbandon,
   EVENT_CHOICE: handleEventChoice,
+  MOVE_CHOICE: handleMoveChoice,
+  BOX_TO_RESERVE: handleBox,
+  BOX_TO_PARTY: handleBox,
+  BOX_SWAP: handleBox,
+  REORDER_PARTY: handleReorderParty,
 };
 export function reducer(state, action) {
   const handler = handlers[action.type];

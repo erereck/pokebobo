@@ -1,15 +1,18 @@
 import catalog from "../../src/game/catalog.json" with { type: "json" };
 import { weekLimit } from "../../src/game/selectors/weekLimit.js";
 import { canTrain } from "../../src/game/selectors/levelGain.js";
+import { CAMPAIGN_RULES } from "../../src/game/config/campaign.js";
 
 export const STRATEGIES = ["training", "balanced", "coverage", "random"];
+const trainable = (run) => canTrain([...(run.party || []), ...(run.box || [])]);
+
 export function choosePreparation(run, strategy, rng) {
   const available = run.encounters.some((e) => !e.used) && run.balls > 0;
   if (strategy === "training")
-    return { type: canTrain(run.party) ? "TRAIN" : "CHALLENGE" };
+    return { type: trainable(run) ? "TRAIN" : "CHALLENGE" };
   if (strategy === "random") {
     const actions = [
-      ...(canTrain(run.party) ? ["TRAIN"] : []),
+      ...(trainable(run) ? ["TRAIN"] : []),
       "FORAGE",
       ...(available ? ["EXPLORE"] : []),
       ...(run.berries ? ["PREPARE"] : []),
@@ -24,7 +27,7 @@ export function choosePreparation(run, strategy, rng) {
     available &&
     run.badges >= 3 &&
     run.spent === 0 &&
-    run.party.length === 6
+    run.party.length === CAMPAIGN_RULES.partySize
   )
     return { type: "EXPLORE" };
   if (
@@ -34,8 +37,9 @@ export function choosePreparation(run, strategy, rng) {
     !run.prepared
   )
     return { type: "PREPARE" };
-  return { type: canTrain(run.party) ? "TRAIN" : "CHALLENGE" };
+  return { type: trainable(run) ? "TRAIN" : "CHALLENGE" };
 }
+
 export function chooseCapture(run, strategy, rng) {
   const types = new Set(run.party.flatMap((mon) => catalog[mon.name].types));
   const opportunities = run.encounters
@@ -52,9 +56,10 @@ export function chooseCapture(run, strategy, rng) {
   const weakest = [...run.party].sort(
     (a, b) => a.level - b.level || score(a.name) - score(b.name),
   )[0];
+  const boxHasRoom = (run.box?.length || 0) < CAMPAIGN_RULES.boxSize;
   return {
     type: "CAPTURE",
     index: selected.index,
-    ...(run.party.length === 6 ? { replaceId: weakest.id } : {}),
+    ...(run.party.length === CAMPAIGN_RULES.partySize && !boxHasRoom ? { replaceId: weakest.id } : {}),
   };
 }

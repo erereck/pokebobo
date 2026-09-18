@@ -1,116 +1,200 @@
+import { CAMPAIGN_RULES } from "../config/campaign.js";
 import { SAVE_VERSION } from "./constants.js";
 
-const number = (value, fallback = 0) =>
-  Number.isFinite(value) ? value : fallback;
-const array = (value) => (Array.isArray(value) ? value : []);
+const MODES = new Set(["normal", "rush", "nuzlocke"]);
+const ENDINGS = new Set(["champion", "defeat", "retired"]);
+
+function number(value, fallback = 0) {
+  if (value === null || value === undefined || value === "") return fallback;
+  return Number.isFinite(Number(value)) ? Number(value) : fallback;
+}
+
+function list(value) {
+  return Array.isArray(value) ? value : [];
+}
+
+function object(value) {
+  return value && typeof value === "object" && !Array.isArray(value) ? value : {};
+}
+
+function normalizeMons(value) {
+  return list(value)
+    .map((mon) =>
+      typeof mon === "string"
+        ? mon
+        : mon && typeof mon === "object"
+          ? {
+              ...mon,
+              id: typeof mon.id === "string" ? mon.id : "",
+              name: typeof mon.name === "string" && mon.name ? mon.name : "Desconhecido",
+              level: Math.max(0, Math.trunc(number(mon.level))),
+            }
+          : null,
+    )
+    .filter(Boolean);
+}
+
+function levelsFor(mons, explicit) {
+  const listed = list(explicit);
+  if (listed.length)
+    return listed.map((level) => Math.max(0, Math.trunc(number(level))));
+  return mons.map((mon) =>
+    typeof mon === "object" && mon ? Math.max(0, Math.trunc(number(mon.level))) : 0,
+  );
+}
 
 function normalizeHistoryEntry(entry, index) {
-  if (!entry || typeof entry !== "object") return null;
-  const team = array(entry.team).map((mon) =>
-    typeof mon === "string"
-      ? mon
-      : {
-          id: mon?.id || "",
-          name: mon?.name || "Desconhecido",
-          level: number(mon?.level, 0),
-        },
-  );
+  const source = object(entry);
+  if (!Object.keys(source).length) return null;
+  const won = Boolean(source.won);
+  const opponent = typeof source.opponent === "string" ? source.opponent : "";
+  const reason =
+    typeof source.reason === "string" && source.reason
+      ? source.reason
+      : won
+        ? "champion"
+        : source.ending === "retired"
+          ? "abandoned"
+          : "defeat";
+  const inferredEnding =
+    reason === "abandoned" ? "retired" : won ? "champion" : "defeat";
+  const team = normalizeMons(source.team);
+  const box = normalizeMons(source.box);
   return {
-    ...entry,
-    id: number(entry.id, index + 1),
-    name: entry.name || "Treinador",
-    won: Boolean(entry.won),
-    badges: number(entry.badges, 0),
-    week: Math.max(1, number(entry.week, 1)),
-    opponent: entry.opponent || "",
+    ...source,
+    id: Math.max(1, Math.trunc(number(source.id, index + 1))),
+    name:
+      typeof source.name === "string" && source.name.trim()
+        ? source.name
+        : "Treinador",
+    won,
+    ending: ENDINGS.has(source.ending) ? source.ending : inferredEnding,
+    reason,
+    mode: MODES.has(source.mode) ? source.mode : source.mode || "legacy",
+    seed: Math.max(0, Math.trunc(number(source.seed))),
+    badges: Math.min(8, Math.max(0, Math.trunc(number(source.badges)))),
+    week: Math.max(1, Math.trunc(number(source.week, 1))),
+    opponent,
     team,
-    mode: entry.mode || "normal",
-    route: array(entry.route),
-    seed: number(entry.seed, 0),
-    leagueIndex: number(entry.leagueIndex, 0),
-    reason: entry.reason || (entry.won ? "champion" : "defeat"),
+    levels: levelsFor(team, source.levels),
+    box,
+    boxLevels: levelsFor(box, source.boxLevels),
+    route: list(source.route),
+    highlights: list(source.highlights),
+    events: Math.max(0, Math.trunc(number(source.events))),
+    leagueIndex: Math.max(0, Math.trunc(number(source.leagueIndex))),
   };
+}
+
+function normalizeMoveChoices(value) {
+  return list(value)
+    .filter((choice) => choice && typeof choice === "object")
+    .map((choice) => ({
+      monId: typeof choice.monId === "string" ? choice.monId : "",
+      species: typeof choice.species === "string" ? choice.species : "",
+      moveId: typeof choice.moveId === "string" ? choice.moveId : "",
+      level: Math.max(0, Math.trunc(number(choice.level))),
+    }))
+    .filter((choice) => choice.monId && choice.moveId);
 }
 
 function normalizeRun(run) {
-  if (!run || typeof run !== "object") return null;
-  const party = array(run.party);
-  const route = array(run.route);
-  return {
+  if (!run || typeof run !== "object" || Array.isArray(run)) return null;
+  const party = list(run.party);
+  const boosts = object(run.eventBoosts);
+  const normalized = {
     ...run,
-    number: Math.max(1, number(run.number, 1)),
-    name: run.name || "Treinador",
-    mode: run.mode || "normal",
-    phase: run.phase || "career",
-    route,
-    offers: array(run.offers),
+    number: Math.max(1, Math.trunc(number(run.number, 1))),
+    name:
+      typeof run.name === "string" && run.name.trim() ? run.name : "Treinador",
+    mode: MODES.has(run.mode) ? run.mode : "normal",
+    rng: Math.max(1, Math.trunc(number(run.rng, 1))),
+    phase: typeof run.phase === "string" ? run.phase : "origin",
+    route: list(run.route),
+    offers: list(run.offers),
     party,
-    position: Math.max(0, number(run.position, 0)),
-    week: Math.max(1, number(run.week, 1)),
-    spent: Math.max(0, number(run.spent, 0)),
-    badges: Math.max(0, number(run.badges, 0)),
-    balls: Math.max(0, number(run.balls, 0)),
-    berries: Math.max(0, number(run.berries, 0)),
-    leagueIndex: Math.max(0, number(run.leagueIndex, 0)),
-    league: array(run.league),
-    journal: array(run.journal),
-    notice: run.notice || "",
-    lastAmbush: number(run.lastAmbush, -10),
-    nextMon: Math.max(1, number(run.nextMon, party.length + 1)),
+    box: list(run.box).slice(0, CAMPAIGN_RULES.boxSize),
+    pendingMoveChoices: normalizeMoveChoices(run.pendingMoveChoices),
+    pendingBattleKind:
+      typeof run.pendingBattleKind === "string" ? run.pendingBattleKind : null,
+    position: Math.max(0, Math.trunc(number(run.position))),
+    week: Math.max(1, Math.trunc(number(run.week, 1))),
+    spent: Math.max(0, Math.trunc(number(run.spent))),
+    badges: Math.min(8, Math.max(0, Math.trunc(number(run.badges)))),
+    balls: Math.max(0, Math.trunc(number(run.balls, CAMPAIGN_RULES.initialBalls))),
+    berries: Math.max(0, Math.trunc(number(run.berries, CAMPAIGN_RULES.initialBerryKits))),
+    leagueIndex: Math.max(0, Math.trunc(number(run.leagueIndex))),
+    league: list(run.league),
+    journal: list(run.journal),
+    notice: typeof run.notice === "string" ? run.notice : "",
+    lastAmbush: Number.isFinite(Number(run.lastAmbush))
+      ? Number(run.lastAmbush)
+      : -10,
+    nextMon: Math.max(1, Math.trunc(number(run.nextMon, party.length + 1))),
     weeklyEvents: run.weeklyEvents !== false,
     weekEvent: run.weekEvent || null,
-    lastEventWeek: run.lastEventWeek ?? null,
-    eventHistory: array(run.eventHistory),
-    eventSeen: array(run.eventSeen),
-    eventFlags:
-      run.eventFlags && typeof run.eventFlags === "object"
-        ? run.eventFlags
-        : {},
+    lastEventWeek:
+      run.lastEventWeek === null || run.lastEventWeek === undefined
+        ? null
+        : number(run.lastEventWeek, null),
+    eventHistory: list(run.eventHistory),
+    eventSeen: list(run.eventSeen),
+    eventFlags: object(run.eventFlags),
     eventBoosts: {
-      capture: number(run.eventBoosts?.capture, 0),
-      training: number(run.eventBoosts?.training, 0),
-      forage: number(run.eventBoosts?.forage, 0),
-      ambushShield: number(run.eventBoosts?.ambushShield, 0),
+      capture: Number(boosts.capture) || 0,
+      training: Number(boosts.training) || 0,
+      forage: Number(boosts.forage) || 0,
+      ambushShield: Number(boosts.ambushShield) || 0,
     },
     pendingEventReward: run.pendingEventReward || null,
-    lastWeekAction: run.lastWeekAction || "",
+    lastWeekAction:
+      typeof run.lastWeekAction === "string" ? run.lastWeekAction : "",
   };
+
+  if (normalized.phase === "move-choice" && !normalized.pendingMoveChoices.length)
+    normalized.phase = "career";
+  if (!normalized.pendingMoveChoices.length) normalized.pendingBattleKind = null;
+
+  normalized.seed = Math.max(
+    1,
+    Math.trunc(number(run.seed, normalized.rng) || normalized.rng),
+  );
+  return normalized;
 }
 
-export function migrateSave(input) {
-  if (!input || typeof input !== "object") throw Error("save inválido");
-  if (number(input.version, 0) > SAVE_VERSION)
+export function migrateSave(value) {
+  if (!value || typeof value !== "object" || Array.isArray(value))
+    throw Error("save inválido");
+  if (number(value.version, 0) > SAVE_VERSION)
     throw Error("save de uma versão futura");
 
-  const rawHistory = array(input.meta?.history);
-  const history = rawHistory
+  const sourceMeta = object(value.meta);
+  const history = list(sourceMeta.history)
     .map(normalizeHistoryEntry)
-    .filter(Boolean)
-    .slice(0, 100);
-  const run = normalizeRun(input.run);
-
-  const maxHistoryId = history.reduce((max, item) => Math.max(max, item.id), 0);
-  const winsFromHistory = history.filter((item) => item.won).length;
-  const bestFromHistory = history.reduce(
-    (max, item) => Math.max(max, item.badges),
+    .filter(Boolean);
+  const run = normalizeRun(value.run);
+  const historyRuns = history.reduce((max, item) => Math.max(max, item.id), 0);
+  const historyWins = history.filter((item) => item.won).length;
+  const historyBest = history.reduce(
+    (max, item) => Math.max(max, item.badges || 0),
     0,
   );
 
   return {
-    ...input,
+    ...value,
     version: SAVE_VERSION,
     meta: {
-      ...(input.meta || {}),
+      ...sourceMeta,
       runs: Math.max(
-        number(input.meta?.runs, 0),
-        maxHistoryId,
-        number(run?.number, 0),
+        Math.trunc(number(sourceMeta.runs)),
+        historyRuns,
+        Math.trunc(number(run?.number)),
       ),
-      wins: Math.max(number(input.meta?.wins, 0), winsFromHistory),
+      wins: Math.max(Math.trunc(number(sourceMeta.wins)), historyWins),
       best: Math.max(
-        number(input.meta?.best, 0),
-        bestFromHistory,
-        number(run?.badges, 0),
+        Math.trunc(number(sourceMeta.best)),
+        historyBest,
+        Math.trunc(number(run?.badges)),
       ),
       history,
     },

@@ -14,9 +14,14 @@ export function HelpDialog({ setModal }) {
           voltar aos comandos.
         </p>
         <p>
-          Na Equipe, selecione um Pokémon para ver seus golpes e mudar o líder
-          entre batalhas. Na Mochila, confira os itens e o custo em semanas
-          antes de usar uma ação.
+          Na Equipe, selecione um Pokémon para ver seus golpes, mudar o líder e
+          gerenciar a reserva. Na Jornada do PC, arraste o <b>⋮⋮</b> da Equipe
+          Conectada para mudar a ordem: o slot 1 abre a próxima batalha.
+        </p>
+        <p>
+          Quando um Pokémon alcançar o nível de um golpe novo, a Pokédex abre
+          uma decisão rápida. Você pode aprender em uma vaga livre, escolher
+          qual dos quatro golpes esquecer ou ignorar o golpe novo.
         </p>
         <p>
           No PC, as teclas 1 a 4 escolhem os golpes. Os atalhos ficam
@@ -43,9 +48,10 @@ export function HelpDialog({ setModal }) {
           </li>
           <li>
             Treinar dá de {PROGRESSION.trainingMin} a {PROGRESSION.trainingMax}{" "}
-            níveis a todos. Viagens não dão níveis. Vencer um ginásio ou membro
-            da Liga dá +{PROGRESSION.gymVictoryLevels} nível. Emboscadas não dão
-            níveis.
+            níveis aos seis ativos e aos Pokémon da reserva. Viagens não dão
+            níveis. Vencer um ginásio ou membro da Liga dá +
+            {PROGRESSION.gymVictoryLevels} nível; a reserva acompanha esse ganho.
+            Emboscadas não dão níveis.
           </li>
           <li>
             O 1º ginásio do draft sempre é um 1º ginásio dos jogos; a mesma
@@ -54,8 +60,9 @@ export function HelpDialog({ setModal }) {
             recebe +6, uma única vez.
           </li>
           <li>
-            Equipe cheia? Escolha quem sai antes de tentar uma nova captura. Se
-            falhar, ninguém sai.
+            A equipe comporta seis e a reserva mais três. Com seis ativos e vaga
+            na reserva, uma captura pode ir direto para a box. Só com as nove
+            vagas ocupadas alguém precisa sair definitivamente.
           </li>
           <li>Qualquer derrota encerra a run. Não existe revanche.</li>
           <li>
@@ -67,9 +74,9 @@ export function HelpDialog({ setModal }) {
           Seu time se recupera após vitórias. Em Nuzlocke, os Pokémon que caíram
           são removidos. Sem sobreviventes, a run termina mesmo que o adversário
           também tenha caído. Preparar equipa uma berry de cura em cada
-          integrante.
+          integrante ativo; entrar na reserva remove o item preparado.
         </p>
-        <h3>Sobre este primeiro protótipo</h3>
+        <h3>Sobre este protótipo</h3>
         <p>
           {GYMS.length} ginásios, 7 conjuntos de iniciais, 11 membros de Elite e
           3 campeões. Kalos fica de fora. As espécies dos times da Liga vêm dos
@@ -78,12 +85,10 @@ export function HelpDialog({ setModal }) {
           batalha em dupla, usa o mesmo elenco em combate singles aqui.
         </p>
         <p>
-          Golpes são selecionados automaticamente por nível, com a mesma regra
-          para os dois lados. Golpes de lembrete da evolução não antecipam o que
-          a pré-evolução aprende mais tarde; golpes exclusivos de reaprendizagem
-          ficam fora da seleção automática. Evoluções simples por nível já
-          acontecem; evoluções por troca, pedra e condições especiais ficam para
-          uma próxima versão.
+          O adversário recebe golpes automaticamente pelo nível. O seu time usa
+          os golpes que você escolheu durante a carreira. Evoluções normais e
+          especiais acontecem por nível: troca, pedra, amizade e outras
+          condições foram comprimidas em níveis diretos para manter a run rápida.
         </p>
         <h3>Feito com projetos abertos</h3>
         <p>
