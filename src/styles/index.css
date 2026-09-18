@@ -5,6 +5,7 @@
 @import "./components/dex-shell.css";
 @import "./features/welcome.css";
 @import "./features/career.css";
+@import "./features/events.css";
 @import "./features/draft.css";
 @import "./features/battle.css";
 @import "./features/team.css";
