@@ -42,4 +42,8 @@ test("campanha completa: 8 ginásios, 4 Elite, campeão e modos desbloqueados", 
   });
   assert.equal(weekLimit(next.run), 2);
   assert.equal(s.meta.history[0].won, true);
+  assert.equal(typeof s.meta.history[0].team[0], "object");
+  assert.equal(s.meta.history[0].team[0].level, 100);
+  assert.equal(s.meta.history[0].route.length, 10);
+  assert.equal(s.meta.history[0].reason, "champion");
 });
