@@ -6,6 +6,7 @@ import { BadgeStrip } from "../../components/progress/BadgeStrip.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { Lock } from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import { HallOfFame } from "./HallOfFame.jsx";
 
 export function Ending({ run: r, meta, onNew }) {
   return (
@@ -53,6 +54,7 @@ export function Ending({ run: r, meta, onNew }) {
           ))}
         </div>
       </div>
+      <HallOfFame history={meta.history} />
       {r.won && (
         <div className="unlock-note">
           <Lock size={21} />
