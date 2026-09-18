@@ -29,6 +29,7 @@ test("Monte Carlo é reproduzível e separa timeout de derrota", () => {
   const a = runCampaign(112233, "coverage"),
     b = runCampaign(112233, "coverage");
   assert.deepEqual(a, b);
+  assert.ok((a.actions.EVENT_CHOICE || 0) > 0);
   const censored = runCampaign(112233, "coverage", "normal", 0);
   assert.equal(censored.censored, true);
   assert.equal(censored.won, false);
