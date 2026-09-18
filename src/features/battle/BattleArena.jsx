@@ -16,12 +16,12 @@ export function BattleArena({ r, snap, current, effect }) {
       <div className={"combatant enemy" + effectClass(effect, "enemy")}>
         <Health mon={snap.foe} />
         <div className="battle-sprite">
-          <Sprite name={snap.foe.name} />
+          <Sprite name={snap.foe.name} animated />
         </div>
       </div>
       <div className={"combatant ally" + effectClass(effect, "player")}>
         <div className="battle-sprite">
-          <Sprite name={current.name} back />
+          <Sprite name={current.name} back animated />
         </div>
         <Health mon={current} />
       </div>
