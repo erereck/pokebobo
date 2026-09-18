@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { X } from "lucide-react";
 import { useId } from "react";
 
-export function Modal({ title, onClose, children }) {
+export function Modal({ title, onClose, children, className = "" }) {
   const ref = useRef();
   const titleId = useId();
   useEffect(() => {
@@ -19,6 +19,7 @@ export function Modal({ title, onClose, children }) {
   return (
     <dialog
       ref={ref}
+      className={className}
       aria-labelledby={titleId}
       onCancel={onClose}
       onClick={(e) => {
