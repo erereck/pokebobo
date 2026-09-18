@@ -1,4 +1,19 @@
-# Validação — Pokébobo 0.4.0
+# Validação — Pokébobo 0.5.0
+
+## 0.5.0 — Legado de Carreira · 18/09/2026
+
+- Pull request validado pelo workflow `Verify`.
+- `npm run check`: **159 módulos**, imports válidos, sem ciclos e sem dependências de UI no motor.
+- `npm test`: **61 testes passaram, zero falhas**.
+- A suíte nova verifica evolução por nível para amizade, pedra, troca, golpe/condição e item equipado; ramificações permanecem determinísticas pelo ID; todas as famílias do catálogo com alvos elegíveis conseguem avançar apenas por nível.
+- Persistência: schemas antigos 1/2/3 são migrados para o schema **4** em vez de serem zerados. Um teste confirma run + histórico preservados e cópia exata do payload pré-update em `pokebobo.save.backup.v1`.
+- Um save com run ativa estruturalmente incompleta preserva o histórico e os recordes mesmo quando essa run não pode ser recuperada.
+- Hall da Fama: testes confirmam arquivo detalhado de derrota/Nuzlocke, equipe com níveis e retenção máxima de **100 carreiras**, incluindo runs não campeãs.
+- `npm run build`: Vite concluiu a 0.5.0 com **2.037 módulos transformados**.
+- `npm run balance:audit`: mediana de entrada na Liga continua em **18 / 38 / 58 / 78** para 0 / 1 / 2 / 3 treinos por cidade; 0% dessas amostras-base chegam à Liga em 99+.
+
+**Limitações:** o Hall foi validado por build/CSS responsivo e estado serializado, mas não por uma captura visual automatizada em aparelho físico. A migração preserva versões anteriores quando a estrutura essencial é reconhecível; JSON realmente corrompido não pode ser reconstruído.
+
 
 ## 0.4.0 — Semanas Vivas · 18/09/2026
 
