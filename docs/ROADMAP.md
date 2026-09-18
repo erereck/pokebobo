@@ -1,5 +1,24 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 18/09/2026 — 0.4.0: Semanas Vivas
+
+**Direção:** aprofundar o espaço entre ginásios em vez de empilhar mais conteúdo de batalha. A jornada agora reage às semanas gastas e às decisões anteriores.
+
+**Sistema:** depois de uma semana concluída, o jogo pode abrir um acontecimento antes de emboscada/viagem/ginásio. A chance é 72% no Clássico/Nuzlocke e 82% na Correria. O catálogo tem **57 acontecimentos**; os dez mais recentes ficam fora do sorteio quando há alternativas, reduzindo repetição. Eventos também podem exigir número de insígnias, recursos, tamanho de equipe, ação da semana ou flags de escolhas anteriores.
+
+**Consequências:** as decisões podem alterar Poké Bolas e berries, dar níveis à equipe ou ao líder, preparar berries, devolver ou consumir orçamento de ação, melhorar a próxima captura/treino/busca, bloquear futuras emboscadas, abrir um encontro extra sem nova semana ou iniciar uma batalha com recompensa pendente. Não foi criada moeda, reputação global ou árvore de habilidade paralela.
+
+**Memória da run:** decisões como devolver uma mochila, ajudar um Pokémon ferido, investigar um meteoro ou seguir um mapa antigo podem ativar follow-ups específicos mais adiante. O histórico completo fica determinístico porque sorteios e resultados usam o RNG persistido da própria run.
+
+**Interface:** a fase `event` ganhou uma tela dedicada com raridade, narrativa curta, 2–3 decisões, efeito previsto, estoque e bônus ativos. O texto permanece compacto; não virou visual novel.
+
+**Compatibilidade:** SAVE_VERSION continua 3. Runs antigas recebem estruturas de evento apenas quando o sistema precisa delas; nenhuma migração paralela ou motor antigo foi criado.
+
+**Medição ainda necessária:** esta entrega altera bastante a economia. O Monte Carlo agora resolve eventos automaticamente, mas a política usa a primeira opção disponível e portanto serve para detectar regressão/truncamento, não para medir a qualidade estratégica humana das escolhas. Depois da validação funcional, uma nova rodada de balanceamento deve comparar 0.4.0 com 0.3.0.
+
+**Próximos candidatos:** teste físico mobile continua importante. Depois dele, Hall da Fama visual e escolha simples de golpe permanecem fortes; antes de mexer em níveis de líderes, medir o impacto dos novos eventos sobre progressão e estoque.
+
+
 ## Entrega de 18/09/2026 — C03: turno em sequência
 
 **Pedido:** concluir e mergear o C03, que estava parcialmente resolvido desde a 0.2.0/0.3.0.

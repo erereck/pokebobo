@@ -7,6 +7,7 @@ import { Career } from "../features/career/Career.jsx";
 import { TeamScreen } from "../features/team/TeamScreen.jsx";
 import { RegionScreen } from "../features/region/RegionScreen.jsx";
 import { Journal } from "../features/journal/Journal.jsx";
+import { WeekEventScreen } from "../features/events/WeekEventScreen.jsx";
 
 export function RunContent({ tab, run, act, selectedMonId }) {
   const mainRef = useRef(null);
@@ -26,6 +27,8 @@ export function RunContent({ tab, run, act, selectedMonId }) {
           <ResultScreen run={run} act={act} />
         ) : run.phase === "encounter" ? (
           <Encounter run={run} act={act} />
+        ) : run.phase === "event" ? (
+          <WeekEventScreen run={run} act={act} />
         ) : (
           <Career run={run} act={act} />
         )

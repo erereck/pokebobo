@@ -1,8 +1,8 @@
-# Pokébobo — 0.3.0 · Pokédex de campo
+# Pokébobo — 0.4.0 · Semanas Vivas
 
-Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região e tente sobreviver às consequências.
+Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região e tente sobreviver às consequências. Agora as próprias semanas também podem virar histórias.
 
-A 0.3.0 refaz o jogo como uma Pokédex aberta: carcaça vermelha, visor de campo, painel de equipe e cinco teclas fixas. Abertura, escolhas, jornada, batalha e telas de consulta usam o mesmo sistema. Quatro golpes juntos no celular, atalhos 1–4 no PC, mapa da run, ficha individual de Pokémon e mochila com estoque e ações. O C03 acrescenta resolução visual do turno em sequência, com ataque, HP, status, queda, troca e velocidade 1×/2×. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 148 módulos JavaScript/JSX e 29 arquivos CSS ativos.
+A 0.4.0 mantém a Pokédex de campo da 0.3.0 e faz a carreira reagir às semanas gastas: são 57 acontecimentos com escolhas, riscos, recompensas e consequências futuras. O C03 continua apresentando cada turno em sequência, com ataque, HP, status, queda, troca e velocidade 1×/2×. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 156 módulos JavaScript/JSX e 30 arquivos CSS ativos.
 
 Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde editar](docs/ONDE-EDITAR.md) e [pesquisa de capas de rotas](docs/ARTES-E-ROTAS.md).
 
@@ -12,7 +12,7 @@ Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde edit
 
 ## Jogar
 
-**Saves da 0.2.2 continuam funcionando na 0.3.0.** A regra de jogo e o schema 3 foram preservados. **Saves anteriores à 0.2.2 reiniciam: os sets e replays antigos usam outra regra de aprendizado.** Conforme a decisão de testar uma regra por vez, não há motor antigo nem migração paralela. Opções → Zerar progresso de teste permite começar novamente, com confirmação.
+**Saves atuais continuam funcionando na 0.4.0.** O schema 3 foi preservado; campos de acontecimentos são inicializados quando necessários. **Saves anteriores à 0.2.2 reiniciam: os sets e replays antigos usam outra regra de aprendizado.** Conforme a decisão de testar uma regra por vez, não há motor antigo nem migração paralela. Opções → Zerar progresso de teste permite começar novamente, com confirmação.
 
 Requer Node.js 22.13+ e npm. Para rodar o jogo:
 
@@ -31,14 +31,16 @@ O save fica no navegador; **Opções → Exportar progresso** guarda uma cópia 
 
 ## O que funciona
 
+- **Semanas Vivas:** 57 acontecimentos sorteados pela seed, com raridades, anti-repetição, escolhas e consequências. A chance base é 72% por semana (82% na Correria). Eventos podem conceder ou consumir recursos, melhorar treino/captura/busca, abrir encontro extra, devolver ou gastar uma ação, iniciar batalha e destravar follow-ups futuros.
+
 - Nome do treinador, sete conjuntos de iniciais (gerações 1–5, 7 e 8).
 - Draft: cidade inicial, passagem e oito ginásios, sem repetir cidades e sem exibir os tipos dos líderes. Cada oferta reúne líderes da mesma posição nos jogos de origem.
 - 37 cidades de ginásio, de Kanto, Johto, Hoenn, Sinnoh, Unova e Galar. Kalos não entra.
-- Limite de três semanas por cidade. Depois da última ação, a viagem ou o ginásio começa automaticamente.
+- Limite de três semanas por cidade. Depois da última ação e da resolução de eventual acontecimento, a viagem ou o ginásio começa automaticamente.
 - Treino (+1 a 3 níveis na equipe), exploração, captura, busca de itens e preparação com berries. Viagem e emboscada: zero níveis. Vitória em ginásio ou Liga: +1.
 - Níveis originais por Pokémon do líder. Se o maior nível do jogador exceder o ás original em 10 ou mais, o líder recebe +6 em todos, uma vez. Não há limite de nível por etapa.
 - Quatro golpes juntos na batalha, trocas em grade e registro completo em uma janela separada. Cada turno é apresentado em sequência (ataque, HP, status, queda e troca), com velocidade 1×/2×.
-- Duas espécies de famílias distintas por rota, priorizando famílias ainda não vistas; uma tentativa por espécie, com 86% de chance e custo de uma Poké Bola. Equipe de até seis; ao capturar com time cheio, escolha quem será substituído apenas se a captura der certo.
+- Duas espécies de famílias distintas por rota, priorizando famílias ainda não vistas; uma tentativa por espécie, com 86% de chance base (eventos podem elevar até 98%) e custo de uma Poké Bola. Equipe de até seis; ao capturar com time cheio, escolha quem será substituído apenas se a captura der certo.
 - Batalhas aleatórias: chance de 10% após uma ação elegível, com intervalo mínimo de três semanas entre emboscadas.
 - Batalhas reais do Pokémon Showdown via `@pkmn/sim`, inteiramente no navegador. Golpes, PP, habilidades, tipos, status, prioridade, dano, trocas e itens seguem o motor.
 - Saves reproduzíveis de batalha por seed e histórico de decisões. Recarregar não rerrola a luta.

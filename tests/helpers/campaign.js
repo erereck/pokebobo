@@ -23,9 +23,11 @@ export function drafted(seed = 1234) {
       type: "DRAFT",
       id: s.run.offers[0],
     });
-  return reducer(s, {
+  const ready = reducer(s, {
     type: "BEGIN",
   });
+  ready.run.weeklyEvents = false;
+  return ready;
 }
 export function best(b) {
   const r = b.p1.activeRequest;

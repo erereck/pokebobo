@@ -15,6 +15,7 @@ import { handleChallenge } from "../actions/challenge.js";
 import { handleBattleChoice } from "../actions/battle-choice.js";
 import { handleResult } from "../actions/result.js";
 import { handleAbandon } from "../actions/abandon.js";
+import { handleEventChoice } from "../actions/event-choice.js";
 
 const handlers = {
   NEW: handleNew,
@@ -34,6 +35,7 @@ const handlers = {
   BATTLE_CHOICE: handleBattleChoice,
   RESULT: handleResult,
   ABANDON: handleAbandon,
+  EVENT_CHOICE: handleEventChoice,
 };
 export function reducer(state, action) {
   const handler = handlers[action.type];

@@ -31,6 +31,20 @@ export function handleNew(s, action, state) {
       notice: "",
       lastAmbush: -10,
       nextMon: 1,
+      weeklyEvents: true,
+      weekEvent: null,
+      lastEventWeek: null,
+      eventHistory: [],
+      eventSeen: [],
+      eventFlags: {},
+      eventBoosts: {
+        capture: 0,
+        training: 0,
+        forage: 0,
+        ambushShield: 0,
+      },
+      pendingEventReward: null,
+      lastWeekAction: "",
     };
     r.seed = r.rng;
     r.offers = (

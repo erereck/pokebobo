@@ -14,7 +14,7 @@ export function WeeklyActions({ act, r }) {
         title="Treinar equipe"
         detail={
           canTrain(r.party)
-            ? `+${PROGRESSION.trainingMin} a ${PROGRESSION.trainingMax} níveis · até nv. ${PROGRESSION.maxLevel}`
+            ? `+${PROGRESSION.trainingMin} a ${PROGRESSION.trainingMax} níveis${r.eventBoosts?.training ? ` +${r.eventBoosts.training} bônus` : ""} · até nv. ${PROGRESSION.maxLevel}`
             : "Equipe no nível máximo"
         }
         disabled={!canTrain(r.party)}
@@ -53,7 +53,7 @@ export function WeeklyActions({ act, r }) {
       <Action
         icon={Search}
         title="Procurar itens"
-        detail="Poké Bolas ou kits de berries"
+        detail={`Poké Bolas ou kits de berries${r.eventBoosts?.forage ? ` · +${r.eventBoosts.forage} bônus` : ""}`}
         onClick={() =>
           act({
             type: "FORAGE",

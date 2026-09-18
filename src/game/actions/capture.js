@@ -6,6 +6,10 @@ import { makeMon } from "../pokemon/createPokemon.js";
 import { targetLevel } from "../selectors/targetLevel.js";
 import { note } from "../career/journal.js";
 import { afterWeek } from "../career/afterWeek.js";
+import {
+  captureChanceForRun,
+  consumeEventBoost,
+} from "../career/weekEvents.js";
 
 export function handleCapture(s, action, state) {
   let r = s.run;
@@ -16,7 +20,9 @@ export function handleCapture(s, action, state) {
     if (!e || e.used || (full && replacement < 0) || !r.balls) return state;
     r.balls--;
     e.used = true;
-    const success = random(r) < ENCOUNTER_RULES.captureChance;
+    const captureChance = captureChanceForRun(r, ENCOUNTER_RULES.captureChance);
+    const success = random(r) < captureChance;
+    const captureBonus = consumeEventBoost(r, "capture");
     if (success) {
       const m = makeMon(
         e.name,
@@ -33,13 +39,14 @@ export function handleCapture(s, action, state) {
       else r.party.push(m);
       note(
         r,
-        `${e.name} entrou para a equipe! ${leaving ? `${leaving} seguiu seu próprio caminho.` : "Uma Poké Bola a menos, uma companhia a mais."}`,
+        `${e.name} entrou para a equipe! ${leaving ? `${leaving} seguiu seu próprio caminho.` : "Uma Poké Bola a menos, uma companhia a mais."}${captureBonus ? ` Bônus de evento aplicado: +${Math.round(captureBonus * 100)}%.` : ""}`,
       );
-    } else
+    } else {
       note(
         r,
-        `${e.name} escapou. A Poké Bola e esta oportunidade ficaram pelo caminho.`,
+        `${e.name} escapou. A Poké Bola e esta oportunidade ficaram pelo caminho.${captureBonus ? ` O bônus de +${Math.round(captureBonus * 100)}% foi consumido.` : ""}`,
       );
+    }
     r.phase = "career";
     afterWeek(r);
     return s;

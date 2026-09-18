@@ -11,7 +11,7 @@ export function handlePrepare(s, action, state) {
     !r.inLeague &&
     r.berries > 0
   ) {
-    spend(r);
+    spend(r, "prepare");
     r.berries--;
     r.party = r.party.map((m) => ({
       ...m,

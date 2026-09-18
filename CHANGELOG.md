@@ -1,5 +1,18 @@
 # Histórico
 
+## 0.4.0 — Semanas Vivas · 18/09/2026
+
+- 57 acontecimentos semanais com 2–3 decisões, raridades, condições de contexto e anti-repetição dos 10 eventos recentes.
+- Chance base de 72% após uma semana resolvida; Correria usa 82% para compensar a campanha mais curta.
+- Consequências afetam Poké Bolas, berries, níveis, preparação, orçamento de ações e próximos treino/captura/busca/emboscada.
+- Alguns acontecimentos abrem encontros extras ou batalhas imediatas com recompensa; decisões específicas deixam flags que destravam follow-ups futuros.
+- Tela própria de acontecimento, responsiva para celular, com recursos e bônus ativos visíveis.
+- Sorteio e resolução usam o RNG da run, preservando determinismo por seed e save/reload.
+- Monte Carlo entende a nova fase e resolve a primeira decisão disponível de cada acontecimento.
+- Schema do save permanece 3; saves atuais são aceitos e completam o estado de eventos sob demanda.
+- Nova suíte de testes cobre catálogo, determinismo, escolhas, batalha, bônus e ações extras.
+
+
 ## C03 — sequência visual do turno · 18/09/2026
 
 - A escolha de batalha é pré-simulada com o mesmo replay determinístico e só é confirmada depois da apresentação visual.
