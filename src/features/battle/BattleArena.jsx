@@ -21,7 +21,7 @@ export function BattleArena({ r, snap, current, effect }) {
       </div>
       <div className={"combatant ally" + effectClass(effect, "player")}>
         <div className="battle-sprite">
-          <Sprite name={current.name} />
+          <Sprite name={current.name} back />
         </div>
         <Health mon={current} />
       </div>
