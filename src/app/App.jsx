@@ -12,9 +12,9 @@ import { GameNavigation } from "../components/layout/GameNavigation.jsx";
 import { HelpDialog } from "../features/settings/HelpDialog.jsx";
 import { SettingsDialog } from "../features/settings/SettingsDialog.jsx";
 import { AbandonDialog } from "../features/settings/AbandonDialog.jsx";
-
+import { HallOfFameDialog } from "../features/history/HallOfFameDialog.jsx";
+import { MoveLearnDialog } from "../features/team/MoveLearnDialog.jsx";
 import { ResetDialog } from "../features/settings/ResetDialog.jsx";
-import { HallOfFame } from "../features/hall/HallOfFame.jsx";
 import { initialState } from "../game/state/initialState.js";
 
 export function App() {
@@ -85,7 +85,6 @@ export function App() {
         <Ending
           run={run}
           meta={state.meta}
-          onHall={() => setModal("hall")}
           onNew={() => {
             setName(run.name);
             setState((s) => ({
@@ -112,12 +111,21 @@ export function App() {
               setSelectedMonId(id || null);
               setTab("team");
             }}
+            onReorder={(sourceId, targetId) =>
+              act({ type: "REORDER_PARTY", sourceId, targetId })
+            }
           />
         </div>
       )}
       {playing && <GameNavigation tab={tab} setTab={setTab} run={run} />}
+      {run?.pendingMoveChoices?.length > 0 && (
+        <MoveLearnDialog run={run} act={act} />
+      )}
       {modal === "hall" && (
-        <HallOfFame meta={state.meta} onClose={() => setModal(null)} />
+        <HallOfFameDialog
+          history={state.meta.history}
+          onClose={() => setModal(null)}
+        />
       )}
       {modal === "help" && <HelpDialog setModal={setModal} />}
       {modal === "settings" && (

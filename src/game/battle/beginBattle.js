@@ -8,8 +8,16 @@ import { makeMon } from "../pokemon/createPokemon.js";
 import { random } from "../random/random.js";
 import { note } from "../career/journal.js";
 import { gymChallenge } from "../selectors/gymChallenge.js";
+import { ensureMoveLearningState } from "../pokemon/moveLearning.js";
 
 export function beginBattle(r, kind) {
+  ensureMoveLearningState(r);
+  if (r.pendingMoveChoices.length) {
+    r.pendingBattleKind = kind;
+    r.phase = "move-choice";
+    return;
+  }
+
   let name,
     roster,
     level,

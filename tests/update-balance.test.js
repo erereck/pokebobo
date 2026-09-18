@@ -95,35 +95,60 @@ test("rotas têm identidade, duas famílias distintas, variedade e save estável
   assert.ok(signatures.size > 8);
 });
 
-test("time completo exige escolher substituto e falha de captura preserva os seis", () => {
+test("time completo usa a reserva antes de exigir liberação", () => {
   const state = drafted();
   state.run.party = Array.from({ length: 6 }, (_, i) =>
     makeMon("Pidgey", 12, "mon" + i),
   );
+  state.run.box = [];
   state.run.nextMon = 6;
   state.run.phase = "encounter";
   state.run.lastAmbush = 999;
-  assert.equal(reducer(state, { type: "CAPTURE", index: 0 }), state);
+  state.run.rng = 1;
+
+  const reserved = reducer(state, { type: "CAPTURE", index: 0 });
+  assert.equal(reserved.run.party.length, 6);
+  assert.equal(reserved.run.box.length, 1);
+  assert.equal(reserved.run.box[0].id, "mon6");
+  assert.deepEqual(
+    reserved.run.party.map((mon) => mon.id),
+    state.run.party.map((mon) => mon.id),
+  );
+
+  const crowded = drafted();
+  crowded.run.party = Array.from({ length: 6 }, (_, i) =>
+    makeMon("Pidgey", 12, "mon" + i),
+  );
+  crowded.run.box = Array.from({ length: 3 }, (_, i) =>
+    makeMon("Eevee", 12, "box" + i),
+  );
+  crowded.run.nextMon = 9;
+  crowded.run.phase = "encounter";
+  crowded.run.lastAmbush = 999;
+
+  assert.equal(reducer(crowded, { type: "CAPTURE", index: 0 }), crowded);
+
   let failSeed = 1;
   while (random({ rng: failSeed }) < 0.86) failSeed++;
-  state.run.rng = failSeed;
-  const failed = reducer(state, {
+  crowded.run.rng = failSeed;
+  const failed = reducer(crowded, {
     type: "CAPTURE",
     index: 0,
     replaceId: "mon2",
   });
-  assert.deepEqual(failed.run.party, state.run.party);
-  assert.equal(failed.run.balls, state.run.balls - 1);
-  state.run.rng = 1;
-  const success = reducer(state, {
+  assert.deepEqual(failed.run.party, crowded.run.party);
+  assert.deepEqual(failed.run.box, crowded.run.box);
+
+  crowded.run.rng = 1;
+  const success = reducer(crowded, {
     type: "CAPTURE",
     index: 0,
     replaceId: "mon2",
   });
   assert.equal(success.run.party.length, 6);
-  assert.equal(success.run.party[2].id, "mon6");
-  assert.equal(success.run.party[0].id, "mon0");
-  assert.equal(success.run.party[5].id, "mon5");
+  assert.equal(success.run.box.length, 3);
+  assert.equal(success.run.party[2].id, "mon9");
+  assert.equal(success.run.box.some((mon) => mon.id === "mon2"), false);
 });
 
 test("save antigo reconhecível migra sem apagar a carreira", () => {

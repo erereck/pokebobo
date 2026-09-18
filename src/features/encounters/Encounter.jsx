@@ -10,10 +10,14 @@ import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { ENCOUNTER_RULES } from "../../game/config/encounters.js";
 import { captureChanceForRun } from "../../game/career/weekEvents.js";
+import { CAMPAIGN_RULES } from "../../game/config/campaign.js";
 
 export function Encounter({ run: r, act }) {
   const [replaceId, setReplaceId] = useState("");
-  const full = r.party.length >= 6;
+  const fullParty = r.party.length >= CAMPAIGN_RULES.partySize;
+  const box = r.box || [];
+  const fullBox = box.length >= CAMPAIGN_RULES.boxSize;
+  const needsRelease = fullParty && fullBox;
   const captureChance = captureChanceForRun(r, ENCOUNTER_RULES.captureChance);
   return (
     <>
@@ -26,27 +30,38 @@ export function Encounter({ run: r, act }) {
         <RouteCover place={city(r)} />
       </div>
       <div className="encounter-options">
-        {full && (
+        {fullParty && (
           <label className="replace-choice">
-            Equipe completa. Quem sai se a captura der certo?
+            {fullBox
+              ? "Equipe e reserva lotadas. Quem sai se a captura der certo?"
+              : `Equipe completa. A reserva tem ${CAMPAIGN_RULES.boxSize - box.length} vaga${CAMPAIGN_RULES.boxSize - box.length === 1 ? "" : "s"}.`}
             <select
               value={replaceId}
               onChange={(event) => setReplaceId(event.target.value)}
             >
-              <option value="">Escolha um integrante</option>
+              {!fullBox && (
+                <option value="">Enviar o capturado direto para a reserva</option>
+              )}
+              {fullBox && <option value="">Escolha quem deixa a equipe</option>}
               {r.party.map((mon) => (
                 <option key={mon.id} value={mon.id}>
-                  {mon.name} · nível {mon.level}
+                  {fullBox ? "Substituir" : "Trocar com"} {mon.name} · nível {mon.level}
                 </option>
               ))}
             </select>
-            <small>Se a captura falhar, sua equipe continua igual.</small>
+            <small>
+              {fullBox
+                ? `Com as ${CAMPAIGN_RULES.partySize + CAMPAIGN_RULES.boxSize} vagas ocupadas, o escolhido sai definitivamente. Se a captura falhar, nada muda.`
+                : replaceId
+                  ? "O integrante escolhido vai para a reserva se a captura funcionar."
+                  : "Se a captura funcionar, ninguém precisa sair do time ou da reserva."}
+            </small>
           </label>
         )}
         {r.encounters.map((e, i) => (
           <button
             key={i}
-            disabled={e.used || (full && !replaceId)}
+            disabled={e.used || (needsRelease && !replaceId)}
             className="encounter-mon"
             onClick={() =>
               act({
@@ -82,7 +97,7 @@ export function Encounter({ run: r, act }) {
       </div>
       <p className="fine-print">
         {Math.round(captureChance * 100)}% de chance{r.eventBoosts?.capture ? ` (+${Math.round(r.eventBoosts.capture * 100)}% de evento)` : ""} · 1 Poké
-        Bola · {r.balls} na mochila
+        Bola · {r.balls} na mochila · reserva {box.length}/{CAMPAIGN_RULES.boxSize}
         <br />
         Uma tentativa por espécie. O resultado fica salvo.
       </p>

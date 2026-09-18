@@ -6,11 +6,11 @@
 @import "./features/welcome.css";
 @import "./features/career.css";
 @import "./features/events.css";
-@import "./features/hall.css";
 @import "./features/draft.css";
 @import "./features/battle.css";
 @import "./features/team.css";
 @import "./features/secondary.css";
+@import "./features/equipe-viva.css";
 @import "./components/dialogs.css";
 @import "./responsive/pokedex/desktop-height.css";
 @import "./responsive/pokedex/tablet.css";

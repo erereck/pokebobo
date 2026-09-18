@@ -4,6 +4,15 @@ import { useAutosave } from "./useAutosave.js";
 import { downloadJson } from "../../shared/downloadJson.js";
 import { reducer } from "../../game/state/reducer.js";
 
+const KEEP_TAB_ACTIONS = new Set([
+  "LEAD",
+  "BOX_TO_RESERVE",
+  "BOX_TO_PARTY",
+  "BOX_SWAP",
+  "REORDER_PARTY",
+  "MOVE_CHOICE",
+]);
+
 export function useGameSession() {
   const [state, setState] = useState(() => loadSave(localStorage));
   const [tab, setTab] = useState("journey");
@@ -19,7 +28,7 @@ export function useGameSession() {
       const next = reducer(state, action);
       setState(next);
       setError("");
-      if (action.type !== "LEAD") {
+      if (!KEEP_TAB_ACTIONS.has(action.type)) {
         setTab("journey");
         window.scrollTo({
           top: 0,

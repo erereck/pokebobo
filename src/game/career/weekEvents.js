@@ -2,7 +2,7 @@ import { WEEK_EVENT_RULES } from "../config/events.js";
 import { WEEK_EVENTS } from "../data/weekEvents.js";
 import { random } from "../random/random.js";
 import { train } from "./training.js";
-import { grow } from "../pokemon/evolution.js";
+import { growWithLearning } from "../pokemon/moveLearning.js";
 import { ITEM_RULES } from "../config/items.js";
 import { city } from "../selectors/city.js";
 
@@ -158,7 +158,7 @@ function addBoost(r, key, value) {
 function applyLevelsToLead(r, amount) {
   const before = r.party[0];
   if (!before) return "";
-  const next = grow(before, amount);
+  const next = growWithLearning(r, before, amount);
   r.party[0] = next;
   const gain = next.level - before.level;
   if (!gain) return `${before.name} já está no nível máximo.`;
@@ -240,8 +240,10 @@ export function claimEventBattleReward(r) {
   r.pendingEventReward = null;
   const detail = applyWeekEventEffect(r, reward);
   const parts = [];
-  if (reward.balls) parts.push(`+${reward.balls} Poké Bola${reward.balls === 1 ? "" : "s"}`);
-  if (reward.berries) parts.push(`+${reward.berries} kit${reward.berries === 1 ? "" : "s"} de berries`);
+  if (reward.balls)
+    parts.push(`+${reward.balls} Poké Bola${reward.balls === 1 ? "" : "s"}`);
+  if (reward.berries)
+    parts.push(`+${reward.berries} kit${reward.berries === 1 ? "" : "s"} de berries`);
   if (reward.teamLevels) parts.push(`equipe +${reward.teamLevels}`);
   return [parts.join(" · "), detail].filter(Boolean).join(". ");
 }

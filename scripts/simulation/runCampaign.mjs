@@ -48,6 +48,20 @@ export function simulateCombat(spec, maxTurns = 180) {
   }
 }
 
+function resolveMoveLearning(run) {
+  const pending = run.pendingMoveChoices?.[0];
+  if (!pending) return null;
+  const mon =
+    run.party.find((candidate) => candidate.id === pending.monId) ||
+    run.box?.find((candidate) => candidate.id === pending.monId);
+  if (!mon) return { type: "MOVE_CHOICE", monId: pending.monId, skip: true };
+  return {
+    type: "MOVE_CHOICE",
+    monId: mon.id,
+    ...(mon.moves.length >= 4 ? { forgetMoveId: mon.moves[0] } : {}),
+  };
+}
+
 export function runCampaign(seed, strategy, mode = "normal", maxTurns = 180) {
   const rng = generator(seed ^ 0xa53c91e7),
     origin = ORIGINS[Math.floor(rng() * ORIGINS.length)];
@@ -58,7 +72,6 @@ export function runCampaign(seed, strategy, mode = "normal", maxTurns = 180) {
     state = reducer(state, action);
   };
   act({ type: "NEW", seed, name: "Monte Carlo", mode });
-  // Origin is chosen uniformly from the same seven origins available through Other origins.
   state.run.offers = [origin.id];
   act({ type: "ORIGIN", id: origin.id });
   act({ type: "STARTER", name: starter });
@@ -72,8 +85,15 @@ export function runCampaign(seed, strategy, mode = "normal", maxTurns = 180) {
     battles = [];
   let steps = 0,
     censored = false;
-  while (state.run.phase !== "ended" && steps++ < 200) {
+  while (state.run.phase !== "ended" && steps++ < 240) {
     const run = state.run;
+    const moveChoice = resolveMoveLearning(run);
+    if (moveChoice) {
+      actions.MOVE_CHOICE = (actions.MOVE_CHOICE || 0) + 1;
+      act(moveChoice);
+      continue;
+    }
+
     if (run.phase === "battle") {
       const result = simulateCombat(run.battle, maxTurns);
       battles.push({
@@ -116,9 +136,11 @@ export function runCampaign(seed, strategy, mode = "normal", maxTurns = 180) {
       if (!choiceId) throw Error("Weekly event has no available choice");
       actions.EVENT_CHOICE = (actions.EVENT_CHOICE || 0) + 1;
       act({ type: "EVENT_CHOICE", choiceId });
+    } else if (run.phase === "move-choice") {
+      throw Error("Move-choice phase without pending move");
     } else throw Error("Unexpected simulation phase: " + run.phase);
   }
-  if (steps >= 200) censored = true;
+  if (steps >= 240) censored = true;
   const run = state.run;
   return {
     seed,
@@ -132,6 +154,7 @@ export function runCampaign(seed, strategy, mode = "normal", maxTurns = 180) {
     leagueWins: run.leagueIndex,
     week: run.week,
     party: run.party.map((p) => ({ name: p.name, level: p.level })),
+    box: (run.box || []).map((p) => ({ name: p.name, level: p.level })),
     route: run.route.map((c) => c.id),
     actions,
     battles,

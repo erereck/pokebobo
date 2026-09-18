@@ -5,10 +5,7 @@ import { Download, Trophy } from "lucide-react";
 export function SettingsDialog({ setModal, exportSave, state, playing }) {
   return (
     <Modal title="Opções e progresso" onClose={() => setModal(null)}>
-      <p>
-        O save fica neste navegador e agora é migrado entre versões
-        compatíveis, inclusive no meio de uma batalha.
-      </p>
+      <p>O save fica neste navegador, inclusive no meio de uma batalha.</p>
       <button className="button secondary full" onClick={exportSave}>
         <Download size={18} />
         Exportar progresso
@@ -27,12 +24,9 @@ export function SettingsDialog({ setModal, exportSave, state, playing }) {
           <span>melhor marca</span>
         </div>
       </div>
-      <button
-        className="button secondary full"
-        onClick={() => setModal("hall")}
-      >
+      <button className="button secondary full" onClick={() => setModal("hall")}>
         <Trophy size={18} />
-        Abrir Hall da Fama
+        Abrir Hall da Fama · {state.meta.history.length} registros
       </button>
       {playing && (
         <button

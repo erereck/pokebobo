@@ -3,7 +3,13 @@ import { useEffect } from "react";
 import { X } from "lucide-react";
 import { useId } from "react";
 
-export function Modal({ title, onClose, children, className = "" }) {
+export function Modal({
+  title,
+  onClose,
+  children,
+  className = "",
+  dismissible = true,
+}) {
   const ref = useRef();
   const titleId = useId();
   useEffect(() => {
@@ -21,16 +27,21 @@ export function Modal({ title, onClose, children, className = "" }) {
       ref={ref}
       className={className}
       aria-labelledby={titleId}
-      onCancel={onClose}
-      onClick={(e) => {
-        if (e.target === ref.current) onClose();
+      onCancel={(event) => {
+        if (!dismissible) event.preventDefault();
+        else onClose();
+      }}
+      onClick={(event) => {
+        if (dismissible && event.target === ref.current) onClose();
       }}
     >
       <div className="modal-head">
         <h2 id={titleId}>{title}</h2>
-        <button className="icon-button" aria-label="Fechar" onClick={onClose}>
-          <X />
-        </button>
+        {dismissible && (
+          <button className="icon-button" aria-label="Fechar" onClick={onClose}>
+            <X />
+          </button>
+        )}
       </div>
       {children}
     </dialog>

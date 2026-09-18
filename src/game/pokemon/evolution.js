@@ -2,59 +2,42 @@ import { PROGRESSION } from "../config/progression.js";
 import catalog from "../catalog.json" with { type: "json" };
 import { movesFor } from "./moves.js";
 
-const SPECIAL_EVOLUTION_LEVELS = Object.freeze({
-  levelFriendship: 24,
+export const SPECIAL_EVOLUTION_LEVELS = Object.freeze({
+  levelFriendship: 22,
   levelMove: 28,
+  useItem: 30,
   levelHold: 30,
-  useItem: 32,
+  levelExtra: 32,
   trade: 36,
-  levelExtra: 36,
-  other: 32,
+  other: 36,
 });
 
-export function requiredEvolutionLevel(species) {
-  if (!species) return null;
-  if (species.evoLevel) return species.evoLevel;
-  if (!species.evoType) return null;
-  return SPECIAL_EVOLUTION_LEVELS[species.evoType] || 32;
+export function evolutionLevel(name) {
+  const evo = catalog[name];
+  if (!evo) return null;
+  if (evo.evoLevel) return evo.evoLevel;
+  return SPECIAL_EVOLUTION_LEVELS[evo.evoType] || (evo.prevo ? 36 : null);
 }
 
-function branchIndex(mon, sourceName, count) {
-  if (count <= 1) return 0;
-  const text = `${mon.id || "mon"}:${sourceName}`;
-  let hash = 2166136261;
-  for (const char of text) {
-    hash ^= char.charCodeAt(0);
-    hash = Math.imul(hash, 16777619);
+function availableEvolution(name, level) {
+  for (const evoName of catalog[name]?.evos || []) {
+    const requiredLevel = evolutionLevel(evoName);
+    if (requiredLevel && requiredLevel <= level) return evoName;
   }
-  return (hash >>> 0) % count;
-}
-
-function nextEvolution(mon) {
-  const source = catalog[mon.name];
-  if (!source?.evos?.length) return null;
-
-  const choices = source.evos.filter((name) => catalog[name]);
-  if (!choices.length) return null;
-
-  // Linhas ramificadas continuam automáticas: cada Pokémon recebe um caminho
-  // determinístico pelo próprio id, sem pedra, troca, amizade ou menu extra.
-  const targetName = choices[branchIndex(mon, mon.name, choices.length)];
-  const target = catalog[targetName];
-  const level = requiredEvolutionLevel(target);
-  return level && level <= mon.level ? targetName : null;
+  return null;
 }
 
 export function grow(mon, amount) {
   const next = {
     ...mon,
     level: Math.min(PROGRESSION.maxLevel, mon.level + amount),
+    moves: Array.isArray(mon.moves) ? [...mon.moves] : [],
   };
-  let evolution = nextEvolution(next);
-  while (evolution) {
-    next.name = evolution;
-    evolution = nextEvolution(next);
+  let evoName = availableEvolution(next.name, next.level);
+  while (evoName) {
+    next.name = evoName;
+    evoName = availableEvolution(next.name, next.level);
   }
-  next.moves = movesFor(next.name, next.level);
+  if (!next.moves.length) next.moves = movesFor(next.name, next.level);
   return next;
 }

@@ -7,17 +7,19 @@ import { canTrain } from "../../game/selectors/levelGain.js";
 import { PROGRESSION } from "../../game/config/progression.js";
 
 export function WeeklyActions({ act, r }) {
+  const trainees = [...r.party, ...(r.box || [])];
+  const trainingAvailable = canTrain(trainees);
   return (
     <div className="action-grid">
       <Action
         icon={Swords}
         title="Treinar equipe"
         detail={
-          canTrain(r.party)
-            ? `+${PROGRESSION.trainingMin} a ${PROGRESSION.trainingMax} níveis${r.eventBoosts?.training ? ` +${r.eventBoosts.training} bônus` : ""} · até nv. ${PROGRESSION.maxLevel}`
-            : "Equipe no nível máximo"
+          trainingAvailable
+            ? `+${PROGRESSION.trainingMin} a ${PROGRESSION.trainingMax} níveis${r.eventBoosts?.training ? ` +${r.eventBoosts.training} bônus` : ""} · equipe e reserva${r.box?.length ? ` (${r.box.length})` : ""}`
+            : "Equipe e reserva no nível máximo"
         }
-        disabled={!canTrain(r.party)}
+        disabled={!trainingAvailable}
         onClick={() =>
           act({
             type: "TRAIN",
