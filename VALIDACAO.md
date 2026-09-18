@@ -1,4 +1,20 @@
-# Validação — Pokébobo 0.3.0
+# Validação — Pokébobo 0.4.0
+
+## 0.4.0 — Semanas Vivas · 18/09/2026
+
+- Pull request validado pelo workflow `Verify` com Node.js 22.13.0.
+- `npm run check`: **156 módulos**, imports válidos, sem ciclos e sem dependências de UI no motor.
+- `npm test`: **54 testes passaram, zero falhas**. Sete casos novos cobrem tamanho/unicidade do catálogo, determinismo por seed, aplicação de escolha, batalha iniciada por evento, consumo único de bônus de treino, teto de captura em 98% e devolução de orçamento de ação.
+- O teste do simulador também exige que uma campanha real atravesse ao menos um `EVENT_CHOICE`, além de continuar reproduzível para a mesma seed.
+- `npm run build`: Vite concluiu o build da 0.4.0 com **2.034 módulos transformados**.
+- O workflow passou a executar também `npm run balance:audit`. O orçamento-base, que deliberadamente **não inclui ganhos dos novos acontecimentos**, permanece: entrada mediana na Liga em nível **18 / 38 / 58 / 78** para 0 / 1 / 2 / 3 treinos por cidade; 0% das amostras desse orçamento chegam à Liga em 99+.
+- O catálogo contém **57 acontecimentos**. O sorteio usa o RNG persistido da run, chance de 72% (82% na Correria), filtro de contexto e exclusão preferencial dos dez eventos recentes.
+- Bônus de captura são exibidos na tela e consumidos somente em tentativa real; bônus de treino e busca são zerados somente quando suas respectivas ações acontecem. Proteções de emboscada são gastas apenas quando uma emboscada teria sido sorteada.
+- Eventos podem abrir uma captura extra ou batalha imediata. Batalhas de evento guardam recompensa pendente e só entregam o prêmio após vitória.
+- SAVE_VERSION continua 3. Saves anteriores aceitos pela 0.3.0 continuam carregando; estruturas de evento ausentes são completadas sob demanda.
+
+**Limitações:** a auditoria de orçamento não mede os níveis extras concedidos por eventos e não estima dificuldade humana. O simulador automático escolhe a primeira decisão disponível, portanto serve para reprodução/regressão, não para avaliar a melhor estratégia dos 57 acontecimentos. A nova tela foi coberta por build e CSS responsivo, mas uma run completa em aparelho físico ainda é a próxima validação manual recomendada.
+
 
 ## C03 — sequência visual do turno · 18/09/2026
 
