@@ -1,5 +1,15 @@
 # Histórico
 
+## C03 — sequência visual do turno · 18/09/2026
+
+- A escolha de batalha é pré-simulada com o mesmo replay determinístico e só é confirmada depois da apresentação visual.
+- Ataque, perda/recuperação de HP, status, nocaute e troca aparecem em ordem; o último KO não pula mais direto para o resultado.
+- Comandos ficam bloqueados durante a resolução e voltam ao fim da animação.
+- Velocidade 1×/2× persistida como preferência local; redução de movimento respeitada.
+- Registro e animação compartilham o mesmo parser de eventos do protocolo Showdown.
+- npm run verify: 151 módulos válidos, 47 testes passando e build Vite concluído. Regras e schema do save permanecem iguais.
+
+
 ## Repositório GitHub e fluxo web · 15/09/2026
 
 - Projeto preparado para `erereck/pokebobo`: código-fonte, assets locais, licenças, testes, documentação, relatórios e imagens da interface.

@@ -1,8 +1,9 @@
 import { useMemo, useState, useEffect } from "react";
-import { BookOpen, RotateCcw } from "lucide-react";
+import { BookOpen, Gauge, RotateCcw } from "lucide-react";
 import { restoreBattle } from "../../game/battle/restore.js";
 import { battleSnapshot } from "../../game/battle/snapshot.js";
 import { useBattleKeys } from "./useBattleKeys.js";
+import { useBattlePresentation } from "./useBattlePresentation.js";
 import catalog from "../../game/catalog.json" with { type: "json" };
 import { BattleArena } from "./BattleArena.jsx";
 import { BattleBench } from "./BattleBench.jsx";
@@ -19,21 +20,26 @@ export function BattleScreen({ run: r, act }) {
       battle.destroy();
     }
   }, [r.battle]);
-  const [switching, setSwitching] = useState(false),
-    [logOpen, setLogOpen] = useState(false),
-    [locked, setLocked] = useState(false);
-  const forced = Boolean(snap.request?.forceSwitch),
-    current = snap.active;
+  const [switching, setSwitching] = useState(false);
+  const [logOpen, setLogOpen] = useState(false);
+  const {
+    displaySnap,
+    message,
+    effect,
+    locked,
+    speed,
+    toggleSpeed,
+    move,
+  } = useBattlePresentation({ battleSpec: r.battle, snap, act });
+  const forced = Boolean(displaySnap.request?.forceSwitch);
+  const current = displaySnap.active;
+
   useEffect(() => {
-    setLocked(false);
     setSwitching(false);
   }, [r.battle.choices.length]);
-  const move = (choice) => {
-    if (locked) return;
-    setLocked(true);
-    if (act({ type: "BATTLE_CHOICE", choice }) === false) setLocked(false);
-  };
+
   useBattleKeys(!locked && !switching && !forced && !logOpen);
+
   return (
     <section className="battle-screen" aria-label="Batalha">
       <header className="battle-topline">
@@ -53,30 +59,50 @@ export function BattleScreen({ run: r, act }) {
         </div>
         <div className="turn-marker">
           <span>TURNO</span>
-          <strong>{String(snap.turn).padStart(2, "0")}</strong>
+          <strong>{String(displaySnap.turn).padStart(2, "0")}</strong>
         </div>
       </header>
       <div className="battle-field">
-        <BattleArena r={r} snap={snap} current={current} />
-        <BattleBench snap={snap} />
+        <BattleArena
+          r={r}
+          snap={displaySnap}
+          current={current}
+          effect={effect}
+        />
+        <BattleBench snap={displaySnap} />
       </div>
       <div className="battle-comment" role="status" aria-live="polite">
-        <p>{snap.log.slice(-2).join(" ") || "Escolha seu primeiro golpe."}</p>
+        <p>{message}</p>
       </div>
       <section className="battle-controls" aria-label="Decisão do turno">
         <div className="battle-control-heading">
           <h2>
-            {forced
-              ? "Quem continua?"
-              : switching
-                ? "Quem entra?"
-                : current.name + " vai…"}
+            {locked
+              ? "Turno em andamento…"
+              : forced
+                ? "Quem continua?"
+                : switching
+                  ? "Quem entra?"
+                  : current.name + " vai…"}
           </h2>
           <div className="battle-tools">
+            <button
+              className="text-button battle-speed"
+              disabled={locked}
+              onClick={toggleSpeed}
+              aria-label={
+                "Velocidade da animação: " +
+                (speed === "fast" ? "rápida" : "normal")
+              }
+              title="Velocidade da animação"
+            >
+              <Gauge size={15} />
+              {speed === "fast" ? "2×" : "1×"}
+            </button>
             {!forced && (
               <button
                 className="text-button"
-                disabled={locked || snap.request?.active?.[0]?.trapped}
+                disabled={locked || displaySnap.request?.active?.[0]?.trapped}
                 onClick={() => setSwitching(!switching)}
               >
                 <RotateCcw size={15} />
@@ -87,6 +113,7 @@ export function BattleScreen({ run: r, act }) {
               className="icon-button"
               aria-label="Ver registro da batalha"
               title="Registro da batalha"
+              disabled={locked}
               onClick={() => setLogOpen(true)}
             >
               <BookOpen size={18} />
@@ -94,10 +121,10 @@ export function BattleScreen({ run: r, act }) {
           </div>
         </div>
         {forced || switching ? (
-          <SwitchOptions snap={snap} locked={locked} move={move} />
+          <SwitchOptions snap={displaySnap} locked={locked} move={move} />
         ) : (
           <MoveOptions
-            available={snap.request?.active?.[0]?.moves || []}
+            available={displaySnap.request?.active?.[0]?.moves || []}
             currentMon={catalog[current.name]}
             locked={locked}
             move={move}

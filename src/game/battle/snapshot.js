@@ -1,4 +1,5 @@
 import { translateLog } from "./translateLog.js";
+import { presentationEvents } from "./presentationEvents.js";
 
 export function battleSnapshot(b) {
   const mon = (p) => ({
@@ -22,5 +23,6 @@ export function battleSnapshot(b) {
     foe: mon(b.p2.active[0]),
     request: b.p1.activeRequest,
     log: translateLog(b.log).slice(-60),
+    events: presentationEvents(b.log).slice(-120),
   };
 }

@@ -1,4 +1,5 @@
 export function Health({ mon: m }) {
+  const ratio = Math.max(0, Math.min(1, m.hp / m.maxhp));
   return (
     <div className="health-card">
       <div>
@@ -7,12 +8,16 @@ export function Health({ mon: m }) {
       </div>
       <div className="hp-line">
         <span>HP</span>
-        <progress
+        <div
+          className={"hp-meter" + (ratio < 0.25 ? " low" : "")}
+          role="progressbar"
           aria-label={"HP de " + m.name}
-          max={m.maxhp}
-          value={m.hp}
-          className={m.hp / m.maxhp < 0.25 ? "low" : ""}
-        />
+          aria-valuemin="0"
+          aria-valuemax={m.maxhp}
+          aria-valuenow={m.hp}
+        >
+          <span style={{ width: `${ratio * 100}%` }} />
+        </div>
       </div>
       <small>
         {m.status && <b>{m.status.toUpperCase()} · </b>}
