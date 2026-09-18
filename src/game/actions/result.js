@@ -23,7 +23,11 @@ export function handleResult(s, action, state) {
           ? "Seu último Pokémon caiu. A run Nuzlocke terminou sem sobreviventes."
           : `${r.battle.name} encerrou a run. O mapa foi seu. A história também.`,
       );
-      finishRun(s, false);
+      finishRun(
+        s,
+        false,
+        noSurvivors(r) ? "nuzlocke-out" : "defeat",
+      );
       return s;
     }
     const survivors = r.outcome.player
