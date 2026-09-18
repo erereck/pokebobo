@@ -9,10 +9,12 @@ import { Ball } from "../../components/icons/Ball.jsx";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { ENCOUNTER_RULES } from "../../game/config/encounters.js";
+import { captureChanceForRun } from "../../game/career/weekEvents.js";
 
 export function Encounter({ run: r, act }) {
   const [replaceId, setReplaceId] = useState("");
   const full = r.party.length >= 6;
+  const captureChance = captureChanceForRun(r, ENCOUNTER_RULES.captureChance);
   return (
     <>
       <ScreenHeading
@@ -79,7 +81,7 @@ export function Encounter({ run: r, act }) {
         ))}
       </div>
       <p className="fine-print">
-        {Math.round(ENCOUNTER_RULES.captureChance * 100)}% de chance · 1 Poké
+        {Math.round(captureChance * 100)}% de chance{r.eventBoosts?.capture ? ` (+${Math.round(r.eventBoosts.capture * 100)}% de evento)` : ""} · 1 Poké
         Bola · {r.balls} na mochila
         <br />
         Uma tentativa por espécie. O resultado fica salvo.
