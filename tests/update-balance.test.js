@@ -10,6 +10,7 @@ import { makeMon } from "../src/game/pokemon/createPokemon.js";
 import { createRoute } from "../src/game/world/createRoute.js";
 import { familyOf } from "../src/game/world/encounterPool.js";
 import { random } from "../src/game/random/random.js";
+import { SAVE_VERSION } from "../src/game/persistence/constants.js";
 
 test("draft respeita cada posição original e oferece três escolhas por etapa em 80 seeds", () => {
   for (let seed = 1; seed <= 80; seed++) {
@@ -125,12 +126,17 @@ test("time completo exige escolher substituto e falha de captura preserva os sei
   assert.equal(success.run.party[5].id, "mon5");
 });
 
-test("save antigo reinicia no schema atual, sem manter outro conjunto de regras", () => {
-  for (const version of [1, 2]) {
+test("save antigo reconhecível migra sem apagar a carreira", () => {
+  for (const version of [1, 2, 3]) {
     const old = { ...drafted(), version };
-    assert.deepEqual(
-      loadSave({ getItem: () => JSON.stringify(old) }),
-      initialState(),
-    );
+    const loaded = loadSave({
+      getItem: () => JSON.stringify(old),
+      setItem() {},
+    });
+    assert.equal(loaded.version, SAVE_VERSION);
+    assert.equal(loaded.run.seed, old.run.seed);
+    assert.equal(loaded.run.name, old.run.name);
+    assert.equal(loaded.run.party[0].name, old.run.party[0].name);
+    assert.equal(loaded.meta.runs, old.meta.runs);
   }
 });
