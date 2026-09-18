@@ -36,12 +36,17 @@ jobs:
           cp -a "$ROOT/src/." src/
           cp -a "$ROOT/scripts/." scripts/
           cp -a "$ROOT/tests/." tests/
-          git apply "$ROOT/PACKAGE-LOCK.patch"
-          if git apply --check "$ROOT/DOCS.patch"; then
-            git apply "$ROOT/DOCS.patch"
-          else
-            echo "Documentation patch skipped because main documentation changed."
-          fi
+          node - <<'NODE'
+          const fs = require("node:fs");
+          const path = "package-lock.json";
+          let text = fs.readFileSync(path, "utf8");
+          let count = 0;
+          text = text.replace(/"version": "0\.4\.0"/g, (match) =>
+            ++count <= 2 ? '"version": "0.6.0"' : match
+          );
+          if (count < 2) throw new Error("package-lock root versions not found");
+          fs.writeFileSync(path, text);
+          NODE
           git rm -r patches/equipe-viva
 
       - name: Install dependencies
