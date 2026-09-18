@@ -72,7 +72,11 @@ export function migrateSave(input) {
     meta: {
       ...fresh.meta,
       ...(input.meta || {}),
-      runs: Math.max(finite(input.meta?.runs), history.length),
+      runs: Math.max(
+        finite(input.meta?.runs),
+        history.length,
+        ...history.map((run) => finite(run.id)),
+      ),
       wins: Math.max(finite(input.meta?.wins), winsFromHistory),
       best: Math.max(finite(input.meta?.best), bestFromHistory),
       history,
