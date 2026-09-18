@@ -10,6 +10,7 @@ import { CHAMPIONS } from "../data/league/champions.js";
 import { advance } from "../world/advance.js";
 import { afterWeek } from "../career/afterWeek.js";
 import { battleVictory, noSurvivors } from "../selectors/battleVictory.js";
+import { claimEventBattleReward } from "../career/weekEvents.js";
 
 export function handleResult(s, action, state) {
   let r = s.run;
@@ -66,12 +67,13 @@ export function handleResult(s, action, state) {
       else r.phase = "career";
     } else {
       train(r, PROGRESSION.ambushVictoryLevels);
+      const eventReward = claimEventBattleReward(r);
       note(
         r,
-        `${r.battle.name} foi derrotado. Equipe recuperada. O caminho está livre.`,
+        `${r.battle.name} foi derrotado. Equipe recuperada. O caminho está livre.${eventReward ? ` Recompensa do acontecimento: ${eventReward}` : ""}`,
       );
       r.phase = "career";
-      afterWeek(r, false);
+      afterWeek(r, { allowAmbush: false, allowEvent: false });
     }
     r.outcome = null;
     return s;
