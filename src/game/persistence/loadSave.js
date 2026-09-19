@@ -1,48 +1,63 @@
-import { SAVE_BACKUP_KEY, SAVE_KEY, SAVE_VERSION } from "./constants.js";
+import {
+  SAVE_VERSION,
+  normalizeSaveSlot,
+  saveBackupKey,
+  saveKey,
+} from "./constants.js";
 import { initialState } from "../state/initialState.js";
 import { migrateSave } from "./migrateSave.js";
-
-function parseSave(raw) {
-  return migrateSave(JSON.parse(raw));
-}
+import {
+  mergeHall,
+  readGlobalHall,
+  tagHall,
+  writeGlobalHall,
+} from "./hallStorage.js";
 
 function read(storage, key) {
-  try {
-    return storage.getItem(key);
-  } catch {
-    return null;
-  }
+  try { return storage.getItem(key); } catch { return null; }
 }
 
-function backupOldVersion(storage, raw, parsed) {
+function backupOldVersion(storage, raw, parsed, backupKey) {
   if (parsed?.version === SAVE_VERSION || typeof storage.setItem !== "function")
     return;
-  try {
-    storage.setItem(SAVE_BACKUP_KEY, raw);
-  } catch {
-    // A failed backup must not prevent a readable save from loading.
-  }
+  try { storage.setItem(backupKey, raw); } catch {}
 }
 
-export function loadSave(storage) {
-  const raw = read(storage, SAVE_KEY);
+function attachGlobalHall(storage, state, slot) {
+  const local = tagHall(state.meta?.history, slot);
+  const global = readGlobalHall(storage);
+  const history = mergeHall(global, local);
+  state.meta.history = history;
+  try { writeGlobalHall(storage, history); } catch {}
+  return state;
+}
+
+function blankWithHall(storage) {
+  const state = initialState();
+  state.meta.history = readGlobalHall(storage);
+  return state;
+}
+
+export function loadSave(storage, slot = 1) {
+  const normalized = normalizeSaveSlot(slot);
+  const key = saveKey(normalized);
+  const backupKey = saveBackupKey(normalized);
+  const raw = read(storage, key);
+
   if (raw) {
     try {
       const parsed = JSON.parse(raw);
-      backupOldVersion(storage, raw, parsed);
-      return migrateSave(parsed);
-    } catch {
-      // Try the automatic pre-migration backup before falling back to blank.
-    }
+      backupOldVersion(storage, raw, parsed, backupKey);
+      return attachGlobalHall(storage, migrateSave(parsed), normalized);
+    } catch {}
   }
 
-  const backup = read(storage, SAVE_BACKUP_KEY);
+  const backup = read(storage, backupKey);
   if (backup) {
     try {
-      return parseSave(backup);
-    } catch {
-      // Both copies are malformed; only then start from a clean state.
-    }
+      return attachGlobalHall(storage, migrateSave(JSON.parse(backup)), normalized);
+    } catch {}
   }
-  return initialState();
+
+  return blankWithHall(storage);
 }
