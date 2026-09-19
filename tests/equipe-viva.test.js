@@ -7,16 +7,33 @@ import { train } from "../src/game/career/training.js";
 import { reducer } from "../src/game/state/reducer.js";
 import { drafted } from "./helpers/campaign.js";
 
-test("subir de nível enfileira golpes novos em vez de trocar moveset sozinho", () => {
+test("golpe novo aprende direto quando existe slot livre", () => {
   const data = catalog.Bulbasaur;
   const candidate = data.moves.find((move) => move.level > 1 && move.level < 16);
   assert.ok(candidate, "Bulbasaur precisa ter ao menos um golpe de nível antes da evolução");
   const mon = makeMon("Bulbasaur", Math.max(1, candidate.level - 1), "learn");
-  const originalMoves = [...mon.moves];
+  mon.moves = data.moves
+    .filter((move) => move.level <= mon.level && move.id !== candidate.id)
+    .slice(0, 3)
+    .map((move) => move.id);
+  if (!mon.moves.length) mon.moves = ["tackle"];
   const run = { pendingMoveChoices: [], pendingBattleKind: null };
   const next = growWithLearning(run, mon, 1);
-  assert.deepEqual(next.moves, originalMoves);
-  assert.ok(run.pendingMoveChoices.some((choice) => choice.monId === "learn"));
+  assert.equal(next.moves.includes(candidate.id), true);
+  assert.equal(run.pendingMoveChoices.length, 0);
+});
+
+test("golpe novo só vira decisão quando os quatro slots estão ocupados", () => {
+  const data = catalog.Bulbasaur;
+  const candidate = data.moves.find((move) => move.level > 1 && move.level < 16);
+  assert.ok(candidate);
+  const mon = makeMon("Bulbasaur", Math.max(1, candidate.level - 1), "full");
+  mon.moves = ["slot1", "slot2", "slot3", "slot4"];
+  const run = { pendingMoveChoices: [], pendingBattleKind: null };
+  const next = growWithLearning(run, mon, 1);
+  assert.deepEqual(next.moves, mon.moves);
+  assert.equal(run.pendingMoveChoices.length, 1);
+  assert.equal(run.pendingMoveChoices[0].moveId, candidate.id);
 });
 
 test("reserva de três slots acompanha os níveis da equipe", () => {
