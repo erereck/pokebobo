@@ -1,5 +1,21 @@
 # Histórico
 
+## 0.7.0 — Conexão Direta · 19/09/2026
+
+- Equipe Conectada mostra HP atual de todos os Pokémon durante a batalha.
+- Trocas podem ser feitas arrastando um Pokémon apto para o card que está em campo.
+- Pokémon nocauteado fica visível apenas durante a animação de queda e não reaparece antes da próxima entrada.
+- Três slots independentes de carreira no mesmo navegador.
+- Hall da Fama global do aparelho, compartilhado entre os três slots.
+- Save antigo continua automaticamente como Slot 1.
+
+## 0.6.0 — Equipe Viva · 18/09/2026
+
+- Escolha de golpes por nível, reserva de três Pokémon e reordenação da Equipe Conectada por arrastar.
+- Reserva acompanha ganhos de nível e capturas usam vagas livres antes de exigir liberação.
+- 66/66 testes, build e auditoria aprovados.
+
+
 ## 0.5.0 — Legado · 18/09/2026
 
 - Evoluções por troca, pedra/item, amizade, golpe conhecido e outras condições especiais passam a acontecer diretamente por nível; níveis originais existentes continuam valendo.

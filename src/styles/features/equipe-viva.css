@@ -164,3 +164,49 @@
   .forget-move-button { align-items: flex-start; flex-direction: column; }
   .forget-move-button small { max-width: none; }
 }
+
+
+/* 0.7.0 — equipe conectada durante a batalha */
+.companion-party button.has-battle-hp {
+  flex-wrap: wrap;
+  min-height: 74px;
+}
+.companion-party button.is-battle-active {
+  border-color: var(--amber);
+  box-shadow: inset 3px 0 0 var(--amber);
+}
+.companion-party button.is-battle-fainted .sprite {
+  opacity: 0.28;
+  filter: grayscale(1);
+}
+.companion-hp-row {
+  flex: 1 0 100%;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 4px 4px 29px;
+}
+.companion-hp-row > small {
+  min-width: 64px;
+  text-align: right;
+  font: 8px var(--mono);
+  color: #b9ccca;
+}
+.companion-mini-hp {
+  flex: 1;
+  height: 6px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #1d2b30;
+  border: 1px solid #52686a;
+}
+.companion-mini-hp > i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--hp);
+  transition: width 360ms var(--ease);
+}
+.companion-mini-hp.low > i {
+  background: var(--danger);
+}
