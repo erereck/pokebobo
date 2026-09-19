@@ -4,6 +4,7 @@ import { restoreBattle } from "../../game/battle/restore.js";
 import { battleSnapshot } from "../../game/battle/snapshot.js";
 import { useBattleKeys } from "./useBattleKeys.js";
 import { useBattlePresentation } from "./useBattlePresentation.js";
+import { battleSwitchChoice } from "./sidebarBattle.js";
 import catalog from "../../game/catalog.json" with { type: "json" };
 import { BattleArena } from "./BattleArena.jsx";
 import { BattleBench } from "./BattleBench.jsx";
@@ -11,7 +12,12 @@ import { MoveOptions } from "./MoveOptions.jsx";
 import { SwitchOptions } from "./SwitchOptions.jsx";
 import { Modal } from "../../components/ui/Modal.jsx";
 
-export function BattleScreen({ run: r, act }) {
+export function BattleScreen({
+  run: r,
+  act,
+  battleControlRef,
+  onSidebarState,
+}) {
   const snap = useMemo(() => {
     const battle = restoreBattle(r.battle);
     try {
@@ -32,7 +38,36 @@ export function BattleScreen({ run: r, act }) {
     move,
   } = useBattlePresentation({ battleSpec: r.battle, snap, act });
   const forced = Boolean(displaySnap.request?.forceSwitch);
+  const trapped = Boolean(displaySnap.request?.active?.[0]?.trapped);
   const current = displaySnap.active;
+  const battleKey = r.battle.seed.join("-");
+
+  const switchTo = (monId) => {
+    const choice = battleSwitchChoice(displaySnap, monId, { locked });
+    if (!choice) return false;
+    move(choice);
+    return true;
+  };
+
+  if (battleControlRef) battleControlRef.current = { switchTo };
+
+  useEffect(() => {
+    onSidebarState?.({
+      key: battleKey,
+      snap: displaySnap,
+      locked,
+      forced,
+      trapped,
+    });
+  }, [battleKey, displaySnap, locked, forced, trapped, onSidebarState]);
+
+  useEffect(
+    () => () => {
+      if (battleControlRef) battleControlRef.current = null;
+      onSidebarState?.(null);
+    },
+    [battleControlRef, onSidebarState],
+  );
 
   useEffect(() => {
     setSwitching(false);
@@ -63,12 +98,7 @@ export function BattleScreen({ run: r, act }) {
         </div>
       </header>
       <div className="battle-field">
-        <BattleArena
-          r={r}
-          snap={displaySnap}
-          current={current}
-          effect={effect}
-        />
+        <BattleArena r={r} snap={displaySnap} current={current} effect={effect} />
         <BattleBench snap={displaySnap} />
       </div>
       <div className="battle-comment" role="status" aria-live="polite">
@@ -102,7 +132,7 @@ export function BattleScreen({ run: r, act }) {
             {!forced && (
               <button
                 className="text-button"
-                disabled={locked || displaySnap.request?.active?.[0]?.trapped}
+                disabled={locked || trapped}
                 onClick={() => setSwitching(!switching)}
               >
                 <RotateCcw size={15} />
