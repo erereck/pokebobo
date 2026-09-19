@@ -98,7 +98,7 @@ function normalizeMoveChoices(value) {
     .filter((choice) => choice.monId && choice.moveId);
 }
 
-function normalizeRun(run) {
+function normalizeRun(run, fallbackMoveLearningMode = "manual") {
   if (!run || typeof run !== "object" || Array.isArray(run)) return null;
   const party = list(run.party);
   const boosts = object(run.eventBoosts);
@@ -108,6 +108,11 @@ function normalizeRun(run) {
     name:
       typeof run.name === "string" && run.name.trim() ? run.name : "Treinador",
     mode: MODES.has(run.mode) ? run.mode : "normal",
+    moveLearningMode:
+      run.moveLearningMode === "automatic" ||
+      (run.moveLearningMode == null && fallbackMoveLearningMode === "automatic")
+        ? "automatic"
+        : "manual",
     rng: Math.max(1, Math.trunc(number(run.rng, 1))),
     phase: typeof run.phase === "string" ? run.phase : "origin",
     route: list(run.route),
@@ -172,7 +177,9 @@ export function migrateSave(value) {
   const history = list(sourceMeta.history)
     .map(normalizeHistoryEntry)
     .filter(Boolean);
-  const run = normalizeRun(value.run);
+  const moveLearningMode =
+    sourceMeta.moveLearningMode === "automatic" ? "automatic" : "manual";
+  const run = normalizeRun(value.run, moveLearningMode);
   const historyRuns = history.reduce((max, item) => Math.max(max, item.id), 0);
   const historyWins = history.filter((item) => item.won).length;
   const historyBest = history.reduce(
@@ -185,6 +192,7 @@ export function migrateSave(value) {
     version: SAVE_VERSION,
     meta: {
       ...sourceMeta,
+      moveLearningMode,
       runs: Math.max(
         Math.trunc(number(sourceMeta.runs)),
         historyRuns,

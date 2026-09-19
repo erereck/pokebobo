@@ -10,6 +10,8 @@ export function RegistrationForm({
   setName,
   mode,
   setMode,
+  moveLearningMode,
+  setMoveLearningMode,
 }) {
   return (
     <section className="registration">
@@ -17,7 +19,7 @@ export function RegistrationForm({
         NOVO REGISTRO / {String(meta.runs + 1).padStart(3, "0")}
       </span>
       <h2>Nova aventura</h2>
-      <p>Registre seu nome e escolha o modo para começar.</p>
+      <p>Registre seu nome e escolha como quer jogar.</p>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -33,6 +35,7 @@ export function RegistrationForm({
           placeholder="Seu nome de treinador"
           autoComplete="nickname"
         />
+
         <div className="mode-heading">
           <label>MODO DA RUN</label>
           <span>
@@ -69,6 +72,34 @@ export function RegistrationForm({
               ? "Quem cair em batalha deixa a equipe para sempre."
               : "3 semanas por cidade. Perdeu uma batalha, acabou."}
         </p>
+
+        <div className="mode-heading move-learning-heading">
+          <label>MODO DOS ATAQUES</label>
+          <span>SALVO NESTE SLOT</span>
+        </div>
+        <div className="mode-options move-mode-options">
+          {[
+            ["manual", "Manual"],
+            ["automatic", "Automático"],
+          ].map(([id, label]) => (
+            <button
+              type="button"
+              key={id}
+              aria-pressed={moveLearningMode === id}
+              className={cx(moveLearningMode === id && "selected")}
+              onClick={() => setMoveLearningMode(id)}
+            >
+              {moveLearningMode === id ? <Check size={12} /> : null}
+              {label}
+            </button>
+          ))}
+        </div>
+        <p className="mode-desc move-mode-desc">
+          {moveLearningMode === "automatic"
+            ? "O jogo escolhe sozinho até 4 golpes disponíveis sempre que seu Pokémon sobe de nível ou evolui."
+            : "Vagas livres são preenchidas direto. Com 4 golpes, você escolhe qual esquecer quando aprender um novo."}
+        </p>
+
         <button className="button primary start-button" type="submit">
           Iniciar aventura <ArrowRight size={21} />
         </button>

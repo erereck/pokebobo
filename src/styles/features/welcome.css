@@ -224,3 +224,14 @@
   border-radius: 50%;
   background: var(--hp);
 }
+
+
+.move-learning-heading {
+  margin-top: 18px;
+}
+.move-mode-options {
+  grid-template-columns: repeat(2, 1fr);
+}
+.move-mode-desc {
+  min-height: 44px;
+}

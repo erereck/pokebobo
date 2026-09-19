@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import catalog from "../src/game/catalog.json" with { type: "json" };
 import { makeMon } from "../src/game/pokemon/createPokemon.js";
 import { growWithLearning } from "../src/game/pokemon/moveLearning.js";
+import { movesFor } from "../src/game/pokemon/moves.js";
 import { train } from "../src/game/career/training.js";
 import { reducer } from "../src/game/state/reducer.js";
 import { drafted } from "./helpers/campaign.js";
@@ -34,6 +35,19 @@ test("golpe novo só vira decisão quando os quatro slots estão ocupados", () =
   assert.deepEqual(next.moves, mon.moves);
   assert.equal(run.pendingMoveChoices.length, 1);
   assert.equal(run.pendingMoveChoices[0].moveId, candidate.id);
+});
+
+test("modo automático recalcula o moveset sozinho e nunca abre decisão", () => {
+  const mon = makeMon("Bulbasaur", 14, "auto");
+  mon.moves = ["slot1", "slot2", "slot3", "slot4"];
+  const run = {
+    moveLearningMode: "automatic",
+    pendingMoveChoices: [],
+    pendingBattleKind: null,
+  };
+  const next = growWithLearning(run, mon, 1);
+  assert.deepEqual(next.moves, movesFor(next.name, next.level));
+  assert.equal(run.pendingMoveChoices.length, 0);
 });
 
 test("reserva de três slots acompanha os níveis da equipe", () => {

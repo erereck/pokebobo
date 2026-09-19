@@ -1,5 +1,14 @@
 # Histórico
 
+## 0.8.0 — Ataques do Seu Jeito · 19/09/2026
+
+- Cada save escolhe entre aprendizado Manual e Automático ao iniciar a aventura.
+- Manual mantém a regra atual: aprende direto em slots livres e só pede decisão com quatro golpes.
+- Automático restaura o estilo antigo: a cada nível/evolução, o jogo recalcula sozinho até quatro golpes pelo catálogo e nunca abre a tela de aprendizado.
+- A preferência fica salva no slot e volta pré-selecionada nas próximas runs.
+- Saves antigos migram para Manual para não mudar comportamento sem autorização.
+
+
 ## 0.7.1 — Aprendizado direto · 19/09/2026
 
 - Golpes aprendidos por nível entram automaticamente quando o Pokémon tem menos de quatro golpes.

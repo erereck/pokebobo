@@ -16,6 +16,8 @@ test("mods permanecem trancados antes do título; save guarda e carrega a run", 
     seed: 7,
   });
   assert.equal(s.run.mode, "normal");
+  assert.equal(s.run.moveLearningMode, "manual");
+  assert.equal(s.meta.moveLearningMode, "manual");
   const disk = {
     getItem: (key) => (key === SAVE_KEY ? JSON.stringify(s) : null),
   };
@@ -58,6 +60,8 @@ test("save antigo migra sem apagar carreira e cria backup pré-migração", () =
   assert.equal(loaded.meta.history[0].name, "Arquivo");
   assert.equal(loaded.meta.history[0].badges, 6);
   assert.equal(loaded.run.name, "Legado");
+  assert.equal(loaded.run.moveLearningMode, "manual");
+  assert.equal(loaded.meta.moveLearningMode, "manual");
   assert.deepEqual(loaded.run.box, []);
   assert.deepEqual(loaded.run.pendingMoveChoices, []);
   assert.equal(loaded.run.pendingBattleKind, null);
@@ -103,4 +107,24 @@ test("backup automático recupera progresso se a cópia principal corromper", ()
   assert.equal(loaded.meta.runs, 4);
   assert.equal(loaded.meta.wins, 1);
   assert.equal(loaded.meta.history[0].name, "Campeão antigo");
+});
+
+
+test("modo de ataques escolhido fica salvo no slot e na run", () => {
+  const s = reducer(initialState(), {
+    type: "NEW",
+    name: "Auto",
+    moveLearningMode: "automatic",
+    seed: 99,
+  });
+  assert.equal(s.meta.moveLearningMode, "automatic");
+  assert.equal(s.run.moveLearningMode, "automatic");
+
+  const disk = {
+    getItem: (key) => (key === SAVE_KEY ? JSON.stringify(s) : null),
+    setItem() {},
+  };
+  const loaded = loadSave(disk);
+  assert.equal(loaded.meta.moveLearningMode, "automatic");
+  assert.equal(loaded.run.moveLearningMode, "automatic");
 });

@@ -94,10 +94,14 @@ export function HelpDialog({ setModal }) {
           batalha em dupla, usa o mesmo elenco em combate singles aqui.
         </p>
         <p>
-          O adversário recebe golpes automaticamente pelo nível. O seu time usa
-          os golpes que você escolheu durante a carreira. Evoluções normais e
-          especiais acontecem por nível: troca, pedra, amizade e outras
-          condições foram comprimidas em níveis diretos para manter a run rápida.
+          O adversário recebe golpes automaticamente pelo nível. Em cada save,
+          você escolhe como o seu time aprende ataques: no modo Manual, vagas
+          livres são preenchidas sem interromper a run e, com quatro golpes,
+          você escolhe qual esquecer; no Automático, o jogo recalcula sozinho os
+          até quatro melhores golpes disponíveis sempre que o Pokémon sobe de
+          nível ou evolui. Evoluções normais e especiais acontecem por nível:
+          troca, pedra, amizade e outras condições foram comprimidas em níveis
+          diretos para manter a run rápida.
         </p>
         <h3>Feito com projetos abertos</h3>
         <p>
