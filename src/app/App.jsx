@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useGameSession } from "./hooks/useGameSession.js";
 import { AppHeader } from "../components/layout/AppHeader.jsx";
 import { X } from "lucide-react";
@@ -19,6 +19,8 @@ import { initialState } from "../game/state/initialState.js";
 
 export function App() {
   const [selectedMonId, setSelectedMonId] = useState(null);
+  const [battleSidebar, setBattleSidebar] = useState(null);
+  const battleControlRef = useRef(null);
   const {
     state,
     setState,
@@ -36,10 +38,19 @@ export function App() {
     run,
     act,
     exportSave,
+    activeSlot,
+    saveSlots,
+    switchSaveSlot,
   } = useGameSession();
   const setup =
     run && ["origin", "starter", "draft", "ready"].includes(run.phase);
   const playing = run && !setup && run.phase !== "ended";
+  const battleKey = run?.battle?.seed?.join("-") || null;
+  const liveBattleSidebar =
+    run?.phase === "battle" && battleSidebar?.key === battleKey
+      ? battleSidebar
+      : null;
+
   return (
     <div
       className={
@@ -102,17 +113,23 @@ export function App() {
               run={run}
               act={act}
               selectedMonId={selectedMonId}
+              battleControlRef={battleControlRef}
+              onBattleSidebarChange={setBattleSidebar}
             />
           </div>
           <div className="dex-hinge" aria-hidden="true" />
           <TeamSidebar
             run={run}
+            battle={liveBattleSidebar}
             onTeam={(id) => {
               setSelectedMonId(id || null);
               setTab("team");
             }}
             onReorder={(sourceId, targetId) =>
               act({ type: "REORDER_PARTY", sourceId, targetId })
+            }
+            onBattleSwitch={(monId) =>
+              battleControlRef.current?.switchTo(monId)
             }
           />
         </div>
@@ -134,6 +151,9 @@ export function App() {
           exportSave={exportSave}
           state={state}
           playing={playing}
+          activeSlot={activeSlot}
+          saveSlots={saveSlots}
+          switchSaveSlot={switchSaveSlot}
         />
       )}
       {modal === "abandon" && <AbandonDialog setModal={setModal} act={act} />}
@@ -141,7 +161,9 @@ export function App() {
         <ResetDialog
           onClose={() => setModal("settings")}
           onReset={() => {
-            setState(initialState());
+            const blank = initialState();
+            blank.meta.history = state.meta.history;
+            setState(blank);
             setTab("journey");
             setModal(null);
             setError("");
