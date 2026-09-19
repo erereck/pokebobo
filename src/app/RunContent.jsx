@@ -9,7 +9,14 @@ import { RegionScreen } from "../features/region/RegionScreen.jsx";
 import { Journal } from "../features/journal/Journal.jsx";
 import { WeekEventScreen } from "../features/events/WeekEventScreen.jsx";
 
-export function RunContent({ tab, run, act, selectedMonId }) {
+export function RunContent({
+  tab,
+  run,
+  act,
+  selectedMonId,
+  battleControlRef,
+  onBattleSidebarChange,
+}) {
   const mainRef = useRef(null);
   useEffect(() => {
     mainRef.current?.scrollTo(0, 0);
@@ -22,7 +29,12 @@ export function RunContent({ tab, run, act, selectedMonId }) {
     >
       {tab === "journey" ? (
         run.phase === "battle" ? (
-          <BattleScreen run={run} act={act} />
+          <BattleScreen
+            run={run}
+            act={act}
+            battleControlRef={battleControlRef}
+            onSidebarState={onBattleSidebarChange}
+          />
         ) : run.phase === "result" ? (
           <ResultScreen run={run} act={act} />
         ) : run.phase === "encounter" ? (
