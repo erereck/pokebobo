@@ -35,6 +35,8 @@ export function App() {
     setName,
     mode,
     setMode,
+    moveLearningMode,
+    setMoveLearningMode,
     run,
     act,
     exportSave,
@@ -81,12 +83,15 @@ export function App() {
           setName={setName}
           mode={mode}
           setMode={setMode}
+          moveLearningMode={moveLearningMode}
+          setMoveLearningMode={setMoveLearningMode}
           meta={state.meta}
           onStart={() =>
             act({
               type: "NEW",
               name,
               mode,
+              moveLearningMode,
             })
           }
         />
