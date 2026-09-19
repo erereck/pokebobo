@@ -32,6 +32,9 @@ export function useGameSession() {
   const saving = useAutosave(state, activeSlot);
   const [name, setName] = useState("");
   const [mode, setMode] = useState("normal");
+  const [moveLearningMode, setMoveLearningMode] = useState(
+    () => state.meta.moveLearningMode || "manual",
+  );
   const run = state.run;
 
   const act = (action) => {
@@ -66,6 +69,7 @@ export function useGameSession() {
       setError("");
       setName("");
       setMode("normal");
+      setMoveLearningMode(nextState.meta.moveLearningMode || "manual");
       return true;
     } catch (e) {
       setError(e.message);
@@ -91,6 +95,8 @@ export function useGameSession() {
     setName,
     mode,
     setMode,
+    moveLearningMode,
+    setMoveLearningMode,
     run,
     act,
     exportSave,
