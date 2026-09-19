@@ -1,5 +1,12 @@
 # Histórico
 
+## 0.7.1 — Aprendizado direto · 19/09/2026
+
+- Golpes aprendidos por nível entram automaticamente quando o Pokémon tem menos de quatro golpes.
+- A tela de decisão só aparece quando os quatro slots já estão ocupados.
+- Saves antigos parados numa decisão com vaga livre aprendem o golpe automaticamente sem exibir a janela.
+
+
 ## 0.7.0 — Conexão Direta · 19/09/2026
 
 - Equipe Conectada mostra HP atual de todos os Pokémon durante a batalha.
