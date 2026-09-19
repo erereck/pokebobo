@@ -1,8 +1,8 @@
-# Pokébobo — 0.7.0 · Conexão Direta
+# Pokébobo — 0.7.1 · Conexão Direta
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
 
-A 0.7.0 transforma a Equipe Conectada em painel de batalha, adiciona três slots independentes de carreira com Hall da Fama global do aparelho e corrige a transição visual após nocautes. A 0.6.0 já havia adicionado escolha de golpes e reserva de três Pokémon. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 158 módulos JavaScript/JSX e 31 arquivos CSS ativos.
+A 0.7.1 aprende golpes automaticamente enquanto houver slot livre; a decisão só aparece com quatro golpes. A 0.7.0 transformou a Equipe Conectada em painel de batalha, adiciona três slots independentes de carreira com Hall da Fama global do aparelho e corrige a transição visual após nocautes. A 0.6.0 já havia adicionado escolha de golpes e reserva de três Pokémon. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 158 módulos JavaScript/JSX e 31 arquivos CSS ativos.
 
 Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde editar](docs/ONDE-EDITAR.md) e [pesquisa de capas de rotas](docs/ARTES-E-ROTAS.md).
 

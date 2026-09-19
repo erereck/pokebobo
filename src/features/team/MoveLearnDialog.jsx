@@ -16,11 +16,21 @@ function moveInfo(species, id) {
 export function MoveLearnDialog({ run, act }) {
   const pending = run.pendingMoveChoices?.[0];
   const mon = pending && findMon(run, pending.monId);
+  const freeSlot = Boolean(mon && (mon.moves?.length || 0) < 4);
+
   useEffect(() => {
-    if (pending && !mon)
+    if (!pending) return;
+    if (!mon) {
       act({ type: "MOVE_CHOICE", monId: pending.monId, skip: true });
-  }, [pending?.monId, mon, act]);
-  if (!pending || !mon) return null;
+      return;
+    }
+    // Compatibilidade com saves da 0.6/0.7 que ficaram parados numa decisão
+    // criada antes da regra de aprendizado automático em vagas livres.
+    if (freeSlot)
+      act({ type: "MOVE_CHOICE", monId: pending.monId });
+  }, [pending?.monId, pending?.moveId, mon, freeSlot, act]);
+
+  if (!pending || !mon || freeSlot) return null;
 
   const learned = moveInfo(pending.species || mon.name, pending.moveId);
   const currentData = catalog[mon.name];
@@ -41,7 +51,8 @@ export function MoveLearnDialog({ run, act }) {
           </span>
           <h3>{mon.name} quer aprender {learned?.name || pending.moveId}.</h3>
           <p>
-            Você decide o moveset. Ignorar também é definitivo para este nível.
+            Os quatro slots estão ocupados. Escolha um golpe para esquecer ou
+            ignore o novo.
           </p>
         </div>
       </section>
@@ -59,40 +70,31 @@ export function MoveLearnDialog({ run, act }) {
         </small>
       </div>
 
-      {mon.moves.length < 4 ? (
-        <button
-          className="button primary full"
-          onClick={() => act({ type: "MOVE_CHOICE", monId: mon.id })}
-        >
-          Aprender sem esquecer nenhum golpe
-        </button>
-      ) : (
-        <div className="forget-move-list">
-          <span className="section-label">QUAL GOLPE SAI?</span>
-          {mon.moves.map((id) => {
-            const move = currentData?.moves.find((candidate) => candidate.id === id);
-            return (
-              <button
-                className="forget-move-button"
-                key={id}
-                onClick={() =>
-                  act({
-                    type: "MOVE_CHOICE",
-                    monId: mon.id,
-                    forgetMoveId: id,
-                  })
-                }
-              >
-                <span>
-                  <strong>{move?.name || id}</strong>
-                  {move?.type && <TypeTag type={move.type} />}
-                </span>
-                <small>Esquecer este e aprender {learned?.name || pending.moveId}</small>
-              </button>
-            );
-          })}
-        </div>
-      )}
+      <div className="forget-move-list">
+        <span className="section-label">QUAL GOLPE SAI?</span>
+        {mon.moves.map((id) => {
+          const move = currentData?.moves.find((candidate) => candidate.id === id);
+          return (
+            <button
+              className="forget-move-button"
+              key={id}
+              onClick={() =>
+                act({
+                  type: "MOVE_CHOICE",
+                  monId: mon.id,
+                  forgetMoveId: id,
+                })
+              }
+            >
+              <span>
+                <strong>{move?.name || id}</strong>
+                {move?.type && <TypeTag type={move.type} />}
+              </span>
+              <small>Esquecer este e aprender {learned?.name || pending.moveId}</small>
+            </button>
+          );
+        })}
+      </div>
 
       <button
         className="button secondary full"
