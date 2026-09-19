@@ -9,11 +9,20 @@ export function handleNew(s, action, state) {
       s.meta.wins && ["rush", "nuzlocke"].includes(action.mode)
         ? action.mode
         : "normal";
+    const moveLearningMode = ["manual", "automatic"].includes(
+      action.moveLearningMode,
+    )
+      ? action.moveLearningMode
+      : ["manual", "automatic"].includes(s.meta.moveLearningMode)
+        ? s.meta.moveLearningMode
+        : "manual";
+    s.meta.moveLearningMode = moveLearningMode;
     s.meta.runs++;
     r = s.run = {
       number: s.meta.runs,
       name: (action.name || "Treinador").trim().slice(0, 24) || "Treinador",
       mode,
+      moveLearningMode,
       rng: action.seed >>> 0 || Date.now() >>> 0 || 1,
       phase: "origin",
       route: [],
