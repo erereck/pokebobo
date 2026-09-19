@@ -15,8 +15,10 @@ export function HelpDialog({ setModal }) {
         </p>
         <p>
           Na Equipe, selecione um Pokémon para ver seus golpes, mudar o líder e
-          gerenciar a reserva. Na Jornada do PC, arraste o <b>⋮⋮</b> da Equipe
-          Conectada para mudar a ordem: o slot 1 abre a próxima batalha.
+          gerenciar a reserva. Fora de combate, arraste o <b>⋮⋮</b> da Equipe
+          Conectada para mudar a ordem. Durante uma batalha, ela mostra o HP ao
+          vivo dos seis e permite arrastar um Pokémon apto para o que está em
+          campo para realizar a troca.
         </p>
         <p>
           Quando um Pokémon alcançar o nível de um golpe novo, a Pokédex abre
@@ -75,6 +77,13 @@ export function HelpDialog({ setModal }) {
           são removidos. Sem sobreviventes, a run termina mesmo que o adversário
           também tenha caído. Preparar equipa uma berry de cura em cada
           integrante ativo; entrar na reserva remove o item preparado.
+        </p>
+        <h3>Saves e Hall da Fama</h3>
+        <p>
+          O aparelho oferece três slots independentes para pessoas diferentes
+          jogarem sem sobrescrever a carreira umas das outras. O Hall da Fama é
+          único do navegador: jornadas encerradas em qualquer slot aparecem
+          juntas no mesmo arquivo.
         </p>
         <h3>Sobre este protótipo</h3>
         <p>
