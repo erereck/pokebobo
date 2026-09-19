@@ -1,8 +1,8 @@
-# Pokébobo — 0.5.0 · Legado
+# Pokébobo — 0.7.0 · Conexão Direta
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
 
-A 0.5.0 mantém as 57 Semanas Vivas e adiciona três pilares: evoluções especiais convertidas para nível, Hall da Fama para todas as jornadas encerradas e migração de save entre versões. As batalhas continuam com resolução visual em sequência e sprites animados do Showdown quando disponíveis. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 158 módulos JavaScript/JSX e 31 arquivos CSS ativos.
+A 0.7.0 transforma a Equipe Conectada em painel de batalha, adiciona três slots independentes de carreira com Hall da Fama global do aparelho e corrige a transição visual após nocautes. A 0.6.0 já havia adicionado escolha de golpes e reserva de três Pokémon. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 158 módulos JavaScript/JSX e 31 arquivos CSS ativos.
 
 Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde editar](docs/ONDE-EDITAR.md) e [pesquisa de capas de rotas](docs/ARTES-E-ROTAS.md).
 
@@ -25,7 +25,7 @@ npm run dev
 
 Abra o endereço exibido pelo Vite (por padrão, http://localhost:4173/). No celular conectado à mesma rede Wi-Fi, use o endereço de rede exibido. O servidor precisa continuar aberto e não reinicia sozinho depois que o computador é desligado.
 
-O save fica no navegador; **Opções → Exportar progresso** guarda uma cópia em JSON. Saves de cada endereço/navegador são separados. O repositório contém o código-fonte, não uma hospedagem do jogo.
+O save fica no navegador. Há três slots independentes de carreira; o Hall da Fama é compartilhado entre eles neste aparelho. **Opções → Exportar progresso** guarda uma cópia em JSON do slot atual. Saves de cada endereço/navegador são separados. O repositório contém o código-fonte, não uma hospedagem do jogo.
 
 **A partir de 15/09/2026, o HTML standalone deixou de ser atualizado ou distribuído, por decisão do usuário.** O fluxo oficial é a aplicação web. O script legado de standalone permanece apenas como referência e não participa da verificação.
 
@@ -41,7 +41,7 @@ O save fica no navegador; **Opções → Exportar progresso** guarda uma cópia 
 - Limite de três semanas por cidade. Depois da última ação e da resolução de eventual acontecimento, a viagem ou o ginásio começa automaticamente.
 - Treino (+1 a 3 níveis na equipe), exploração, captura, busca de itens e preparação com berries. Viagem e emboscada: zero níveis. Vitória em ginásio ou Liga: +1.
 - Níveis originais por Pokémon do líder. Se o maior nível do jogador exceder o ás original em 10 ou mais, o líder recebe +6 em todos, uma vez. Não há limite de nível por etapa.
-- Quatro golpes juntos na batalha, trocas em grade e registro completo em uma janela separada. Cada turno é apresentado em sequência (ataque, HP, status, queda e troca), com velocidade 1×/2×.
+- Quatro golpes juntos na batalha, trocas em grade, troca por arrastar na Equipe Conectada, HP ao vivo dos seis e registro completo em uma janela separada. Cada turno é apresentado em sequência (ataque, HP, status, queda e troca), com velocidade 1×/2×.
 - Duas espécies de famílias distintas por rota, priorizando famílias ainda não vistas; uma tentativa por espécie, com 86% de chance base (eventos podem elevar até 98%) e custo de uma Poké Bola. Equipe de até seis; ao capturar com time cheio, escolha quem será substituído apenas se a captura der certo.
 - Batalhas aleatórias: chance de 10% após uma ação elegível, com intervalo mínimo de três semanas entre emboscadas.
 - Batalhas reais do Pokémon Showdown via `@pkmn/sim`, inteiramente no navegador. Golpes, PP, habilidades, tipos, status, prioridade, dano, trocas e itens seguem o motor.
@@ -56,7 +56,7 @@ O save fica no navegador; **Opções → Exportar progresso** guarda uma cópia 
 
 As batalhas usam regras singles da geração 8. Não há multiplayer, Dynamax, Mega Evolução nem editor de golpes. Os golpes são escolhidos automaticamente a partir dos learnsets por nível do Showdown, buscando STAB e cobertura, e não reproduzem um moveset histórico único. O gerador escolhe uma geração comum à linhagem (8, com fallback para 7), conserva níveis herdados e distingue golpes de evolução dos lembretes. Lembretes exclusivos ficam fora da seleção automática. A origem de cada golpe está no catálogo e na auditoria; veja REGRAS-DE-GOLPES.md. Mossdeep conserva o elenco de Emerald em batalha singles. Ainda não há todas as equipes de todas as gerações.
 
-Todas as evoluções do recorte jogável são resolvidas por nível. Métodos originais como troca, pedra/item, amizade, golpe conhecido e outras condições recebem níveis substitutos; quando o dado original já possui nível mínimo, ele é mantido. Linhas ramificadas escolhem automaticamente um caminho determinístico por Pokémon. Não existe PC/reserva. Capturas podem substituir um integrante escolhido. Toda vitória recupera a equipe, com exceção dos removidos pelo Nuzlocke. Na rodada 0.2.2 foram simuladas 800 campanhas com batalhas reais no Clássico; a rodada anterior dos três modos fica como referência histórica. Isso testa políticas automáticas e identifica problemas; não determina a taxa de vitória de pessoas. As políticas automáticas ainda precisam ser ajustadas à economia da Correria e à sobrevivência da Nuzlocke.
+Todas as evoluções do recorte jogável são resolvidas por nível. Métodos originais como troca, pedra/item, amizade, golpe conhecido e outras condições recebem níveis substitutos; quando o dado original já possui nível mínimo, ele é mantido. Linhas ramificadas escolhem automaticamente um caminho determinístico por Pokémon. Existe uma reserva compacta de três Pokémon, que acompanha ganhos de nível da equipe. Capturas com seis ativos usam a reserva antes de exigir liberação. Toda vitória recupera a equipe, com exceção dos removidos pelo Nuzlocke. Na rodada 0.2.2 foram simuladas 800 campanhas com batalhas reais no Clássico; a rodada anterior dos três modos fica como referência histórica. Isso testa políticas automáticas e identifica problemas; não determina a taxa de vitória de pessoas. As políticas automáticas ainda precisam ser ajustadas à economia da Correria e à sobrevivência da Nuzlocke.
 
 O save local é para uso individual e pode ser editado pelo dono do aparelho. Não há verificação competitiva contra adulteração.
 
