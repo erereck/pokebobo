@@ -5,6 +5,7 @@ export const initialState = () => ({
     runs: 0,
     wins: 0,
     best: 0,
+    moveLearningMode: "manual",
     history: [],
   },
   run: null,
