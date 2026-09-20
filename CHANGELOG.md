@@ -1,5 +1,13 @@
 # Histórico
 
+## 0.8.1 — Ordem do desmaio · 20/09/2026
+
+- Dano fatal pode zerar o HP, mas não esconde mais o sprite antes do evento de desmaio.
+- O estado visual de nocaute agora só é aplicado quando o protocolo envia `faint`.
+- A sequência fica: dano → animação de desmaio → desaparecimento → próxima entrada.
+- Adicionado teste de regressão para impedir o bug “sumir antes e depois animar”.
+
+
 ## 0.8.0 — Ataques do Seu Jeito · 19/09/2026
 
 - Cada save escolhe entre aprendizado Manual e Automático ao iniciar a aventura.
