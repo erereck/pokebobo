@@ -69,7 +69,12 @@ export function applyBattleEvent(currentSnapshot, event, finalSnapshot) {
         maxhp,
         hp,
         status: event.health?.status ?? mon.status,
-        fainted: Boolean(event.health?.fainted || hp <= 0),
+        // Showdown já marca o dano final com "fnt", mas o sprite só deve
+        // entrar no estado de desmaio quando o evento |faint| chegar.
+        fainted:
+          event.type === "damage"
+            ? mon.fainted
+            : Boolean(event.health?.fainted || hp <= 0),
       };
     });
   }

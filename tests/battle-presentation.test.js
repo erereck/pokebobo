@@ -141,6 +141,54 @@ test("aplicação visual altera HP, status, queda e troca sem tocar no snapshot 
   assert.equal(shown.foe.active, true);
 });
 
+test("dano fatal não esconde o sprite antes do evento de desmaio", () => {
+  const before = {
+    active: null,
+    foe: {
+      id: "foe0",
+      name: "Charmander",
+      hp: 12,
+      maxhp: 28,
+      fainted: false,
+      active: true,
+    },
+    player: [],
+    enemy: [
+      {
+        id: "foe0",
+        name: "Charmander",
+        hp: 12,
+        maxhp: 28,
+        fainted: false,
+        active: true,
+      },
+    ],
+  };
+  const finalSnapshot = structuredClone(before);
+
+  const afterDamage = applyBattleEvent(
+    before,
+    {
+      type: "damage",
+      side: "enemy",
+      targetId: "foe0",
+      health: { hp: 0, maxhp: 28, fainted: true },
+    },
+    finalSnapshot,
+  );
+
+  assert.equal(afterDamage.foe.hp, 0);
+  assert.equal(afterDamage.foe.fainted, false);
+
+  const afterFaint = applyBattleEvent(
+    afterDamage,
+    { type: "faint", side: "enemy", targetId: "foe0" },
+    finalSnapshot,
+  );
+
+  assert.equal(afterFaint.foe.fainted, true);
+});
+
 test("somente eventos posteriores ao snapshot atual entram na animação", () => {
   const before = { events: [{ index: 4 }, { index: 7 }] };
   const after = {
