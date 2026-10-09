@@ -83,29 +83,41 @@ export function PokemonDetails({ mon, run, act }) {
             );
           })}
         </div>
-        <button
-          className="button primary full"
-          disabled={lead || run.phase !== "career"}
-          onClick={() => act({ type: "LEAD", id: mon.id })}
-        >
-          {lead ? <Flag size={17} /> : <ArrowUp size={17} />}{" "}
-          {lead
-            ? "Abre as batalhas"
-            : run.phase !== "career"
-              ? "Troque a ordem entre batalhas"
-              : "Colocar na frente · grátis"}
-        </button>
-        {evolutions.length > 1 &&
-          evolutions.some((option) => option.available) && (
-            <button
-              className="button secondary full"
-              disabled={run.phase !== "career"}
-              onClick={() => act({ type: "EVOLUTION_REQUEST", monId: mon.id })}
-            >
-              <Sparkles size={17} />
-              Escolher evolução · grátis
-            </button>
-          )}
+        <div className="pokemon-management">
+          <button
+            className="button primary full"
+            aria-label={
+              lead
+                ? "Abre as batalhas"
+                : run.phase !== "career"
+                  ? "Troque a ordem entre batalhas"
+                  : "Colocar na frente · grátis"
+            }
+            disabled={lead || run.phase !== "career"}
+            onClick={() => act({ type: "LEAD", id: mon.id })}
+          >
+            {lead ? <Flag size={17} /> : <ArrowUp size={17} />}{" "}
+            {lead
+              ? "Abre as batalhas"
+              : run.phase !== "career"
+                ? "Ordem bloqueada"
+                : "Colocar na frente"}
+          </button>
+          {evolutions.length > 1 &&
+            evolutions.some((option) => option.available) && (
+              <button
+                className="button secondary full"
+                aria-label="Escolher evolução · grátis"
+                disabled={run.phase !== "career"}
+                onClick={() =>
+                  act({ type: "EVOLUTION_REQUEST", monId: mon.id })
+                }
+              >
+                <Sparkles size={17} />
+                Escolher evolução
+              </button>
+            )}
+        </div>
       </div>
     </section>
   );

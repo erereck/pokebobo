@@ -1,5 +1,17 @@
 # Histórico
 
+## 0.11.0 — Ritmo de Kanto · 09/10/2026
+
+- Tela cheia ao lado da Pokédex, com estado de entrada/saída, suporte do navegador e mensagem em caso de recusa.
+- Campo e captura dimensionados pelo espaço livre do visor, incluindo telefone estreito e orientação horizontal. Controles mantêm suas áreas de toque.
+- Direcional, setas e WASD podem ser segurados. Soltar, perder foco, abrir janela ou sair da tela interrompe a repetição; movimento reduzido mantém a cadência.
+- Mato cobre somente a região dos pés nas casas realmente atravessadas, eliminando a sobreposição antecipada de uma casa inteira.
+- Correção do teleporte da bola: cada quadro guarda sua própria posição. Arremesso termina no ponto de abertura; absorção e fechamento permanecem nele até começar a queda.
+- Entrada no encontro com dois pulsos de paleta e cortes por linha na grama ou ondulação no lago, reconstruídos a partir da referência FRLG.
+- Menu de captura com Poké Bola/quantidade e Fugir lado a lado; fonte, cursor e estoque desenhados junto da cena. Quebra de palavras e limites de texto; ã/õ/Ã/Õ derivados dos glifos originais.
+- Ficha/golpes e reserva alternam dentro da Equipe. Mochila, mapa e jornada horizontal mais compactos; ações de troca, líder e evolução preservadas.
+- 97 testes, arquitetura/build/auditoria e 125 registros de navegador. Os fluxos normais não tiveram erros; um 404 foi injetado para validar mensagem e botões de recuperação. Regras e probabilidades preservadas.
+
 ## 0.10.0 — Passos de Kanto · 09/10/2026
 
 - Ajuste final: Poké Bola pousa sobre a plataforma, independentemente da altura do Pokémon; regressão coberta e 94 testes aprovados.

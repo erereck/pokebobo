@@ -14,11 +14,17 @@ export function HelpDialog({ setModal }) {
           voltar aos comandos.
         </p>
         <p>
+          O botão ao lado da Pokédex abre o jogo em tela cheia quando o
+          navegador oferece esse recurso. Use o mesmo botão ou Esc para sair. Na
+          exploração, segure setas, WASD ou os botões de direção para continuar
+          caminhando; abrir uma janela interrompe o movimento.
+        </p>
+        <p>
           Na Equipe, selecione um Pokémon para ver seus golpes, mudar o líder e
-          gerenciar a reserva. Fora de combate, arraste o <b>⋮⋮</b> da Equipe
-          Conectada para mudar a ordem. Durante uma batalha, ela mostra o HP ao
-          vivo dos seis e permite arrastar um Pokémon apto para o que está em
-          campo para realizar a troca.
+          alternar entre Ficha e golpes e Reserva. Fora de combate, arraste o{" "}
+          <b>⋮⋮</b> da Equipe Conectada para mudar a ordem. Durante uma batalha,
+          ela mostra o HP ao vivo dos seis e permite arrastar um Pokémon apto
+          para o que está em campo para realizar a troca.
         </p>
         <p>
           Quando um Pokémon alcançar o nível de um golpe novo, a Pokédex abre

@@ -1,5 +1,19 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 09/10/2026 — 0.11.0: Ritmo de Kanto
+
+**Pedido:** polimento geral de fontes, botões, enquadramento e animações; corrigir o salto da bola na absorção e a sobreposição do mato; controles segurados, tela cheia junto da Pokédex, entrada no encontro e menu de captura melhores. Merge direto autorizado pelo usuário após revisão.
+
+**Captura:** o salto tinha uma causa diferente do pouso corrigido antes: vários quadros de absorção compartilhavam o objeto da bola que depois era movido para o chão. Cada quadro agora recebe uma cópia. O arco chega exatamente ao primeiro quadro de abertura, e a bola mantém a posição durante absorção/fechamento antes de cair em y=70. Fonte, cursor, estoque e menu são desenhados no mesmo canvas para evitar escalas distintas; os dois botões nativos transparentes preservam foco e acessibilidade. Na falta de asset, passam a mostrar texto e permitem sair. Texto quebra entre palavras e respeita a moldura; quatro glifos com til foram recompostos com letras e acento originais.
+
+**Campo e entrada:** a máscara de mato acompanha somente os pés, intersectando as casas sob eles em vez de repintar todo o tile de destino antecipadamente. Setas/WASD e ponteiro podem ficar pressionados, um passo após o outro. Repetição nativa não acelera o movimento reduzido. Release, blur, janela aberta, aba oculta e desmontagem encerram o comando. A entrada reconstrói os dois pulsos cinza da referência, Slice por linhas alternadas na grama e Ripple no lago; depois Red e Pokémon deslizam para a cena. Nenhum efeito visual consome RNG.
+
+**Visor:** ResizeObserver ajusta a cena ao espaço que sobra, mantendo proporção, pixels e áreas de toque. O rodapé reserva espaço estável para que a tentativa não redimensione a cena ao esconder as opções de destino. Campo/captura e controles passam a caber nos oito tamanhos inspecionados. Ficha/golpes e reserva alternam dentro da Equipe; seis seletores permanecem juntos, e o modo horizontal usa duas colunas. Mochila tem estoque/ações/equipamentos mais compactos; mapa usa a altura livre; jornada horizontal mantém preparação e avanço visíveis. O botão de tela cheia fica imediatamente após a Pokédex e acompanha o estado real do navegador.
+
+**Evidência:** 97 testes, arquitetura (194 módulos), build e auditoria de progressão; 125 registros no Edge/Playwright, incluindo seis Pokémon, reserva cheia, batalha real, reload e movimento reduzido. Os fluxos normais ficaram sem erros de console/rede; um 404 controlado validou recuperação. Hit-tests conferem que um botão não fica coberto por outro painel. Relatórios `docs/balance/browser-*-0.11.0.json` e detalhes em `VALIDACAO.md`. Regras, sorteios e economia não mudaram. Relatórios anteriores preservados abaixo.
+
+**Limitações e próximos passos:** validar em telefone físico e Safari/iOS, particularmente tela cheia e barras do navegador; listas extensas continuam rolando dentro do visor. A referência FRLG orienta quadros/timings, sem emular integralmente uma ROM. Áudio e novas regras não fazem parte desta entrega. Próximo refinamento útil: navegação por controle externo e avaliação de leitura física das inscrições pequenas, sem reduzir áreas de toque.
+
 ## Ajuste final de 09/10/2026 — pouso da Poké Bola
 
 **Pedido:** corrigir a bola abaixo da grama e integrar o PR após a correção.

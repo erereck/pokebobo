@@ -1,4 +1,17 @@
-# Validação — Pokébobo 0.10.0
+# Validação — Pokébobo 0.11.0
+
+## 0.11.0 — Ritmo de Kanto · 09/10/2026
+
+- `npm run verify`: 194 módulos sem ciclos/dependências de UI no motor, 97/97 testes e build web Vite. Nenhum HTML standalone foi gerado.
+- Regressões novas: posições independentes da bola em cinco alturas e ambos os resultados; continuidade arremesso → abertura → absorção → fechamento → queda; cobertura do mato somente sob os pés nas quatro direções; texto limitado à caixa e glifos portugueses.
+- Edge/Playwright: 68 registros gerais em 1440×900, 1280×720, 1024×768, 390×844, 360×640, 320×568, 844×390 e 667×375. Campo/captura/estoque lotado, jornada, equipe, mochila, mapa, diário, janelas e turnos reais de batalha. Sem overflow horizontal, sprites quebrados ou erros de console/rede. Botões da captura têm ao menos 44 px de altura. Relatório: `docs/balance/browser-polish-0.11.0.json`.
+- Gestão: 36 registros com seis Pokémon, quatro golpes, Eevee apto a evoluir e três reservas. Botões testados também por posição e hit-test para detectar sobreposição. Troca com reserva cheia, líder, reload e preparação cobrando uma semana. Relatório: `docs/balance/browser-panels-0.11.0.json`.
+- Captura: 18 registros de encontros naturais, pesca/Surf, espécie posterior ao FRLG, sucesso/falha, substituição, apresentação completa a 1×, reload durante arremesso, movimento reduzido e pular animação. Posição/dimensões da cena conferidas antes/depois da tentativa para evitar salto de enquadramento. Bola/RNG/payload preservados; conclusão não duplica Pokémon. Relatório: `docs/balance/browser-capture-0.11.0.json`.
+- Controles: teclado e ponteiro segurados, liberação fora do botão, janela bloqueando movimento e tela cheia real com Pokédex aberta. Entrada/saída, API indisponível e recusa do navegador verificadas.
+- Recuperação: três registros adicionais. Repetição nativa de teclado não inicia passos extras; 404 proposital da fonte mostra erro e ações legíveis, permitindo fugir sem gastar bola. Esse erro foi esperado e separado dos fluxos normais. Relatório: `docs/balance/browser-recovery-0.11.0.json`.
+- GIF gerado de 194 quadros capturados da aplicação: entrada e captura completa, sem erro de execução. Fontes FRLG regeneradas pelo importador; somente as duas folhas de fonte e suas métricas mudaram entre os assets.
+- `npm run balance:audit`: orçamento de progressão preservado. Nenhuma regra do motor mudou; não foi repetido o Monte Carlo da 0.10.0. Os resultados exploratórios anteriores permanecem abaixo.
+- Limites: inspeção em Edge automatizado; telefone físico/iOS não foi testado. Fontes, enquadramento e timings são adaptações web da referência FRLG. Ajuda, diário e painéis com conteúdo excepcionalmente longo mantêm rolagem interna; não há promessa de equivalência integral ao cartucho.
 
 ## Ajuste final antes do merge · 09/10/2026
 

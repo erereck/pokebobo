@@ -65,3 +65,13 @@ D02: fonte e calendário em `scripts/catalog/learnsetPolicy.mjs`; política em `
 - Layout e menu: styles/features/capture.css e adventure.css.
 - Assets: scripts/import-capture-assets.py, public/field/, public/sprites/frlg/ e licenses/FRLG-ASSETS.md.
 - Regressões: tests/field-capture.test.js; browser e campanhas em docs/balance/*0.10.0*.json.
+
+## Ritmo de Kanto — 0.11.0
+
+- Tela cheia: app/hooks/useFullscreen.js, components/layout/AppHeader.jsx.
+- Segurar controles: features/encounters/useFieldControls.js; cancelamento e cadência são apresentação.
+- Máscara dos pés: fieldPresentation.js e drawField.js. FieldCanvas e entrada no encontro reutilizam o mesmo render.
+- Entrada: encounterTransition.js, CaptureCanvas.jsx. Fonte/layout: pixelText.js, font-metrics.json e import-capture-assets.py.
+- Enquadramento: PixelViewport.jsx e styles/responsive/pokedex/pixel-screens.css.
+- Ficha/reserva: TeamScreen.jsx, PokemonDetails.jsx e ReservePanel.jsx; altura de equipe/mochila/mapa/jornada horizontal em panel-fit.css.
+- Regressões visuais puras: tests/pixel-presentation.test.js; navegador em docs/balance/browser-*-0.11.0.json.

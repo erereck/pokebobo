@@ -30,3 +30,5 @@
 @import "./responsive/pokedex/mobile-map.css";
 @import "./responsive/pokedex/mobile-map-height.css";
 @import "./responsive/pokedex/mobile-secondary.css";
+@import "./responsive/pokedex/pixel-screens.css";
+@import "./responsive/pokedex/panel-fit.css";

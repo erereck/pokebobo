@@ -71,16 +71,26 @@ for terrain in ['grass', 'water']:
 tilemap('graphics/battle_interface/textbox', 'graphics/battle_interface/textbox1.pal', 'textbox.png')
 
 font = Image.open(BytesIO(fetch('graphics/fonts/latin_normal.png'))).crop((0, 0, 256, 256))
-for name, colors in [('font_dark', [(0,0,0,0),(56,56,56,255),(168,168,168,255),(0,0,0,0)]), ('font_light', [(0,0,0,0),(255,255,255,255),(56,56,80,255),(0,0,0,0)])]:
-    result = Image.new('RGBA', font.size)
-    result.putdata([colors[p] for p in font.get_flattened_data()])
-    result.save(OUT / f'{name}.png')
 text_source = fetch('src/text.c').decode()
 widths = re.search(r'sFontNormalLatinGlyphWidths\[\]\s*=\s*\{(.*?)\};', text_source, re.S).group(1)
 widths = re.sub(r'//[^\n]*|/\*.*?\*/', '', widths, flags=re.S)
 metrics = {'widths': [int(n) for n in re.findall(r'\d+', widths)], 'chars': {}}
 for char, code in re.findall(r"^'(.)'\s*=\s*([A-F0-9]{2})\s*$", fetch('charmap.txt').decode(), re.M):
     metrics['chars'][char] = int(code, 16)
+# Português: combina letras e til originais nos quatro slots latinos livres.
+def glyph_at(code):
+    x, y = code % 16 * 16, code // 16 * 16
+    return font.crop((x, y, x + 16, y + 16))
+for code, char, base, accent, top in [(247, 'ã', 'a', 'ñ', 3), (248, 'õ', 'o', 'ñ', 3), (249, 'Ã', 'A', 'Ñ', 0), (250, 'Õ', 'O', 'Ñ', 0)]:
+    glyph = glyph_at(metrics['chars'][base])
+    glyph.paste(glyph_at(metrics['chars'][accent]).crop((0, top, 16, top + 2)), (0, top))
+    font.paste(glyph, (code % 16 * 16, code // 16 * 16))
+    metrics['chars'][char] = code
+    metrics['widths'][code] = metrics['widths'][metrics['chars'][base]]
+for name, colors in [('font_dark', [(0,0,0,0),(56,56,56,255),(168,168,168,255),(0,0,0,0)]), ('font_light', [(0,0,0,0),(255,255,255,255),(56,56,80,255),(0,0,0,0)])]:
+    result = Image.new('RGBA', font.size)
+    result.putdata([colors[p] for p in font.get_flattened_data()])
+    result.save(OUT / f'{name}.png')
 (ROOT / 'src/features/encounters/font-metrics.json').write_text(json.dumps(metrics, ensure_ascii=False), encoding='utf-8')
 
 catalog = json.loads((ROOT / 'src/game/catalog.json').read_text(encoding='utf-8'))

@@ -28,7 +28,7 @@ export function BagScreen({ run: r, act }) {
             <strong>{r.balls}</strong>
           </div>
           <h2>Poké Bolas</h2>
-          <p>1 bola por captura. Explore para encontrar Pokémon.</p>
+          <p>Explore e capture com 1 bola por encontro.</p>
           <button
             className="button primary full"
             disabled={!canUse || !r.balls || !r.encounters.some((e) => !e.used)}
@@ -44,7 +44,7 @@ export function BagScreen({ run: r, act }) {
             <strong>{r.berries}</strong>
           </div>
           <h2>Kits de berries</h2>
-          <p>1 kit prepara o time inteiro. Cura automática em batalha.</p>
+          <p>1 kit equipa todo o time com berries de cura.</p>
           <button
             className="button primary full"
             disabled={!canUse || !r.berries}
@@ -62,7 +62,7 @@ export function BagScreen({ run: r, act }) {
           <span>
             {r.badges >= EXPLORATION_RULES.fishingBadges
               ? "Disponível nos lagos"
-              : "Recompensa da 3ª insígnia"}
+              : "3ª insígnia"}
           </span>
         </p>
         <p>
@@ -71,13 +71,10 @@ export function BagScreen({ run: r, act }) {
           <span>
             {r.badges >= EXPLORATION_RULES.surfBadges
               ? "Disponível nos lagos"
-              : "Libera na 5ª insígnia"}
+              : "5ª insígnia"}
           </span>
         </p>
-        <small>
-          Equipamentos permanentes. Use durante a exploração, sem gastar outra
-          semana.
-        </small>
+        <small>Use no lago sem gastar outra semana.</small>
       </div>
       {!canUse && (
         <p className="notice">

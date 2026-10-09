@@ -25,10 +25,20 @@ A escala parte de 4 px; ações principais têm pelo menos 44 px. Algumas teclas
 
 ## Manutenção
 
-Tokens em `styles/foundations/tokens.css`. Materiais em `styles/components/dex-shell.css`. Cada tela tem seu CSS; adaptações ficam em `styles/responsive/pokedex/`. A ordem de `styles/index.css` faz parte do sistema. São 29 folhas ativas incluindo o índice. Não adicionar um tema paralelo sobre regras antigas.
+Tokens em `styles/foundations/tokens.css`. Materiais em `styles/components/dex-shell.css`. Cada tela tem seu CSS; adaptações ficam em `styles/responsive/pokedex/`. A ordem de `styles/index.css` faz parte do sistema. São 35 folhas ativas incluindo o índice na 0.11.0. Não adicionar um tema paralelo sobre regras antigas.
 
 A intenção de cada componente e as decisões persistentes estão em [.interface-design/system.md](../.interface-design/system.md). Casos inspecionados em [VALIDACAO.md](../VALIDACAO.md). Próximos passos no [ROADMAP](ROADMAP.md).
 
 ## Cenas de campo e captura — 0.10.0
 
-Dentro da carcaça existente, FieldCanvas usa pixels originais em 192×128, e CaptureCanvas usa 240×160. Escala nearest-neighbor; fontes bitmap na cena e tipografia do LCD nos controles externos. Captura apresenta apenas treinador e Pokémon selvagem. Menu nativo acessível: Poké Bola/Fugir, com cursor, foco, estado desabilitado e texto alternativo para o canvas. Destino da captura fica antes da tentativa; conclusão e pular apresentação têm botões externos grandes. Movimento reduzido mantém regras/resultados e elimina animações. Alvos pequenos do menu reproduzem a proporção do jogo e precisam de avaliação em aparelho físico.
+Dentro da carcaça existente, FieldCanvas usa pixels originais em 192×128, e CaptureCanvas usa 240×160. Escala nearest-neighbor; fontes bitmap na cena e tipografia do LCD nos controles externos. Captura apresenta apenas treinador e Pokémon selvagem. Destino da captura fica antes da tentativa; conclusão e pular apresentação têm botões externos grandes. Movimento reduzido mantém regras/resultados e elimina animações.
+
+## Ritmo de Kanto — 0.11.0
+
+PixelViewport mede o espaço livre com ResizeObserver e preserva a proporção da cena. No menu, Poké Bola/estoque e Fugir ocupam duas colunas de 48 pixels lógicos de altura; os alvos mediram pelo menos 44 px nos oito tamanhos inspecionados. Texto/cursor são desenhados no mesmo canvas, com botões nativos sobrepostos para foco e acionamento. Se o carregamento falha, os botões passam a mostrar texto HTML.
+
+Campo e captura usam a altura livre do visor. No horizontal, controles e informações passam para a coluna vizinha. Fonte bitmap quebra entre palavras, limita linhas e usa glifos recompostos para os quatro caracteres portugueses com til. Fontes externas e a carcaça mantêm o sistema existente.
+
+Na Equipe, seis seletores ficam juntos e dois botões alternam Ficha e golpes / Reserva. No telefone, os seletores mostram sprites e têm nomes/níveis acessíveis; a ficha mostra o nome selecionado. Ficha e reserva podem rolar internamente em conteúdo excepcional, mantendo cabeçalho/seletores no lugar. Mochila e mapa ajustam seus blocos à altura; ações de suprimentos não ficam cobertas pelos equipamentos. Em orientação horizontal, a jornada divide paisagem/tempo e preparação/avanço.
+
+Tela cheia fica imediatamente após a Pokédex. O estado acompanha fullscreenchange; Escape atualiza o botão, recusa gera mensagem e navegador sem suporte mantém o controle desabilitado. Direcional, setas e WASD repetem somente após cada passo, com interrupção em release, blur, janela, aba oculta e saída da tela.

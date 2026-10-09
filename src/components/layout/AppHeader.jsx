@@ -1,7 +1,17 @@
-import { Info, Settings, Trophy, BookOpen } from "lucide-react";
+import {
+  Info,
+  Settings,
+  Trophy,
+  BookOpen,
+  Maximize,
+  Minimize,
+} from "lucide-react";
+import { useFullscreen } from "../../app/hooks/useFullscreen.js";
 import { Brand } from "../brand/Brand.jsx";
 import { VERSION } from "../../app/version.js";
 export function AppHeader({ setModal }) {
+  const fullscreen = useFullscreen();
+  const FullscreenIcon = fullscreen.active ? Minimize : Maximize;
   return (
     <header className="dex-header">
       <div className="dex-sensors" aria-hidden="true">
@@ -30,6 +40,25 @@ export function AppHeader({ setModal }) {
           <span>Pokédex</span>
         </button>
         <button
+          className="hardware-button fullscreen-button"
+          aria-label={
+            fullscreen.active ? "Sair da tela cheia" : "Entrar em tela cheia"
+          }
+          aria-pressed={fullscreen.active}
+          disabled={!fullscreen.supported}
+          title={
+            !fullscreen.supported
+              ? "Tela cheia indisponível neste navegador"
+              : fullscreen.active
+                ? "Sair da tela cheia (Esc)"
+                : "Entrar em tela cheia"
+          }
+          onClick={fullscreen.toggle}
+        >
+          <FullscreenIcon size={20} />
+          <span>Tela cheia</span>
+        </button>
+        <button
           className="hardware-button"
           aria-label="Hall da Fama"
           onClick={() => setModal("hall")}
@@ -54,6 +83,11 @@ export function AppHeader({ setModal }) {
           <span>Opções</span>
         </button>
       </div>
+      {fullscreen.error && (
+        <span className="fullscreen-message" role="status">
+          {fullscreen.error}
+        </span>
+      )}
     </header>
   );
 }

@@ -44,3 +44,11 @@ Critérios de continuidade: quatro golpes juntos; caminho de no máximo uma tecl
 ## Passos de Kanto — 0.10.0
 
 FieldCanvas: mapa 192×128 em tiles de 16 px; Red 16×32 e efeito original de mato por passo, sem números. CaptureCanvas: cena 240×160, Red de costas 64×64, Pokémon FRLG 64×64, Poké Bola 16×16 e fonte bitmap. A carcaça/LCD continua igual. Menu dentro da cena oferece Poké Bola/Fugir com botões nativos, foco e cursor. Decisões de reserva ficam fora da cena. Animação não altera resultado/RNG; finalização aplica o payload persistido. Movimento reduzido mostra o resultado, e Pular animação não muda regras. Avaliar alvos do menu em telefone físico.
+
+## Ritmo de Kanto — 0.11.0
+
+Preservar a carcaça e as fontes externas. PixelViewport usa a altura livre; informação e ações ficam fora da cena. Menu em duas colunas com áreas de 48 px lógicos; fonte/cursor/estoque têm a mesma escala do canvas. Na falha de asset, botões exibem texto HTML. Fonte quebra por palavra e respeita molduras. Escala nearest-neighbor; sem misturar labels bitmap com escalas independentes.
+
+Equipe: seis seletores juntos, Ficha e golpes / Reserva como botões com aria-pressed. No telefone, sprite no seletor e nome/nível acessível; detalhes do selecionado ficam na ficha. No horizontal, seletores à esquerda, conteúdo à direita e quatro golpes em uma linha. Mochila e mapa usam a altura disponível, sem sobrepor controles. 35 CSS ativos incluindo índice; regras de enquadramento em pixel-screens.css e panel-fit.css, no fim da cascata existente.
+
+Tela cheia imediatamente após Pokédex, com estado da API nativa. Movimento segurado encerra em release, blur, janela, invisibilidade e desmontagem. Critério: ações sem cobertura por outro painel, não apenas ausência de scrollbar. Hit-test e limites verificados em 320×568 e horizontal 667×375, além de seis outros tamanhos.
