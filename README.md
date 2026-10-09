@@ -1,12 +1,16 @@
-# Pokébobo — 0.8.0 · Ataques do Seu Jeito
+# Pokébobo — 0.10.0 · Passos de Kanto
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
 
-A 0.8.0 deixa cada save escolher entre ataques Manuais e Automáticos. No Manual, vagas livres aprendem direto e a decisão só aparece com quatro golpes; no Automático, o jogo monta sozinho os até quatro melhores golpes disponíveis a cada nível/evolução. A 0.7.0 transformou a Equipe Conectada em painel de batalha, adiciona três slots independentes de carreira com Hall da Fama global do aparelho e corrige a transição visual após nocautes. A 0.6.0 já havia adicionado escolha de golpes e reserva de três Pokémon. Veja o [ROADMAP](docs/ROADMAP.md) e o [guia da interface](docs/INTERFACE.md). São 158 módulos JavaScript/JSX e 31 arquivos CSS ativos.
+A 0.10.0 traz mato alto contínuo com encontros por passo e captura em uma cena 240×160 baseada em FRLG: Red de costas, arremesso de Poké Bola normal, absorção, quicados, sacudidas, estrelas e fuga. O resultado fica salvo antes da animação. [Campo no celular](docs/images/rota-0.10-celular.png) · [Cena de captura](docs/images/captura-0.10-celular.png).
+
+A 0.9.0 permite escolher evoluções ramificadas, caminhar em rotas com tiles de FRLG e 2–3 encontros, pescar após a terceira insígnia e usar Surf após a quinta. A Pokédex registra capturas e evoluções dos três slots com as jornadas de origem. Doze novos acontecimentos incluem pistas de Mew/Suicune e um roubo de Eevee após vencer um contrabandista. Correria compensa sua semana a menos com treinos de +2 a +4 níveis. Veja o [ROADMAP](docs/ROADMAP.md), a [validação](VALIDACAO.md) e o [guia da interface](docs/INTERFACE.md). Os modos de ataques Manual/Automático e a reserva de três Pokémon continuam disponíveis.
 
 Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde editar](docs/ONDE-EDITAR.md) e [pesquisa de capas de rotas](docs/ARTES-E-ROTAS.md).
 
 ![Batalha no Pokébobo](docs/images/batalha-desktop.png)
+
+[Escolha de evolução](docs/images/evolucoes-0.9-desktop.png) · [Exploração no celular](docs/images/rota-0.9-celular.png) · [Pokédex](docs/images/pokedex-0.9-celular.png)
 
 [Tela inicial](docs/images/inicio.png) · [Batalha no celular](docs/images/batalha-celular.png)
 
@@ -33,16 +37,20 @@ O save fica no navegador. Há três slots independentes de carreira; o Hall da F
 
 - **Legado:** o Hall da Fama arquiva campeões e runs não-campeãs com equipe final, níveis, insígnias, semanas, modo, rota e outros detalhes disponíveis.
 - **Evoluções especiais por nível:** troca, pedras/itens, amizade, golpe conhecido e condições especiais viram níveis substitutos; não é necessário coletar pedra ou realizar troca.
-- **Semanas Vivas:** 57 acontecimentos sorteados pela seed, com raridades, anti-repetição, escolhas e consequências. A chance base é 72% por semana (82% na Correria). Eventos podem conceder ou consumir recursos, melhorar treino/captura/busca, abrir encontro extra, devolver ou gastar uma ação, iniciar batalha e destravar follow-ups futuros.
+- **Semanas Vivas:** 69 acontecimentos sorteados pela seed, com raridades, anti-repetição, escolhas e consequências. A chance base é 72% por semana (82% na Correria). Eventos podem conceder ou consumir recursos, melhorar treino/captura/busca, abrir encontro extra, devolver ou gastar uma ação, iniciar batalha e destravar follow-ups futuros.
+
+- **Pokédex permanente:** iniciais, capturas e evoluções de qualquer slot ficam registrados com as runs de origem, mesmo se o Pokémon sair da equipe. Saves antigos recuperam somente as equipes conhecidas.
+- **Escolha de evolução:** ramos como Eevee e Pikachu mostram tipos, especialidade e nível exigido. Você pode adiar e reabrir pela ficha da equipe; caminhos únicos continuam automáticos.
+- **Encontros secretos:** pistas podem revelar Mew ou Suicune após seis insígnias, com uma oportunidade por run, 48% de chance base e nível abaixo do desafio. Um contrabandista permite roubar Eevee após uma vitória, uma única vez por run.
 
 - Nome do treinador, sete conjuntos de iniciais (gerações 1–5, 7 e 8).
 - Draft: cidade inicial, passagem e oito ginásios, sem repetir cidades e sem exibir os tipos dos líderes. Cada oferta reúne líderes da mesma posição nos jogos de origem.
 - 37 cidades de ginásio, de Kanto, Johto, Hoenn, Sinnoh, Unova e Galar. Kalos não entra.
 - Limite de três semanas por cidade. Depois da última ação e da resolução de eventual acontecimento, a viagem ou o ginásio começa automaticamente.
-- Treino (+1 a 3 níveis na equipe), exploração, captura, busca de itens e preparação com berries. Viagem e emboscada: zero níveis. Vitória em ginásio ou Liga: +1.
+- Treino (+1 a 3 níveis na equipe; +2 a 4 na Correria), exploração, captura, busca de itens e preparação com berries. Viagem e emboscada: zero níveis. Vitória em ginásio ou Liga: +1.
 - Níveis originais por Pokémon do líder. Se o maior nível do jogador exceder o ás original em 10 ou mais, o líder recebe +6 em todos, uma vez. Não há limite de nível por etapa.
 - Quatro golpes juntos na batalha, trocas em grade, troca por arrastar na Equipe Conectada, HP ao vivo dos seis e registro completo em uma janela separada. Cada turno é apresentado em sequência (ataque, HP, status, queda e troca), com velocidade 1×/2×.
-- Duas espécies de famílias distintas por rota, priorizando famílias ainda não vistas; uma tentativa por espécie, com 86% de chance base (eventos podem elevar até 98%) e custo de uma Poké Bola. Equipe de até seis; ao capturar com time cheio, escolha quem será substituído apenas se a captura der certo.
+- Duas ou três oportunidades por rota, com áreas contínuas de mato alto e lago. Encontros são sorteados ao caminhar, com intervalo após encontros e proteção contra espera excessiva. Caminhar/capturar custa uma única semana; cada encontro permite uma tentativa, com 86% de chance base (eventos podem elevar até 98%) e uma Poké Bola. Fishing Rod na terceira insígnia; Surf na quinta. Pesca e Surf compartilham a oportunidade do lago. Equipe de até seis; com time e reserva cheios, escolha quem sai apenas se a captura der certo.
 - Batalhas aleatórias: chance de 10% após uma ação elegível, com intervalo mínimo de três semanas entre emboscadas.
 - Batalhas reais do Pokémon Showdown via `@pkmn/sim`, inteiramente no navegador. Golpes, PP, habilidades, tipos, status, prioridade, dano, trocas e itens seguem o motor.
 - Saves reproduzíveis de batalha por seed e histórico de decisões. Recarregar não rerrola a luta.
@@ -56,7 +64,7 @@ O save fica no navegador. Há três slots independentes de carreira; o Hall da F
 
 As batalhas usam regras singles da geração 8. Não há multiplayer, Dynamax, Mega Evolução nem editor de golpes. Os golpes são escolhidos automaticamente a partir dos learnsets por nível do Showdown, buscando STAB e cobertura, e não reproduzem um moveset histórico único. O gerador escolhe uma geração comum à linhagem (8, com fallback para 7), conserva níveis herdados e distingue golpes de evolução dos lembretes. Lembretes exclusivos ficam fora da seleção automática. A origem de cada golpe está no catálogo e na auditoria; veja REGRAS-DE-GOLPES.md. Mossdeep conserva o elenco de Emerald em batalha singles. Ainda não há todas as equipes de todas as gerações.
 
-Todas as evoluções do recorte jogável são resolvidas por nível. Métodos originais como troca, pedra/item, amizade, golpe conhecido e outras condições recebem níveis substitutos; quando o dado original já possui nível mínimo, ele é mantido. Linhas ramificadas escolhem automaticamente um caminho determinístico por Pokémon. Existe uma reserva compacta de três Pokémon, que acompanha ganhos de nível da equipe. Capturas com seis ativos usam a reserva antes de exigir liberação. Toda vitória recupera a equipe, com exceção dos removidos pelo Nuzlocke. Na rodada 0.2.2 foram simuladas 800 campanhas com batalhas reais no Clássico; a rodada anterior dos três modos fica como referência histórica. Isso testa políticas automáticas e identifica problemas; não determina a taxa de vitória de pessoas. As políticas automáticas ainda precisam ser ajustadas à economia da Correria e à sobrevivência da Nuzlocke.
+Todas as evoluções do recorte jogável são resolvidas por nível. Métodos originais como troca, pedra/item, amizade, golpe conhecido e outras condições recebem níveis substitutos; quando o dado original já possui nível mínimo, ele é mantido. Linhas ramificadas aguardam uma escolha do treinador. Existe uma reserva compacta de três Pokémon, que acompanha ganhos de nível da equipe. Capturas com seis ativos usam a reserva antes de exigir liberação. Toda vitória recupera a equipe, com exceção dos removidos pelo Nuzlocke. Na rodada 0.2.2 foram simuladas 800 campanhas com batalhas reais no Clássico; a rodada anterior dos três modos fica como referência histórica. Isso testa políticas automáticas e identifica problemas; não determina a taxa de vitória de pessoas. As políticas automáticas ainda precisam ser ajustadas à economia da Correria e à sobrevivência da Nuzlocke.
 
 O save local é para uso individual e pode ser editado pelo dono do aparelho. Não há verificação competitiva contra adulteração.
 
@@ -102,7 +110,7 @@ No PowerShell com política de scripts restrita, use `npm.cmd`.
 | `scripts/check-architecture.mjs`                             | Verifica imports locais, ciclos e dependências entre camadas                 |
 | `scripts/audit-progression.mjs`                              | Mede orçamento de níveis de quatro estratégias                               |
 | `scripts/monte-carlo.mjs` e `simulation/`                    | Campanhas com combates reais, políticas, seeds e relatório JSON              |
-| `tests/`                                                     | 59 testes por domínio; fixtures históricas da 0.1 arquivadas em docs/archive |
+| `tests/`                                                     | 87 testes por domínio; fixtures históricas da 0.1 arquivadas em docs/archive |
 | `docs/`                                                      | Guia de edição, arquitetura, backlog e pesquisa de assets                    |
 
 As APIs antigas em `game/engine.js`, `data.js`, `pokemon.js` e `battle.js` continuam como reexports pequenos. Consulte [ONDE-EDITAR.md](docs/ONDE-EDITAR.md) para encontrar o arquivo de cada alteração.

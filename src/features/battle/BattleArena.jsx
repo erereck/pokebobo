@@ -3,6 +3,13 @@ import { city } from "../../game/selectors/city.js";
 import { Health } from "./Health.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { combatantSpriteVisible } from "./combatantVisibility.js";
+import catalog from "../../game/catalog.json" with { type: "json" };
+
+function spriteSize(name) {
+  const height = catalog[name]?.height || 1;
+  // Escala comprimida: pequenos continuam legíveis e gigantes cabem na arena.
+  return `${Math.round(Math.max(48, Math.min(100, 52 + Math.sqrt(height) * 30)))}%`;
+}
 
 function effectClass(effect, side) {
   return effect?.side === side ? ` is-${effect.type}` : "";
@@ -19,12 +26,18 @@ export function BattleArena({ r, snap, current, effect }) {
       </div>
       <div className={"combatant enemy" + effectClass(effect, "enemy")}>
         <Health mon={snap.foe} />
-        <div className="battle-sprite">
+        <div
+          className="battle-sprite"
+          style={{ "--species-size": spriteSize(snap.foe.name) }}
+        >
           {showEnemy && <Sprite name={snap.foe.name} animated />}
         </div>
       </div>
       <div className={"combatant ally" + effectClass(effect, "player")}>
-        <div className="battle-sprite">
+        <div
+          className="battle-sprite"
+          style={{ "--species-size": spriteSize(current.name) }}
+        >
           {showPlayer && <Sprite name={current.name} back animated />}
         </div>
         <Health mon={current} />

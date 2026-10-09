@@ -7,6 +7,12 @@ import {
 import { initialState } from "../state/initialState.js";
 import { migrateSave } from "./migrateSave.js";
 import {
+  mergeDex,
+  readGlobalDex,
+  stateCollection,
+  writeGlobalDex,
+} from "./dexStorage.js";
+import {
   mergeHall,
   readGlobalHall,
   tagHall,
@@ -14,13 +20,19 @@ import {
 } from "./hallStorage.js";
 
 function read(storage, key) {
-  try { return storage.getItem(key); } catch { return null; }
+  try {
+    return storage.getItem(key);
+  } catch {
+    return null;
+  }
 }
 
 function backupOldVersion(storage, raw, parsed, backupKey) {
   if (parsed?.version === SAVE_VERSION || typeof storage.setItem !== "function")
     return;
-  try { storage.setItem(backupKey, raw); } catch {}
+  try {
+    storage.setItem(backupKey, raw);
+  } catch {}
 }
 
 function attachGlobalHall(storage, state, slot) {
@@ -28,13 +40,23 @@ function attachGlobalHall(storage, state, slot) {
   const global = readGlobalHall(storage);
   const history = mergeHall(global, local);
   state.meta.history = history;
-  try { writeGlobalHall(storage, history); } catch {}
+  state.meta.dex = mergeDex(
+    readGlobalDex(storage),
+    stateCollection(state, slot),
+  );
+  try {
+    writeGlobalDex(storage, state.meta.dex);
+  } catch {}
+  try {
+    writeGlobalHall(storage, history);
+  } catch {}
   return state;
 }
 
 function blankWithHall(storage) {
   const state = initialState();
   state.meta.history = readGlobalHall(storage);
+  state.meta.dex = mergeDex(readGlobalDex(storage), stateCollection(state));
   return state;
 }
 
@@ -55,7 +77,11 @@ export function loadSave(storage, slot = 1) {
   const backup = read(storage, backupKey);
   if (backup) {
     try {
-      return attachGlobalHall(storage, migrateSave(JSON.parse(backup)), normalized);
+      return attachGlobalHall(
+        storage,
+        migrateSave(JSON.parse(backup)),
+        normalized,
+      );
     } catch {}
   }
 

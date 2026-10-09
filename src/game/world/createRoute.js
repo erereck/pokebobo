@@ -5,6 +5,12 @@ import { encounterPool, familyOf } from "./encounterPool.js";
 import { targetLevel } from "../selectors/targetLevel.js";
 import { grow } from "../pokemon/evolution.js";
 import { makeMon } from "../pokemon/createPokemon.js";
+import { random } from "../random/random.js";
+import {
+  FISHING_SPECIES,
+  SURF_SPECIES,
+  EXPLORATION_RULES,
+} from "../config/exploration.js";
 
 export function createRoute(r) {
   const here = city(r),
@@ -24,7 +30,30 @@ export function createRoute(r) {
   r.encounters = [first, second].map((name) => ({
     name: r.badges >= 3 ? grow(makeMon(name, level, "wild"), 0).name : name,
     used: false,
+    habitat: "grass",
   }));
+  if (r.badges >= EXPLORATION_RULES.fishingBadges) {
+    const fishName = pick(r, FISHING_SPECIES);
+    r.encounters.push({
+      name: fishName,
+      fishName,
+      surfName: pick(r, SURF_SPECIES),
+      habitat: "water",
+      used: false,
+    });
+  } else if (random(r) < 0.5) {
+    const thirdPool = available.filter(
+      (n) =>
+        familyOf(n) !== familyOf(first) && familyOf(n) !== familyOf(second),
+    );
+    if (thirdPool.length)
+      r.encounters.push({
+        name: pick(r, thirdPool),
+        used: false,
+        habitat: "grass",
+      });
+  }
+  r.exploration = null;
   r.seenFamilies = [
     ...new Set([...(r.seenFamilies || []), familyOf(first), familyOf(second)]),
   ];

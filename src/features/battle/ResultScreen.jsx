@@ -4,6 +4,7 @@ import { Footprints } from "lucide-react";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { ArrowRight } from "lucide-react";
 import { PROGRESSION } from "../../game/config/progression.js";
+import { EXPLORATION_RULES } from "../../game/config/exploration.js";
 import { levelGains, levelGainLabel } from "../../game/selectors/levelGain.js";
 import {
   battleVictory,
@@ -74,6 +75,22 @@ export function ResultScreen({ run: r, act }) {
               : "Sua equipe se recupera para a próxima parada."
             : "O save não apaga a derrota. A próxima história começa em outro mapa."}
         </p>
+        {won &&
+          r.battle.kind === "gym" &&
+          r.badges + 1 === EXPLORATION_RULES.fishingBadges && (
+            <p className="equipment-reward">
+              <b>Nova recompensa: Fishing Rod!</b> Pescar nos lagos das rotas
+              está liberado.
+            </p>
+          )}
+        {won &&
+          r.battle.kind === "gym" &&
+          r.badges + 1 === EXPLORATION_RULES.surfBadges && (
+            <p className="equipment-reward">
+              <b>Novo acesso: Surf!</b> Explore o lago para encontrar outras
+              espécies.
+            </p>
+          )}
       </div>
       <button
         className="button primary full"

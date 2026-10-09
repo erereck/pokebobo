@@ -16,7 +16,7 @@ test("evolução e golpes acompanham os níveis sem ultrapassar 100", () => {
 
 test("evoluções especiais viram evolução direta por nível", () => {
   assert.equal(grow(makeMon("Riolu", 21, "friend"), 1).name, "Lucario");
-  assert.equal(grow(makeMon("Pikachu", 29, "stone"), 1).name, "Raichu");
+  assert.equal(grow(makeMon("Clefairy", 29, "stone"), 1).name, "Clefable");
   assert.equal(grow(makeMon("Kadabra", 35, "trade"), 1).name, "Alakazam");
 });
 

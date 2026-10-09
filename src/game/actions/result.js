@@ -11,6 +11,7 @@ import { advance } from "../world/advance.js";
 import { afterWeek } from "../career/afterWeek.js";
 import { battleVictory, noSurvivors } from "../selectors/battleVictory.js";
 import { claimEventBattleReward } from "../career/weekEvents.js";
+import { EXPLORATION_RULES } from "../config/exploration.js";
 
 export function handleResult(s, action, state) {
   let r = s.run;
@@ -41,6 +42,16 @@ export function handleResult(s, action, state) {
     const kind = r.battle.kind;
     if (kind === "gym") {
       r.badges++;
+      if (r.badges === EXPLORATION_RULES.fishingBadges)
+        note(
+          r,
+          "Você ganhou a Fishing Rod! Pescar nos lagos das rotas agora está liberado.",
+        );
+      if (r.badges === EXPLORATION_RULES.surfBadges)
+        note(
+          r,
+          "Você ganhou acesso a Surf! Os lagos agora oferecem uma segunda seleção de Pokémon.",
+        );
       s.meta.best = Math.max(s.meta.best, r.badges);
       const training = train(r, PROGRESSION.gymVictoryLevels);
       note(
@@ -79,8 +90,11 @@ export function handleResult(s, action, state) {
         r,
         `${r.battle.name} foi derrotado. Equipe recuperada. O caminho está livre.${eventReward ? ` Recompensa do acontecimento: ${eventReward}` : ""}`,
       );
-      r.phase = "career";
-      afterWeek(r, { allowAmbush: false, allowEvent: false });
+      if (r.eventEncounterIndex != null) r.phase = "encounter";
+      else {
+        r.phase = "career";
+        afterWeek(r, { allowAmbush: false, allowEvent: false });
+      }
     }
     r.outcome = null;
     return s;

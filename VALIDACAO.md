@@ -1,4 +1,35 @@
-# Validação — Pokébobo 0.5.0
+# Validação — Pokébobo 0.10.0
+
+## Ajuste final antes do merge · 09/10/2026
+
+- npm run verify: 188 módulos, 94/94 testes e build Vite (2.067 módulos).
+- Nova regressão: a bola pousa em y=70 para cinco alturas de sprite, em sucesso e fuga; sua parte inferior permanece dentro da plataforma, que termina em y=79. O início da queda segue ligado ao ponto de absorção, sem salto de posição.
+- Edge/Playwright: Eevee em desktop, Bulbasaur/Lapras em 390×844 e Charizard em 320×568; captura, sacudidas, pular apresentação e retorno ao campo. Zero erros de console/rede ou overflow. Relatório em docs/balance/browser-ball-ground-0.10.0.json; GIF atualizado a partir da cena real.
+- Correção de apresentação: probabilidades, resultado persistido, RNG e economia seguem as regras já validadas.
+
+## 0.10.0 — Passos de Kanto · 09/10/2026
+
+- `npm run verify`: 188 módulos JS/JSX sem ciclos ou import de UI no motor; 93/93 testes; build Vite com 2.067 módulos.
+- `npm run balance:audit`: orçamento-base preservado. Não mede vitórias.
+- 140 campanhas completas com batalhas reais: 60 Clássico, 40 Correria, 40 Nuzlocke, quatro políticas e seed 20261009. Zero truncamentos. A política equilibrada ganhou 5/15 no Clássico; Correria teve 0/40 títulos e Nuzlocke 1/40. Amostras pequenas e exploratórias; não estimam vitórias humanas. JSONs em docs/balance/monte-carlo-0.10.0-*.json.
+- Edge / Playwright: 18 registros em 1280×900, 390×844 e 320×568; sem erros de console/página, requests com erro, imagens quebradas ou overflow horizontal. Caminhada real por teclado/botões → encontro → fuga; captura → resultado → reload → conclusão; sucesso/falha, reserva lotada com escolha de substituto, pesca/Surf, espécie posterior ao FRLG, animação completa 1×, recarga durante arremesso, movimento reduzido e pular apresentação. Relatório: docs/balance/browser-0.10.0.json.
+- Testes novos verificam mato contínuo, sorteio apenas ao pisar, garantia após dez passos de mato sem encontro, passo bloqueado durante apresentação, conclusão por id, persistência de sucesso/falha, economia sem duplicação, resultado instantâneo/animado equivalente e marcos de animação extraídos da referência.
+- Importador recompõe assets a partir do commit congelado do pret/pokefirered, sem ROM, e traz origem/termos em licenses/FRLG-ASSETS.md. Assets novos presentes no build web; HTML standalone não foi gerado.
+
+Limites: Fidelidade visual baseada nos gráficos e nas sequências de FRLG; não é um emulador do cartucho. O mapa, os textos em português, as regras de captura e os comandos por navegador são adaptados. Espécies/formas posteriores ao FRLG usam os sprites locais existentes. Não foram adicionados áudio, ROM, isca ou pedra. Uma oportunidade permite uma tentativa; falhar encerra esse encontro. A cena representa sacudidas a partir do resultado persistido, não executa a fórmula de captura do cartucho. Sem teste físico em celular nem campanha humana completa.
+
+## 0.9.0 — Rotas Vivas · 09/10/2026
+
+- npm run verify: arquitetura (179 módulos), 87/87 testes e build Vite (2.056 módulos).
+- npm run balance:audit: orçamento-base de níveis preservado, nenhuma trajetória de treino-base chega à Liga em nível 99. Não é medição de taxa de vitória.
+- 280 campanhas com batalhas reais: quatro políticas, 30 seeds por política no Clássico e 20 na Correria/Nuzlocke; zero truncamentos. 120 campanhas da 0.8.1 servem de referência exploratória. Relatórios completos em docs/balance/adventure-*.json.
+- Playwright com Edge headless: 15 screenshots em 1280×900, 390×844, 320×568 e batalha 844×390; escolha de evolução e reload, caminhada por teclado/toque, captura, pesca, retorno, Pokédex, filtros, famílias e sprites de batalha. Console e imagens sem erro, sem overflow horizontal ou botões do cabeçalho cortados.
+- Testes de regras: oito destinos de Eevee, ramos bloqueados, adiamento no teto e reabertura, reserva, decisões antes de ginásio, margem e marcos de pesca/Surf, oportunidade aquática compartilhada, limites de lendário/roubo, coleção global e compensação da Correria.
+- Catálogo/sprites regenerados: 486 entradas e 481 sprites locais; nova altura oficial da espécie e conteúdo dos encontros secretos.
+- npm audit: zero vulnerabilidades após atualizar source-map-js.
+- Assets FRLG reconstruídos pelo importador Python/Pillow a partir do commit congelado, com créditos e descrição da transformação. Nenhum standalone foi gerado.
+
+Limites: o navegador foi emulado; não substitui teste físico ou campanha humana. Políticas automáticas usam escolhas simples de evolução, golpe e evento. A Nuzlocke continua difícil na amostra e não foi afrouxada com cura de mortos ou revives.
 
 ## 0.5.0 — Legado · 18/09/2026
 

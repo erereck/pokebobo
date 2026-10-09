@@ -1,4 +1,12 @@
-# Capas de rotas — piloto implementado na 0.2
+# Capas de rotas e exploração de campo
+
+## 0.9.0 — campo com tiles de FireRed / LeafGreen
+
+A caminhada usa metatiles e os sprites de Red originais de FRLG, extraídos de uma referência congelada de `pret/pokefirered`. Os mapas pequenos, os matinhos e as oportunidades são uma curadoria procedural do Pokébobo. São três PNGs locais em `public/field/`; fonte, titularidade, transformação e termos estão em [FRLG-ASSETS](../licenses/FRLG-ASSETS.md). O importador reproduzível é `scripts/import-field-assets.py`.
+
+O terreno é montado por CSS numa grade de 12×8. Posições dos matinhos vêm da seed e ficam no save durante a caminhada. Lago, trilha, treinador, foco e marcadores de encontro são conferidos em PC, 390 px e 320 px. As capas abaixo continuam atendendo cidade, draft, captura e batalha.
+
+## Piloto de capas implementado na 0.2
 Seis folhas de mapas de Pokémon Emerald foram conferidas no navegador e incorporadas localmente. A pesquisa anterior está em [archive/ARTES-E-ROTAS-0.1.1.md](archive/ARTES-E-ROTAS-0.1.1.md).
 
 ## Seleção e procedência
@@ -38,3 +46,7 @@ Cada entrada guarda `order`, `levels`, `source` e `sourceUrl`. O +6 é calculado
 As seis folhas e seus créditos permanecem iguais. A carcaça da Pokédex, lente, dobradiça, botões e mapa de nós foram desenhados em CSS/SVG neste projeto. A direção utiliza a skill [interface-design](https://github.com/Dammyjay93/interface-design), conforme pedido do usuário.
 
 A fonte [Silkscreen](https://github.com/google/fonts/tree/main/ofl/silkscreen) foi adicionada localmente em `public/fonts/silkscreen.ttf` (31.320 bytes), com licença [SIL OFL](../licenses/Silkscreen-OFL.txt). O empacotador incorpora TTF e WOFF2 com o MIME correspondente. DM Sans e Space Grotesk permanecem locais. O tamanho atual do HTML é cerca de 10,3 MiB; o valor de 9,4 MB acima descreve o piloto da 0.2.0.
+
+## Campo e captura — 0.10.0
+
+A captura passou a usar fundos, Red de costas, Poké Bola, partículas, moldura e fonte de FRLG, em cena 240×160. Campo usa folhas completas e efeito de mato. O importador Python/Pillow é opcional; todas as imagens geradas são locais e copiadas pelo Vite. Origem, commit e transformações: [FRLG-ASSETS.md](../licenses/FRLG-ASSETS.md). Capas antigas continuam nas outras telas. Esta entrega distribui código-fonte e build web; não regenera o HTML histórico.

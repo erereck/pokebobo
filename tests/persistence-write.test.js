@@ -4,6 +4,7 @@ import { writeSave } from "../src/game/persistence/writeSave.js";
 import { loadSave } from "../src/game/persistence/loadSave.js";
 import { SAVE_KEY } from "../src/game/persistence/constants.js";
 import { drafted } from "./helpers/campaign.js";
+import { stateCollection } from "../src/game/persistence/dexStorage.js";
 test("persistência modular mantém o save e propaga falta de espaço", () => {
   const store = new Map(),
     storage = {
@@ -13,7 +14,10 @@ test("persistência modular mantém o save e propaga falta de espaço", () => {
   const state = drafted();
   writeSave(storage, state);
   assert.ok(store.has(SAVE_KEY));
-  assert.deepEqual(loadSave(storage), state);
+  assert.deepEqual(loadSave(storage), {
+    ...state,
+    meta: { ...state.meta, dex: stateCollection(state) },
+  });
   assert.throws(
     () =>
       writeSave(

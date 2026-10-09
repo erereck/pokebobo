@@ -45,3 +45,23 @@ Para simular dificuldade: `scripts/monte-carlo.mjs`, políticas em `scripts/simu
 Ganhos no teto: `game/selectors/levelGain.js`. Vitória sem sobreviventes em Nuzlocke: `game/selectors/battleVictory.js`. Estatística da simulação: `scripts/simulation/summarize.mjs`. Auditoria dos golpes: `scripts/audit-moves.mjs`.
 
 D02: fonte e calendário em `scripts/catalog/learnsetPolicy.mjs`; política em `game/config/moves.js`; seleção dos quatro golpes em `game/pokemon/moves.js`. Depois de editar, regenere com `node scripts/catalog.mjs`, audite com `node scripts/audit-moves.mjs` e confira `tests/move-policy.test.js`. Critérios e limites em [REGRAS-DE-GOLPES.md](REGRAS-DE-GOLPES.md).
+
+
+## Rotas Vivas — 0.9.0
+
+- Caminhada/lago: game/world/exploration.js, config/exploration.js e actions/exploration.js; tela em features/encounters/ExplorationScreen.jsx.
+- Escolha de evolução: pokemon/evolution.js, moveLearning.js, actions/evolution-choice.js e features/team/EvolutionDialog.jsx.
+- Coleção: pokemon/collection.js, persistence/dexStorage.js e features/pokedex/PokedexDialog.jsx.
+- Missões: data/adventureEvents.js; efeitos e condições em career/weekEvents.js.
+- Sprite da batalha: altura gerada por scripts/catalog.mjs e escala comprimida em BattleArena.jsx.
+- Assets FRLG: scripts/import-field-assets.py, public/field/ e licenses/FRLG-ASSETS.md.
+- Medições: docs/balance/adventure-*.json; simulador caminha por explorePolicy.mjs e resolve escolhas antes dos combates.
+
+## Passos de Kanto — 0.10.0
+
+- Terreno/sorteio/intervalo: game/world/exploration.js e config/exploration.js; nível em world/revealWild.js.
+- Resultado persistido e conclusão de captura: actions/capture.js e world/completeCapture.js.
+- Quadros, trajetória e timings: features/encounters/captureTimeline.js; render: CaptureCanvas.jsx e FieldCanvas.jsx; RAF/assets/fonte nos helpers vizinhos.
+- Layout e menu: styles/features/capture.css e adventure.css.
+- Assets: scripts/import-capture-assets.py, public/field/, public/sprites/frlg/ e licenses/FRLG-ASSETS.md.
+- Regressões: tests/field-capture.test.js; browser e campanhas em docs/balance/*0.10.0*.json.

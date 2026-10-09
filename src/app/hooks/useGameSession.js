@@ -10,6 +10,10 @@ import { normalizeSaveSlot } from "../../game/persistence/constants.js";
 import { useAutosave } from "./useAutosave.js";
 import { downloadJson } from "../../shared/downloadJson.js";
 import { reducer } from "../../game/state/reducer.js";
+import {
+  mergeDex,
+  stateCollection,
+} from "../../game/persistence/dexStorage.js";
 
 const KEEP_TAB_ACTIONS = new Set([
   "LEAD",
@@ -18,7 +22,11 @@ const KEEP_TAB_ACTIONS = new Set([
   "BOX_SWAP",
   "REORDER_PARTY",
   "MOVE_CHOICE",
+  "EVOLUTION_CHOICE",
+  "EVOLUTION_REQUEST",
   "BATTLE_CHOICE",
+  "MOVE_ROUTE",
+  "ROUTE_STEP_COMPLETE",
 ]);
 
 export function useGameSession() {
@@ -40,6 +48,11 @@ export function useGameSession() {
   const act = (action) => {
     try {
       const next = reducer(state, action);
+      if (next !== state)
+        next.meta.dex = mergeDex(
+          stateCollection(state, activeSlot),
+          stateCollection(next, activeSlot),
+        );
       setState(next);
       setError("");
       if (!KEEP_TAB_ACTIONS.has(action.type)) {

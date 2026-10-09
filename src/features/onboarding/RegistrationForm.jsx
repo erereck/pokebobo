@@ -67,7 +67,7 @@ export function RegistrationForm({
         </div>
         <p className="mode-desc">
           {mode === "rush"
-            ? "Só duas semanas por cidade. O relógio aperta."
+            ? "Duas semanas por cidade. Treinos rendem +2 a +4 níveis."
             : mode === "nuzlocke"
               ? "Quem cair em batalha deixa a equipe para sempre."
               : "3 semanas por cidade. Perdeu uma batalha, acabou."}

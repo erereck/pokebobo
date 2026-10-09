@@ -40,3 +40,7 @@ Entrada de sprite: 220 ms; pressão de botão: 110 ms. Respeitar prefers-reduced
 29 CSS ativos: fundamentos → componentes → features → responsive/pokedex, na ordem de index.css. Componentes antigos sem uso removidos. Não empilhar um tema novo sobre esta skin; editar o módulo responsável. Regras e estado persistido da 0.2.2 preservados; seleção de ficha é UI local.
 
 Critérios de continuidade: quatro golpes juntos; caminho de no máximo uma tecla para equipe/mapa/mochila; ações relevantes visíveis em 320×568; suporte a PC e batalha horizontal. Conferir sempre com sprites, nomes longos, seis integrantes, última semana e Liga. Evidência em VALIDACAO.md; próximos passos em docs/ROADMAP.md.
+
+## Passos de Kanto — 0.10.0
+
+FieldCanvas: mapa 192×128 em tiles de 16 px; Red 16×32 e efeito original de mato por passo, sem números. CaptureCanvas: cena 240×160, Red de costas 64×64, Pokémon FRLG 64×64, Poké Bola 16×16 e fonte bitmap. A carcaça/LCD continua igual. Menu dentro da cena oferece Poké Bola/Fugir com botões nativos, foco e cursor. Decisões de reserva ficam fora da cena. Animação não altera resultado/RNG; finalização aplica o payload persistido. Movimento reduzido mostra o resultado, e Pular animação não muda regras. Avaliar alvos do menu em telefone físico.

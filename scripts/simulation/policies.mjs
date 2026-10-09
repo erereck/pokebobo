@@ -41,10 +41,19 @@ export function choosePreparation(run, strategy, rng) {
 }
 
 export function chooseCapture(run, strategy, rng) {
+  if (!run.balls) return { type: "SKIP_ENCOUNTER" };
   const types = new Set(run.party.flatMap((mon) => catalog[mon.name].types));
   const opportunities = run.encounters
     .map((e, index) => ({ ...e, index }))
-    .filter((e) => !e.used);
+    .filter(
+      (e) =>
+        !e.used &&
+        (run.exploration
+          ? e.index === run.exploration.activeIndex
+          : run.eventEncounterIndex != null
+            ? e.index === run.eventEncounterIndex
+            : true),
+    );
   if (!opportunities.length) return { type: "SKIP_ENCOUNTER" };
   const score = (name) =>
     catalog[name].types.filter((t) => !types.has(t)).length * 100 +
@@ -60,6 +69,8 @@ export function chooseCapture(run, strategy, rng) {
   return {
     type: "CAPTURE",
     index: selected.index,
-    ...(run.party.length === CAMPAIGN_RULES.partySize && !boxHasRoom ? { replaceId: weakest.id } : {}),
+    ...(run.party.length === CAMPAIGN_RULES.partySize && !boxHasRoom
+      ? { replaceId: weakest.id }
+      : {}),
   };
 }

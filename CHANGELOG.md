@@ -1,5 +1,31 @@
 # Histórico
 
+## 0.10.0 — Passos de Kanto · 09/10/2026
+
+- Ajuste final: Poké Bola pousa sobre a plataforma, independentemente da altura do Pokémon; regressão coberta e 94 testes aprovados.
+
+- Áreas contínuas de mato alto substituem os marcadores numerados. Cada passo no mato pode abrir encontro; chão livre e posição parada não sorteiam.
+- Caminhada do Red em quatro direções, alternância de pernas, deslocamento de um pixel por tick e efeito de mato cobrindo os pés. Cada passo leva 16 ticks; teclado e toque usam a mesma regra.
+- Cena de captura 240×160: treinador de costas, cinco quadros de arremesso, Poké Bola normal, arco, abertura, absorção, quatro quicados, até três sacudidas, estrelas, fuga e desaparecimento da bola.
+- Sprites, fundos, paletas, molduras, partículas e fonte bitmap de FRLG locais. 291 espécies do catálogo têm seu sprite original 64×64 com posição vertical da referência.
+- Resultado e custo ficam salvos antes da apresentação. Recarregar ou pular a animação não rerrola, não cobra outra bola e não duplica Pokémon. Equipe/reserva/Pokédex recebem a captura ao concluir.
+- Nível selvagem definido e salvo ao revelar o encontro, mantendo a faixa anterior e o mesmo nível após captura.
+- 93 testes, build web, auditoria de progressão, 140 campanhas reais e 18 registros de navegador sem erros. Movimento reduzido apresenta diretamente o resultado.
+
+## 0.9.0 — Rotas Vivas · 09/10/2026
+
+- Escolha explícita para evoluções ramificadas, com adiamento, reabertura e retomada de batalha após reload.
+- Exploração procedural com assets FRLG locais, 2–3 encontros, múltiplas capturas e uma semana por caminhada.
+- Fishing Rod na terceira insígnia; Surf na quinta; métodos compartilham o encontro do lago.
+- Pokédex global dos três slots registra capturas e evoluções com as runs de origem, inclusive Pokémon removidos.
+- 12 eventos novos: pistas de Mew/Suicune e um roubo de Eevee após uma vitória, limitado a uma vez por run.
+- Escala de sprites de batalha por altura da espécie e controles ajustados para 320 px.
+- Correria ganha +1 nível por treino: +2 a +4, compensando a semana a menos.
+- 87 testes, build/auditoria, inspeção no navegador e 280 campanhas reais finais; referência de 120 campanhas antigas.
+- Correção de source-map-js sem troca de major. Código-fonte e build web; sem standalone.
+
+
+
 ## 0.8.1 — Ordem do desmaio · 20/09/2026
 
 - Dano fatal pode zerar o HP, mas não esconde mais o sprite antes do evento de desmaio.

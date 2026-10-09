@@ -9,6 +9,7 @@ import { PROGRESSION } from "../../game/config/progression.js";
 export function WeeklyActions({ act, r }) {
   const trainees = [...r.party, ...(r.box || [])];
   const trainingAvailable = canTrain(trainees);
+  const rushBonus = r.mode === "rush" ? PROGRESSION.rushTrainingBonus : 0;
   return (
     <div className="action-grid">
       <Action
@@ -16,7 +17,7 @@ export function WeeklyActions({ act, r }) {
         title="Treinar equipe"
         detail={
           trainingAvailable
-            ? `+${PROGRESSION.trainingMin} a ${PROGRESSION.trainingMax} níveis${r.eventBoosts?.training ? ` +${r.eventBoosts.training} bônus` : ""} · equipe e reserva${r.box?.length ? ` (${r.box.length})` : ""}`
+            ? `+${PROGRESSION.trainingMin + rushBonus} a ${PROGRESSION.trainingMax + rushBonus} níveis${r.eventBoosts?.training ? ` +${r.eventBoosts.training} bônus` : ""} · equipe e reserva${r.box?.length ? ` (${r.box.length})` : ""}`
             : "Equipe e reserva no nível máximo"
         }
         disabled={!trainingAvailable}
@@ -32,7 +33,7 @@ export function WeeklyActions({ act, r }) {
         detail={
           r.balls === 0
             ? "Você precisa de Poké Bolas"
-            : `${r.encounters.filter((e) => !e.used).length} encontros · 1 tentativa`
+            : `${r.encounters.filter((e) => !e.used).length} encontros · caminhar e capturar`
         }
         disabled={!r.balls || !r.encounters.some((e) => !e.used)}
         onClick={() =>

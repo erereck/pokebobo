@@ -8,6 +8,7 @@ import { TeamScreen } from "../features/team/TeamScreen.jsx";
 import { RegionScreen } from "../features/region/RegionScreen.jsx";
 import { Journal } from "../features/journal/Journal.jsx";
 import { WeekEventScreen } from "../features/events/WeekEventScreen.jsx";
+import { ExplorationScreen } from "../features/encounters/ExplorationScreen.jsx";
 
 export function RunContent({
   tab,
@@ -37,7 +38,9 @@ export function RunContent({
           />
         ) : run.phase === "result" ? (
           <ResultScreen run={run} act={act} />
-        ) : run.phase === "encounter" ? (
+        ) : run.phase === "exploration" ? (
+          <ExplorationScreen run={run} act={act} />
+        ) : ["encounter", "capture"].includes(run.phase) ? (
           <Encounter run={run} act={act} />
         ) : run.phase === "event" ? (
           <WeekEventScreen run={run} act={act} />

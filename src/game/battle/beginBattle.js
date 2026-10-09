@@ -12,6 +12,11 @@ import { ensureMoveLearningState } from "../pokemon/moveLearning.js";
 
 export function beginBattle(r, kind) {
   ensureMoveLearningState(r);
+  if (r.pendingEvolutionChoices?.length) {
+    r.pendingBattleKind = kind;
+    r.phase = "evolution-choice";
+    return;
+  }
   if (r.pendingMoveChoices.length) {
     r.pendingBattleKind = kind;
     r.phase = "move-choice";
@@ -49,6 +54,8 @@ export function beginBattle(r, kind) {
     ]);
     roster = sample(r, POOLS[city(r).biome], r.badges > 3 ? 3 : 2);
     level = Math.max(8, targetLevel(r) - 4);
+    if (r.pendingEventBattleName) name = r.pendingEventBattleName;
+    r.pendingEventBattleName = null;
   }
   const enemy = roster.map((n, i) =>
     makeMon(

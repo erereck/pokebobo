@@ -1,6 +1,14 @@
 import { WeekBudget } from "../career/WeekBudget.jsx";
 import { weekLimit } from "../../game/selectors/weekLimit.js";
-import { Backpack, Sprout, Search, Footprints } from "lucide-react";
+import {
+  Backpack,
+  Sprout,
+  Search,
+  Footprints,
+  Fish,
+  Waves,
+} from "lucide-react";
+import { EXPLORATION_RULES } from "../../game/config/exploration.js";
 import { Ball } from "../../components/icons/Ball.jsx";
 import { ScreenHeading } from "../../components/ui/ScreenHeading.jsx";
 export function BagScreen({ run: r, act }) {
@@ -46,6 +54,30 @@ export function BagScreen({ run: r, act }) {
             Preparar · 1 semana
           </button>
         </article>
+      </div>
+      <div className="field-equipment">
+        <p>
+          <Fish size={20} />
+          <strong>Fishing Rod</strong>
+          <span>
+            {r.badges >= EXPLORATION_RULES.fishingBadges
+              ? "Disponível nos lagos"
+              : "Recompensa da 3ª insígnia"}
+          </span>
+        </p>
+        <p>
+          <Waves size={20} />
+          <strong>Surf</strong>
+          <span>
+            {r.badges >= EXPLORATION_RULES.surfBadges
+              ? "Disponível nos lagos"
+              : "Libera na 5ª insígnia"}
+          </span>
+        </p>
+        <small>
+          Equipamentos permanentes. Use durante a exploração, sem gastar outra
+          semana.
+        </small>
       </div>
       {!canUse && (
         <p className="notice">

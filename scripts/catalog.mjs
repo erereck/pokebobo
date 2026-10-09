@@ -6,7 +6,15 @@ import { ORIGINS, GYMS, ELITES, CHAMPIONS, POOLS } from "../src/game/data.js";
 import { mkdir, writeFile, readFile } from "node:fs/promises";
 import { access } from "node:fs/promises";
 import { CITY_SPECIES } from "../src/game/data/encounters/signatures.js";
+import { ADVENTURE_SPECIES } from "../src/game/data/adventureEvents.js";
+import {
+  FISHING_SPECIES,
+  SURF_SPECIES,
+} from "../src/game/config/exploration.js";
 const names = new Set([
+  ...ADVENTURE_SPECIES,
+  ...FISHING_SPECIES,
+  ...SURF_SPECIES,
   ...ORIGINS.flatMap((x) => x.starters),
   ...GYMS.flatMap((x) => x.team),
   ...ELITES.flatMap((x) => x.team),
@@ -45,6 +53,7 @@ for (const name of names) {
     name: s.name,
     id: s.id,
     num: s.num,
+    height: s.heightm,
     types: s.types,
     stats: s.baseStats,
     ability: s.abilities[0],

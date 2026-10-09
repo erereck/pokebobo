@@ -19,6 +19,8 @@ import { handleEventChoice } from "../actions/event-choice.js";
 import { handleMoveChoice } from "../actions/move-choice.js";
 import { handleBox } from "../actions/box.js";
 import { handleReorderParty } from "../actions/reorder-party.js";
+import { handleEvolutionChoice } from "../actions/evolution-choice.js";
+import { handleExploration } from "../actions/exploration.js";
 
 const handlers = {
   NEW: handleNew,
@@ -31,6 +33,7 @@ const handlers = {
   TRAIN: handleTrain,
   EXPLORE: handleExplore,
   CAPTURE: handleCapture,
+  CAPTURE_FINISH: handleCapture,
   SKIP_ENCOUNTER: handleSkipEncounter,
   FORAGE: handleForage,
   PREPARE: handlePrepare,
@@ -40,12 +43,31 @@ const handlers = {
   ABANDON: handleAbandon,
   EVENT_CHOICE: handleEventChoice,
   MOVE_CHOICE: handleMoveChoice,
+  EVOLUTION_CHOICE: handleEvolutionChoice,
+  EVOLUTION_REQUEST: handleEvolutionChoice,
+  MOVE_ROUTE: handleExploration,
+  ROUTE_STEP_COMPLETE: handleExploration,
+  LAKE_ENCOUNTER: handleExploration,
+  EXIT_ROUTE: handleExploration,
   BOX_TO_RESERVE: handleBox,
   BOX_TO_PARTY: handleBox,
   BOX_SWAP: handleBox,
   REORDER_PARTY: handleReorderParty,
 };
 export function reducer(state, action) {
+  const r = state.run;
+  if (
+    r?.phase === "capture" &&
+    !["CAPTURE_FINISH", "NEW", "ABANDON"].includes(action.type)
+  )
+    return state;
+  if (
+    (r?.pendingEvolutionChoices?.length || r?.pendingMoveChoices?.length) &&
+    !["NEW", "ABANDON", "EVOLUTION_CHOICE", "MOVE_CHOICE"].includes(action.type)
+  )
+    return state;
+  if (r?.pendingEvolutionChoices?.length && action.type === "MOVE_CHOICE")
+    return state;
   const handler = handlers[action.type];
   if (!handler || (action.type !== "NEW" && !state.run)) return state;
   return handler(structuredClone(state), action, state);
