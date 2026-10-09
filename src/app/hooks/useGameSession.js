@@ -25,6 +25,8 @@ const KEEP_TAB_ACTIONS = new Set([
   "EVOLUTION_CHOICE",
   "EVOLUTION_REQUEST",
   "BATTLE_CHOICE",
+  "MOVE_ROUTE",
+  "ROUTE_STEP_COMPLETE",
 ]);
 
 export function useGameSession() {

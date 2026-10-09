@@ -46,3 +46,7 @@ Cada entrada guarda `order`, `levels`, `source` e `sourceUrl`. O +6 é calculado
 As seis folhas e seus créditos permanecem iguais. A carcaça da Pokédex, lente, dobradiça, botões e mapa de nós foram desenhados em CSS/SVG neste projeto. A direção utiliza a skill [interface-design](https://github.com/Dammyjay93/interface-design), conforme pedido do usuário.
 
 A fonte [Silkscreen](https://github.com/google/fonts/tree/main/ofl/silkscreen) foi adicionada localmente em `public/fonts/silkscreen.ttf` (31.320 bytes), com licença [SIL OFL](../licenses/Silkscreen-OFL.txt). O empacotador incorpora TTF e WOFF2 com o MIME correspondente. DM Sans e Space Grotesk permanecem locais. O tamanho atual do HTML é cerca de 10,3 MiB; o valor de 9,4 MB acima descreve o piloto da 0.2.0.
+
+## Campo e captura — 0.10.0
+
+A captura passou a usar fundos, Red de costas, Poké Bola, partículas, moldura e fonte de FRLG, em cena 240×160. Campo usa folhas completas e efeito de mato. O importador Python/Pillow é opcional; todas as imagens geradas são locais e copiadas pelo Vite. Origem, commit e transformações: [FRLG-ASSETS.md](../licenses/FRLG-ASSETS.md). Capas antigas continuam nas outras telas. Esta entrega distribui código-fonte e build web; não regenera o HTML histórico.

@@ -1,6 +1,8 @@
-# Pokébobo — 0.9.0 · Rotas Vivas
+# Pokébobo — 0.10.0 · Passos de Kanto
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.10.0 traz mato alto contínuo com encontros por passo e captura em uma cena 240×160 baseada em FRLG: Red de costas, arremesso de Poké Bola normal, absorção, quicados, sacudidas, estrelas e fuga. O resultado fica salvo antes da animação. [Campo no celular](docs/images/rota-0.10-celular.png) · [Cena de captura](docs/images/captura-0.10-celular.png).
 
 A 0.9.0 permite escolher evoluções ramificadas, caminhar em rotas com tiles de FRLG e 2–3 encontros, pescar após a terceira insígnia e usar Surf após a quinta. A Pokédex registra capturas e evoluções dos três slots com as jornadas de origem. Doze novos acontecimentos incluem pistas de Mew/Suicune e um roubo de Eevee após vencer um contrabandista. Correria compensa sua semana a menos com treinos de +2 a +4 níveis. Veja o [ROADMAP](docs/ROADMAP.md), a [validação](VALIDACAO.md) e o [guia da interface](docs/INTERFACE.md). Os modos de ataques Manual/Automático e a reserva de três Pokémon continuam disponíveis.
 
@@ -48,7 +50,7 @@ O save fica no navegador. Há três slots independentes de carreira; o Hall da F
 - Treino (+1 a 3 níveis na equipe; +2 a 4 na Correria), exploração, captura, busca de itens e preparação com berries. Viagem e emboscada: zero níveis. Vitória em ginásio ou Liga: +1.
 - Níveis originais por Pokémon do líder. Se o maior nível do jogador exceder o ás original em 10 ou mais, o líder recebe +6 em todos, uma vez. Não há limite de nível por etapa.
 - Quatro golpes juntos na batalha, trocas em grade, troca por arrastar na Equipe Conectada, HP ao vivo dos seis e registro completo em uma janela separada. Cada turno é apresentado em sequência (ataque, HP, status, queda e troca), com velocidade 1×/2×.
-- Duas ou três oportunidades por rota, com matinhos gerados pela seed e lago. Caminhar/capturar custa uma única semana; cada encontro permite uma tentativa, com 86% de chance base (eventos podem elevar até 98%) e uma Poké Bola. Fishing Rod na terceira insígnia; Surf na quinta. Pesca e Surf compartilham a oportunidade do lago. Equipe de até seis; com time e reserva cheios, escolha quem sai apenas se a captura der certo.
+- Duas ou três oportunidades por rota, com áreas contínuas de mato alto e lago. Encontros são sorteados ao caminhar, com intervalo após encontros e proteção contra espera excessiva. Caminhar/capturar custa uma única semana; cada encontro permite uma tentativa, com 86% de chance base (eventos podem elevar até 98%) e uma Poké Bola. Fishing Rod na terceira insígnia; Surf na quinta. Pesca e Surf compartilham a oportunidade do lago. Equipe de até seis; com time e reserva cheios, escolha quem sai apenas se a captura der certo.
 - Batalhas aleatórias: chance de 10% após uma ação elegível, com intervalo mínimo de três semanas entre emboscadas.
 - Batalhas reais do Pokémon Showdown via `@pkmn/sim`, inteiramente no navegador. Golpes, PP, habilidades, tipos, status, prioridade, dano, trocas e itens seguem o motor.
 - Saves reproduzíveis de batalha por seed e histórico de decisões. Recarregar não rerrola a luta.

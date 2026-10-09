@@ -1,5 +1,25 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 09/10/2026 — 0.10.0: Passos de Kanto
+
+**Pedido:** ampliar o mato e aproximar a caminhada e a captura de FireRed/LeafGreen, incluindo o treinador de costas jogando suas Poké Bolas normais numa cena ao estilo Safari Zone.
+
+**Campo:** a grade 12×8 mantém o lago e contém pelo menos vinte casas contínuas de mato (22 na configuração atual). Os centros já definidos pela seed variam a borda da área. Não existem marcadores numerados nem gatilhos em uma casa exata: cada passo no mato elegível tem 22% de chance, com garantia ao décimo passo sem encontro. Após resolver um encontro, dois passos de intervalo evitam reentrada imediata. Isso limita espera, sem criar oportunidades extras ou gasto de semanas. As duas ou três oportunidades continuam persistentes; as do lago continuam compartilhadas entre Fishing Rod e Surf.
+
+**Movimento:** sprite 16×32 original em nove quadros; sul/norte/oeste usam suas sequências e leste espelha oeste. Passo de 16 ticks a 60 Hz, quadro de perna por oito ticks e repouso por oito. Red desloca-se um pixel por tick; o efeito original do mato segue a ordem 1/2/3/4/0, dez ticks por quadro, cobrindo os pés. Passos em andamento bloqueiam outro movimento, pesca e saída; reload termina o mesmo passo e abre o encontro já escolhido.
+
+**Captura:** a cena usa resolução lógica 240×160, nearest-neighbor, fundos de grama/água e caixa de texto recomposta dos tilemaps. Red de costas segue os quadros 1/2/3/4/0 em 20/6/6/24/1 ticks, com deslocamento horizontal da referência. Arremesso inicia no tick 20; arco dura 34 ticks e tem amplitude −40. Abre em dois quadros de cinco ticks, absorve o Pokémon, fecha, executa quatro quicados com alturas decrescentes e espera 31 ticks entre sacudidas. Partículas, estrelas, paletas e fades foram reconstruídos com RGB de 5 bits. O Pokémon reaparece na falha; no sucesso a bola fecha, escurece, lança estrelas e desaparece. O menu oferece Poké Bola normal/Fugir. A apresentação pode ser pulada e respeita movimento reduzido.
+
+**Dados e economia:** CAPTURE sorteia e salva o resultado uma vez; CAPTURE_FINISH, validado pelo id da tentativa, aplica o Pokémon à equipe/reserva e à coleção. A apresentação não sorteia nada. Durante captura pendente, outras ações de gameplay são bloqueadas. Simulação instantânea e apresentação animada usam o mesmo resultado e a mesma conclusão. O nível é definido ao revelar o Pokémon; a faixa, chances, bolas por tentativa, semanas e marcos de pesca/Surf foram preservados.
+
+**Assets e método:** gráficos e sequências consultados no pret/pokefirered, commit 037335f4c725d7c9aecdac87066f2002b4bd7e14. O importador Python/Pillow gera folhas completas do treinador, Red de costas, Poké Bola, partículas, mato, fundos, molduras, fonte e 291 sprites de espécies existentes no catálogo original. Assets e métricas ficam locais; build e gameplay não dependem do importador nem de requests externos para essa cena. Direitos e origem registrados em licenses/FRLG-ASSETS.md.
+
+**Validação e medidas:** 188 módulos, 93 testes, build e auditoria. 18 registros do navegador em desktop, 390×844 e 320×568; fluxo completo, recarga durante animação, falha/sucesso, substituição com reserva cheia, lago, espécie recente e movimento reduzido. Zero erros de console/rede/overflow. 140 campanhas reais, quatro políticas, sem truncamentos; equilibrada 5/15 títulos no Clássico, Correria 0/40 e Nuzlocke 1/40. A movimentação passou a consumir RNG em passos elegíveis e o nível ao revelar o encontro; diferenças por seed em relação a versões anteriores não isolam causa nem justificam ajuste de dificuldade nesta entrega.
+
+**Limites:** Fidelidade visual baseada nos gráficos e nas sequências de FRLG; não é um emulador do cartucho. O mapa, os textos em português, as regras de captura e os comandos por navegador são adaptados. Espécies/formas posteriores ao FRLG usam os sprites locais existentes. Não foram adicionados áudio, ROM, isca ou pedra. Uma oportunidade permite uma tentativa; falhar encerra esse encontro. A cena representa sacudidas a partir do resultado persistido, não executa a fórmula de captura do cartucho. Sem teste físico em celular nem campanha humana completa.
+
+**Próximas sugestões:** jogar em celular físico para avaliar alvos do menu e leitura; medir a dificuldade da Correria com uma amostra maior e jogadores; considerar áudio e transições de entrada como uma entrega separada, com fontes e medições próprias. Relatório anterior preservado abaixo.
+
 ## Entrega de 09/10/2026 — 0.9.0: Rotas Vivas
 
 **Pedido:** integrar todos os itens da imagem: exploração com matinhos e lago, eventos com objetivo e lendários, um roubo por run, tamanho dos Pokémon em batalha, Pokédex com jornadas e escolha de evoluções ramificadas; Fishing Rod a partir do terceiro ginásio.

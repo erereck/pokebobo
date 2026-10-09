@@ -9,7 +9,12 @@ import {
 } from "lucide-react";
 import { ScreenHeading } from "../../components/ui/ScreenHeading.jsx";
 import { EXPLORATION_RULES } from "../../game/config/exploration.js";
-import { terrainAt, atLake } from "../../game/world/exploration.js";
+import {
+  terrainAt,
+  atLake,
+  isTallGrass,
+} from "../../game/world/exploration.js";
+import { FieldCanvas } from "./FieldCanvas.jsx";
 
 export function ExplorationScreen({ run: r, act }) {
   const e = r.exploration;
@@ -18,7 +23,7 @@ export function ExplorationScreen({ run: r, act }) {
   const lakeAvailable = r.encounters.some(
     (mon) => mon.habitat === "water" && !mon.used,
   );
-  const move = (dx, dy) => act({ type: "MOVE_ROUTE", dx, dy });
+  const move = (dx, dy) => act({ type: "MOVE_ROUTE", dx, dy, animate: true });
   const directions = [
     { dx: 0, dy: -1, label: "Caminhar para cima", Icon: ArrowUp },
     { dx: -1, dy: 0, label: "Caminhar para esquerda", Icon: ArrowLeft },
@@ -67,46 +72,33 @@ export function ExplorationScreen({ run: r, act }) {
         tabIndex={0}
         aria-label={`Rota: posição ${e.x + 1}, ${e.y + 1}. Use as setas para caminhar.`}
       >
+        <FieldCanvas exploration={e} act={act} />
         {Array.from(
           { length: EXPLORATION_RULES.width * EXPLORATION_RULES.height },
           (_, index) => {
             const x = index % EXPLORATION_RULES.width,
               y = Math.floor(index / EXPLORATION_RULES.width);
             const terrain = terrainAt(x, y);
-            const spotIndex = e.spots.findIndex(
-              (spot) => spot?.x === x && spot?.y === y,
-            );
+            const grass = isTallGrass(e, x, y);
             const nearby = Math.abs(x - e.x) + Math.abs(y - e.y) === 1;
-            const player = x === e.x && y === e.y;
             return (
               <button
                 key={index}
                 tabIndex={-1}
-                className={`field-tile terrain-${terrain}${spotIndex >= 0 ? " is-spot" : ""}${player ? " is-player" : ""}`}
-                disabled={!nearby || (terrain === "water" && !e.surfing)}
-                aria-label={`${terrain === "water" ? "Lago" : spotIndex >= 0 ? "Matinho com encontro" : "Trilha"}, ${x + 1}, ${y + 1}`}
+                className={`field-tile${grass ? " is-grass" : ""}`}
+                disabled={
+                  !!e.walk || !nearby || (terrain === "water" && !e.surfing)
+                }
+                aria-label={`${terrain === "water" ? "Lago" : grass ? "Mato alto" : "Trilha"}, ${x + 1}, ${y + 1}`}
                 onClick={() => move(x - e.x, y - e.y)}
-              >
-                {spotIndex >= 0 && (
-                  <span className="field-marker">
-                    {r.encounters[spotIndex].used ? "✓" : spotIndex + 1}
-                  </span>
-                )}
-                {player && (
-                  <img
-                    className={`field-trainer${e.surfing ? " is-surfing" : ""}`}
-                    src={`${import.meta.env.BASE_URL}field/${e.surfing ? "red_surf" : "red_normal"}.png`}
-                    alt="Seu treinador"
-                  />
-                )}
-              </button>
+              />
             );
           },
         )}
       </div>
       <p className="field-guide">
-        Entre nos matinhos numerados para encontrar Pokémon. Toque numa casa
-        vizinha ou use as setas.
+        Entre e saia do mato alto: cada passo pode revelar um Pokémon. Toque
+        numa casa vizinha ou use as setas / WASD.
       </p>
       <div className="field-controls">
         <div className="field-dpad" aria-label="Controles da caminhada">
@@ -115,6 +107,7 @@ export function ExplorationScreen({ run: r, act }) {
               key={label}
               className="hardware-button"
               aria-label={label}
+              disabled={!!e.walk}
               onClick={() => move(dx, dy)}
             >
               <Icon size={22} />
@@ -126,6 +119,7 @@ export function ExplorationScreen({ run: r, act }) {
             className="button secondary"
             disabled={
               !atLake(e) ||
+              !!e.walk ||
               !lakeAvailable ||
               !r.balls ||
               r.badges < EXPLORATION_RULES.fishingBadges
@@ -139,6 +133,7 @@ export function ExplorationScreen({ run: r, act }) {
             className="button secondary"
             disabled={
               !atLake(e) ||
+              !!e.walk ||
               !lakeAvailable ||
               !r.balls ||
               r.badges < EXPLORATION_RULES.surfBadges
@@ -163,6 +158,7 @@ export function ExplorationScreen({ run: r, act }) {
       </div>
       <button
         className="button primary full"
+        disabled={!!e.walk}
         onClick={() => act({ type: "EXIT_ROUTE" })}
       >
         <LogOut size={18} />

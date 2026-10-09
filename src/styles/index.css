@@ -12,6 +12,7 @@
 @import "./features/secondary.css";
 @import "./features/equipe-viva.css";
 @import "./features/adventure.css";
+@import "./features/capture.css";
 @import "./components/dialogs.css";
 @import "./responsive/pokedex/desktop-height.css";
 @import "./responsive/pokedex/tablet.css";

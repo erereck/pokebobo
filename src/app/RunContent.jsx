@@ -40,7 +40,7 @@ export function RunContent({
           <ResultScreen run={run} act={act} />
         ) : run.phase === "exploration" ? (
           <ExplorationScreen run={run} act={act} />
-        ) : run.phase === "encounter" ? (
+        ) : ["encounter", "capture"].includes(run.phase) ? (
           <Encounter run={run} act={act} />
         ) : run.phase === "event" ? (
           <WeekEventScreen run={run} act={act} />

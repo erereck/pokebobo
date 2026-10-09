@@ -110,3 +110,9 @@ As 926 transições da 0.1 foram preservadas em docs/archive, sem regenerar seus
 - `src/styles/index.css` importa fundamentos, estrutura, telas e depois respostas de altura/largura. O arquivo `landscape.css` é específico para combate horizontal. Manter a ordem explícita.
 - Componentes antigos de rodapé, sidebar editorial, preview redundante de equipe e navegação mobile separada foram removidos. O motor não foi modificado.
 - [INTERFACE.md](INTERFACE.md) e [.interface-design/system.md](../.interface-design/system.md) guardam decisões para os próximos updates.
+
+## Campo e captura — 0.10.0
+
+ExplorationScreen/FieldCanvas desenham o mapa e enviam MOVE_ROUTE com apresentação. O reducer salva o passo e eventual encontro; ROUTE_STEP_COMPLETE libera o próximo comando e revela o Pokémon. isTallGrass compartilha terreno elegível com UI/testes/simulação. revealWild fixa o nível.
+
+Encounter/CaptureCanvas apresentam o resultado produzido por actions/capture.js. CAPTURE salva bola, RNG e captureAttempt; CAPTURE_FINISH valida o id e chama world/completeCapture.js para equipe/reserva/coleção. O flag de apresentação usa a mesma regra da simulação, apenas adia a conclusão. captureTimeline.js não importa RNG nem altera gameplay. usePixelCanvas controla carregamento paralelo, RAF, cancelamento e movimento reduzido. Assets locais têm importador separado e créditos.

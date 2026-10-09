@@ -28,3 +28,7 @@ A escala parte de 4 px; ações principais têm pelo menos 44 px. Algumas teclas
 Tokens em `styles/foundations/tokens.css`. Materiais em `styles/components/dex-shell.css`. Cada tela tem seu CSS; adaptações ficam em `styles/responsive/pokedex/`. A ordem de `styles/index.css` faz parte do sistema. São 29 folhas ativas incluindo o índice. Não adicionar um tema paralelo sobre regras antigas.
 
 A intenção de cada componente e as decisões persistentes estão em [.interface-design/system.md](../.interface-design/system.md). Casos inspecionados em [VALIDACAO.md](../VALIDACAO.md). Próximos passos no [ROADMAP](ROADMAP.md).
+
+## Cenas de campo e captura — 0.10.0
+
+Dentro da carcaça existente, FieldCanvas usa pixels originais em 192×128, e CaptureCanvas usa 240×160. Escala nearest-neighbor; fontes bitmap na cena e tipografia do LCD nos controles externos. Captura apresenta apenas treinador e Pokémon selvagem. Menu nativo acessível: Poké Bola/Fugir, com cursor, foco, estado desabilitado e texto alternativo para o canvas. Destino da captura fica antes da tentativa; conclusão e pular apresentação têm botões externos grandes. Movimento reduzido mantém regras/resultados e elimina animações. Alvos pequenos do menu reproduzem a proporção do jogo e precisam de avaliação em aparelho físico.

@@ -56,3 +56,12 @@ D02: fonte e calendário em `scripts/catalog/learnsetPolicy.mjs`; política em `
 - Sprite da batalha: altura gerada por scripts/catalog.mjs e escala comprimida em BattleArena.jsx.
 - Assets FRLG: scripts/import-field-assets.py, public/field/ e licenses/FRLG-ASSETS.md.
 - Medições: docs/balance/adventure-*.json; simulador caminha por explorePolicy.mjs e resolve escolhas antes dos combates.
+
+## Passos de Kanto — 0.10.0
+
+- Terreno/sorteio/intervalo: game/world/exploration.js e config/exploration.js; nível em world/revealWild.js.
+- Resultado persistido e conclusão de captura: actions/capture.js e world/completeCapture.js.
+- Quadros, trajetória e timings: features/encounters/captureTimeline.js; render: CaptureCanvas.jsx e FieldCanvas.jsx; RAF/assets/fonte nos helpers vizinhos.
+- Layout e menu: styles/features/capture.css e adventure.css.
+- Assets: scripts/import-capture-assets.py, public/field/, public/sprites/frlg/ e licenses/FRLG-ASSETS.md.
+- Regressões: tests/field-capture.test.js; browser e campanhas em docs/balance/*0.10.0*.json.

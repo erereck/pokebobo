@@ -1,5 +1,15 @@
 # Histórico
 
+## 0.10.0 — Passos de Kanto · 09/10/2026
+
+- Áreas contínuas de mato alto substituem os marcadores numerados. Cada passo no mato pode abrir encontro; chão livre e posição parada não sorteiam.
+- Caminhada do Red em quatro direções, alternância de pernas, deslocamento de um pixel por tick e efeito de mato cobrindo os pés. Cada passo leva 16 ticks; teclado e toque usam a mesma regra.
+- Cena de captura 240×160: treinador de costas, cinco quadros de arremesso, Poké Bola normal, arco, abertura, absorção, quatro quicados, até três sacudidas, estrelas, fuga e desaparecimento da bola.
+- Sprites, fundos, paletas, molduras, partículas e fonte bitmap de FRLG locais. 291 espécies do catálogo têm seu sprite original 64×64 com posição vertical da referência.
+- Resultado e custo ficam salvos antes da apresentação. Recarregar ou pular a animação não rerrola, não cobra outra bola e não duplica Pokémon. Equipe/reserva/Pokédex recebem a captura ao concluir.
+- Nível selvagem definido e salvo ao revelar o encontro, mantendo a faixa anterior e o mesmo nível após captura.
+- 93 testes, build web, auditoria de progressão, 140 campanhas reais e 18 registros de navegador sem erros. Movimento reduzido apresenta diretamente o resultado.
+
 ## 0.9.0 — Rotas Vivas · 09/10/2026
 
 - Escolha explícita para evoluções ramificadas, com adiamento, reabertura e retomada de batalha após reload.

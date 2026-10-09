@@ -45,10 +45,10 @@ export function HelpDialog({ setModal }) {
           </li>
           <li>
             Cada rota oferece 2–3 encontros. Explorar gasta uma semana para a
-            caminhada inteira. Use as setas, WASD ou as casas vizinhas; entre
-            nos matinhos numerados. Cada encontro permite uma tentativa por uma
-            Poké Bola (86% de chance base). Sair da rota resolve o fim da
-            semana.
+            caminhada inteira. Use as setas, WASD ou as casas vizinhas; entre e
+            saia do mato alto. Cada passo pode revelar um Pokémon. Cada encontro
+            permite uma tentativa por uma Poké Bola (86% de chance base). Sair
+            da rota resolve o fim da semana.
           </li>
           <li>
             Treinar dá de {PROGRESSION.trainingMin} a {PROGRESSION.trainingMax}{" "}

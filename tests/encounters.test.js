@@ -4,7 +4,7 @@ import { reducer } from "../src/game/engine.js";
 import assert from "node:assert/strict";
 
 function walkToFirst(s) {
-  const spot = s.run.exploration.spots[0];
+  const spot = { x: 3, y: 3 };
   while (s.run.phase === "exploration" && s.run.exploration.x !== spot.x)
     s = reducer(s, {
       type: "MOVE_ROUTE",
@@ -16,6 +16,13 @@ function walkToFirst(s) {
       type: "MOVE_ROUTE",
       dx: 0,
       dy: Math.sign(spot.y - s.run.exploration.y),
+    });
+  let steps = 0;
+  while (s.run.phase === "exploration" && steps++ < 12)
+    s = reducer(s, {
+      type: "MOVE_ROUTE",
+      dx: s.run.exploration.x === 3 ? 1 : -1,
+      dy: 0,
     });
   return s;
 }
@@ -32,16 +39,17 @@ test("captura cobra uma semana e uma bola, não permite repetir encontro", () =>
   assert.equal(s.run.phase, "exploration");
   s = walkToFirst(s);
   assert.equal(s.run.phase, "encounter");
+  const index = s.run.exploration.activeIndex;
   s = reducer(s, {
     type: "CAPTURE",
-    index: 0,
+    index,
   });
   assert.equal(s.run.balls, balls - 1);
   assert.equal(s.run.week, week + 1);
-  assert.equal(s.run.encounters[0].used, true);
+  assert.equal(s.run.encounters[index].used, true);
   const unchanged = reducer(s, {
     type: "CAPTURE",
-    index: 0,
+    index,
   });
   assert.deepEqual(unchanged, s);
 });

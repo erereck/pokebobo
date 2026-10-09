@@ -1,6 +1,9 @@
 export const EXPLORATION_RULES = Object.freeze({
   width: 12,
   height: 8,
+  grassEncounterChance: 0.22,
+  maxGrassSteps: 10,
+  encounterCooldown: 2,
   fishingBadges: 3,
   surfBadges: 5,
   legendaryBadges: 6,

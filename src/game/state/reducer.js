@@ -33,6 +33,7 @@ const handlers = {
   TRAIN: handleTrain,
   EXPLORE: handleExplore,
   CAPTURE: handleCapture,
+  CAPTURE_FINISH: handleCapture,
   SKIP_ENCOUNTER: handleSkipEncounter,
   FORAGE: handleForage,
   PREPARE: handlePrepare,
@@ -45,6 +46,7 @@ const handlers = {
   EVOLUTION_CHOICE: handleEvolutionChoice,
   EVOLUTION_REQUEST: handleEvolutionChoice,
   MOVE_ROUTE: handleExploration,
+  ROUTE_STEP_COMPLETE: handleExploration,
   LAKE_ENCOUNTER: handleExploration,
   EXIT_ROUTE: handleExploration,
   BOX_TO_RESERVE: handleBox,
@@ -54,6 +56,11 @@ const handlers = {
 };
 export function reducer(state, action) {
   const r = state.run;
+  if (
+    r?.phase === "capture" &&
+    !["CAPTURE_FINISH", "NEW", "ABANDON"].includes(action.type)
+  )
+    return state;
   if (
     (r?.pendingEvolutionChoices?.length || r?.pendingMoveChoices?.length) &&
     !["NEW", "ABANDON", "EVOLUTION_CHOICE", "MOVE_CHOICE"].includes(action.type)

@@ -1,4 +1,15 @@
-# Validação — Pokébobo 0.9.0
+# Validação — Pokébobo 0.10.0
+
+## 0.10.0 — Passos de Kanto · 09/10/2026
+
+- `npm run verify`: 188 módulos JS/JSX sem ciclos ou import de UI no motor; 93/93 testes; build Vite com 2.067 módulos.
+- `npm run balance:audit`: orçamento-base preservado. Não mede vitórias.
+- 140 campanhas completas com batalhas reais: 60 Clássico, 40 Correria, 40 Nuzlocke, quatro políticas e seed 20261009. Zero truncamentos. A política equilibrada ganhou 5/15 no Clássico; Correria teve 0/40 títulos e Nuzlocke 1/40. Amostras pequenas e exploratórias; não estimam vitórias humanas. JSONs em docs/balance/monte-carlo-0.10.0-*.json.
+- Edge / Playwright: 18 registros em 1280×900, 390×844 e 320×568; sem erros de console/página, requests com erro, imagens quebradas ou overflow horizontal. Caminhada real por teclado/botões → encontro → fuga; captura → resultado → reload → conclusão; sucesso/falha, reserva lotada com escolha de substituto, pesca/Surf, espécie posterior ao FRLG, animação completa 1×, recarga durante arremesso, movimento reduzido e pular apresentação. Relatório: docs/balance/browser-0.10.0.json.
+- Testes novos verificam mato contínuo, sorteio apenas ao pisar, garantia após dez passos de mato sem encontro, passo bloqueado durante apresentação, conclusão por id, persistência de sucesso/falha, economia sem duplicação, resultado instantâneo/animado equivalente e marcos de animação extraídos da referência.
+- Importador recompõe assets a partir do commit congelado do pret/pokefirered, sem ROM, e traz origem/termos em licenses/FRLG-ASSETS.md. Assets novos presentes no build web; HTML standalone não foi gerado.
+
+Limites: Fidelidade visual baseada nos gráficos e nas sequências de FRLG; não é um emulador do cartucho. O mapa, os textos em português, as regras de captura e os comandos por navegador são adaptados. Espécies/formas posteriores ao FRLG usam os sprites locais existentes. Não foram adicionados áudio, ROM, isca ou pedra. Uma oportunidade permite uma tentativa; falhar encerra esse encontro. A cena representa sacudidas a partir do resultado persistido, não executa a fórmula de captura do cartucho. Sem teste físico em celular nem campanha humana completa.
 
 ## 0.9.0 — Rotas Vivas · 09/10/2026
 
