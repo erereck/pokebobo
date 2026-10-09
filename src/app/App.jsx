@@ -14,6 +14,8 @@ import { SettingsDialog } from "../features/settings/SettingsDialog.jsx";
 import { AbandonDialog } from "../features/settings/AbandonDialog.jsx";
 import { HallOfFameDialog } from "../features/history/HallOfFameDialog.jsx";
 import { MoveLearnDialog } from "../features/team/MoveLearnDialog.jsx";
+import { EvolutionDialog } from "../features/team/EvolutionDialog.jsx";
+import { PokedexDialog } from "../features/pokedex/PokedexDialog.jsx";
 import { ResetDialog } from "../features/settings/ResetDialog.jsx";
 import { initialState } from "../game/state/initialState.js";
 
@@ -140,8 +142,18 @@ export function App() {
         </div>
       )}
       {playing && <GameNavigation tab={tab} setTab={setTab} run={run} />}
-      {run?.pendingMoveChoices?.length > 0 && (
-        <MoveLearnDialog run={run} act={act} />
+      {run?.pendingEvolutionChoices?.length > 0 && run.phase !== "ended" && (
+        <EvolutionDialog run={run} act={act} />
+      )}
+      {!run?.pendingEvolutionChoices?.length &&
+        run?.pendingMoveChoices?.length > 0 &&
+        run.phase !== "ended" && <MoveLearnDialog run={run} act={act} />}
+      {modal === "pokedex" && (
+        <PokedexDialog
+          state={state}
+          slot={activeSlot}
+          onClose={() => setModal(null)}
+        />
       )}
       {modal === "hall" && (
         <HallOfFameDialog
@@ -168,6 +180,7 @@ export function App() {
           onReset={() => {
             const blank = initialState();
             blank.meta.history = state.meta.history;
+            blank.meta.dex = state.meta.dex;
             setState(blank);
             setTab("journey");
             setModal(null);

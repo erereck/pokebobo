@@ -120,10 +120,11 @@
 }
 .battle-sprite .sprite {
   position: relative;
-  width: clamp(76px, 12vw, 160px);
-  height: 100%;
+  width: var(--species-size, 90%);
+  height: var(--species-size, 90%);
   max-height: 160px;
   object-fit: contain;
+  object-position: center bottom;
   image-rendering: pixelated;
   filter: drop-shadow(2px 4px 0 #26412f44);
   animation: send-out 220ms var(--ease);

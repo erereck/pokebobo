@@ -1,4 +1,17 @@
-# Validação — Pokébobo 0.5.0
+# Validação — Pokébobo 0.9.0
+
+## 0.9.0 — Rotas Vivas · 09/10/2026
+
+- npm run verify: arquitetura (179 módulos), 87/87 testes e build Vite (2.056 módulos).
+- npm run balance:audit: orçamento-base de níveis preservado, nenhuma trajetória de treino-base chega à Liga em nível 99. Não é medição de taxa de vitória.
+- 280 campanhas com batalhas reais: quatro políticas, 30 seeds por política no Clássico e 20 na Correria/Nuzlocke; zero truncamentos. 120 campanhas da 0.8.1 servem de referência exploratória. Relatórios completos em docs/balance/adventure-*.json.
+- Playwright com Edge headless: 15 screenshots em 1280×900, 390×844, 320×568 e batalha 844×390; escolha de evolução e reload, caminhada por teclado/toque, captura, pesca, retorno, Pokédex, filtros, famílias e sprites de batalha. Console e imagens sem erro, sem overflow horizontal ou botões do cabeçalho cortados.
+- Testes de regras: oito destinos de Eevee, ramos bloqueados, adiamento no teto e reabertura, reserva, decisões antes de ginásio, margem e marcos de pesca/Surf, oportunidade aquática compartilhada, limites de lendário/roubo, coleção global e compensação da Correria.
+- Catálogo/sprites regenerados: 486 entradas e 481 sprites locais; nova altura oficial da espécie e conteúdo dos encontros secretos.
+- npm audit: zero vulnerabilidades após atualizar source-map-js.
+- Assets FRLG reconstruídos pelo importador Python/Pillow a partir do commit congelado, com créditos e descrição da transformação. Nenhum standalone foi gerado.
+
+Limites: o navegador foi emulado; não substitui teste físico ou campanha humana. Políticas automáticas usam escolhas simples de evolução, golpe e evento. A Nuzlocke continua difícil na amostra e não foi afrouxada com cura de mortos ou revives.
 
 ## 0.5.0 — Legado · 18/09/2026
 

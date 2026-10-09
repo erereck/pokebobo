@@ -19,12 +19,18 @@ export function evolutionLevel(name) {
   return SPECIAL_EVOLUTION_LEVELS[evo.evoType] || (evo.prevo ? 36 : null);
 }
 
+export function evolutionOptions(mon) {
+  return (catalog[mon.name]?.evos || []).map((name) => ({
+    name,
+    level: evolutionLevel(name),
+    available: evolutionLevel(name) <= mon.level,
+  }));
+}
+
 function availableEvolution(name, level) {
-  for (const evoName of catalog[name]?.evos || []) {
-    const requiredLevel = evolutionLevel(evoName);
-    if (requiredLevel && requiredLevel <= level) return evoName;
-  }
-  return null;
+  const options = evolutionOptions({ name, level });
+  // Uma linhagem ramificada pertence ao treinador, nunca à ordem do catálogo.
+  return options.length === 1 && options[0].available ? options[0].name : null;
 }
 
 export function grow(mon, amount) {

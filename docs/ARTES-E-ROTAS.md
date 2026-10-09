@@ -1,4 +1,12 @@
-# Capas de rotas — piloto implementado na 0.2
+# Capas de rotas e exploração de campo
+
+## 0.9.0 — campo com tiles de FireRed / LeafGreen
+
+A caminhada usa metatiles e os sprites de Red originais de FRLG, extraídos de uma referência congelada de `pret/pokefirered`. Os mapas pequenos, os matinhos e as oportunidades são uma curadoria procedural do Pokébobo. São três PNGs locais em `public/field/`; fonte, titularidade, transformação e termos estão em [FRLG-ASSETS](../licenses/FRLG-ASSETS.md). O importador reproduzível é `scripts/import-field-assets.py`.
+
+O terreno é montado por CSS numa grade de 12×8. Posições dos matinhos vêm da seed e ficam no save durante a caminhada. Lago, trilha, treinador, foco e marcadores de encontro são conferidos em PC, 390 px e 320 px. As capas abaixo continuam atendendo cidade, draft, captura e batalha.
+
+## Piloto de capas implementado na 0.2
 Seis folhas de mapas de Pokémon Emerald foram conferidas no navegador e incorporadas localmente. A pesquisa anterior está em [archive/ARTES-E-ROTAS-0.1.1.md](archive/ARTES-E-ROTAS-0.1.1.md).
 
 ## Seleção e procedência

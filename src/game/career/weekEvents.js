@@ -5,6 +5,7 @@ import { train } from "./training.js";
 import { growWithLearning } from "../pokemon/moveLearning.js";
 import { ITEM_RULES } from "../config/items.js";
 import { city } from "../selectors/city.js";
+import { EXPLORATION_RULES } from "../config/exploration.js";
 
 const byId = new Map(WEEK_EVENTS.map((event) => [event.id, event]));
 
@@ -26,11 +27,15 @@ export function ensureWeekEventState(r) {
 }
 
 function conditionMatches(r, condition = {}) {
-  if (condition.minBadges != null && r.badges < condition.minBadges) return false;
-  if (condition.maxBadges != null && r.badges > condition.maxBadges) return false;
+  if (condition.minBadges != null && r.badges < condition.minBadges)
+    return false;
+  if (condition.maxBadges != null && r.badges > condition.maxBadges)
+    return false;
   if (condition.minBalls != null && r.balls < condition.minBalls) return false;
-  if (condition.minBerries != null && r.berries < condition.minBerries) return false;
-  if (condition.minParty != null && r.party.length < condition.minParty) return false;
+  if (condition.minBerries != null && r.berries < condition.minBerries)
+    return false;
+  if (condition.minParty != null && r.party.length < condition.minParty)
+    return false;
   if (condition.mode && r.mode !== condition.mode) return false;
   if (
     condition.unusedEncounter &&
@@ -163,18 +168,33 @@ function applyLevelsToLead(r, amount) {
   const gain = next.level - before.level;
   if (!gain) return `${before.name} já está no nível máximo.`;
   const evolution =
-    next.name !== before.name ? ` ${before.name} evoluiu para ${next.name}!` : "";
+    next.name !== before.name
+      ? ` ${before.name} evoluiu para ${next.name}!`
+      : "";
   return `${next.name} +${gain} nível${gain === 1 ? "" : "is"}.${evolution}`;
 }
 
 export function applyWeekEventEffect(r, effect = {}) {
   ensureWeekEventState(r);
   const details = [];
+  if (effect.specialEncounter) {
+    const special = effect.specialEncounter;
+    if (
+      special.legendary &&
+      (r.badges < EXPLORATION_RULES.legendaryBadges ||
+        r.eventFlags["legendary-attempted"])
+    )
+      return "";
+    if (special.legendary) r.eventFlags["legendary-attempted"] = true;
+    r.exploration = null;
+    r.encounters ||= [];
+    r.encounters.push({ ...special, used: false, special: true });
+    r.eventEncounterIndex = r.encounters.length - 1;
+  }
 
   if (effect.balls) r.balls = Math.max(0, r.balls + effect.balls);
   if (effect.berries) r.berries = Math.max(0, r.berries + effect.berries);
-  if (effect.spentDelta)
-    r.spent = Math.max(0, r.spent + effect.spentDelta);
+  if (effect.spentDelta) r.spent = Math.max(0, r.spent + effect.spentDelta);
   if (effect.extraWeek) {
     r.week += effect.extraWeek;
     r.spent += effect.extraWeek;
@@ -209,7 +229,12 @@ export function resolveWeekEventChoice(r, choiceId) {
   const event = state && byId.get(state.id);
   if (!event || !state.choices?.includes(choiceId)) return null;
   const choice = event.choices.find((candidate) => candidate.id === choiceId);
-  if (!choice || !requirementsMet(r, choice.requires)) return null;
+  if (
+    !choice ||
+    !conditionMatches(r, event.condition) ||
+    !requirementsMet(r, choice.requires)
+  )
+    return null;
 
   const resolved = choice.outcomes?.length
     ? weightedPick(r, choice.outcomes)
@@ -218,7 +243,9 @@ export function resolveWeekEventChoice(r, choiceId) {
   const result = template(r, resolved.result || choice.result || "");
   const battle = resolved.battle || choice.battle || null;
   const bonusEncounter = Boolean(
-    resolved.effect?.bonusEncounter || choice.effect?.bonusEncounter,
+    resolved.effect?.bonusEncounter ||
+      choice.effect?.bonusEncounter ||
+      resolved.effect?.specialEncounter,
   );
 
   return {
@@ -243,7 +270,9 @@ export function claimEventBattleReward(r) {
   if (reward.balls)
     parts.push(`+${reward.balls} Poké Bola${reward.balls === 1 ? "" : "s"}`);
   if (reward.berries)
-    parts.push(`+${reward.berries} kit${reward.berries === 1 ? "" : "s"} de berries`);
+    parts.push(
+      `+${reward.berries} kit${reward.berries === 1 ? "" : "s"} de berries`,
+    );
   if (reward.teamLevels) parts.push(`equipe +${reward.teamLevels}`);
   return [parts.join(" · "), detail].filter(Boolean).join(". ");
 }

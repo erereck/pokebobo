@@ -2,3 +2,6 @@
 *.png binary
 *.woff2 binary
 *.ttf binary
+# Catálogo e medições reproduzíveis: mantenha a revisão de código legível.
+src/game/catalog.json linguist-generated=true
+docs/balance/*.json linguist-generated=true

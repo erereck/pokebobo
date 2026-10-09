@@ -7,6 +7,8 @@ import { settle } from "../../src/game/battle/settle.js";
 import { submitAiChoice } from "../../src/game/battle/submitAiChoice.js";
 import { choosePreparation, chooseCapture } from "./policies.mjs";
 import { battleVictory } from "../../src/game/selectors/battleVictory.js";
+import { evolutionOptions } from "../../src/game/pokemon/evolution.js";
+import { chooseExploration } from "./explorePolicy.mjs";
 
 export function generator(seed) {
   let value = seed >>> 0 || 1;
@@ -69,7 +71,12 @@ export function runCampaign(seed, strategy, mode = "normal", maxTurns = 180) {
   let state = initialState();
   if (mode !== "normal") state.meta.wins = 1;
   const act = (action) => {
-    state = reducer(state, action);
+    const next = reducer(state, action);
+    if (next === state)
+      throw Error(
+        `Ação sem progresso na simulação: ${JSON.stringify({ action, phase: state.run?.phase, exploration: state.run?.exploration, event: state.run?.weekEvent })}`,
+      );
+    state = next;
   };
   act({ type: "NEW", seed, name: "Monte Carlo", mode });
   state.run.offers = [origin.id];
@@ -85,8 +92,22 @@ export function runCampaign(seed, strategy, mode = "normal", maxTurns = 180) {
     battles = [];
   let steps = 0,
     censored = false;
-  while (state.run.phase !== "ended" && steps++ < 240) {
+  while (state.run.phase !== "ended" && steps++ < 1400) {
     const run = state.run;
+    const evolution = run.pendingEvolutionChoices?.[0];
+    if (evolution) {
+      const mon = [...run.party, ...(run.box || [])].find(
+        (candidate) => candidate.id === evolution.monId,
+      );
+      const option =
+        mon && evolutionOptions(mon).find((candidate) => candidate.available);
+      act({
+        type: "EVOLUTION_CHOICE",
+        monId: evolution.monId,
+        ...(option ? { name: option.name } : { defer: true }),
+      });
+      continue;
+    }
     const moveChoice = resolveMoveLearning(run);
     if (moveChoice) {
       actions.MOVE_CHOICE = (actions.MOVE_CHOICE || 0) + 1;
@@ -124,11 +145,17 @@ export function runCampaign(seed, strategy, mode = "normal", maxTurns = 180) {
       run.phase = "result";
       act({ type: "RESULT" });
     } else if (run.phase === "career") {
+      if (run.party.length < 6 && run.box?.length) {
+        act({ type: "BOX_TO_PARTY", id: run.box[0].id });
+        continue;
+      }
       const action = run.inLeague
         ? { type: "CHALLENGE" }
         : choosePreparation(run, strategy, rng);
       actions[action.type] = (actions[action.type] || 0) + 1;
       act(action);
+    } else if (run.phase === "exploration") {
+      act(chooseExploration(run));
     } else if (run.phase === "encounter") {
       act(chooseCapture(run, strategy, rng));
     } else if (run.phase === "event") {
@@ -140,7 +167,7 @@ export function runCampaign(seed, strategy, mode = "normal", maxTurns = 180) {
       throw Error("Move-choice phase without pending move");
     } else throw Error("Unexpected simulation phase: " + run.phase);
   }
-  if (steps >= 240) censored = true;
+  if (steps >= 1400) censored = true;
   const run = state.run;
   return {
     seed,

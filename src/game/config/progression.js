@@ -3,6 +3,7 @@ export const PROGRESSION = Object.freeze({
   maxLevel: 100,
   trainingMin: 1,
   trainingMax: 3,
+  rushTrainingBonus: 1,
   travelLevels: 0,
   gymVictoryLevels: 1,
   leagueVictoryLevels: 1,

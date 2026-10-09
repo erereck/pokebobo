@@ -1,5 +1,35 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 09/10/2026 — 0.9.0: Rotas Vivas
+
+**Pedido:** integrar todos os itens da imagem: exploração com matinhos e lago, eventos com objetivo e lendários, um roubo por run, tamanho dos Pokémon em batalha, Pokédex com jornadas e escolha de evoluções ramificadas; Fishing Rod a partir do terceiro ginásio.
+
+**Exploração:** grade procedural 12×8 com tiles e treinador de FRLG locais. Cada cidade tem 2–3 oportunidades persistentes. A caminhada inteira gasta uma semana; cada tentativa gasta uma bola. Você pode capturar vários encontros, sair sem capturar e continuar andando após uma tentativa. O fim da última semana só se resolve ao encerrar a exploração. Teclado (setas/WASD), casas vizinhas e controles por toque usam as mesmas ações do reducer.
+
+**Lagos e progressão:** a terceira insígnia libera Fishing Rod e a quinta libera Surf; mochila, recibo de vitória e diário informam os marcos. Dois encontros terrestres e um aquático após a terceira insígnia. Pesca e Surf usam seleções diferentes, mas compartilham uma única oportunidade por rota. Não há pesca infinita, gasto adicional de semana nem farming de níveis na caminhada.
+
+**Evoluções:** ramificações aguardam escolha explícita com sprite, tipo, especialidade e nível mínimo. Eevee oferece oito destinos; Pikachu também respeita seus ramos. Você pode adiar, reabrir pela ficha ou esperar outro nível, incluindo a reserva. Evoluções simples continuam automáticas. Escolhas e novos golpes são resolvidos antes de iniciar uma batalha pendente; reload preserva a decisão e retoma o mesmo ginásio.
+
+**Eventos:** catálogo cresce de 57 para 69. As novas missões envolvem nascente, pegadas, pesquisa de evolução, pesca, Surf, ponte, censo, estoque e preparação. Mew e Suicune exigem pista, seis insígnias e uma oportunidade máxima de lendário na run: 48% base, até 60% com o bônus normal de evento, e cinco níveis abaixo da faixa selvagem normal. O roubo de Eevee acontece somente após vencer um contrabandista, usa uma bola e é garantido; há um único roubo por run, e perder a batalha continua encerrando a jornada.
+
+**Pokédex:** registro de inicial, captura, roubo e evolução com slot, seed, treinador, número da run, semana e nível. Persistência global com cópia de recuperação e registro da coleção no Hall. Espécies removidas da equipe continuam no arquivo. Saves anteriores recuperam as equipes conhecidas, identificadas como registro antigo; não se inventam capturas que já tinham sido perdidas. A tela tem busca, filtro de registrados/catálogo, linha evolutiva e runs de origem.
+
+**Batalha e celular:** escala visual comprimida pela altura da espécie; pequenos permanecem legíveis e gigantes cabem na arena. A altura vem do Showdown no catálogo gerado. Janela de evolução com lista rolável e decisões visíveis em 320×568; mapa, controles e saída cabem no visor pequeno. Cabeçalho com quatro ferramentas sem cortar botões. Os novos assets têm importador, origem congelada e créditos em licenses/FRLG-ASSETS.md.
+
+**Balanceamento medido:** 280 campanhas reais na versão final (120 Clássico, 80 Correria, 80 Nuzlocke), quatro políticas e seed 20261009; zero campanhas truncadas. Mais 120 campanhas da 0.8.1 para referência. A política equilibrada teve 9/30 títulos no Clássico e 2/20 na Correria. Nuzlocke permanece exigente: 2/20 títulos na política de treino; as demais não ganharam nesta amostra. São políticas automáticas, não probabilidades de pessoas. Métodos e JSONs estão em docs/balance/adventure-*.json. Ordem de RNG mudou com conteúdo novo, portanto a comparação é exploratória, sem atribuição causal por seed.
+
+**Ajuste adotado:** a primeira medição da Correria teve zero títulos em 80 campanhas. Treinos nesse modo recebem +1 nível: média de +3 por treino em duas semanas, alinhando o orçamento de treino puro aos +2 médios em três semanas do Clássico. Regras de líder/+6 e punição Nuzlocke foram preservadas. O simulador passou a caminhar, resolver ramificações, respeitar falta de bolas e usar vagas disponíveis da reserva; ações sem progresso geram diagnóstico em vez de loops silenciosos.
+
+**Validação:** 179 módulos sem ciclos, 87 testes, build Vite e auditoria de progressão. Inspeção e fluxos no Edge headless em 1280×900, 390×844, 320×568 e batalha 844×390. Escolha → evolução → reload; exploração por teclado/toque → captura → reload → pesca → saída → Pokédex; sprites e layout de batalha. Console, imagens quebradas, overflow e cabeçalho conferidos. Dependência source-map-js atualizada dentro da faixa existente; npm audit sem vulnerabilidades.
+
+**Limites:** não houve campanha humana completa nem teste em aparelho físico. Estratégias automáticas escolhem o primeiro ramo disponível e a primeira opção de eventos; ainda não exploram todas as combinações. Os gráficos novos de campo são originais de FRLG; as seis capas de referência de Emerald continuam na cidade/captura/batalha. Não há atualização do HTML standalone nem deploy de hospedagem nesta entrega.
+
+**Próximas sugestões:** testar as escolhas de evolução em jornadas humanas; observar dificuldade Nuzlocke e diversidade de times antes de mexer em níveis de líderes; ampliar as pistas secretas somente com novas medições de economia.
+
+---
+
+
+
 ## Entrega de 18/09/2026 — 0.5.0: Legado
 
 **Direção:** transformar progressão e histórico em sistemas permanentes, sem criar grind de item para evolução e sem sacrificar saves a cada mudança de schema.

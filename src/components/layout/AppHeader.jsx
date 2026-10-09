@@ -1,4 +1,4 @@
-import { Info, Settings, Trophy } from "lucide-react";
+import { Info, Settings, Trophy, BookOpen } from "lucide-react";
 import { Brand } from "../brand/Brand.jsx";
 import { VERSION } from "../../app/version.js";
 export function AppHeader({ setModal }) {
@@ -21,6 +21,14 @@ export function AppHeader({ setModal }) {
         </span>
       </div>
       <div className="dex-header-tools">
+        <button
+          className="hardware-button"
+          aria-label="Sua Pokédex"
+          onClick={() => setModal("pokedex")}
+        >
+          <BookOpen size={20} />
+          <span>Pokédex</span>
+        </button>
         <button
           className="hardware-button"
           aria-label="Hall da Fama"

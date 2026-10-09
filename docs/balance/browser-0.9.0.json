@@ -1,0 +1,126 @@
+{
+  "reports": [
+    {
+      "name": "evolucoes-desktop",
+      "viewport": 1280,
+      "scroll": 1280,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "evolucoes-celular",
+      "viewport": 390,
+      "scroll": 390,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "evolucoes-320",
+      "viewport": 320,
+      "scroll": 320,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "rota-desktop",
+      "viewport": 1280,
+      "scroll": 1280,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "captura-1280",
+      "viewport": 1280,
+      "scroll": 1280,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "pokedex-1280",
+      "viewport": 1280,
+      "scroll": 1280,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "rota-celular",
+      "viewport": 390,
+      "scroll": 390,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "captura-390",
+      "viewport": 390,
+      "scroll": 390,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "pokedex-390",
+      "viewport": 390,
+      "scroll": 390,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "rota-320",
+      "viewport": 320,
+      "scroll": 320,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "captura-320",
+      "viewport": 320,
+      "scroll": 320,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "pokedex-320",
+      "viewport": 320,
+      "scroll": 320,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "batalha-1280",
+      "viewport": 1280,
+      "scroll": 1280,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "batalha-390",
+      "viewport": 390,
+      "scroll": 390,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    },
+    {
+      "name": "batalha-844",
+      "viewport": 844,
+      "scroll": 844,
+      "dialogOverflow": false,
+      "clippedHeader": false,
+      "broken": []
+    }
+  ],
+  "failures": [],
+  "network": []
+}

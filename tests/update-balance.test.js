@@ -11,6 +11,7 @@ import { createRoute } from "../src/game/world/createRoute.js";
 import { familyOf } from "../src/game/world/encounterPool.js";
 import { random } from "../src/game/random/random.js";
 import { SAVE_VERSION } from "../src/game/persistence/constants.js";
+import { stateCollection } from "../src/game/persistence/dexStorage.js";
 
 test("draft respeita cada posição original e oferece três escolhas por etapa em 80 seeds", () => {
   for (let seed = 1; seed <= 80; seed++) {
@@ -78,14 +79,17 @@ test("rotas têm identidade, duas famílias distintas, variedade e save estável
   for (let seed = 1; seed < 40; seed++) {
     const state = drafted(seed),
       run = state.run;
-    assert.equal(run.encounters.length, 2);
+    assert.ok(run.encounters.length >= 2 && run.encounters.length <= 3);
     assert.notEqual(
       familyOf(run.encounters[0].name),
       familyOf(run.encounters[1].name),
     );
     signatures.add(run.encounters.map((e) => e.name).join(","));
     const save = JSON.stringify(state);
-    assert.deepEqual(loadSave({ getItem: () => save }), state);
+    assert.deepEqual(loadSave({ getItem: () => save }), {
+      ...state,
+      meta: { ...state.meta, dex: stateCollection(state) },
+    });
     assert.equal(run.currentRoute.id, run.route[0].id + "--" + run.route[1].id);
     const seen = new Set(run.seenFamilies);
     run.position = 1;
@@ -148,7 +152,10 @@ test("time completo usa a reserva antes de exigir liberação", () => {
   assert.equal(success.run.party.length, 6);
   assert.equal(success.run.box.length, 3);
   assert.equal(success.run.party[2].id, "mon9");
-  assert.equal(success.run.box.some((mon) => mon.id === "mon2"), false);
+  assert.equal(
+    success.run.box.some((mon) => mon.id === "mon2"),
+    false,
+  );
 });
 
 test("save antigo reconhecível migra sem apagar a carreira", () => {

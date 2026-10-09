@@ -11,6 +11,7 @@ import { useState } from "react";
 import { ENCOUNTER_RULES } from "../../game/config/encounters.js";
 import { captureChanceForRun } from "../../game/career/weekEvents.js";
 import { CAMPAIGN_RULES } from "../../game/config/campaign.js";
+import { EXPLORATION_RULES } from "../../game/config/exploration.js";
 
 export function Encounter({ run: r, act }) {
   const [replaceId, setReplaceId] = useState("");
@@ -18,13 +19,28 @@ export function Encounter({ run: r, act }) {
   const box = r.box || [];
   const fullBox = box.length >= CAMPAIGN_RULES.boxSize;
   const needsRelease = fullParty && fullBox;
-  const captureChance = captureChanceForRun(r, ENCOUNTER_RULES.captureChance);
+  const activeIndex = r.exploration?.activeIndex ?? r.eventEncounterIndex;
+  const active = activeIndex != null ? r.encounters[activeIndex] : null;
+  const captureChance = active?.theft
+    ? 1
+    : captureChanceForRun(
+        r,
+        active?.legendary
+          ? EXPLORATION_RULES.legendaryCaptureChance
+          : ENCOUNTER_RULES.captureChance,
+      );
   return (
     <>
       <ScreenHeading
         eyebrow={`EXPLORAÇÃO · SEMANA ${r.week}`}
         title="Pokémon à vista!"
-        text="A semana já foi gasta. Escolha quem capturar."
+        text={
+          active?.legendary
+            ? "Um encontro secreto. Você tem uma única tentativa."
+            : r.exploration
+              ? "Você encontrou um Pokémon na caminhada. Capturar custa uma bola."
+              : "A semana já foi gasta. Escolha quem capturar."
+        }
       />
       <div className="encounter-scene">
         <RouteCover place={city(r)} />
@@ -40,12 +56,15 @@ export function Encounter({ run: r, act }) {
               onChange={(event) => setReplaceId(event.target.value)}
             >
               {!fullBox && (
-                <option value="">Enviar o capturado direto para a reserva</option>
+                <option value="">
+                  Enviar o capturado direto para a reserva
+                </option>
               )}
               {fullBox && <option value="">Escolha quem deixa a equipe</option>}
               {r.party.map((mon) => (
                 <option key={mon.id} value={mon.id}>
-                  {fullBox ? "Substituir" : "Trocar com"} {mon.name} · nível {mon.level}
+                  {fullBox ? "Substituir" : "Trocar com"} {mon.name} · nível{" "}
+                  {mon.level}
                 </option>
               ))}
             </select>
@@ -58,48 +77,54 @@ export function Encounter({ run: r, act }) {
             </small>
           </label>
         )}
-        {r.encounters.map((e, i) => (
-          <button
-            key={i}
-            disabled={e.used || (needsRelease && !replaceId)}
-            className="encounter-mon"
-            onClick={() =>
-              act({
-                type: "CAPTURE",
-                index: i,
-                replaceId,
-              })
-            }
-          >
-            <Sprite name={e.name} />
-            <div>
-              <span className="section-label">
-                {e.used ? "ENCONTRO ESGOTADO" : "ENCONTRO SELVAGEM"}
-              </span>
-              <h2>{e.name}</h2>
-              <div className="types">
-                {catalog[e.name].types.map((t) => (
-                  <TypeTag type={t} key={t} />
-                ))}
+        {r.encounters.map((e, i) =>
+          activeIndex != null && i !== activeIndex ? null : (
+            <button
+              key={i}
+              disabled={e.used || !r.balls || (needsRelease && !replaceId)}
+              className="encounter-mon"
+              onClick={() =>
+                act({
+                  type: "CAPTURE",
+                  index: i,
+                  replaceId,
+                })
+              }
+            >
+              <Sprite name={e.name} />
+              <div>
+                <span className="section-label">
+                  {e.used ? "ENCONTRO ESGOTADO" : "ENCONTRO SELVAGEM"}
+                </span>
+                <h2>{e.name}</h2>
+                <div className="types">
+                  {catalog[e.name].types.map((t) => (
+                    <TypeTag type={t} key={t} />
+                  ))}
+                </div>
+                <small>
+                  {e.used
+                    ? "A oportunidade passou."
+                    : `Nível ${Math.max(8, targetLevel(r) - 1 - (e.legendary ? 5 : 0))}–${Math.max(8, targetLevel(r) + 1 - (e.legendary ? 5 : 0))}`}
+                </small>
               </div>
-              <small>
-                {e.used
-                  ? "A oportunidade passou."
-                  : `Nível ${Math.max(8, targetLevel(r) - 1)}–${Math.max(8, targetLevel(r) + 1)}`}
-              </small>
-            </div>
-            <span className="capture-call">
-              <Ball />
-              Capturar
-            </span>
-          </button>
-        ))}
+              <span className="capture-call">
+                <Ball />
+                Capturar
+              </span>
+            </button>
+          ),
+        )}
       </div>
       <p className="fine-print">
-        {Math.round(captureChance * 100)}% de chance{r.eventBoosts?.capture ? ` (+${Math.round(r.eventBoosts.capture * 100)}% de evento)` : ""} · 1 Poké
-        Bola · {r.balls} na mochila · reserva {box.length}/{CAMPAIGN_RULES.boxSize}
+        {Math.round(captureChance * 100)}% de chance
+        {r.eventBoosts?.capture
+          ? ` (+${Math.round(r.eventBoosts.capture * 100)}% de evento)`
+          : ""}{" "}
+        · 1 Poké Bola · {r.balls} na mochila · reserva {box.length}/
+        {CAMPAIGN_RULES.boxSize}
         <br />
-        Uma tentativa por espécie. O resultado fica salvo.
+        Uma tentativa por encontro. O resultado fica salvo.
       </p>
       <button
         className="button secondary full"
@@ -109,7 +134,9 @@ export function Encounter({ run: r, act }) {
           })
         }
       >
-        Deixar a rota em paz
+        {r.exploration
+          ? "Deixar este Pokémon e continuar"
+          : "Deixar o Pokémon seguir"}
         <ArrowRight size={18} />
       </button>
     </>

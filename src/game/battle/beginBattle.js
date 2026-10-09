@@ -12,6 +12,11 @@ import { ensureMoveLearningState } from "../pokemon/moveLearning.js";
 
 export function beginBattle(r, kind) {
   ensureMoveLearningState(r);
+  if (r.pendingEvolutionChoices?.length) {
+    r.pendingBattleKind = kind;
+    r.phase = "evolution-choice";
+    return;
+  }
   if (r.pendingMoveChoices.length) {
     r.pendingBattleKind = kind;
     r.phase = "move-choice";

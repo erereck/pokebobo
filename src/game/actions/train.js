@@ -18,11 +18,12 @@ export function handleTrain(s, action, state) {
         random(r) * (PROGRESSION.trainingMax - PROGRESSION.trainingMin + 1),
       );
     const bonus = consumeEventBoost(r, "training");
-    const levels = baseLevels + bonus;
+    const rushBonus = r.mode === "rush" ? PROGRESSION.rushTrainingBonus : 0;
+    const levels = baseLevels + bonus + rushBonus;
     const evo = train(r, levels);
     note(
       r,
-      `Treino concluído.${bonus ? ` Bônus de evento: +${bonus}.` : ""} ${evo}`,
+      `Treino concluído.${rushBonus ? ` Ritmo da Correria: +${rushBonus}.` : ""}${bonus ? ` Bônus de evento: +${bonus}.` : ""} ${evo}`,
     );
     afterWeek(r);
     return s;

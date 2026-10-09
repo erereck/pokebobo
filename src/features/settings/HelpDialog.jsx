@@ -44,16 +44,18 @@ export function HelpDialog({ setModal }) {
             automaticamente.
           </li>
           <li>
-            Cada rota oferece duas espécies. As cidades conectadas mudam os
-            encontros. Explorar custa uma semana e permite uma tentativa de
-            captura (86%).
+            Cada rota oferece 2–3 encontros. Explorar gasta uma semana para a
+            caminhada inteira. Use as setas, WASD ou as casas vizinhas; entre
+            nos matinhos numerados. Cada encontro permite uma tentativa por uma
+            Poké Bola (86% de chance base). Sair da rota resolve o fim da
+            semana.
           </li>
           <li>
             Treinar dá de {PROGRESSION.trainingMin} a {PROGRESSION.trainingMax}{" "}
             níveis aos seis ativos e aos Pokémon da reserva. Viagens não dão
             níveis. Vencer um ginásio ou membro da Liga dá +
-            {PROGRESSION.gymVictoryLevels} nível; a reserva acompanha esse ganho.
-            Emboscadas não dão níveis.
+            {PROGRESSION.gymVictoryLevels} nível; a reserva acompanha esse
+            ganho. Emboscadas não dão níveis.
           </li>
           <li>
             O 1º ginásio do draft sempre é um 1º ginásio dos jogos; a mesma
@@ -66,6 +68,12 @@ export function HelpDialog({ setModal }) {
             na reserva, uma captura pode ir direto para a box. Só com as nove
             vagas ocupadas alguém precisa sair definitivamente.
           </li>
+          <li>
+            Vencer o terceiro ginásio concede a Fishing Rod. Surf libera na
+            quinta insígnia. Aproxime-se do lago e escolha um dos métodos: eles
+            compartilham uma oportunidade por rota, sem outra semana ou
+            consumível.
+          </li>
           <li>Qualquer derrota encerra a run. Não existe revanche.</li>
           <li>
             Depois de oito insígnias: quatro membros da Elite e um campeão
@@ -77,6 +85,26 @@ export function HelpDialog({ setModal }) {
           são removidos. Sem sobreviventes, a run termina mesmo que o adversário
           também tenha caído. Preparar equipa uma berry de cura em cada
           integrante ativo; entrar na reserva remove o item preparado.
+        </p>
+        <p>
+          Na Correria, cada treino rende +2 a +4 níveis para compensar as duas
+          semanas por cidade. Evoluções ramificadas, como Eevee e Pikachu, abrem
+          uma escolha com tipos e especialidades. Você pode adiar e reabrir a
+          decisão na ficha da equipe.
+        </p>
+        <h3>Pokédex e encontros secretos</h3>
+        <p>
+          O botão Pokédex registra capturas, iniciais e evoluções com as
+          jornadas de origem nos três slots. Registros novos permanecem mesmo
+          quando o Pokémon sai da equipe. Saves antigos só podem recuperar as
+          espécies que ainda constavam nas equipes conhecidas.
+        </p>
+        <p>
+          Missões de exploração podem revelar Mew ou Suicune depois de seis
+          insígnias. Há uma única oportunidade de lendário por run, com 48% de
+          chance base e nível abaixo do desafio. O evento do contrabandista
+          permite roubar um Eevee uma vez por run, após vencer uma batalha real.
+          A tentativa de captura usa uma bola e é garantida.
         </p>
         <h3>Saves e Hall da Fama</h3>
         <p>
@@ -109,6 +137,19 @@ export function HelpDialog({ setModal }) {
           License).
         </p>
         <CoverCredits />
+        <p>
+          Tiles e treinador da exploração: Pokémon FireRed / LeafGreen, Game
+          Freak / Nintendo / The Pokémon Company, via{" "}
+          <a
+            href="https://github.com/pret/pokefirered"
+            target="_blank"
+            rel="noreferrer"
+          >
+            pret/pokefirered
+          </a>
+          . A grade de rotas é gerada pelo Pokébobo; não representa mapas
+          oficiais.
+        </p>
         <p>
           <a
             href="https://github.com/pkmn/ps/tree/main/sim"

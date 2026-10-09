@@ -56,5 +56,6 @@ export function finishRun(s, won, details = won ? "champion" : "defeat") {
     })),
     highlights: (r.journal || []).slice(0, 8),
     events: (r.eventHistory || []).length,
+    collection: structuredClone(r.collection || []),
   });
 }

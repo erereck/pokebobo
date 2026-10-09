@@ -1,4 +1,5 @@
 import { spend } from "../career/spendWeek.js";
+import { createExploration } from "../world/exploration.js";
 
 export function handleExplore(s, action, state) {
   let r = s.run;
@@ -10,7 +11,8 @@ export function handleExplore(s, action, state) {
     r.balls > 0
   ) {
     spend(r, "explore");
-    r.phase = "encounter";
+    createExploration(r);
+    r.phase = "exploration";
     return s;
   }
   return state;

@@ -1,5 +1,6 @@
 import catalog from "../catalog.json" with { type: "json" };
-import { grow } from "./evolution.js";
+import { grow, evolutionOptions } from "./evolution.js";
+import { registerEvolution } from "./collection.js";
 import { movesFor } from "./moves.js";
 
 function candidates(before, after) {
@@ -34,7 +35,28 @@ export function growWithLearning(r, mon, amount) {
   ensureMoveLearningState(r);
   const before = { ...mon, moves: [...(mon.moves || [])] };
   const after = grow(mon, amount);
-  if (after.level <= before.level) return after;
+  registerEvolution(r, before, after);
+  queueEvolution(r, after);
+  if (after.level <= before.level && after.name === before.name) return after;
+
+  return learnGrowthMoves(r, before, after);
+}
+
+export function queueEvolution(r, mon) {
+  r.pendingEvolutionChoices ||= [];
+  const options = evolutionOptions(mon);
+  if (
+    options.length > 1 &&
+    options.some((option) => option.available) &&
+    mon.deferredEvolutionLevel !== mon.level &&
+    !r.pendingEvolutionChoices.some((choice) => choice.monId === mon.id)
+  ) {
+    r.pendingEvolutionChoices.push({ monId: mon.id, species: mon.name });
+  }
+}
+
+export function learnGrowthMoves(r, before, after) {
+  ensureMoveLearningState(r);
 
   if (r.moveLearningMode === "automatic") {
     after.moves = movesFor(after.name, after.level);

@@ -5,7 +5,10 @@ import { random } from "../random/random.js";
 import { makeMon } from "../pokemon/createPokemon.js";
 import { targetLevel } from "../selectors/targetLevel.js";
 import { note } from "../career/journal.js";
-import { afterWeek } from "../career/afterWeek.js";
+import { finishWildEncounter } from "../world/exploration.js";
+import { registerPokemon } from "../pokemon/collection.js";
+import { queueEvolution } from "../pokemon/moveLearning.js";
+import { EXPLORATION_RULES } from "../config/exploration.js";
 import {
   captureChanceForRun,
   consumeEventBoost,
@@ -16,6 +19,10 @@ export function handleCapture(s, action, state) {
   if (action.type === "CAPTURE" && r.phase === "encounter") {
     if (!Array.isArray(r.box)) r.box = [];
     const e = r.encounters[action.index];
+    if (r.exploration && action.index !== r.exploration.activeIndex)
+      return state;
+    if (r.eventEncounterIndex != null && action.index !== r.eventEncounterIndex)
+      return state;
     const replacement = r.party.findIndex((mon) => mon.id === action.replaceId);
     const fullParty = r.party.length >= CAMPAIGN_RULES.partySize;
     const fullBox = r.box.length >= CAMPAIGN_RULES.boxSize;
@@ -25,7 +32,14 @@ export function handleCapture(s, action, state) {
 
     r.balls--;
     e.used = true;
-    const captureChance = captureChanceForRun(r, ENCOUNTER_RULES.captureChance);
+    const captureChance = e.theft
+      ? 1
+      : captureChanceForRun(
+          r,
+          e.legendary
+            ? EXPLORATION_RULES.legendaryCaptureChance
+            : ENCOUNTER_RULES.captureChance,
+        );
     const success = random(r) < captureChance;
     const captureBonus = consumeEventBoost(r, "capture");
     if (success) {
@@ -34,11 +48,14 @@ export function handleCapture(s, action, state) {
         Math.max(
           PROGRESSION.captureMinLevel,
           targetLevel(r) +
+            (e.legendary ? -5 : 0) +
             PROGRESSION.captureTargetOffset +
             Math.floor(random(r) * PROGRESSION.captureLevelSpread),
         ),
         `mon${r.nextMon++}`,
       );
+      registerPokemon(r, m, e.theft ? "theft" : "capture");
+      queueEvolution(r, m);
 
       let destinationText = "Uma Poké Bola a menos, uma companhia a mais.";
       if (!fullParty) {
@@ -67,8 +84,8 @@ export function handleCapture(s, action, state) {
         `${e.name} escapou. A Poké Bola e esta oportunidade ficaram pelo caminho.${captureBonus ? ` O bônus de +${Math.round(captureBonus * 100)}% foi consumido.` : ""}`,
       );
     }
-    r.phase = "career";
-    afterWeek(r);
+    r.eventEncounterIndex = null;
+    finishWildEncounter(r);
     return s;
   }
   return state;

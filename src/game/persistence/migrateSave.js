@@ -14,7 +14,9 @@ function list(value) {
 }
 
 function object(value) {
-  return value && typeof value === "object" && !Array.isArray(value) ? value : {};
+  return value && typeof value === "object" && !Array.isArray(value)
+    ? value
+    : {};
 }
 
 function normalizeMons(value) {
@@ -26,7 +28,10 @@ function normalizeMons(value) {
           ? {
               ...mon,
               id: typeof mon.id === "string" ? mon.id : "",
-              name: typeof mon.name === "string" && mon.name ? mon.name : "Desconhecido",
+              name:
+                typeof mon.name === "string" && mon.name
+                  ? mon.name
+                  : "Desconhecido",
               level: Math.max(0, Math.trunc(number(mon.level))),
             }
           : null,
@@ -39,7 +44,9 @@ function levelsFor(mons, explicit) {
   if (listed.length)
     return listed.map((level) => Math.max(0, Math.trunc(number(level))));
   return mons.map((mon) =>
-    typeof mon === "object" && mon ? Math.max(0, Math.trunc(number(mon.level))) : 0,
+    typeof mon === "object" && mon
+      ? Math.max(0, Math.trunc(number(mon.level)))
+      : 0,
   );
 }
 
@@ -120,14 +127,22 @@ function normalizeRun(run, fallbackMoveLearningMode = "manual") {
     party,
     box: list(run.box).slice(0, CAMPAIGN_RULES.boxSize),
     pendingMoveChoices: normalizeMoveChoices(run.pendingMoveChoices),
+    pendingEvolutionChoices: list(run.pendingEvolutionChoices),
+    collection: list(run.collection),
     pendingBattleKind:
       typeof run.pendingBattleKind === "string" ? run.pendingBattleKind : null,
     position: Math.max(0, Math.trunc(number(run.position))),
     week: Math.max(1, Math.trunc(number(run.week, 1))),
     spent: Math.max(0, Math.trunc(number(run.spent))),
     badges: Math.min(8, Math.max(0, Math.trunc(number(run.badges)))),
-    balls: Math.max(0, Math.trunc(number(run.balls, CAMPAIGN_RULES.initialBalls))),
-    berries: Math.max(0, Math.trunc(number(run.berries, CAMPAIGN_RULES.initialBerryKits))),
+    balls: Math.max(
+      0,
+      Math.trunc(number(run.balls, CAMPAIGN_RULES.initialBalls)),
+    ),
+    berries: Math.max(
+      0,
+      Math.trunc(number(run.berries, CAMPAIGN_RULES.initialBerryKits)),
+    ),
     leagueIndex: Math.max(0, Math.trunc(number(run.leagueIndex))),
     league: list(run.league),
     journal: list(run.journal),
@@ -156,9 +171,16 @@ function normalizeRun(run, fallbackMoveLearningMode = "manual") {
       typeof run.lastWeekAction === "string" ? run.lastWeekAction : "",
   };
 
-  if (normalized.phase === "move-choice" && !normalized.pendingMoveChoices.length)
+  if (
+    normalized.phase === "move-choice" &&
+    !normalized.pendingMoveChoices.length
+  )
     normalized.phase = "career";
-  if (!normalized.pendingMoveChoices.length) normalized.pendingBattleKind = null;
+  if (
+    !normalized.pendingMoveChoices.length &&
+    !normalized.pendingEvolutionChoices.length
+  )
+    normalized.pendingBattleKind = null;
 
   normalized.seed = Math.max(
     1,
@@ -205,6 +227,7 @@ export function migrateSave(value) {
         Math.trunc(number(run?.badges)),
       ),
       history,
+      dex: list(sourceMeta.dex),
     },
     run,
   };

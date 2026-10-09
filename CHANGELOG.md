@@ -1,5 +1,19 @@
 # Histórico
 
+## 0.9.0 — Rotas Vivas · 09/10/2026
+
+- Escolha explícita para evoluções ramificadas, com adiamento, reabertura e retomada de batalha após reload.
+- Exploração procedural com assets FRLG locais, 2–3 encontros, múltiplas capturas e uma semana por caminhada.
+- Fishing Rod na terceira insígnia; Surf na quinta; métodos compartilham o encontro do lago.
+- Pokédex global dos três slots registra capturas e evoluções com as runs de origem, inclusive Pokémon removidos.
+- 12 eventos novos: pistas de Mew/Suicune e um roubo de Eevee após uma vitória, limitado a uma vez por run.
+- Escala de sprites de batalha por altura da espécie e controles ajustados para 320 px.
+- Correria ganha +1 nível por treino: +2 a +4, compensando a semana a menos.
+- 87 testes, build/auditoria, inspeção no navegador e 280 campanhas reais finais; referência de 120 campanhas antigas.
+- Correção de source-map-js sem troca de major. Código-fonte e build web; sem standalone.
+
+
+
 ## 0.8.1 — Ordem do desmaio · 20/09/2026
 
 - Dano fatal pode zerar o HP, mas não esconde mais o sprite antes do evento de desmaio.

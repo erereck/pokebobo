@@ -11,6 +11,13 @@ for (const seed of [1234, 811, 99, 402, 510])
       const action = { type: "TRAIN" };
       a = reducer(a, action);
       b = reducer(JSON.parse(JSON.stringify(b)), action);
+      while (a.run.pendingMoveChoices?.length) {
+        a = reducer(a, { type: "MOVE_CHOICE", skip: true });
+        b = reducer(JSON.parse(JSON.stringify(b)), {
+          type: "MOVE_CHOICE",
+          skip: true,
+        });
+      }
       assert.deepEqual(a, b);
     }
     assert.equal(a.run.position, 2);

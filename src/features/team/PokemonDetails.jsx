@@ -2,7 +2,8 @@ import { Dex } from "@pkmn/sim";
 import catalog from "../../game/catalog.json" with { type: "json" };
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
-import { Flag, ArrowUp } from "lucide-react";
+import { Flag, ArrowUp, Sparkles } from "lucide-react";
+import { evolutionOptions } from "../../game/pokemon/evolution.js";
 
 function displayMove(data, id) {
   const local = data.moves.find((move) => move.id === id);
@@ -23,6 +24,7 @@ function displayMove(data, id) {
 export function PokemonDetails({ mon, run, act }) {
   const data = catalog[mon.name],
     lead = run.party[0]?.id === mon.id;
+  const evolutions = evolutionOptions(mon);
   return (
     <section className="pokemon-details" aria-label={"Ficha de " + mon.name}>
       <div className="pokemon-scan">
@@ -72,7 +74,10 @@ export function PokemonDetails({ mon, run, act }) {
                   {m.category === "Status"
                     ? "Status"
                     : "Poder " + (m.power || "—")}{" "}
-                  · {m.accuracy === true ? "Não erra" : (m.accuracy || "—") + "% precisão"}
+                  ·{" "}
+                  {m.accuracy === true
+                    ? "Não erra"
+                    : (m.accuracy || "—") + "% precisão"}
                 </small>
               </div>
             );
@@ -83,13 +88,24 @@ export function PokemonDetails({ mon, run, act }) {
           disabled={lead || run.phase !== "career"}
           onClick={() => act({ type: "LEAD", id: mon.id })}
         >
-          {lead ? <Flag size={17} /> : <ArrowUp size={17} />} {" "}
+          {lead ? <Flag size={17} /> : <ArrowUp size={17} />}{" "}
           {lead
             ? "Abre as batalhas"
             : run.phase !== "career"
               ? "Troque a ordem entre batalhas"
               : "Colocar na frente · grátis"}
         </button>
+        {evolutions.length > 1 &&
+          evolutions.some((option) => option.available) && (
+            <button
+              className="button secondary full"
+              disabled={run.phase !== "career"}
+              onClick={() => act({ type: "EVOLUTION_REQUEST", monId: mon.id })}
+            >
+              <Sparkles size={17} />
+              Escolher evolução · grátis
+            </button>
+          )}
       </div>
     </section>
   );

@@ -1,4 +1,6 @@
+import { ADVENTURE_EVENTS } from "./adventureEvents.js";
 export const WEEK_EVENTS = [
+  ...ADVENTURE_EVENTS,
   {
     id: "kids-demonstration",
     rarity: "common",
@@ -12,14 +14,16 @@ export const WEEK_EVENTS = [
         label: "Fazer uma demonstração",
         hint: "{lead} ganha +1 nível.",
         effect: { leadLevels: 1 },
-        result: "A demonstração vira aula. {lead} sai mais afiado e a criançada sai jurando que vai virar Campeã.",
+        result:
+          "A demonstração vira aula. {lead} sai mais afiado e a criançada sai jurando que vai virar Campeã.",
       },
       {
         id: "teach",
         label: "Deixar a equipe ensinar",
         hint: "Próximo treino recebe +1 nível.",
         effect: { boosts: { training: 1 } },
-        result: "Você transforma a confusão numa oficina. A equipe entende melhor o próximo treino.",
+        result:
+          "Você transforma a confusão numa oficina. A equipe entende melhor o próximo treino.",
       },
     ],
   },
@@ -36,14 +40,16 @@ export const WEEK_EVENTS = [
         label: "Aceitar o kit",
         hint: "+2 kits de berries.",
         effect: { berries: 2 },
-        result: "Ela enche sua mochila com dois kits e ainda explica qual berry não deve ser misturada com café.",
+        result:
+          "Ela enche sua mochila com dois kits e ainda explica qual berry não deve ser misturada com café.",
       },
       {
         id: "recipe",
         label: "Aprender a receita",
         hint: "Equipe fica preparada sem gastar kit.",
         effect: { prepared: true },
-        result: "Você passa a tarde aprendendo a preparar berries. A equipe já sai pronta para a próxima luta.",
+        result:
+          "Você passa a tarde aprendendo a preparar berries. A equipe já sai pronta para a próxima luta.",
       },
     ],
   },
@@ -60,14 +66,16 @@ export const WEEK_EVENTS = [
         label: "Procurar o dono",
         hint: "+1 berry e pode render algo depois.",
         effect: { berries: 1, setFlags: ["honest-trainer"] },
-        result: "Você acha o dono quase entrando em pânico. Ele insiste em deixar um kit de berries como agradecimento.",
+        result:
+          "Você acha o dono quase entrando em pânico. Ele insiste em deixar um kit de berries como agradecimento.",
       },
       {
         id: "keep",
         label: "Ficar com as Poké Bolas",
         hint: "+3 Poké Bolas.",
         effect: { balls: 3 },
-        result: "Três Poké Bolas mudam de dono. O cartão continua no fundo da mochila encarando você.",
+        result:
+          "Três Poké Bolas mudam de dono. O cartão continua no fundo da mochila encarando você.",
       },
     ],
   },
@@ -84,14 +92,16 @@ export const WEEK_EVENTS = [
         label: "Atender todo mundo",
         hint: "+1 Poké Bola e evento futuro possível.",
         effect: { balls: 1, setFlags: ["local-celebrity"] },
-        result: "A sessão improvisada rende presentes, uma Poké Bola e quinze versões diferentes do seu nome nas redes.",
+        result:
+          "A sessão improvisada rende presentes, uma Poké Bola e quinze versões diferentes do seu nome nas redes.",
       },
       {
         id: "escape",
         label: "Fugir antes que piore",
         hint: "Proteção contra 1 emboscada.",
         effect: { boosts: { ambushShield: 1 } },
-        result: "Você some por uma rua lateral. De bônus, descobre um caminho bem mais tranquilo para sair da cidade.",
+        result:
+          "Você some por uma rua lateral. De bônus, descobre um caminho bem mais tranquilo para sair da cidade.",
       },
     ],
   },
@@ -108,7 +118,8 @@ export const WEEK_EVENTS = [
         label: "Esperar e organizar a mochila",
         hint: "+1 berry.",
         effect: { berries: 1 },
-        result: "Você acha um kit esquecido no fundo da mochila enquanto espera a chuva aliviar.",
+        result:
+          "Você acha um kit esquecido no fundo da mochila enquanto espera a chuva aliviar.",
       },
       {
         id: "train",
@@ -118,12 +129,14 @@ export const WEEK_EVENTS = [
           {
             weight: 1,
             effect: { teamLevels: 2 },
-            result: "A cena fica ridiculamente cinematográfica. A equipe inteira ganha +2 níveis.",
+            result:
+              "A cena fica ridiculamente cinematográfica. A equipe inteira ganha +2 níveis.",
           },
           {
             weight: 1,
             effect: { teamLevels: 1 },
-            result: "Foi mais lama do que treino, mas todo mundo sai +1 nível mais forte.",
+            result:
+              "Foi mais lama do que treino, mas todo mundo sai +1 nível mais forte.",
           },
         ],
       },
@@ -146,12 +159,14 @@ export const WEEK_EVENTS = [
           {
             weight: 3,
             effect: { teamLevels: 1 },
-            result: "A equipe cruza a chegada coberta de poeira e muito satisfeita. +1 nível para todos.",
+            result:
+              "A equipe cruza a chegada coberta de poeira e muito satisfeita. +1 nível para todos.",
           },
           {
             weight: 1,
             effect: { teamLevels: 1, berries: -1 },
-            result: "Vocês vencem, mas uma mochila abre no caminho. +1 nível para todos e um kit de berries a menos.",
+            result:
+              "Vocês vencem, mas uma mochila abre no caminho. +1 nível para todos e um kit de berries a menos.",
           },
         ],
       },
@@ -160,7 +175,8 @@ export const WEEK_EVENTS = [
         label: "Virar juiz da corrida",
         hint: "Próximo treino recebe +1.",
         effect: { boosts: { training: 1 } },
-        result: "Observar os erros dos outros rende ideias excelentes para o próximo treino.",
+        result:
+          "Observar os erros dos outros rende ideias excelentes para o próximo treino.",
       },
     ],
   },
@@ -177,14 +193,16 @@ export const WEEK_EVENTS = [
         label: "Aceitar a batalha",
         hint: "Batalha agora. Vitória: +2 Poké Bolas e equipe +1.",
         battle: { reward: { balls: 2, teamLevels: 1 } },
-        result: "Você aceita. O veterano sorri como quem finalmente encontrou alguma coisa divertida para fazer.",
+        result:
+          "Você aceita. O veterano sorri como quem finalmente encontrou alguma coisa divertida para fazer.",
       },
       {
         id: "talk",
         label: "Pedir conselho em vez disso",
         hint: "Próximo treino +2.",
         effect: { boosts: { training: 2 } },
-        result: "Ele reclama por cinco minutos e depois entrega uma aula absurda de posicionamento e ritmo.",
+        result:
+          "Ele reclama por cinco minutos e depois entrega uma aula absurda de posicionamento e ritmo.",
       },
     ],
   },
@@ -210,7 +228,8 @@ export const WEEK_EVENTS = [
         hint: "-2 Poké Bolas · +2 berries.",
         requires: { balls: 2 },
         effect: { balls: -2, berries: 2 },
-        result: "Ele conta as Poké Bolas três vezes e entrega dois kits surpreendentemente bons.",
+        result:
+          "Ele conta as Poké Bolas três vezes e entrega dois kits surpreendentemente bons.",
       },
       {
         id: "leave",
@@ -234,14 +253,16 @@ export const WEEK_EVENTS = [
         label: "Ficar para comer",
         hint: "Equipe preparada para a próxima luta.",
         effect: { prepared: true },
-        result: "A equipe descansa e sai com berries preparadas para a próxima batalha.",
+        result:
+          "A equipe descansa e sai com berries preparadas para a próxima batalha.",
       },
       {
         id: "pack",
         label: "Aceitar comida para viagem",
         hint: "+2 berries.",
         effect: { berries: 2 },
-        result: "Você ganha dois kits bem embrulhados e uma receita escrita num guardanapo.",
+        result:
+          "Você ganha dois kits bem embrulhados e uma receita escrita num guardanapo.",
       },
     ],
   },
@@ -258,14 +279,16 @@ export const WEEK_EVENTS = [
         label: "Ajudar o mutirão",
         hint: "Ganha 1 ação extra nesta cidade.",
         effect: { spentDelta: -1 },
-        result: "A enfermeira reorganiza sua agenda em agradecimento. Você recupera espaço para uma ação extra antes de seguir viagem.",
+        result:
+          "A enfermeira reorganiza sua agenda em agradecimento. Você recupera espaço para uma ação extra antes de seguir viagem.",
       },
       {
         id: "supplies",
         label: "Organizar o estoque",
         hint: "+2 Poké Bolas.",
         effect: { balls: 2 },
-        result: "Você encontra duas caixas mal etiquetadas. O Centro deixa você levar duas Poké Bolas pelo trabalho.",
+        result:
+          "Você encontra duas caixas mal etiquetadas. O Centro deixa você levar duas Poké Bolas pelo trabalho.",
       },
     ],
   },
@@ -282,14 +305,16 @@ export const WEEK_EVENTS = [
         label: "Guardar o atalho",
         hint: "Evita a próxima emboscada.",
         effect: { boosts: { ambushShield: 1 } },
-        result: "Você grava o caminho. A próxima confusão na estrada vai passar longe.",
+        result:
+          "Você grava o caminho. A próxima confusão na estrada vai passar longe.",
       },
       {
         id: "search",
         label: "Explorar as margens",
         hint: "Próxima busca de itens recebe +2.",
         effect: { boosts: { forage: 2 } },
-        result: "A trilha tem vários pontos onde viajantes deixam suprimentos. Você marca tudo.",
+        result:
+          "A trilha tem vários pontos onde viajantes deixam suprimentos. Você marca tudo.",
       },
     ],
   },
@@ -306,14 +331,16 @@ export const WEEK_EVENTS = [
         label: "Responder tudo",
         hint: "+2 Poké Bolas.",
         effect: { balls: 2 },
-        result: "Quarenta e sete perguntas depois, você recebe duas Poké Bolas de agradecimento.",
+        result:
+          "Quarenta e sete perguntas depois, você recebe duas Poké Bolas de agradecimento.",
       },
       {
         id: "study",
         label: "Mostrar sua equipe",
         hint: "{lead} +1 nível e próxima captura +4%.",
         effect: { leadLevels: 1, boosts: { capture: 0.04 } },
-        result: "O exame vira uma pequena sessão de treino. {lead} melhora e você aprende alguns truques de aproximação.",
+        result:
+          "O exame vira uma pequena sessão de treino. {lead} melhora e você aprende alguns truques de aproximação.",
       },
     ],
   },
@@ -340,12 +367,14 @@ export const WEEK_EVENTS = [
           {
             weight: 1,
             effect: { balls: 4 },
-            result: "Jackpot. Quatro Poké Bolas ainda seladas aparecem no fundo.",
+            result:
+              "Jackpot. Quatro Poké Bolas ainda seladas aparecem no fundo.",
           },
           {
             weight: 1,
             effect: { balls: 1 },
-            result: "Quase tudo estava quebrado. Uma Poké Bola utilizável é o saldo.",
+            result:
+              "Quase tudo estava quebrado. Uma Poké Bola utilizável é o saldo.",
           },
         ],
       },
@@ -368,12 +397,14 @@ export const WEEK_EVENTS = [
           {
             weight: 7,
             effect: { balls: 1 },
-            result: "Você recupera tudo e ainda encontra uma Poké Bola abandonada no esconderijo.",
+            result:
+              "Você recupera tudo e ainda encontra uma Poké Bola abandonada no esconderijo.",
           },
           {
             weight: 3,
             effect: { balls: -1 },
-            result: "A perseguição termina num barranco. Uma Poké Bola desapareceu para sempre.",
+            result:
+              "A perseguição termina num barranco. Uma Poké Bola desapareceu para sempre.",
           },
         ],
       },
@@ -382,7 +413,8 @@ export const WEEK_EVENTS = [
         label: "Deixar uma bola e seguir",
         hint: "-1 Poké Bola · evita emboscada.",
         effect: { balls: -1, boosts: { ambushShield: 1 } },
-        result: "Você deixa o tributo. Eles somem felizes e a mata fica estranhamente silenciosa.",
+        result:
+          "Você deixa o tributo. Eles somem felizes e a mata fica estranhamente silenciosa.",
       },
     ],
   },
@@ -407,7 +439,8 @@ export const WEEK_EVENTS = [
         label: "Assistir às finais",
         hint: "Próximo treino +2.",
         effect: { boosts: { training: 2 } },
-        result: "Você passa a tarde anotando padrões. O próximo treino já tem roteiro.",
+        result:
+          "Você passa a tarde anotando padrões. O próximo treino já tem roteiro.",
       },
     ],
   },
@@ -427,12 +460,14 @@ export const WEEK_EVENTS = [
           {
             weight: 6,
             effect: { teamLevels: 2 },
-            result: "O simulador funciona assustadoramente bem. Equipe +2 níveis.",
+            result:
+              "O simulador funciona assustadoramente bem. Equipe +2 níveis.",
           },
           {
             weight: 4,
             effect: { teamLevels: 1 },
-            result: "A máquina trava duas vezes, mas o treino rende +1 nível para a equipe.",
+            result:
+              "A máquina trava duas vezes, mas o treino rende +1 nível para a equipe.",
           },
         ],
       },
@@ -458,21 +493,24 @@ export const WEEK_EVENTS = [
         label: "Ensinar rotina de treino",
         hint: "Próximo treino +1.",
         effect: { boosts: { training: 1 } },
-        result: "Ao explicar o básico, você percebe alguns erros na sua própria rotina.",
+        result:
+          "Ao explicar o básico, você percebe alguns erros na sua própria rotina.",
       },
       {
         id: "capture",
         label: "Ensinar aproximação",
         hint: "Próxima captura +6%.",
         effect: { boosts: { capture: 0.06 } },
-        result: "Vocês praticam aproximação silenciosa por meia hora. Funciona melhor do que deveria.",
+        result:
+          "Vocês praticam aproximação silenciosa por meia hora. Funciona melhor do que deveria.",
       },
       {
         id: "items",
         label: "Ensinar a procurar recursos",
         hint: "Próxima busca +2 itens.",
         effect: { boosts: { forage: 2 } },
-        result: "Você mostra onde olhar. No processo, marca vários pontos bons no próprio mapa.",
+        result:
+          "Você mostra onde olhar. No processo, marca vários pontos bons no próprio mapa.",
       },
     ],
   },
@@ -489,14 +527,16 @@ export const WEEK_EVENTS = [
         label: "Passar um dia inteiro no festival",
         hint: "Gasta +1 semana · +4 bolas · +3 berries.",
         effect: { extraWeek: 1, balls: 4, berries: 3 },
-        result: "Você perde a noção do tempo, mas volta carregado de brindes: quatro Poké Bolas e três kits.",
+        result:
+          "Você perde a noção do tempo, mas volta carregado de brindes: quatro Poké Bolas e três kits.",
       },
       {
         id: "quick",
         label: "Dar só uma volta",
         hint: "+1 berry e equipe preparada.",
         effect: { berries: 1, prepared: true },
-        result: "Uma volta rápida rende comida, um kit e berries já preparadas para a equipe.",
+        result:
+          "Uma volta rápida rende comida, um kit e berries já preparadas para a equipe.",
       },
     ],
   },
@@ -522,7 +562,8 @@ export const WEEK_EVENTS = [
         label: "Marcar a trilha e sair",
         hint: "Evita 1 emboscada.",
         effect: { boosts: { ambushShield: 1 } },
-        result: "Você não descobre a origem, mas encontra uma rota segura para continuar.",
+        result:
+          "Você não descobre a origem, mas encontra uma rota segura para continuar.",
       },
     ],
   },
@@ -540,14 +581,16 @@ export const WEEK_EVENTS = [
         label: "Trocar 1 bola pelo amuleto",
         hint: "-1 bola · próxima captura +12%.",
         effect: { balls: -1, boosts: { capture: 0.12 } },
-        result: "Você não sabe se acredita, mas o amuleto vai preso na mochila.",
+        result:
+          "Você não sabe se acredita, mas o amuleto vai preso na mochila.",
       },
       {
         id: "decline",
         label: "Agradecer e seguir",
         hint: "+1 berry de cortesia.",
         effect: { berries: 1 },
-        result: "Ela ri da sua desconfiança e entrega uma berry 'para compensar o azar'.",
+        result:
+          "Ela ri da sua desconfiança e entrega uma berry 'para compensar o azar'.",
       },
     ],
   },
@@ -564,14 +607,16 @@ export const WEEK_EVENTS = [
         label: "Seguir as marcações",
         hint: "Próxima busca +3 e pode continuar depois.",
         effect: { boosts: { forage: 3 }, setFlags: ["old-map"] },
-        result: "Você copia as melhores marcações. Algumas parecem formar uma sequência.",
+        result:
+          "Você copia as melhores marcações. Algumas parecem formar uma sequência.",
       },
       {
         id: "sell-info",
         label: "Trocar a informação com um Ranger",
         hint: "+2 Poké Bolas.",
         effect: { balls: 2 },
-        result: "A Ranger reconhece o desenho e paga a gentileza com duas Poké Bolas.",
+        result:
+          "A Ranger reconhece o desenho e paga a gentileza com duas Poké Bolas.",
       },
     ],
   },
@@ -595,7 +640,8 @@ export const WEEK_EVENTS = [
         label: "Preparar a equipe ali mesmo",
         hint: "Equipe preparada · +1 berry.",
         effect: { prepared: true, berries: 1 },
-        result: "Os moradores ajudam a montar as porções. Ainda sobra um kit para a mochila.",
+        result:
+          "Os moradores ajudam a montar as porções. Ainda sobra um kit para a mochila.",
       },
     ],
   },
@@ -620,7 +666,8 @@ export const WEEK_EVENTS = [
         label: "Treino em conjunto",
         hint: "Equipe +1 nível.",
         effect: { teamLevels: 1 },
-        result: "Você transforma a rivalidade em treino cooperativo. Equipe +1 nível.",
+        result:
+          "Você transforma a rivalidade em treino cooperativo. Equipe +1 nível.",
       },
     ],
   },
@@ -670,7 +717,8 @@ export const WEEK_EVENTS = [
         label: "Ajudar os Rangers",
         hint: "+3 Poké Bolas.",
         effect: { balls: 3 },
-        result: "Você ajuda a controlar o fluxo de treinadores. Os Rangers entregam três Poké Bolas.",
+        result:
+          "Você ajuda a controlar o fluxo de treinadores. Os Rangers entregam três Poké Bolas.",
       },
     ],
   },
@@ -695,7 +743,8 @@ export const WEEK_EVENTS = [
         label: "Dizer que vocês nem se conhecem",
         hint: "+1 Poké Bola.",
         effect: { balls: 1 },
-        result: "Ele chama isso de 'frieza de rival'. Antes de ir embora, joga uma Poké Bola para você.",
+        result:
+          "Ele chama isso de 'frieza de rival'. Antes de ir embora, joga uma Poké Bola para você.",
       },
     ],
   },
@@ -736,7 +785,8 @@ export const WEEK_EVENTS = [
         label: "Procurar onde caiu",
         hint: "Equipe +1 e evento futuro possível.",
         effect: { teamLevels: 1, setFlags: ["meteor-fragment"] },
-        result: "A caminhada noturna vira treino. Você encontra um fragmento estranho preso numa cratera rasa.",
+        result:
+          "A caminhada noturna vira treino. Você encontra um fragmento estranho preso numa cratera rasa.",
       },
       {
         id: "watch",
@@ -760,7 +810,8 @@ export const WEEK_EVENTS = [
         label: "Deixar {lead} por mais um dia",
         hint: "Gasta +1 semana · {lead} +3 níveis.",
         effect: { extraWeek: 1, leadLevels: 3 },
-        result: "{lead} volta exausto e +3 níveis mais forte. O calendário, porém, andou.",
+        result:
+          "{lead} volta exausto e +3 níveis mais forte. O calendário, porém, andou.",
       },
       {
         id: "short",
@@ -784,7 +835,8 @@ export const WEEK_EVENTS = [
         label: "Ajudar no desvio",
         hint: "Ganha 1 ação extra na cidade.",
         effect: { spentDelta: -1 },
-        result: "O trabalho termina cedo e os moradores mostram um caminho que economiza tempo. Você recupera uma ação.",
+        result:
+          "O trabalho termina cedo e os moradores mostram um caminho que economiza tempo. Você recupera uma ação.",
       },
       {
         id: "risk",
@@ -794,12 +846,14 @@ export const WEEK_EVENTS = [
           {
             weight: 1,
             effect: { boosts: { ambushShield: 1 } },
-            result: "A trilha antiga ainda funciona e é deserta. Você sai com um caminho seguro.",
+            result:
+              "A trilha antiga ainda funciona e é deserta. Você sai com um caminho seguro.",
           },
           {
             weight: 1,
             effect: { extraWeek: 1 },
-            result: "A trilha termina em lugar nenhum. Você perde tempo voltando.",
+            result:
+              "A trilha termina em lugar nenhum. Você perde tempo voltando.",
           },
         ],
       },
@@ -821,12 +875,14 @@ export const WEEK_EVENTS = [
           {
             weight: 1,
             effect: { berries: 2 },
-            result: "Você não pesca nada raro, mas ganha dois kits no sorteio do clube.",
+            result:
+              "Você não pesca nada raro, mas ganha dois kits no sorteio do clube.",
           },
           {
             weight: 1,
             effect: { boosts: { capture: 0.06 } },
-            result: "Um pescador ensina paciência e timing. A próxima captura fica mais fácil.",
+            result:
+              "Um pescador ensina paciência e timing. A próxima captura fica mais fácil.",
           },
         ],
       },
@@ -853,7 +909,8 @@ export const WEEK_EVENTS = [
         label: "Prometer chegar à Liga",
         hint: "+2 bolas · evento futuro possível.",
         effect: { balls: 2, setFlags: ["radio-star"] },
-        result: "A frase vai ao ar inteira. A produção entrega duas Poké Bolas de patrocinador.",
+        result:
+          "A frase vai ao ar inteira. A produção entrega duas Poké Bolas de patrocinador.",
       },
       {
         id: "team",
@@ -878,7 +935,8 @@ export const WEEK_EVENTS = [
         label: "Montar kit de captura",
         hint: "-1 berry · +4 bolas.",
         effect: { berries: -1, balls: 4 },
-        result: "Ele sai feliz com as embalagens. Você sai com quatro Poké Bolas.",
+        result:
+          "Ele sai feliz com as embalagens. Você sai com quatro Poké Bolas.",
       },
       {
         id: "prep",
@@ -910,7 +968,8 @@ export const WEEK_EVENTS = [
         hint: "-1 berry · próximo treino +2.",
         requires: { berries: 1 },
         effect: { berries: -1, boosts: { training: 2 } },
-        result: "Você deixa um kit e usa o espaço para organizar material de treino. A próxima sessão promete.",
+        result:
+          "Você deixa um kit e usa o espaço para organizar material de treino. A próxima sessão promete.",
       },
     ],
   },
@@ -927,14 +986,16 @@ export const WEEK_EVENTS = [
         label: "Treino de concentração",
         hint: "{lead} +1 · próximo treino +1.",
         effect: { leadLevels: 1, boosts: { training: 1 } },
-        result: "A sessão de concentração rende mais do que qualquer treino barulhento.",
+        result:
+          "A sessão de concentração rende mais do que qualquer treino barulhento.",
       },
       {
         id: "observe",
         label: "Observar Pokémon selvagens",
         hint: "Próxima captura +6%.",
         effect: { boosts: { capture: 0.06 } },
-        result: "Você aprende a perceber os momentos em que os Pokémon baixam a guarda.",
+        result:
+          "Você aprende a perceber os momentos em que os Pokémon baixam a guarda.",
       },
     ],
   },
@@ -956,14 +1017,16 @@ export const WEEK_EVENTS = [
           boosts: { capture: 0.08 },
           setFlags: ["kindness"],
         },
-        result: "Depois de comer, o Pokémon some no mato. A equipe inteira fica estranhamente satisfeita.",
+        result:
+          "Depois de comer, o Pokémon some no mato. A equipe inteira fica estranhamente satisfeita.",
       },
       {
         id: "ranger",
         label: "Chamar um Ranger",
         hint: "Evita 1 emboscada.",
         effect: { boosts: { ambushShield: 1 } },
-        result: "O Ranger cuida do caso e mostra a rota mais segura para seguir.",
+        result:
+          "O Ranger cuida do caso e mostra a rota mais segura para seguir.",
       },
     ],
   },
@@ -981,7 +1044,8 @@ export const WEEK_EVENTS = [
         hint: "-1 berry · próxima busca +3.",
         requires: { berries: 1 },
         effect: { berries: -1, boosts: { forage: 3 } },
-        result: "Nada acontece. Cinco minutos depois você acha uma trilha cheia de suprimentos.",
+        result:
+          "Nada acontece. Cinco minutos depois você acha uma trilha cheia de suprimentos.",
       },
       {
         id: "laugh",
@@ -991,12 +1055,14 @@ export const WEEK_EVENTS = [
           {
             weight: 1,
             effect: { balls: 2 },
-            result: "Você encontra duas Poké Bolas atrás da placa. O azar parece ter desistido.",
+            result:
+              "Você encontra duas Poké Bolas atrás da placa. O azar parece ter desistido.",
           },
           {
             weight: 1,
             battle: { reward: { berries: 2 } },
-            result: "Algo responde do mato. Talvez rir tenha sido desnecessário.",
+            result:
+              "Algo responde do mato. Talvez rir tenha sido desnecessário.",
           },
         ],
       },
@@ -1033,7 +1099,8 @@ export const WEEK_EVENTS = [
           {
             weight: 1,
             effect: { boosts: { capture: 0.12, forage: 2 } },
-            result: "Um conjunto de ferramentas de campo excelente. Captura e busca melhoram.",
+            result:
+              "Um conjunto de ferramentas de campo excelente. Captura e busca melhoram.",
           },
         ],
       },
@@ -1042,7 +1109,8 @@ export const WEEK_EVENTS = [
         label: "Entregar à recepção",
         hint: "+1 Poké Bola.",
         effect: { balls: 1 },
-        result: "A recepção agradece a cautela e oferece uma Poké Bola perdida e não reclamada.",
+        result:
+          "A recepção agradece a cautela e oferece uma Poké Bola perdida e não reclamada.",
       },
     ],
   },
@@ -1060,14 +1128,16 @@ export const WEEK_EVENTS = [
         label: "Observar cada detalhe",
         hint: "Equipe +1 · próximo treino +1.",
         effect: { teamLevels: 1, boosts: { training: 1 } },
-        result: "Cinco minutos de observação viram uma aula inteira. Equipe +1 nível.",
+        result:
+          "Cinco minutos de observação viram uma aula inteira. Equipe +1 nível.",
       },
       {
         id: "approach",
         label: "Tentar pedir conselho",
         hint: "{lead} +2 · +1 Poké Bola.",
         effect: { leadLevels: 2, balls: 1 },
-        result: "Você consegue uma frase curta, uma Poké Bola promocional e uma motivação absurda. {lead} +2 níveis.",
+        result:
+          "Você consegue uma frase curta, uma Poké Bola promocional e uma motivação absurda. {lead} +2 níveis.",
       },
     ],
   },
@@ -1090,7 +1160,8 @@ export const WEEK_EVENTS = [
           berries: 2,
           clearFlags: ["kindness"],
         },
-        result: "Há quatro Poké Bolas e dois kits organizados numa pequena pilha. Você decide não perguntar como.",
+        result:
+          "Há quatro Poké Bolas e dois kits organizados numa pequena pilha. Você decide não perguntar como.",
       },
       {
         id: "field",
@@ -1102,7 +1173,8 @@ export const WEEK_EVENTS = [
           boosts: { capture: 0.12 },
           clearFlags: ["kindness"],
         },
-        result: "O Ranger aponta uma área quase nunca visitada. A oportunidade é excelente.",
+        result:
+          "O Ranger aponta uma área quase nunca visitada. A oportunidade é excelente.",
       },
     ],
   },
@@ -1124,7 +1196,8 @@ export const WEEK_EVENTS = [
           teamLevels: 2,
           clearFlags: ["meteor-fragment"],
         },
-        result: "O laboratório paga com acesso a um treinamento de alto nível. Equipe +2.",
+        result:
+          "O laboratório paga com acesso a um treinamento de alto nível. Equipe +2.",
       },
       {
         id: "supplies",
@@ -1135,7 +1208,8 @@ export const WEEK_EVENTS = [
           berries: 3,
           clearFlags: ["meteor-fragment"],
         },
-        result: "O laboratório entrega uma caixa de suprimentos séria demais para uma única pessoa.",
+        result:
+          "O laboratório entrega uma caixa de suprimentos séria demais para uma única pessoa.",
       },
     ],
   },
@@ -1158,7 +1232,8 @@ export const WEEK_EVENTS = [
           clearFlags: ["local-celebrity"],
           setFlags: ["radio-star"],
         },
-        result: "A foto leva três tentativas. A caixa com quatro Poké Bolas chega no mesmo dia.",
+        result:
+          "A foto leva três tentativas. A caixa com quatro Poké Bolas chega no mesmo dia.",
       },
       {
         id: "team",
@@ -1169,7 +1244,8 @@ export const WEEK_EVENTS = [
           berries: 1,
           clearFlags: ["local-celebrity"],
         },
-        result: "A equipe transforma a gravação em festa. Todo mundo ganha +1 nível.",
+        result:
+          "A equipe transforma a gravação em festa. Todo mundo ganha +1 nível.",
       },
     ],
   },
@@ -1192,7 +1268,8 @@ export const WEEK_EVENTS = [
           berries: 2,
           clearFlags: ["old-map"],
         },
-        result: "Uma caixa antiga protegida da chuva ainda está inteira. O conteúdo parece ter esperado anos por alguém.",
+        result:
+          "Uma caixa antiga protegida da chuva ainda está inteira. O conteúdo parece ter esperado anos por alguém.",
       },
       {
         id: "training",
@@ -1225,7 +1302,8 @@ export const WEEK_EVENTS = [
           balls: 3,
           clearFlags: ["radio-star"],
         },
-        result: "A fala vira chamada do programa. A produção entrega três Poké Bolas e a equipe entra no clima.",
+        result:
+          "A fala vira chamada do programa. A produção entrega três Poké Bolas e a equipe entra no clima.",
       },
       {
         id: "quiet",
@@ -1235,7 +1313,8 @@ export const WEEK_EVENTS = [
           boosts: { ambushShield: 2 },
           clearFlags: ["radio-star"],
         },
-        result: "Sem bravata desta vez. Um produtor oferece transporte seguro por parte da rota.",
+        result:
+          "Sem bravata desta vez. Um produtor oferece transporte seguro por parte da rota.",
       },
     ],
   },
@@ -1253,7 +1332,8 @@ export const WEEK_EVENTS = [
         label: "Mostrar {lead}",
         hint: "{lead} +2 níveis.",
         effect: { leadLevels: 2 },
-        result: "A avaliação termina com um plano de exercícios preciso. {lead} +2.",
+        result:
+          "A avaliação termina com um plano de exercícios preciso. {lead} +2.",
       },
       {
         id: "party",
@@ -1277,7 +1357,8 @@ export const WEEK_EVENTS = [
         label: "Comer com a equipe",
         hint: "Equipe preparada.",
         effect: { prepared: true },
-        result: "A equipe sai alimentada e com berries prontas para a próxima batalha.",
+        result:
+          "A equipe sai alimentada e com berries prontas para a próxima batalha.",
       },
       {
         id: "pack",
@@ -1302,7 +1383,8 @@ export const WEEK_EVENTS = [
         label: "Abrir o treino ao público",
         hint: "+2 Poké Bolas.",
         effect: { balls: 2 },
-        result: "A sessão vira clínica aberta. Dois treinadores agradecem com Poké Bolas.",
+        result:
+          "A sessão vira clínica aberta. Dois treinadores agradecem com Poké Bolas.",
       },
       {
         id: "harder",
@@ -1326,14 +1408,16 @@ export const WEEK_EVENTS = [
         label: "Devolver a caixa",
         hint: "+1 bola · +1 berry.",
         effect: { balls: 1, berries: 1 },
-        result: "O entregador agradece a honestidade com um pequeno kit de emergência.",
+        result:
+          "O entregador agradece a honestidade com um pequeno kit de emergência.",
       },
       {
         id: "help",
         label: "Ajudar a achar o destinatário",
         hint: "Ganha 1 ação extra na cidade.",
         effect: { spentDelta: -1 },
-        result: "O destinatário conhece um atalho excelente e poupa um pedaço do seu cronograma.",
+        result:
+          "O destinatário conhece um atalho excelente e poupa um pedaço do seu cronograma.",
       },
     ],
   },
@@ -1351,7 +1435,8 @@ export const WEEK_EVENTS = [
         label: "Ajustar suas Poké Bolas",
         hint: "Próxima captura +8%.",
         effect: { boosts: { capture: 0.08 } },
-        result: "As travas ficam suaves e o balanceamento melhora. A próxima tentativa promete.",
+        result:
+          "As travas ficam suaves e o balanceamento melhora. A próxima tentativa promete.",
       },
       {
         id: "parts",
@@ -1375,14 +1460,16 @@ export const WEEK_EVENTS = [
         label: "Entrar no mutirão",
         hint: "Evita 1 emboscada · +1 berry.",
         effect: { berries: 1, boosts: { ambushShield: 1 } },
-        result: "Além do kit de agradecimento, você agora conhece cada trecho seguro da rota.",
+        result:
+          "Além do kit de agradecimento, você agora conhece cada trecho seguro da rota.",
       },
       {
         id: "search",
         label: "Procurar itens perdidos",
         hint: "Próxima busca +3.",
         effect: { boosts: { forage: 3 } },
-        result: "Você marca vários pontos onde viajantes costumam derrubar coisas.",
+        result:
+          "Você marca vários pontos onde viajantes costumam derrubar coisas.",
       },
     ],
   },
@@ -1400,14 +1487,16 @@ export const WEEK_EVENTS = [
         label: "Dar uma manhã de folga",
         hint: "Equipe preparada · próxima emboscada evitada.",
         effect: { prepared: true, boosts: { ambushShield: 1 } },
-        result: "O descanso funciona. Quando vocês saem, todo mundo está muito mais atento.",
+        result:
+          "O descanso funciona. Quando vocês saem, todo mundo está muito mais atento.",
       },
       {
         id: "discipline",
         label: "Treino mesmo assim",
         hint: "Equipe +1 nível.",
         effect: { teamLevels: 1 },
-        result: "Os primeiros minutos são miseráveis. Depois o treino engrena. Equipe +1.",
+        result:
+          "Os primeiros minutos são miseráveis. Depois o treino engrena. Equipe +1.",
       },
     ],
   },
@@ -1424,7 +1513,8 @@ export const WEEK_EVENTS = [
         label: "Já que estamos aqui, explorar",
         hint: "Próxima busca +2 · captura +4%.",
         effect: { boosts: { forage: 2, capture: 0.04 } },
-        result: "O erro revela uma área pouco visitada e cheia de oportunidades.",
+        result:
+          "O erro revela uma área pouco visitada e cheia de oportunidades.",
       },
       {
         id: "rushback",
@@ -1449,7 +1539,8 @@ export const WEEK_EVENTS = [
         label: "Treinar juntos",
         hint: "Equipe +1 · próximo treino +1.",
         effect: { teamLevels: 1, boosts: { training: 1 } },
-        result: "A mistura de equipes cria exercícios que você nunca teria inventado.",
+        result:
+          "A mistura de equipes cria exercícios que você nunca teria inventado.",
       },
       {
         id: "match",
@@ -1473,7 +1564,8 @@ export const WEEK_EVENTS = [
         label: "Participar do arremesso",
         hint: "Próxima captura +6%.",
         effect: { boosts: { capture: 0.06 } },
-        result: "O minigame de precisão acaba sendo treino legítimo de arremesso.",
+        result:
+          "O minigame de precisão acaba sendo treino legítimo de arremesso.",
       },
       {
         id: "prize",
@@ -1507,7 +1599,8 @@ export const WEEK_EVENTS = [
         label: "Aceitar o turno",
         hint: "+2 bolas · evita 1 emboscada.",
         effect: { balls: 2, boosts: { ambushShield: 1 } },
-        result: "A noite é tranquila. Você recebe duas Poké Bolas e conhece os pontos seguros da região.",
+        result:
+          "A noite é tranquila. Você recebe duas Poké Bolas e conhece os pontos seguros da região.",
       },
       {
         id: "train",
@@ -1532,14 +1625,16 @@ export const WEEK_EVENTS = [
         label: "Ouvir os dois",
         hint: "Próximo treino +2.",
         effect: { boosts: { training: 2 } },
-        result: "Separar o conselho bom da bobagem vira um ótimo plano de treino.",
+        result:
+          "Separar o conselho bom da bobagem vira um ótimo plano de treino.",
       },
       {
         id: "practice",
         label: "Testar as teorias na prática",
         hint: "Equipe +1 nível.",
         effect: { teamLevels: 1 },
-        result: "A equipe experimenta as duas abordagens. Uma funciona. Equipe +1.",
+        result:
+          "A equipe experimenta as duas abordagens. Uma funciona. Equipe +1.",
       },
     ],
   },
@@ -1572,7 +1667,8 @@ export const WEEK_EVENTS = [
           teamLevels: 2,
           clearFlags: ["honest-trainer"],
         },
-        result: "A família inteira participa. O treino é caótico e excelente. Equipe +2.",
+        result:
+          "A família inteira participa. O treino é caótico e excelente. Equipe +2.",
       },
     ],
   },

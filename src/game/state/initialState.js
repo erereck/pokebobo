@@ -7,6 +7,7 @@ export const initialState = () => ({
     best: 0,
     moveLearningMode: "manual",
     history: [],
+    dex: [],
   },
   run: null,
 });

@@ -6,7 +6,7 @@ import assert from "node:assert/strict";
 function resolveMoveChoices(state) {
   let next = state;
   let guard = 0;
-  while (next.run.phase === "move-choice" && guard++ < 20) {
+  while (next.run.pendingMoveChoices?.length && guard++ < 20) {
     const pending = next.run.pendingMoveChoices?.[0];
     assert.ok(pending, "fase move-choice precisa ter uma decisão pendente");
     next = reducer(next, {
@@ -22,11 +22,14 @@ test("três semanas viajam automaticamente; cidade de ginásio espera golpes e i
   let s = drafted();
   s.run.lastAmbush = 999;
   s = reducer(s, { type: "TRAIN" });
+  s = resolveMoveChoices(s);
   s = reducer(s, { type: "TRAIN" });
+  s = resolveMoveChoices(s);
   assert.equal(s.run.spent, 2);
 
   const before = s.run.party[0].level;
   s = reducer(s, { type: "TRAIN" });
+  s = resolveMoveChoices(s);
   assert.equal(s.run.position, 1);
   assert.equal(s.run.spent, 0);
   assert.ok(
