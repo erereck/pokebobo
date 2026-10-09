@@ -1,4 +1,9 @@
-import { useMemo } from "react";
+import { useMemo, useRef } from "react";
+import { drawField } from "./drawField.js";
+import {
+  drawEncounterTransition,
+  encounterTransitionDuration,
+} from "./encounterTransition.js";
 import catalog from "../../game/catalog.json" with { type: "json" };
 import species from "./frlg-species.json" with { type: "json" };
 import { fieldAsset, tintedPixelImage } from "./pixelAssets.js";
@@ -18,7 +23,11 @@ export function CaptureCanvas({
   attempt,
   skip,
   onComplete,
+  exploration,
+  selectedAction = "ball",
+  ballDisabled = false,
 }) {
+  const fieldFrame = useRef(null);
   const num = catalog[name].num;
   const original = species[name];
   const monY = 40 + (original?.offset || 0);
@@ -27,6 +36,9 @@ export function CaptureCanvas({
     [attempt, monY],
   );
   const sprite = `${import.meta.env.BASE_URL}sprites/${original ? "frlg/" : ""}${num}.png`;
+  const transitionDuration = exploration
+    ? encounterTransitionDuration(water)
+    : 0;
   const { canvasRef, error } = usePixelCanvas({
     sources: [
       fieldAsset(water ? "capture_water" : "capture_grass"),
@@ -39,9 +51,12 @@ export function CaptureCanvas({
       fieldAsset("ball_particles"),
       fieldAsset("healthbox"),
       fieldAsset("healthbar"),
+      ...["terrain", "red_normal_sheet", "red_surf_sheet", "tall_grass"].map(
+        fieldAsset,
+      ),
     ],
     animationKey: attempt?.id || name,
-    duration: timeline ? timeline.frames.length - 1 : 120,
+    duration: timeline ? timeline.frames.length - 1 : transitionDuration + 120,
     skip,
     onComplete,
     draw: (
@@ -57,10 +72,33 @@ export function CaptureCanvas({
         particles,
         healthbox,
         hp,
+        ...fieldImages
       ],
       tick,
     ) => {
       ctx.clearRect(0, 0, 240, 160);
+      if (!timeline && tick < transitionDuration) {
+        if (!fieldFrame.current || fieldFrame.current.key !== exploration) {
+          const native = document.createElement("canvas");
+          native.width = 192;
+          native.height = 128;
+          drawField(
+            native.getContext("2d"),
+            fieldImages,
+            { ...exploration, walk: null },
+            50,
+          );
+          const snapshot = document.createElement("canvas");
+          snapshot.width = 240;
+          snapshot.height = 160;
+          const surface = snapshot.getContext("2d");
+          surface.imageSmoothingEnabled = false;
+          surface.drawImage(native, 0, 0, 240, 160);
+          fieldFrame.current = { key: exploration, image: snapshot };
+        }
+        drawEncounterTransition(ctx, fieldFrame.current.image, tick, water);
+        return;
+      }
       const frame =
         timeline?.frames[Math.min(tick, timeline.frames.length - 1)];
       ctx.drawImage(
@@ -68,7 +106,9 @@ export function CaptureCanvas({
         0,
         0,
       );
-      const intro = timeline ? 0 : Math.max(0, 240 - tick * 2);
+      const intro = timeline
+        ? 0
+        : Math.max(0, 240 - (tick - transitionDuration) * 2);
       const [trainerFrame, trainerX] = timeline
         ? trainerThrowFrame(tick)
         : [0, 48];
@@ -120,8 +160,8 @@ export function CaptureCanvas({
       if (frame?.stars) drawBallParticles(ctx, particles, frame.stars, true);
       if (!frame || !["caught", "escaped"].includes(frame.stage)) {
         ctx.drawImage(healthbox, 12, 14);
-        pixelText(ctx, font, name.toUpperCase().slice(0, 10), 18, 16, 60);
-        pixelText(ctx, font, `${level}`, 82, 16, 22);
+        pixelText(ctx, font, name.toUpperCase(), 18, 16, 60, 1);
+        pixelText(ctx, font, `${level}`, 82, 16, 22, 1);
         ctx.drawImage(hp, 36, 30);
       }
       ctx.drawImage(
@@ -142,13 +182,29 @@ export function CaptureCanvas({
           : frame.stage === "escaped" || frame.stage === "breakout"
             ? `Ah! ${name}\nescapou da Poké Bola!`
             : "Você lançou\numa Poké Bola!";
-      pixelText(ctx, whiteFont, text, 10, 120, timeline ? 220 : 118);
+      pixelText(ctx, whiteFont, text, 10, 120, timeline ? 220 : 80);
       if (!timeline) {
         ctx.fillStyle = "#404048";
-        ctx.fillRect(128, 112, 112, 48);
+        ctx.fillRect(96, 112, 144, 48);
         ctx.fillStyle = "#f8f8f8";
-        ctx.fillRect(130, 114, 108, 44);
-        pixelText(ctx, font, `${balls} POKÉ BOLAS`, 136, 145, 100);
+        ctx.fillRect(98, 114, 140, 44);
+        ctx.fillStyle = "#d8e0d8";
+        ctx.fillRect(selectedAction === "ball" ? 98 : 168, 114, 70, 44);
+        ctx.fillStyle = "#a0a8a0";
+        ctx.fillRect(167, 116, 1, 40);
+        pixelText(ctx, font, "POKÉ BOLA", 109, 119, 58, 1);
+        pixelText(ctx, font, "FUGIR", 182, 119, 52, 1);
+        ctx.drawImage(ball, 0, 0, 16, 16, 107, 139, 16, 16);
+        pixelText(ctx, font, `× ${balls}`, 125, 139, 38, 1);
+        pixelText(ctx, font, "VOLTAR", 182, 139, 50, 1);
+        const cursorX = selectedAction === "ball" ? 101 : 172;
+        ctx.fillStyle = "#404048";
+        for (let i = 0; i < 4; i++)
+          ctx.fillRect(cursorX + i, 124 + i, 1, 7 - i * 2);
+        if (ballDisabled) {
+          ctx.fillStyle = "rgba(248,248,248,.55)";
+          ctx.fillRect(98, 114, 69, 44);
+        }
       }
     },
   });

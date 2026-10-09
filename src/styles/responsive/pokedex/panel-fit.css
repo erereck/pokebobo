@@ -1,0 +1,504 @@
+.play-main:is(.view-team, .view-bag, .view-region) {
+  display: flex;
+  flex-direction: column;
+}
+.team-screen,
+.bag-screen,
+.region-screen {
+  flex: 1;
+  min-height: 0;
+}
+.team-screen {
+  display: grid;
+  grid-template-rows: auto auto auto minmax(0, 1fr);
+  gap: 8px;
+}
+.team-screen .roster-selector {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin: 0;
+  gap: 4px;
+}
+.team-screen .roster-selector button {
+  min-height: 48px;
+  padding: 4px;
+  gap: 4px;
+}
+.team-screen .roster-selector .sprite {
+  width: 32px;
+  height: 32px;
+}
+.team-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+.team-sections button {
+  min-height: 44px;
+  border: 1px solid var(--lcd-line);
+  background: var(--lcd-bright);
+  border-radius: 6px;
+  font: 600 12px var(--display);
+}
+.team-sections button[aria-pressed="true"] {
+  color: var(--lcd-bright);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.team-screen > :is(.pokemon-details, .reserve-panel) {
+  min-height: 0;
+  overflow-y: auto;
+  padding: 2px 3px 4px;
+  scrollbar-width: thin;
+}
+.pokemon-management {
+  display: flex;
+  gap: 6px;
+  grid-column: 1 / -1;
+}
+.pokemon-management .button {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  font-size: 11px;
+  padding: 6px;
+  gap: 6px;
+}
+.team-screen .reserve-panel {
+  margin: 0;
+  border: 0;
+}
+.reserve-panel > .muted {
+  font-size: 11px;
+}
+.team-screen .reserve-head {
+  display: none;
+}
+.team-screen .reserve-grid {
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+.team-screen .reserve-card {
+  min-height: 54px;
+  padding: 5px;
+  grid-template-columns: 36px minmax(0, 1fr) auto;
+  gap: 5px;
+}
+.team-screen .reserve-card .sprite {
+  width: 32px;
+  height: 32px;
+}
+.team-screen .reserve-card .button {
+  grid-column: auto;
+  max-width: 125px;
+  padding: 5px;
+}
+.team-screen .reserve-empty {
+  min-height: 44px;
+  grid-auto-flow: column;
+}
+.reserve-panel .reserve-main-action {
+  min-height: 44px;
+  font-size: 12px;
+  padding: 8px;
+  margin: 8px 0;
+}
+.reserve-panel .reserve-card .button {
+  min-height: 44px;
+}
+.bag-screen {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto auto;
+  gap: 8px;
+}
+.bag-screen .screen-heading {
+  margin: 0;
+}
+.bag-screen .screen-heading .eyebrow {
+  display: none;
+}
+.bag-screen .screen-heading h1 {
+  font-size: 20px;
+  margin: 0;
+}
+.bag-screen .screen-heading p {
+  display: none;
+}
+.bag-screen > .week-budget {
+  margin: 0;
+  padding: 8px;
+}
+.bag-screen .bag-compartments {
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin: 0;
+}
+.bag-screen .bag-compartments article {
+  padding: 10px;
+  gap: 6px;
+}
+.bag-screen .item-display {
+  height: auto;
+  min-height: 44px;
+  flex: 1;
+  max-height: 120px;
+  gap: 12px;
+}
+.bag-screen .item-display svg {
+  width: 38px;
+  height: 38px;
+}
+.bag-screen .item-display strong {
+  font-size: 30px;
+}
+.bag-screen .bag-compartments h2 {
+  font-size: 17px;
+}
+.bag-screen .bag-compartments p {
+  font-size: 11px;
+  flex: 0;
+}
+.bag-screen .button {
+  min-height: 44px;
+  padding: 8px;
+  font-size: 12px;
+}
+.bag-screen .field-equipment {
+  margin: 0;
+  padding: 8px;
+}
+.bag-screen .field-equipment p {
+  margin: 0;
+  gap: 6px;
+  font-size: 11px;
+}
+.bag-screen .field-equipment p + p {
+  margin-top: 4px;
+}
+.bag-screen .field-equipment svg {
+  width: 16px;
+  height: 16px;
+}
+.bag-screen .field-equipment small {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  line-height: 1.4;
+}
+.bag-screen > .notice {
+  margin: 0;
+  padding: 6px;
+  font-size: 11px;
+}
+.region-screen {
+  display: grid;
+  grid-template-rows: auto minmax(230px, 1fr) auto;
+  gap: 8px;
+}
+.region-screen .screen-heading {
+  margin: 0;
+}
+.region-screen .screen-heading h1 {
+  margin: 0;
+  font-size: 20px;
+}
+.region-screen .screen-heading :is(.eyebrow, p) {
+  display: none;
+}
+.region-screen .region-map {
+  height: 100%;
+  min-height: 0;
+  margin: 0;
+}
+.region-screen .notice {
+  margin: 0;
+  padding: 8px;
+  font-size: 11px;
+}
+@media (max-width: 1050px) {
+  .team-screen .roster-selector button {
+    justify-content: center;
+  }
+  .team-screen .roster-selector button > span {
+    display: none;
+  }
+}
+@media (max-height: 800px), (max-width: 900px) {
+  .team-screen .pokemon-details {
+    grid-template-columns: 76px minmax(0, 1fr);
+    align-content: start;
+    gap: 4px;
+  }
+  .team-screen .pokemon-info {
+    display: contents;
+  }
+  .team-screen .pokemon-scan {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    min-height: 76px;
+    align-self: stretch;
+    height: 100%;
+  }
+  .team-screen .pokemon-scan .sprite {
+    width: 70px;
+    height: 70px;
+  }
+  .team-screen .scan-number {
+    font-size: 7px;
+    left: 4px;
+    top: 4px;
+  }
+  .team-screen .scan-caption {
+    display: none;
+  }
+  .team-screen .pokemon-name {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .team-screen .pokemon-name h2 {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+  .team-screen .pokemon-name .type {
+    font-size: 9px;
+  }
+  .team-screen .pokemon-level {
+    font-size: 23px;
+  }
+  .team-screen .pokemon-traits {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 3px 0;
+    gap: 6px;
+  }
+  .team-screen .pokemon-traits b {
+    font-size: 11px;
+  }
+  .team-screen .pokemon-traits small {
+    font-size: 8px;
+  }
+  .team-screen .pokemon-details .section-head,
+  .team-screen .equipped-moves {
+    grid-column: 1 / -1;
+  }
+  .team-screen .pokemon-details .section-head {
+    margin: 0;
+  }
+  .team-screen .pokemon-details .section-head h3 {
+    font-size: 12px;
+  }
+  .team-screen .equipped-moves > div {
+    min-height: 46px;
+    padding: 5px;
+    gap: 3px;
+  }
+  .team-screen .equipped-moves strong {
+    font-size: 11px;
+  }
+  .team-screen .equipped-moves small {
+    font-size: 9px;
+  }
+  .team-screen .equipped-moves .type {
+    font-size: 8px;
+    padding: 2px 3px;
+  }
+}
+@media (max-width: 360px) {
+  .team-screen {
+    gap: 4px;
+  }
+  .team-screen .roster-selector {
+    gap: 2px;
+  }
+  .team-screen .roster-selector button {
+    min-height: 44px;
+  }
+  .bag-screen .bag-compartments article {
+    padding: 6px;
+  }
+  .bag-screen .bag-compartments h2 {
+    font-size: 14px;
+  }
+  .bag-screen .button {
+    gap: 6px;
+    font-size: 10px;
+  }
+  .bag-screen .item-display svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media (max-height: 500px) and (min-width: 600px) {
+  .team-screen {
+    grid-template-columns: minmax(170px, 0.65fr) minmax(0, 1.5fr);
+    grid-template-rows: auto auto minmax(0, 1fr);
+    gap: 6px 12px;
+  }
+  .team-screen > .pixel-screen-heading {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .team-screen .roster-selector {
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .team-screen .team-sections {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: start;
+  }
+  .team-screen > :is(.pokemon-details, .reserve-panel) {
+    grid-column: 2;
+    grid-row: 1 / 4;
+  }
+  .team-screen .equipped-moves > div {
+    min-height: 40px;
+    padding: 4px;
+  }
+  .team-screen .equipped-moves {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+  }
+  .team-screen .pokemon-scan {
+    min-height: 64px;
+  }
+  .team-screen .pokemon-name h2 {
+    font-size: 18px;
+  }
+  .team-screen .pokemon-name .type {
+    font-size: 8px;
+  }
+  .team-screen .pokemon-traits {
+    padding: 2px 0;
+  }
+  .team-screen .pokemon-traits > span {
+    gap: 1px;
+  }
+  .team-screen .pokemon-traits small {
+    font-size: 7px;
+  }
+  .team-screen .pokemon-traits b {
+    font-size: 10px;
+  }
+  .team-screen .reserve-main-action {
+    margin: 4px 0;
+  }
+  .team-screen .reserve-grid {
+    gap: 4px;
+  }
+  .team-screen .reserve-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .team-screen .reserve-card {
+    grid-template-columns: 32px minmax(0, 1fr);
+  }
+  .team-screen .reserve-card .button {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: none;
+  }
+  .play-main.view-journey.phase-career {
+    display: flex;
+    flex-direction: column;
+  }
+  .career-screen:not(.is-league) {
+    flex: 1;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+    grid-template-rows: auto minmax(0, 1fr) auto auto;
+    gap: 6px 12px;
+  }
+  .career-screen .page-meta {
+    grid-column: 1 / -1;
+  }
+  .career-screen .city-hero {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 70px;
+  }
+  .career-screen .city-hero-copy {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .career-screen > .week-budget {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .career-screen > .notice {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .career-screen > .action-heading {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+  }
+  .career-screen > .action-grid {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: end;
+    gap: 5px;
+    padding-top: 22px;
+  }
+  .career-screen .action {
+    min-height: 48px;
+  }
+  .career-screen > .challenge-button {
+    grid-column: 2;
+    grid-row: 3;
+    margin: 0;
+  }
+  .career-screen > :is(.route-hint, .fine-print) {
+    display: none;
+  }
+  .bag-screen {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto minmax(0, 1fr);
+    gap: 6px 12px;
+  }
+  .bag-screen .screen-heading,
+  .bag-screen > .week-budget {
+    grid-column: 1;
+  }
+  .bag-screen .bag-compartments {
+    grid-column: 2;
+    grid-row: 1 / 4;
+  }
+  .bag-screen .field-equipment {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: start;
+  }
+  .bag-screen > .button,
+  .bag-screen > .notice {
+    grid-column: 1;
+    align-self: end;
+  }
+  .bag-screen .item-display {
+    max-height: 50px;
+  }
+  .region-screen {
+    grid-template-rows: auto minmax(180px, 1fr);
+  }
+  .region-screen > .notice {
+    display: none;
+  }
+  .region-screen .region-map {
+    min-height: 180px;
+  }
+  .region-screen .map-node {
+    gap: 2px;
+  }
+  .region-screen .map-node-marker {
+    width: 20px;
+    height: 20px;
+    font-size: 8px;
+  }
+  .region-screen .map-node strong {
+    font-size: 10px;
+  }
+  .region-screen .map-node small {
+    display: none;
+  }
+}

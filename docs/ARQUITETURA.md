@@ -116,3 +116,9 @@ As 926 transições da 0.1 foram preservadas em docs/archive, sem regenerar seus
 ExplorationScreen/FieldCanvas desenham o mapa e enviam MOVE_ROUTE com apresentação. O reducer salva o passo e eventual encontro; ROUTE_STEP_COMPLETE libera o próximo comando e revela o Pokémon. isTallGrass compartilha terreno elegível com UI/testes/simulação. revealWild fixa o nível.
 
 Encounter/CaptureCanvas apresentam o resultado produzido por actions/capture.js. CAPTURE salva bola, RNG e captureAttempt; CAPTURE_FINISH valida o id e chama world/completeCapture.js para equipe/reserva/coleção. O flag de apresentação usa a mesma regra da simulação, apenas adia a conclusão. captureTimeline.js não importa RNG nem altera gameplay. usePixelCanvas controla carregamento paralelo, RAF, cancelamento e movimento reduzido. Assets locais têm importador separado e créditos.
+
+## Apresentação e enquadramento — 0.11.0
+
+São 194 módulos JS/JSX. useFieldControls coordena teclado/ponteiro e dispara MOVE_ROUTE apenas quando termina o passo anterior; listeners e RAF são removidos na desmontagem. fieldPresentation calcula pose e interseção da região dos pés; drawField é compartilhado por FieldCanvas e a transição da captura. encounterTransition usa uma imagem local do campo, sem persistir canvas no save.
+
+usePixelCanvas pausa o relógio com document.hidden, limita saltos de tempo e mantém o último quadro para atualizar seleção/foco sem reiniciar a animação. captureTimeline copia a posição da bola por quadro. PixelViewport mede o contêiner com ResizeObserver; nenhuma dimensão de tela entra no motor. useFullscreen acompanha a API nativa. TeamScreen guarda somente seleção/ficha/reserva localmente e delega a gestão às mesmas ações existentes.

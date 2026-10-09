@@ -1,0 +1,146 @@
+{
+  "version": "0.11.0",
+  "browser": "Microsoft Edge / Playwright",
+  "reports": [
+    {
+      "name": "rota-frlg-1280",
+      "viewport": 1280,
+      "scroll": 1280,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "encontro-natural-frlg-1280",
+      "viewport": 1280,
+      "scroll": 1280,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "rota-frlg-390",
+      "viewport": 390,
+      "scroll": 390,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "encontro-natural-frlg-390",
+      "viewport": 390,
+      "scroll": 390,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "rota-frlg-320",
+      "viewport": 320,
+      "scroll": 320,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "encontro-natural-frlg-320",
+      "viewport": 320,
+      "scroll": 320,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "encontro-frlg-1280",
+      "viewport": 1280,
+      "scroll": 1280,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "resultado-frlg-1280",
+      "viewport": 1280,
+      "scroll": 1280,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "encontro-frlg-390",
+      "viewport": 390,
+      "scroll": 390,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "resultado-frlg-390",
+      "viewport": 390,
+      "scroll": 390,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "encontro-frlg-320",
+      "viewport": 320,
+      "scroll": 320,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "resultado-frlg-320",
+      "viewport": 320,
+      "scroll": 320,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "encontro-frlg-390-lotado",
+      "viewport": 390,
+      "scroll": 390,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "resultado-frlg-390-lotado",
+      "viewport": 390,
+      "scroll": 390,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "lago-frlg-fish",
+      "viewport": 390,
+      "scroll": 390,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "lago-frlg-surf",
+      "viewport": 390,
+      "scroll": 390,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "encontro-frlg-geracao-recente",
+      "viewport": 390,
+      "scroll": 390,
+      "errors": [],
+      "broken": []
+    },
+    {
+      "name": "captura-frlg-sucesso-desktop",
+      "viewport": 1280,
+      "scroll": 1280,
+      "errors": [],
+      "broken": []
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "flows": [
+    "passos/setas/mato/fuga",
+    "captura salva: sucesso e falha",
+    "reload durante arremesso",
+    "reserva cheia com substituição",
+    "pesca e Surf",
+    "espécie posterior ao FRLG",
+    "animação completa 1×",
+    "movimento reduzido",
+    "pular apresentação"
+  ],
+  "video": "captura-frlg.webm"
+}

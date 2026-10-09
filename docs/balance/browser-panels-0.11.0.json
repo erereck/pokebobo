@@ -1,0 +1,1016 @@
+{
+  "reports": [
+    {
+      "name": "jornada-final-1440",
+      "width": 1440,
+      "height": 900,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva (3)1 SEMANA",
+          "width": 499,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Explorar rota3 encontros · caminhar e capturar1 SEMANA",
+          "width": 499,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 499,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 499,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 1006,
+          "height": 55.25,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Equipe-1440",
+      "width": 1440,
+      "height": 900,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 331.078125,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Escolher evolução · grátis",
+          "width": 331.09375,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mochila-1440",
+      "width": 1440,
+      "height": 900,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Explorar · 1 semana",
+          "width": 477,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Preparar · 1 semana",
+          "width": 477,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Procurar suprimentos · 1 semana",
+          "width": 1006,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mapa-1440",
+      "width": 1440,
+      "height": 900,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "reserva-cheia-1440",
+      "width": 1440,
+      "height": 900,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Reserva lotada",
+          "width": 1000,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "ficha-trocada-1440",
+      "width": 1440,
+      "height": 900,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 668.171875,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "jornada-final-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva (3)1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Explorar rota3 encontros · caminhar e capturar1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 846,
+          "height": 55.25,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Equipe-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 417,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Escolher evolução · grátis",
+          "width": 417,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mochila-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Explorar · 1 semana",
+          "width": 397,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Preparar · 1 semana",
+          "width": 397,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Procurar suprimentos · 1 semana",
+          "width": 846,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mapa-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "reserva-cheia-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Reserva lotada",
+          "width": 840,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "ficha-trocada-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 840,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "jornada-final-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva (3)1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Explorar rota3 encontros · caminhar e capturar1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 334,
+          "height": 53.5,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Equipe-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 161,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Escolher evolução · grátis",
+          "width": 161,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mochila-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Explorar · 1 semana",
+          "width": 141,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Preparar · 1 semana",
+          "width": 141,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Procurar suprimentos · 1 semana",
+          "width": 334,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mapa-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "reserva-cheia-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Reserva lotada",
+          "width": 328,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "ficha-trocada-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 328,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "jornada-final-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva (3)1 SEMANA",
+          "width": 135,
+          "height": 63,
+          "visible": true
+        },
+        {
+          "label": "Explorar rota3 encontros · caminhar e capturar1 SEMANA",
+          "width": 135,
+          "height": 63,
+          "visible": true
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 135,
+          "height": 63,
+          "visible": true
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 135,
+          "height": 63,
+          "visible": true
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 278,
+          "height": 46,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Equipe-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 133,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Escolher evolução · grátis",
+          "width": 133,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mochila-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Explorar · 1 semana",
+          "width": 121,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Preparar · 1 semana",
+          "width": 121,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Procurar suprimentos · 1 semana",
+          "width": 278,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mapa-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "reserva-cheia-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Reserva lotada",
+          "width": 272,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 121.1875,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "ficha-trocada-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 272,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "jornada-final-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva (3)1 SEMANA",
+          "width": 216.9375,
+          "height": 50,
+          "visible": true
+        },
+        {
+          "label": "Explorar rota3 encontros · caminhar e capturar1 SEMANA",
+          "width": 216.953125,
+          "height": 50,
+          "visible": true
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 216.9375,
+          "height": 50,
+          "visible": true
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 216.953125,
+          "height": 50,
+          "visible": true
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 438.890625,
+          "height": 46,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Equipe-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 269.578125,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Escolher evolução · grátis",
+          "width": 269.578125,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mochila-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Explorar · 1 semana",
+          "width": 171.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Preparar · 1 semana",
+          "width": 171.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Procurar suprimentos · 1 semana",
+          "width": 395,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mapa-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "reserva-cheia-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Reserva lotada",
+          "width": 545.15625,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 167.046875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 167.046875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 167.046875,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "ficha-trocada-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 545.15625,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "jornada-final-667",
+      "width": 667,
+      "height": 375,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva (3)1 SEMANA",
+          "width": 167.78125,
+          "height": 62,
+          "visible": true
+        },
+        {
+          "label": "Explorar rota3 encontros · caminhar e capturar1 SEMANA",
+          "width": 167.78125,
+          "height": 62,
+          "visible": true
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 167.78125,
+          "height": 62,
+          "visible": true
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 167.78125,
+          "height": 62,
+          "visible": true
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 340.5625,
+          "height": 46,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Equipe-667",
+      "width": 667,
+      "height": 375,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 207.84375,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Escolher evolução · grátis",
+          "width": 207.84375,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mochila-667",
+      "width": 667,
+      "height": 375,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Explorar · 1 semana",
+          "width": 127.25,
+          "height": 48,
+          "visible": true
+        },
+        {
+          "label": "Preparar · 1 semana",
+          "width": 127.25,
+          "height": 48,
+          "visible": true
+        },
+        {
+          "label": "Procurar suprimentos · 1 semana",
+          "width": 306.5,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "painel-Mapa-667",
+      "width": 667,
+      "height": 375,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "reserva-cheia-667",
+      "width": 667,
+      "height": 375,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Reserva lotada",
+          "width": 421.6875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 125.890625,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 125.890625,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Trocar por Eevee",
+          "width": 125.890625,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "ficha-trocada-667",
+      "width": 667,
+      "height": 375,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 421.6875,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "flows": [
+    "ficha, reserva cheia/troca, líder, reload e preparação em 1440×900",
+    "ficha, reserva cheia/troca, líder, reload e preparação em 1280×720",
+    "ficha, reserva cheia/troca, líder, reload e preparação em 390×844",
+    "ficha, reserva cheia/troca, líder, reload e preparação em 320×568",
+    "ficha, reserva cheia/troca, líder, reload e preparação em 844×390",
+    "ficha, reserva cheia/troca, líder, reload e preparação em 667×375"
+  ]
+}

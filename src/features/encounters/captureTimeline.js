@@ -17,11 +17,16 @@ export function captureTimeline(attempt, monY) {
     particles: null,
     stars: null,
   };
-  const push = (changes = {}) => frames.push({ ...base, ...changes });
+  const push = (changes = {}) =>
+    frames.push({
+      ...base,
+      ...changes,
+      ball: changes.ball ? { ...changes.ball } : null,
+    });
   for (let i = 0; i < 20; i++) push();
   const targetY = monY - 16;
   for (let i = 0; i < 34; i++) {
-    const p = i / 34;
+    const p = i / 33;
     push({
       ball: {
         x: Math.round(55 + (176 - 55) * p),

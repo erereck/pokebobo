@@ -11,17 +11,27 @@ export function usePixelCanvas({
 }) {
   const canvasRef = useRef(null);
   const callbacks = useRef({ draw, onComplete });
+  const surface = useRef(null);
   const [error, setError] = useState("");
   useEffect(() => {
     callbacks.current = { draw, onComplete };
+    const frame = surface.current;
+    if (frame?.key === `${animationKey}|${sources.join("|")}`)
+      draw(frame.ctx, frame.images, frame.tick);
   });
   const sourceKey = sources.join("|");
   useEffect(() => {
     let cancelled = false,
       handle,
-      start,
+      previous,
+      elapsed = 0,
       completed = false;
     setError("");
+    surface.current = null;
+    const visibility = () => {
+      previous = undefined;
+    };
+    document.addEventListener("visibilitychange", visibility);
     Promise.all(sourceKey.split("|").map(loadPixelImage))
       .then((images) => {
         if (cancelled) return;
@@ -33,11 +43,19 @@ export function usePixelCanvas({
         ).matches;
         const render = (now) => {
           if (cancelled) return;
-          start ??= now;
+          if (!document.hidden)
+            elapsed += previous == null ? 0 : Math.min(50, now - previous);
+          previous = now;
           const tick =
             (skip || reduced) && Number.isFinite(duration)
               ? duration
-              : Math.min(duration, Math.floor(((now - start) * 60) / 1000));
+              : Math.min(duration, Math.floor((elapsed * 60) / 1000));
+          surface.current = {
+            key: `${animationKey}|${sourceKey}`,
+            ctx,
+            images,
+            tick,
+          };
           callbacks.current.draw(ctx, images, tick);
           if (tick >= duration && !completed) {
             completed = true;
@@ -56,6 +74,8 @@ export function usePixelCanvas({
     return () => {
       cancelled = true;
       cancelAnimationFrame(handle);
+      surface.current = null;
+      document.removeEventListener("visibilitychange", visibility);
     };
   }, [sourceKey, animationKey, duration, skip]);
   return { canvasRef, error };

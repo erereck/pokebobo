@@ -1,8 +1,10 @@
-# Pokébobo — 0.10.0 · Passos de Kanto
+# Pokébobo — 0.11.0 · Ritmo de Kanto
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
 
-A 0.10.0 traz mato alto contínuo com encontros por passo e captura em uma cena 240×160 baseada em FRLG: Red de costas, arremesso de Poké Bola normal, absorção, quicados, sacudidas, estrelas e fuga. O resultado fica salvo antes da animação. [Campo no celular](docs/images/rota-0.10-celular.png) · [Cena de captura](docs/images/captura-0.10-celular.png).
+A 0.11.0 refina campo, captura e os demais painéis para caberem no visor. Segure setas, WASD ou o direcional; use tela cheia ao lado da Pokédex. A bola segue ligada ao impacto durante a absorção, e o mato cobre apenas os pés enquanto Red cruza as casas. A entrada no encontro usa cortes ou ondulação, e o menu tem fonte bitmap na mesma escala da cena, estoque e duas áreas grandes de toque. Ficha e reserva têm seletores próprios; mochila e mapa aproveitam a altura disponível. [Campo no celular](docs/images/rota-0.11-celular.png) · [Captura](docs/images/captura-0.11-celular.png) · [Equipe](docs/images/equipe-0.11-celular.png).
+
+A 0.10.0 trouxe mato alto contínuo com encontros por passo e captura em uma cena 240×160 baseada em FRLG: Red de costas, arremesso de Poké Bola normal, absorção, quicados, sacudidas, estrelas e fuga. O resultado fica salvo antes da animação.
 
 A 0.9.0 permite escolher evoluções ramificadas, caminhar em rotas com tiles de FRLG e 2–3 encontros, pescar após a terceira insígnia e usar Surf após a quinta. A Pokédex registra capturas e evoluções dos três slots com as jornadas de origem. Doze novos acontecimentos incluem pistas de Mew/Suicune e um roubo de Eevee após vencer um contrabandista. Correria compensa sua semana a menos com treinos de +2 a +4 níveis. Veja o [ROADMAP](docs/ROADMAP.md), a [validação](VALIDACAO.md) e o [guia da interface](docs/INTERFACE.md). Os modos de ataques Manual/Automático e a reserva de três Pokémon continuam disponíveis.
 
