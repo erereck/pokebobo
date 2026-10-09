@@ -1,5 +1,12 @@
 # Validação — Pokébobo 0.10.0
 
+## Ajuste final antes do merge · 09/10/2026
+
+- npm run verify: 188 módulos, 94/94 testes e build Vite (2.067 módulos).
+- Nova regressão: a bola pousa em y=70 para cinco alturas de sprite, em sucesso e fuga; sua parte inferior permanece dentro da plataforma, que termina em y=79. O início da queda segue ligado ao ponto de absorção, sem salto de posição.
+- Edge/Playwright: Eevee em desktop, Bulbasaur/Lapras em 390×844 e Charizard em 320×568; captura, sacudidas, pular apresentação e retorno ao campo. Zero erros de console/rede ou overflow. Relatório em docs/balance/browser-ball-ground-0.10.0.json; GIF atualizado a partir da cena real.
+- Correção de apresentação: probabilidades, resultado persistido, RNG e economia seguem as regras já validadas.
+
 ## 0.10.0 — Passos de Kanto · 09/10/2026
 
 - `npm run verify`: 188 módulos JS/JSX sem ciclos ou import de UI no motor; 93/93 testes; build Vite com 2.067 módulos.

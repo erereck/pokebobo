@@ -1,0 +1,38 @@
+{
+  "reports": [
+    {
+      "name": "Eevee",
+      "water": false,
+      "width": 1280,
+      "scroll": 1280,
+      "canvasWidth": 480,
+      "canvasHeight": 320
+    },
+    {
+      "name": "Bulbasaur",
+      "water": false,
+      "width": 390,
+      "scroll": 390,
+      "canvasWidth": 326,
+      "canvasHeight": 217.328125
+    },
+    {
+      "name": "Charizard",
+      "water": false,
+      "width": 320,
+      "scroll": 320,
+      "canvasWidth": 270,
+      "canvasHeight": 180
+    },
+    {
+      "name": "Lapras",
+      "water": true,
+      "width": 390,
+      "scroll": 390,
+      "canvasWidth": 326,
+      "canvasHeight": 217.328125
+    }
+  ],
+  "errors": [],
+  "network": []
+}

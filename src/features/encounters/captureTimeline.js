@@ -54,8 +54,11 @@ export function captureTimeline(attempt, monY) {
   for (let i = 0; i < 10; i++)
     push({ stage: "close", ball: { ...ball, frame: i < 5 ? 1 : 0 } });
   ball.frame = 0;
-  ball.y += 40;
-  let amplitude = 40,
+  // O chão pertence à plataforma, não ao deslocamento vertical da espécie.
+  const groundY = 70;
+  const fallHeight = groundY - ball.y;
+  ball.y = groundY;
+  let amplitude = fallHeight,
     angle = 0,
     bounce = 0,
     rising = false;
@@ -66,8 +69,8 @@ export function captureTimeline(attempt, monY) {
     });
     angle += (rising ? -1 : 1) * (4 + bounce);
     if (!rising && angle >= 64) {
-      amplitude -= 10;
       bounce++;
+      amplitude = Math.round((fallHeight * (4 - bounce)) / 4);
       rising = true;
     } else if (rising && angle <= 0) {
       angle = 0;

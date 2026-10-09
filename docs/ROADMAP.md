@@ -1,5 +1,13 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Ajuste final de 09/10/2026 — pouso da Poké Bola
+
+**Pedido:** corrigir a bola abaixo da grama e integrar o PR após a correção.
+
+**Causa e mudança:** o pouso seguia o centro vertical do sprite selvagem; espécies pequenas, como Eevee, usam um deslocamento maior e levavam a bola para baixo da plataforma. O chão agora é fixo em y=70. A queda parte do ponto atual de absorção, e a amplitude dos quatro quicados diminui proporcionalmente até o repouso. Sacudidas, estrelas e fuga usam a mesma posição final.
+
+**Validação:** 94 testes, arquitetura e build; teste de altura para cinco posições de Pokémon e ambos os resultados. Inspeção no Edge em desktop e telas 390×844/320×568, incluindo grama e água; nenhum erro de console/rede/overflow. GIF atualizado. Sem mudança de regra de captura ou progressão. Relatório anterior preservado abaixo.
+
 ## Entrega de 09/10/2026 — 0.10.0: Passos de Kanto
 
 **Pedido:** ampliar o mato e aproximar a caminhada e a captura de FireRed/LeafGreen, incluindo o treinador de costas jogando suas Poké Bolas normais numa cena ao estilo Safari Zone.

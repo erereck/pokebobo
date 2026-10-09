@@ -171,3 +171,28 @@ test("quadros do Red e arco de 34 ticks seguem os marcos da referência FRLG", (
     assert.ok(fail.every((f) => !f.ball || Number.isFinite(f.ball.y)));
   }
 });
+
+test("Poké Bola pousa na plataforma para espécies altas e baixas, em sucesso e fuga", () => {
+  for (const monY of [40, 41, 53, 56, 65]) {
+    for (const success of [true, false]) {
+      const { frames } = captureTimeline({ success, shakes: 3 }, monY);
+      const landing = frames.filter(
+        (f) =>
+          f.ball &&
+          [
+            "wait",
+            "shake-1",
+            "shake-2",
+            "shake-3",
+            "caught",
+            "breakout",
+          ].includes(f.stage),
+      );
+      assert.ok(landing.length > 0);
+      // A plataforma termina em y=79; os seis pixels inferiores da bola ficam sobre ela.
+      assert.ok(landing.every((f) => f.ball.y === 70));
+      assert.ok(landing.every((f) => f.ball.y + 6 < 80));
+      assert.equal(frames[102].ball.y, monY - 16);
+    }
+  }
+});

@@ -2,6 +2,8 @@
 
 ## 0.10.0 — Passos de Kanto · 09/10/2026
 
+- Ajuste final: Poké Bola pousa sobre a plataforma, independentemente da altura do Pokémon; regressão coberta e 94 testes aprovados.
+
 - Áreas contínuas de mato alto substituem os marcadores numerados. Cada passo no mato pode abrir encontro; chão livre e posição parada não sorteiam.
 - Caminhada do Red em quatro direções, alternância de pernas, deslocamento de um pixel por tick e efeito de mato cobrindo os pés. Cada passo leva 16 ticks; teclado e toque usam a mesma regra.
 - Cena de captura 240×160: treinador de costas, cinco quadros de arremesso, Poké Bola normal, arco, abertura, absorção, quatro quicados, até três sacudidas, estrelas, fuga e desaparecimento da bola.
