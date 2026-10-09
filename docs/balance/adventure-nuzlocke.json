@@ -23,7 +23,7 @@
     "captureTargetOffset": -1,
     "captureLevelSpread": 3
   },
-  "durationSeconds": 18.766,
+  "durationSeconds": 25.989,
   "methodology": "Campanhas completas com ações do reducer e batalhas reais @pkmn/sim. Mesmas seeds por estratégia; política de decisão usa RNG separado. Ambos os lados usam a IA observável. Limite de 180 turnos por combate: truncamentos são reportados separadamente, não contam como derrota. Vitórias não são estimativa de jogadores humanos.",
   "summaries": [
     {
@@ -307,19 +307,35 @@
       "byOpponent": [
         {
           "kind": "ambush",
-          "name": "Mochileiro Caio",
-          "encounters": 3,
-          "completed": 3,
+          "name": "Contrabandista",
+          "encounters": 1,
+          "completed": 1,
           "censored": 0,
           "playerDefeats": 0,
           "defeatRate": 0,
           "defeatRate95": [
             0,
-            56.15
+            79.35
           ],
           "medianTurns": 3,
           "medianPlayerLevel": 60,
-          "meanPartySize": 1.3333333333333333
+          "meanPartySize": 2
+        },
+        {
+          "kind": "ambush",
+          "name": "Mochileiro Caio",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 3,
+          "medianPlayerLevel": 74,
+          "meanPartySize": 1
         },
         {
           "kind": "ambush",
@@ -1230,19 +1246,35 @@
       "byOpponent": [
         {
           "kind": "ambush",
-          "name": "Mochileiro Caio",
-          "encounters": 13,
-          "completed": 13,
+          "name": "Contrabandista",
+          "encounters": 6,
+          "completed": 6,
           "censored": 0,
           "playerDefeats": 0,
           "defeatRate": 0,
           "defeatRate95": [
             0,
-            22.81
+            39.03
+          ],
+          "medianTurns": 4,
+          "medianPlayerLevel": 40,
+          "meanPartySize": 4.666666666666667
+        },
+        {
+          "kind": "ambush",
+          "name": "Mochileiro Caio",
+          "encounters": 11,
+          "completed": 11,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            25.88
           ],
           "medianTurns": 3,
-          "medianPlayerLevel": 35,
-          "meanPartySize": 4.6923076923076925
+          "medianPlayerLevel": 33,
+          "meanPartySize": 4.7272727272727275
         },
         {
           "kind": "ambush",
@@ -1263,34 +1295,34 @@
         {
           "kind": "ambush",
           "name": "Treinadora Bia",
-          "encounters": 16,
-          "completed": 16,
+          "encounters": 14,
+          "completed": 14,
           "censored": 0,
           "playerDefeats": 0,
           "defeatRate": 0,
           "defeatRate95": [
             0,
-            19.36
+            21.53
           ],
-          "medianTurns": 5,
+          "medianTurns": 4,
           "medianPlayerLevel": 29,
-          "meanPartySize": 4.25
+          "meanPartySize": 4.214285714285714
         },
         {
           "kind": "ambush",
           "name": "Treinadora Lia",
-          "encounters": 9,
-          "completed": 9,
+          "encounters": 7,
+          "completed": 7,
           "censored": 0,
           "playerDefeats": 0,
           "defeatRate": 0,
           "defeatRate95": [
             0,
-            29.92
+            35.43
           ],
-          "medianTurns": 4,
-          "medianPlayerLevel": 40,
-          "meanPartySize": 4.777777777777778
+          "medianTurns": 6,
+          "medianPlayerLevel": 35,
+          "meanPartySize": 4.714285714285714
         },
         {
           "kind": "gym",
@@ -2310,6 +2342,22 @@
       "byOpponent": [
         {
           "kind": "ambush",
+          "name": "Contrabandista",
+          "encounters": 1,
+          "completed": 1,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            79.35
+          ],
+          "medianTurns": 2,
+          "medianPlayerLevel": 32,
+          "meanPartySize": 6
+        },
+        {
+          "kind": "ambush",
           "name": "Mochileiro Caio",
           "encounters": 8,
           "completed": 8,
@@ -2343,18 +2391,18 @@
         {
           "kind": "ambush",
           "name": "Treinadora Bia",
-          "encounters": 14,
-          "completed": 14,
+          "encounters": 13,
+          "completed": 13,
           "censored": 0,
           "playerDefeats": 0,
           "defeatRate": 0,
           "defeatRate95": [
             0,
-            21.53
+            22.81
           ],
           "medianTurns": 5,
-          "medianPlayerLevel": 29,
-          "meanPartySize": 5.142857142857143
+          "medianPlayerLevel": 26,
+          "meanPartySize": 5.076923076923077
         },
         {
           "kind": "ambush",
@@ -3916,7 +3964,7 @@
         },
         {
           "kind": "ambush",
-          "name": "Mochileiro Caio",
+          "name": "Contrabandista",
           "stage": 5,
           "leagueIndex": null,
           "turns": 3,
@@ -7364,7 +7412,7 @@
         },
         {
           "kind": "ambush",
-          "name": "Treinadora Bia",
+          "name": "Contrabandista",
           "stage": 3,
           "leagueIndex": null,
           "turns": 6,
@@ -7570,7 +7618,7 @@
         },
         {
           "kind": "ambush",
-          "name": "Mochileiro Caio",
+          "name": "Contrabandista",
           "stage": 7,
           "leagueIndex": null,
           "turns": 3,
@@ -7788,7 +7836,7 @@
         },
         {
           "kind": "ambush",
-          "name": "Treinadora Bia",
+          "name": "Contrabandista",
           "stage": 5,
           "leagueIndex": null,
           "turns": 10,
@@ -8654,7 +8702,7 @@
         },
         {
           "kind": "ambush",
-          "name": "Mochileiro Caio",
+          "name": "Contrabandista",
           "stage": 3,
           "leagueIndex": null,
           "turns": 2,
@@ -9700,7 +9748,7 @@
         },
         {
           "kind": "ambush",
-          "name": "Treinadora Lia",
+          "name": "Contrabandista",
           "stage": 5,
           "leagueIndex": null,
           "turns": 3,
@@ -10229,7 +10277,7 @@
         },
         {
           "kind": "ambush",
-          "name": "Treinadora Lia",
+          "name": "Contrabandista",
           "stage": 4,
           "leagueIndex": null,
           "turns": 4,
@@ -12477,7 +12525,7 @@
         },
         {
           "kind": "ambush",
-          "name": "Treinadora Bia",
+          "name": "Contrabandista",
           "stage": 3,
           "leagueIndex": null,
           "turns": 2,

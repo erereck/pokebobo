@@ -167,6 +167,7 @@ test("roubo abre batalha real e só entrega Eevee na vitória, uma vez na run", 
   s.run.badges = 2;
   s = event(s, "trainer-theft", "steal");
   assert.equal(s.run.phase, "battle");
+  assert.equal(s.run.battle.name, "Contrabandista");
   assert.equal(s.run.eventFlags["theft-used"], true);
   assert.ok(!s.run.encounters.some((entry) => entry.theft));
   s.run.outcome = {

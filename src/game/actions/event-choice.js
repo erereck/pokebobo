@@ -18,6 +18,7 @@ export function handleEventChoice(s, action, state) {
 
   if (resolved.battle) {
     queueEventBattleReward(r, resolved.battle.reward);
+    r.pendingEventBattleName = resolved.battle.name || null;
     beginBattle(r, "ambush");
     return s;
   }

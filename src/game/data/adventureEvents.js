@@ -142,8 +142,9 @@ export const ADVENTURE_EVENTS = [
         hint: "Batalha real · vitória libera captura garantida por 1 bola · um roubo por run.",
         requires: { balls: 1 },
         effect: { setFlags: ["theft-used"] },
-        battle: {
-          reward: { specialEncounter: { name: "Eevee", theft: true } },
+          battle: {
+            name: "Contrabandista",
+            reward: { specialEncounter: { name: "Eevee", theft: true } },
         },
         result: "Você enfrenta o contrabandista. Eevee observa a batalha.",
       },
