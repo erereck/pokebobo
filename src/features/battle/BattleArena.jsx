@@ -22,7 +22,7 @@ export function BattleArena({ r, snap, current, effect }) {
   return (
     <div className="arena">
       <div className="arena-scenery">
-        <RouteCover place={city(r)} />
+        <RouteCover place={r.inLeague ? { id: "indigo" } : city(r)} />
       </div>
       <div className={"combatant enemy" + effectClass(effect, "enemy")}>
         <Health mon={snap.foe} />

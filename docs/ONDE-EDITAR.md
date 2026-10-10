@@ -1,5 +1,13 @@
 # Onde editar
 
+## Imagens de cidades — 0.13.0
+
+- Lugar/edição/procedência: `src/game/data/cityCovers.json`; confirmar fonte, revisão, dimensões e hashes antes de adicionar.
+- Seleção estrita por id: `src/game/data/routeCovers.js`; não usar imagem de outro lugar como fallback.
+- Renderização/enquadramento: `src/components/scenery/RouteCover.jsx`, `styles/foundations/base.css` e campo `position` do manifesto. Preservar `BASE_URL` para Pages e `loading="lazy"` para a galeria.
+- Arquivos/importação: `public/covers/`, `scripts/import-city-covers.py` e `public/covers/README.md`; testes em `tests/city-covers.test.js`.
+- Galeria/créditos: `src/features/settings/CoverCredits.jsx` e `styles/components/dialogs.css`.
+
 ## Ajustes de exploração/captura — 0.12.0
 
 - Limite de passos: `src/game/config/exploration.js` (`maxRouteSteps`) e `game/world/exploration.js`; regressões em `tests/exploration-retries.test.js`.
@@ -26,20 +34,20 @@ Todos os caminhos abaixo são relativos à raiz do projeto. Comece pelo arquivo 
 | Evolução e golpes                | `src/game/pokemon/`                         | `scripts/catalog.mjs`, testes de Pokémon                                      |
 | Inteligência do adversário       | `src/game/battle/ai.js`                     | `aiObservation.js`, `aiScoring.js`, `submitAiChoice.js` e testes de IA        |
 | Texto do combate                 | `src/game/battle/translateLog.js`           | `features/battle/BattleScreen.jsx`                                            |
-| Layout da batalha                | `src/features/battle/`                      | `styles/features/battle.css` e `styles/responsive/pokedex/`                      |
-| Tela principal da cidade         | `src/features/career/`                      | `styles/features/career.css`                              |
-| Paisagem/capa atual              | `src/components/scenery/RouteCover.jsx`     | `game/data/routeCovers.js`, `public/covers/` e fallback `Landscape.jsx`       |
+| Layout da batalha                | `src/features/battle/`                      | `styles/features/battle.css` e `styles/responsive/pokedex/`                   |
+| Tela principal da cidade         | `src/features/career/`                      | `styles/features/career.css`                                                  |
+| Paisagem/capa atual              | `src/components/scenery/RouteCover.jsx`     | `game/data/cityCovers.json`, `routeCovers.js` e `public/covers/`              |
 | Sprites                          | `src/components/pokemon/Sprite.jsx`         | `public/sprites/`, catálogo e build web                                       |
 | Equipe, mapa e diário            | `src/features/team/`, `region/`, `journal/` | Seus arquivos em `src/styles/features/`                                       |
-| Carcaça, HUD e navegação | `src/components/layout/` | `styles/components/dex-shell.css` |
-| Mochila | `src/features/inventory/BagScreen.jsx` | `styles/features/secondary.css`, regras de itens |
-| Ficha de Pokémon | `src/features/team/PokemonDetails.jsx` | `TeamScreen.jsx`, `styles/features/team.css` |
-| Percurso do mapa | `src/features/region/RegionMap.jsx` | `RegionScreen.jsx`, `mobile-map.css` |
-| Atalhos de batalha | `src/features/battle/useBattleKeys.js` | Botões de golpes e janelas abertas |
+| Carcaça, HUD e navegação         | `src/components/layout/`                    | `styles/components/dex-shell.css`                                             |
+| Mochila                          | `src/features/inventory/BagScreen.jsx`      | `styles/features/secondary.css`, regras de itens                              |
+| Ficha de Pokémon                 | `src/features/team/PokemonDetails.jsx`      | `TeamScreen.jsx`, `styles/features/team.css`                                  |
+| Percurso do mapa                 | `src/features/region/RegionMap.jsx`         | `RegionScreen.jsx`, `mobile-map.css`                                          |
+| Atalhos de batalha               | `src/features/battle/useBattleKeys.js`      | Botões de golpes e janelas abertas                                            |
 | Ajuda e opções                   | `src/features/settings/`                    | Textos das regras e exportação do save                                        |
 | Save atual e reset               | `src/game/persistence/`                     | `state/initialState.js`, `app/hooks/useAutosave.js` e testes de persistência  |
 | Cores, tipografia e espaços base | `src/styles/foundations/`                   | Contraste e telas estreitas                                                   |
-| Um problema só no celular        | `src/styles/responsive/pokedex/`             | `mobile-height.css`, `mobile-narrow.css` e o arquivo da tela             |
+| Um problema só no celular        | `src/styles/responsive/pokedex/`            | `mobile-height.css`, `mobile-narrow.css` e o arquivo da tela                  |
 | Build web e verificação          | `vite.config.js`, `package.json`            | `public/`, `npm run verify` e `npm run preview`                               |
 
 Desde 15/09/2026, não atualizar nem enviar o HTML standalone. O gerador legado em `scripts/standalone.mjs` está fora do fluxo oficial. Código, assets, licenças, testes e documentos ficam em https://github.com/erereck/pokebobo; dependências instaladas e build gerado ficam ignorados.
@@ -54,7 +62,6 @@ Ganhos no teto: `game/selectors/levelGain.js`. Vitória sem sobreviventes em Nuz
 
 D02: fonte e calendário em `scripts/catalog/learnsetPolicy.mjs`; política em `game/config/moves.js`; seleção dos quatro golpes em `game/pokemon/moves.js`. Depois de editar, regenere com `node scripts/catalog.mjs`, audite com `node scripts/audit-moves.mjs` e confira `tests/move-policy.test.js`. Critérios e limites em [REGRAS-DE-GOLPES.md](REGRAS-DE-GOLPES.md).
 
-
 ## Rotas Vivas — 0.9.0
 
 - Caminhada/lago: game/world/exploration.js, config/exploration.js e actions/exploration.js; tela em features/encounters/ExplorationScreen.jsx.
@@ -63,7 +70,7 @@ D02: fonte e calendário em `scripts/catalog/learnsetPolicy.mjs`; política em `
 - Missões: data/adventureEvents.js; efeitos e condições em career/weekEvents.js.
 - Sprite da batalha: altura gerada por scripts/catalog.mjs e escala comprimida em BattleArena.jsx.
 - Assets FRLG: scripts/import-field-assets.py, public/field/ e licenses/FRLG-ASSETS.md.
-- Medições: docs/balance/adventure-*.json; simulador caminha por explorePolicy.mjs e resolve escolhas antes dos combates.
+- Medições: docs/balance/adventure-\*.json; simulador caminha por explorePolicy.mjs e resolve escolhas antes dos combates.
 
 ## Passos de Kanto — 0.10.0
 
@@ -72,7 +79,7 @@ D02: fonte e calendário em `scripts/catalog/learnsetPolicy.mjs`; política em `
 - Quadros, trajetória e timings: features/encounters/captureTimeline.js; render: CaptureCanvas.jsx e FieldCanvas.jsx; RAF/assets/fonte nos helpers vizinhos.
 - Layout e menu: styles/features/capture.css e adventure.css.
 - Assets: scripts/import-capture-assets.py, public/field/, public/sprites/frlg/ e licenses/FRLG-ASSETS.md.
-- Regressões: tests/field-capture.test.js; browser e campanhas em docs/balance/*0.10.0*.json.
+- Regressões: tests/field-capture.test.js; browser e campanhas em docs/balance/_0.10.0_.json.
 
 ## Ritmo de Kanto — 0.11.0
 
@@ -82,4 +89,4 @@ D02: fonte e calendário em `scripts/catalog/learnsetPolicy.mjs`; política em `
 - Entrada: encounterTransition.js, CaptureCanvas.jsx. Fonte/layout: pixelText.js, font-metrics.json e import-capture-assets.py.
 - Enquadramento: PixelViewport.jsx e styles/responsive/pokedex/pixel-screens.css.
 - Ficha/reserva: TeamScreen.jsx, PokemonDetails.jsx e ReservePanel.jsx; altura de equipe/mochila/mapa/jornada horizontal em panel-fit.css.
-- Regressões visuais puras: tests/pixel-presentation.test.js; navegador em docs/balance/browser-*-0.11.0.json.
+- Regressões visuais puras: tests/pixel-presentation.test.js; navegador em docs/balance/browser-\*-0.11.0.json.

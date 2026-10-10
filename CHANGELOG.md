@@ -1,5 +1,13 @@
 # Histórico
 
+## 0.13.0 — Mapas da jornada · 10/10/2026
+
+- Imagens próprias para todas as 48 cidades selecionáveis no draft: sete origens, quatro passagens e 37 ginásios. Indigo Plateau completa as 49 imagens locais.
+- Seleção por id do lugar; cidade de partida, jornada e arena usam a imagem correspondente. A Liga usa Indigo Plateau. Removidos os seis mapas genéricos de Emerald e a paisagem SVG fictícia; falha de carregamento não mostra um lugar diferente.
+- Originais dos jogos preservados em WebP sem perdas, com dimensões e hashes conferidos. Mapas pixelados mantêm pixels; arte de Alola/Galar usa interpolação. Carregamento sob demanda e caminho compatível com GitHub Pages.
+- Galeria de créditos com filtro de região, nome do lugar, edição, fonte e responsável pelo upload. Manifesto e importador reproduzível documentam todos os arquivos.
+- 107 testes, build web e conferência das 48 cidades em três visores; escolhas reais até a jornada, créditos, Liga, turnos de batalha e recuperação de imagem ausente. Sem alteração de regras ou saves.
+
 ## 0.12.0 — Mais uma Poké Bola · 10/10/2026
 
 - Oportunidades ocultas; retorno automático ao completar 50 passos válidos. Movimento bloqueado, parado ou fora do mapa não conta; recarga termina o mesmo passo.
@@ -45,15 +53,12 @@
 - 87 testes, build/auditoria, inspeção no navegador e 280 campanhas reais finais; referência de 120 campanhas antigas.
 - Correção de source-map-js sem troca de major. Código-fonte e build web; sem standalone.
 
-
-
 ## 0.8.1 — Ordem do desmaio · 20/09/2026
 
 - Dano fatal pode zerar o HP, mas não esconde mais o sprite antes do evento de desmaio.
 - O estado visual de nocaute agora só é aplicado quando o protocolo envia `faint`.
 - A sequência fica: dano → animação de desmaio → desaparecimento → próxima entrada.
 - Adicionado teste de regressão para impedir o bug “sumir antes e depois animar”.
-
 
 ## 0.8.0 — Ataques do Seu Jeito · 19/09/2026
 
@@ -63,13 +68,11 @@
 - A preferência fica salva no slot e volta pré-selecionada nas próximas runs.
 - Saves antigos migram para Manual para não mudar comportamento sem autorização.
 
-
 ## 0.7.1 — Aprendizado direto · 19/09/2026
 
 - Golpes aprendidos por nível entram automaticamente quando o Pokémon tem menos de quatro golpes.
 - A tela de decisão só aparece quando os quatro slots já estão ocupados.
 - Saves antigos parados numa decisão com vaga livre aprendem o golpe automaticamente sem exibir a janela.
-
 
 ## 0.7.0 — Conexão Direta · 19/09/2026
 
@@ -85,7 +88,6 @@
 - Escolha de golpes por nível, reserva de três Pokémon e reordenação da Equipe Conectada por arrastar.
 - Reserva acompanha ganhos de nível e capturas usam vagas livres antes de exigir liberação.
 - 66/66 testes, build e auditoria aprovados.
-
 
 ## 0.5.0 — Legado · 18/09/2026
 
@@ -111,7 +113,6 @@
 - Schema do save permanece 3; saves atuais são aceitos e completam o estado de eventos sob demanda.
 - Nova suíte de testes cobre catálogo, determinismo, escolhas, batalha, bônus e ações extras.
 
-
 ## C03 — sequência visual do turno · 18/09/2026
 
 - A escolha de batalha é pré-simulada com o mesmo replay determinístico e só é confirmada depois da apresentação visual.
@@ -120,7 +121,6 @@
 - Velocidade 1×/2× persistida como preferência local; redução de movimento respeitada.
 - Registro e animação compartilham o mesmo parser de eventos do protocolo Showdown.
 - npm run verify: 151 módulos válidos, 47 testes passando e build Vite concluído. Regras e schema do save permanecem iguais.
-
 
 ## Repositório GitHub e fluxo web · 15/09/2026
 

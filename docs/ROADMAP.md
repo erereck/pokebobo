@@ -1,5 +1,17 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 10/10/2026 — 0.13.0: Mapas da jornada
+
+**Pedido:** completar as imagens faltantes durante a criação da região e tirar placeholders que mostram lugares errados. Continuação com integração direta já autorizada.
+
+**Causa e solução:** a seleção anterior tinha uma capa específica de Littleroot e reaproveitava outras cinco folhas de Emerald por bioma; Pallet podia aparecer como Safari Zone e cidades costeiras como Abandoned Ship. O manifesto agora contém uma imagem por id para todas as 48 cidades disponíveis, mais Indigo Plateau. Não há fallback por bioma nem paisagem SVG fictícia. Se uma imagem falhar ou um save trouxer um id desconhecido, nome e escolhas continuam disponíveis sem mostrar uma cidade substituta.
+
+**Arte e interface:** 49 imagens originais dos Bulbagarden Archives, locais e convertidas sem perdas, preservando resolução/pixels. Kanto FRLG, Johto HGSS, Hoenn Emerald, Sinnoh Platinum/mapa compartilhado DPPt, Unova Black/White, Hau'oli USUM e Galar Sword/Shield, com edição registrada. Enquadramento por CSS; arte de Alola/Galar não recebe pixelização artificial. Partida, jornada e arena seguem o lugar escolhido; a Liga tem sua imagem própria. Créditos mostram lugar, edição e responsável pelo upload, com filtro por região. Originais, revisões, dimensões e hashes constam no manifesto/importador; conjunto de 6,03 MiB carregado sob demanda.
+
+**Evidência:** 107 testes, arquitetura e build de publicação. 80 registros locais: todas as cidades em três tamanhos, três drafts completos, galeria, Liga, batalha real e 404 controlado sem placeholder. Preview de Pages conferido no PC/celular com os 49 arquivos decodificados. Importador reproduziu bytes e pixels de todas as imagens. Relatórios e limites em VALIDACAO.md; relatórios anteriores preservados abaixo.
+
+**Limites:** os mapas de Galar mantêm inscrições japonesas, e Hau'oli usa arte oficial do lugar, identificada como USUM. O enquadramento das capas recorta a folha visualmente; arquivos completos permanecem preservados. Uma revisão em aparelho físico continua útil. Sem alterações em progressão, captura, seed ou formato do save.
+
 ## Entrega de 10/10/2026 — 0.12.0: Mais uma Poké Bola
 
 **Pedido:** ocultar oportunidades e limitar a rota a 50 passos; acelerar entrada/finalização; retirar nome, anúncio e probabilidade duplicados; reduzir o nível na caixa de HP; permitir novos lançamentos com 67% de chance base; estabilizar Voltar enquanto os controles ficam pressionados; suavizar as margens de terra/água. Continuação do refinamento com merge direto já autorizado.
@@ -72,7 +84,7 @@
 
 **Batalha e celular:** escala visual comprimida pela altura da espécie; pequenos permanecem legíveis e gigantes cabem na arena. A altura vem do Showdown no catálogo gerado. Janela de evolução com lista rolável e decisões visíveis em 320×568; mapa, controles e saída cabem no visor pequeno. Cabeçalho com quatro ferramentas sem cortar botões. Os novos assets têm importador, origem congelada e créditos em licenses/FRLG-ASSETS.md.
 
-**Balanceamento medido:** 280 campanhas reais na versão final (120 Clássico, 80 Correria, 80 Nuzlocke), quatro políticas e seed 20261009; zero campanhas truncadas. Mais 120 campanhas da 0.8.1 para referência. A política equilibrada teve 9/30 títulos no Clássico e 2/20 na Correria. Nuzlocke permanece exigente: 2/20 títulos na política de treino; as demais não ganharam nesta amostra. São políticas automáticas, não probabilidades de pessoas. Métodos e JSONs estão em docs/balance/adventure-*.json. Ordem de RNG mudou com conteúdo novo, portanto a comparação é exploratória, sem atribuição causal por seed.
+**Balanceamento medido:** 280 campanhas reais na versão final (120 Clássico, 80 Correria, 80 Nuzlocke), quatro políticas e seed 20261009; zero campanhas truncadas. Mais 120 campanhas da 0.8.1 para referência. A política equilibrada teve 9/30 títulos no Clássico e 2/20 na Correria. Nuzlocke permanece exigente: 2/20 títulos na política de treino; as demais não ganharam nesta amostra. São políticas automáticas, não probabilidades de pessoas. Métodos e JSONs estão em docs/balance/adventure-\*.json. Ordem de RNG mudou com conteúdo novo, portanto a comparação é exploratória, sem atribuição causal por seed.
 
 **Ajuste adotado:** a primeira medição da Correria teve zero títulos em 80 campanhas. Treinos nesse modo recebem +1 nível: média de +3 por treino em duas semanas, alinhando o orçamento de treino puro aos +2 médios em três semanas do Clássico. Regras de líder/+6 e punição Nuzlocke foram preservadas. O simulador passou a caminhar, resolver ramificações, respeitar falta de bolas e usar vagas disponíveis da reserva; ações sem progresso geram diagnóstico em vez de loops silenciosos.
 
@@ -83,8 +95,6 @@
 **Próximas sugestões:** testar as escolhas de evolução em jornadas humanas; observar dificuldade Nuzlocke e diversidade de times antes de mexer em níveis de líderes; ampliar as pistas secretas somente com novas medições de economia.
 
 ---
-
-
 
 ## Entrega de 18/09/2026 — 0.5.0: Legado
 
@@ -120,7 +130,6 @@
 
 **Próximos candidatos:** teste físico mobile continua importante. Depois dele, Hall da Fama visual e escolha simples de golpe permanecem fortes; antes de mexer em níveis de líderes, medir o impacto dos novos eventos sobre progressão e estoque.
 
-
 ## Entrega de 18/09/2026 — C03: turno em sequência
 
 **Pedido:** concluir e mergear o C03, que estava parcialmente resolvido desde a 0.2.0/0.3.0.
@@ -136,7 +145,6 @@
 **Limites desta entrega:** a validação automatizada cobre motor, parser e build, mas não substitui uma run em aparelho físico. A animação usa o estado exato disponível no protocolo; efeitos cosméticos que não geram evento específico continuam representados pelo texto do registro. O teste físico mobile segue pendente.
 
 **Próximas sugestões:** Q03 em celular físico passa a ser a prioridade imediata. Depois, R04 (Hall da Fama visual) e C09 (escolha simples de golpe) continuam sendo os refinamentos de maior impacto sem inflar o escopo.
-
 
 ## Entrega de 15/09/2026 — repositório e fluxo web
 
@@ -174,14 +182,14 @@ A interface anterior organizava o jogo como uma página: cabeçalho, colunas de 
 
 ## Estado dos itens
 
-| Item | Estado após a 0.3.0 |
-| --- | --- |
-| UI da Pokédex | Implementada em todas as telas existentes. |
-| Q05 — decisões juntas | Ampliado para jornada, equipe, mochila, mapa, captura e resultados; quatro golpes juntos mantidos. Verificado em viewports de navegador. |
-| Q03 — mobile | Layout vertical e batalha horizontal implementados; teste em aparelhos físicos ainda pendente. |
-| D02 — golpes por linhagem | Continua resolvido para seleção automática; regra e auditoria preservadas. |
-| C03 — apresentação do combate | Nova arena, entrada de sprite e registro compacto; sequência animada completa ainda pendente. |
-| Q08 — assets | Fontes, sprites e seis capas locais preservados; Silkscreen acrescentada com licença. |
+| Item                          | Estado após a 0.3.0                                                                                                                      |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| UI da Pokédex                 | Implementada em todas as telas existentes.                                                                                               |
+| Q05 — decisões juntas         | Ampliado para jornada, equipe, mochila, mapa, captura e resultados; quatro golpes juntos mantidos. Verificado em viewports de navegador. |
+| Q03 — mobile                  | Layout vertical e batalha horizontal implementados; teste em aparelhos físicos ainda pendente.                                           |
+| D02 — golpes por linhagem     | Continua resolvido para seleção automática; regra e auditoria preservadas.                                                               |
+| C03 — apresentação do combate | Nova arena, entrada de sprite e registro compacto; sequência animada completa ainda pendente.                                            |
+| Q08 — assets                  | Fontes, sprites e seis capas locais preservados; Silkscreen acrescentada com licença.                                                    |
 
 ## Minhas próximas sugestões
 
@@ -237,7 +245,7 @@ Ganhos reais e bloqueio de treino no teto, encerramento Nuzlocke sem sobrevivent
 | D09  | Nível selvagem acompanha o desafio original; evoluções simples aparecem após três insígnias. | Medir utilidade das substituições tardias e ajustar o atraso diante de times muito treinados. |
 | C03  | Mensagens recentes compactas e registro completo separado.                                   | Sequência animada de dano, status, queda e troca.                                             |
 | C05  | Inicialização compartilhada e simulação incremental para Monte Carlo.                        | Medir replay longo em aparelhos físicos; UI ainda reconstrói combate a cada decisão.          |
-| R04  | Hall da Fama visual concluído na 0.5.0, incluindo campeões e jornadas sem título.             | Futuro: compartilhamento/exportação visual de uma entrada específica.                          |
+| R04  | Hall da Fama visual concluído na 0.5.0, incluindo campeões e jornadas sem título.            | Futuro: compartilhamento/exportação visual de uma entrada específica.                         |
 | R06  | Seed da run visível em Opções e presente nos dados de simulação.                             | Compartilhar resumo visual e iniciar run a partir de seed na UI.                              |
 | Q08  | Capas locais entram no bundler; inspeção offline e catálogo de sprites.                      | Automatizar também o teste de rede e dos recortes visuais.                                    |
 

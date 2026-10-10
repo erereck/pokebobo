@@ -1,30 +1,25 @@
 import { useState } from "react";
-import { Landscape } from "./Landscape.jsx";
 import { coverFor } from "../../game/data/routeCovers.js";
 
-export function RouteCover({ place, cover: override }) {
+export function RouteCover({ place, cover: override, loading = "lazy" }) {
   const cover = override || coverFor(place),
     [failed, setFailed] = useState(null);
-  if (!cover || failed === cover.file)
-    return <Landscape biome={place?.biome || "meadow"} />;
-  const href = window.POKEBOBO_COVERS?.[cover.file] || `./covers/${cover.file}`;
+  if (!cover || failed === cover.file) return null;
+  const src = `${import.meta.env.BASE_URL}covers/${cover.file}`;
   return (
-    <svg
-      className="landscape route-cover"
-      viewBox={cover.crop.join(" ")}
-      preserveAspectRatio="xMidYMid slice"
-      role="img"
-      aria-label={`Paisagem de referência: ${cover.name}, Pokémon Emerald`}
-    >
-      <title>
-        {cover.name} · extração: {cover.credit} · paisagem de referência
-      </title>
-      <image
-        href={href}
-        width={cover.width}
-        height={cover.height}
-        onError={() => setFailed(cover.file)}
-      />
-    </svg>
+    <img
+      key={cover.file}
+      className={`landscape route-cover${cover.pixelArt ? "" : " route-cover-smooth"}`}
+      src={src}
+      width={cover.width}
+      height={cover.height}
+      style={{ objectPosition: cover.position || "50% 50%" }}
+      alt={`${cover.name} · ${cover.game}`}
+      title={`${cover.name} · ${cover.game}`}
+      loading={loading}
+      decoding="async"
+      draggable={false}
+      onError={() => setFailed(cover.file)}
+    />
   );
 }

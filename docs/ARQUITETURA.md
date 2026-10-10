@@ -1,4 +1,10 @@
-# Arquitetura do Pokébobo 0.3.0
+# Arquitetura do Pokébobo
+
+## Capas de cidades — 0.13.0
+
+O projeto atual tem 194 módulos JS/JSX. `game/data/cityCovers.json` é o manifesto das 48 cidades do draft e Indigo Plateau; `routeCovers.js` resolve somente ids próprios, sem fallback por bioma. `RouteCover.jsx` renderiza imagem nativa com dimensões, texto alternativo, carregamento sob demanda e `import.meta.env.BASE_URL`. Se o arquivo falha, apenas a imagem some; nenhuma escolha ou regra depende dela. `Landscape.jsx` foi removido.
+
+Draft, partida, jornada e arena compartilham a imagem do lugar. A Liga resolve explicitamente `indigo`, e a abertura usa `pallet`. `CoverCredits.jsx` filtra a galeria por região. Mapas pixelados e arte contínua têm renderização distinta; `object-position` ajusta somente o enquadramento. Os 49 WebP locais preservam todos os pixels dos originais. O importador e os hashes ficam separados do build/motor; nenhuma lógica de save, RNG ou batalha foi alterada.
 
 ## Campo e captura — 0.12.0
 
@@ -27,28 +33,28 @@ flowchart LR
 
 ## Pastas
 
-| Caminho                 | Conteúdo e regra de organização                                                                                                  |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `src/app/`              | Composição, sessão, limite de erro e versão visível                                                                              |
-| `src/components/`       | Elementos compartilhados: marca, ícones, estrutura, sprites, paisagens, modal e etiquetas                                        |
+| Caminho                 | Conteúdo e regra de organização                                                                                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/app/`              | Composição, sessão, limite de erro e versão visível                                                                                          |
+| `src/components/`       | Elementos compartilhados: marca, ícones, estrutura, sprites, paisagens, modal e etiquetas                                                    |
 | `src/features/`         | Uma pasta por parte do jogo: onboarding, draft, carreira, equipe, região, diário, inventário, encontro, batalha, Liga, encerramento e opções |
-| `src/game/state/`       | Estado inicial e tabela que encaminha cada ação ao seu handler                                                                   |
-| `src/game/actions/`     | Um arquivo por comando do jogador, como TRAIN, CAPTURE e BATTLE_CHOICE                                                           |
-| `src/game/career/`      | Semanas, treino, diário e fim de carreira                                                                                        |
-| `src/game/world/`       | Construção do caminho, chegada e avanço entre cidades                                                                            |
-| `src/game/pokemon/`     | Criação, evolução, golpes e conversão para sets do Showdown                                                                      |
-| `src/game/battle/`      | Criação, reconstrução, IA, snapshot, resultado e tradução de eventos                                                             |
-| `src/game/config/`      | Números de progressão, duração de campanha, encontros e itens                                                                    |
-| `src/game/data/`        | Origens, vilas, biomas, tipos; ginásios por região; encontros por bioma; elencos da Liga                                         |
-| `src/game/random/`      | Sorteios reproduzíveis; toda aleatoriedade de gameplay deve passar aqui                                                          |
-| `src/game/selectors/`   | Consultas derivadas: cidade, limite semanal e nível do desafio                                                                   |
-| `src/game/persistence/` | Chave de save, leitura e gravação                                                                                                |
-| `src/shared/`           | Utilitários pequenos de interface e download                                                                                     |
-| `src/styles/`           | Estilos fundamentais, compartilhados, por feature e por breakpoint                                                               |
-| `public/`               | Sprites, fontes e mapas de referência locais                                                                                     |
-| `scripts/`              | Catálogo, HTML portátil, auditoria de níveis, Monte Carlo e verificação de dependências                                          |
-| `tests/`                | Testes por domínio, helpers de campanha e fixtures de regressão                                                                  |
-| `docs/`                 | Arquitetura, roteiro de edição, backlog, pesquisa visual e diagnóstico                                                           |
+| `src/game/state/`       | Estado inicial e tabela que encaminha cada ação ao seu handler                                                                               |
+| `src/game/actions/`     | Um arquivo por comando do jogador, como TRAIN, CAPTURE e BATTLE_CHOICE                                                                       |
+| `src/game/career/`      | Semanas, treino, diário e fim de carreira                                                                                                    |
+| `src/game/world/`       | Construção do caminho, chegada e avanço entre cidades                                                                                        |
+| `src/game/pokemon/`     | Criação, evolução, golpes e conversão para sets do Showdown                                                                                  |
+| `src/game/battle/`      | Criação, reconstrução, IA, snapshot, resultado e tradução de eventos                                                                         |
+| `src/game/config/`      | Números de progressão, duração de campanha, encontros e itens                                                                                |
+| `src/game/data/`        | Origens, vilas, biomas, tipos; ginásios por região; encontros por bioma; elencos da Liga                                                     |
+| `src/game/random/`      | Sorteios reproduzíveis; toda aleatoriedade de gameplay deve passar aqui                                                                      |
+| `src/game/selectors/`   | Consultas derivadas: cidade, limite semanal e nível do desafio                                                                               |
+| `src/game/persistence/` | Chave de save, leitura e gravação                                                                                                            |
+| `src/shared/`           | Utilitários pequenos de interface e download                                                                                                 |
+| `src/styles/`           | Estilos fundamentais, compartilhados, por feature e por breakpoint                                                                           |
+| `public/`               | Sprites, fontes e mapas de referência locais                                                                                                 |
+| `scripts/`              | Catálogo, HTML portátil, auditoria de níveis, Monte Carlo e verificação de dependências                                                      |
+| `tests/`                | Testes por domínio, helpers de campanha e fixtures de regressão                                                                              |
+| `docs/`                 | Arquitetura, roteiro de edição, backlog, pesquisa visual e diagnóstico                                                                       |
 
 Os arquivos `game/engine.js`, `data.js`, `pokemon.js` e `battle.js` são fachadas pequenas: reexportam as APIs anteriores para manter imports externos e scripts compatíveis. A implementação existe nas subpastas, sem cópias paralelas.
 

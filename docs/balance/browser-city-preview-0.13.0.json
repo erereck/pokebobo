@@ -1,0 +1,622 @@
+{
+  "reports": [
+    {
+      "name": "draft-preview-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "cidade-preview-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Explorar rotaCaminhar e capturar1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": true
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 846,
+          "height": 55.25,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "draft-preview-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "cidade-preview-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Explorar rotaCaminhar e capturar1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 334,
+          "height": 53.5,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    }
+  ],
+  "flows": [
+    {
+      "width": 1280,
+      "origin": "pallet",
+      "version": "0.13.0",
+      "decoded": [
+        {
+          "id": "pallet",
+          "width": 384,
+          "height": 320
+        },
+        {
+          "id": "newbark",
+          "width": 493,
+          "height": 397
+        },
+        {
+          "id": "littleroot",
+          "width": 320,
+          "height": 320
+        },
+        {
+          "id": "twinleaf",
+          "width": 496,
+          "height": 377
+        },
+        {
+          "id": "nuvema",
+          "width": 512,
+          "height": 576
+        },
+        {
+          "id": "hauoli",
+          "width": 1280,
+          "height": 975
+        },
+        {
+          "id": "postwick",
+          "width": 1182,
+          "height": 659
+        },
+        {
+          "id": "sandgem",
+          "width": 496,
+          "height": 402
+        },
+        {
+          "id": "cherrygrove",
+          "width": 1034,
+          "height": 370
+        },
+        {
+          "id": "oldale",
+          "width": 320,
+          "height": 320
+        },
+        {
+          "id": "accumula",
+          "width": 700,
+          "height": 620
+        },
+        {
+          "id": "pewter",
+          "width": 768,
+          "height": 640
+        },
+        {
+          "id": "cerulean",
+          "width": 768,
+          "height": 640
+        },
+        {
+          "id": "vermilion",
+          "width": 768,
+          "height": 640
+        },
+        {
+          "id": "celadon",
+          "width": 960,
+          "height": 640
+        },
+        {
+          "id": "fuchsia",
+          "width": 768,
+          "height": 640
+        },
+        {
+          "id": "saffron",
+          "width": 1056,
+          "height": 880
+        },
+        {
+          "id": "cinnabar",
+          "width": 384,
+          "height": 320
+        },
+        {
+          "id": "viridian",
+          "width": 768,
+          "height": 640
+        },
+        {
+          "id": "violet",
+          "width": 1024,
+          "height": 1152
+        },
+        {
+          "id": "azalea",
+          "width": 932,
+          "height": 508
+        },
+        {
+          "id": "goldenrod",
+          "width": 1330,
+          "height": 885
+        },
+        {
+          "id": "ecruteak",
+          "width": 1032,
+          "height": 785
+        },
+        {
+          "id": "cianwood",
+          "width": 550,
+          "height": 671
+        },
+        {
+          "id": "olivine",
+          "width": 1035,
+          "height": 858
+        },
+        {
+          "id": "mahogany",
+          "width": 567,
+          "height": 412
+        },
+        {
+          "id": "blackthorn",
+          "width": 887,
+          "height": 792
+        },
+        {
+          "id": "rustboro",
+          "width": 640,
+          "height": 960
+        },
+        {
+          "id": "dewford",
+          "width": 320,
+          "height": 320
+        },
+        {
+          "id": "mauville",
+          "width": 640,
+          "height": 320
+        },
+        {
+          "id": "lavaridge",
+          "width": 320,
+          "height": 320
+        },
+        {
+          "id": "petalburg",
+          "width": 480,
+          "height": 480
+        },
+        {
+          "id": "fortree",
+          "width": 640,
+          "height": 320
+        },
+        {
+          "id": "mossdeep",
+          "width": 1280,
+          "height": 640
+        },
+        {
+          "id": "sootopolis",
+          "width": 960,
+          "height": 960
+        },
+        {
+          "id": "oreburgh",
+          "width": 1024,
+          "height": 832
+        },
+        {
+          "id": "eterna",
+          "width": 1024,
+          "height": 828
+        },
+        {
+          "id": "hearthome",
+          "width": 1031,
+          "height": 788
+        },
+        {
+          "id": "veilstone",
+          "width": 1024,
+          "height": 840
+        },
+        {
+          "id": "pastoria",
+          "width": 1024,
+          "height": 840
+        },
+        {
+          "id": "canalave",
+          "width": 496,
+          "height": 775
+        },
+        {
+          "id": "snowpoint",
+          "width": 512,
+          "height": 864
+        },
+        {
+          "id": "sunyshore",
+          "width": 1024,
+          "height": 828
+        },
+        {
+          "id": "nimbasa",
+          "width": 1760,
+          "height": 880
+        },
+        {
+          "id": "driftveil",
+          "width": 1504,
+          "height": 820
+        },
+        {
+          "id": "mistralton",
+          "width": 1024,
+          "height": 1230
+        },
+        {
+          "id": "turffield",
+          "width": 1145,
+          "height": 597
+        },
+        {
+          "id": "hulbury",
+          "width": 1712,
+          "height": 1351
+        },
+        {
+          "id": "indigo",
+          "width": 384,
+          "height": 320
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "origin": "pallet",
+      "version": "0.13.0",
+      "decoded": [
+        {
+          "id": "pallet",
+          "width": 384,
+          "height": 320
+        },
+        {
+          "id": "newbark",
+          "width": 493,
+          "height": 397
+        },
+        {
+          "id": "littleroot",
+          "width": 320,
+          "height": 320
+        },
+        {
+          "id": "twinleaf",
+          "width": 496,
+          "height": 377
+        },
+        {
+          "id": "nuvema",
+          "width": 512,
+          "height": 576
+        },
+        {
+          "id": "hauoli",
+          "width": 1280,
+          "height": 975
+        },
+        {
+          "id": "postwick",
+          "width": 1182,
+          "height": 659
+        },
+        {
+          "id": "sandgem",
+          "width": 496,
+          "height": 402
+        },
+        {
+          "id": "cherrygrove",
+          "width": 1034,
+          "height": 370
+        },
+        {
+          "id": "oldale",
+          "width": 320,
+          "height": 320
+        },
+        {
+          "id": "accumula",
+          "width": 700,
+          "height": 620
+        },
+        {
+          "id": "pewter",
+          "width": 768,
+          "height": 640
+        },
+        {
+          "id": "cerulean",
+          "width": 768,
+          "height": 640
+        },
+        {
+          "id": "vermilion",
+          "width": 768,
+          "height": 640
+        },
+        {
+          "id": "celadon",
+          "width": 960,
+          "height": 640
+        },
+        {
+          "id": "fuchsia",
+          "width": 768,
+          "height": 640
+        },
+        {
+          "id": "saffron",
+          "width": 1056,
+          "height": 880
+        },
+        {
+          "id": "cinnabar",
+          "width": 384,
+          "height": 320
+        },
+        {
+          "id": "viridian",
+          "width": 768,
+          "height": 640
+        },
+        {
+          "id": "violet",
+          "width": 1024,
+          "height": 1152
+        },
+        {
+          "id": "azalea",
+          "width": 932,
+          "height": 508
+        },
+        {
+          "id": "goldenrod",
+          "width": 1330,
+          "height": 885
+        },
+        {
+          "id": "ecruteak",
+          "width": 1032,
+          "height": 785
+        },
+        {
+          "id": "cianwood",
+          "width": 550,
+          "height": 671
+        },
+        {
+          "id": "olivine",
+          "width": 1035,
+          "height": 858
+        },
+        {
+          "id": "mahogany",
+          "width": 567,
+          "height": 412
+        },
+        {
+          "id": "blackthorn",
+          "width": 887,
+          "height": 792
+        },
+        {
+          "id": "rustboro",
+          "width": 640,
+          "height": 960
+        },
+        {
+          "id": "dewford",
+          "width": 320,
+          "height": 320
+        },
+        {
+          "id": "mauville",
+          "width": 640,
+          "height": 320
+        },
+        {
+          "id": "lavaridge",
+          "width": 320,
+          "height": 320
+        },
+        {
+          "id": "petalburg",
+          "width": 480,
+          "height": 480
+        },
+        {
+          "id": "fortree",
+          "width": 640,
+          "height": 320
+        },
+        {
+          "id": "mossdeep",
+          "width": 1280,
+          "height": 640
+        },
+        {
+          "id": "sootopolis",
+          "width": 960,
+          "height": 960
+        },
+        {
+          "id": "oreburgh",
+          "width": 1024,
+          "height": 832
+        },
+        {
+          "id": "eterna",
+          "width": 1024,
+          "height": 828
+        },
+        {
+          "id": "hearthome",
+          "width": 1031,
+          "height": 788
+        },
+        {
+          "id": "veilstone",
+          "width": 1024,
+          "height": 840
+        },
+        {
+          "id": "pastoria",
+          "width": 1024,
+          "height": 840
+        },
+        {
+          "id": "canalave",
+          "width": 496,
+          "height": 775
+        },
+        {
+          "id": "snowpoint",
+          "width": 512,
+          "height": 864
+        },
+        {
+          "id": "sunyshore",
+          "width": 1024,
+          "height": 828
+        },
+        {
+          "id": "nimbasa",
+          "width": 1760,
+          "height": 880
+        },
+        {
+          "id": "driftveil",
+          "width": 1504,
+          "height": 820
+        },
+        {
+          "id": "mistralton",
+          "width": 1024,
+          "height": 1230
+        },
+        {
+          "id": "turffield",
+          "width": 1145,
+          "height": 597
+        },
+        {
+          "id": "hulbury",
+          "width": 1712,
+          "height": 1351
+        },
+        {
+          "id": "indigo",
+          "width": 384,
+          "height": 320
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "network": []
+}

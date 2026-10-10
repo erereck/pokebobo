@@ -1,4 +1,14 @@
-# Validação — Pokébobo 0.12.0
+# Validação — Pokébobo 0.13.0
+
+## 0.13.0 — Mapas da jornada · 10/10/2026
+
+- `npm run verify`: 194 módulos JS/JSX sem ciclos/import de UI no motor, 107/107 testes, build Vite com 2.074 módulos. Build repetido com `VITE_BASE=/pokebobo/`; nenhum HTML standalone gerado.
+- Três regressões novas conferem cobertura única das 48 cidades do draft e da Liga, ausência de fallback por bioma/id desconhecido, arquivos locais e SHA-256/procedência. Os testes anteriores de captura, movimento e saves seguem aprovados.
+- 49 originais inspecionados visualmente e convertidos em WebP sem perdas, sem redimensionar. Importador offline reproduziu todos os hashes e comparou os pixels RGBA antes de escrever. Total: 6.322.390 bytes (6,03 MiB), carregados sob demanda. Pillow 12.3.0 / libwebp 1.6.0.
+- Edge/Playwright: 76 registros em 1280×720, 390×844 e 320×568. Todas as 48 cidades foram oferecidas e carregadas em cada visor; três drafts reais passaram por origem, inicial, passagem, oito ginásios, partida e jornada. Conferidos créditos/filtros, Indigo Plateau e cidade desconhecida de save anterior. Todos os 49 arquivos decodificaram com as dimensões originais. Sem erros de console/rede, imagens quebradas ou overflow horizontal. `docs/balance/browser-city-covers-0.13.0.json`.
+- Quatro registros adicionais: 404 deliberado na capa de Pallet, seleção ainda funcional e ausência de mapa substituto; batalhas reais de ginásio e Liga, incluindo turno com o motor. Fluxos normais sem erros; falha intencional registrada separadamente. `docs/balance/browser-city-recovery-0.13.0.json`. Total local: 80 registros.
+- Preview do build em `/pokebobo/`: quatro registros em desktop/celular, drafts completos até a jornada e decodificação das 49 imagens em cada contexto. Caminhos, versão e ausência de erros conferidos. `docs/balance/browser-city-preview-0.13.0.json`.
+- Limites: validação em Edge automatizado, sem dispositivo físico/iOS. Drafts longos e listas mantêm rolagem interna/vertical existente. Hau'oli usa a arte oficial de Ultra Sun/Ultra Moon e Galar conserva os rótulos japoneses do original; as edições aparecem nos créditos. Regras/RNG/economia não mudaram; campanhas de balanceamento anteriores permanecem abaixo e não foram repetidas para uma alteração de imagens.
 
 ## 0.12.0 — Mais uma Poké Bola · 10/10/2026
 
@@ -36,7 +46,7 @@
 
 - `npm run verify`: 188 módulos JS/JSX sem ciclos ou import de UI no motor; 93/93 testes; build Vite com 2.067 módulos.
 - `npm run balance:audit`: orçamento-base preservado. Não mede vitórias.
-- 140 campanhas completas com batalhas reais: 60 Clássico, 40 Correria, 40 Nuzlocke, quatro políticas e seed 20261009. Zero truncamentos. A política equilibrada ganhou 5/15 no Clássico; Correria teve 0/40 títulos e Nuzlocke 1/40. Amostras pequenas e exploratórias; não estimam vitórias humanas. JSONs em docs/balance/monte-carlo-0.10.0-*.json.
+- 140 campanhas completas com batalhas reais: 60 Clássico, 40 Correria, 40 Nuzlocke, quatro políticas e seed 20261009. Zero truncamentos. A política equilibrada ganhou 5/15 no Clássico; Correria teve 0/40 títulos e Nuzlocke 1/40. Amostras pequenas e exploratórias; não estimam vitórias humanas. JSONs em docs/balance/monte-carlo-0.10.0-\*.json.
 - Edge / Playwright: 18 registros em 1280×900, 390×844 e 320×568; sem erros de console/página, requests com erro, imagens quebradas ou overflow horizontal. Caminhada real por teclado/botões → encontro → fuga; captura → resultado → reload → conclusão; sucesso/falha, reserva lotada com escolha de substituto, pesca/Surf, espécie posterior ao FRLG, animação completa 1×, recarga durante arremesso, movimento reduzido e pular apresentação. Relatório: docs/balance/browser-0.10.0.json.
 - Testes novos verificam mato contínuo, sorteio apenas ao pisar, garantia após dez passos de mato sem encontro, passo bloqueado durante apresentação, conclusão por id, persistência de sucesso/falha, economia sem duplicação, resultado instantâneo/animado equivalente e marcos de animação extraídos da referência.
 - Importador recompõe assets a partir do commit congelado do pret/pokefirered, sem ROM, e traz origem/termos em licenses/FRLG-ASSETS.md. Assets novos presentes no build web; HTML standalone não foi gerado.
@@ -47,7 +57,7 @@ Limites: Fidelidade visual baseada nos gráficos e nas sequências de FRLG; não
 
 - npm run verify: arquitetura (179 módulos), 87/87 testes e build Vite (2.056 módulos).
 - npm run balance:audit: orçamento-base de níveis preservado, nenhuma trajetória de treino-base chega à Liga em nível 99. Não é medição de taxa de vitória.
-- 280 campanhas com batalhas reais: quatro políticas, 30 seeds por política no Clássico e 20 na Correria/Nuzlocke; zero truncamentos. 120 campanhas da 0.8.1 servem de referência exploratória. Relatórios completos em docs/balance/adventure-*.json.
+- 280 campanhas com batalhas reais: quatro políticas, 30 seeds por política no Clássico e 20 na Correria/Nuzlocke; zero truncamentos. 120 campanhas da 0.8.1 servem de referência exploratória. Relatórios completos em docs/balance/adventure-\*.json.
 - Playwright com Edge headless: 15 screenshots em 1280×900, 390×844, 320×568 e batalha 844×390; escolha de evolução e reload, caminhada por teclado/toque, captura, pesca, retorno, Pokédex, filtros, famílias e sprites de batalha. Console e imagens sem erro, sem overflow horizontal ou botões do cabeçalho cortados.
 - Testes de regras: oito destinos de Eevee, ramos bloqueados, adiamento no teto e reabertura, reserva, decisões antes de ginásio, margem e marcos de pesca/Surf, oportunidade aquática compartilhada, limites de lendário/roubo, coleção global e compensação da Correria.
 - Catálogo/sprites regenerados: 486 entradas e 481 sprites locais; nova altura oficial da espécie e conteúdo dos encontros secretos.
@@ -73,7 +83,6 @@ Limites: o navegador foi emulado; não substitui teste físico ou campanha human
 
 **Limitações:** esta entrega não incluiu uma run humana completa, teste físico em celular nem inspeção visual automatizada do Hall. O CI confirma lógica, estrutura, build e CSS compilável. O novo sistema de evolução pode alterar dificuldade real por mudar espécies mais cedo; uma futura rodada de Monte Carlo deve medir essa diferença, e não apenas o orçamento de níveis.
 
-
 ## 0.4.0 — Semanas Vivas · 18/09/2026
 
 - Pull request validado pelo workflow `Verify` com Node.js 22.13.0.
@@ -89,7 +98,6 @@ Limites: o navegador foi emulado; não substitui teste físico ou campanha human
 
 **Limitações:** a auditoria de orçamento não mede os níveis extras concedidos por eventos e não estima dificuldade humana. O simulador automático escolhe a primeira decisão disponível, portanto serve para reprodução/regressão, não para avaliar a melhor estratégia dos 57 acontecimentos. A nova tela foi coberta por build e CSS responsivo, mas uma run completa em aparelho físico ainda é a próxima validação manual recomendada.
 
-
 ## C03 — sequência visual do turno · 18/09/2026
 
 - Pull request validado pelo workflow Verify com Node.js 22.13.0.
@@ -101,7 +109,6 @@ Limites: o navegador foi emulado; não substitui teste físico ou campanha human
 - prefers-reduced-motion continua desabilitando animações e transições; as pausas de apresentação são reduzidas para no máximo 120 ms por evento.
 
 **Limitação:** esta execução não incluiu aparelho físico nem inspeção visual automatizada do PR. Q03 continua sendo o próximo teste manual prioritário; o CI confirma estrutura, lógica, testes e build, não sensação de timing em hardware real.
-
 
 ## Entrega no GitHub · 15/09/2026
 
@@ -130,20 +137,20 @@ Os testes cobrem aprendizado por nível e procedência, progressão, draft, IA j
 
 Chrome via agent-browser em perfis de teste separados. Fixtures criadas com o motor atual para inspecionar estados específicos; equipes e etapas sintéticas não medem a viabilidade de uma campanha normal.
 
-| Cenário | Evidência |
-| --- | --- |
-| Abertura e início | Registro de Erick, escolha de origem e de Bulbasaur, chegada ao draft. Abertura, três origens e três iniciais revisados em 320 × 568. |
-| Draft pronto | Botão de começar visível em 320 × 568; revisão extensa da rota pode rolar abaixo. Trocar etapa volta ao topo. |
-| Jornada | Quatro ações e desafio visíveis em 320 × 568. Custo e aviso da última semana mantidos. |
-| Equipe | Seis seletores, ficha e quatro golpes juntos em 320 × 568. Painel do PC abre a ficha de Pikachu diretamente. |
-| Líder | Clique em Colocar na frente muda o líder para Pikachu e mantém spent=1. A ação fica bloqueada durante batalha. |
-| Mochila | Estoque e três ações visíveis em 320 × 568. Preparar consome um kit (2→1), uma semana (1→2), equipa os seis com Sitrus Berry e retorna à jornada. |
-| Captura com seis | Antes da seleção, capturas desabilitadas. Selecionado Growlithe; captura bem-sucedida de Rattata mantém seis integrantes, troca somente Growlithe e consome uma bola (6→5). Seleção, duas espécies, custo e saída cabem em 320 × 568. |
-| Mapa | Dez cidades e Liga, percurso contínuo, posição atual e paradas concluídas visíveis em 320 × 568. |
-| Resultado | Vitória real do motor contra Misty em três turnos; recompensa, sobreviventes e continuar visíveis em 320 × 568. |
-| Encerramento | Derrota e fixture de campeão revisadas em 320 × 568; resumo, insígnias e nova aventura visíveis. |
-| Liga | Cinco adversários e botão Enfrentar visíveis em 320 × 568: main 396/396 px, botão termina em y=489, navegação começa em y=500. |
-| Janela e teclado | Ajuda aberta + tecla 1 mantém choices=[]; Escape fecha e devolve foco a Como jogar e créditos. |
+| Cenário           | Evidência                                                                                                                                                                                                                             |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Abertura e início | Registro de Erick, escolha de origem e de Bulbasaur, chegada ao draft. Abertura, três origens e três iniciais revisados em 320 × 568.                                                                                                 |
+| Draft pronto      | Botão de começar visível em 320 × 568; revisão extensa da rota pode rolar abaixo. Trocar etapa volta ao topo.                                                                                                                         |
+| Jornada           | Quatro ações e desafio visíveis em 320 × 568. Custo e aviso da última semana mantidos.                                                                                                                                                |
+| Equipe            | Seis seletores, ficha e quatro golpes juntos em 320 × 568. Painel do PC abre a ficha de Pikachu diretamente.                                                                                                                          |
+| Líder             | Clique em Colocar na frente muda o líder para Pikachu e mantém spent=1. A ação fica bloqueada durante batalha.                                                                                                                        |
+| Mochila           | Estoque e três ações visíveis em 320 × 568. Preparar consome um kit (2→1), uma semana (1→2), equipa os seis com Sitrus Berry e retorna à jornada.                                                                                     |
+| Captura com seis  | Antes da seleção, capturas desabilitadas. Selecionado Growlithe; captura bem-sucedida de Rattata mantém seis integrantes, troca somente Growlithe e consome uma bola (6→5). Seleção, duas espécies, custo e saída cabem em 320 × 568. |
+| Mapa              | Dez cidades e Liga, percurso contínuo, posição atual e paradas concluídas visíveis em 320 × 568.                                                                                                                                      |
+| Resultado         | Vitória real do motor contra Misty em três turnos; recompensa, sobreviventes e continuar visíveis em 320 × 568.                                                                                                                       |
+| Encerramento      | Derrota e fixture de campeão revisadas em 320 × 568; resumo, insígnias e nova aventura visíveis.                                                                                                                                      |
+| Liga              | Cinco adversários e botão Enfrentar visíveis em 320 × 568: main 396/396 px, botão termina em y=489, navegação começa em y=500.                                                                                                        |
+| Janela e teclado  | Ajuda aberta + tecla 1 mantém choices=[]; Escape fecha e devolve foco a Como jogar e créditos.                                                                                                                                        |
 
 A seleção e o foco são estados de apresentação. Os comandos da mochila e da equipe continuam enviando as ações existentes ao reducer.
 
