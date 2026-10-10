@@ -1,5 +1,13 @@
 # Histórico
 
+## 0.14.0 — Batalhas em pixels · 10/10/2026
+
+- Botão Ver Hall da Fama da tela final conectado à janela correta; funciona após derrota, título ou encerramento, inclusive após reload, sem duplicar registros.
+- Opção de sprites 2D/3D para ambos os lados da batalha. Padrão 3D preservado; preferência global do navegador lembrada entre visitas, slots e runs. Pode mudar durante o combate sem alterar decisões ou reiniciar o turno; falha de storage mantém a escolha nesta visita com mensagem.
+- 970 sprites 2D locais (frente e costas de 485 espécies/formas; 486 entradas com alias): 945 GIFs animados e 25 PNGs. Formas regionais preservadas, índice leve, manifesto com hashes/fontes e importador. Falha de costas usa a frente 2D; não volta a 3D silenciosamente.
+- Future Sight mostra preparação, ataque pendente no lado alvo, turnos restantes, chegada e falha ao tentar empilhar. Dano continua vindo de @pkmn/sim, uma vez e na ordem do protocolo; sem mudar poder, PP, RNG, IA ou regras.
+- 118 testes e validação de derrota real/Hall, reload, trocas, imunidade, Protect, sprites, seleção durante animação, slots e falhas controladas. Detalhes em VALIDACAO.md; saves preservados.
+
 ## 0.13.0 — Mapas da jornada · 10/10/2026
 
 - Imagens próprias para todas as 48 cidades selecionáveis no draft: sete origens, quatro passagens e 37 ginásios. Indigo Plateau completa as 49 imagens locais.

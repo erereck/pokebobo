@@ -2,6 +2,7 @@ import { VERSION, RELEASE_NAME } from "../../app/version.js";
 import { Modal } from "../../components/ui/Modal.jsx";
 import { Download, Trophy } from "lucide-react";
 import { SaveSlots } from "./SaveSlots.jsx";
+import { BattleSpriteOptions } from "./BattleSpriteOptions.jsx";
 
 export function SettingsDialog({
   setModal,
@@ -11,9 +12,17 @@ export function SettingsDialog({
   activeSlot,
   saveSlots,
   switchSaveSlot,
+  spriteStyle,
+  changeSpriteStyle,
+  spritePreferenceSaved,
 }) {
   return (
     <Modal title="Opções e progresso" onClose={() => setModal(null)}>
+      <BattleSpriteOptions
+        style={spriteStyle}
+        onChange={changeSpriteStyle}
+        saved={spritePreferenceSaved}
+      />
       <SaveSlots
         activeSlot={activeSlot}
         slots={saveSlots}
@@ -41,7 +50,10 @@ export function SettingsDialog({
           <span>melhor deste slot</span>
         </div>
       </div>
-      <button className="button secondary full" onClick={() => setModal("hall")}>
+      <button
+        className="button secondary full"
+        onClick={() => setModal("hall")}
+      >
         <Trophy size={18} />
         Hall geral do aparelho · {state.meta.history.length} registros
       </button>

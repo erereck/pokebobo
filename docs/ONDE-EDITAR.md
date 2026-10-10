@@ -1,5 +1,12 @@
 # Onde editar
 
+## Hall, Future Sight e sprites — 0.14.0
+
+- Botão final do Hall: `src/app/App.jsx` passa `onHall` a `features/ending/Ending.jsx`; janela em `features/history/HallOfFameDialog.jsx`.
+- Preferência 2D/3D: `app/preferences/battleSprites.js`, `app/hooks/useBattleSpriteStyle.js` e `features/settings/BattleSpriteOptions.jsx`; CSS em `styles/components/dialogs.css`.
+- Imagens de frente/costas e formas: `components/pokemon/battleSpriteSources.js`, `Sprite.jsx`, `game/data/battleSprites.json`, `public/battle-sprites/manifest.json` e README. Importador em `scripts/import-battle-sprites.mjs`; testes em `tests/battle-sprites.test.js`.
+- Ataques atrasados: `game/battle/presentationEvents.js`, `snapshot.js`, `features/battle/turnPresentation.js`, `Health.jsx` e `BattleArena.jsx`; casos reais em `tests/future-sight.test.js`. Não calcular dano ou consumir RNG na apresentação.
+
 ## Imagens de cidades — 0.13.0
 
 - Lugar/edição/procedência: `src/game/data/cityCovers.json`; confirmar fonte, revisão, dimensões e hashes antes de adicionar.

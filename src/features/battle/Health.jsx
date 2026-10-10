@@ -1,4 +1,6 @@
-export function Health({ mon: m }) {
+import { Hourglass } from "lucide-react";
+
+export function Health({ mon: m, future }) {
   const ratio = Math.max(0, Math.min(1, m.hp / m.maxhp));
   return (
     <div className="health-card">
@@ -23,6 +25,15 @@ export function Health({ mon: m }) {
         {m.status && <b>{m.status.toUpperCase()} · </b>}
         {m.hp} / {m.maxhp}
       </small>
+      {future && (
+        <span
+          className="future-marker"
+          title={`${future.move} chega em ${future.turnsRemaining} ${future.turnsRemaining === 1 ? "turno" : "turnos"}`}
+        >
+          <Hourglass size={11} aria-hidden="true" />
+          {future.move} · {future.turnsRemaining}
+        </span>
+      )}
     </div>
   );
 }

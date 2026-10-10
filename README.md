@@ -1,6 +1,8 @@
-# Pokébobo — 0.13.0 · Mapas da jornada
+# Pokébobo — 0.14.0 · Batalhas em pixels
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.14.0 corrige o botão do Hall da Fama na tela final e oferece **Opções → Sprites de batalha → 2D / 3D**, com preferência lembrada pelo navegador. O modo 2D tem frente e costas locais de todas as espécies/formas do catálogo. Future Sight continua usando o motor Gen 8: prepara o ataque e atinge ao fim do terceiro turno; a interface agora mostra espera, chegada e falha ao tentar empilhar. [Batalha 2D e Future Sight](docs/images/batalha-2d-0.14-celular.png) · [Opção visual](docs/images/opcao-sprites-0.14-celular.png) · [Créditos](public/battle-sprites/README.md).
 
 A 0.13.0 traz imagens próprias das 48 cidades do draft e de Indigo Plateau. A cidade escolhida mantém sua imagem na partida, na jornada e na batalha; mapas genéricos por bioma e paisagens inventadas foram removidos. São 49 arquivos locais sem perda de pixels, carregados sob demanda, com créditos por lugar e filtro de região. [Draft no PC](docs/images/draft-0.13-desktop.png) · [Draft no celular](docs/images/draft-0.13-celular.png) · [Fontes das imagens](public/covers/README.md).
 

@@ -17,6 +17,7 @@ export function RunContent({
   selectedMonId,
   battleControlRef,
   onBattleSidebarChange,
+  spriteStyle,
 }) {
   const mainRef = useRef(null);
   useEffect(() => {
@@ -31,6 +32,7 @@ export function RunContent({
       {tab === "journey" ? (
         run.phase === "battle" ? (
           <BattleScreen
+            spriteStyle={spriteStyle}
             run={run}
             act={act}
             battleControlRef={battleControlRef}

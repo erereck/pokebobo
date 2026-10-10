@@ -1,0 +1,5825 @@
+{
+  "records": [
+    {
+      "file": "front/mew.gif",
+      "width": 77,
+      "height": 53,
+      "frames": 20
+    },
+    {
+      "file": "back/mew.gif",
+      "width": 60,
+      "height": 61,
+      "frames": 20
+    },
+    {
+      "file": "front/suicune.gif",
+      "width": 81,
+      "height": 72,
+      "frames": 48
+    },
+    {
+      "file": "back/suicune.gif",
+      "width": 94,
+      "height": 73,
+      "frames": 48
+    },
+    {
+      "file": "front/eevee.gif",
+      "width": 48,
+      "height": 47,
+      "frames": 74
+    },
+    {
+      "file": "back/eevee.gif",
+      "width": 49,
+      "height": 50,
+      "frames": 80
+    },
+    {
+      "file": "front/goldeen.gif",
+      "width": 75,
+      "height": 57,
+      "frames": 82
+    },
+    {
+      "file": "back/goldeen.gif",
+      "width": 74,
+      "height": 57,
+      "frames": 76
+    },
+    {
+      "file": "front/lapras.gif",
+      "width": 68,
+      "height": 72,
+      "frames": 32
+    },
+    {
+      "file": "back/lapras.gif",
+      "width": 75,
+      "height": 71,
+      "frames": 32
+    },
+    {
+      "file": "front/magikarp.gif",
+      "width": 47,
+      "height": 64,
+      "frames": 92
+    },
+    {
+      "file": "back/magikarp.gif",
+      "width": 66,
+      "height": 58,
+      "frames": 90
+    },
+    {
+      "file": "front/poliwag.gif",
+      "width": 53,
+      "height": 34,
+      "frames": 61
+    },
+    {
+      "file": "back/poliwag.gif",
+      "width": 54,
+      "height": 35,
+      "frames": 61
+    },
+    {
+      "file": "front/tentacool.gif",
+      "width": 57,
+      "height": 70,
+      "frames": 48
+    },
+    {
+      "file": "back/tentacool.gif",
+      "width": 62,
+      "height": 77,
+      "frames": 48
+    },
+    {
+      "file": "front/chinchou.gif",
+      "width": 66,
+      "height": 52,
+      "frames": 32
+    },
+    {
+      "file": "back/chinchou.gif",
+      "width": 68,
+      "height": 46,
+      "frames": 32
+    },
+    {
+      "file": "front/staryu.gif",
+      "width": 58,
+      "height": 49,
+      "frames": 20
+    },
+    {
+      "file": "back/staryu.gif",
+      "width": 55,
+      "height": 52,
+      "frames": 20
+    },
+    {
+      "file": "front/psyduck.gif",
+      "width": 38,
+      "height": 46,
+      "frames": 24
+    },
+    {
+      "file": "back/psyduck.gif",
+      "width": 37,
+      "height": 45,
+      "frames": 28
+    },
+    {
+      "file": "front/shellos.gif",
+      "width": 35,
+      "height": 40,
+      "frames": 60
+    },
+    {
+      "file": "back/shellos.gif",
+      "width": 35,
+      "height": 42,
+      "frames": 60
+    },
+    {
+      "file": "front/buizel.gif",
+      "width": 45,
+      "height": 49,
+      "frames": 84
+    },
+    {
+      "file": "back/buizel.gif",
+      "width": 48,
+      "height": 49,
+      "frames": 84
+    },
+    {
+      "file": "front/bulbasaur.gif",
+      "width": 37,
+      "height": 38,
+      "frames": 50
+    },
+    {
+      "file": "back/bulbasaur.gif",
+      "width": 32,
+      "height": 37,
+      "frames": 50
+    },
+    {
+      "file": "front/charmander.gif",
+      "width": 41,
+      "height": 42,
+      "frames": 54
+    },
+    {
+      "file": "back/charmander.gif",
+      "width": 44,
+      "height": 44,
+      "frames": 54
+    },
+    {
+      "file": "front/squirtle.gif",
+      "width": 39,
+      "height": 43,
+      "frames": 32
+    },
+    {
+      "file": "back/squirtle.gif",
+      "width": 39,
+      "height": 45,
+      "frames": 32
+    },
+    {
+      "file": "front/chikorita.gif",
+      "width": 41,
+      "height": 56,
+      "frames": 26
+    },
+    {
+      "file": "back/chikorita.gif",
+      "width": 41,
+      "height": 59,
+      "frames": 26
+    },
+    {
+      "file": "front/cyndaquil.gif",
+      "width": 44,
+      "height": 37,
+      "frames": 128
+    },
+    {
+      "file": "back/cyndaquil.gif",
+      "width": 46,
+      "height": 37,
+      "frames": 128
+    },
+    {
+      "file": "front/totodile.gif",
+      "width": 43,
+      "height": 59,
+      "frames": 43
+    },
+    {
+      "file": "back/totodile.gif",
+      "width": 43,
+      "height": 61,
+      "frames": 43
+    },
+    {
+      "file": "front/treecko.gif",
+      "width": 43,
+      "height": 63,
+      "frames": 77
+    },
+    {
+      "file": "back/treecko.gif",
+      "width": 46,
+      "height": 63,
+      "frames": 77
+    },
+    {
+      "file": "front/torchic.gif",
+      "width": 33,
+      "height": 47,
+      "frames": 88
+    },
+    {
+      "file": "back/torchic.gif",
+      "width": 30,
+      "height": 46,
+      "frames": 88
+    },
+    {
+      "file": "front/mudkip.gif",
+      "width": 43,
+      "height": 49,
+      "frames": 76
+    },
+    {
+      "file": "back/mudkip.gif",
+      "width": 42,
+      "height": 50,
+      "frames": 76
+    },
+    {
+      "file": "front/turtwig.gif",
+      "width": 31,
+      "height": 42,
+      "frames": 50
+    },
+    {
+      "file": "back/turtwig.gif",
+      "width": 34,
+      "height": 43,
+      "frames": 54
+    },
+    {
+      "file": "front/chimchar.gif",
+      "width": 41,
+      "height": 56,
+      "frames": 140
+    },
+    {
+      "file": "back/chimchar.gif",
+      "width": 45,
+      "height": 55,
+      "frames": 140
+    },
+    {
+      "file": "front/piplup.gif",
+      "width": 30,
+      "height": 41,
+      "frames": 75
+    },
+    {
+      "file": "back/piplup.gif",
+      "width": 28,
+      "height": 41,
+      "frames": 75
+    },
+    {
+      "file": "front/snivy.gif",
+      "width": 48,
+      "height": 44,
+      "frames": 80
+    },
+    {
+      "file": "back/snivy.gif",
+      "width": 47,
+      "height": 42,
+      "frames": 83
+    },
+    {
+      "file": "front/tepig.gif",
+      "width": 44,
+      "height": 48,
+      "frames": 59
+    },
+    {
+      "file": "back/tepig.gif",
+      "width": 44,
+      "height": 50,
+      "frames": 57
+    },
+    {
+      "file": "front/oshawott.gif",
+      "width": 46,
+      "height": 52,
+      "frames": 149
+    },
+    {
+      "file": "back/oshawott.gif",
+      "width": 40,
+      "height": 54,
+      "frames": 147
+    },
+    {
+      "file": "front/rowlet.gif",
+      "width": 63,
+      "height": 35,
+      "frames": 84
+    },
+    {
+      "file": "back/rowlet.gif",
+      "width": 63,
+      "height": 35,
+      "frames": 84
+    },
+    {
+      "file": "front/litten.gif",
+      "width": 48,
+      "height": 49,
+      "frames": 97
+    },
+    {
+      "file": "back/litten.gif",
+      "width": 48,
+      "height": 50,
+      "frames": 97
+    },
+    {
+      "file": "front/popplio.gif",
+      "width": 46,
+      "height": 55,
+      "frames": 83
+    },
+    {
+      "file": "back/popplio.gif",
+      "width": 43,
+      "height": 59,
+      "frames": 83
+    },
+    {
+      "file": "front/grookey.gif",
+      "width": 96,
+      "height": 96,
+      "frames": 56
+    },
+    {
+      "file": "back/grookey.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/scorbunny.gif",
+      "width": 96,
+      "height": 96,
+      "frames": 73
+    },
+    {
+      "file": "back/scorbunny.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/sobble.gif",
+      "width": 96,
+      "height": 96,
+      "frames": 45
+    },
+    {
+      "file": "back/sobble.gif",
+      "width": 42,
+      "height": 49,
+      "frames": 45
+    },
+    {
+      "file": "front/geodude.gif",
+      "width": 61,
+      "height": 45,
+      "frames": 43
+    },
+    {
+      "file": "back/geodude.gif",
+      "width": 57,
+      "height": 52,
+      "frames": 32
+    },
+    {
+      "file": "front/onix.gif",
+      "width": 73,
+      "height": 74,
+      "frames": 50
+    },
+    {
+      "file": "back/onix.gif",
+      "width": 98,
+      "height": 70,
+      "frames": 72
+    },
+    {
+      "file": "front/starmie.gif",
+      "width": 65,
+      "height": 59,
+      "frames": 48
+    },
+    {
+      "file": "back/starmie.gif",
+      "width": 55,
+      "height": 55,
+      "frames": 56
+    },
+    {
+      "file": "front/voltorb.gif",
+      "width": 46,
+      "height": 31,
+      "frames": 45
+    },
+    {
+      "file": "back/voltorb.gif",
+      "width": 46,
+      "height": 31,
+      "frames": 45
+    },
+    {
+      "file": "front/pikachu.gif",
+      "width": 50,
+      "height": 46,
+      "frames": 61
+    },
+    {
+      "file": "back/pikachu.gif",
+      "width": 40,
+      "height": 47,
+      "frames": 60
+    },
+    {
+      "file": "front/raichu.gif",
+      "width": 74,
+      "height": 73,
+      "frames": 84
+    },
+    {
+      "file": "back/raichu.gif",
+      "width": 76,
+      "height": 73,
+      "frames": 84
+    },
+    {
+      "file": "front/victreebel.gif",
+      "width": 65,
+      "height": 71,
+      "frames": 18
+    },
+    {
+      "file": "back/victreebel.gif",
+      "width": 69,
+      "height": 70,
+      "frames": 18
+    },
+    {
+      "file": "front/tangela.gif",
+      "width": 49,
+      "height": 42,
+      "frames": 16
+    },
+    {
+      "file": "back/tangela.gif",
+      "width": 49,
+      "height": 42,
+      "frames": 16
+    },
+    {
+      "file": "front/vileplume.gif",
+      "width": 56,
+      "height": 50,
+      "frames": 9
+    },
+    {
+      "file": "back/vileplume.gif",
+      "width": 56,
+      "height": 48,
+      "frames": 9
+    },
+    {
+      "file": "front/koffing.gif",
+      "width": 90,
+      "height": 59,
+      "frames": 11
+    },
+    {
+      "file": "back/koffing.gif",
+      "width": 78,
+      "height": 64,
+      "frames": 11
+    },
+    {
+      "file": "front/muk.gif",
+      "width": 94,
+      "height": 68,
+      "frames": 52
+    },
+    {
+      "file": "back/muk.gif",
+      "width": 100,
+      "height": 82,
+      "frames": 51
+    },
+    {
+      "file": "front/weezing.gif",
+      "width": 85,
+      "height": 68,
+      "frames": 10
+    },
+    {
+      "file": "back/weezing.gif",
+      "width": 87,
+      "height": 69,
+      "frames": 10
+    },
+    {
+      "file": "front/kadabra.gif",
+      "width": 78,
+      "height": 61,
+      "frames": 59
+    },
+    {
+      "file": "back/kadabra.gif",
+      "width": 80,
+      "height": 65,
+      "frames": 61
+    },
+    {
+      "file": "front/mrmime.gif",
+      "width": 58,
+      "height": 53,
+      "frames": 16
+    },
+    {
+      "file": "back/mrmime.gif",
+      "width": 54,
+      "height": 51,
+      "frames": 16
+    },
+    {
+      "file": "front/venomoth.gif",
+      "width": 100,
+      "height": 74,
+      "frames": 63
+    },
+    {
+      "file": "back/venomoth.gif",
+      "width": 104,
+      "height": 73,
+      "frames": 63
+    },
+    {
+      "file": "front/alakazam.gif",
+      "width": 92,
+      "height": 69,
+      "frames": 69
+    },
+    {
+      "file": "back/alakazam.gif",
+      "width": 83,
+      "height": 66,
+      "frames": 69
+    },
+    {
+      "file": "front/growlithe.gif",
+      "width": 56,
+      "height": 51,
+      "frames": 74
+    },
+    {
+      "file": "back/growlithe.gif",
+      "width": 56,
+      "height": 58,
+      "frames": 71
+    },
+    {
+      "file": "front/ponyta.gif",
+      "width": 58,
+      "height": 57,
+      "frames": 17
+    },
+    {
+      "file": "back/ponyta.gif",
+      "width": 58,
+      "height": 59,
+      "frames": 17
+    },
+    {
+      "file": "front/rapidash.gif",
+      "width": 74,
+      "height": 73,
+      "frames": 38
+    },
+    {
+      "file": "back/rapidash.gif",
+      "width": 76,
+      "height": 76,
+      "frames": 48
+    },
+    {
+      "file": "front/arcanine.gif",
+      "width": 78,
+      "height": 69,
+      "frames": 9
+    },
+    {
+      "file": "back/arcanine.gif",
+      "width": 86,
+      "height": 69,
+      "frames": 9
+    },
+    {
+      "file": "front/rhyhorn.gif",
+      "width": 68,
+      "height": 54,
+      "frames": 78
+    },
+    {
+      "file": "back/rhyhorn.gif",
+      "width": 73,
+      "height": 54,
+      "frames": 83
+    },
+    {
+      "file": "front/dugtrio.gif",
+      "width": 52,
+      "height": 42,
+      "frames": 102
+    },
+    {
+      "file": "back/dugtrio.gif",
+      "width": 52,
+      "height": 43,
+      "frames": 102
+    },
+    {
+      "file": "front/nidoqueen.gif",
+      "width": 77,
+      "height": 70,
+      "frames": 62
+    },
+    {
+      "file": "back/nidoqueen.gif",
+      "width": 85,
+      "height": 71,
+      "frames": 60
+    },
+    {
+      "file": "front/nidoking.gif",
+      "width": 86,
+      "height": 71,
+      "frames": 49
+    },
+    {
+      "file": "back/nidoking.gif",
+      "width": 88,
+      "height": 69,
+      "frames": 53
+    },
+    {
+      "file": "front/pidgey.gif",
+      "width": 42,
+      "height": 48,
+      "frames": 20
+    },
+    {
+      "file": "back/pidgey.gif",
+      "width": 45,
+      "height": 47,
+      "frames": 20
+    },
+    {
+      "file": "front/pidgeotto.gif",
+      "width": 82,
+      "height": 117,
+      "frames": 18
+    },
+    {
+      "file": "back/pidgeotto.gif",
+      "width": 95,
+      "height": 95,
+      "frames": 18
+    },
+    {
+      "file": "front/metapod.gif",
+      "width": 37,
+      "height": 38,
+      "frames": 56
+    },
+    {
+      "file": "back/metapod.gif",
+      "width": 43,
+      "height": 43,
+      "frames": 56
+    },
+    {
+      "file": "front/kakuna.gif",
+      "width": 31,
+      "height": 40,
+      "frames": 39
+    },
+    {
+      "file": "back/kakuna.gif",
+      "width": 32,
+      "height": 41,
+      "frames": 40
+    },
+    {
+      "file": "front/scyther.gif",
+      "width": 55,
+      "height": 61,
+      "frames": 68
+    },
+    {
+      "file": "back/scyther.gif",
+      "width": 69,
+      "height": 65,
+      "frames": 68
+    },
+    {
+      "file": "front/clefairy.gif",
+      "width": 48,
+      "height": 42,
+      "frames": 131
+    },
+    {
+      "file": "back/clefairy.gif",
+      "width": 55,
+      "height": 43,
+      "frames": 132
+    },
+    {
+      "file": "front/miltank.gif",
+      "width": 58,
+      "height": 53,
+      "frames": 55
+    },
+    {
+      "file": "back/miltank.gif",
+      "width": 56,
+      "height": 50,
+      "frames": 55
+    },
+    {
+      "file": "front/gastly.gif",
+      "width": 67,
+      "height": 75,
+      "frames": 118
+    },
+    {
+      "file": "back/gastly.gif",
+      "width": 64,
+      "height": 78,
+      "frames": 118
+    },
+    {
+      "file": "front/haunter.gif",
+      "width": 85,
+      "height": 71,
+      "frames": 25
+    },
+    {
+      "file": "back/haunter.gif",
+      "width": 91,
+      "height": 71,
+      "frames": 25
+    },
+    {
+      "file": "front/gengar.gif",
+      "width": 79,
+      "height": 65,
+      "frames": 60
+    },
+    {
+      "file": "back/gengar.gif",
+      "width": 72,
+      "height": 65,
+      "frames": 60
+    },
+    {
+      "file": "front/primeape.gif",
+      "width": 67,
+      "height": 61,
+      "frames": 21
+    },
+    {
+      "file": "back/primeape.gif",
+      "width": 72,
+      "height": 58,
+      "frames": 21
+    },
+    {
+      "file": "front/poliwrath.gif",
+      "width": 81,
+      "height": 57,
+      "frames": 9
+    },
+    {
+      "file": "back/poliwrath.gif",
+      "width": 74,
+      "height": 57,
+      "frames": 8
+    },
+    {
+      "file": "front/magnemite.gif",
+      "width": 37,
+      "height": 33,
+      "frames": 52
+    },
+    {
+      "file": "back/magnemite.gif",
+      "width": 36,
+      "height": 31,
+      "frames": 52
+    },
+    {
+      "file": "front/steelix.gif",
+      "width": 94,
+      "height": 88,
+      "frames": 16
+    },
+    {
+      "file": "back/steelix.gif",
+      "width": 95,
+      "height": 92,
+      "frames": 16
+    },
+    {
+      "file": "front/seel.gif",
+      "width": 62,
+      "height": 47,
+      "frames": 8
+    },
+    {
+      "file": "back/seel.gif",
+      "width": 61,
+      "height": 43,
+      "frames": 8
+    },
+    {
+      "file": "front/dewgong.gif",
+      "width": 75,
+      "height": 75,
+      "frames": 60
+    },
+    {
+      "file": "back/dewgong.gif",
+      "width": 76,
+      "height": 87,
+      "frames": 60
+    },
+    {
+      "file": "front/piloswine.gif",
+      "width": 55,
+      "height": 56,
+      "frames": 55
+    },
+    {
+      "file": "back/piloswine.gif",
+      "width": 52,
+      "height": 56,
+      "frames": 49
+    },
+    {
+      "file": "front/dragonair.gif",
+      "width": 64,
+      "height": 73,
+      "frames": 64
+    },
+    {
+      "file": "back/dragonair.gif",
+      "width": 63,
+      "height": 74,
+      "frames": 64
+    },
+    {
+      "file": "front/gyarados.gif",
+      "width": 102,
+      "height": 84,
+      "frames": 11
+    },
+    {
+      "file": "back/gyarados.gif",
+      "width": 109,
+      "height": 83,
+      "frames": 11
+    },
+    {
+      "file": "front/kingdra.gif",
+      "width": 54,
+      "height": 91,
+      "frames": 54
+    },
+    {
+      "file": "back/kingdra.gif",
+      "width": 50,
+      "height": 94,
+      "frames": 54
+    },
+    {
+      "file": "front/nosepass.gif",
+      "width": 42,
+      "height": 46,
+      "frames": 10
+    },
+    {
+      "file": "back/nosepass.gif",
+      "width": 40,
+      "height": 47,
+      "frames": 10
+    },
+    {
+      "file": "front/machop.gif",
+      "width": 50,
+      "height": 50,
+      "frames": 100
+    },
+    {
+      "file": "back/machop.gif",
+      "width": 52,
+      "height": 51,
+      "frames": 100
+    },
+    {
+      "file": "front/meditite.gif",
+      "width": 44,
+      "height": 54,
+      "frames": 48
+    },
+    {
+      "file": "back/meditite.gif",
+      "width": 44,
+      "height": 51,
+      "frames": 48
+    },
+    {
+      "file": "front/makuhita.gif",
+      "width": 63,
+      "height": 63,
+      "frames": 66
+    },
+    {
+      "file": "back/makuhita.gif",
+      "width": 61,
+      "height": 61,
+      "frames": 66
+    },
+    {
+      "file": "front/magneton.gif",
+      "width": 68,
+      "height": 60,
+      "frames": 78
+    },
+    {
+      "file": "back/magneton.gif",
+      "width": 73,
+      "height": 59,
+      "frames": 72
+    },
+    {
+      "file": "front/electrike.gif",
+      "width": 50,
+      "height": 36,
+      "frames": 7
+    },
+    {
+      "file": "back/electrike.gif",
+      "width": 47,
+      "height": 34,
+      "frames": 7
+    },
+    {
+      "file": "front/manectric.gif",
+      "width": 62,
+      "height": 70,
+      "frames": 14
+    },
+    {
+      "file": "back/manectric.gif",
+      "width": 64,
+      "height": 71,
+      "frames": 14
+    },
+    {
+      "file": "front/numel.gif",
+      "width": 48,
+      "height": 48,
+      "frames": 25
+    },
+    {
+      "file": "back/numel.gif",
+      "width": 48,
+      "height": 53,
+      "frames": 25
+    },
+    {
+      "file": "front/slugma.gif",
+      "width": 39,
+      "height": 40,
+      "frames": 24
+    },
+    {
+      "file": "back/slugma.gif",
+      "width": 33,
+      "height": 42,
+      "frames": 24
+    },
+    {
+      "file": "front/camerupt.gif",
+      "width": 79,
+      "height": 61,
+      "frames": 53
+    },
+    {
+      "file": "back/camerupt.gif",
+      "width": 83,
+      "height": 62,
+      "frames": 55
+    },
+    {
+      "file": "front/torkoal.gif",
+      "width": 64,
+      "height": 65,
+      "frames": 65
+    },
+    {
+      "file": "back/torkoal.gif",
+      "width": 66,
+      "height": 64,
+      "frames": 69
+    },
+    {
+      "file": "front/spinda.gif",
+      "width": 39,
+      "height": 52,
+      "frames": 58
+    },
+    {
+      "file": "back/spinda.gif",
+      "width": 41,
+      "height": 58,
+      "frames": 64
+    },
+    {
+      "file": "front/vigoroth.gif",
+      "width": 67,
+      "height": 65,
+      "frames": 26
+    },
+    {
+      "file": "back/vigoroth.gif",
+      "width": 54,
+      "height": 71,
+      "frames": 27
+    },
+    {
+      "file": "front/linoone.gif",
+      "width": 81,
+      "height": 41,
+      "frames": 65
+    },
+    {
+      "file": "back/linoone.gif",
+      "width": 78,
+      "height": 54,
+      "frames": 64
+    },
+    {
+      "file": "front/slaking.gif",
+      "width": 75,
+      "height": 61,
+      "frames": 69
+    },
+    {
+      "file": "back/slaking.gif",
+      "width": 79,
+      "height": 59,
+      "frames": 39
+    },
+    {
+      "file": "front/swablu.gif",
+      "width": 74,
+      "height": 49,
+      "frames": 12
+    },
+    {
+      "file": "back/swablu.gif",
+      "width": 74,
+      "height": 52,
+      "frames": 12
+    },
+    {
+      "file": "front/tropius.gif",
+      "width": 94,
+      "height": 80,
+      "frames": 52
+    },
+    {
+      "file": "back/tropius.gif",
+      "width": 82,
+      "height": 85,
+      "frames": 48
+    },
+    {
+      "file": "front/pelipper.gif",
+      "width": 96,
+      "height": 76,
+      "frames": 34
+    },
+    {
+      "file": "back/pelipper.gif",
+      "width": 88,
+      "height": 74,
+      "frames": 34
+    },
+    {
+      "file": "front/skarmory.gif",
+      "width": 69,
+      "height": 70,
+      "frames": 136
+    },
+    {
+      "file": "back/skarmory.gif",
+      "width": 85,
+      "height": 69,
+      "frames": 139
+    },
+    {
+      "file": "front/altaria.gif",
+      "width": 60,
+      "height": 64,
+      "frames": 60
+    },
+    {
+      "file": "back/altaria.gif",
+      "width": 60,
+      "height": 71,
+      "frames": 60
+    },
+    {
+      "file": "front/claydol.gif",
+      "width": 70,
+      "height": 72,
+      "frames": 51
+    },
+    {
+      "file": "back/claydol.gif",
+      "width": 70,
+      "height": 72,
+      "frames": 51
+    },
+    {
+      "file": "front/xatu.gif",
+      "width": 45,
+      "height": 60,
+      "frames": 49
+    },
+    {
+      "file": "back/xatu.gif",
+      "width": 67,
+      "height": 60,
+      "frames": 49
+    },
+    {
+      "file": "front/lunatone.gif",
+      "width": 46,
+      "height": 59,
+      "frames": 84
+    },
+    {
+      "file": "back/lunatone.gif",
+      "width": 45,
+      "height": 59,
+      "frames": 84
+    },
+    {
+      "file": "front/solrock.gif",
+      "width": 87,
+      "height": 66,
+      "frames": 112
+    },
+    {
+      "file": "back/solrock.gif",
+      "width": 87,
+      "height": 65,
+      "frames": 112
+    },
+    {
+      "file": "front/luvdisc.gif",
+      "width": 30,
+      "height": 37,
+      "frames": 42
+    },
+    {
+      "file": "back/luvdisc.gif",
+      "width": 32,
+      "height": 37,
+      "frames": 54
+    },
+    {
+      "file": "front/whiscash.gif",
+      "width": 75,
+      "height": 61,
+      "frames": 95
+    },
+    {
+      "file": "back/whiscash.gif",
+      "width": 70,
+      "height": 54,
+      "frames": 95
+    },
+    {
+      "file": "front/sealeo.gif",
+      "width": 67,
+      "height": 49,
+      "frames": 65
+    },
+    {
+      "file": "back/sealeo.gif",
+      "width": 63,
+      "height": 51,
+      "frames": 67
+    },
+    {
+      "file": "front/crawdaunt.gif",
+      "width": 70,
+      "height": 64,
+      "frames": 50
+    },
+    {
+      "file": "back/crawdaunt.gif",
+      "width": 73,
+      "height": 64,
+      "frames": 50
+    },
+    {
+      "file": "front/cranidos.gif",
+      "width": 41,
+      "height": 60,
+      "frames": 63
+    },
+    {
+      "file": "back/cranidos.gif",
+      "width": 48,
+      "height": 61,
+      "frames": 47
+    },
+    {
+      "file": "front/cherrim.gif",
+      "width": 43,
+      "height": 50,
+      "frames": 48
+    },
+    {
+      "file": "back/cherrim.gif",
+      "width": 41,
+      "height": 51,
+      "frames": 48
+    },
+    {
+      "file": "front/roserade.gif",
+      "width": 71,
+      "height": 58,
+      "frames": 102
+    },
+    {
+      "file": "back/roserade.gif",
+      "width": 69,
+      "height": 58,
+      "frames": 102
+    },
+    {
+      "file": "front/duskull.gif",
+      "width": 51,
+      "height": 45,
+      "frames": 50
+    },
+    {
+      "file": "back/duskull.gif",
+      "width": 59,
+      "height": 47,
+      "frames": 49
+    },
+    {
+      "file": "front/mismagius.gif",
+      "width": 61,
+      "height": 84,
+      "frames": 15
+    },
+    {
+      "file": "back/mismagius.gif",
+      "width": 55,
+      "height": 91,
+      "frames": 15
+    },
+    {
+      "file": "front/machoke.gif",
+      "width": 61,
+      "height": 71,
+      "frames": 17
+    },
+    {
+      "file": "back/machoke.gif",
+      "width": 61,
+      "height": 72,
+      "frames": 16
+    },
+    {
+      "file": "front/lucario.gif",
+      "width": 47,
+      "height": 63,
+      "frames": 72
+    },
+    {
+      "file": "back/lucario.gif",
+      "width": 49,
+      "height": 65,
+      "frames": 72
+    },
+    {
+      "file": "front/quagsire.gif",
+      "width": 67,
+      "height": 58,
+      "frames": 60
+    },
+    {
+      "file": "back/quagsire.gif",
+      "width": 70,
+      "height": 64,
+      "frames": 44
+    },
+    {
+      "file": "front/floatzel.gif",
+      "width": 67,
+      "height": 71,
+      "frames": 168
+    },
+    {
+      "file": "back/floatzel.gif",
+      "width": 65,
+      "height": 71,
+      "frames": 168
+    },
+    {
+      "file": "front/bastiodon.gif",
+      "width": 69,
+      "height": 64,
+      "frames": 61
+    },
+    {
+      "file": "back/bastiodon.gif",
+      "width": 69,
+      "height": 66,
+      "frames": 61
+    },
+    {
+      "file": "front/sneasel.gif",
+      "width": 58,
+      "height": 52,
+      "frames": 85
+    },
+    {
+      "file": "back/sneasel.gif",
+      "width": 58,
+      "height": 52,
+      "frames": 85
+    },
+    {
+      "file": "front/abomasnow.gif",
+      "width": 96,
+      "height": 79,
+      "frames": 40
+    },
+    {
+      "file": "back/abomasnow.gif",
+      "width": 94,
+      "height": 86,
+      "frames": 40
+    },
+    {
+      "file": "front/froslass.gif",
+      "width": 35,
+      "height": 75,
+      "frames": 66
+    },
+    {
+      "file": "back/froslass.gif",
+      "width": 42,
+      "height": 72,
+      "frames": 66
+    },
+    {
+      "file": "front/jolteon.gif",
+      "width": 47,
+      "height": 49,
+      "frames": 49
+    },
+    {
+      "file": "back/jolteon.gif",
+      "width": 49,
+      "height": 48,
+      "frames": 50
+    },
+    {
+      "file": "front/luxray.gif",
+      "width": 77,
+      "height": 63,
+      "frames": 86
+    },
+    {
+      "file": "back/luxray.gif",
+      "width": 72,
+      "height": 66,
+      "frames": 86
+    },
+    {
+      "file": "front/electivire.gif",
+      "width": 97,
+      "height": 85,
+      "frames": 52
+    },
+    {
+      "file": "back/electivire.gif",
+      "width": 101,
+      "height": 85,
+      "frames": 52
+    },
+    {
+      "file": "front/emolga.gif",
+      "width": 83,
+      "height": 76,
+      "frames": 98
+    },
+    {
+      "file": "back/emolga.gif",
+      "width": 93,
+      "height": 76,
+      "frames": 97
+    },
+    {
+      "file": "front/zebstrika.gif",
+      "width": 74,
+      "height": 75,
+      "frames": 76
+    },
+    {
+      "file": "back/zebstrika.gif",
+      "width": 72,
+      "height": 74,
+      "frames": 76
+    },
+    {
+      "file": "front/krokorok.gif",
+      "width": 59,
+      "height": 62,
+      "frames": 80
+    },
+    {
+      "file": "back/krokorok.gif",
+      "width": 62,
+      "height": 64,
+      "frames": 84
+    },
+    {
+      "file": "front/palpitoad.gif",
+      "width": 42,
+      "height": 57,
+      "frames": 54
+    },
+    {
+      "file": "back/palpitoad.gif",
+      "width": 41,
+      "height": 54,
+      "frames": 71
+    },
+    {
+      "file": "front/excadrill.gif",
+      "width": 91,
+      "height": 76,
+      "frames": 92
+    },
+    {
+      "file": "back/excadrill.gif",
+      "width": 93,
+      "height": 80,
+      "frames": 92
+    },
+    {
+      "file": "front/swoobat.gif",
+      "width": 105,
+      "height": 101,
+      "frames": 115
+    },
+    {
+      "file": "back/swoobat.gif",
+      "width": 110,
+      "height": 102,
+      "frames": 110
+    },
+    {
+      "file": "front/unfezant.gif",
+      "width": 69,
+      "height": 76,
+      "frames": 88
+    },
+    {
+      "file": "back/unfezant.gif",
+      "width": 76,
+      "height": 79,
+      "frames": 95
+    },
+    {
+      "file": "front/swanna.gif",
+      "width": 137,
+      "height": 69,
+      "frames": 74
+    },
+    {
+      "file": "back/swanna.gif",
+      "width": 93,
+      "height": 68,
+      "frames": 70
+    },
+    {
+      "file": "front/gossifleur.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "back/gossifleur.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/eldegoss.gif",
+      "width": 53,
+      "height": 59,
+      "frames": 49
+    },
+    {
+      "file": "back/eldegoss.gif",
+      "width": 55,
+      "height": 58,
+      "frames": 49
+    },
+    {
+      "file": "front/arrokuda.gif",
+      "width": 104,
+      "height": 54,
+      "frames": 89
+    },
+    {
+      "file": "back/arrokuda.gif",
+      "width": 100,
+      "height": 37,
+      "frames": 89
+    },
+    {
+      "file": "front/drednaw.gif",
+      "width": 96,
+      "height": 96,
+      "frames": 39
+    },
+    {
+      "file": "back/drednaw.gif",
+      "width": 77,
+      "height": 58,
+      "frames": 39
+    },
+    {
+      "file": "front/cloyster.gif",
+      "width": 73,
+      "height": 65,
+      "frames": 17
+    },
+    {
+      "file": "back/cloyster.gif",
+      "width": 69,
+      "height": 68,
+      "frames": 17
+    },
+    {
+      "file": "front/slowbro.gif",
+      "width": 62,
+      "height": 60,
+      "frames": 61
+    },
+    {
+      "file": "back/slowbro.gif",
+      "width": 76,
+      "height": 58,
+      "frames": 61
+    },
+    {
+      "file": "front/jynx.gif",
+      "width": 63,
+      "height": 60,
+      "frames": 54
+    },
+    {
+      "file": "back/jynx.gif",
+      "width": 62,
+      "height": 60,
+      "frames": 54
+    },
+    {
+      "file": "front/hitmonchan.gif",
+      "width": 34,
+      "height": 59,
+      "frames": 40
+    },
+    {
+      "file": "back/hitmonchan.gif",
+      "width": 44,
+      "height": 56,
+      "frames": 40
+    },
+    {
+      "file": "front/hitmonlee.gif",
+      "width": 67,
+      "height": 78,
+      "frames": 23
+    },
+    {
+      "file": "back/hitmonlee.gif",
+      "width": 62,
+      "height": 75,
+      "frames": 22
+    },
+    {
+      "file": "front/machamp.gif",
+      "width": 63,
+      "height": 77,
+      "frames": 29
+    },
+    {
+      "file": "back/machamp.gif",
+      "width": 67,
+      "height": 77,
+      "frames": 29
+    },
+    {
+      "file": "front/golbat.gif",
+      "width": 110,
+      "height": 82,
+      "frames": 16
+    },
+    {
+      "file": "back/golbat.gif",
+      "width": 95,
+      "height": 84,
+      "frames": 16
+    },
+    {
+      "file": "front/arbok.gif",
+      "width": 82,
+      "height": 75,
+      "frames": 19
+    },
+    {
+      "file": "back/arbok.gif",
+      "width": 86,
+      "height": 71,
+      "frames": 18
+    },
+    {
+      "file": "front/exeggutor.gif",
+      "width": 78,
+      "height": 73,
+      "frames": 9
+    },
+    {
+      "file": "back/exeggutor.gif",
+      "width": 75,
+      "height": 71,
+      "frames": 8
+    },
+    {
+      "file": "front/umbreon.gif",
+      "width": 43,
+      "height": 51,
+      "frames": 32
+    },
+    {
+      "file": "back/umbreon.gif",
+      "width": 49,
+      "height": 51,
+      "frames": 32
+    },
+    {
+      "file": "front/murkrow.gif",
+      "width": 43,
+      "height": 45,
+      "frames": 10
+    },
+    {
+      "file": "back/murkrow.gif",
+      "width": 42,
+      "height": 47,
+      "frames": 10
+    },
+    {
+      "file": "front/houndoom.gif",
+      "width": 77,
+      "height": 72,
+      "frames": 62
+    },
+    {
+      "file": "back/houndoom.gif",
+      "width": 79,
+      "height": 69,
+      "frames": 56
+    },
+    {
+      "file": "front/mightyena.gif",
+      "width": 74,
+      "height": 64,
+      "frames": 64
+    },
+    {
+      "file": "back/mightyena.gif",
+      "width": 78,
+      "height": 65,
+      "frames": 64
+    },
+    {
+      "file": "front/shiftry.gif",
+      "width": 100,
+      "height": 71,
+      "frames": 39
+    },
+    {
+      "file": "back/shiftry.gif",
+      "width": 102,
+      "height": 71,
+      "frames": 39
+    },
+    {
+      "file": "front/cacturne.gif",
+      "width": 70,
+      "height": 70,
+      "frames": 60
+    },
+    {
+      "file": "back/cacturne.gif",
+      "width": 71,
+      "height": 70,
+      "frames": 60
+    },
+    {
+      "file": "front/absol.gif",
+      "width": 65,
+      "height": 64,
+      "frames": 83
+    },
+    {
+      "file": "back/absol.gif",
+      "width": 68,
+      "height": 60,
+      "frames": 83
+    },
+    {
+      "file": "front/dusclops.gif",
+      "width": 84,
+      "height": 70,
+      "frames": 67
+    },
+    {
+      "file": "back/dusclops.gif",
+      "width": 75,
+      "height": 73,
+      "frames": 67
+    },
+    {
+      "file": "front/banette.gif",
+      "width": 55,
+      "height": 51,
+      "frames": 68
+    },
+    {
+      "file": "back/banette.gif",
+      "width": 55,
+      "height": 52,
+      "frames": 98
+    },
+    {
+      "file": "front/sableye.gif",
+      "width": 43,
+      "height": 49,
+      "frames": 84
+    },
+    {
+      "file": "back/sableye.gif",
+      "width": 39,
+      "height": 49,
+      "frames": 84
+    },
+    {
+      "file": "front/shelgon.gif",
+      "width": 46,
+      "height": 49,
+      "frames": 51
+    },
+    {
+      "file": "back/shelgon.gif",
+      "width": 47,
+      "height": 50,
+      "frames": 39
+    },
+    {
+      "file": "front/flygon.gif",
+      "width": 71,
+      "height": 82,
+      "frames": 80
+    },
+    {
+      "file": "back/flygon.gif",
+      "width": 89,
+      "height": 80,
+      "frames": 80
+    },
+    {
+      "file": "front/salamence.gif",
+      "width": 85,
+      "height": 72,
+      "frames": 62
+    },
+    {
+      "file": "back/salamence.gif",
+      "width": 89,
+      "height": 82,
+      "frames": 66
+    },
+    {
+      "file": "front/reuniclus.gif",
+      "width": 100,
+      "height": 63,
+      "frames": 72
+    },
+    {
+      "file": "back/reuniclus.gif",
+      "width": 97,
+      "height": 67,
+      "frames": 72
+    },
+    {
+      "file": "front/musharna.gif",
+      "width": 77,
+      "height": 74,
+      "frames": 45
+    },
+    {
+      "file": "back/musharna.gif",
+      "width": 74,
+      "height": 73,
+      "frames": 45
+    },
+    {
+      "file": "front/sigilyph.gif",
+      "width": 120,
+      "height": 99,
+      "frames": 190
+    },
+    {
+      "file": "back/sigilyph.gif",
+      "width": 118,
+      "height": 98,
+      "frames": 200
+    },
+    {
+      "file": "front/gothitelle.gif",
+      "width": 67,
+      "height": 73,
+      "frames": 96
+    },
+    {
+      "file": "back/gothitelle.gif",
+      "width": 71,
+      "height": 74,
+      "frames": 96
+    },
+    {
+      "file": "front/throh.gif",
+      "width": 74,
+      "height": 53,
+      "frames": 56
+    },
+    {
+      "file": "back/throh.gif",
+      "width": 65,
+      "height": 52,
+      "frames": 56
+    },
+    {
+      "file": "front/sawk.gif",
+      "width": 58,
+      "height": 66,
+      "frames": 64
+    },
+    {
+      "file": "back/sawk.gif",
+      "width": 56,
+      "height": 66,
+      "frames": 64
+    },
+    {
+      "file": "front/conkeldurr.gif",
+      "width": 102,
+      "height": 69,
+      "frames": 81
+    },
+    {
+      "file": "back/conkeldurr.gif",
+      "width": 80,
+      "height": 59,
+      "frames": 81
+    },
+    {
+      "file": "front/mienshao.gif",
+      "width": 87,
+      "height": 70,
+      "frames": 101
+    },
+    {
+      "file": "back/mienshao.gif",
+      "width": 80,
+      "height": 66,
+      "frames": 101
+    },
+    {
+      "file": "front/crobat.gif",
+      "width": 105,
+      "height": 73,
+      "frames": 18
+    },
+    {
+      "file": "back/crobat.gif",
+      "width": 107,
+      "height": 64,
+      "frames": 16
+    },
+    {
+      "file": "front/oricorio-pau.gif",
+      "width": 52,
+      "height": 54,
+      "frames": 78
+    },
+    {
+      "file": "back/oricorio-pau.gif",
+      "width": 46,
+      "height": 55,
+      "frames": 78
+    },
+    {
+      "file": "front/mandibuzz.gif",
+      "width": 57,
+      "height": 71,
+      "frames": 70
+    },
+    {
+      "file": "back/mandibuzz.gif",
+      "width": 54,
+      "height": 72,
+      "frames": 70
+    },
+    {
+      "file": "front/toucannon.gif",
+      "width": 89,
+      "height": 64,
+      "frames": 130
+    },
+    {
+      "file": "back/toucannon.gif",
+      "width": 93,
+      "height": 64,
+      "frames": 131
+    },
+    {
+      "file": "front/spiritomb.gif",
+      "width": 66,
+      "height": 63,
+      "frames": 112
+    },
+    {
+      "file": "back/spiritomb.gif",
+      "width": 64,
+      "height": 62,
+      "frames": 8
+    },
+    {
+      "file": "front/togekiss.gif",
+      "width": 86,
+      "height": 52,
+      "frames": 48
+    },
+    {
+      "file": "back/togekiss.gif",
+      "width": 86,
+      "height": 53,
+      "frames": 48
+    },
+    {
+      "file": "front/milotic.gif",
+      "width": 86,
+      "height": 78,
+      "frames": 96
+    },
+    {
+      "file": "back/milotic.gif",
+      "width": 93,
+      "height": 80,
+      "frames": 100
+    },
+    {
+      "file": "front/garchomp.gif",
+      "width": 83,
+      "height": 80,
+      "frames": 45
+    },
+    {
+      "file": "back/garchomp.gif",
+      "width": 89,
+      "height": 83,
+      "frames": 45
+    },
+    {
+      "file": "front/aggron.gif",
+      "width": 77,
+      "height": 76,
+      "frames": 82
+    },
+    {
+      "file": "back/aggron.gif",
+      "width": 67,
+      "height": 77,
+      "frames": 85
+    },
+    {
+      "file": "front/cradily.gif",
+      "width": 60,
+      "height": 78,
+      "frames": 67
+    },
+    {
+      "file": "back/cradily.gif",
+      "width": 64,
+      "height": 79,
+      "frames": 67
+    },
+    {
+      "file": "front/armaldo.gif",
+      "width": 83,
+      "height": 68,
+      "frames": 80
+    },
+    {
+      "file": "back/armaldo.gif",
+      "width": 73,
+      "height": 68,
+      "frames": 80
+    },
+    {
+      "file": "front/metagross.gif",
+      "width": 83,
+      "height": 58,
+      "frames": 52
+    },
+    {
+      "file": "back/metagross.gif",
+      "width": 82,
+      "height": 56,
+      "frames": 52
+    },
+    {
+      "file": "front/dragonite.gif",
+      "width": 80,
+      "height": 82,
+      "frames": 68
+    },
+    {
+      "file": "back/dragonite.gif",
+      "width": 86,
+      "height": 81,
+      "frames": 68
+    },
+    {
+      "file": "front/aerodactyl.gif",
+      "width": 94,
+      "height": 82,
+      "frames": 19
+    },
+    {
+      "file": "back/aerodactyl.gif",
+      "width": 89,
+      "height": 92,
+      "frames": 19
+    },
+    {
+      "file": "front/charizard.gif",
+      "width": 89,
+      "height": 91,
+      "frames": 72
+    },
+    {
+      "file": "back/charizard.gif",
+      "width": 98,
+      "height": 83,
+      "frames": 72
+    },
+    {
+      "file": "front/shinx.gif",
+      "width": 51,
+      "height": 38,
+      "frames": 64
+    },
+    {
+      "file": "back/shinx.gif",
+      "width": 54,
+      "height": 39,
+      "frames": 64
+    },
+    {
+      "file": "front/ralts.gif",
+      "width": 23,
+      "height": 39,
+      "frames": 13
+    },
+    {
+      "file": "back/ralts.gif",
+      "width": 26,
+      "height": 42,
+      "frames": 13
+    },
+    {
+      "file": "front/mareep.gif",
+      "width": 50,
+      "height": 41,
+      "frames": 49
+    },
+    {
+      "file": "back/mareep.gif",
+      "width": 48,
+      "height": 41,
+      "frames": 50
+    },
+    {
+      "file": "front/nidoranm.gif",
+      "width": 37,
+      "height": 37,
+      "frames": 20
+    },
+    {
+      "file": "back/nidoranm.gif",
+      "width": 37,
+      "height": 43,
+      "frames": 20
+    },
+    {
+      "file": "front/riolu.gif",
+      "width": 43,
+      "height": 50,
+      "frames": 63
+    },
+    {
+      "file": "back/riolu.gif",
+      "width": 41,
+      "height": 49,
+      "frames": 63
+    },
+    {
+      "file": "front/lillipup.gif",
+      "width": 40,
+      "height": 50,
+      "frames": 64
+    },
+    {
+      "file": "back/lillipup.gif",
+      "width": 45,
+      "height": 48,
+      "frames": 64
+    },
+    {
+      "file": "front/yamper.gif",
+      "width": 35,
+      "height": 44,
+      "frames": 47
+    },
+    {
+      "file": "back/yamper.gif",
+      "width": 43,
+      "height": 45,
+      "frames": 50
+    },
+    {
+      "file": "front/rookidee.gif",
+      "width": 96,
+      "height": 96,
+      "frames": 84
+    },
+    {
+      "file": "back/rookidee.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/caterpie.gif",
+      "width": 36,
+      "height": 37,
+      "frames": 40
+    },
+    {
+      "file": "back/caterpie.gif",
+      "width": 38,
+      "height": 35,
+      "frames": 40
+    },
+    {
+      "file": "front/bellsprout.gif",
+      "width": 41,
+      "height": 44,
+      "frames": 56
+    },
+    {
+      "file": "back/bellsprout.gif",
+      "width": 44,
+      "height": 52,
+      "frames": 56
+    },
+    {
+      "file": "front/oddish.gif",
+      "width": 37,
+      "height": 50,
+      "frames": 55
+    },
+    {
+      "file": "back/oddish.gif",
+      "width": 41,
+      "height": 51,
+      "frames": 55
+    },
+    {
+      "file": "front/heracross.gif",
+      "width": 61,
+      "height": 70,
+      "frames": 77
+    },
+    {
+      "file": "back/heracross.gif",
+      "width": 67,
+      "height": 72,
+      "frames": 77
+    },
+    {
+      "file": "front/shroomish.gif",
+      "width": 44,
+      "height": 48,
+      "frames": 32
+    },
+    {
+      "file": "back/shroomish.gif",
+      "width": 44,
+      "height": 46,
+      "frames": 33
+    },
+    {
+      "file": "front/budew.gif",
+      "width": 29,
+      "height": 56,
+      "frames": 77
+    },
+    {
+      "file": "back/budew.gif",
+      "width": 29,
+      "height": 56,
+      "frames": 77
+    },
+    {
+      "file": "front/venipede.gif",
+      "width": 50,
+      "height": 35,
+      "frames": 89
+    },
+    {
+      "file": "back/venipede.gif",
+      "width": 53,
+      "height": 35,
+      "frames": 89
+    },
+    {
+      "file": "front/sewaddle.gif",
+      "width": 33,
+      "height": 36,
+      "frames": 80
+    },
+    {
+      "file": "back/sewaddle.gif",
+      "width": 33,
+      "height": 41,
+      "frames": 80
+    },
+    {
+      "file": "front/seedot.gif",
+      "width": 35,
+      "height": 38,
+      "frames": 193
+    },
+    {
+      "file": "back/seedot.gif",
+      "width": 35,
+      "height": 37,
+      "frames": 193
+    },
+    {
+      "file": "front/hoothoot.gif",
+      "width": 51,
+      "height": 60,
+      "frames": 82
+    },
+    {
+      "file": "back/hoothoot.gif",
+      "width": 53,
+      "height": 58,
+      "frames": 84
+    },
+    {
+      "file": "front/wooper.gif",
+      "width": 43,
+      "height": 33,
+      "frames": 12
+    },
+    {
+      "file": "back/wooper.gif",
+      "width": 41,
+      "height": 32,
+      "frames": 12
+    },
+    {
+      "file": "front/lotad.gif",
+      "width": 44,
+      "height": 41,
+      "frames": 56
+    },
+    {
+      "file": "back/lotad.gif",
+      "width": 44,
+      "height": 40,
+      "frames": 58
+    },
+    {
+      "file": "front/marill.gif",
+      "width": 53,
+      "height": 37,
+      "frames": 68
+    },
+    {
+      "file": "back/marill.gif",
+      "width": 54,
+      "height": 36,
+      "frames": 68
+    },
+    {
+      "file": "front/tympole.gif",
+      "width": 39,
+      "height": 44,
+      "frames": 109
+    },
+    {
+      "file": "back/tympole.gif",
+      "width": 40,
+      "height": 49,
+      "frames": 113
+    },
+    {
+      "file": "front/surskit.gif",
+      "width": 68,
+      "height": 51,
+      "frames": 64
+    },
+    {
+      "file": "back/surskit.gif",
+      "width": 69,
+      "height": 50,
+      "frames": 60
+    },
+    {
+      "file": "front/wingull.gif",
+      "width": 63,
+      "height": 45,
+      "frames": 76
+    },
+    {
+      "file": "back/wingull.gif",
+      "width": 64,
+      "height": 43,
+      "frames": 76
+    },
+    {
+      "file": "front/krabby.gif",
+      "width": 55,
+      "height": 40,
+      "frames": 18
+    },
+    {
+      "file": "back/krabby.gif",
+      "width": 56,
+      "height": 43,
+      "frames": 18
+    },
+    {
+      "file": "front/sandygast.gif",
+      "width": 65,
+      "height": 53,
+      "frames": 45
+    },
+    {
+      "file": "back/sandygast.gif",
+      "width": 73,
+      "height": 52,
+      "frames": 45
+    },
+    {
+      "file": "front/sandshrew.gif",
+      "width": 36,
+      "height": 39,
+      "frames": 82
+    },
+    {
+      "file": "back/sandshrew.gif",
+      "width": 41,
+      "height": 38,
+      "frames": 82
+    },
+    {
+      "file": "front/aron.gif",
+      "width": 32,
+      "height": 31,
+      "frames": 17
+    },
+    {
+      "file": "back/aron.gif",
+      "width": 34,
+      "height": 32,
+      "frames": 17
+    },
+    {
+      "file": "front/drilbur.gif",
+      "width": 82,
+      "height": 52,
+      "frames": 72
+    },
+    {
+      "file": "back/drilbur.gif",
+      "width": 61,
+      "height": 44,
+      "frames": 72
+    },
+    {
+      "file": "front/zubat.gif",
+      "width": 53,
+      "height": 46,
+      "frames": 27
+    },
+    {
+      "file": "back/zubat.gif",
+      "width": 49,
+      "height": 59,
+      "frames": 9
+    },
+    {
+      "file": "front/roggenrola.gif",
+      "width": 24,
+      "height": 39,
+      "frames": 64
+    },
+    {
+      "file": "back/roggenrola.gif",
+      "width": 24,
+      "height": 38,
+      "frames": 64
+    },
+    {
+      "file": "front/swinub.gif",
+      "width": 35,
+      "height": 25,
+      "frames": 8
+    },
+    {
+      "file": "back/swinub.gif",
+      "width": 34,
+      "height": 26,
+      "frames": 8
+    },
+    {
+      "file": "front/snorunt.gif",
+      "width": 32,
+      "height": 39,
+      "frames": 31
+    },
+    {
+      "file": "back/snorunt.gif",
+      "width": 34,
+      "height": 38,
+      "frames": 31
+    },
+    {
+      "file": "front/spheal.gif",
+      "width": 43,
+      "height": 38,
+      "frames": 49
+    },
+    {
+      "file": "back/spheal.gif",
+      "width": 41,
+      "height": 37,
+      "frames": 49
+    },
+    {
+      "file": "front/snover.gif",
+      "width": 72,
+      "height": 56,
+      "frames": 56
+    },
+    {
+      "file": "back/snover.gif",
+      "width": 73,
+      "height": 55,
+      "frames": 56
+    },
+    {
+      "file": "front/cubchoo.gif",
+      "width": 32,
+      "height": 38,
+      "frames": 96
+    },
+    {
+      "file": "back/cubchoo.gif",
+      "width": 33,
+      "height": 37,
+      "frames": 96
+    },
+    {
+      "file": "front/snom.gif",
+      "width": 37,
+      "height": 26,
+      "frames": 40
+    },
+    {
+      "file": "back/snom.gif",
+      "width": 37,
+      "height": 26,
+      "frames": 38
+    },
+    {
+      "file": "front/rattata.gif",
+      "width": 43,
+      "height": 43,
+      "frames": 50
+    },
+    {
+      "file": "back/rattata.gif",
+      "width": 59,
+      "height": 42,
+      "frames": 49
+    },
+    {
+      "file": "front/sentret.gif",
+      "width": 50,
+      "height": 68,
+      "frames": 35
+    },
+    {
+      "file": "back/sentret.gif",
+      "width": 48,
+      "height": 65,
+      "frames": 35
+    },
+    {
+      "file": "front/poochyena.gif",
+      "width": 52,
+      "height": 44,
+      "frames": 59
+    },
+    {
+      "file": "back/poochyena.gif",
+      "width": 53,
+      "height": 44,
+      "frames": 52
+    },
+    {
+      "file": "front/zigzagoon.gif",
+      "width": 58,
+      "height": 43,
+      "frames": 90
+    },
+    {
+      "file": "back/zigzagoon.gif",
+      "width": 59,
+      "height": 39,
+      "frames": 78
+    },
+    {
+      "file": "front/wurmple.gif",
+      "width": 37,
+      "height": 46,
+      "frames": 44
+    },
+    {
+      "file": "back/wurmple.gif",
+      "width": 40,
+      "height": 47,
+      "frames": 32
+    },
+    {
+      "file": "front/starly.gif",
+      "width": 38,
+      "height": 41,
+      "frames": 61
+    },
+    {
+      "file": "back/starly.gif",
+      "width": 38,
+      "height": 42,
+      "frames": 61
+    },
+    {
+      "file": "front/bidoof.gif",
+      "width": 49,
+      "height": 45,
+      "frames": 52
+    },
+    {
+      "file": "back/bidoof.gif",
+      "width": 50,
+      "height": 45,
+      "frames": 51
+    },
+    {
+      "file": "front/patrat.gif",
+      "width": 53,
+      "height": 45,
+      "frames": 65
+    },
+    {
+      "file": "back/patrat.gif",
+      "width": 50,
+      "height": 45,
+      "frames": 60
+    },
+    {
+      "file": "front/purrloin.gif",
+      "width": 58,
+      "height": 49,
+      "frames": 32
+    },
+    {
+      "file": "back/purrloin.gif",
+      "width": 57,
+      "height": 51,
+      "frames": 32
+    },
+    {
+      "file": "front/pikipek.gif",
+      "width": 38,
+      "height": 42,
+      "frames": 79
+    },
+    {
+      "file": "back/pikipek.gif",
+      "width": 36,
+      "height": 42,
+      "frames": 79
+    },
+    {
+      "file": "front/grubbin.gif",
+      "width": 43,
+      "height": 24,
+      "frames": 20
+    },
+    {
+      "file": "back/grubbin.gif",
+      "width": 37,
+      "height": 24,
+      "frames": 10
+    },
+    {
+      "file": "front/yungoos.gif",
+      "width": 61,
+      "height": 37,
+      "frames": 64
+    },
+    {
+      "file": "back/yungoos.gif",
+      "width": 65,
+      "height": 39,
+      "frames": 64
+    },
+    {
+      "file": "front/wooloo.gif",
+      "width": 46,
+      "height": 42,
+      "frames": 52
+    },
+    {
+      "file": "back/wooloo.gif",
+      "width": 48,
+      "height": 42,
+      "frames": 101
+    },
+    {
+      "file": "front/ledyba.gif",
+      "width": 44,
+      "height": 51,
+      "frames": 48
+    },
+    {
+      "file": "back/ledyba.gif",
+      "width": 47,
+      "height": 47,
+      "frames": 48
+    },
+    {
+      "file": "front/spinarak.gif",
+      "width": 43,
+      "height": 28,
+      "frames": 32
+    },
+    {
+      "file": "back/spinarak.gif",
+      "width": 45,
+      "height": 35,
+      "frames": 32
+    },
+    {
+      "file": "front/pidove.gif",
+      "width": 36,
+      "height": 38,
+      "frames": 65
+    },
+    {
+      "file": "back/pidove.gif",
+      "width": 36,
+      "height": 39,
+      "frames": 62
+    },
+    {
+      "file": "front/blitzle.gif",
+      "width": 46,
+      "height": 63,
+      "frames": 96
+    },
+    {
+      "file": "back/blitzle.gif",
+      "width": 49,
+      "height": 63,
+      "frames": 90
+    },
+    {
+      "file": "front/nidoranf.gif",
+      "width": 35,
+      "height": 34,
+      "frames": 49
+    },
+    {
+      "file": "back/nidoranf.gif",
+      "width": 33,
+      "height": 36,
+      "frames": 41
+    },
+    {
+      "file": "front/abra.gif",
+      "width": 64,
+      "height": 53,
+      "frames": 56
+    },
+    {
+      "file": "back/abra.gif",
+      "width": 71,
+      "height": 56,
+      "frames": 56
+    },
+    {
+      "file": "front/drowzee.gif",
+      "width": 52,
+      "height": 58,
+      "frames": 76
+    },
+    {
+      "file": "back/drowzee.gif",
+      "width": 57,
+      "height": 57,
+      "frames": 76
+    },
+    {
+      "file": "front/diglett.gif",
+      "width": 38,
+      "height": 31,
+      "frames": 66
+    },
+    {
+      "file": "back/diglett.gif",
+      "width": 38,
+      "height": 32,
+      "frames": 66
+    },
+    {
+      "file": "front/vulpix.gif",
+      "width": 60,
+      "height": 50,
+      "frames": 36
+    },
+    {
+      "file": "back/vulpix.gif",
+      "width": 62,
+      "height": 52,
+      "frames": 36
+    },
+    {
+      "file": "front/nidorino.gif",
+      "width": 52,
+      "height": 56,
+      "frames": 49
+    },
+    {
+      "file": "back/nidorino.gif",
+      "width": 54,
+      "height": 56,
+      "frames": 49
+    },
+    {
+      "file": "front/exeggcute.gif",
+      "width": 54,
+      "height": 43,
+      "frames": 9
+    },
+    {
+      "file": "back/exeggcute.gif",
+      "width": 55,
+      "height": 40,
+      "frames": 9
+    },
+    {
+      "file": "front/meowth.gif",
+      "width": 48,
+      "height": 65,
+      "frames": 70
+    },
+    {
+      "file": "back/meowth.gif",
+      "width": 59,
+      "height": 64,
+      "frames": 69
+    },
+    {
+      "file": "front/grimer.gif",
+      "width": 72,
+      "height": 42,
+      "frames": 60
+    },
+    {
+      "file": "back/grimer.gif",
+      "width": 71,
+      "height": 46,
+      "frames": 56
+    },
+    {
+      "file": "front/nidorina.gif",
+      "width": 52,
+      "height": 47,
+      "frames": 44
+    },
+    {
+      "file": "back/nidorina.gif",
+      "width": 51,
+      "height": 43,
+      "frames": 12
+    },
+    {
+      "file": "front/slowpoke.gif",
+      "width": 65,
+      "height": 54,
+      "frames": 15
+    },
+    {
+      "file": "back/slowpoke.gif",
+      "width": 67,
+      "height": 51,
+      "frames": 15
+    },
+    {
+      "file": "front/stantler.gif",
+      "width": 57,
+      "height": 78,
+      "frames": 42
+    },
+    {
+      "file": "back/stantler.gif",
+      "width": 65,
+      "height": 79,
+      "frames": 42
+    },
+    {
+      "file": "front/misdreavus.gif",
+      "width": 49,
+      "height": 57,
+      "frames": 24
+    },
+    {
+      "file": "back/misdreavus.gif",
+      "width": 46,
+      "height": 64,
+      "frames": 24
+    },
+    {
+      "file": "front/shuckle.gif",
+      "width": 54,
+      "height": 46,
+      "frames": 52
+    },
+    {
+      "file": "back/shuckle.gif",
+      "width": 52,
+      "height": 47,
+      "frames": 52
+    },
+    {
+      "file": "front/girafarig.gif",
+      "width": 59,
+      "height": 77,
+      "frames": 62
+    },
+    {
+      "file": "back/girafarig.gif",
+      "width": 62,
+      "height": 78,
+      "frames": 38
+    },
+    {
+      "file": "front/gligar.gif",
+      "width": 93,
+      "height": 60,
+      "frames": 38
+    },
+    {
+      "file": "back/gligar.gif",
+      "width": 92,
+      "height": 64,
+      "frames": 36
+    },
+    {
+      "file": "front/dratini.gif",
+      "width": 43,
+      "height": 51,
+      "frames": 24
+    },
+    {
+      "file": "back/dratini.gif",
+      "width": 48,
+      "height": 56,
+      "frames": 24
+    },
+    {
+      "file": "front/taillow.gif",
+      "width": 43,
+      "height": 36,
+      "frames": 45
+    },
+    {
+      "file": "back/taillow.gif",
+      "width": 48,
+      "height": 35,
+      "frames": 45
+    },
+    {
+      "file": "front/slakoth.gif",
+      "width": 52,
+      "height": 31,
+      "frames": 13
+    },
+    {
+      "file": "back/slakoth.gif",
+      "width": 51,
+      "height": 36,
+      "frames": 11
+    },
+    {
+      "file": "front/roselia.gif",
+      "width": 62,
+      "height": 55,
+      "frames": 76
+    },
+    {
+      "file": "back/roselia.gif",
+      "width": 60,
+      "height": 58,
+      "frames": 62
+    },
+    {
+      "file": "front/gulpin.gif",
+      "width": 35,
+      "height": 44,
+      "frames": 52
+    },
+    {
+      "file": "back/gulpin.gif",
+      "width": 34,
+      "height": 42,
+      "frames": 47
+    },
+    {
+      "file": "front/spoink.gif",
+      "width": 36,
+      "height": 66,
+      "frames": 75
+    },
+    {
+      "file": "back/spoink.gif",
+      "width": 36,
+      "height": 65,
+      "frames": 78
+    },
+    {
+      "file": "front/corphish.gif",
+      "width": 59,
+      "height": 46,
+      "frames": 38
+    },
+    {
+      "file": "back/corphish.gif",
+      "width": 57,
+      "height": 46,
+      "frames": 38
+    },
+    {
+      "file": "front/kecleon.gif",
+      "width": 65,
+      "height": 55,
+      "frames": 48
+    },
+    {
+      "file": "back/kecleon.gif",
+      "width": 78,
+      "height": 58,
+      "frames": 50
+    },
+    {
+      "file": "front/wailmer.gif",
+      "width": 84,
+      "height": 56,
+      "frames": 54
+    },
+    {
+      "file": "back/wailmer.gif",
+      "width": 83,
+      "height": 56,
+      "frames": 54
+    },
+    {
+      "file": "front/bagon.gif",
+      "width": 43,
+      "height": 51,
+      "frames": 30
+    },
+    {
+      "file": "back/bagon.gif",
+      "width": 40,
+      "height": 50,
+      "frames": 29
+    },
+    {
+      "file": "front/clamperl.gif",
+      "width": 45,
+      "height": 42,
+      "frames": 48
+    },
+    {
+      "file": "back/clamperl.gif",
+      "width": 46,
+      "height": 43,
+      "frames": 48
+    },
+    {
+      "file": "front/relicanth.gif",
+      "width": 59,
+      "height": 51,
+      "frames": 64
+    },
+    {
+      "file": "back/relicanth.gif",
+      "width": 57,
+      "height": 51,
+      "frames": 64
+    },
+    {
+      "file": "front/buneary.gif",
+      "width": 40,
+      "height": 69,
+      "frames": 91
+    },
+    {
+      "file": "back/buneary.gif",
+      "width": 44,
+      "height": 67,
+      "frames": 91
+    },
+    {
+      "file": "front/houndour.gif",
+      "width": 44,
+      "height": 44,
+      "frames": 88
+    },
+    {
+      "file": "back/houndour.gif",
+      "width": 49,
+      "height": 44,
+      "frames": 54
+    },
+    {
+      "file": "front/croagunk.gif",
+      "width": 47,
+      "height": 51,
+      "frames": 78
+    },
+    {
+      "file": "back/croagunk.gif",
+      "width": 43,
+      "height": 53,
+      "frames": 78
+    },
+    {
+      "file": "front/skorupi.gif",
+      "width": 71,
+      "height": 46,
+      "frames": 52
+    },
+    {
+      "file": "back/skorupi.gif",
+      "width": 70,
+      "height": 45,
+      "frames": 52
+    },
+    {
+      "file": "front/yanma.gif",
+      "width": 90,
+      "height": 58,
+      "frames": 126
+    },
+    {
+      "file": "back/yanma.gif",
+      "width": 91,
+      "height": 49,
+      "frames": 126
+    },
+    {
+      "file": "front/bronzor.gif",
+      "width": 47,
+      "height": 59,
+      "frames": 62
+    },
+    {
+      "file": "back/bronzor.gif",
+      "width": 48,
+      "height": 60,
+      "frames": 62
+    },
+    {
+      "file": "front/electabuzz.gif",
+      "width": 72,
+      "height": 65,
+      "frames": 48
+    },
+    {
+      "file": "back/electabuzz.gif",
+      "width": 72,
+      "height": 64,
+      "frames": 48
+    },
+    {
+      "file": "front/luxio.gif",
+      "width": 68,
+      "height": 49,
+      "frames": 192
+    },
+    {
+      "file": "back/luxio.gif",
+      "width": 63,
+      "height": 54,
+      "frames": 192
+    },
+    {
+      "file": "front/sandile.gif",
+      "width": 52,
+      "height": 38,
+      "frames": 80
+    },
+    {
+      "file": "back/sandile.gif",
+      "width": 58,
+      "height": 39,
+      "frames": 80
+    },
+    {
+      "file": "front/darumaka.gif",
+      "width": 41,
+      "height": 42,
+      "frames": 81
+    },
+    {
+      "file": "back/darumaka.gif",
+      "width": 38,
+      "height": 43,
+      "frames": 80
+    },
+    {
+      "file": "front/trubbish.gif",
+      "width": 54,
+      "height": 41,
+      "frames": 102
+    },
+    {
+      "file": "back/trubbish.gif",
+      "width": 60,
+      "height": 43,
+      "frames": 102
+    },
+    {
+      "file": "front/ducklett.gif",
+      "width": 37,
+      "height": 40,
+      "frames": 41
+    },
+    {
+      "file": "back/ducklett.gif",
+      "width": 39,
+      "height": 42,
+      "frames": 41
+    },
+    {
+      "file": "front/deerling.gif",
+      "width": 35,
+      "height": 50,
+      "frames": 65
+    },
+    {
+      "file": "back/deerling.gif",
+      "width": 34,
+      "height": 51,
+      "frames": 65
+    },
+    {
+      "file": "front/karrablast.gif",
+      "width": 32,
+      "height": 54,
+      "frames": 105
+    },
+    {
+      "file": "back/karrablast.gif",
+      "width": 33,
+      "height": 55,
+      "frames": 105
+    },
+    {
+      "file": "front/joltik.gif",
+      "width": 43,
+      "height": 37,
+      "frames": 65
+    },
+    {
+      "file": "back/joltik.gif",
+      "width": 42,
+      "height": 35,
+      "frames": 65
+    },
+    {
+      "file": "front/ferroseed.gif",
+      "width": 31,
+      "height": 42,
+      "frames": 204
+    },
+    {
+      "file": "back/ferroseed.gif",
+      "width": 33,
+      "height": 42,
+      "frames": 226
+    },
+    {
+      "file": "front/litwick.gif",
+      "width": 33,
+      "height": 44,
+      "frames": 116
+    },
+    {
+      "file": "back/litwick.gif",
+      "width": 34,
+      "height": 45,
+      "frames": 116
+    },
+    {
+      "file": "front/applin.gif",
+      "width": 41,
+      "height": 42,
+      "frames": 110
+    },
+    {
+      "file": "back/applin.gif",
+      "width": 37,
+      "height": 44,
+      "frames": 108
+    },
+    {
+      "file": "front/chewtle.gif",
+      "width": 39,
+      "height": 47,
+      "frames": 55
+    },
+    {
+      "file": "back/chewtle.gif",
+      "width": 38,
+      "height": 49,
+      "frames": 55
+    },
+    {
+      "file": "front/vaporeon.gif",
+      "width": 50,
+      "height": 59,
+      "frames": 50
+    },
+    {
+      "file": "back/vaporeon.gif",
+      "width": 50,
+      "height": 56,
+      "frames": 54
+    },
+    {
+      "file": "front/flareon.gif",
+      "width": 66,
+      "height": 60,
+      "frames": 108
+    },
+    {
+      "file": "back/flareon.gif",
+      "width": 70,
+      "height": 59,
+      "frames": 108
+    },
+    {
+      "file": "front/espeon.gif",
+      "width": 63,
+      "height": 58,
+      "frames": 90
+    },
+    {
+      "file": "back/espeon.gif",
+      "width": 60,
+      "height": 56,
+      "frames": 84
+    },
+    {
+      "file": "front/leafeon.gif",
+      "width": 62,
+      "height": 59,
+      "frames": 69
+    },
+    {
+      "file": "back/leafeon.gif",
+      "width": 76,
+      "height": 62,
+      "frames": 69
+    },
+    {
+      "file": "front/glaceon.gif",
+      "width": 76,
+      "height": 54,
+      "frames": 86
+    },
+    {
+      "file": "back/glaceon.gif",
+      "width": 69,
+      "height": 54,
+      "frames": 86
+    },
+    {
+      "file": "front/sylveon.gif",
+      "width": 51,
+      "height": 62,
+      "frames": 64
+    },
+    {
+      "file": "back/sylveon.gif",
+      "width": 55,
+      "height": 64,
+      "frames": 64
+    },
+    {
+      "file": "front/seaking.gif",
+      "width": 75,
+      "height": 67,
+      "frames": 72
+    },
+    {
+      "file": "back/seaking.gif",
+      "width": 96,
+      "height": 72,
+      "frames": 72
+    },
+    {
+      "file": "front/poliwhirl.gif",
+      "width": 74,
+      "height": 55,
+      "frames": 54
+    },
+    {
+      "file": "back/poliwhirl.gif",
+      "width": 80,
+      "height": 58,
+      "frames": 54
+    },
+    {
+      "file": "front/tentacruel.gif",
+      "width": 83,
+      "height": 85,
+      "frames": 110
+    },
+    {
+      "file": "back/tentacruel.gif",
+      "width": 84,
+      "height": 85,
+      "frames": 112
+    },
+    {
+      "file": "front/lanturn.gif",
+      "width": 74,
+      "height": 59,
+      "frames": 126
+    },
+    {
+      "file": "back/lanturn.gif",
+      "width": 71,
+      "height": 59,
+      "frames": 126
+    },
+    {
+      "file": "front/golduck.gif",
+      "width": 60,
+      "height": 59,
+      "frames": 39
+    },
+    {
+      "file": "back/golduck.gif",
+      "width": 55,
+      "height": 57,
+      "frames": 41
+    },
+    {
+      "file": "front/gastrodon.gif",
+      "width": 54,
+      "height": 61,
+      "frames": 54
+    },
+    {
+      "file": "back/gastrodon.gif",
+      "width": 55,
+      "height": 62,
+      "frames": 54
+    },
+    {
+      "file": "front/ivysaur.gif",
+      "width": 58,
+      "height": 51,
+      "frames": 56
+    },
+    {
+      "file": "back/ivysaur.gif",
+      "width": 57,
+      "height": 45,
+      "frames": 56
+    },
+    {
+      "file": "front/charmeleon.gif",
+      "width": 69,
+      "height": 56,
+      "frames": 45
+    },
+    {
+      "file": "back/charmeleon.gif",
+      "width": 67,
+      "height": 60,
+      "frames": 45
+    },
+    {
+      "file": "front/wartortle.gif",
+      "width": 60,
+      "height": 57,
+      "frames": 43
+    },
+    {
+      "file": "back/wartortle.gif",
+      "width": 56,
+      "height": 62,
+      "frames": 43
+    },
+    {
+      "file": "front/bayleef.gif",
+      "width": 52,
+      "height": 80,
+      "frames": 70
+    },
+    {
+      "file": "back/bayleef.gif",
+      "width": 53,
+      "height": 76,
+      "frames": 70
+    },
+    {
+      "file": "front/quilava.gif",
+      "width": 63,
+      "height": 53,
+      "frames": 82
+    },
+    {
+      "file": "back/quilava.gif",
+      "width": 63,
+      "height": 53,
+      "frames": 82
+    },
+    {
+      "file": "front/croconaw.gif",
+      "width": 45,
+      "height": 59,
+      "frames": 90
+    },
+    {
+      "file": "back/croconaw.gif",
+      "width": 46,
+      "height": 58,
+      "frames": 96
+    },
+    {
+      "file": "front/grovyle.gif",
+      "width": 64,
+      "height": 70,
+      "frames": 116
+    },
+    {
+      "file": "back/grovyle.gif",
+      "width": 75,
+      "height": 77,
+      "frames": 114
+    },
+    {
+      "file": "front/combusken.gif",
+      "width": 71,
+      "height": 63,
+      "frames": 64
+    },
+    {
+      "file": "back/combusken.gif",
+      "width": 71,
+      "height": 65,
+      "frames": 64
+    },
+    {
+      "file": "front/marshtomp.gif",
+      "width": 54,
+      "height": 58,
+      "frames": 64
+    },
+    {
+      "file": "back/marshtomp.gif",
+      "width": 50,
+      "height": 59,
+      "frames": 60
+    },
+    {
+      "file": "front/grotle.gif",
+      "width": 61,
+      "height": 61,
+      "frames": 87
+    },
+    {
+      "file": "back/grotle.gif",
+      "width": 59,
+      "height": 62,
+      "frames": 86
+    },
+    {
+      "file": "front/monferno.gif",
+      "width": 70,
+      "height": 68,
+      "frames": 95
+    },
+    {
+      "file": "back/monferno.gif",
+      "width": 68,
+      "height": 68,
+      "frames": 95
+    },
+    {
+      "file": "front/prinplup.gif",
+      "width": 59,
+      "height": 61,
+      "frames": 63
+    },
+    {
+      "file": "back/prinplup.gif",
+      "width": 58,
+      "height": 60,
+      "frames": 63
+    },
+    {
+      "file": "front/servine.gif",
+      "width": 65,
+      "height": 60,
+      "frames": 67
+    },
+    {
+      "file": "back/servine.gif",
+      "width": 64,
+      "height": 61,
+      "frames": 69
+    },
+    {
+      "file": "front/pignite.gif",
+      "width": 54,
+      "height": 67,
+      "frames": 63
+    },
+    {
+      "file": "back/pignite.gif",
+      "width": 59,
+      "height": 71,
+      "frames": 64
+    },
+    {
+      "file": "front/dewott.gif",
+      "width": 49,
+      "height": 57,
+      "frames": 58
+    },
+    {
+      "file": "back/dewott.gif",
+      "width": 44,
+      "height": 56,
+      "frames": 61
+    },
+    {
+      "file": "front/dartrix.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "back/dartrix.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/torracat.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "back/torracat.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/brionne.gif",
+      "width": 64,
+      "height": 65,
+      "frames": 116
+    },
+    {
+      "file": "back/brionne.gif",
+      "width": 68,
+      "height": 66,
+      "frames": 116
+    },
+    {
+      "file": "front/thwackey.gif",
+      "width": 57,
+      "height": 58,
+      "frames": 83
+    },
+    {
+      "file": "back/thwackey.gif",
+      "width": 50,
+      "height": 55,
+      "frames": 83
+    },
+    {
+      "file": "front/raboot.gif",
+      "width": 45,
+      "height": 58,
+      "frames": 60
+    },
+    {
+      "file": "back/raboot.gif",
+      "width": 36,
+      "height": 57,
+      "frames": 60
+    },
+    {
+      "file": "front/drizzile.gif",
+      "width": 51,
+      "height": 53,
+      "frames": 139
+    },
+    {
+      "file": "back/drizzile.gif",
+      "width": 53,
+      "height": 53,
+      "frames": 92
+    },
+    {
+      "file": "front/graveler.gif",
+      "width": 71,
+      "height": 44,
+      "frames": 8
+    },
+    {
+      "file": "back/graveler.gif",
+      "width": 65,
+      "height": 43,
+      "frames": 8
+    },
+    {
+      "file": "front/electrode.gif",
+      "width": 48,
+      "height": 52,
+      "frames": 29
+    },
+    {
+      "file": "back/electrode.gif",
+      "width": 48,
+      "height": 52,
+      "frames": 25
+    },
+    {
+      "file": "front/pichu.gif",
+      "width": 44,
+      "height": 49,
+      "frames": 57
+    },
+    {
+      "file": "back/pichu.gif",
+      "width": 43,
+      "height": 49,
+      "frames": 57
+    },
+    {
+      "file": "front/raichu-alola.gif",
+      "width": 105,
+      "height": 96,
+      "frames": 108
+    },
+    {
+      "file": "back/raichu-alola.gif",
+      "width": 123,
+      "height": 93,
+      "frames": 108
+    },
+    {
+      "file": "front/weepinbell.gif",
+      "width": 68,
+      "height": 50,
+      "frames": 48
+    },
+    {
+      "file": "back/weepinbell.gif",
+      "width": 72,
+      "height": 54,
+      "frames": 48
+    },
+    {
+      "file": "front/tangrowth.gif",
+      "width": 97,
+      "height": 67,
+      "frames": 96
+    },
+    {
+      "file": "back/tangrowth.gif",
+      "width": 97,
+      "height": 67,
+      "frames": 96
+    },
+    {
+      "file": "front/gloom.gif",
+      "width": 50,
+      "height": 45,
+      "frames": 48
+    },
+    {
+      "file": "back/gloom.gif",
+      "width": 49,
+      "height": 47,
+      "frames": 48
+    },
+    {
+      "file": "front/weezing-galar.gif",
+      "width": 91,
+      "height": 93,
+      "frames": 43
+    },
+    {
+      "file": "back/weezing-galar.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/mimejr.gif",
+      "width": 45,
+      "height": 61,
+      "frames": 80
+    },
+    {
+      "file": "back/mimejr.gif",
+      "width": 48,
+      "height": 64,
+      "frames": 80
+    },
+    {
+      "file": "front/venonat.gif",
+      "width": 42,
+      "height": 53,
+      "frames": 24
+    },
+    {
+      "file": "back/venonat.gif",
+      "width": 42,
+      "height": 52,
+      "frames": 24
+    },
+    {
+      "file": "front/rhydon.gif",
+      "width": 79,
+      "height": 68,
+      "frames": 96
+    },
+    {
+      "file": "back/rhydon.gif",
+      "width": 84,
+      "height": 69,
+      "frames": 96
+    },
+    {
+      "file": "front/pidgeot.gif",
+      "width": 58,
+      "height": 68,
+      "frames": 36
+    },
+    {
+      "file": "back/pidgeot.gif",
+      "width": 68,
+      "height": 66,
+      "frames": 32
+    },
+    {
+      "file": "front/butterfree.gif",
+      "width": 61,
+      "height": 58,
+      "frames": 45
+    },
+    {
+      "file": "back/butterfree.gif",
+      "width": 64,
+      "height": 57,
+      "frames": 15
+    },
+    {
+      "file": "front/weedle.gif",
+      "width": 37,
+      "height": 47,
+      "frames": 62
+    },
+    {
+      "file": "back/weedle.gif",
+      "width": 42,
+      "height": 46,
+      "frames": 62
+    },
+    {
+      "file": "front/beedrill.gif",
+      "width": 73,
+      "height": 69,
+      "frames": 180
+    },
+    {
+      "file": "back/beedrill.gif",
+      "width": 76,
+      "height": 68,
+      "frames": 60
+    },
+    {
+      "file": "front/scizor.gif",
+      "width": 75,
+      "height": 73,
+      "frames": 260
+    },
+    {
+      "file": "back/scizor.gif",
+      "width": 68,
+      "height": 75,
+      "frames": 260
+    },
+    {
+      "file": "front/cleffa.gif",
+      "width": 36,
+      "height": 34,
+      "frames": 58
+    },
+    {
+      "file": "back/cleffa.gif",
+      "width": 38,
+      "height": 34,
+      "frames": 66
+    },
+    {
+      "file": "front/clefable.gif",
+      "width": 54,
+      "height": 52,
+      "frames": 54
+    },
+    {
+      "file": "back/clefable.gif",
+      "width": 55,
+      "height": 51,
+      "frames": 54
+    },
+    {
+      "file": "front/mankey.gif",
+      "width": 65,
+      "height": 61,
+      "frames": 90
+    },
+    {
+      "file": "back/mankey.gif",
+      "width": 61,
+      "height": 59,
+      "frames": 90
+    },
+    {
+      "file": "front/mamoswine.gif",
+      "width": 84,
+      "height": 73,
+      "frames": 104
+    },
+    {
+      "file": "back/mamoswine.gif",
+      "width": 81,
+      "height": 73,
+      "frames": 72
+    },
+    {
+      "file": "front/seadra.gif",
+      "width": 57,
+      "height": 57,
+      "frames": 38
+    },
+    {
+      "file": "back/seadra.gif",
+      "width": 64,
+      "height": 58,
+      "frames": 38
+    },
+    {
+      "file": "front/probopass.gif",
+      "width": 65,
+      "height": 84,
+      "frames": 122
+    },
+    {
+      "file": "back/probopass.gif",
+      "width": 68,
+      "height": 83,
+      "frames": 122
+    },
+    {
+      "file": "front/medicham.gif",
+      "width": 44,
+      "height": 74,
+      "frames": 49
+    },
+    {
+      "file": "back/medicham.gif",
+      "width": 43,
+      "height": 74,
+      "frames": 49
+    },
+    {
+      "file": "front/hariyama.gif",
+      "width": 88,
+      "height": 79,
+      "frames": 84
+    },
+    {
+      "file": "back/hariyama.gif",
+      "width": 79,
+      "height": 79,
+      "frames": 81
+    },
+    {
+      "file": "front/magnezone.gif",
+      "width": 84,
+      "height": 61,
+      "frames": 66
+    },
+    {
+      "file": "back/magnezone.gif",
+      "width": 82,
+      "height": 55,
+      "frames": 66
+    },
+    {
+      "file": "front/magcargo.gif",
+      "width": 54,
+      "height": 59,
+      "frames": 15
+    },
+    {
+      "file": "back/magcargo.gif",
+      "width": 51,
+      "height": 61,
+      "frames": 15
+    },
+    {
+      "file": "front/baltoy.gif",
+      "width": 41,
+      "height": 40,
+      "frames": 40
+    },
+    {
+      "file": "back/baltoy.gif",
+      "width": 40,
+      "height": 39,
+      "frames": 40
+    },
+    {
+      "file": "front/natu.gif",
+      "width": 37,
+      "height": 41,
+      "frames": 92
+    },
+    {
+      "file": "back/natu.gif",
+      "width": 42,
+      "height": 38,
+      "frames": 92
+    },
+    {
+      "file": "front/barboach.gif",
+      "width": 48,
+      "height": 35,
+      "frames": 72
+    },
+    {
+      "file": "back/barboach.gif",
+      "width": 48,
+      "height": 36,
+      "frames": 72
+    },
+    {
+      "file": "front/walrein.gif",
+      "width": 78,
+      "height": 70,
+      "frames": 62
+    },
+    {
+      "file": "back/walrein.gif",
+      "width": 74,
+      "height": 73,
+      "frames": 59
+    },
+    {
+      "file": "front/rampardos.gif",
+      "width": 65,
+      "height": 81,
+      "frames": 88
+    },
+    {
+      "file": "back/rampardos.gif",
+      "width": 65,
+      "height": 82,
+      "frames": 88
+    },
+    {
+      "file": "front/cherubi.gif",
+      "width": 41,
+      "height": 38,
+      "frames": 92
+    },
+    {
+      "file": "back/cherubi.gif",
+      "width": 37,
+      "height": 39,
+      "frames": 92
+    },
+    {
+      "file": "front/shieldon.gif",
+      "width": 49,
+      "height": 41,
+      "frames": 68
+    },
+    {
+      "file": "back/shieldon.gif",
+      "width": 51,
+      "height": 43,
+      "frames": 68
+    },
+    {
+      "file": "front/weavile.gif",
+      "width": 56,
+      "height": 81,
+      "frames": 67
+    },
+    {
+      "file": "back/weavile.gif",
+      "width": 47,
+      "height": 77,
+      "frames": 67
+    },
+    {
+      "file": "front/krookodile.gif",
+      "width": 95,
+      "height": 72,
+      "frames": 84
+    },
+    {
+      "file": "back/krookodile.gif",
+      "width": 85,
+      "height": 75,
+      "frames": 103
+    },
+    {
+      "file": "front/seismitoad.gif",
+      "width": 98,
+      "height": 66,
+      "frames": 100
+    },
+    {
+      "file": "back/seismitoad.gif",
+      "width": 89,
+      "height": 64,
+      "frames": 100
+    },
+    {
+      "file": "front/woobat.gif",
+      "width": 91,
+      "height": 53,
+      "frames": 120
+    },
+    {
+      "file": "back/woobat.gif",
+      "width": 91,
+      "height": 52,
+      "frames": 120
+    },
+    {
+      "file": "front/tranquill.gif",
+      "width": 58,
+      "height": 58,
+      "frames": 148
+    },
+    {
+      "file": "back/tranquill.gif",
+      "width": 58,
+      "height": 60,
+      "frames": 164
+    },
+    {
+      "file": "front/barraskewda.gif",
+      "width": 87,
+      "height": 44,
+      "frames": 14
+    },
+    {
+      "file": "back/barraskewda.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/shellder.gif",
+      "width": 42,
+      "height": 38,
+      "frames": 44
+    },
+    {
+      "file": "back/shellder.gif",
+      "width": 47,
+      "height": 38,
+      "frames": 44
+    },
+    {
+      "file": "front/smoochum.gif",
+      "width": 31,
+      "height": 48,
+      "frames": 48
+    },
+    {
+      "file": "back/smoochum.gif",
+      "width": 30,
+      "height": 48,
+      "frames": 48
+    },
+    {
+      "file": "front/tyrogue.gif",
+      "width": 36,
+      "height": 45,
+      "frames": 43
+    },
+    {
+      "file": "back/tyrogue.gif",
+      "width": 38,
+      "height": 45,
+      "frames": 38
+    },
+    {
+      "file": "front/ekans.gif",
+      "width": 59,
+      "height": 45,
+      "frames": 18
+    },
+    {
+      "file": "back/ekans.gif",
+      "width": 57,
+      "height": 50,
+      "frames": 18
+    },
+    {
+      "file": "front/honchkrow.gif",
+      "width": 77,
+      "height": 59,
+      "frames": 42
+    },
+    {
+      "file": "back/honchkrow.gif",
+      "width": 82,
+      "height": 67,
+      "frames": 42
+    },
+    {
+      "file": "front/nuzleaf.gif",
+      "width": 45,
+      "height": 58,
+      "frames": 15
+    },
+    {
+      "file": "back/nuzleaf.gif",
+      "width": 46,
+      "height": 56,
+      "frames": 13
+    },
+    {
+      "file": "front/cacnea.gif",
+      "width": 59,
+      "height": 41,
+      "frames": 32
+    },
+    {
+      "file": "back/cacnea.gif",
+      "width": 59,
+      "height": 41,
+      "frames": 36
+    },
+    {
+      "file": "front/dusknoir.gif",
+      "width": 74,
+      "height": 75,
+      "frames": 48
+    },
+    {
+      "file": "back/dusknoir.gif",
+      "width": 72,
+      "height": 78,
+      "frames": 48
+    },
+    {
+      "file": "front/shuppet.gif",
+      "width": 39,
+      "height": 58,
+      "frames": 50
+    },
+    {
+      "file": "back/shuppet.gif",
+      "width": 41,
+      "height": 62,
+      "frames": 50
+    },
+    {
+      "file": "front/vibrava.gif",
+      "width": 62,
+      "height": 61,
+      "frames": 46
+    },
+    {
+      "file": "back/vibrava.gif",
+      "width": 63,
+      "height": 62,
+      "frames": 46
+    },
+    {
+      "file": "front/duosion.gif",
+      "width": 67,
+      "height": 66,
+      "frames": 80
+    },
+    {
+      "file": "back/duosion.gif",
+      "width": 67,
+      "height": 67,
+      "frames": 80
+    },
+    {
+      "file": "front/munna.gif",
+      "width": 45,
+      "height": 46,
+      "frames": 91
+    },
+    {
+      "file": "back/munna.gif",
+      "width": 44,
+      "height": 46,
+      "frames": 91
+    },
+    {
+      "file": "front/gothorita.gif",
+      "width": 50,
+      "height": 61,
+      "frames": 80
+    },
+    {
+      "file": "back/gothorita.gif",
+      "width": 51,
+      "height": 59,
+      "frames": 80
+    },
+    {
+      "file": "front/gurdurr.gif",
+      "width": 69,
+      "height": 81,
+      "frames": 88
+    },
+    {
+      "file": "back/gurdurr.gif",
+      "width": 72,
+      "height": 74,
+      "frames": 88
+    },
+    {
+      "file": "front/mienfoo.gif",
+      "width": 42,
+      "height": 66,
+      "frames": 80
+    },
+    {
+      "file": "back/mienfoo.gif",
+      "width": 39,
+      "height": 64,
+      "frames": 78
+    },
+    {
+      "file": "front/vullaby.gif",
+      "width": 61,
+      "height": 62,
+      "frames": 77
+    },
+    {
+      "file": "back/vullaby.gif",
+      "width": 58,
+      "height": 61,
+      "frames": 83
+    },
+    {
+      "file": "front/trumbeak.gif",
+      "width": 47,
+      "height": 52,
+      "frames": 100
+    },
+    {
+      "file": "back/trumbeak.gif",
+      "width": 44,
+      "height": 52,
+      "frames": 99
+    },
+    {
+      "file": "front/togetic.gif",
+      "width": 34,
+      "height": 70,
+      "frames": 54
+    },
+    {
+      "file": "back/togetic.gif",
+      "width": 36,
+      "height": 73,
+      "frames": 51
+    },
+    {
+      "file": "front/feebas.gif",
+      "width": 38,
+      "height": 52,
+      "frames": 23
+    },
+    {
+      "file": "back/feebas.gif",
+      "width": 40,
+      "height": 51,
+      "frames": 23
+    },
+    {
+      "file": "front/gabite.gif",
+      "width": 71,
+      "height": 61,
+      "frames": 27
+    },
+    {
+      "file": "back/gabite.gif",
+      "width": 73,
+      "height": 60,
+      "frames": 27
+    },
+    {
+      "file": "front/lairon.gif",
+      "width": 63,
+      "height": 50,
+      "frames": 75
+    },
+    {
+      "file": "back/lairon.gif",
+      "width": 65,
+      "height": 49,
+      "frames": 75
+    },
+    {
+      "file": "front/lileep.gif",
+      "width": 60,
+      "height": 61,
+      "frames": 35
+    },
+    {
+      "file": "back/lileep.gif",
+      "width": 54,
+      "height": 57,
+      "frames": 35
+    },
+    {
+      "file": "front/anorith.gif",
+      "width": 45,
+      "height": 53,
+      "frames": 52
+    },
+    {
+      "file": "back/anorith.gif",
+      "width": 46,
+      "height": 44,
+      "frames": 52
+    },
+    {
+      "file": "front/metang.gif",
+      "width": 83,
+      "height": 64,
+      "frames": 87
+    },
+    {
+      "file": "back/metang.gif",
+      "width": 75,
+      "height": 59,
+      "frames": 88
+    },
+    {
+      "file": "front/kirlia.gif",
+      "width": 36,
+      "height": 63,
+      "frames": 50
+    },
+    {
+      "file": "back/kirlia.gif",
+      "width": 37,
+      "height": 63,
+      "frames": 50
+    },
+    {
+      "file": "front/flaaffy.gif",
+      "width": 46,
+      "height": 52,
+      "frames": 55
+    },
+    {
+      "file": "back/flaaffy.gif",
+      "width": 45,
+      "height": 52,
+      "frames": 51
+    },
+    {
+      "file": "front/herdier.gif",
+      "width": 55,
+      "height": 58,
+      "frames": 58
+    },
+    {
+      "file": "back/herdier.gif",
+      "width": 58,
+      "height": 58,
+      "frames": 58
+    },
+    {
+      "file": "front/boltund.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "back/boltund.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/corvisquire.gif",
+      "width": 83,
+      "height": 93,
+      "frames": 18
+    },
+    {
+      "file": "back/corvisquire.gif",
+      "width": 78,
+      "height": 92,
+      "frames": 18
+    },
+    {
+      "file": "front/breloom.gif",
+      "width": 57,
+      "height": 71,
+      "frames": 30
+    },
+    {
+      "file": "back/breloom.gif",
+      "width": 51,
+      "height": 72,
+      "frames": 31
+    },
+    {
+      "file": "front/whirlipede.gif",
+      "width": 68,
+      "height": 62,
+      "frames": 96
+    },
+    {
+      "file": "back/whirlipede.gif",
+      "width": 66,
+      "height": 64,
+      "frames": 98
+    },
+    {
+      "file": "front/swadloon.gif",
+      "width": 51,
+      "height": 45,
+      "frames": 64
+    },
+    {
+      "file": "back/swadloon.gif",
+      "width": 50,
+      "height": 51,
+      "frames": 64
+    },
+    {
+      "file": "front/noctowl.gif",
+      "width": 44,
+      "height": 67,
+      "frames": 36
+    },
+    {
+      "file": "back/noctowl.gif",
+      "width": 40,
+      "height": 68,
+      "frames": 36
+    },
+    {
+      "file": "front/lombre.gif",
+      "width": 50,
+      "height": 52,
+      "frames": 46
+    },
+    {
+      "file": "back/lombre.gif",
+      "width": 46,
+      "height": 54,
+      "frames": 46
+    },
+    {
+      "file": "front/azurill.gif",
+      "width": 44,
+      "height": 64,
+      "frames": 83
+    },
+    {
+      "file": "back/azurill.gif",
+      "width": 48,
+      "height": 66,
+      "frames": 83
+    },
+    {
+      "file": "front/azumarill.gif",
+      "width": 73,
+      "height": 61,
+      "frames": 75
+    },
+    {
+      "file": "back/azumarill.gif",
+      "width": 74,
+      "height": 62,
+      "frames": 75
+    },
+    {
+      "file": "front/masquerain.gif",
+      "width": 73,
+      "height": 65,
+      "frames": 256
+    },
+    {
+      "file": "back/masquerain.gif",
+      "width": 64,
+      "height": 65,
+      "frames": 256
+    },
+    {
+      "file": "front/kingler.gif",
+      "width": 82,
+      "height": 59,
+      "frames": 12
+    },
+    {
+      "file": "back/kingler.gif",
+      "width": 83,
+      "height": 62,
+      "frames": 12
+    },
+    {
+      "file": "front/palossand.gif",
+      "width": 96,
+      "height": 57,
+      "frames": 64
+    },
+    {
+      "file": "back/palossand.gif",
+      "width": 96,
+      "height": 57,
+      "frames": 64
+    },
+    {
+      "file": "front/sandslash.gif",
+      "width": 57,
+      "height": 53,
+      "frames": 55
+    },
+    {
+      "file": "back/sandslash.gif",
+      "width": 57,
+      "height": 52,
+      "frames": 55
+    },
+    {
+      "file": "front/boldore.gif",
+      "width": 60,
+      "height": 53,
+      "frames": 58
+    },
+    {
+      "file": "back/boldore.gif",
+      "width": 55,
+      "height": 52,
+      "frames": 58
+    },
+    {
+      "file": "front/glalie.gif",
+      "width": 59,
+      "height": 62,
+      "frames": 59
+    },
+    {
+      "file": "back/glalie.gif",
+      "width": 62,
+      "height": 60,
+      "frames": 59
+    },
+    {
+      "file": "front/beartic.gif",
+      "width": 78,
+      "height": 76,
+      "frames": 122
+    },
+    {
+      "file": "back/beartic.gif",
+      "width": 74,
+      "height": 74,
+      "frames": 122
+    },
+    {
+      "file": "front/frosmoth.gif",
+      "width": 94,
+      "height": 85,
+      "frames": 22
+    },
+    {
+      "file": "back/frosmoth.gif",
+      "width": 98,
+      "height": 86,
+      "frames": 22
+    },
+    {
+      "file": "front/raticate.gif",
+      "width": 65,
+      "height": 51,
+      "frames": 12
+    },
+    {
+      "file": "back/raticate.gif",
+      "width": 66,
+      "height": 52,
+      "frames": 12
+    },
+    {
+      "file": "front/furret.gif",
+      "width": 55,
+      "height": 58,
+      "frames": 55
+    },
+    {
+      "file": "back/furret.gif",
+      "width": 62,
+      "height": 61,
+      "frames": 55
+    },
+    {
+      "file": "front/silcoon.gif",
+      "width": 50,
+      "height": 47,
+      "frames": 52
+    },
+    {
+      "file": "back/silcoon.gif",
+      "width": 48,
+      "height": 45,
+      "frames": 52
+    },
+    {
+      "file": "front/cascoon.gif",
+      "width": 55,
+      "height": 40,
+      "frames": 54
+    },
+    {
+      "file": "back/cascoon.gif",
+      "width": 54,
+      "height": 39,
+      "frames": 48
+    },
+    {
+      "file": "front/staravia.gif",
+      "width": 45,
+      "height": 54,
+      "frames": 58
+    },
+    {
+      "file": "back/staravia.gif",
+      "width": 48,
+      "height": 52,
+      "frames": 58
+    },
+    {
+      "file": "front/bibarel.gif",
+      "width": 70,
+      "height": 57,
+      "frames": 80
+    },
+    {
+      "file": "back/bibarel.gif",
+      "width": 68,
+      "height": 59,
+      "frames": 83
+    },
+    {
+      "file": "front/watchog.gif",
+      "width": 67,
+      "height": 69,
+      "frames": 83
+    },
+    {
+      "file": "back/watchog.gif",
+      "width": 62,
+      "height": 69,
+      "frames": 84
+    },
+    {
+      "file": "front/liepard.gif",
+      "width": 81,
+      "height": 72,
+      "frames": 98
+    },
+    {
+      "file": "back/liepard.gif",
+      "width": 82,
+      "height": 72,
+      "frames": 74
+    },
+    {
+      "file": "front/charjabug.gif",
+      "width": 45,
+      "height": 32,
+      "frames": 105
+    },
+    {
+      "file": "back/charjabug.gif",
+      "width": 47,
+      "height": 32,
+      "frames": 104
+    },
+    {
+      "file": "front/gumshoos.gif",
+      "width": 71,
+      "height": 62,
+      "frames": 94
+    },
+    {
+      "file": "back/gumshoos.gif",
+      "width": 71,
+      "height": 67,
+      "frames": 94
+    },
+    {
+      "file": "front/dubwool.gif",
+      "width": 67,
+      "height": 76,
+      "frames": 72
+    },
+    {
+      "file": "back/dubwool.gif",
+      "width": 71,
+      "height": 73,
+      "frames": 72
+    },
+    {
+      "file": "front/ledian.gif",
+      "width": 55,
+      "height": 65,
+      "frames": 60
+    },
+    {
+      "file": "back/ledian.gif",
+      "width": 59,
+      "height": 64,
+      "frames": 60
+    },
+    {
+      "file": "front/ariados.gif",
+      "width": 65,
+      "height": 51,
+      "frames": 18
+    },
+    {
+      "file": "back/ariados.gif",
+      "width": 56,
+      "height": 44,
+      "frames": 16
+    },
+    {
+      "file": "front/hypno.gif",
+      "width": 67,
+      "height": 62,
+      "frames": 62
+    },
+    {
+      "file": "back/hypno.gif",
+      "width": 65,
+      "height": 60,
+      "frames": 62
+    },
+    {
+      "file": "front/ninetales.gif",
+      "width": 74,
+      "height": 73,
+      "frames": 9
+    },
+    {
+      "file": "back/ninetales.gif",
+      "width": 76,
+      "height": 64,
+      "frames": 9
+    },
+    {
+      "file": "front/exeggutor-alola.gif",
+      "width": 113,
+      "height": 102,
+      "frames": 101
+    },
+    {
+      "file": "back/exeggutor-alola.gif",
+      "width": 109,
+      "height": 100,
+      "frames": 101
+    },
+    {
+      "file": "front/persian.gif",
+      "width": 72,
+      "height": 62,
+      "frames": 27
+    },
+    {
+      "file": "back/persian.gif",
+      "width": 78,
+      "height": 56,
+      "frames": 27
+    },
+    {
+      "file": "front/slowking.gif",
+      "width": 46,
+      "height": 69,
+      "frames": 17
+    },
+    {
+      "file": "back/slowking.gif",
+      "width": 49,
+      "height": 68,
+      "frames": 17
+    },
+    {
+      "file": "front/gliscor.gif",
+      "width": 84,
+      "height": 82,
+      "frames": 22
+    },
+    {
+      "file": "back/gliscor.gif",
+      "width": 81,
+      "height": 88,
+      "frames": 22
+    },
+    {
+      "file": "front/swellow.gif",
+      "width": 72,
+      "height": 59,
+      "frames": 64
+    },
+    {
+      "file": "back/swellow.gif",
+      "width": 71,
+      "height": 56,
+      "frames": 65
+    },
+    {
+      "file": "front/swalot.gif",
+      "width": 64,
+      "height": 63,
+      "frames": 50
+    },
+    {
+      "file": "back/swalot.gif",
+      "width": 60,
+      "height": 60,
+      "frames": 50
+    },
+    {
+      "file": "front/grumpig.gif",
+      "width": 59,
+      "height": 68,
+      "frames": 15
+    },
+    {
+      "file": "back/grumpig.gif",
+      "width": 61,
+      "height": 65,
+      "frames": 15
+    },
+    {
+      "file": "front/wailord.gif",
+      "width": 103,
+      "height": 88,
+      "frames": 28
+    },
+    {
+      "file": "back/wailord.gif",
+      "width": 110,
+      "height": 70,
+      "frames": 28
+    },
+    {
+      "file": "front/huntail.gif",
+      "width": 81,
+      "height": 74,
+      "frames": 64
+    },
+    {
+      "file": "back/huntail.gif",
+      "width": 71,
+      "height": 69,
+      "frames": 64
+    },
+    {
+      "file": "front/gorebyss.gif",
+      "width": 97,
+      "height": 50,
+      "frames": 62
+    },
+    {
+      "file": "back/gorebyss.gif",
+      "width": 105,
+      "height": 57,
+      "frames": 64
+    },
+    {
+      "file": "front/lopunny.gif",
+      "width": 72,
+      "height": 62,
+      "frames": 52
+    },
+    {
+      "file": "back/lopunny.gif",
+      "width": 72,
+      "height": 63,
+      "frames": 52
+    },
+    {
+      "file": "front/toxicroak.gif",
+      "width": 68,
+      "height": 60,
+      "frames": 64
+    },
+    {
+      "file": "back/toxicroak.gif",
+      "width": 71,
+      "height": 63,
+      "frames": 64
+    },
+    {
+      "file": "front/drapion.gif",
+      "width": 96,
+      "height": 71,
+      "frames": 91
+    },
+    {
+      "file": "back/drapion.gif",
+      "width": 99,
+      "height": 74,
+      "frames": 91
+    },
+    {
+      "file": "front/yanmega.gif",
+      "width": 89,
+      "height": 94,
+      "frames": 336
+    },
+    {
+      "file": "back/yanmega.gif",
+      "width": 94,
+      "height": 91,
+      "frames": 336
+    },
+    {
+      "file": "front/bronzong.gif",
+      "width": 94,
+      "height": 74,
+      "frames": 54
+    },
+    {
+      "file": "back/bronzong.gif",
+      "width": 94,
+      "height": 74,
+      "frames": 54
+    },
+    {
+      "file": "front/elekid.gif",
+      "width": 53,
+      "height": 43,
+      "frames": 55
+    },
+    {
+      "file": "back/elekid.gif",
+      "width": 53,
+      "height": 45,
+      "frames": 55
+    },
+    {
+      "file": "front/darmanitan.gif",
+      "width": 63,
+      "height": 69,
+      "frames": 144
+    },
+    {
+      "file": "back/darmanitan.gif",
+      "width": 57,
+      "height": 64,
+      "frames": 144
+    },
+    {
+      "file": "front/garbodor.gif",
+      "width": 92,
+      "height": 70,
+      "frames": 68
+    },
+    {
+      "file": "back/garbodor.gif",
+      "width": 101,
+      "height": 84,
+      "frames": 72
+    },
+    {
+      "file": "front/sawsbuck.gif",
+      "width": 45,
+      "height": 78,
+      "frames": 70
+    },
+    {
+      "file": "back/sawsbuck.gif",
+      "width": 53,
+      "height": 78,
+      "frames": 70
+    },
+    {
+      "file": "front/escavalier.gif",
+      "width": 80,
+      "height": 75,
+      "frames": 183
+    },
+    {
+      "file": "back/escavalier.gif",
+      "width": 82,
+      "height": 77,
+      "frames": 183
+    },
+    {
+      "file": "front/galvantula.gif",
+      "width": 68,
+      "height": 56,
+      "frames": 84
+    },
+    {
+      "file": "back/galvantula.gif",
+      "width": 69,
+      "height": 48,
+      "frames": 88
+    },
+    {
+      "file": "front/ferrothorn.gif",
+      "width": 70,
+      "height": 78,
+      "frames": 72
+    },
+    {
+      "file": "back/ferrothorn.gif",
+      "width": 62,
+      "height": 78,
+      "frames": 72
+    },
+    {
+      "file": "front/lampent.gif",
+      "width": 68,
+      "height": 63,
+      "frames": 66
+    },
+    {
+      "file": "back/lampent.gif",
+      "width": 86,
+      "height": 62,
+      "frames": 66
+    },
+    {
+      "file": "front/flapple.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "back/flapple.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/appletun.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "back/appletun.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/politoed.gif",
+      "width": 51,
+      "height": 79,
+      "frames": 48
+    },
+    {
+      "file": "back/politoed.gif",
+      "width": 43,
+      "height": 80,
+      "frames": 48
+    },
+    {
+      "file": "front/venusaur.gif",
+      "width": 86,
+      "height": 71,
+      "frames": 84
+    },
+    {
+      "file": "back/venusaur.gif",
+      "width": 89,
+      "height": 64,
+      "frames": 84
+    },
+    {
+      "file": "front/blastoise.gif",
+      "width": 70,
+      "height": 66,
+      "frames": 143
+    },
+    {
+      "file": "back/blastoise.gif",
+      "width": 66,
+      "height": 67,
+      "frames": 143
+    },
+    {
+      "file": "front/meganium.gif",
+      "width": 59,
+      "height": 82,
+      "frames": 46
+    },
+    {
+      "file": "back/meganium.gif",
+      "width": 64,
+      "height": 80,
+      "frames": 45
+    },
+    {
+      "file": "front/typhlosion.gif",
+      "width": 59,
+      "height": 72,
+      "frames": 112
+    },
+    {
+      "file": "back/typhlosion.gif",
+      "width": 60,
+      "height": 72,
+      "frames": 112
+    },
+    {
+      "file": "front/feraligatr.gif",
+      "width": 83,
+      "height": 72,
+      "frames": 41
+    },
+    {
+      "file": "back/feraligatr.gif",
+      "width": 82,
+      "height": 73,
+      "frames": 41
+    },
+    {
+      "file": "front/sceptile.gif",
+      "width": 67,
+      "height": 74,
+      "frames": 62
+    },
+    {
+      "file": "back/sceptile.gif",
+      "width": 73,
+      "height": 85,
+      "frames": 62
+    },
+    {
+      "file": "front/blaziken.gif",
+      "width": 59,
+      "height": 75,
+      "frames": 64
+    },
+    {
+      "file": "back/blaziken.gif",
+      "width": 73,
+      "height": 72,
+      "frames": 64
+    },
+    {
+      "file": "front/swampert.gif",
+      "width": 76,
+      "height": 60,
+      "frames": 46
+    },
+    {
+      "file": "back/swampert.gif",
+      "width": 82,
+      "height": 61,
+      "frames": 46
+    },
+    {
+      "file": "front/torterra.gif",
+      "width": 80,
+      "height": 80,
+      "frames": 59
+    },
+    {
+      "file": "back/torterra.gif",
+      "width": 83,
+      "height": 82,
+      "frames": 54
+    },
+    {
+      "file": "front/infernape.gif",
+      "width": 80,
+      "height": 74,
+      "frames": 100
+    },
+    {
+      "file": "back/infernape.gif",
+      "width": 83,
+      "height": 78,
+      "frames": 100
+    },
+    {
+      "file": "front/empoleon.gif",
+      "width": 89,
+      "height": 78,
+      "frames": 66
+    },
+    {
+      "file": "back/empoleon.gif",
+      "width": 82,
+      "height": 75,
+      "frames": 66
+    },
+    {
+      "file": "front/serperior.gif",
+      "width": 90,
+      "height": 74,
+      "frames": 73
+    },
+    {
+      "file": "back/serperior.gif",
+      "width": 80,
+      "height": 80,
+      "frames": 69
+    },
+    {
+      "file": "front/emboar.gif",
+      "width": 90,
+      "height": 78,
+      "frames": 101
+    },
+    {
+      "file": "back/emboar.gif",
+      "width": 92,
+      "height": 82,
+      "frames": 99
+    },
+    {
+      "file": "front/samurott.gif",
+      "width": 101,
+      "height": 94,
+      "frames": 59
+    },
+    {
+      "file": "back/samurott.gif",
+      "width": 97,
+      "height": 91,
+      "frames": 58
+    },
+    {
+      "file": "front/decidueye.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "back/decidueye.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/incineroar.gif",
+      "width": 87,
+      "height": 86,
+      "frames": 82
+    },
+    {
+      "file": "back/incineroar.gif",
+      "width": 88,
+      "height": 92,
+      "frames": 82
+    },
+    {
+      "file": "front/primarina.gif",
+      "width": 91,
+      "height": 84,
+      "frames": 92
+    },
+    {
+      "file": "back/primarina.gif",
+      "width": 84,
+      "height": 84,
+      "frames": 92
+    },
+    {
+      "file": "front/rillaboom.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "back/rillaboom.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/cinderace.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "back/cinderace.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/inteleon.gif",
+      "width": 66,
+      "height": 80,
+      "frames": 95
+    },
+    {
+      "file": "back/inteleon.gif",
+      "width": 64,
+      "height": 79,
+      "frames": 95
+    },
+    {
+      "file": "front/golem.gif",
+      "width": 72,
+      "height": 57,
+      "frames": 46
+    },
+    {
+      "file": "back/golem.gif",
+      "width": 68,
+      "height": 56,
+      "frames": 46
+    },
+    {
+      "file": "front/bellossom.gif",
+      "width": 42,
+      "height": 56,
+      "frames": 53
+    },
+    {
+      "file": "back/bellossom.gif",
+      "width": 42,
+      "height": 52,
+      "frames": 53
+    },
+    {
+      "file": "front/mrmime-galar.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "back/mrmime-galar.png",
+      "width": 96,
+      "height": 96,
+      "frames": 1
+    },
+    {
+      "file": "front/rhyperior.gif",
+      "width": 83,
+      "height": 72,
+      "frames": 126
+    },
+    {
+      "file": "back/rhyperior.gif",
+      "width": 94,
+      "height": 68,
+      "frames": 126
+    },
+    {
+      "file": "front/horsea.gif",
+      "width": 34,
+      "height": 43,
+      "frames": 56
+    },
+    {
+      "file": "back/horsea.gif",
+      "width": 39,
+      "height": 40,
+      "frames": 56
+    },
+    {
+      "file": "front/hitmontop.gif",
+      "width": 82,
+      "height": 63,
+      "frames": 64
+    },
+    {
+      "file": "back/hitmontop.gif",
+      "width": 64,
+      "height": 61,
+      "frames": 64
+    },
+    {
+      "file": "front/trapinch.gif",
+      "width": 39,
+      "height": 42,
+      "frames": 8
+    },
+    {
+      "file": "back/trapinch.gif",
+      "width": 41,
+      "height": 45,
+      "frames": 10
+    },
+    {
+      "file": "front/solosis.gif",
+      "width": 36,
+      "height": 36,
+      "frames": 64
+    },
+    {
+      "file": "back/solosis.gif",
+      "width": 38,
+      "height": 36,
+      "frames": 64
+    },
+    {
+      "file": "front/gothita.gif",
+      "width": 34,
+      "height": 39,
+      "frames": 70
+    },
+    {
+      "file": "back/gothita.gif",
+      "width": 34,
+      "height": 40,
+      "frames": 70
+    },
+    {
+      "file": "front/timburr.gif",
+      "width": 47,
+      "height": 70,
+      "frames": 88
+    },
+    {
+      "file": "back/timburr.gif",
+      "width": 71,
+      "height": 83,
+      "frames": 86
+    },
+    {
+      "file": "front/togepi.gif",
+      "width": 40,
+      "height": 38,
+      "frames": 70
+    },
+    {
+      "file": "back/togepi.gif",
+      "width": 37,
+      "height": 38,
+      "frames": 70
+    },
+    {
+      "file": "front/gible.gif",
+      "width": 57,
+      "height": 54,
+      "frames": 62
+    },
+    {
+      "file": "back/gible.gif",
+      "width": 51,
+      "height": 51,
+      "frames": 62
+    },
+    {
+      "file": "front/beldum.gif",
+      "width": 47,
+      "height": 45,
+      "frames": 35
+    },
+    {
+      "file": "back/beldum.gif",
+      "width": 45,
+      "height": 44,
+      "frames": 35
+    },
+    {
+      "file": "front/gardevoir.gif",
+      "width": 71,
+      "height": 77,
+      "frames": 183
+    },
+    {
+      "file": "back/gardevoir.gif",
+      "width": 74,
+      "height": 77,
+      "frames": 183
+    },
+    {
+      "file": "front/gallade.gif",
+      "width": 58,
+      "height": 70,
+      "frames": 77
+    },
+    {
+      "file": "back/gallade.gif",
+      "width": 53,
+      "height": 69,
+      "frames": 78
+    },
+    {
+      "file": "front/ampharos.gif",
+      "width": 61,
+      "height": 68,
+      "frames": 36
+    },
+    {
+      "file": "back/ampharos.gif",
+      "width": 65,
+      "height": 64,
+      "frames": 36
+    },
+    {
+      "file": "front/stoutland.gif",
+      "width": 74,
+      "height": 71,
+      "frames": 76
+    },
+    {
+      "file": "back/stoutland.gif",
+      "width": 74,
+      "height": 71,
+      "frames": 76
+    },
+    {
+      "file": "front/corviknight.gif",
+      "width": 96,
+      "height": 96,
+      "frames": 97
+    },
+    {
+      "file": "back/corviknight.gif",
+      "width": 63,
+      "height": 70,
+      "frames": 97
+    },
+    {
+      "file": "front/scolipede.gif",
+      "width": 103,
+      "height": 91,
+      "frames": 134
+    },
+    {
+      "file": "back/scolipede.gif",
+      "width": 99,
+      "height": 88,
+      "frames": 134
+    },
+    {
+      "file": "front/leavanny.gif",
+      "width": 49,
+      "height": 75,
+      "frames": 49
+    },
+    {
+      "file": "back/leavanny.gif",
+      "width": 46,
+      "height": 77,
+      "frames": 49
+    },
+    {
+      "file": "front/ludicolo.gif",
+      "width": 84,
+      "height": 80,
+      "frames": 43
+    },
+    {
+      "file": "back/ludicolo.gif",
+      "width": 78,
+      "height": 77,
+      "frames": 42
+    },
+    {
+      "file": "front/gigalith.gif",
+      "width": 80,
+      "height": 78,
+      "frames": 99
+    },
+    {
+      "file": "back/gigalith.gif",
+      "width": 75,
+      "height": 76,
+      "frames": 99
+    },
+    {
+      "file": "front/beautifly.gif",
+      "width": 78,
+      "height": 55,
+      "frames": 97
+    },
+    {
+      "file": "back/beautifly.gif",
+      "width": 81,
+      "height": 60,
+      "frames": 96
+    },
+    {
+      "file": "front/dustox.gif",
+      "width": 80,
+      "height": 47,
+      "frames": 99
+    },
+    {
+      "file": "back/dustox.gif",
+      "width": 78,
+      "height": 53,
+      "frames": 96
+    },
+    {
+      "file": "front/staraptor.gif",
+      "width": 69,
+      "height": 69,
+      "frames": 46
+    },
+    {
+      "file": "back/staraptor.gif",
+      "width": 74,
+      "height": 68,
+      "frames": 45
+    },
+    {
+      "file": "front/vikavolt.gif",
+      "width": 74,
+      "height": 72,
+      "frames": 176
+    },
+    {
+      "file": "back/vikavolt.gif",
+      "width": 74,
+      "height": 74,
+      "frames": 176
+    },
+    {
+      "file": "front/chandelure.gif",
+      "width": 92,
+      "height": 90,
+      "frames": 84
+    },
+    {
+      "file": "back/chandelure.gif",
+      "width": 92,
+      "height": 90,
+      "frames": 84
+    },
+    {
+      "file": "front/mrrime.gif",
+      "width": 69,
+      "height": 63,
+      "frames": 90
+    },
+    {
+      "file": "back/mrrime.gif",
+      "width": 65,
+      "height": 58,
+      "frames": 90
+    }
+  ],
+  "frames": 60925
+}

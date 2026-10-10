@@ -1,0 +1,1942 @@
+{
+  "mew": {
+    "front": "front/mew.gif",
+    "back": "back/mew.gif"
+  },
+  "suicune": {
+    "front": "front/suicune.gif",
+    "back": "back/suicune.gif"
+  },
+  "eevee": {
+    "front": "front/eevee.gif",
+    "back": "back/eevee.gif"
+  },
+  "goldeen": {
+    "front": "front/goldeen.gif",
+    "back": "back/goldeen.gif"
+  },
+  "lapras": {
+    "front": "front/lapras.gif",
+    "back": "back/lapras.gif"
+  },
+  "magikarp": {
+    "front": "front/magikarp.gif",
+    "back": "back/magikarp.gif"
+  },
+  "poliwag": {
+    "front": "front/poliwag.gif",
+    "back": "back/poliwag.gif"
+  },
+  "tentacool": {
+    "front": "front/tentacool.gif",
+    "back": "back/tentacool.gif"
+  },
+  "chinchou": {
+    "front": "front/chinchou.gif",
+    "back": "back/chinchou.gif"
+  },
+  "staryu": {
+    "front": "front/staryu.gif",
+    "back": "back/staryu.gif"
+  },
+  "psyduck": {
+    "front": "front/psyduck.gif",
+    "back": "back/psyduck.gif"
+  },
+  "shellos": {
+    "front": "front/shellos.gif",
+    "back": "back/shellos.gif"
+  },
+  "buizel": {
+    "front": "front/buizel.gif",
+    "back": "back/buizel.gif"
+  },
+  "bulbasaur": {
+    "front": "front/bulbasaur.gif",
+    "back": "back/bulbasaur.gif"
+  },
+  "charmander": {
+    "front": "front/charmander.gif",
+    "back": "back/charmander.gif"
+  },
+  "squirtle": {
+    "front": "front/squirtle.gif",
+    "back": "back/squirtle.gif"
+  },
+  "chikorita": {
+    "front": "front/chikorita.gif",
+    "back": "back/chikorita.gif"
+  },
+  "cyndaquil": {
+    "front": "front/cyndaquil.gif",
+    "back": "back/cyndaquil.gif"
+  },
+  "totodile": {
+    "front": "front/totodile.gif",
+    "back": "back/totodile.gif"
+  },
+  "treecko": {
+    "front": "front/treecko.gif",
+    "back": "back/treecko.gif"
+  },
+  "torchic": {
+    "front": "front/torchic.gif",
+    "back": "back/torchic.gif"
+  },
+  "mudkip": {
+    "front": "front/mudkip.gif",
+    "back": "back/mudkip.gif"
+  },
+  "turtwig": {
+    "front": "front/turtwig.gif",
+    "back": "back/turtwig.gif"
+  },
+  "chimchar": {
+    "front": "front/chimchar.gif",
+    "back": "back/chimchar.gif"
+  },
+  "piplup": {
+    "front": "front/piplup.gif",
+    "back": "back/piplup.gif"
+  },
+  "snivy": {
+    "front": "front/snivy.gif",
+    "back": "back/snivy.gif"
+  },
+  "tepig": {
+    "front": "front/tepig.gif",
+    "back": "back/tepig.gif"
+  },
+  "oshawott": {
+    "front": "front/oshawott.gif",
+    "back": "back/oshawott.gif"
+  },
+  "rowlet": {
+    "front": "front/rowlet.gif",
+    "back": "back/rowlet.gif"
+  },
+  "litten": {
+    "front": "front/litten.gif",
+    "back": "back/litten.gif"
+  },
+  "popplio": {
+    "front": "front/popplio.gif",
+    "back": "back/popplio.gif"
+  },
+  "grookey": {
+    "front": "front/grookey.gif",
+    "back": "back/grookey.png"
+  },
+  "scorbunny": {
+    "front": "front/scorbunny.gif",
+    "back": "back/scorbunny.png"
+  },
+  "sobble": {
+    "front": "front/sobble.gif",
+    "back": "back/sobble.gif"
+  },
+  "geodude": {
+    "front": "front/geodude.gif",
+    "back": "back/geodude.gif"
+  },
+  "onix": {
+    "front": "front/onix.gif",
+    "back": "back/onix.gif"
+  },
+  "starmie": {
+    "front": "front/starmie.gif",
+    "back": "back/starmie.gif"
+  },
+  "voltorb": {
+    "front": "front/voltorb.gif",
+    "back": "back/voltorb.gif"
+  },
+  "pikachu": {
+    "front": "front/pikachu.gif",
+    "back": "back/pikachu.gif"
+  },
+  "raichu": {
+    "front": "front/raichu.gif",
+    "back": "back/raichu.gif"
+  },
+  "victreebel": {
+    "front": "front/victreebel.gif",
+    "back": "back/victreebel.gif"
+  },
+  "tangela": {
+    "front": "front/tangela.gif",
+    "back": "back/tangela.gif"
+  },
+  "vileplume": {
+    "front": "front/vileplume.gif",
+    "back": "back/vileplume.gif"
+  },
+  "koffing": {
+    "front": "front/koffing.gif",
+    "back": "back/koffing.gif"
+  },
+  "muk": {
+    "front": "front/muk.gif",
+    "back": "back/muk.gif"
+  },
+  "weezing": {
+    "front": "front/weezing.gif",
+    "back": "back/weezing.gif"
+  },
+  "kadabra": {
+    "front": "front/kadabra.gif",
+    "back": "back/kadabra.gif"
+  },
+  "mrmime": {
+    "front": "front/mrmime.gif",
+    "back": "back/mrmime.gif"
+  },
+  "venomoth": {
+    "front": "front/venomoth.gif",
+    "back": "back/venomoth.gif"
+  },
+  "alakazam": {
+    "front": "front/alakazam.gif",
+    "back": "back/alakazam.gif"
+  },
+  "growlithe": {
+    "front": "front/growlithe.gif",
+    "back": "back/growlithe.gif"
+  },
+  "ponyta": {
+    "front": "front/ponyta.gif",
+    "back": "back/ponyta.gif"
+  },
+  "rapidash": {
+    "front": "front/rapidash.gif",
+    "back": "back/rapidash.gif"
+  },
+  "arcanine": {
+    "front": "front/arcanine.gif",
+    "back": "back/arcanine.gif"
+  },
+  "rhyhorn": {
+    "front": "front/rhyhorn.gif",
+    "back": "back/rhyhorn.gif"
+  },
+  "dugtrio": {
+    "front": "front/dugtrio.gif",
+    "back": "back/dugtrio.gif"
+  },
+  "nidoqueen": {
+    "front": "front/nidoqueen.gif",
+    "back": "back/nidoqueen.gif"
+  },
+  "nidoking": {
+    "front": "front/nidoking.gif",
+    "back": "back/nidoking.gif"
+  },
+  "pidgey": {
+    "front": "front/pidgey.gif",
+    "back": "back/pidgey.gif"
+  },
+  "pidgeotto": {
+    "front": "front/pidgeotto.gif",
+    "back": "back/pidgeotto.gif"
+  },
+  "metapod": {
+    "front": "front/metapod.gif",
+    "back": "back/metapod.gif"
+  },
+  "kakuna": {
+    "front": "front/kakuna.gif",
+    "back": "back/kakuna.gif"
+  },
+  "scyther": {
+    "front": "front/scyther.gif",
+    "back": "back/scyther.gif"
+  },
+  "clefairy": {
+    "front": "front/clefairy.gif",
+    "back": "back/clefairy.gif"
+  },
+  "miltank": {
+    "front": "front/miltank.gif",
+    "back": "back/miltank.gif"
+  },
+  "gastly": {
+    "front": "front/gastly.gif",
+    "back": "back/gastly.gif"
+  },
+  "haunter": {
+    "front": "front/haunter.gif",
+    "back": "back/haunter.gif"
+  },
+  "gengar": {
+    "front": "front/gengar.gif",
+    "back": "back/gengar.gif"
+  },
+  "primeape": {
+    "front": "front/primeape.gif",
+    "back": "back/primeape.gif"
+  },
+  "poliwrath": {
+    "front": "front/poliwrath.gif",
+    "back": "back/poliwrath.gif"
+  },
+  "magnemite": {
+    "front": "front/magnemite.gif",
+    "back": "back/magnemite.gif"
+  },
+  "steelix": {
+    "front": "front/steelix.gif",
+    "back": "back/steelix.gif"
+  },
+  "seel": {
+    "front": "front/seel.gif",
+    "back": "back/seel.gif"
+  },
+  "dewgong": {
+    "front": "front/dewgong.gif",
+    "back": "back/dewgong.gif"
+  },
+  "piloswine": {
+    "front": "front/piloswine.gif",
+    "back": "back/piloswine.gif"
+  },
+  "dragonair": {
+    "front": "front/dragonair.gif",
+    "back": "back/dragonair.gif"
+  },
+  "gyarados": {
+    "front": "front/gyarados.gif",
+    "back": "back/gyarados.gif"
+  },
+  "kingdra": {
+    "front": "front/kingdra.gif",
+    "back": "back/kingdra.gif"
+  },
+  "nosepass": {
+    "front": "front/nosepass.gif",
+    "back": "back/nosepass.gif"
+  },
+  "machop": {
+    "front": "front/machop.gif",
+    "back": "back/machop.gif"
+  },
+  "meditite": {
+    "front": "front/meditite.gif",
+    "back": "back/meditite.gif"
+  },
+  "makuhita": {
+    "front": "front/makuhita.gif",
+    "back": "back/makuhita.gif"
+  },
+  "magneton": {
+    "front": "front/magneton.gif",
+    "back": "back/magneton.gif"
+  },
+  "electrike": {
+    "front": "front/electrike.gif",
+    "back": "back/electrike.gif"
+  },
+  "manectric": {
+    "front": "front/manectric.gif",
+    "back": "back/manectric.gif"
+  },
+  "numel": {
+    "front": "front/numel.gif",
+    "back": "back/numel.gif"
+  },
+  "slugma": {
+    "front": "front/slugma.gif",
+    "back": "back/slugma.gif"
+  },
+  "camerupt": {
+    "front": "front/camerupt.gif",
+    "back": "back/camerupt.gif"
+  },
+  "torkoal": {
+    "front": "front/torkoal.gif",
+    "back": "back/torkoal.gif"
+  },
+  "spinda": {
+    "front": "front/spinda.gif",
+    "back": "back/spinda.gif"
+  },
+  "vigoroth": {
+    "front": "front/vigoroth.gif",
+    "back": "back/vigoroth.gif"
+  },
+  "linoone": {
+    "front": "front/linoone.gif",
+    "back": "back/linoone.gif"
+  },
+  "slaking": {
+    "front": "front/slaking.gif",
+    "back": "back/slaking.gif"
+  },
+  "swablu": {
+    "front": "front/swablu.gif",
+    "back": "back/swablu.gif"
+  },
+  "tropius": {
+    "front": "front/tropius.gif",
+    "back": "back/tropius.gif"
+  },
+  "pelipper": {
+    "front": "front/pelipper.gif",
+    "back": "back/pelipper.gif"
+  },
+  "skarmory": {
+    "front": "front/skarmory.gif",
+    "back": "back/skarmory.gif"
+  },
+  "altaria": {
+    "front": "front/altaria.gif",
+    "back": "back/altaria.gif"
+  },
+  "claydol": {
+    "front": "front/claydol.gif",
+    "back": "back/claydol.gif"
+  },
+  "xatu": {
+    "front": "front/xatu.gif",
+    "back": "back/xatu.gif"
+  },
+  "lunatone": {
+    "front": "front/lunatone.gif",
+    "back": "back/lunatone.gif"
+  },
+  "solrock": {
+    "front": "front/solrock.gif",
+    "back": "back/solrock.gif"
+  },
+  "luvdisc": {
+    "front": "front/luvdisc.gif",
+    "back": "back/luvdisc.gif"
+  },
+  "whiscash": {
+    "front": "front/whiscash.gif",
+    "back": "back/whiscash.gif"
+  },
+  "sealeo": {
+    "front": "front/sealeo.gif",
+    "back": "back/sealeo.gif"
+  },
+  "crawdaunt": {
+    "front": "front/crawdaunt.gif",
+    "back": "back/crawdaunt.gif"
+  },
+  "cranidos": {
+    "front": "front/cranidos.gif",
+    "back": "back/cranidos.gif"
+  },
+  "cherrim": {
+    "front": "front/cherrim.gif",
+    "back": "back/cherrim.gif"
+  },
+  "roserade": {
+    "front": "front/roserade.gif",
+    "back": "back/roserade.gif"
+  },
+  "duskull": {
+    "front": "front/duskull.gif",
+    "back": "back/duskull.gif"
+  },
+  "mismagius": {
+    "front": "front/mismagius.gif",
+    "back": "back/mismagius.gif"
+  },
+  "machoke": {
+    "front": "front/machoke.gif",
+    "back": "back/machoke.gif"
+  },
+  "lucario": {
+    "front": "front/lucario.gif",
+    "back": "back/lucario.gif"
+  },
+  "quagsire": {
+    "front": "front/quagsire.gif",
+    "back": "back/quagsire.gif"
+  },
+  "floatzel": {
+    "front": "front/floatzel.gif",
+    "back": "back/floatzel.gif"
+  },
+  "bastiodon": {
+    "front": "front/bastiodon.gif",
+    "back": "back/bastiodon.gif"
+  },
+  "sneasel": {
+    "front": "front/sneasel.gif",
+    "back": "back/sneasel.gif"
+  },
+  "abomasnow": {
+    "front": "front/abomasnow.gif",
+    "back": "back/abomasnow.gif"
+  },
+  "froslass": {
+    "front": "front/froslass.gif",
+    "back": "back/froslass.gif"
+  },
+  "jolteon": {
+    "front": "front/jolteon.gif",
+    "back": "back/jolteon.gif"
+  },
+  "luxray": {
+    "front": "front/luxray.gif",
+    "back": "back/luxray.gif"
+  },
+  "electivire": {
+    "front": "front/electivire.gif",
+    "back": "back/electivire.gif"
+  },
+  "emolga": {
+    "front": "front/emolga.gif",
+    "back": "back/emolga.gif"
+  },
+  "zebstrika": {
+    "front": "front/zebstrika.gif",
+    "back": "back/zebstrika.gif"
+  },
+  "krokorok": {
+    "front": "front/krokorok.gif",
+    "back": "back/krokorok.gif"
+  },
+  "palpitoad": {
+    "front": "front/palpitoad.gif",
+    "back": "back/palpitoad.gif"
+  },
+  "excadrill": {
+    "front": "front/excadrill.gif",
+    "back": "back/excadrill.gif"
+  },
+  "swoobat": {
+    "front": "front/swoobat.gif",
+    "back": "back/swoobat.gif"
+  },
+  "unfezant": {
+    "front": "front/unfezant.gif",
+    "back": "back/unfezant.gif"
+  },
+  "swanna": {
+    "front": "front/swanna.gif",
+    "back": "back/swanna.gif"
+  },
+  "gossifleur": {
+    "front": "front/gossifleur.png",
+    "back": "back/gossifleur.png"
+  },
+  "eldegoss": {
+    "front": "front/eldegoss.gif",
+    "back": "back/eldegoss.gif"
+  },
+  "arrokuda": {
+    "front": "front/arrokuda.gif",
+    "back": "back/arrokuda.gif"
+  },
+  "drednaw": {
+    "front": "front/drednaw.gif",
+    "back": "back/drednaw.gif"
+  },
+  "cloyster": {
+    "front": "front/cloyster.gif",
+    "back": "back/cloyster.gif"
+  },
+  "slowbro": {
+    "front": "front/slowbro.gif",
+    "back": "back/slowbro.gif"
+  },
+  "jynx": {
+    "front": "front/jynx.gif",
+    "back": "back/jynx.gif"
+  },
+  "hitmonchan": {
+    "front": "front/hitmonchan.gif",
+    "back": "back/hitmonchan.gif"
+  },
+  "hitmonlee": {
+    "front": "front/hitmonlee.gif",
+    "back": "back/hitmonlee.gif"
+  },
+  "machamp": {
+    "front": "front/machamp.gif",
+    "back": "back/machamp.gif"
+  },
+  "golbat": {
+    "front": "front/golbat.gif",
+    "back": "back/golbat.gif"
+  },
+  "arbok": {
+    "front": "front/arbok.gif",
+    "back": "back/arbok.gif"
+  },
+  "exeggutor": {
+    "front": "front/exeggutor.gif",
+    "back": "back/exeggutor.gif"
+  },
+  "umbreon": {
+    "front": "front/umbreon.gif",
+    "back": "back/umbreon.gif"
+  },
+  "murkrow": {
+    "front": "front/murkrow.gif",
+    "back": "back/murkrow.gif"
+  },
+  "houndoom": {
+    "front": "front/houndoom.gif",
+    "back": "back/houndoom.gif"
+  },
+  "mightyena": {
+    "front": "front/mightyena.gif",
+    "back": "back/mightyena.gif"
+  },
+  "shiftry": {
+    "front": "front/shiftry.gif",
+    "back": "back/shiftry.gif"
+  },
+  "cacturne": {
+    "front": "front/cacturne.gif",
+    "back": "back/cacturne.gif"
+  },
+  "absol": {
+    "front": "front/absol.gif",
+    "back": "back/absol.gif"
+  },
+  "dusclops": {
+    "front": "front/dusclops.gif",
+    "back": "back/dusclops.gif"
+  },
+  "banette": {
+    "front": "front/banette.gif",
+    "back": "back/banette.gif"
+  },
+  "sableye": {
+    "front": "front/sableye.gif",
+    "back": "back/sableye.gif"
+  },
+  "shelgon": {
+    "front": "front/shelgon.gif",
+    "back": "back/shelgon.gif"
+  },
+  "flygon": {
+    "front": "front/flygon.gif",
+    "back": "back/flygon.gif"
+  },
+  "salamence": {
+    "front": "front/salamence.gif",
+    "back": "back/salamence.gif"
+  },
+  "reuniclus": {
+    "front": "front/reuniclus.gif",
+    "back": "back/reuniclus.gif"
+  },
+  "musharna": {
+    "front": "front/musharna.gif",
+    "back": "back/musharna.gif"
+  },
+  "sigilyph": {
+    "front": "front/sigilyph.gif",
+    "back": "back/sigilyph.gif"
+  },
+  "gothitelle": {
+    "front": "front/gothitelle.gif",
+    "back": "back/gothitelle.gif"
+  },
+  "throh": {
+    "front": "front/throh.gif",
+    "back": "back/throh.gif"
+  },
+  "sawk": {
+    "front": "front/sawk.gif",
+    "back": "back/sawk.gif"
+  },
+  "conkeldurr": {
+    "front": "front/conkeldurr.gif",
+    "back": "back/conkeldurr.gif"
+  },
+  "mienshao": {
+    "front": "front/mienshao.gif",
+    "back": "back/mienshao.gif"
+  },
+  "crobat": {
+    "front": "front/crobat.gif",
+    "back": "back/crobat.gif"
+  },
+  "oricorio-pau": {
+    "front": "front/oricorio-pau.gif",
+    "back": "back/oricorio-pau.gif"
+  },
+  "mandibuzz": {
+    "front": "front/mandibuzz.gif",
+    "back": "back/mandibuzz.gif"
+  },
+  "toucannon": {
+    "front": "front/toucannon.gif",
+    "back": "back/toucannon.gif"
+  },
+  "spiritomb": {
+    "front": "front/spiritomb.gif",
+    "back": "back/spiritomb.gif"
+  },
+  "togekiss": {
+    "front": "front/togekiss.gif",
+    "back": "back/togekiss.gif"
+  },
+  "milotic": {
+    "front": "front/milotic.gif",
+    "back": "back/milotic.gif"
+  },
+  "garchomp": {
+    "front": "front/garchomp.gif",
+    "back": "back/garchomp.gif"
+  },
+  "aggron": {
+    "front": "front/aggron.gif",
+    "back": "back/aggron.gif"
+  },
+  "cradily": {
+    "front": "front/cradily.gif",
+    "back": "back/cradily.gif"
+  },
+  "armaldo": {
+    "front": "front/armaldo.gif",
+    "back": "back/armaldo.gif"
+  },
+  "metagross": {
+    "front": "front/metagross.gif",
+    "back": "back/metagross.gif"
+  },
+  "dragonite": {
+    "front": "front/dragonite.gif",
+    "back": "back/dragonite.gif"
+  },
+  "aerodactyl": {
+    "front": "front/aerodactyl.gif",
+    "back": "back/aerodactyl.gif"
+  },
+  "charizard": {
+    "front": "front/charizard.gif",
+    "back": "back/charizard.gif"
+  },
+  "shinx": {
+    "front": "front/shinx.gif",
+    "back": "back/shinx.gif"
+  },
+  "ralts": {
+    "front": "front/ralts.gif",
+    "back": "back/ralts.gif"
+  },
+  "mareep": {
+    "front": "front/mareep.gif",
+    "back": "back/mareep.gif"
+  },
+  "nidoranm": {
+    "front": "front/nidoranm.gif",
+    "back": "back/nidoranm.gif"
+  },
+  "riolu": {
+    "front": "front/riolu.gif",
+    "back": "back/riolu.gif"
+  },
+  "lillipup": {
+    "front": "front/lillipup.gif",
+    "back": "back/lillipup.gif"
+  },
+  "yamper": {
+    "front": "front/yamper.gif",
+    "back": "back/yamper.gif"
+  },
+  "rookidee": {
+    "front": "front/rookidee.gif",
+    "back": "back/rookidee.png"
+  },
+  "caterpie": {
+    "front": "front/caterpie.gif",
+    "back": "back/caterpie.gif"
+  },
+  "bellsprout": {
+    "front": "front/bellsprout.gif",
+    "back": "back/bellsprout.gif"
+  },
+  "oddish": {
+    "front": "front/oddish.gif",
+    "back": "back/oddish.gif"
+  },
+  "heracross": {
+    "front": "front/heracross.gif",
+    "back": "back/heracross.gif"
+  },
+  "shroomish": {
+    "front": "front/shroomish.gif",
+    "back": "back/shroomish.gif"
+  },
+  "budew": {
+    "front": "front/budew.gif",
+    "back": "back/budew.gif"
+  },
+  "venipede": {
+    "front": "front/venipede.gif",
+    "back": "back/venipede.gif"
+  },
+  "sewaddle": {
+    "front": "front/sewaddle.gif",
+    "back": "back/sewaddle.gif"
+  },
+  "seedot": {
+    "front": "front/seedot.gif",
+    "back": "back/seedot.gif"
+  },
+  "hoothoot": {
+    "front": "front/hoothoot.gif",
+    "back": "back/hoothoot.gif"
+  },
+  "wooper": {
+    "front": "front/wooper.gif",
+    "back": "back/wooper.gif"
+  },
+  "lotad": {
+    "front": "front/lotad.gif",
+    "back": "back/lotad.gif"
+  },
+  "marill": {
+    "front": "front/marill.gif",
+    "back": "back/marill.gif"
+  },
+  "tympole": {
+    "front": "front/tympole.gif",
+    "back": "back/tympole.gif"
+  },
+  "surskit": {
+    "front": "front/surskit.gif",
+    "back": "back/surskit.gif"
+  },
+  "wingull": {
+    "front": "front/wingull.gif",
+    "back": "back/wingull.gif"
+  },
+  "krabby": {
+    "front": "front/krabby.gif",
+    "back": "back/krabby.gif"
+  },
+  "sandygast": {
+    "front": "front/sandygast.gif",
+    "back": "back/sandygast.gif"
+  },
+  "sandshrew": {
+    "front": "front/sandshrew.gif",
+    "back": "back/sandshrew.gif"
+  },
+  "aron": {
+    "front": "front/aron.gif",
+    "back": "back/aron.gif"
+  },
+  "drilbur": {
+    "front": "front/drilbur.gif",
+    "back": "back/drilbur.gif"
+  },
+  "zubat": {
+    "front": "front/zubat.gif",
+    "back": "back/zubat.gif"
+  },
+  "roggenrola": {
+    "front": "front/roggenrola.gif",
+    "back": "back/roggenrola.gif"
+  },
+  "swinub": {
+    "front": "front/swinub.gif",
+    "back": "back/swinub.gif"
+  },
+  "snorunt": {
+    "front": "front/snorunt.gif",
+    "back": "back/snorunt.gif"
+  },
+  "spheal": {
+    "front": "front/spheal.gif",
+    "back": "back/spheal.gif"
+  },
+  "snover": {
+    "front": "front/snover.gif",
+    "back": "back/snover.gif"
+  },
+  "cubchoo": {
+    "front": "front/cubchoo.gif",
+    "back": "back/cubchoo.gif"
+  },
+  "snom": {
+    "front": "front/snom.gif",
+    "back": "back/snom.gif"
+  },
+  "rattata": {
+    "front": "front/rattata.gif",
+    "back": "back/rattata.gif"
+  },
+  "sentret": {
+    "front": "front/sentret.gif",
+    "back": "back/sentret.gif"
+  },
+  "poochyena": {
+    "front": "front/poochyena.gif",
+    "back": "back/poochyena.gif"
+  },
+  "zigzagoon": {
+    "front": "front/zigzagoon.gif",
+    "back": "back/zigzagoon.gif"
+  },
+  "wurmple": {
+    "front": "front/wurmple.gif",
+    "back": "back/wurmple.gif"
+  },
+  "starly": {
+    "front": "front/starly.gif",
+    "back": "back/starly.gif"
+  },
+  "bidoof": {
+    "front": "front/bidoof.gif",
+    "back": "back/bidoof.gif"
+  },
+  "patrat": {
+    "front": "front/patrat.gif",
+    "back": "back/patrat.gif"
+  },
+  "purrloin": {
+    "front": "front/purrloin.gif",
+    "back": "back/purrloin.gif"
+  },
+  "pikipek": {
+    "front": "front/pikipek.gif",
+    "back": "back/pikipek.gif"
+  },
+  "grubbin": {
+    "front": "front/grubbin.gif",
+    "back": "back/grubbin.gif"
+  },
+  "yungoos": {
+    "front": "front/yungoos.gif",
+    "back": "back/yungoos.gif"
+  },
+  "wooloo": {
+    "front": "front/wooloo.gif",
+    "back": "back/wooloo.gif"
+  },
+  "ledyba": {
+    "front": "front/ledyba.gif",
+    "back": "back/ledyba.gif"
+  },
+  "spinarak": {
+    "front": "front/spinarak.gif",
+    "back": "back/spinarak.gif"
+  },
+  "pidove": {
+    "front": "front/pidove.gif",
+    "back": "back/pidove.gif"
+  },
+  "blitzle": {
+    "front": "front/blitzle.gif",
+    "back": "back/blitzle.gif"
+  },
+  "nidoranf": {
+    "front": "front/nidoranf.gif",
+    "back": "back/nidoranf.gif"
+  },
+  "abra": {
+    "front": "front/abra.gif",
+    "back": "back/abra.gif"
+  },
+  "drowzee": {
+    "front": "front/drowzee.gif",
+    "back": "back/drowzee.gif"
+  },
+  "diglett": {
+    "front": "front/diglett.gif",
+    "back": "back/diglett.gif"
+  },
+  "vulpix": {
+    "front": "front/vulpix.gif",
+    "back": "back/vulpix.gif"
+  },
+  "nidorino": {
+    "front": "front/nidorino.gif",
+    "back": "back/nidorino.gif"
+  },
+  "exeggcute": {
+    "front": "front/exeggcute.gif",
+    "back": "back/exeggcute.gif"
+  },
+  "meowth": {
+    "front": "front/meowth.gif",
+    "back": "back/meowth.gif"
+  },
+  "grimer": {
+    "front": "front/grimer.gif",
+    "back": "back/grimer.gif"
+  },
+  "nidorina": {
+    "front": "front/nidorina.gif",
+    "back": "back/nidorina.gif"
+  },
+  "slowpoke": {
+    "front": "front/slowpoke.gif",
+    "back": "back/slowpoke.gif"
+  },
+  "stantler": {
+    "front": "front/stantler.gif",
+    "back": "back/stantler.gif"
+  },
+  "misdreavus": {
+    "front": "front/misdreavus.gif",
+    "back": "back/misdreavus.gif"
+  },
+  "shuckle": {
+    "front": "front/shuckle.gif",
+    "back": "back/shuckle.gif"
+  },
+  "girafarig": {
+    "front": "front/girafarig.gif",
+    "back": "back/girafarig.gif"
+  },
+  "gligar": {
+    "front": "front/gligar.gif",
+    "back": "back/gligar.gif"
+  },
+  "dratini": {
+    "front": "front/dratini.gif",
+    "back": "back/dratini.gif"
+  },
+  "taillow": {
+    "front": "front/taillow.gif",
+    "back": "back/taillow.gif"
+  },
+  "slakoth": {
+    "front": "front/slakoth.gif",
+    "back": "back/slakoth.gif"
+  },
+  "roselia": {
+    "front": "front/roselia.gif",
+    "back": "back/roselia.gif"
+  },
+  "gulpin": {
+    "front": "front/gulpin.gif",
+    "back": "back/gulpin.gif"
+  },
+  "spoink": {
+    "front": "front/spoink.gif",
+    "back": "back/spoink.gif"
+  },
+  "corphish": {
+    "front": "front/corphish.gif",
+    "back": "back/corphish.gif"
+  },
+  "kecleon": {
+    "front": "front/kecleon.gif",
+    "back": "back/kecleon.gif"
+  },
+  "wailmer": {
+    "front": "front/wailmer.gif",
+    "back": "back/wailmer.gif"
+  },
+  "bagon": {
+    "front": "front/bagon.gif",
+    "back": "back/bagon.gif"
+  },
+  "clamperl": {
+    "front": "front/clamperl.gif",
+    "back": "back/clamperl.gif"
+  },
+  "relicanth": {
+    "front": "front/relicanth.gif",
+    "back": "back/relicanth.gif"
+  },
+  "buneary": {
+    "front": "front/buneary.gif",
+    "back": "back/buneary.gif"
+  },
+  "houndour": {
+    "front": "front/houndour.gif",
+    "back": "back/houndour.gif"
+  },
+  "croagunk": {
+    "front": "front/croagunk.gif",
+    "back": "back/croagunk.gif"
+  },
+  "skorupi": {
+    "front": "front/skorupi.gif",
+    "back": "back/skorupi.gif"
+  },
+  "yanma": {
+    "front": "front/yanma.gif",
+    "back": "back/yanma.gif"
+  },
+  "bronzor": {
+    "front": "front/bronzor.gif",
+    "back": "back/bronzor.gif"
+  },
+  "electabuzz": {
+    "front": "front/electabuzz.gif",
+    "back": "back/electabuzz.gif"
+  },
+  "luxio": {
+    "front": "front/luxio.gif",
+    "back": "back/luxio.gif"
+  },
+  "sandile": {
+    "front": "front/sandile.gif",
+    "back": "back/sandile.gif"
+  },
+  "darumaka": {
+    "front": "front/darumaka.gif",
+    "back": "back/darumaka.gif"
+  },
+  "trubbish": {
+    "front": "front/trubbish.gif",
+    "back": "back/trubbish.gif"
+  },
+  "ducklett": {
+    "front": "front/ducklett.gif",
+    "back": "back/ducklett.gif"
+  },
+  "deerling": {
+    "front": "front/deerling.gif",
+    "back": "back/deerling.gif"
+  },
+  "karrablast": {
+    "front": "front/karrablast.gif",
+    "back": "back/karrablast.gif"
+  },
+  "joltik": {
+    "front": "front/joltik.gif",
+    "back": "back/joltik.gif"
+  },
+  "ferroseed": {
+    "front": "front/ferroseed.gif",
+    "back": "back/ferroseed.gif"
+  },
+  "litwick": {
+    "front": "front/litwick.gif",
+    "back": "back/litwick.gif"
+  },
+  "applin": {
+    "front": "front/applin.gif",
+    "back": "back/applin.gif"
+  },
+  "chewtle": {
+    "front": "front/chewtle.gif",
+    "back": "back/chewtle.gif"
+  },
+  "vaporeon": {
+    "front": "front/vaporeon.gif",
+    "back": "back/vaporeon.gif"
+  },
+  "flareon": {
+    "front": "front/flareon.gif",
+    "back": "back/flareon.gif"
+  },
+  "espeon": {
+    "front": "front/espeon.gif",
+    "back": "back/espeon.gif"
+  },
+  "leafeon": {
+    "front": "front/leafeon.gif",
+    "back": "back/leafeon.gif"
+  },
+  "glaceon": {
+    "front": "front/glaceon.gif",
+    "back": "back/glaceon.gif"
+  },
+  "sylveon": {
+    "front": "front/sylveon.gif",
+    "back": "back/sylveon.gif"
+  },
+  "seaking": {
+    "front": "front/seaking.gif",
+    "back": "back/seaking.gif"
+  },
+  "poliwhirl": {
+    "front": "front/poliwhirl.gif",
+    "back": "back/poliwhirl.gif"
+  },
+  "tentacruel": {
+    "front": "front/tentacruel.gif",
+    "back": "back/tentacruel.gif"
+  },
+  "lanturn": {
+    "front": "front/lanturn.gif",
+    "back": "back/lanturn.gif"
+  },
+  "golduck": {
+    "front": "front/golduck.gif",
+    "back": "back/golduck.gif"
+  },
+  "gastrodon": {
+    "front": "front/gastrodon.gif",
+    "back": "back/gastrodon.gif"
+  },
+  "ivysaur": {
+    "front": "front/ivysaur.gif",
+    "back": "back/ivysaur.gif"
+  },
+  "charmeleon": {
+    "front": "front/charmeleon.gif",
+    "back": "back/charmeleon.gif"
+  },
+  "wartortle": {
+    "front": "front/wartortle.gif",
+    "back": "back/wartortle.gif"
+  },
+  "bayleef": {
+    "front": "front/bayleef.gif",
+    "back": "back/bayleef.gif"
+  },
+  "quilava": {
+    "front": "front/quilava.gif",
+    "back": "back/quilava.gif"
+  },
+  "croconaw": {
+    "front": "front/croconaw.gif",
+    "back": "back/croconaw.gif"
+  },
+  "grovyle": {
+    "front": "front/grovyle.gif",
+    "back": "back/grovyle.gif"
+  },
+  "combusken": {
+    "front": "front/combusken.gif",
+    "back": "back/combusken.gif"
+  },
+  "marshtomp": {
+    "front": "front/marshtomp.gif",
+    "back": "back/marshtomp.gif"
+  },
+  "grotle": {
+    "front": "front/grotle.gif",
+    "back": "back/grotle.gif"
+  },
+  "monferno": {
+    "front": "front/monferno.gif",
+    "back": "back/monferno.gif"
+  },
+  "prinplup": {
+    "front": "front/prinplup.gif",
+    "back": "back/prinplup.gif"
+  },
+  "servine": {
+    "front": "front/servine.gif",
+    "back": "back/servine.gif"
+  },
+  "pignite": {
+    "front": "front/pignite.gif",
+    "back": "back/pignite.gif"
+  },
+  "dewott": {
+    "front": "front/dewott.gif",
+    "back": "back/dewott.gif"
+  },
+  "dartrix": {
+    "front": "front/dartrix.png",
+    "back": "back/dartrix.png"
+  },
+  "torracat": {
+    "front": "front/torracat.png",
+    "back": "back/torracat.png"
+  },
+  "brionne": {
+    "front": "front/brionne.gif",
+    "back": "back/brionne.gif"
+  },
+  "thwackey": {
+    "front": "front/thwackey.gif",
+    "back": "back/thwackey.gif"
+  },
+  "raboot": {
+    "front": "front/raboot.gif",
+    "back": "back/raboot.gif"
+  },
+  "drizzile": {
+    "front": "front/drizzile.gif",
+    "back": "back/drizzile.gif"
+  },
+  "graveler": {
+    "front": "front/graveler.gif",
+    "back": "back/graveler.gif"
+  },
+  "electrode": {
+    "front": "front/electrode.gif",
+    "back": "back/electrode.gif"
+  },
+  "pichu": {
+    "front": "front/pichu.gif",
+    "back": "back/pichu.gif"
+  },
+  "raichu-alola": {
+    "front": "front/raichu-alola.gif",
+    "back": "back/raichu-alola.gif"
+  },
+  "weepinbell": {
+    "front": "front/weepinbell.gif",
+    "back": "back/weepinbell.gif"
+  },
+  "tangrowth": {
+    "front": "front/tangrowth.gif",
+    "back": "back/tangrowth.gif"
+  },
+  "gloom": {
+    "front": "front/gloom.gif",
+    "back": "back/gloom.gif"
+  },
+  "weezing-galar": {
+    "front": "front/weezing-galar.gif",
+    "back": "back/weezing-galar.png"
+  },
+  "mimejr": {
+    "front": "front/mimejr.gif",
+    "back": "back/mimejr.gif"
+  },
+  "venonat": {
+    "front": "front/venonat.gif",
+    "back": "back/venonat.gif"
+  },
+  "rhydon": {
+    "front": "front/rhydon.gif",
+    "back": "back/rhydon.gif"
+  },
+  "pidgeot": {
+    "front": "front/pidgeot.gif",
+    "back": "back/pidgeot.gif"
+  },
+  "butterfree": {
+    "front": "front/butterfree.gif",
+    "back": "back/butterfree.gif"
+  },
+  "weedle": {
+    "front": "front/weedle.gif",
+    "back": "back/weedle.gif"
+  },
+  "beedrill": {
+    "front": "front/beedrill.gif",
+    "back": "back/beedrill.gif"
+  },
+  "scizor": {
+    "front": "front/scizor.gif",
+    "back": "back/scizor.gif"
+  },
+  "cleffa": {
+    "front": "front/cleffa.gif",
+    "back": "back/cleffa.gif"
+  },
+  "clefable": {
+    "front": "front/clefable.gif",
+    "back": "back/clefable.gif"
+  },
+  "mankey": {
+    "front": "front/mankey.gif",
+    "back": "back/mankey.gif"
+  },
+  "mamoswine": {
+    "front": "front/mamoswine.gif",
+    "back": "back/mamoswine.gif"
+  },
+  "seadra": {
+    "front": "front/seadra.gif",
+    "back": "back/seadra.gif"
+  },
+  "probopass": {
+    "front": "front/probopass.gif",
+    "back": "back/probopass.gif"
+  },
+  "medicham": {
+    "front": "front/medicham.gif",
+    "back": "back/medicham.gif"
+  },
+  "hariyama": {
+    "front": "front/hariyama.gif",
+    "back": "back/hariyama.gif"
+  },
+  "magnezone": {
+    "front": "front/magnezone.gif",
+    "back": "back/magnezone.gif"
+  },
+  "magcargo": {
+    "front": "front/magcargo.gif",
+    "back": "back/magcargo.gif"
+  },
+  "baltoy": {
+    "front": "front/baltoy.gif",
+    "back": "back/baltoy.gif"
+  },
+  "natu": {
+    "front": "front/natu.gif",
+    "back": "back/natu.gif"
+  },
+  "barboach": {
+    "front": "front/barboach.gif",
+    "back": "back/barboach.gif"
+  },
+  "walrein": {
+    "front": "front/walrein.gif",
+    "back": "back/walrein.gif"
+  },
+  "rampardos": {
+    "front": "front/rampardos.gif",
+    "back": "back/rampardos.gif"
+  },
+  "cherubi": {
+    "front": "front/cherubi.gif",
+    "back": "back/cherubi.gif"
+  },
+  "shieldon": {
+    "front": "front/shieldon.gif",
+    "back": "back/shieldon.gif"
+  },
+  "weavile": {
+    "front": "front/weavile.gif",
+    "back": "back/weavile.gif"
+  },
+  "krookodile": {
+    "front": "front/krookodile.gif",
+    "back": "back/krookodile.gif"
+  },
+  "seismitoad": {
+    "front": "front/seismitoad.gif",
+    "back": "back/seismitoad.gif"
+  },
+  "woobat": {
+    "front": "front/woobat.gif",
+    "back": "back/woobat.gif"
+  },
+  "tranquill": {
+    "front": "front/tranquill.gif",
+    "back": "back/tranquill.gif"
+  },
+  "barraskewda": {
+    "front": "front/barraskewda.gif",
+    "back": "back/barraskewda.png"
+  },
+  "shellder": {
+    "front": "front/shellder.gif",
+    "back": "back/shellder.gif"
+  },
+  "smoochum": {
+    "front": "front/smoochum.gif",
+    "back": "back/smoochum.gif"
+  },
+  "tyrogue": {
+    "front": "front/tyrogue.gif",
+    "back": "back/tyrogue.gif"
+  },
+  "ekans": {
+    "front": "front/ekans.gif",
+    "back": "back/ekans.gif"
+  },
+  "honchkrow": {
+    "front": "front/honchkrow.gif",
+    "back": "back/honchkrow.gif"
+  },
+  "nuzleaf": {
+    "front": "front/nuzleaf.gif",
+    "back": "back/nuzleaf.gif"
+  },
+  "cacnea": {
+    "front": "front/cacnea.gif",
+    "back": "back/cacnea.gif"
+  },
+  "dusknoir": {
+    "front": "front/dusknoir.gif",
+    "back": "back/dusknoir.gif"
+  },
+  "shuppet": {
+    "front": "front/shuppet.gif",
+    "back": "back/shuppet.gif"
+  },
+  "vibrava": {
+    "front": "front/vibrava.gif",
+    "back": "back/vibrava.gif"
+  },
+  "duosion": {
+    "front": "front/duosion.gif",
+    "back": "back/duosion.gif"
+  },
+  "munna": {
+    "front": "front/munna.gif",
+    "back": "back/munna.gif"
+  },
+  "gothorita": {
+    "front": "front/gothorita.gif",
+    "back": "back/gothorita.gif"
+  },
+  "gurdurr": {
+    "front": "front/gurdurr.gif",
+    "back": "back/gurdurr.gif"
+  },
+  "mienfoo": {
+    "front": "front/mienfoo.gif",
+    "back": "back/mienfoo.gif"
+  },
+  "vullaby": {
+    "front": "front/vullaby.gif",
+    "back": "back/vullaby.gif"
+  },
+  "trumbeak": {
+    "front": "front/trumbeak.gif",
+    "back": "back/trumbeak.gif"
+  },
+  "togetic": {
+    "front": "front/togetic.gif",
+    "back": "back/togetic.gif"
+  },
+  "feebas": {
+    "front": "front/feebas.gif",
+    "back": "back/feebas.gif"
+  },
+  "gabite": {
+    "front": "front/gabite.gif",
+    "back": "back/gabite.gif"
+  },
+  "lairon": {
+    "front": "front/lairon.gif",
+    "back": "back/lairon.gif"
+  },
+  "lileep": {
+    "front": "front/lileep.gif",
+    "back": "back/lileep.gif"
+  },
+  "anorith": {
+    "front": "front/anorith.gif",
+    "back": "back/anorith.gif"
+  },
+  "metang": {
+    "front": "front/metang.gif",
+    "back": "back/metang.gif"
+  },
+  "kirlia": {
+    "front": "front/kirlia.gif",
+    "back": "back/kirlia.gif"
+  },
+  "flaaffy": {
+    "front": "front/flaaffy.gif",
+    "back": "back/flaaffy.gif"
+  },
+  "herdier": {
+    "front": "front/herdier.gif",
+    "back": "back/herdier.gif"
+  },
+  "boltund": {
+    "front": "front/boltund.png",
+    "back": "back/boltund.png"
+  },
+  "corvisquire": {
+    "front": "front/corvisquire.gif",
+    "back": "back/corvisquire.gif"
+  },
+  "breloom": {
+    "front": "front/breloom.gif",
+    "back": "back/breloom.gif"
+  },
+  "whirlipede": {
+    "front": "front/whirlipede.gif",
+    "back": "back/whirlipede.gif"
+  },
+  "swadloon": {
+    "front": "front/swadloon.gif",
+    "back": "back/swadloon.gif"
+  },
+  "noctowl": {
+    "front": "front/noctowl.gif",
+    "back": "back/noctowl.gif"
+  },
+  "lombre": {
+    "front": "front/lombre.gif",
+    "back": "back/lombre.gif"
+  },
+  "azurill": {
+    "front": "front/azurill.gif",
+    "back": "back/azurill.gif"
+  },
+  "azumarill": {
+    "front": "front/azumarill.gif",
+    "back": "back/azumarill.gif"
+  },
+  "masquerain": {
+    "front": "front/masquerain.gif",
+    "back": "back/masquerain.gif"
+  },
+  "kingler": {
+    "front": "front/kingler.gif",
+    "back": "back/kingler.gif"
+  },
+  "palossand": {
+    "front": "front/palossand.gif",
+    "back": "back/palossand.gif"
+  },
+  "sandslash": {
+    "front": "front/sandslash.gif",
+    "back": "back/sandslash.gif"
+  },
+  "boldore": {
+    "front": "front/boldore.gif",
+    "back": "back/boldore.gif"
+  },
+  "glalie": {
+    "front": "front/glalie.gif",
+    "back": "back/glalie.gif"
+  },
+  "beartic": {
+    "front": "front/beartic.gif",
+    "back": "back/beartic.gif"
+  },
+  "frosmoth": {
+    "front": "front/frosmoth.gif",
+    "back": "back/frosmoth.gif"
+  },
+  "raticate": {
+    "front": "front/raticate.gif",
+    "back": "back/raticate.gif"
+  },
+  "furret": {
+    "front": "front/furret.gif",
+    "back": "back/furret.gif"
+  },
+  "silcoon": {
+    "front": "front/silcoon.gif",
+    "back": "back/silcoon.gif"
+  },
+  "cascoon": {
+    "front": "front/cascoon.gif",
+    "back": "back/cascoon.gif"
+  },
+  "staravia": {
+    "front": "front/staravia.gif",
+    "back": "back/staravia.gif"
+  },
+  "bibarel": {
+    "front": "front/bibarel.gif",
+    "back": "back/bibarel.gif"
+  },
+  "watchog": {
+    "front": "front/watchog.gif",
+    "back": "back/watchog.gif"
+  },
+  "liepard": {
+    "front": "front/liepard.gif",
+    "back": "back/liepard.gif"
+  },
+  "charjabug": {
+    "front": "front/charjabug.gif",
+    "back": "back/charjabug.gif"
+  },
+  "gumshoos": {
+    "front": "front/gumshoos.gif",
+    "back": "back/gumshoos.gif"
+  },
+  "dubwool": {
+    "front": "front/dubwool.gif",
+    "back": "back/dubwool.gif"
+  },
+  "ledian": {
+    "front": "front/ledian.gif",
+    "back": "back/ledian.gif"
+  },
+  "ariados": {
+    "front": "front/ariados.gif",
+    "back": "back/ariados.gif"
+  },
+  "hypno": {
+    "front": "front/hypno.gif",
+    "back": "back/hypno.gif"
+  },
+  "ninetales": {
+    "front": "front/ninetales.gif",
+    "back": "back/ninetales.gif"
+  },
+  "exeggutor-alola": {
+    "front": "front/exeggutor-alola.gif",
+    "back": "back/exeggutor-alola.gif"
+  },
+  "persian": {
+    "front": "front/persian.gif",
+    "back": "back/persian.gif"
+  },
+  "slowking": {
+    "front": "front/slowking.gif",
+    "back": "back/slowking.gif"
+  },
+  "gliscor": {
+    "front": "front/gliscor.gif",
+    "back": "back/gliscor.gif"
+  },
+  "swellow": {
+    "front": "front/swellow.gif",
+    "back": "back/swellow.gif"
+  },
+  "swalot": {
+    "front": "front/swalot.gif",
+    "back": "back/swalot.gif"
+  },
+  "grumpig": {
+    "front": "front/grumpig.gif",
+    "back": "back/grumpig.gif"
+  },
+  "wailord": {
+    "front": "front/wailord.gif",
+    "back": "back/wailord.gif"
+  },
+  "huntail": {
+    "front": "front/huntail.gif",
+    "back": "back/huntail.gif"
+  },
+  "gorebyss": {
+    "front": "front/gorebyss.gif",
+    "back": "back/gorebyss.gif"
+  },
+  "lopunny": {
+    "front": "front/lopunny.gif",
+    "back": "back/lopunny.gif"
+  },
+  "toxicroak": {
+    "front": "front/toxicroak.gif",
+    "back": "back/toxicroak.gif"
+  },
+  "drapion": {
+    "front": "front/drapion.gif",
+    "back": "back/drapion.gif"
+  },
+  "yanmega": {
+    "front": "front/yanmega.gif",
+    "back": "back/yanmega.gif"
+  },
+  "bronzong": {
+    "front": "front/bronzong.gif",
+    "back": "back/bronzong.gif"
+  },
+  "elekid": {
+    "front": "front/elekid.gif",
+    "back": "back/elekid.gif"
+  },
+  "darmanitan": {
+    "front": "front/darmanitan.gif",
+    "back": "back/darmanitan.gif"
+  },
+  "garbodor": {
+    "front": "front/garbodor.gif",
+    "back": "back/garbodor.gif"
+  },
+  "sawsbuck": {
+    "front": "front/sawsbuck.gif",
+    "back": "back/sawsbuck.gif"
+  },
+  "escavalier": {
+    "front": "front/escavalier.gif",
+    "back": "back/escavalier.gif"
+  },
+  "galvantula": {
+    "front": "front/galvantula.gif",
+    "back": "back/galvantula.gif"
+  },
+  "ferrothorn": {
+    "front": "front/ferrothorn.gif",
+    "back": "back/ferrothorn.gif"
+  },
+  "lampent": {
+    "front": "front/lampent.gif",
+    "back": "back/lampent.gif"
+  },
+  "flapple": {
+    "front": "front/flapple.png",
+    "back": "back/flapple.png"
+  },
+  "appletun": {
+    "front": "front/appletun.png",
+    "back": "back/appletun.png"
+  },
+  "politoed": {
+    "front": "front/politoed.gif",
+    "back": "back/politoed.gif"
+  },
+  "venusaur": {
+    "front": "front/venusaur.gif",
+    "back": "back/venusaur.gif"
+  },
+  "blastoise": {
+    "front": "front/blastoise.gif",
+    "back": "back/blastoise.gif"
+  },
+  "meganium": {
+    "front": "front/meganium.gif",
+    "back": "back/meganium.gif"
+  },
+  "typhlosion": {
+    "front": "front/typhlosion.gif",
+    "back": "back/typhlosion.gif"
+  },
+  "feraligatr": {
+    "front": "front/feraligatr.gif",
+    "back": "back/feraligatr.gif"
+  },
+  "sceptile": {
+    "front": "front/sceptile.gif",
+    "back": "back/sceptile.gif"
+  },
+  "blaziken": {
+    "front": "front/blaziken.gif",
+    "back": "back/blaziken.gif"
+  },
+  "swampert": {
+    "front": "front/swampert.gif",
+    "back": "back/swampert.gif"
+  },
+  "torterra": {
+    "front": "front/torterra.gif",
+    "back": "back/torterra.gif"
+  },
+  "infernape": {
+    "front": "front/infernape.gif",
+    "back": "back/infernape.gif"
+  },
+  "empoleon": {
+    "front": "front/empoleon.gif",
+    "back": "back/empoleon.gif"
+  },
+  "serperior": {
+    "front": "front/serperior.gif",
+    "back": "back/serperior.gif"
+  },
+  "emboar": {
+    "front": "front/emboar.gif",
+    "back": "back/emboar.gif"
+  },
+  "samurott": {
+    "front": "front/samurott.gif",
+    "back": "back/samurott.gif"
+  },
+  "decidueye": {
+    "front": "front/decidueye.png",
+    "back": "back/decidueye.png"
+  },
+  "incineroar": {
+    "front": "front/incineroar.gif",
+    "back": "back/incineroar.gif"
+  },
+  "primarina": {
+    "front": "front/primarina.gif",
+    "back": "back/primarina.gif"
+  },
+  "rillaboom": {
+    "front": "front/rillaboom.png",
+    "back": "back/rillaboom.png"
+  },
+  "cinderace": {
+    "front": "front/cinderace.png",
+    "back": "back/cinderace.png"
+  },
+  "inteleon": {
+    "front": "front/inteleon.gif",
+    "back": "back/inteleon.gif"
+  },
+  "golem": {
+    "front": "front/golem.gif",
+    "back": "back/golem.gif"
+  },
+  "bellossom": {
+    "front": "front/bellossom.gif",
+    "back": "back/bellossom.gif"
+  },
+  "mrmime-galar": {
+    "front": "front/mrmime-galar.png",
+    "back": "back/mrmime-galar.png"
+  },
+  "rhyperior": {
+    "front": "front/rhyperior.gif",
+    "back": "back/rhyperior.gif"
+  },
+  "horsea": {
+    "front": "front/horsea.gif",
+    "back": "back/horsea.gif"
+  },
+  "hitmontop": {
+    "front": "front/hitmontop.gif",
+    "back": "back/hitmontop.gif"
+  },
+  "trapinch": {
+    "front": "front/trapinch.gif",
+    "back": "back/trapinch.gif"
+  },
+  "solosis": {
+    "front": "front/solosis.gif",
+    "back": "back/solosis.gif"
+  },
+  "gothita": {
+    "front": "front/gothita.gif",
+    "back": "back/gothita.gif"
+  },
+  "timburr": {
+    "front": "front/timburr.gif",
+    "back": "back/timburr.gif"
+  },
+  "togepi": {
+    "front": "front/togepi.gif",
+    "back": "back/togepi.gif"
+  },
+  "gible": {
+    "front": "front/gible.gif",
+    "back": "back/gible.gif"
+  },
+  "beldum": {
+    "front": "front/beldum.gif",
+    "back": "back/beldum.gif"
+  },
+  "gardevoir": {
+    "front": "front/gardevoir.gif",
+    "back": "back/gardevoir.gif"
+  },
+  "gallade": {
+    "front": "front/gallade.gif",
+    "back": "back/gallade.gif"
+  },
+  "ampharos": {
+    "front": "front/ampharos.gif",
+    "back": "back/ampharos.gif"
+  },
+  "stoutland": {
+    "front": "front/stoutland.gif",
+    "back": "back/stoutland.gif"
+  },
+  "corviknight": {
+    "front": "front/corviknight.gif",
+    "back": "back/corviknight.gif"
+  },
+  "scolipede": {
+    "front": "front/scolipede.gif",
+    "back": "back/scolipede.gif"
+  },
+  "leavanny": {
+    "front": "front/leavanny.gif",
+    "back": "back/leavanny.gif"
+  },
+  "ludicolo": {
+    "front": "front/ludicolo.gif",
+    "back": "back/ludicolo.gif"
+  },
+  "gigalith": {
+    "front": "front/gigalith.gif",
+    "back": "back/gigalith.gif"
+  },
+  "beautifly": {
+    "front": "front/beautifly.gif",
+    "back": "back/beautifly.gif"
+  },
+  "dustox": {
+    "front": "front/dustox.gif",
+    "back": "back/dustox.gif"
+  },
+  "staraptor": {
+    "front": "front/staraptor.gif",
+    "back": "back/staraptor.gif"
+  },
+  "vikavolt": {
+    "front": "front/vikavolt.gif",
+    "back": "back/vikavolt.gif"
+  },
+  "chandelure": {
+    "front": "front/chandelure.gif",
+    "back": "back/chandelure.gif"
+  },
+  "mrrime": {
+    "front": "front/mrrime.gif",
+    "back": "back/mrrime.gif"
+  }
+}

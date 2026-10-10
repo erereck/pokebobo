@@ -68,10 +68,10 @@ export function Ending({ run: r, meta, onNew, onHall }) {
           <Medal size={18} />
           Ver Hall da Fama
         </button>
-      <button className="button primary" onClick={onNew}>
-        Outra região. Outra história.
-        <ArrowRight size={19} />
-      </button>
+        <button className="button primary" onClick={onNew}>
+          Outra região. Outra história.
+          <ArrowRight size={19} />
+        </button>
       </div>
     </main>
   );

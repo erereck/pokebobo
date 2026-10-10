@@ -1,5 +1,13 @@
 # Arquitetura do Pokébobo
 
+## Hall, ataques atrasados e sprites — 0.14.0
+
+O projeto atual tem 198 módulos JS/JSX. `App` liga `Ending.onHall` à mesma navegação de janela do cabeçalho. O histórico permanece em `state.meta.history`; abrir Hall não despacha ação de gameplay.
+
+`presentationEvents` reconhece preparação/chegada de Future Sight/Doom Desire e falhas do protocolo; `battleSnapshot.futureMoves` lê condições de slot do motor. `applyBattleEvent` altera somente o marcador visual em futurestart/futurehit e continua atualizando HP no evento damage. `Health` mostra o ataque pendente no lado atingido, independentemente da espécie que ocupa a posição. O motor, IA, restauração por decisões e RNG permanecem iguais.
+
+`useBattleSpriteStyle` lê/grava uma preferência separada, `pokebobo:battle-sprites`, com padrão 3D e tratamento de storage negado. `App → RunContent → BattleScreen → BattleArena` passa apenas esse valor de apresentação; o battle spec não muda. `Sprite` resolve 2D pelo índice leve `game/data/battleSprites.json`; `battleSpriteSources` usa ids de espécie/forma do Dex. Chave da imagem por nome/lado/estilo reinicia o fallback ao mudar. Os 970 arquivos ficam em public/battle-sprites, com manifesto de fontes/hashes separado do bundle; o importador não participa do jogo/build.
+
 ## Capas de cidades — 0.13.0
 
 O projeto atual tem 194 módulos JS/JSX. `game/data/cityCovers.json` é o manifesto das 48 cidades do draft e Indigo Plateau; `routeCovers.js` resolve somente ids próprios, sem fallback por bioma. `RouteCover.jsx` renderiza imagem nativa com dimensões, texto alternativo, carregamento sob demanda e `import.meta.env.BASE_URL`. Se o arquivo falha, apenas a imagem some; nenhuma escolha ou regra depende dela. `Landscape.jsx` foi removido.

@@ -1,5 +1,19 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 10/10/2026 — 0.14.0: Batalhas em pixels
+
+**Pedido:** conferir o botão do Hall após perder, verificar Future Sight e oferecer sprites 2D em vez de 3D na batalha. Integração direta continua autorizada.
+
+**Hall:** `Ending` já tinha o botão/onHall, mas `App` não passava o callback. A ligação foi restaurada; derrota real, recarga, Escape/foco, título e encerramento foram conferidos. A janela usa os registros existentes e não finaliza a run novamente.
+
+**Future Sight:** o motor Gen 8 já preparava e resolvia o ataque corretamente, mas a apresentação descartava as mensagens -start/-end e falhas, fazendo o dano posterior parecer sem origem. O parser mostra preparação, chegada e tentativa de empilhar; o snapshot lê a condição pública do lado e a UI mostra o ataque pendente e a espera. A sequência remove o marcador na chegada e aplica HP somente no evento de dano. Testes reais verificam terceiro turno, PP, troca do alvo/lançador, Dark, Protect, repetição, lado adversário e reload. Nenhuma fórmula, política de IA ou RNG foi modificada.
+
+**2D/3D:** preferência global ao navegador, independente dos slots e do save da carreira. Os dois lados da arena mudam imediatamente; alterar durante um turno não cancela/reexecuta decisões. Opções reutiliza botões nativos, seleção por aria-pressed e área de 44 px. O estado selecionado/hover conserva contraste. 970 arquivos locais cobrem 485 espécies/formas distintas, com frente/costas, 945 animações e 25 imagens estáticas; formas regionais e alias de Oricorio preservados. Manifesto registra fonte exata/hash e o importador verifica os bytes. Termos/créditos distinguem código de gráficos e adaptações da comunidade.
+
+**Evidência:** 118 testes, 198 módulos, build de Pages, 970 imagens/60.925 quadros decodificados e 55 registros locais de navegador. Fluxos normais sem erros; um 404 deliberado e recusa de storage tratados. Saves mantidos, fontes de 3D/captura existentes preservadas. Detalhes/limites em VALIDACAO.md; relatórios anteriores abaixo.
+
+**Limites e próxima melhoria possível:** sem teste em telefone físico; GIFs seguem suas animações originais. O 2D completo acrescenta 36,31 MiB de assets estáticos, carregados por Pokémon visível, e não entra como dados de imagem no JS. A IA mantém a política anterior; uma análise estratégica de ataques atrasados seria uma alteração separada, para não modificar retroativamente decisões de batalhas salvas.
+
 ## Entrega de 10/10/2026 — 0.13.0: Mapas da jornada
 
 **Pedido:** completar as imagens faltantes durante a criação da região e tirar placeholders que mostram lugares errados. Continuação com integração direta já autorizada.

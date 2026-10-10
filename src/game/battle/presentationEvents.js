@@ -42,6 +42,9 @@ function parseHealth(raw = "") {
 export function presentationEvents(log) {
   const names = new Map();
   const events = [];
+  const lastMoves = new Map();
+  const futureMoves = new Map();
+  const futureNames = new Set(["Future Sight", "Doom Desire"]);
 
   const named = (ref = "") => {
     const id = targetId(ref);
@@ -74,10 +77,54 @@ export function presentationEvents(log) {
     }
 
     if (type === "move") {
+      lastMoves.set(ref, {
+        name: p[3],
+        targetSide: p[4]
+          ? sideOf(p[4])
+          : side === "player"
+            ? "enemy"
+            : "player",
+      });
       push(index, "move", {
         side,
         targetId: id,
         text: `${named(ref)} usou ${p[3]}.`,
+      });
+      return;
+    }
+
+    const futureName = (p[3] || "").replace(/^move: /, "");
+    if (type === "-start" && futureNames.has(futureName)) {
+      const targetSide =
+        lastMoves.get(ref)?.targetSide ||
+        (side === "player" ? "enemy" : "player");
+      futureMoves.set(targetSide, futureName);
+      push(index, "futurestart", {
+        side,
+        targetSide,
+        move: futureName,
+        text: `${named(ref)} preparou ${futureName}!`,
+      });
+      return;
+    }
+    if (type === "-end" && futureNames.has(futureName)) {
+      futureMoves.delete(side);
+      push(index, "futurehit", {
+        side,
+        targetId: id,
+        move: futureName,
+        text: `${named(ref)} é o alvo de ${futureName}!`,
+      });
+      return;
+    }
+    if (type === "-fail") {
+      const previous = lastMoves.get(ref);
+      push(index, "message", {
+        text:
+          futureNames.has(previous?.name) &&
+          futureMoves.has(previous.targetSide)
+            ? `Já existe um ataque preparado para esse lado. ${previous.name} falhou.`
+            : `${named(ref)} não conseguiu usar o golpe.`,
       });
       return;
     }
