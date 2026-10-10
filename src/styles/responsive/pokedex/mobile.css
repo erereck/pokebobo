@@ -520,11 +520,8 @@
     gap: 6px;
   }
   .battle-sprite {
+    --battle-sprite-limit: 140;
     width: 43%;
-  }
-  .battle-sprite .sprite {
-    width: var(--species-size, 90%);
-    max-height: 140px;
   }
   .battle-comment {
     min-height: 32px;

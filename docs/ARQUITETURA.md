@@ -1,5 +1,9 @@
 # Arquitetura do Pokébobo
 
+## Escala dos sprites — 0.16.0
+
+Escala/apoio em `components/pokemon/battleSpriteLayout.js`, geometria por arquivo em `spriteGeometry.json` e calibração por espécie/estilo/lado em `battleSpeciesScale.json`. `features/battle/BattlePokemonSprite.jsx` mede a caixa e recebe a fonte carregada por `Sprite`; `BattleArena` compõe os lados. Limites responsive ficam nas variáveis --battle-sprite-limit do CSS. Dados estão na apresentação, não no motor/save. Geradores, decisões, reprodução e limites em [ESCALA-DOS-SPRITES.md](ESCALA-DOS-SPRITES.md); testes em `tests/battle-sprite-scale.test.js`.
+
 ## Hall, ataques atrasados e sprites — 0.14.0
 
 O projeto atual tem 198 módulos JS/JSX. `App` liga `Ending.onHall` à mesma navegação de janela do cabeçalho. O histórico permanece em `state.meta.history`; abrir Hall não despacha ação de gameplay.

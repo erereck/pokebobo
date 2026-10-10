@@ -1,0 +1,368 @@
+{
+  "reports": [
+    {
+      "name": "escala-publicada-2d-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-publicada-2d-1280-turno",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-publicada-3d-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-publicada-3d-1280-turno",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-publicada-2d-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-publicada-2d-390-turno",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-publicada-3d-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-publicada-3d-390-turno",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    }
+  ],
+  "flows": [
+    {
+      "label": "escala-publicada-2d-1280",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 57.273450000000004,
+          "visibleWidth": 56.01469285714286,
+          "width": 303.125,
+          "height": 79.8125,
+          "imageWidth": 56,
+          "imageHeight": 57.265625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "123.555px",
+          "bottom": "13.5681px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 24.403470000000002,
+          "visibleWidth": 23.36502446808511,
+          "width": 303.125,
+          "height": 79.8125,
+          "imageWidth": 23.359375,
+          "imageHeight": 24.390625,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "139.88px",
+          "bottom": "13.5681px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-publicada-2d-1280-turno",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 57.273450000000004,
+          "visibleWidth": 56.01469285714286,
+          "width": 303.125,
+          "height": 79.8125,
+          "imageWidth": 56,
+          "imageHeight": 57.265625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "123.555px",
+          "bottom": "13.5681px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 24.403470000000002,
+          "visibleWidth": 23.36502446808511,
+          "width": 303.125,
+          "height": 79.8125,
+          "imageWidth": 23.359375,
+          "imageHeight": 24.390625,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "139.88px",
+          "bottom": "13.5681px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-publicada-3d-1280",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 57.273450000000004,
+          "visibleWidth": 54.409777500000004,
+          "width": 303.125,
+          "height": 79.8125,
+          "imageWidth": 54.40625,
+          "imageHeight": 57.265625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "124.358px",
+          "bottom": "13.5681px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 24.403470000000006,
+          "visibleWidth": 24.911875625000004,
+          "width": 303.125,
+          "height": 79.8125,
+          "imageWidth": 24.90625,
+          "imageHeight": 24.390625,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "139.107px",
+          "bottom": "13.5681px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-publicada-3d-1280-turno",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 57.273450000000004,
+          "visibleWidth": 54.409777500000004,
+          "width": 303.125,
+          "height": 79.8125,
+          "imageWidth": 54.40625,
+          "imageHeight": 57.265625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "124.358px",
+          "bottom": "13.5681px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 24.403470000000006,
+          "visibleWidth": 24.911875625000004,
+          "width": 303.125,
+          "height": 79.8125,
+          "imageWidth": 24.90625,
+          "imageHeight": 24.390625,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "139.107px",
+          "bottom": "13.5681px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-publicada-2d-390",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 123.90933750000002,
+          "visibleWidth": 121.18605535714288,
+          "width": 136.625,
+          "height": 172.671875,
+          "imageWidth": 121.171875,
+          "imageHeight": 123.90625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "7.71947px",
+          "bottom": "29.3542px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 52.79615250000001,
+          "visibleWidth": 50.54950771276597,
+          "width": 136.625,
+          "height": 172.671875,
+          "imageWidth": 50.546875,
+          "imageHeight": 52.78125,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "43.0377px",
+          "bottom": "29.3542px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-publicada-2d-390-turno",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 123.90933750000002,
+          "visibleWidth": 121.18605535714288,
+          "width": 136.625,
+          "height": 172.671875,
+          "imageWidth": 121.171875,
+          "imageHeight": 123.90625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "7.71947px",
+          "bottom": "29.3542px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 52.79615250000001,
+          "visibleWidth": 50.54950771276597,
+          "width": 136.625,
+          "height": 172.671875,
+          "imageWidth": 50.546875,
+          "imageHeight": 52.78125,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "43.0377px",
+          "bottom": "29.3542px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-publicada-3d-390",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 123.90933750000002,
+          "visibleWidth": 117.71387062500003,
+          "width": 136.625,
+          "height": 172.671875,
+          "imageWidth": 117.703125,
+          "imageHeight": 123.90625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "9.45556px",
+          "bottom": "29.3542px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 52.796152500000005,
+          "visibleWidth": 53.896072343750006,
+          "width": 136.625,
+          "height": 172.671875,
+          "imageWidth": 53.890625,
+          "imageHeight": 52.78125,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "41.3645px",
+          "bottom": "29.3542px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-publicada-3d-390-turno",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 123.90933750000002,
+          "visibleWidth": 117.71387062500003,
+          "width": 136.625,
+          "height": 172.671875,
+          "imageWidth": 117.703125,
+          "imageHeight": 123.90625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "9.45556px",
+          "bottom": "29.3542px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 52.796152500000005,
+          "visibleWidth": 53.896072343750006,
+          "width": 136.625,
+          "height": 172.671875,
+          "imageWidth": 53.890625,
+          "imageHeight": 52.78125,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "41.3645px",
+          "bottom": "29.3542px",
+          "visibility": "visible"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "network": []
+}

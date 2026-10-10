@@ -1,4 +1,14 @@
-# Validação — Pokébobo 0.15.0
+# Validação — Pokébobo 0.16.0
+
+## 0.16.0 — Batalha na medida · 10/10/2026
+
+- `npm run verify`: 203 módulos de código sem ciclos/UI no motor, 132/132 testes e build Vite de 2.086 módulos com `VITE_BASE=/pokebobo/`. Sem standalone. Mudança só de apresentação; nenhum RNG, decisão, regra ou schema alterado.
+- Cinco novos testes: Pidgey menor que metade da altura visível de Charizard nos dois estilos/lados/cores; 11.664 combinações de espécie/forma, estilo, lado, cor e caixas curta/média/larga com corpo dentro do espaço e proporção preservada; normal/shiny consistente; fallback/prefixo Pages e dimensões externas novas; integridade da geometria e cobertura dos quadros. Altura visível refere-se ao limite do ciclo, não à pose de um quadro.
+- Pillow mediu a união dos pixels não transparentes de todos os 227.842 quadros de 4.848 fontes: 1.940 BW locais, 1.940 3D existentes e 968 PNGs locais de fallback. Nenhuma imagem foi editada ou adicionada ao build. Manifesto com origem/hash/primeiro/último quadro em `docs/balance/sprite-geometry-0.16.0.json`; cache 3D congelado em `sprite-geometry-sources.json`. Importador conferiu os hashes das 1.940 fontes 3D no cache externo.
+- Edge/Playwright: 46 registros em 1280×720, 390×844, 320×568 e 844×390. Pidgey/Charizard 2D/3D, normal/shiny, ciclo de GIF com caixa constante, turno real/reload, troca para Charizard; Onix/Wailord, Steelix/Exeggutor-Alola, Pichu/Blastoise, Raichu-Alola/Gyarados, Gastly/Butterfree e Joltik/Dragonite; resize e tela cheia. Sem erros de console/rede, sprites quebrados ou overflow horizontal. `docs/balance/browser-scale-0.16.0.json`.
+- Mais 11 registros com quatro golpes nos quatro visores/estilos, troca de estilo durante turno animado sem repetir decisão, derrota real e fallback 3D→costas 2D→frente 2D. Dois 404 deliberados tratados, geometria/fonte/alt corretos; fluxos normais sem erros. `docs/balance/browser-scale-extra-0.16.0.json`. Total local: 57 registros, mais quatro imagens de comparação com a versão anterior.
+- Preview do build em `/pokebobo/`: oito registros de PC/celular com quatro golpes, 2D/3D, Pidgey menor que Charizard, apoio e turno real. Sem erros de console/rede, imagens quebradas ou overflow; `docs/balance/browser-scale-preview-0.16.0.json`.
+- Limites: sem teste em aparelho físico/iOS. A medição é de um retângulo que contém o ciclo inteiro; asas/caudas podem deixar folga em algumas poses, sem variar escala por frame. A tabela é uma calibração visual estilizada, sem converter literalmente metros da Pokédex em pixels. Fontes 3D continuam externas como antes; mudanças posteriores exigem nova medição. Se dimensões externas mudarem, usa a proporção efetiva enquanto mantém limites e escala da espécie.
 
 ## 0.15.0 — Uma estrela no mato · 10/10/2026
 
