@@ -86,6 +86,45 @@ dialog > .button {
 .cover-credits p {
   font-size: 12px;
 }
+.cover-region-filter {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+.cover-region-filter select {
+  min-height: 44px;
+}
+.cover-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: 12px;
+}
+.cover-gallery figure {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--lcd-line);
+  border-radius: 6px;
+  background: var(--lcd-bright);
+}
+.cover-gallery .route-cover {
+  height: 120px;
+}
+.cover-gallery figcaption {
+  display: grid;
+  gap: 4px;
+  padding: 10px;
+  overflow-wrap: anywhere;
+  font-size: 11px;
+}
+.cover-gallery figcaption a {
+  font-weight: 700;
+}
+.cover-gallery small {
+  color: var(--ink-soft);
+}
 
 .hall-dialog {
   width: min(920px, calc(100% - 24px));
@@ -99,8 +138,7 @@ dialog > .button {
   border-bottom: 4px solid #806c35;
   border-radius: 10px;
   background:
-    linear-gradient(135deg, #fff7cfb8, transparent 58%),
-    var(--lcd-bright);
+    linear-gradient(135deg, #fff7cfb8, transparent 58%), var(--lcd-bright);
 }
 .hall-trophy {
   width: 68px;
@@ -174,8 +212,7 @@ dialog > .button {
   border-color: #ad944c;
   border-bottom-color: #826a2f;
   background:
-    linear-gradient(145deg, #fff7c866, transparent 52%),
-    var(--lcd-bright);
+    linear-gradient(145deg, #fff7c866, transparent 52%), var(--lcd-bright);
   box-shadow: 0 6px 20px #8e74221a;
 }
 .hall-card.is-champion::before {
@@ -312,7 +349,6 @@ dialog > .button {
   }
 }
 
-
 .save-slots {
   margin-bottom: 16px;
   padding-bottom: 14px;
@@ -377,6 +413,10 @@ dialog > .button {
   font-size: 10px;
 }
 @media (max-width: 620px) {
-  .save-slot-grid { grid-template-columns: 1fr; }
-  .save-slot-card > small { min-height: 0; }
+  .save-slot-grid {
+    grid-template-columns: 1fr;
+  }
+  .save-slot-card > small {
+    min-height: 0;
+  }
 }

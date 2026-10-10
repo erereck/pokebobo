@@ -1,5 +1,5 @@
 import { RouteList } from "../region/RouteList.jsx";
-import { Landscape } from "../../components/scenery/Landscape.jsx";
+import { RouteCover } from "../../components/scenery/RouteCover.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { ArrowRight } from "lucide-react";
 
@@ -10,7 +10,7 @@ export function RegionReady({ r, act }) {
         <RouteList run={r} />
       </div>
       <div className="departure-card">
-        <Landscape biome={r.route[0].biome} />
+        <RouteCover place={r.route[0]} />
         <div>
           <span className="section-label">PRONTO PARA PARTIR</span>
           <h2>

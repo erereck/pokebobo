@@ -1,4 +1,12 @@
-# Capas de rotas e exploração de campo
+# Capas de cidades e exploração de campo
+
+## 0.13.0 — todas as cidades com imagem própria
+
+48 cidades selecionáveis (sete origens, quatro passagens e 37 ginásios) e Indigo Plateau têm 49 imagens locais correspondentes ao lugar. O manifesto seleciona por id, sem imagem genérica por bioma. Os seis arquivos do piloto de Emerald e a paisagem SVG foram removidos; em caso de falha não se mostra um destino diferente. Os registros do piloto abaixo são históricos, inclusive suas referências a fallback e standalone.
+
+Bulbagarden Archives fornecem os originais; edições, responsáveis pelo upload, revisões, dimensões, URLs e SHA-256 estão em `src/game/data/cityCovers.json`. A autoria dos gráficos permanece Game Freak / Nintendo / The Pokémon Company. [Fontes e termos por arquivo](../public/covers/README.md). Hau'oli usa arte oficial USUM, e Galar conserva os rótulos japoneses do mapa SwSh.
+
+WebP sem perdas ocupa 6,03 MiB no conjunto e conserva cada pixel RGBA em resolução original. `scripts/import-city-covers.py` verifica o original e a conversão, com fonte congelada por hash; reproduzido com Pillow 12.3.0/libwebp 1.6.0. O jogo usa arquivos locais e carrega sob demanda. Enquadramento por CSS, sem adulterar as folhas. Draft, partida, cidade e arena compartilham a imagem; a Liga usa Indigo Plateau. Galeria de créditos com filtro de região.
 
 ## 0.12.0 — bordas de trilha e lago
 
@@ -11,21 +19,24 @@ A caminhada usa metatiles e os sprites de Red originais de FRLG, extraídos de u
 O terreno é montado por CSS numa grade de 12×8. Posições dos matinhos vêm da seed e ficam no save durante a caminhada. Lago, trilha, treinador, foco e marcadores de encontro são conferidos em PC, 390 px e 320 px. As capas abaixo continuam atendendo cidade, draft, captura e batalha.
 
 ## Piloto de capas implementado na 0.2
+
 Seis folhas de mapas de Pokémon Emerald foram conferidas no navegador e incorporadas localmente. A pesquisa anterior está em [archive/ARTES-E-ROTAS-0.1.1.md](archive/ARTES-E-ROTAS-0.1.1.md).
 
 ## Seleção e procedência
-| Folha | Crédito registrado na ficha | Uso no piloto |
-|---|---|---|
-| [Littleroot Town](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/19776/) | Previous | Cidade inicial Littleroot |
-| [Petalburg Woods](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/19778/) | Andrew the Hedgehog | Floresta |
-| [Mt. Chimney](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/18615/) | Andrew the Hedgehog | Montanha |
-| [Safari Zone](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/18616/) | Andrew the Hedgehog | Campo |
-| [Faraway Island](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/8358/) | Kaori | Lago/água |
-| [Abandoned Ship](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/19774/) | Andrew the Hedgehog | Litoral |
+
+| Folha                                                                                             | Crédito registrado na ficha | Uso no piloto             |
+| ------------------------------------------------------------------------------------------------- | --------------------------- | ------------------------- |
+| [Littleroot Town](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/19776/) | Previous                    | Cidade inicial Littleroot |
+| [Petalburg Woods](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/19778/) | Andrew the Hedgehog         | Floresta                  |
+| [Mt. Chimney](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/18615/)     | Andrew the Hedgehog         | Montanha                  |
+| [Safari Zone](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/18616/)     | Andrew the Hedgehog         | Campo                     |
+| [Faraway Island](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/8358/)   | Kaori                       | Lago/água                 |
+| [Abandoned Ship](https://www.spriters-resource.com/game_boy_advance/pokemonemerald/asset/19774/)  | Andrew the Hedgehog         | Litoral                   |
 
 Essas imagens são **paisagens de referência de Hoenn**, não uma afirmação de que todas as cidades de outras regiões possuem esses mapas. A ajuda e os textos acessíveis identificam o lugar de origem. A neve mantém o cenário SVG.
 
 ## Implementação
+
 - PNGs originais em `public/covers/`, preservando inclusive as notas das folhas completas. O conjunto ocupa cerca de 819 KB.
 - `game/data/routeCovers.js`: fonte, autor/extrator, dimensões e recorte. `RouteCover.jsx` aplica um viewport SVG sobre a folha, sem alterar o PNG.
 - O componente atende cidade, draft, encontro e arena. Ausência de entrada ou falha da imagem retorna a `Landscape.jsx`.
@@ -35,7 +46,9 @@ Essas imagens são **paisagens de referência de Hoenn**, não uma afirmação d
 [Termos do Spriters Resource](https://www.spriters-resource.com/page/tou/) consultados em 13/09/2026 para este protótipo local e não comercial. Os gráficos são de Game Freak / Nintendo / The Pokémon Company; os créditos de extração não equivalem a uma licença geral desses direitos. Créditos completos também em [public/covers/README.md](../public/covers/README.md).
 
 ## Referências dos ginásios
+
 Posição, elenco e níveis foram conferidos por edição, sem usar rematches:
+
 - Kanto: [FireRed / LeafGreen](https://pokemondb.net/firered-leafgreen/gymleaders-elitefour).
 - Johto: [HeartGold / SoulSilver](https://pokemondb.net/heartgold-soulsilver/gymleaders-elitefour).
 - Hoenn: [Emerald](https://pokemondb.net/emerald/gymleaders-elitefour).

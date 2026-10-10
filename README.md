@@ -1,6 +1,8 @@
-# Pokébobo — 0.12.0 · Mais uma Poké Bola
+# Pokébobo — 0.13.0 · Mapas da jornada
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.13.0 traz imagens próprias das 48 cidades do draft e de Indigo Plateau. A cidade escolhida mantém sua imagem na partida, na jornada e na batalha; mapas genéricos por bioma e paisagens inventadas foram removidos. São 49 arquivos locais sem perda de pixels, carregados sob demanda, com créditos por lugar e filtro de região. [Draft no PC](docs/images/draft-0.13-desktop.png) · [Draft no celular](docs/images/draft-0.13-celular.png) · [Fontes das imagens](public/covers/README.md).
 
 A 0.12.0 permite tentar capturar o mesmo Pokémon até conseguir, fugir ou acabar o estoque: cada lançamento custa uma bola e tem 67% de chance base. A exploração oculta as oportunidades e retorna automaticamente após 50 passos válidos. Entrada mais rápida, conclusão automática e estrelas sem a pausa longa; nome e nível ficam apenas na cena, com nível menor. Voltar permanece desabilitado até soltar os controles e terminar o passo. Trilhas e lago têm bordas irregulares de grama, incluindo cruzamentos. [Campo no celular](docs/images/rota-0.12-celular.png) · [Captura](docs/images/captura-0.12-celular.png).
 
@@ -61,7 +63,7 @@ O save fica no navegador. Há três slots independentes de carreira; o Hall da F
 - Derrota definitiva; diário da run, recordes e oito insígnias.
 - Liga: quatro membros diferentes sorteados entre onze opções, seguidos por um de três campeões. Os elencos usam as espécies dos jogos indicados; os níveis e golpes foram adaptados à progressão.
 - Vitória libera Correria (duas semanas) e Nuzlocke (Pokémon derrotados saem do time).
-- Fontes, sprites e seis mapas de Emerald locais, incluídos no build web. Paisagens de referência, com créditos e fallback SVG.
+- Fontes, sprites e 49 imagens locais de cidades, incluídos no build web. Mapas/cenas reais vinculados ao lugar, com edição e créditos; sem substituição por bioma ou SVG fictício.
 - IA estima dano e utilidade, considera prioridade, PP, cura, status e trocas; não usa movimentos ocultos, itens ocultos ou a escolha do jogador.
 
 ## Recorte consciente do protótipo

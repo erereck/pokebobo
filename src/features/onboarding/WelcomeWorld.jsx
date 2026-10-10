@@ -11,7 +11,7 @@ export function WelcomeWorld() {
         <span>AVENTURA / 001</span>
       </div>
       <div className="title-scene">
-        <RouteCover place={{ biome: "meadow" }} />
+        <RouteCover place={{ id: "pallet" }} loading="eager" />
         <div className="title-overlay" />
         <div className="title-copy">
           <span className="title-kicker">SUA PRÓXIMA AVENTURA</span>

@@ -48,7 +48,7 @@ export function CityHero({ inLeague, c, r, next }) {
           </div>
         )}
       </div>
-      <RouteCover place={inLeague ? { biome: "mountain" } : c} />
+      <RouteCover place={inLeague ? { id: "indigo" } : c} />
       <div className="location-label">
         <MapPin size={12} />
         {inLeague ? "PLANALTO DA LIGA" : c.name.toUpperCase()}

@@ -125,6 +125,9 @@ label,
   object-fit: cover;
   image-rendering: pixelated;
 }
+.route-cover-smooth {
+  image-rendering: auto;
+}
 .section-head {
   display: flex;
   align-items: center;
