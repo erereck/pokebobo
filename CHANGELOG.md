@@ -1,5 +1,13 @@
 # Histórico
 
+## 0.15.0 — Uma estrela no mato · 10/10/2026
+
+- Shiny com chance de 1/1024 por inicial escolhido ou novo encontro, incluindo pesca, surf, lendários e eventos. Sorteio independente do RNG da campanha; marca fixada antes da primeira tentativa, sem rerrolar ao falhar ou recarregar.
+- Cores reais de captura FRLG, sprites 2D animados de frente/costas e 3D shiny. Fallback local conserva a variante e a forma; equipes, reserva, evolução, final e Hall mostram os sprites corretos.
+- Marca de estrela na captura/ficha/HP e filtro Shinies na Pokédex, com registro por jornada. Seleção dos filtros mantém contraste ao passar o mouse e cabe em celular.
+- Shiny continua após evolução, trocas da reserva, reload e arquivamento. Saves antigos preservados; Pokémon já gerados permanecem normais. Sem bônus em atributos, dano ou captura.
+- 127 testes; 970 imagens de batalha e 776 estáticas novas com fontes/hashes e importadores. Validação de fluxo e limites em VALIDACAO.md.
+
 ## 0.14.0 — Batalhas em pixels · 10/10/2026
 
 - Botão Ver Hall da Fama da tela final conectado à janela correta; funciona após derrota, título ou encerramento, inclusive após reload, sem duplicar registros.

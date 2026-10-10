@@ -10,7 +10,7 @@ export function SwitchOptions({ snap, locked, move }) {
           disabled={p.fainted || p.active || locked}
           onClick={() => move(`switch ${i + 1}`)}
         >
-          <Sprite name={p.name} />
+          <Sprite name={p.name} shiny={p.shiny} />
           <span>
             <b>{p.name}</b>
             <small>

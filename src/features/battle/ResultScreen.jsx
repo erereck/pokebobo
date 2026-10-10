@@ -46,7 +46,7 @@ export function ResultScreen({ run: r, act }) {
       <div className="result-team">
         {r.outcome.player.map((m, i) => (
           <div className={cx(m.fainted && "fainted")} key={i}>
-            <Sprite name={m.name} />
+            <Sprite name={m.name} shiny={m.shiny} />
             <small>{m.fainted ? "Caiu" : "De pé"}</small>
           </div>
         ))}

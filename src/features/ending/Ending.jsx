@@ -50,7 +50,7 @@ export function Ending({ run: r, meta, onNew, onHall }) {
         </div>
         <div className="ending-party">
           {r.party.map((m) => (
-            <Sprite key={m.id} name={m.name} />
+            <Sprite key={m.id} name={m.name} shiny={m.shiny} />
           ))}
         </div>
       </div>

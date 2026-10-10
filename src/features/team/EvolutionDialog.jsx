@@ -27,7 +27,7 @@ export function EvolutionDialog({ run, act }) {
       onClose={() => {}}
     >
       <div className="evolution-hero">
-        <Sprite name={mon.name} />
+        <Sprite name={mon.name} shiny={mon.shiny} />
         <div>
           <span className="section-label">
             UM PARCEIRO · {options.length} CAMINHOS
@@ -74,7 +74,7 @@ export function EvolutionDialog({ run, act }) {
                   <Sparkles size={15} />
                 )}
               </span>
-              <Sprite name={option.name} />
+              <Sprite name={option.name} shiny={mon.shiny} />
               <strong>{option.name}</strong>
               <span className="types">
                 {data.types.map((type) => (

@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { Search, BookOpen } from "lucide-react";
 import { Modal } from "../../components/ui/Modal.jsx";
+import { ShinyMark } from "../../components/pokemon/ShinyMark.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
 import catalog from "../../game/catalog.json" with { type: "json" };
@@ -16,14 +17,18 @@ export function PokedexDialog({ state, slot, onClose }) {
   const [selected, setSelected] = useState(null);
   const collection = useMemo(() => stateCollection(state, slot), [state, slot]);
   const owned = new Set(collection.map((entry) => entry.species));
+  const shinies = new Set(
+    collection.filter((entry) => entry.shiny).map((entry) => entry.species),
+  );
   const visible = ENTRIES.filter(
     (data) =>
-      (filter === "all" || owned.has(data.name)) &&
+      (filter === "all" ||
+        (filter === "shiny" ? shinies.has(data.name) : owned.has(data.name))) &&
       (data.name.toLowerCase().includes(query.toLowerCase()) ||
         String(data.num) === query.replace(/^#/, "")),
   );
   const chosen =
-    catalog[selected] ||
+    visible.find((entry) => entry.name === selected) ||
     visible.find((entry) => owned.has(entry.name)) ||
     visible[0];
   const observations = collection.filter(
@@ -85,6 +90,13 @@ export function PokedexDialog({ state, slot, onClose }) {
         >
           Catálogo do jogo
         </button>
+        <button
+          className="button secondary"
+          aria-pressed={filter === "shiny"}
+          onClick={() => setFilter("shiny")}
+        >
+          ✦ Shinies · {shinies.size}
+        </button>
       </div>
       <div className="pokedex-layout">
         <div className="pokedex-list" aria-label="Espécies">
@@ -95,7 +107,7 @@ export function PokedexDialog({ state, slot, onClose }) {
               aria-pressed={chosen?.name === entry.name}
               onClick={() => setSelected(entry.name)}
             >
-              <Sprite name={entry.name} />
+              <Sprite name={entry.name} shiny={shinies.has(entry.name)} />
               <span>
                 <small>#{String(entry.num).padStart(3, "0")}</small>
                 <strong>{entry.name}</strong>
@@ -107,19 +119,23 @@ export function PokedexDialog({ state, slot, onClose }) {
             <p className="notice">
               {query
                 ? "Nenhum Pokémon encontrado."
-                : "Escolha um inicial ou capture seu primeiro Pokémon para começar o registro."}
+                : filter === "shiny"
+                  ? "Você ainda não registrou um shiny. Cada Pokémon novo tem chance de 1/1024."
+                  : "Escolha um inicial ou capture seu primeiro Pokémon para começar o registro."}
             </p>
           )}
         </div>
         <div className="pokedex-details">
           {chosen && (
             <>
-              <Sprite name={chosen.name} />
+              <Sprite name={chosen.name} shiny={shinies.has(chosen.name)} />
               <span className="section-label">
                 #{String(chosen.num).padStart(3, "0")} ·{" "}
                 {owned.has(chosen.name) ? "REGISTRADO" : "AINDA NÃO REGISTRADO"}
               </span>
-              <h3>{chosen.name}</h3>
+              <h3>
+                {chosen.name} <ShinyMark shiny={shinies.has(chosen.name)} />
+              </h3>
               <div className="types">
                 {chosen.types.map((type) => (
                   <TypeTag key={type} type={type} />
@@ -134,7 +150,7 @@ export function PokedexDialog({ state, slot, onClose }) {
                     className={owned.has(entry.name) ? "" : "is-unknown"}
                     onClick={() => setSelected(entry.name)}
                   >
-                    <Sprite name={entry.name} />
+                    <Sprite name={entry.name} shiny={shinies.has(entry.name)} />
                     <small>{entry.name}</small>
                   </button>
                 ))}
@@ -146,7 +162,16 @@ export function PokedexDialog({ state, slot, onClose }) {
                     <li key={`${entry.slot}:${entry.seed}:${entry.runNumber}`}>
                       <strong>
                         Slot {entry.slot} · Run #{entry.runNumber} ·{" "}
-                        {entry.runName}
+                        {entry.runName}{" "}
+                        <ShinyMark
+                          shiny={observations.some(
+                            (other) =>
+                              other.shiny &&
+                              other.slot === entry.slot &&
+                              other.seed === entry.seed &&
+                              other.runNumber === entry.runNumber,
+                          )}
+                        />
                       </strong>
                       <span>
                         {kindLabels[entry.kind] || "Registrado"} · semana{" "}

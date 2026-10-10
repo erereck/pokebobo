@@ -58,6 +58,7 @@ export function Encounter({ run: r, act }) {
         <div className="gba-capture" aria-busy={!!attempt}>
           <CaptureCanvas
             name={wild.name}
+            shiny={wild.shiny}
             level={level}
             balls={r.balls}
             water={wild.habitat === "water"}
@@ -113,7 +114,7 @@ export function Encounter({ run: r, act }) {
             : ready
               ? wild.captureAttempts
                 ? `${result} Escolha sua próxima ação.`
-                : `${wild.name} selvagem apareceu!`
+                : `${wild.name}${wild.shiny ? " shiny" : ""} selvagem apareceu!`
               : "Um Pokémon saiu do mato…"}
         </p>
         {!attempt && (

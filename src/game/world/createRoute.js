@@ -1,3 +1,4 @@
+import { rollShiny } from "../pokemon/shiny.js";
 import { city } from "../selectors/city.js";
 import { pick } from "../random/pick.js";
 import { CITY_SPECIES } from "../data/encounters/signatures.js";
@@ -53,6 +54,7 @@ export function createRoute(r) {
         habitat: "grass",
       });
   }
+  for (const encounter of r.encounters) encounter.shiny = rollShiny(r);
   r.exploration = null;
   r.seenFamilies = [
     ...new Set([...(r.seenFamilies || []), familyOf(first), familyOf(second)]),

@@ -6,7 +6,10 @@ import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
 
 function findMon(run, id) {
-  return run.party.find((mon) => mon.id === id) || run.box?.find((mon) => mon.id === id);
+  return (
+    run.party.find((mon) => mon.id === id) ||
+    run.box?.find((mon) => mon.id === id)
+  );
 }
 
 function moveInfo(species, id) {
@@ -26,8 +29,7 @@ export function MoveLearnDialog({ run, act }) {
     }
     // Compatibilidade com saves da 0.6/0.7 que ficaram parados numa decisão
     // criada antes da regra de aprendizado automático em vagas livres.
-    if (freeSlot)
-      act({ type: "MOVE_CHOICE", monId: pending.monId });
+    if (freeSlot) act({ type: "MOVE_CHOICE", monId: pending.monId });
   }, [pending?.monId, pending?.moveId, mon, freeSlot, act]);
 
   if (!pending || !mon || freeSlot) return null;
@@ -44,12 +46,14 @@ export function MoveLearnDialog({ run, act }) {
       dismissible={false}
     >
       <section className="move-learn-hero">
-        <Sprite name={mon.name} />
+        <Sprite name={mon.name} shiny={mon.shiny} />
         <div>
           <span className="section-label">
             APRENDIZADO · {remaining} {remaining === 1 ? "DECISÃO" : "DECISÕES"}
           </span>
-          <h3>{mon.name} quer aprender {learned?.name || pending.moveId}.</h3>
+          <h3>
+            {mon.name} quer aprender {learned?.name || pending.moveId}.
+          </h3>
           <p>
             Os quatro slots estão ocupados. Escolha um golpe para esquecer ou
             ignore o novo.
@@ -66,14 +70,20 @@ export function MoveLearnDialog({ run, act }) {
         <small>
           {learned?.category === "Status"
             ? "Status"
-            : `Poder ${learned?.power || "—"}`} · {learned?.accuracy === true ? "não erra" : `${learned?.accuracy || "—"}% precisão`}
+            : `Poder ${learned?.power || "—"}`}{" "}
+          ·{" "}
+          {learned?.accuracy === true
+            ? "não erra"
+            : `${learned?.accuracy || "—"}% precisão`}
         </small>
       </div>
 
       <div className="forget-move-list">
         <span className="section-label">QUAL GOLPE SAI?</span>
         {mon.moves.map((id) => {
-          const move = currentData?.moves.find((candidate) => candidate.id === id);
+          const move = currentData?.moves.find(
+            (candidate) => candidate.id === id,
+          );
           return (
             <button
               className="forget-move-button"
@@ -90,7 +100,9 @@ export function MoveLearnDialog({ run, act }) {
                 <strong>{move?.name || id}</strong>
                 {move?.type && <TypeTag type={move.type} />}
               </span>
-              <small>Esquecer este e aprender {learned?.name || pending.moveId}</small>
+              <small>
+                Esquecer este e aprender {learned?.name || pending.moveId}
+              </small>
             </button>
           );
         })}

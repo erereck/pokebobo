@@ -34,12 +34,14 @@ test("Hall registra derrota com equipe rica, reserva, modo e seed", () => {
     id: "pika",
     name: "Pikachu",
     level: 30,
+    shiny: false,
   });
   assert.deepEqual(s.meta.history[0].levels, [30, 35]);
   assert.deepEqual(s.meta.history[0].box[0], {
     id: "eevee",
     name: "Eevee",
     level: 27,
+    shiny: false,
   });
   assert.deepEqual(s.meta.history[0].boxLevels, [27]);
   assert.equal(s.meta.history[0].ending, "defeat");

@@ -1,3 +1,4 @@
+import { ShinyMark } from "../../components/pokemon/ShinyMark.jsx";
 import { Hourglass } from "lucide-react";
 
 export function Health({ mon: m, future }) {
@@ -5,7 +6,9 @@ export function Health({ mon: m, future }) {
   return (
     <div className="health-card">
       <div>
-        <strong>{m.name}</strong>
+        <strong>
+          {m.name} <ShinyMark shiny={m.shiny} />
+        </strong>
         <span>NV. {m.level}</span>
       </div>
       <div className="hp-line">

@@ -1,4 +1,4 @@
-# Sprites 2D de batalha — Pokébobo 0.14.0
+# Sprites 2D de batalha — Pokébobo 0.15.0
 
 485 espécies/formas distintas cobrem as 486 entradas do catálogo (Oricorio-Pau e Oricorio-Pa'u são aliases). Frente e costas: 970 arquivos locais, sendo 945 GIFs animados e 25 PNGs estáticos. Total de 38.072.884 bytes (36,31 MiB), carregados somente para os Pokémon que aparecem na arena em modo 2D.
 
@@ -9,3 +9,9 @@ Originais publicados pelo [Pokémon Showdown](https://play.pokemonshowdown.com/s
 Créditos: Game Freak / Nintendo / The Pokémon Company para gráficos dos jogos; artistas da comunidade Smogon / Pokémon Showdown para adaptações em estilo Black/White de Pokémon posteriores. A atribuição do projeto e seus termos estão em [smogon/sprites](https://github.com/smogon/sprites#license). A licença MIT citada ali refere-se ao código, não concede automaticamente direitos sobre os sprites. O projeto informa que a licença dos sprites comunitários ainda está sendo definida e pede contato antes do uso. Esta documentação registra origem/termos; não declara licença aberta ou autoria do Pokébobo sobre os gráficos.
 
 O modo 3D mantém as fontes existentes. A preferência visual pertence ao navegador e não altera golpes, dano, RNG, decisões, saves ou a captura em canvas de FRLG.
+
+## Variantes shiny — 0.15.0
+
+Mais 970 originais locais (485 frentes + 485 costas) vêm de [gen5ani-shiny](https://play.pokemonshowdown.com/sprites/gen5ani-shiny/), [gen5ani-back-shiny](https://play.pokemonshowdown.com/sprites/gen5ani-back-shiny/), [gen5-shiny](https://play.pokemonshowdown.com/sprites/gen5-shiny/) e [gen5-back-shiny](https://play.pokemonshowdown.com/sprites/gen5-back-shiny/). 38.077.046 bytes (36,31 MiB), 60.871 quadros; hashes/URLs no mesmo manifesto. O modo 3D usa ani-shiny/ani-back-shiny, com fallback nesses assets locais da forma correta. Os créditos/termos acima também se aplicam a essas variantes. Carregamento sob demanda, sem embutir imagens no JS.
+
+Um PNG publicado de Mr. Mime-Galar contém CRC inválido no chunk auxiliar iCCP (perfil de cor). Os chunks de pixels são íntegros e o navegador decodifica o original; os bytes originais permanecem no manifesto. Para gerar o PNG estático, o importador ignora apenas metadados auxiliares com CRC inválido, conservando os pixels. Relatório: docs/balance/shiny-assets-0.15.0.json.

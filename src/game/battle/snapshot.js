@@ -6,6 +6,7 @@ export function battleSnapshot(b) {
   const mon = (p) => ({
     id: p.name,
     name: p.species.name,
+    shiny: p.set.shiny === true,
     hp: p.hp,
     maxhp: p.maxhp,
     level: p.level,

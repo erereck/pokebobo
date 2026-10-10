@@ -1,5 +1,17 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 10/10/2026 — 0.15.0: Uma estrela no mato
+
+**Pedido:** conferir se já havia shiny e, se não, adicionar chance de 1/1024. Não havia implementação, apenas fontes externas com variantes. Continuação e integração direta permanecem autorizadas.
+
+**Regra:** cada inicial escolhido e novo encontro recebe um sorteio único em fluxo independente, derivado da seed. Rotas, pesca/surf e eventos especiais usam a mesma chance, sem bônus. Repetir a captura/recarregar não muda a marca. Dados anteriores não ganham raridade retroativamente; futuras rotas de saves antigos usam a nova regra. Pokémon de adversários continuam normais.
+
+**Persistência e visual:** captura carrega a marca no resultado animado e no Pokémon; evolução, reserva, coleção, snapshots de batalha, Hall e Pokédex preservam o campo. Showdown recebe a marca no set e o snapshot a lê de `pokemon.set.shiny`. Cores reais dos sprites, sem filtros de tonalidade. Frente/costas 2D locais para todas as formas; animações 3D usam a variante correspondente, com fallback shiny local. Captura de espécies originais usa paletas FRLG; posteriores usam primeiro frame BW em quadrado transparente, sem distorcer proporção. Estrela pequena identifica raridade e a Pokédex filtra as espécies shiny registradas; hover selecionado corrigido para conservar contraste.
+
+**Evidência:** 127 testes, 201 módulos de código e build web de Pages; casos de limite 1/1024, independência do RNG, falha/retry/reload, evolução ramificada na reserva, Hall/Pokédex e batalha real/replay. 41 registros de navegador em quatro visores, incluindo 2D/3D e turnos reais; todos os 1.746 novos arquivos decodificados. 60.871 quadros dos 970 sprites de batalha conferidos com Pillow; manifestos verificam origem e SHA-256. Detalhes e relatórios em VALIDACAO.md.
+
+**Limites e próxima sugestão:** não validado em telefone físico/iOS. Raridade é por Pokémon gerado, não por passo ou bola; criar outra run usa outra seed. Os adversários não sorteiam shinies. Um PNG de Mr. Mime-Galar tem CRC inválido somente no perfil ICC publicado; o navegador ignora o metadado e os pixels são íntegros. Importador remove apenas esse metadado ao gerar o primeiro frame. Assets locais acrescentam aproximadamente 37 MiB, carregados sob demanda. Uma futura melhoria possível é permitir comparar normal/shiny na ficha da Pokédex quando ambas as variantes forem registradas. Relatórios anteriores preservados abaixo.
+
 ## Entrega de 10/10/2026 — 0.14.0: Batalhas em pixels
 
 **Pedido:** conferir o botão do Hall após perder, verificar Future Sight e oferecer sprites 2D em vez de 3D na batalha. Integração direta continua autorizada.

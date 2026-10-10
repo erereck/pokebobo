@@ -1,4 +1,14 @@
-# Validação — Pokébobo 0.14.0
+# Validação — Pokébobo 0.15.0
+
+## 0.15.0 — Uma estrela no mato · 10/10/2026
+
+- `npm run verify`: 201 módulos sem ciclos/UI no motor, 127/127 testes e build Vite de 2.082 módulos para `/pokebobo/`. Sem standalone. Shiny é cosmético, sem alterações em níveis, IA, economia, chance de captura ou stats; teste real compara HP/dano/turno entre variantes com a mesma seed. Nenhuma nova simulação de dificuldade necessária.
+- Nove novos testes: fronteira exclusiva em 1/1024 e um intervalo entre 1024; stream separado e determinístico; inicial/rotas/eventos reais; captura falha/retry e reload durante animação sem duplicação; evolução ramificada em reserva e Hall/Dex; save antigo normal; batalha real/replay; todas as formas shiny e hashes dos novos assets.
+- Edge/Playwright: 41 registros em 1280×720, 390×844, 320×568 e 844×390. Captura de Eevee shiny com falha, reload e nova bola/sucesso; equipe após captura/reload; filtro da Pokédex e hover selecionado; final/Hall com reserva; 2D/3D e turno real/reload; escolha de Umbreon shiny. Sem erros de console/rede, imagens quebradas, overflow horizontal ou pixel-error. `docs/balance/browser-shiny-0.15.0.json`.
+- Navegador decodificou todos os 1.746 novos assets (970 de batalha + 776 estáticos), inclusive formas regionais. `node scripts/import-battle-sprites.mjs --check`: 1.940 imagens totais, hashes preservados. Pillow decodificou os 60.871 quadros shiny e os 776 PNGs gerados; `docs/balance/shiny-assets-0.15.0.json`. Paletas FRLG conferem exatamente a transparência/posição dos sprites normais.
+- Preview do build em `/pokebobo/`: oito registros em desktop/celular, captura, filtro shiny da Pokédex e batalha 2D/3D. Caminhos de publicação conferidos, sem erro de console/rede ou imagens quebradas; `docs/balance/browser-shiny-preview-0.15.0.json`.
+- Origem/termos em `public/battle-sprites/README.md` e `public/sprites/SHINY-ASSETS.md`; importador de paletas/frames reproduzível. Um perfil ICC auxiliar tem CRC inválido no original de Mr. Mime-Galar, ignorado somente para gerar seu frame PNG; pixels e original preservados, navegador conferido. Algumas espécies posteriores só têm PNG no conjunto BW, como na versão normal.
+- Limites: testes em navegador automatizado, sem dispositivo físico/iOS. Animações BW e 3D conservam seus ciclos originais; shiny não sincroniza GIF com ataques. Saves anteriores continuam compatíveis e não recebem marca retroativa. Batalhas de adversários permanecem normais.
 
 ## 0.14.0 — Batalhas em pixels · 10/10/2026
 
