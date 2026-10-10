@@ -46,7 +46,7 @@ export function ReservePanel({ run, mon, act, onSelect }) {
       <div className="reserve-grid">
         {box.map((reserveMon) => (
           <article className="reserve-card" key={reserveMon.id}>
-            <Sprite name={reserveMon.name} />
+            <Sprite name={reserveMon.name} shiny={reserveMon.shiny} />
             <div>
               <strong>{reserveMon.name}</strong>
               <small>Lv. {reserveMon.level}</small>

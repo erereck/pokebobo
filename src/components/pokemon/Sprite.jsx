@@ -3,39 +3,50 @@ import { cx } from "../../shared/classNames.js";
 import { Ball } from "../icons/Ball.jsx";
 import { battleSpriteSources, spriteFileId } from "./battleSpriteSources.js";
 
-function localFront(mon) {
+function localFront(mon, name, shiny) {
+  if (shiny)
+    return `${import.meta.env.BASE_URL}sprites/shiny/${spriteFileId(name)}.png`;
   return (
     window.POKEBOBO_SPRITES?.[mon.num] ||
     `${import.meta.env.BASE_URL}sprites/${mon.num}.png`
   );
 }
 
-function showdownSprite(name, back) {
+function showdownSprite(name, back, shiny) {
   const side = back ? "ani-back" : "ani";
-  return `https://play.pokemonshowdown.com/sprites/${side}/${spriteFileId(name)}.gif`;
+  return `https://play.pokemonshowdown.com/sprites/${side}${shiny ? "-shiny" : ""}/${spriteFileId(name)}.gif`;
 }
 
-function pokeApiBack(mon) {
-  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${mon.num}.png`;
+function pokeApiBack(mon, shiny) {
+  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${shiny ? "shiny/" : ""}${mon.num}.png`;
 }
 
-function sourcesFor(mon, name, { back, animated, battleStyle }) {
-  const local = localFront(mon);
+function sourcesFor(mon, name, { back, animated, battleStyle, shiny }) {
+  const local = localFront(mon, name, shiny);
   if (battleStyle === "2d")
     return [
-      ...battleSpriteSources(name, back, import.meta.env.BASE_URL),
+      ...battleSpriteSources(name, back, import.meta.env.BASE_URL, shiny),
       local,
     ];
 
   if (back)
     return [
-      window.POKEBOBO_BACK_SPRITES?.[mon.num],
-      showdownSprite(name, true),
-      pokeApiBack(mon),
+      !shiny && window.POKEBOBO_BACK_SPRITES?.[mon.num],
+      showdownSprite(name, true, shiny),
+      ...(shiny
+        ? battleSpriteSources(name, true, import.meta.env.BASE_URL, true)
+        : [pokeApiBack(mon, false)]),
       local,
     ].filter(Boolean);
 
-  if (animated) return [showdownSprite(name, false), local];
+  if (animated)
+    return [
+      showdownSprite(name, false, shiny),
+      ...(shiny
+        ? battleSpriteSources(name, false, import.meta.env.BASE_URL, true)
+        : []),
+      local,
+    ];
 
   return [local];
 }
@@ -46,14 +57,15 @@ export function Sprite({
   back = false,
   animated = false,
   battleStyle,
+  shiny = false,
 }) {
   const mon = catalog[name];
   if (!mon) return <Ball size={48} />;
 
-  const sources = sourcesFor(mon, name, { back, animated, battleStyle });
+  const sources = sourcesFor(mon, name, { back, animated, battleStyle, shiny });
   return (
     <img
-      key={`${name}-${back}-${animated}-${battleStyle}`}
+      key={`${name}-${back}-${animated}-${battleStyle}-${shiny}`}
       draggable="false"
       className={cx("sprite", back && "sprite-back", className)}
       src={sources[0]}
@@ -63,11 +75,12 @@ export function Sprite({
         const nextIndex = Number(image.dataset.sourceIndex || 0) + 1;
         if (nextIndex >= sources.length) return;
         image.dataset.sourceIndex = String(nextIndex);
-        if (battleStyle === "2d" && sources[nextIndex].includes("/front/"))
-          image.alt = name;
+        if (/\/front(?:-shiny)?\//.test(sources[nextIndex]))
+          image.alt = `${name}${shiny ? " shiny" : ""}`;
         image.src = sources[nextIndex];
       }}
-      alt={back ? `${name} de costas` : name}
+      data-shiny={shiny || undefined}
+      alt={`${name}${shiny ? " shiny" : ""}${back ? " de costas" : ""}`}
     />
   );
 }

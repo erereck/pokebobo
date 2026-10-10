@@ -34,7 +34,7 @@ export function TeamScreen({ run, act, selectedMonId }) {
             title={`${m.name} · nível ${m.level}`}
             onClick={() => setSelected(m.id)}
           >
-            <Sprite name={m.name} />
+            <Sprite name={m.name} shiny={m.shiny} />
             <span>
               <strong>{m.name}</strong>
               <small>

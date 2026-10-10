@@ -8,15 +8,15 @@ const checkOnly = process.argv.includes("--check");
 let count = 0,
   total = 0;
 for (const sprite of Object.values(manifest)) {
-  for (const side of ["front", "back"]) {
+  for (const side of ["front", "back", "shinyFront", "shinyBack"]) {
     const entry = sprite[side];
-    if (!/^(front|back)\/[a-z0-9-]+\.(gif|png)$/.test(entry.file))
+    if (!/^(front|back)(-shiny)?\/[a-z0-9-]+\.(gif|png)$/.test(entry.file))
       throw Error("Nome inválido no manifesto");
     const url = new URL(entry.sourceUrl);
     if (
       url.protocol !== "https:" ||
       url.hostname !== "play.pokemonshowdown.com" ||
-      !/^\/sprites\/gen5(?:ani)?(?:-back)?\//.test(url.pathname)
+      !/^\/sprites\/gen5(?:ani)?(?:-back)?(?:-shiny)?\//.test(url.pathname)
     )
       throw Error("Fonte fora do manifesto permitido");
     const target = new URL(entry.file, root);
@@ -38,7 +38,7 @@ for (const sprite of Object.values(manifest)) {
         `Arquivo/fonte divergiu; conferir antes de substituir: ${entry.file}`,
       );
     if (!checkOnly) {
-      await mkdir(new URL(side + "/", root), { recursive: true });
+      await mkdir(new URL(entry.file.split("/")[0] + "/", root), { recursive: true });
       await writeFile(target, bytes);
     }
     total += bytes.length;

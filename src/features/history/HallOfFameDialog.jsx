@@ -15,7 +15,9 @@ function monsOf(names, levels) {
   return names
     .map((mon, index) => ({
       name: typeof mon === "string" ? mon : mon?.name,
-      level: levels?.[index] ?? (typeof mon === "object" && mon ? mon.level : null),
+      shiny: mon?.shiny === true,
+      level:
+        levels?.[index] ?? (typeof mon === "object" && mon ? mon.level : null),
     }))
     .filter((mon) => mon.name);
 }
@@ -37,7 +39,7 @@ function endingCopy(run) {
 function MonStrip({ mons }) {
   return mons.map((mon, monIndex) => (
     <div key={`${mon.name}-${monIndex}`}>
-      <Sprite name={mon.name} />
+      <Sprite name={mon.name} shiny={mon.shiny} />
       <small>{mon.level ? `Lv.${mon.level}` : mon.name}</small>
     </div>
   ));
@@ -119,8 +121,12 @@ export function HallOfFameDialog({ history = [], onClose }) {
 
                 {reserve.length > 0 && (
                   <div className="hall-reserve">
-                    <span><Archive size={12} /> RESERVA</span>
-                    <div className="hall-team"><MonStrip mons={reserve} /></div>
+                    <span>
+                      <Archive size={12} /> RESERVA
+                    </span>
+                    <div className="hall-team">
+                      <MonStrip mons={reserve} />
+                    </div>
                   </div>
                 )}
 

@@ -233,10 +233,12 @@
 }
 .dex-filters {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 12px 0;
 }
-.dex-filters [aria-pressed="true"] {
+.dex-filters .button.secondary[aria-pressed="true"],
+.dex-filters .button.secondary[aria-pressed="true"]:hover:not(:disabled) {
   background: var(--rubber);
   color: var(--lcd);
 }

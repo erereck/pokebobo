@@ -1,11 +1,4 @@
-import {
-  BookOpen,
-  Flag,
-  MapPin,
-  Medal,
-  Sparkles,
-  Trophy,
-} from "lucide-react";
+import { BookOpen, Flag, MapPin, Medal, Sparkles, Trophy } from "lucide-react";
 import { Modal } from "../../components/ui/Modal.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { BadgeStrip } from "../../components/progress/BadgeStrip.jsx";
@@ -50,8 +43,7 @@ export function HallOfFame({ meta, onClose }) {
             <span className="eyebrow">ARQUIVO DE CARREIRAS</span>
             <h3>Todo campeão chegou até aqui. Toda derrota também.</h3>
             <p>
-              O Hall preserva as jornadas encerradas, com ou sem título da
-              Liga.
+              O Hall preserva as jornadas encerradas, com ou sem título da Liga.
             </p>
           </div>
           <div className="hall-stats">
@@ -105,8 +97,12 @@ export function HallOfFame({ meta, onClose }) {
 
                 <div className="hall-team" aria-label="Equipe final">
                   {(run.team || []).slice(0, 6).map((mon, index) => (
-                    <div key={typeof mon === "string" ? mon + index : mon.id || index}>
-                      <Sprite name={teamName(mon)} />
+                    <div
+                      key={
+                        typeof mon === "string" ? mon + index : mon.id || index
+                      }
+                    >
+                      <Sprite name={teamName(mon)} shiny={mon?.shiny} />
                       {teamLevel(mon) > 0 && <small>Lv.{teamLevel(mon)}</small>}
                     </div>
                   ))}

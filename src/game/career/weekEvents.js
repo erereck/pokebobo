@@ -1,3 +1,4 @@
+import { rollShiny } from "../pokemon/shiny.js";
 import { WEEK_EVENT_RULES } from "../config/events.js";
 import { WEEK_EVENTS } from "../data/weekEvents.js";
 import { random } from "../random/random.js";
@@ -188,7 +189,12 @@ export function applyWeekEventEffect(r, effect = {}) {
     if (special.legendary) r.eventFlags["legendary-attempted"] = true;
     r.exploration = null;
     r.encounters ||= [];
-    r.encounters.push({ ...special, used: false, special: true });
+    r.encounters.push({
+      ...special,
+      used: false,
+      special: true,
+      shiny: rollShiny(r),
+    });
     r.eventEncounterIndex = r.encounters.length - 1;
   }
 

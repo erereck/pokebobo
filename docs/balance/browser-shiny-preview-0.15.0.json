@@ -1,0 +1,190 @@
+{
+  "reports": [
+    {
+      "name": "shiny-publicado-captura-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-publicado-dex-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva (1)1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": false
+        },
+        {
+          "label": "Explorar rotaCaminhar e capturar1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": false
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": false
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 419,
+          "height": 65,
+          "visible": false
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 846,
+          "height": 55.25,
+          "visible": false
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-publicado-2d-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-publicado-3d-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-publicado-captura-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-publicado-dex-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva (1)1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": false
+        },
+        {
+          "label": "Explorar rotaCaminhar e capturar1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": false
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": false
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": false
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 334,
+          "height": 53.5,
+          "visible": false
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-publicado-2d-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-publicado-3d-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    }
+  ],
+  "errors": [],
+  "network": []
+}

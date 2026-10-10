@@ -5,6 +5,7 @@ import {
   encounterTransitionDuration,
 } from "./encounterTransition.js";
 import catalog from "../../game/catalog.json" with { type: "json" };
+import { spriteFileId } from "../../components/pokemon/battleSpriteSources.js";
 import species from "./frlg-species.json" with { type: "json" };
 import { fieldAsset, tintedPixelImage } from "./pixelAssets.js";
 import { usePixelCanvas } from "./usePixelCanvas.js";
@@ -17,6 +18,7 @@ import {
 
 export function CaptureCanvas({
   name,
+  shiny = false,
   level,
   balls,
   water,
@@ -36,7 +38,9 @@ export function CaptureCanvas({
     () => (attempt ? captureTimeline(attempt, monY) : null),
     [attempt, monY],
   );
-  const sprite = `${import.meta.env.BASE_URL}sprites/${original ? "frlg/" : ""}${num}.png`;
+  const sprite = shiny
+    ? `${import.meta.env.BASE_URL}sprites/${original ? `frlg-shiny/${num}` : `shiny/${spriteFileId(name)}`}.png`
+    : `${import.meta.env.BASE_URL}sprites/${original ? "frlg/" : ""}${num}.png`;
   const transitionDuration =
     exploration && !returning
       ? Math.ceil(encounterTransitionDuration(water) / 2)
@@ -174,6 +178,13 @@ export function CaptureCanvas({
         pixelText(ctx, font, `${level}`, 0, 0, 22, 1);
         ctx.restore();
         ctx.drawImage(hp, 36, 30);
+        if (shiny) {
+          ctx.fillStyle = "#b88018";
+          ctx.fillRect(24, 29, 3, 7);
+          ctx.fillRect(22, 31, 7, 3);
+          ctx.fillStyle = "#ffe078";
+          ctx.fillRect(24, 31, 3, 3);
+        }
       }
       ctx.drawImage(
         tintedPixelImage(textbox, [255, 255, 255], frame?.flash || 0),
@@ -227,7 +238,7 @@ export function CaptureCanvas({
         className="capture-canvas"
         ref={canvasRef}
         role="img"
-        aria-label={`Cena de captura: treinador Red de costas diante de ${name}.`}
+        aria-label={`Cena de captura: treinador Red de costas diante de ${name}${shiny ? " shiny" : ""}.`}
       />
       {error && (
         <p className="pixel-error" role="alert">

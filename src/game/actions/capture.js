@@ -48,11 +48,14 @@ export function handleCapture(s, action, state) {
   const success = roll < chance;
   const bonus = consumeEventBoost(r, "capture");
   if (success) revealWild(r, action.index);
-  const mon = success ? makeMon(e.name, e.level, `mon${r.nextMon++}`) : null;
+  const mon = success
+    ? makeMon(e.name, e.level, `mon${r.nextMon++}`, e.shiny)
+    : null;
   const attempt = {
     id: `${r.week}-${action.index}-${r.balls}-${r.rng}`,
     index: action.index,
     name: e.name,
+    shiny: e.shiny === true,
     mon,
     success,
     bonus,

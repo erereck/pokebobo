@@ -34,7 +34,12 @@ export function BattleArena({ r, snap, current, effect, spriteStyle }) {
           style={{ "--species-size": spriteSize(snap.foe.name) }}
         >
           {showEnemy && (
-            <Sprite name={snap.foe.name} animated battleStyle={spriteStyle} />
+            <Sprite
+              name={snap.foe.name}
+              shiny={snap.foe.shiny}
+              animated
+              battleStyle={spriteStyle}
+            />
           )}
         </div>
       </div>
@@ -46,6 +51,7 @@ export function BattleArena({ r, snap, current, effect, spriteStyle }) {
           {showPlayer && (
             <Sprite
               name={current.name}
+              shiny={current.shiny}
               back
               animated
               battleStyle={spriteStyle}

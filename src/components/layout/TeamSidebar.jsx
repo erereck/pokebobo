@@ -79,10 +79,7 @@ export function TeamSidebar({
     )
       onReorder(active.sourceId, active.targetId);
 
-    if (
-      active.mode === "battle-switch" &&
-      active.targetId === activeBattleId
-    )
+    if (active.mode === "battle-switch" && active.targetId === activeBattleId)
       onBattleSwitch?.(active.sourceId);
 
     setTimeout(() => {
@@ -157,7 +154,7 @@ export function TeamSidebar({
               >
                 <GripVertical size={15} />
               </span>
-              <Sprite name={m.name} />
+              <Sprite name={m.name} shiny={m.shiny} />
               <span>
                 <strong>{m.name}</strong>
                 <small>

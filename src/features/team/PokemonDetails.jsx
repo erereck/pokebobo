@@ -1,3 +1,4 @@
+import { ShinyMark } from "../../components/pokemon/ShinyMark.jsx";
 import { Dex } from "@pkmn/sim";
 import catalog from "../../game/catalog.json" with { type: "json" };
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
@@ -31,13 +32,15 @@ export function PokemonDetails({ mon, run, act }) {
         <span className="scan-number">
           Nº {String(data.num).padStart(3, "0")}
         </span>
-        <Sprite name={mon.name} />
+        <Sprite name={mon.name} shiny={mon.shiny} />
         <span className="scan-caption">LEITURA COMPLETA</span>
       </div>
       <div className="pokemon-info">
         <div className="pokemon-name">
           <div>
-            <h2>{mon.name}</h2>
+            <h2>
+              {mon.name} <ShinyMark shiny={mon.shiny} />
+            </h2>
             <div className="types">
               {data.types.map((t) => (
                 <TypeTag key={t} type={t} />

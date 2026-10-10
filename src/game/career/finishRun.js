@@ -24,11 +24,13 @@ export function finishRun(s, won, details = won ? "champion" : "defeat") {
   const team = r.party.map((mon) => ({
     id: mon.id,
     name: mon.name,
+    shiny: mon.shiny === true,
     level: mon.level,
   }));
   const box = (r.box || []).map((mon) => ({
     id: mon.id,
     name: mon.name,
+    shiny: mon.shiny === true,
     level: mon.level,
   }));
 

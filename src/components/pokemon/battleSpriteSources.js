@@ -10,10 +10,12 @@ export function spriteFileId(name) {
   return forme ? `${base}-${forme}` : base;
 }
 
-export function battleSpriteSources(name, back, baseUrl) {
+export function battleSpriteSources(name, back, baseUrl, shiny = false) {
   const sprite = sprites[spriteFileId(name)];
   if (!sprite) return [];
-  return [...new Set([back ? sprite.back : sprite.front, sprite.front])].map(
-    (file) => `${baseUrl}battle-sprites/${file}`,
-  );
+  const front = shiny ? sprite.shinyFront : sprite.front;
+  const rear = shiny ? sprite.shinyBack : sprite.back;
+  return [...new Set([back ? rear : front, front])]
+    .filter(Boolean)
+    .map((file) => `${baseUrl}battle-sprites/${file}`);
 }

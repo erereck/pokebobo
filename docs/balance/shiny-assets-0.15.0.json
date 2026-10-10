@@ -1,0 +1,12 @@
+{
+  "battleFiles": 970,
+  "battleFrames": 60871,
+  "staticFiles": 776,
+  "ignoredAuxiliaryMetadata": [
+    {
+      "file": "front-shiny/mrmime-galar.png",
+      "ignoredMetadata": "iCCP"
+    }
+  ],
+  "note": "Pixels íntegros; original publicado preservado. Navegador decodifica os PNGs; importador ignora somente metadados com CRC inválido ao gerar primeiro frame."
+}

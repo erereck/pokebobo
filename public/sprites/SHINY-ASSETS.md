@@ -1,0 +1,7 @@
+# Sprites shiny locais
+
+Sem filtros de tonalidade ou cores inventadas. 485 PNGs de primeiro frame das frentes BW shiny locais mantêm cores, transparência e proporção; canvas quadrado transparente centraliza a imagem. Fontes/termos: [Pokémon Showdown / Smogon](../battle-sprites/README.md). Não atribuímos licença MIT aos gráficos. Assets de batalha conservam o arquivo animado original; os PNGs são derivados exclusivamente para cartões e captura de espécies posteriores.
+
+291 sprites de captura FRLG em 64×64 usam o índice de pixels frontal original e sua paleta **shiny.pal**, com recorte do primeiro quadro igual ao normal. Origem: [pret/pokefirered, revisão 037335f4c725d7c9aecdac87066f2002b4bd7e14](https://github.com/pret/pokefirered/tree/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/pokemon). Gráficos/paletas: Game Freak / Nintendo / The Pokémon Company; repositório pret é a fonte técnica, não autor das artes nem licença aberta delas. Consulte também [créditos FRLG](../../licenses/FRLG-ASSETS.md).
+
+`shiny-manifest.json` registra cada saída com tamanho e SHA-256, fonte exata da paleta/PNG FRLG ou hash do arquivo BW local. Reprodução: Python + Pillow, `python scripts/import-shiny-sprites.py --source /caminho/pokefirered`; sem --source busca a revisão congelada. A transparência de cada FRLG é comparada à versão normal antes da escrita. O importador lida com perfil ICC inválido conforme documentado nos créditos BW, sem alterar pixels. Build usa apenas arquivos locais e não executa o importador.

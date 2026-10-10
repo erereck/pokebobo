@@ -10,6 +10,7 @@ export function registerPokemon(r, mon, kind = "capture") {
     return;
   r.collection.push({
     species: mon.name,
+    shiny: mon.shiny === true,
     monId: mon.id,
     kind,
     level: mon.level,

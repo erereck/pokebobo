@@ -1,6 +1,8 @@
-# Pokébobo — 0.14.0 · Batalhas em pixels
+# Pokébobo — 0.15.0 · Uma estrela no mato
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.15.0 adiciona **shinies com chance de 1/1024** em iniciais e novos encontros, incluindo pesca, surf e eventos. Cores reais na captura e nas batalhas 2D/3D, com marca preservada em evolução, reserva, saves, Hall e Pokédex. O filtro **Shinies** reúne suas espécies raras. Sem bônus em stats/captura e sem novo sorteio ao repetir uma bola; Pokémon já gerados em saves antigos continuam normais. [Captura shiny](docs/images/shiny-captura-0.15-celular.png) · [Batalha shiny](docs/images/shiny-batalha-0.15-celular.png) · [Créditos](public/sprites/SHINY-ASSETS.md).
 
 A 0.14.0 corrige o botão do Hall da Fama na tela final e oferece **Opções → Sprites de batalha → 2D / 3D**, com preferência lembrada pelo navegador. O modo 2D tem frente e costas locais de todas as espécies/formas do catálogo. Future Sight continua usando o motor Gen 8: prepara o ataque e atinge ao fim do terceiro turno; a interface agora mostra espera, chegada e falha ao tentar empilhar. [Batalha 2D e Future Sight](docs/images/batalha-2d-0.14-celular.png) · [Opção visual](docs/images/opcao-sprites-0.14-celular.png) · [Créditos](public/battle-sprites/README.md).
 

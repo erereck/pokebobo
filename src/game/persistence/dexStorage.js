@@ -27,6 +27,7 @@ export function runCollection(run, slot = 1) {
     species: typeof mon === "string" ? mon : mon.name,
     monId: mon.id || (typeof mon === "string" ? mon : mon.name),
     kind: "snapshot",
+    shiny: mon.shiny === true,
     runNumber: run.number || run.id,
     runName: run.name,
     seed: run.seed,

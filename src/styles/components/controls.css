@@ -228,3 +228,10 @@
   --type-ink: #83516f;
   --type-color: #c58eb0;
 }
+
+.shiny-mark {
+  color: #a16b08;
+  font-size: 0.85em;
+  white-space: nowrap;
+  text-shadow: 0 1px #ffe899;
+}

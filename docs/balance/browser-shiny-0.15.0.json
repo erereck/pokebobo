@@ -1,0 +1,723 @@
+{
+  "reports": [
+    {
+      "name": "shiny-captura-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-retry-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-equipe-capturado-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 840,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-equipe-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 840,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-pokedex-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 840,
+          "height": 44,
+          "visible": false
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-hall-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-batalha-2d-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-turno-2d-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-batalha-3d-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-turno-3d-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-captura-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-retry-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-equipe-capturado-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 328,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-equipe-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 328,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-pokedex-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 328,
+          "height": 44,
+          "visible": false
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-hall-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-batalha-2d-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-turno-2d-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-batalha-3d-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-turno-3d-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-captura-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-retry-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-equipe-capturado-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 272,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-equipe-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 272,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-pokedex-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 272,
+          "height": 44,
+          "visible": false
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-hall-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-batalha-2d-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-turno-2d-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-batalha-3d-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-turno-3d-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-captura-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 99.890625,
+          "height": 66.59375,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 99.90625,
+          "height": 66.59375,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-retry-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 99.890625,
+          "height": 66.59375,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 99.90625,
+          "height": 66.59375,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-equipe-capturado-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 545.15625,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-equipe-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 545.15625,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-pokedex-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Abre as batalhas",
+          "width": 545.15625,
+          "height": 44,
+          "visible": false
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-hall-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-batalha-2d-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-turno-2d-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-batalha-3d-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-turno-3d-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "shiny-evolucao-opcoes",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": false
+        },
+        {
+          "label": "Explorar rotaCaminhar e capturar1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": false
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": false
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": false
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 334,
+          "height": 53.5,
+          "visible": false
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "flows": [
+    {
+      "count": 1746,
+      "failures": []
+    }
+  ]
+}

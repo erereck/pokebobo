@@ -5,6 +5,7 @@ export function battleSet(mon) {
   return {
     name: mon.id,
     species: mon.name,
+    shiny: mon.shiny === true,
     ability: s.ability,
     moves: mon.moves,
     level: mon.level,

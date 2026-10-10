@@ -17,7 +17,7 @@ export function RegionReady({ r, act }) {
             {r.name} &<br />
             {r.party[0].name}.
           </h2>
-          <Sprite name={r.party[0].name} />
+          <Sprite name={r.party[0].name} shiny={r.party[0].shiny} />
           <p>
             Dez cidades, oito insígnias e uma Liga.
             <br />

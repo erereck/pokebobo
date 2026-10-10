@@ -139,6 +139,12 @@ export function HelpDialog({ setModal }) {
         </p>
         <h3>Feito com projetos abertos</h3>
         <p>
+          Shinies: cada inicial escolhido e novo encontro, incluindo pesca e
+          eventos, tem chance de 1/1024. A marca permanece na captura, reserva e
+          evolução. Novas tentativas contra o mesmo Pokémon não sorteiam de
+          novo; shiny muda as cores, sem bônus de atributos ou captura.
+        </p>
+        <p>
           Fontes locais: Silkscreen, DM Sans e Space Grotesk (SIL Open Font
           License).
         </p>
@@ -153,7 +159,8 @@ export function HelpDialog({ setModal }) {
           >
             Smogon / Pokémon Showdown
           </a>
-          . Frente e costas locais; escolha 2D ou 3D em Opções.
+          . Frente e costas locais, incluindo shinies; escolha 2D ou 3D em
+          Opções.
         </p>
         <p>
           Tiles e treinador da exploração: Pokémon FireRed / LeafGreen, Game
