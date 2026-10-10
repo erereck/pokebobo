@@ -33,6 +33,26 @@ export function applyBattleEvent(currentSnapshot, event, finalSnapshot) {
   const listKey = event.side === "player" ? "player" : "enemy";
   const activeKey = event.side === "player" ? "active" : "foe";
 
+  if (event.type === "futurestart") {
+    next.futureMoves = [
+      ...(next.futureMoves || []).filter(
+        (future) => future.side !== event.targetSide,
+      ),
+      {
+        side: event.targetSide,
+        move: event.move,
+        turnsRemaining: 2,
+      },
+    ];
+    return next;
+  }
+  if (event.type === "futurehit") {
+    next.futureMoves = (next.futureMoves || []).filter(
+      (future) => future.side !== event.side,
+    );
+    return next;
+  }
+
   if (event.type === "switch") {
     next[listKey] = next[listKey].map((mon) => ({ ...mon, active: false }));
     const finalMon = finalSnapshot[listKey].find(
@@ -51,9 +71,7 @@ export function applyBattleEvent(currentSnapshot, event, finalSnapshot) {
       fainted: Boolean(event.health?.fainted),
       active: true,
     };
-    const index = next[listKey].findIndex(
-      (mon) => mon.id === event.targetId,
-    );
+    const index = next[listKey].findIndex((mon) => mon.id === event.targetId);
     if (index >= 0) next[listKey][index] = switched;
     else next[listKey].push(switched);
     next[activeKey] = { ...switched };
@@ -115,7 +133,11 @@ export function battleEventDuration(type, speed = "normal") {
     faint: 620,
     switch: 500,
     message: 300,
+    futurestart: 400,
+    futurehit: 500,
   };
   const duration = normal[type] ?? 220;
-  return speed === "fast" ? Math.max(90, Math.round(duration * 0.45)) : duration;
+  return speed === "fast"
+    ? Math.max(90, Math.round(duration * 0.45))
+    : duration;
 }

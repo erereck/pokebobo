@@ -17,6 +17,7 @@ export function BattleScreen({
   act,
   battleControlRef,
   onSidebarState,
+  spriteStyle,
 }) {
   const snap = useMemo(() => {
     const battle = restoreBattle(r.battle);
@@ -28,15 +29,8 @@ export function BattleScreen({
   }, [r.battle]);
   const [switching, setSwitching] = useState(false);
   const [logOpen, setLogOpen] = useState(false);
-  const {
-    displaySnap,
-    message,
-    effect,
-    locked,
-    speed,
-    toggleSpeed,
-    move,
-  } = useBattlePresentation({ battleSpec: r.battle, snap, act });
+  const { displaySnap, message, effect, locked, speed, toggleSpeed, move } =
+    useBattlePresentation({ battleSpec: r.battle, snap, act });
   const forced = Boolean(displaySnap.request?.forceSwitch);
   const trapped = Boolean(displaySnap.request?.active?.[0]?.trapped);
   const current = displaySnap.active;
@@ -98,7 +92,13 @@ export function BattleScreen({
         </div>
       </header>
       <div className="battle-field">
-        <BattleArena r={r} snap={displaySnap} current={current} effect={effect} />
+        <BattleArena
+          r={r}
+          snap={displaySnap}
+          current={current}
+          effect={effect}
+          spriteStyle={spriteStyle}
+        />
         <BattleBench snap={displaySnap} />
       </div>
       <div className="battle-comment" role="status" aria-live="polite">

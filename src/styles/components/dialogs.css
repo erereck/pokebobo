@@ -354,6 +354,43 @@ dialog > .button {
   padding-bottom: 14px;
   border-bottom: 1px solid var(--lcd-line);
 }
+.battle-sprite-options {
+  margin: 0 0 16px;
+  padding: 12px;
+  border: 1px solid var(--lcd-line);
+  border-radius: 6px;
+  background: var(--lcd-dim);
+}
+.battle-sprite-options legend {
+  padding: 0 4px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.battle-sprite-options > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.battle-sprite-options .button {
+  min-height: 44px;
+  padding: 8px;
+  font-size: 12px;
+}
+.battle-sprite-options .button[aria-pressed="true"] {
+  background: var(--rubber);
+  color: var(--lcd-bright);
+  border-color: var(--rubber);
+}
+.battle-sprite-options .button[aria-pressed="true"]:hover:not(:disabled) {
+  background: var(--rubber-raised);
+  color: var(--lcd-bright);
+}
+.battle-sprite-options p {
+  margin: 10px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
 .save-slots-head > div {
   display: flex;
   align-items: center;

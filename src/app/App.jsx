@@ -18,8 +18,11 @@ import { EvolutionDialog } from "../features/team/EvolutionDialog.jsx";
 import { PokedexDialog } from "../features/pokedex/PokedexDialog.jsx";
 import { ResetDialog } from "../features/settings/ResetDialog.jsx";
 import { initialState } from "../game/state/initialState.js";
+import { useBattleSpriteStyle } from "./hooks/useBattleSpriteStyle.js";
 
 export function App() {
+  const { spriteStyle, changeSpriteStyle, spritePreferenceSaved } =
+    useBattleSpriteStyle();
   const [selectedMonId, setSelectedMonId] = useState(null);
   const [battleSidebar, setBattleSidebar] = useState(null);
   const battleControlRef = useRef(null);
@@ -103,6 +106,7 @@ export function App() {
         <Ending
           run={run}
           meta={state.meta}
+          onHall={() => setModal("hall")}
           onNew={() => {
             setName(run.name);
             setState((s) => ({
@@ -116,6 +120,7 @@ export function App() {
           <div className="dex-main-panel">
             <MissionHUD run={run} saving={saving} />
             <RunContent
+              spriteStyle={spriteStyle}
               tab={tab}
               run={run}
               act={act}
@@ -164,6 +169,9 @@ export function App() {
       {modal === "help" && <HelpDialog setModal={setModal} />}
       {modal === "settings" && (
         <SettingsDialog
+          spriteStyle={spriteStyle}
+          changeSpriteStyle={changeSpriteStyle}
+          spritePreferenceSaved={spritePreferenceSaved}
           setModal={setModal}
           exportSave={exportSave}
           state={state}

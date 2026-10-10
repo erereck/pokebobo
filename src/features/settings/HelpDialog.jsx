@@ -144,6 +144,18 @@ export function HelpDialog({ setModal }) {
         </p>
         <CoverCredits />
         <p>
+          Sprites 2D de batalha: gráficos de Game Freak / Nintendo / The Pokémon
+          Company e adaptações em pixel art dos artistas da comunidade, via{" "}
+          <a
+            href="https://github.com/smogon/sprites"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Smogon / Pokémon Showdown
+          </a>
+          . Frente e costas locais; escolha 2D ou 3D em Opções.
+        </p>
+        <p>
           Tiles e treinador da exploração: Pokémon FireRed / LeafGreen, Game
           Freak / Nintendo / The Pokémon Company, via{" "}
           <a

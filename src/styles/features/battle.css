@@ -195,6 +195,15 @@
 .health-card > small > b {
   color: var(--danger);
 }
+.future-marker {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
 .battle-bench {
   position: absolute;
   left: 12px;

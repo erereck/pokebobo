@@ -1,5 +1,9 @@
 # Capas de cidades e exploração de campo
 
+## 0.14.0 — sprites 2D de frente e costas
+
+Opções permite escolher 2D/3D para ambos os lados da batalha. O 2D usa 970 arquivos locais originais publicados pelo Pokémon Showdown: 945 GIFs animados e 25 PNGs, cobrindo todas as espécies/formas do catálogo. Índice leve no código, manifesto completo de fontes/hashes em public/battle-sprites; 36,31 MiB no conjunto, carregados somente para os Pokémon visíveis. [Origem, créditos, termos e importação](../public/battle-sprites/README.md). Formas regionais mantêm suas próprias imagens; nenhum redesenho, conversão ou ROM. CaptureCanvas FRLG e fontes anteriores do modo 3D seguem separadas desta preferência.
+
 ## 0.13.0 — todas as cidades com imagem própria
 
 48 cidades selecionáveis (sete origens, quatro passagens e 37 ginásios) e Indigo Plateau têm 49 imagens locais correspondentes ao lugar. O manifesto seleciona por id, sem imagem genérica por bioma. Os seis arquivos do piloto de Emerald e a paisagem SVG foram removidos; em caso de falha não se mostra um destino diferente. Os registros do piloto abaixo são históricos, inclusive suas referências a fallback e standalone.

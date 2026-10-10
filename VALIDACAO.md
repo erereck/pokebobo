@@ -1,4 +1,15 @@
-# Validação — Pokébobo 0.13.0
+# Validação — Pokébobo 0.14.0
+
+## 0.14.0 — Batalhas em pixels · 10/10/2026
+
+- `npm run verify` após o polimento final: 198 módulos JS/JSX sem ciclos/import de UI no motor, 118/118 testes e build Vite com 2.079 módulos, `VITE_BASE=/pokebobo/`. Sem standalone.
+- Sete casos reais de Future Sight: PP pago ao preparar, nenhum dano nos dois primeiros turnos e impacto ao fim do terceiro; novo ocupante após troca do alvo, lançador fora, imunidade Dark, Protect, tentativa de empilhar sem adiar, save/reload e ataque adversário. Eventos de chegada precedem dano, e o parser elimina duplicação das leituras de HP do protocolo split. Motor, IA e fórmula de dano preservados.
+- Quatro testes de sprites/preferência: todas as 486 entradas (485 espécies/formas) têm frente/costas próprias; aliases e formas regionais corretos; caminhos em Pages; 970 arquivos/hash/procedência; preferência global separada do save e storage indisponível tratado.
+- `node scripts/import-battle-sprites.mjs --check`: 970 arquivos e 38.072.884 bytes conferidos. Pillow abriu os 970 originais, percorreu suas animações e decodificou o último quadro: 60.925 quadros, 945 imagens animadas/25 estáticas. Contact sheet de 12 espécies, incluindo formas regionais, inspecionada. `docs/balance/battle-sprite-images-0.14.0.json`. Não foram redesenhados ou convertidos.
+- Edge/Playwright: 40 registros em 1280×720, 390×844, 320×568 e 844×390. Derrota real → registrar → botão da tela final → Hall; Escape/foco, reload sem duplicação e botão do cabeçalho; título/encerramento; troca 3D/2D, seleção/hover legíveis com alvo de 44 px, preferência após reload/slots e battle spec intacto. Future Sight em três turnos com reload pendente, HP real, espera/chegada, imunidade e quatro pares de espécies/formas 2D. Caixas de HP conferidas dentro da arena e sem sobreposição. `docs/balance/browser-battle-update-0.14.0.json`.
+- Sete registros adicionais: escolher 2D durante animação 1× sem duplicar decisão; storage da preferência negado com batalha salva; 404 controlado no sprite de costas mantendo frente 2D; alternância posterior restaura índice da fonte; tentativa de repetir Future Sight e lançador trocado por Blastoise antes do impacto. Um 404 esperado registrado separadamente; fluxos normais sem erros de console/rede. `docs/balance/browser-battle-recovery-0.14.0.json`.
+- Preview em `/pokebobo/`: oito registros no PC/celular, sprites locais 2D de frente/costas, preferência após reload, Future Sight até o impacto e Hall após derrota real. Sem erros ou overflow horizontal. `docs/balance/browser-battle-preview-0.14.0.json`. Total: 55 registros locais.
+- Limites: Edge automatizado, sem aparelho físico/iOS. Testes de título/encerramento verificam a interface por estado preparado, não estimam dificuldade. GIFs animam conforme o original, e 25 PNGs permanecem estáticos. O pacote local completo tem 36,31 MiB, mas a arena busca só os sprites visíveis; padrão 3D usa as fontes anteriores. Saves e decisões preservados, sem novo schema. Sem alteração de progressão/IA; campanhas anteriores mantidas abaixo, sem novo Monte Carlo para esta mudança de apresentação.
 
 ## 0.13.0 — Mapas da jornada · 10/10/2026
 

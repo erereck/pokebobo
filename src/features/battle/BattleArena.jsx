@@ -15,7 +15,7 @@ function effectClass(effect, side) {
   return effect?.side === side ? ` is-${effect.type}` : "";
 }
 
-export function BattleArena({ r, snap, current, effect }) {
+export function BattleArena({ r, snap, current, effect, spriteStyle }) {
   const showEnemy = combatantSpriteVisible(snap.foe, effect, "enemy");
   const showPlayer = combatantSpriteVisible(current, effect, "player");
 
@@ -25,12 +25,17 @@ export function BattleArena({ r, snap, current, effect }) {
         <RouteCover place={r.inLeague ? { id: "indigo" } : city(r)} />
       </div>
       <div className={"combatant enemy" + effectClass(effect, "enemy")}>
-        <Health mon={snap.foe} />
+        <Health
+          mon={snap.foe}
+          future={snap.futureMoves?.find((future) => future.side === "enemy")}
+        />
         <div
           className="battle-sprite"
           style={{ "--species-size": spriteSize(snap.foe.name) }}
         >
-          {showEnemy && <Sprite name={snap.foe.name} animated />}
+          {showEnemy && (
+            <Sprite name={snap.foe.name} animated battleStyle={spriteStyle} />
+          )}
         </div>
       </div>
       <div className={"combatant ally" + effectClass(effect, "player")}>
@@ -38,9 +43,19 @@ export function BattleArena({ r, snap, current, effect }) {
           className="battle-sprite"
           style={{ "--species-size": spriteSize(current.name) }}
         >
-          {showPlayer && <Sprite name={current.name} back animated />}
+          {showPlayer && (
+            <Sprite
+              name={current.name}
+              back
+              animated
+              battleStyle={spriteStyle}
+            />
+          )}
         </div>
-        <Health mon={current} />
+        <Health
+          mon={current}
+          future={snap.futureMoves?.find((future) => future.side === "player")}
+        />
       </div>
       <div className="arena-floor" />
     </div>
