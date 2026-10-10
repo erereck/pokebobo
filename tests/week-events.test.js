@@ -101,7 +101,7 @@ test("bônus de captura aparece no cálculo e respeita o teto de 98%", () => {
   s.run.eventBoosts = { capture: 0.08 };
   assert.equal(
     captureChanceForRun(s.run, ENCOUNTER_RULES.captureChance),
-    0.94,
+    0.75,
   );
   s.run.eventBoosts.capture = 0.5;
   assert.equal(

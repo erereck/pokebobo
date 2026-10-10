@@ -1,0 +1,1016 @@
+{
+  "reports": [
+    {
+      "name": "captura-limpa-1280-false",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "retry-1280-false",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "captura-retorno-1280-false",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 696,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "captura-limpa-390-false",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "retry-390-false",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "captura-retorno-390-false",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "captura-limpa-320-false",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "retry-320-false",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "captura-retorno-320-false",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 132,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "captura-limpa-667-true",
+      "width": 667,
+      "height": 375,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 89.390625,
+          "height": 59.59375,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 89.40625,
+          "height": 59.59375,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "retry-667-true",
+      "width": 667,
+      "height": 375,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 89.390625,
+          "height": 59.59375,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 89.40625,
+          "height": 59.59375,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "captura-retorno-667-true",
+      "width": 667,
+      "height": 375,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 63.859375,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 63.875,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 130.734375,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "captura-limpa-320-true",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "retry-320-true",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "captura-retorno-320-true",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 132,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "ultima-bola",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "fugir-apos-falha",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "captura-evento-retry",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Explorar rotaCaminhar e capturar1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 334,
+          "height": 53.5,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "reload-captura-true",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 696,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "reload-captura-false",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 174,
+          "height": 115.984375,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "save-anterior-falha-pendente",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "voltar-segurar-reduce",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 696,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "voltar-segurar-no-preference",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 696,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "limite-50-retorno",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Explorar rotaCaminhar e capturar1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 163,
+          "height": 86,
+          "visible": true
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 334,
+          "height": 53.5,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "lago-fish",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "lago-surf",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 97.796875,
+          "height": 65.1875,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    }
+  ],
+  "flows": [
+    {
+      "name": "reload-sucesso",
+      "entryMs": 1116,
+      "completionMs": 7132,
+      "balls": 5,
+      "shakes": 3
+    },
+    {
+      "name": "reload-falha",
+      "entryMs": 1117,
+      "completionMs": 4368,
+      "balls": 5,
+      "shakes": 0
+    },
+    {
+      "name": "entrada-fish",
+      "entryMs": 1492
+    },
+    {
+      "name": "entrada-surf",
+      "entryMs": 1463
+    }
+  ],
+  "errors": [],
+  "network": []
+}

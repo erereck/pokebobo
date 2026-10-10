@@ -1,6 +1,7 @@
 import { EXPLORATION_RULES } from "../../game/config/exploration.js";
 import { terrainAt, isTallGrass } from "../../game/world/exploration.js";
 import { fieldPose, grassUnderFeet } from "./fieldPresentation.js";
+import { terrainQuadrants } from "./terrainPresentation.js";
 
 export function drawField(ctx, [tiles, trainer, surf, grass], e, tick) {
   const { width, height } = EXPLORATION_RULES;
@@ -16,7 +17,21 @@ export function drawField(ctx, [tiles, trainer, surf, grass], e, tick) {
             : isTallGrass(e, x, y)
               ? 1
               : 0;
-      ctx.drawImage(tiles, tile * 16, 0, 16, 16, x * 16, y * 16, 16, 16);
+      const quadrants = terrainQuadrants(x, y);
+      if (quadrants) {
+        for (const part of quadrants)
+          ctx.drawImage(
+            tiles,
+            part.frame * 16 + part.x,
+            part.y,
+            8,
+            8,
+            x * 16 + part.x,
+            y * 16 + part.y,
+            8,
+            8,
+          );
+      } else ctx.drawImage(tiles, tile * 16, 0, 16, 16, x * 16, y * 16, 16, 16);
       if (
         terrain === "grass" &&
         !isTallGrass(e, x, y) &&

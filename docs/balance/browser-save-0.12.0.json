@@ -1,0 +1,74 @@
+{
+  "reports": [
+    {
+      "name": "save-rota-acima-limite",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Treinar equipe+1 a 3 níveis · equipe e reserva1 SEMANA",
+          "width": 135,
+          "height": 63,
+          "visible": true
+        },
+        {
+          "label": "Explorar rotaCaminhar e capturar1 SEMANA",
+          "width": 135,
+          "height": 63,
+          "visible": true
+        },
+        {
+          "label": "Preparar equipeBerry de cura para todos · 2 kits1 SEMANA",
+          "width": 135,
+          "height": 63,
+          "visible": true
+        },
+        {
+          "label": "Procurar itensPoké Bolas ou kits de berries1 SEMANA",
+          "width": 135,
+          "height": 63,
+          "visible": true
+        },
+        {
+          "label": "Seguir para a próxima cidadePróxima parada: Sandgem · +1 semana",
+          "width": 278,
+          "height": 46,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "save-encontro-legado-retry",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Lançar Poké Bola",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        },
+        {
+          "label": "Fugir do encontro",
+          "width": 81,
+          "height": 54,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    }
+  ],
+  "errors": [],
+  "network": []
+}

@@ -110,30 +110,29 @@ export function captureTimeline(attempt, monY) {
   }
   const revealAt = frames.length;
   if (attempt.success) {
-    for (let i = 0; i < 315; i++)
+    for (let i = 0; i < 48; i++)
       push({
-        stage: i < 95 ? "wait" : "caught",
+        stage: i < 8 ? "wait" : "caught",
         ball: {
           ...ball,
           dark:
-            i < 40
+            i < 8
               ? 0
-              : i < 60
+              : i < 20
                 ? 6 / 16
-                : Math.max(0, (6 - Math.floor((i - 60) / 3)) / 16),
+                : Math.max(0, (6 - Math.floor((i - 20) / 3)) / 16),
           alpha: 1,
         },
-        stars:
-          i >= 40 && i < 64 ? { tick: i - 40, x: ball.x, y: ball.y } : null,
+        stars: i >= 8 && i < 32 ? { tick: i - 8, x: ball.x, y: ball.y } : null,
       });
-    for (let i = 0; i < 32; i++)
+    for (let i = 0; i < 16; i++)
       push({
         stage: "caught",
-        ball: { ...ball, alpha: 1 - Math.floor(i / 2) / 16 },
+        ball: { ...ball, alpha: 1 - i / 16 },
       });
     push({ stage: "caught" });
   } else {
-    for (let i = 0; i < 31; i++) push({ stage: "wait", ball: { ...ball } });
+    for (let i = 0; i < 8; i++) push({ stage: "wait", ball: { ...ball } });
     for (let i = 0; i < 51; i++)
       push({
         stage: "breakout",
@@ -145,7 +144,7 @@ export function captureTimeline(attempt, monY) {
         ball: i < 10 ? { ...ball, frame: i < 5 ? 1 : 2 } : null,
         particles: { tick: i, x: ball.x, y: ball.y - 5 },
       });
-    for (let i = 0; i < 40; i++) push({ stage: "escaped", monVisible: true });
+    for (let i = 0; i < 12; i++) push({ stage: "escaped", monVisible: true });
   }
   return { frames, revealAt };
 }

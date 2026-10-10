@@ -31,9 +31,7 @@ export function WeeklyActions({ act, r }) {
         icon={Footprints}
         title="Explorar rota"
         detail={
-          r.balls === 0
-            ? "Você precisa de Poké Bolas"
-            : `${r.encounters.filter((e) => !e.used).length} encontros · caminhar e capturar`
+          r.balls === 0 ? "Você precisa de Poké Bolas" : "Caminhar e capturar"
         }
         disabled={!r.balls || !r.encounters.some((e) => !e.used)}
         onClick={() =>

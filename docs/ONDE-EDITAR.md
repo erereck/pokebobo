@@ -1,5 +1,13 @@
 # Onde editar
 
+## Ajustes de exploração/captura — 0.12.0
+
+- Limite de passos: `src/game/config/exploration.js` (`maxRouteSteps`) e `game/world/exploration.js`; regressões em `tests/exploration-retries.test.js`.
+- Chance por lançamento: `game/config/encounters.js`; retry, estoque e oportunidade em `actions/capture.js`/`world/completeCapture.js`.
+- Ritmo e retorno automático: `features/encounters/CaptureCanvas.jsx`, `captureTimeline.js` e `Encounter.jsx`. Não mudar o RNG na apresentação.
+- Bordas e margens: `features/encounters/terrainPresentation.js`, `drawField.js`, `scripts/import-field-assets.py` e `public/field/terrain.png`.
+- Estado dos controles pressionados: `features/encounters/useFieldControls.js`; Voltar em `ExplorationScreen.jsx`.
+
 Todos os caminhos abaixo são relativos à raiz do projeto. Comece pelo arquivo específico e acompanhe seus imports quando a mudança atravessar uma regra.
 
 | Quero mudar…                     | Começar por…                                | Conferir também…                                                              |

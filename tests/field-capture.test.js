@@ -4,6 +4,7 @@ import { drafted } from "./helpers/campaign.js";
 import { reducer } from "../src/game/state/reducer.js";
 import { isTallGrass } from "../src/game/world/exploration.js";
 import { random } from "../src/game/random/random.js";
+import { ENCOUNTER_RULES } from "../src/game/config/encounters.js";
 import { writeSave } from "../src/game/persistence/writeSave.js";
 import { loadSave } from "../src/game/persistence/loadSave.js";
 import {
@@ -129,7 +130,7 @@ test("sucesso e falha de captura retomam após reload sem rerrolar nem duplicar 
   for (const success of [true, false]) {
     let s = encounter();
     for (let seed = 1; seed < 100000; seed++) {
-      if (random({ rng: seed }) < 0.86 === success) {
+      if (random({ rng: seed }) < ENCOUNTER_RULES.captureChance === success) {
         s.run.rng = seed;
         break;
       }
@@ -145,8 +146,9 @@ test("sucesso e falha de captura retomam após reload sem rerrolar nem duplicar 
     assert.equal(s.run.balls, balls);
     assert.equal(s.run.rng, rng);
     assert.equal(s.run.party.length, success ? 2 : 1);
-    assert.equal(s.run.phase, "exploration");
-    assert.equal(s.run.exploration.cooldown, 2);
+    assert.equal(s.run.phase, success ? "exploration" : "encounter");
+    assert.equal(s.run.encounters[0].used, success);
+    assert.equal(s.run.exploration.cooldown, success ? 2 : 0);
   }
 });
 

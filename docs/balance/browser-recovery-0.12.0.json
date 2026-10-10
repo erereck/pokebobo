@@ -1,0 +1,123 @@
+{
+  "reports": [
+    {
+      "name": "tecla-repetida-movimento-reduzido",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "recuperacao-no-campo",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Voltar à jornada",
+          "width": 132,
+          "height": 44,
+          "visible": true
+        }
+      ],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "expectedFailures": [
+    "404 de font_dark.png, injetado para verificar fallback"
+  ],
+  "flows": [
+    "repetição nativa não acelera passos com movimento reduzido",
+    "404 injetado: mensagem e botões legíveis, fuga sem gastar bola"
+  ]
+}

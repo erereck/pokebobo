@@ -1,5 +1,14 @@
 # Histórico
 
+## 0.12.0 — Mais uma Poké Bola · 10/10/2026
+
+- Oportunidades ocultas; retorno automático ao completar 50 passos válidos. Movimento bloqueado, parado ou fora do mapa não conta; recarga termina o mesmo passo.
+- Captura com 67% de chance base por bola e novas tentativas contra o mesmo Pokémon após falhar. Nível, semana, destino escolhido e evento preservados; o bônus vale apenas no primeiro lançamento. Sucesso, fuga ou última bola encerram o encontro.
+- Entrada acelerada, nível menor na caixa de HP e remoção de nome/textos duplicados fora da cena. Retorno automático após o resultado, sem botão de continuar; estrelas e desaparecimento em cerca de um segundo após a última sacudida.
+- Voltar não pisca entre passos: permanece desabilitado enquanto teclado ou ponteiro estiverem pressionados, inclusive ao atingir a borda.
+- Trilhas usam contornos originais de FRLG por quadrante, com cantos internos nos cruzamentos. Margens do lago combinam esses contornos de grama com a água original; atlas local reproduzível e créditos atualizados.
+- Saves existentes preservados, incluindo resultados de captura já sorteados. Verificação de arquitetura, testes, build, auditoria, campanhas reais e fluxos completos no navegador documentados em VALIDACAO.md.
+
 ## 0.11.0 — Ritmo de Kanto · 09/10/2026
 
 - Tela cheia ao lado da Pokédex, com estado de entrada/saída, suporte do navegador e mensagem em caso de recusa.

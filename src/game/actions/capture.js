@@ -35,7 +35,7 @@ export function handleCapture(s, action, state) {
   if (!e || e.used || (needsRelease && replacement < 0) || !r.balls)
     return state;
   r.balls--;
-  e.used = true;
+  e.captureAttempts = (e.captureAttempts || 0) + 1;
   const chance = e.theft
     ? 1
     : captureChanceForRun(

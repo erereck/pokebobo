@@ -31,9 +31,20 @@ export function completeCapture(r, attempt) {
   } else
     note(
       r,
-      `${name} escapou. A Poké Bola e esta oportunidade ficaram pelo caminho.${bonus ? ` O bônus de +${Math.round(bonus * 100)}% foi consumido.` : ""}`,
+      `${name} escapou da Poké Bola.${r.balls ? " Você pode tentar novamente." : " Suas Poké Bolas acabaram."}${bonus ? ` O bônus de +${Math.round(bonus * 100)}% foi consumido.` : ""}`,
     );
   r.captureAttempt = null;
+  const wild = r.encounters[attempt.index];
+  if (wild) wild.captureAttempts = Math.max(1, wild.captureAttempts || 0);
+  if (!mon && r.balls > 0) {
+    // Saves anteriores marcavam a oportunidade como usada já no lançamento.
+    if (wild) wild.used = false;
+    if (!r.exploration && r.eventEncounterIndex == null)
+      r.eventEncounterIndex = attempt.index;
+    r.phase = "encounter";
+    return;
+  }
+  if (wild) wild.used = true;
   r.eventEncounterIndex = null;
   finishWildEncounter(r);
 }
