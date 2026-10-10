@@ -33,18 +33,15 @@ function sourcesFor(mon, name, { back, animated, battleStyle, shiny }) {
     return [
       !shiny && window.POKEBOBO_BACK_SPRITES?.[mon.num],
       showdownSprite(name, true, shiny),
-      ...(shiny
-        ? battleSpriteSources(name, true, import.meta.env.BASE_URL, true)
-        : [pokeApiBack(mon, false)]),
+      ...battleSpriteSources(name, true, import.meta.env.BASE_URL, shiny),
+      ...(!shiny ? [pokeApiBack(mon, false)] : []),
       local,
     ].filter(Boolean);
 
   if (animated)
     return [
       showdownSprite(name, false, shiny),
-      ...(shiny
-        ? battleSpriteSources(name, false, import.meta.env.BASE_URL, true)
-        : []),
+      ...battleSpriteSources(name, false, import.meta.env.BASE_URL, shiny),
       local,
     ];
 
@@ -58,6 +55,8 @@ export function Sprite({
   animated = false,
   battleStyle,
   shiny = false,
+  style,
+  onLoad,
 }) {
   const mon = catalog[name];
   if (!mon) return <Ball size={48} />;
@@ -70,6 +69,8 @@ export function Sprite({
       className={cx("sprite", back && "sprite-back", className)}
       src={sources[0]}
       data-source-index="0"
+      style={style}
+      onLoad={onLoad}
       onError={(event) => {
         const image = event.currentTarget;
         const nextIndex = Number(image.dataset.sourceIndex || 0) + 1;

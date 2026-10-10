@@ -1,5 +1,17 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 10/10/2026 — 0.16.0: Batalha na medida
+
+**Pedido:** melhorar o tamanho dos Pokémon em batalha, especialmente Pidgey gigante, aplicando a proposta de escala visual por espécie, geometria visível, estabilidade e apoio. Integração direta permanece autorizada; último update da noite.
+
+**Causa:** `52 + sqrt(altura) * 30` aproximava pequenos/grandes: Pidgey preenchia 68% da caixa, Charizard 91%. Width/height percentuais com object-fit aumentavam imagens pequenas para caber em caixas semelhantes; limites responsive também alteravam o resultado.
+
+**Implementação:** tabela para 485 espécies/formas com frente/costas separadas em 2D/3D, derivada dos desenhos originais e ajustes de pequenos, evoluções e gigantes. União dos limites não transparentes de todos os frames gera um posicionamento fixo por arquivo. `BattlePokemonSprite` observa a caixa da cena, lê o limite CSS e posiciona o sprite pela imagem efetivamente carregada; margens transparentes não afastam o corpo da plataforma. Calibração, proporção e âncora ficam constantes no ciclo, com 12% de perspectiva nas costas e limites de largura/altura. Algumas espécies flutuantes ficam um pouco acima do apoio. Fonte que cai para fallback usa sua própria geometria; normal agora também prefere a forma 2D local antes dos fallbacks anteriores. Fonte externa com dimensões novas mantém sua proporção efetiva. Animações de ataques continuam controlando transform/opacity e não competem com os offsets de layout.
+
+**Medição e validação:** 4.848 fontes / 227.842 quadros, índices leves na apresentação e manifestos separados do bundle. 132 testes, 203 módulos e build Pages. 57 registros locais de navegador em quatro visores, corpo/proporção/escala estáveis, turnos/reload/trocas, shinies, quatro golpes, resize/tela cheia e falhas controladas; quatro imagens anteriores para comparar. Sem novos assets de imagem, sem tocar regras/RNG/save. Detalhes e limites em VALIDACAO.md; relatórios anteriores preservados abaixo.
+
+**Limites/próxima sugestão:** não foi testado em celular físico/iOS. A escala é visual e estilizada; metros literais tornariam gigantes inviáveis e pequenos ilegíveis. União do ciclo preserva asas/caudas, então algumas poses ficam menores dentro do limite. A tabela pode receber ajustes pontuais se o usuário identificar outra espécie desproporcional. Próxima sessão pode focar exclusivamente na experiência jogando em aparelho físico, com prioridade para leitura em telas pequenas.
+
 ## Entrega de 10/10/2026 — 0.15.0: Uma estrela no mato
 
 **Pedido:** conferir se já havia shiny e, se não, adicionar chance de 1/1024. Não havia implementação, apenas fontes externas com variantes. Continuação e integração direta permanecem autorizadas.

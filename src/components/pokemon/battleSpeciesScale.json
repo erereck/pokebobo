@@ -1,0 +1,4880 @@
+{
+  "mew": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.676
+    },
+    "3d": {
+      "front": 0.335,
+      "back": 0.277
+    }
+  },
+  "suicune": {
+    "2d": {
+      "front": 0.728,
+      "back": 0.809
+    },
+    "3d": {
+      "front": 0.565,
+      "back": 0.504
+    }
+  },
+  "eevee": {
+    "2d": {
+      "front": 0.38,
+      "back": 0.43
+    },
+    "3d": {
+      "front": 0.38,
+      "back": 0.43
+    }
+  },
+  "goldeen": {
+    "2d": {
+      "front": 0.576,
+      "back": 0.632
+    },
+    "3d": {
+      "front": 0.355,
+      "back": 0.333
+    }
+  },
+  "lapras": {
+    "2d": {
+      "front": 0.728,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.552,
+      "back": 0.454
+    }
+  },
+  "magikarp": {
+    "2d": {
+      "front": 0.647,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.394,
+      "back": 0.321
+    }
+  },
+  "poliwag": {
+    "2d": {
+      "front": 0.344,
+      "back": 0.388
+    },
+    "3d": {
+      "front": 0.263,
+      "back": 0.25
+    }
+  },
+  "tentacool": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.853
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.393
+    }
+  },
+  "chinchou": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.51
+    },
+    "3d": {
+      "front": 0.348,
+      "back": 0.299
+    }
+  },
+  "staryu": {
+    "2d": {
+      "front": 0.495,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.329,
+      "back": 0.277
+    }
+  },
+  "psyduck": {
+    "2d": {
+      "front": 0.465,
+      "back": 0.499
+    },
+    "3d": {
+      "front": 0.348,
+      "back": 0.299
+    }
+  },
+  "shellos": {
+    "2d": {
+      "front": 0.404,
+      "back": 0.466
+    },
+    "3d": {
+      "front": 0.407,
+      "back": 0.338
+    }
+  },
+  "buizel": {
+    "2d": {
+      "front": 0.495,
+      "back": 0.543
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.382
+    }
+  },
+  "bulbasaur": {
+    "2d": {
+      "front": 0.43,
+      "back": 0.47
+    },
+    "3d": {
+      "front": 0.43,
+      "back": 0.47
+    }
+  },
+  "charmander": {
+    "2d": {
+      "front": 0.43,
+      "back": 0.47
+    },
+    "3d": {
+      "front": 0.43,
+      "back": 0.47
+    }
+  },
+  "squirtle": {
+    "2d": {
+      "front": 0.42,
+      "back": 0.46
+    },
+    "3d": {
+      "front": 0.42,
+      "back": 0.46
+    }
+  },
+  "chikorita": {
+    "2d": {
+      "front": 0.566,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.414,
+      "back": 0.355
+    }
+  },
+  "cyndaquil": {
+    "2d": {
+      "front": 0.374,
+      "back": 0.41
+    },
+    "3d": {
+      "front": 0.296,
+      "back": 0.25
+    }
+  },
+  "totodile": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.676
+    },
+    "3d": {
+      "front": 0.381,
+      "back": 0.316
+    }
+  },
+  "treecko": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.698
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.321
+    }
+  },
+  "torchic": {
+    "2d": {
+      "front": 0.475,
+      "back": 0.51
+    },
+    "3d": {
+      "front": 0.401,
+      "back": 0.333
+    }
+  },
+  "mudkip": {
+    "2d": {
+      "front": 0.495,
+      "back": 0.554
+    },
+    "3d": {
+      "front": 0.434,
+      "back": 0.355
+    }
+  },
+  "turtwig": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.327
+    }
+  },
+  "chimchar": {
+    "2d": {
+      "front": 0.566,
+      "back": 0.61
+    },
+    "3d": {
+      "front": 0.46,
+      "back": 0.399
+    }
+  },
+  "piplup": {
+    "2d": {
+      "front": 0.415,
+      "back": 0.454
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.321
+    }
+  },
+  "snivy": {
+    "2d": {
+      "front": 0.445,
+      "back": 0.466
+    },
+    "3d": {
+      "front": 0.361,
+      "back": 0.305
+    }
+  },
+  "tepig": {
+    "2d": {
+      "front": 0.485,
+      "back": 0.554
+    },
+    "3d": {
+      "front": 0.407,
+      "back": 0.338
+    }
+  },
+  "oshawott": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.599
+    },
+    "3d": {
+      "front": 0.322,
+      "back": 0.266
+    }
+  },
+  "rowlet": {
+    "2d": {
+      "front": 0.354,
+      "back": 0.388
+    },
+    "3d": {
+      "front": 0.329,
+      "back": 0.277
+    }
+  },
+  "litten": {
+    "2d": {
+      "front": 0.495,
+      "back": 0.554
+    },
+    "3d": {
+      "front": 0.381,
+      "back": 0.327
+    }
+  },
+  "popplio": {
+    "2d": {
+      "front": 0.556,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.322,
+      "back": 0.266
+    }
+  },
+  "grookey": {
+    "2d": {
+      "front": 0.465,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.427,
+      "back": 0.349
+    }
+  },
+  "scorbunny": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.618,
+      "back": 0.51
+    }
+  },
+  "sobble": {
+    "2d": {
+      "front": 0.485,
+      "back": 0.543
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.393
+    }
+  },
+  "geodude": {
+    "2d": {
+      "front": 0.455,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "onix": {
+    "2d": {
+      "front": 0.96,
+      "back": 0.99
+    },
+    "3d": {
+      "front": 0.96,
+      "back": 0.99
+    }
+  },
+  "starmie": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.61
+    },
+    "3d": {
+      "front": 0.401,
+      "back": 0.338
+    }
+  },
+  "voltorb": {
+    "2d": {
+      "front": 0.313,
+      "back": 0.344
+    },
+    "3d": {
+      "front": 0.283,
+      "back": 0.25
+    }
+  },
+  "pikachu": {
+    "2d": {
+      "front": 0.43,
+      "back": 0.47
+    },
+    "3d": {
+      "front": 0.43,
+      "back": 0.47
+    }
+  },
+  "raichu": {
+    "2d": {
+      "front": 0.738,
+      "back": 0.809
+    },
+    "3d": {
+      "front": 0.677,
+      "back": 0.626
+    }
+  },
+  "victreebel": {
+    "2d": {
+      "front": 0.718,
+      "back": 0.776
+    },
+    "3d": {
+      "front": 0.539,
+      "back": 0.477
+    }
+  },
+  "tangela": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.466
+    },
+    "3d": {
+      "front": 0.348,
+      "back": 0.294
+    }
+  },
+  "vileplume": {
+    "2d": {
+      "front": 0.505,
+      "back": 0.532
+    },
+    "3d": {
+      "front": 0.368,
+      "back": 0.299
+    }
+  },
+  "koffing": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.709,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.405,
+      "lift": 0.08
+    }
+  },
+  "muk": {
+    "2d": {
+      "front": 0.687,
+      "back": 0.909
+    },
+    "3d": {
+      "front": 0.519,
+      "back": 0.41
+    }
+  },
+  "weezing": {
+    "2d": {
+      "front": 0.687,
+      "back": 0.765,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.578,
+      "back": 0.521,
+      "lift": 0.08
+    }
+  },
+  "kadabra": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.72
+    },
+    "3d": {
+      "front": 0.467,
+      "back": 0.382
+    }
+  },
+  "mrmime": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.499,
+      "back": 0.41
+    }
+  },
+  "venomoth": {
+    "2d": {
+      "front": 0.748,
+      "back": 0.809
+    },
+    "3d": {
+      "front": 0.559,
+      "back": 0.521
+    }
+  },
+  "alakazam": {
+    "2d": {
+      "front": 0.698,
+      "back": 0.732
+    },
+    "3d": {
+      "front": 0.519,
+      "back": 0.438
+    }
+  },
+  "growlithe": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.375,
+      "back": 0.316
+    }
+  },
+  "ponyta": {
+    "2d": {
+      "front": 0.576,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.447,
+      "back": 0.382
+    }
+  },
+  "rapidash": {
+    "2d": {
+      "front": 0.738,
+      "back": 0.842
+    },
+    "3d": {
+      "front": 0.624,
+      "back": 0.532
+    }
+  },
+  "arcanine": {
+    "2d": {
+      "front": 0.698,
+      "back": 0.765
+    },
+    "3d": {
+      "front": 0.539,
+      "back": 0.454
+    }
+  },
+  "rhyhorn": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.599
+    },
+    "3d": {
+      "front": 0.375,
+      "back": 0.321
+    }
+  },
+  "dugtrio": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.329,
+      "back": 0.283
+    }
+  },
+  "nidoqueen": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.539,
+      "back": 0.443
+    }
+  },
+  "nidoking": {
+    "2d": {
+      "front": 0.718,
+      "back": 0.765
+    },
+    "3d": {
+      "front": 0.545,
+      "back": 0.421
+    }
+  },
+  "pidgey": {
+    "2d": {
+      "front": 0.33,
+      "back": 0.35
+    },
+    "3d": {
+      "front": 0.33,
+      "back": 0.35
+    }
+  },
+  "pidgeotto": {
+    "2d": {
+      "front": 0.53,
+      "back": 0.56
+    },
+    "3d": {
+      "front": 0.53,
+      "back": 0.56
+    }
+  },
+  "metapod": {
+    "2d": {
+      "front": 0.384,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.355,
+      "back": 0.299
+    }
+  },
+  "kakuna": {
+    "2d": {
+      "front": 0.404,
+      "back": 0.454
+    },
+    "3d": {
+      "front": 0.381,
+      "back": 0.321
+    }
+  },
+  "scyther": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.72
+    },
+    "3d": {
+      "front": 0.677,
+      "back": 0.599
+    }
+  },
+  "clefairy": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.315,
+      "back": 0.266
+    }
+  },
+  "miltank": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.554
+    },
+    "3d": {
+      "front": 0.499,
+      "back": 0.416
+    }
+  },
+  "gastly": {
+    "2d": {
+      "front": 0.758,
+      "back": 0.865,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.401,
+      "back": 0.333,
+      "lift": 0.08
+    }
+  },
+  "haunter": {
+    "2d": {
+      "front": 0.718,
+      "back": 0.787,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.388,
+      "lift": 0.08
+    }
+  },
+  "gengar": {
+    "2d": {
+      "front": 0.657,
+      "back": 0.72
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.432
+    }
+  },
+  "primeape": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.427,
+      "back": 0.36
+    }
+  },
+  "poliwrath": {
+    "2d": {
+      "front": 0.576,
+      "back": 0.632
+    },
+    "3d": {
+      "front": 0.414,
+      "back": 0.333
+    }
+  },
+  "magnemite": {
+    "2d": {
+      "front": 0.334,
+      "back": 0.344,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25,
+      "lift": 0.08
+    }
+  },
+  "steelix": {
+    "2d": {
+      "front": 0.99,
+      "back": 1.02
+    },
+    "3d": {
+      "front": 0.99,
+      "back": 1.02
+    }
+  },
+  "seel": {
+    "2d": {
+      "front": 0.475,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.296,
+      "back": 0.25
+    }
+  },
+  "dewgong": {
+    "2d": {
+      "front": 0.758,
+      "back": 0.964
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.377
+    }
+  },
+  "piloswine": {
+    "2d": {
+      "front": 0.566,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.473,
+      "back": 0.41
+    }
+  },
+  "dragonair": {
+    "2d": {
+      "front": 0.738,
+      "back": 0.82
+    },
+    "3d": {
+      "front": 0.611,
+      "back": 0.504
+    }
+  },
+  "gyarados": {
+    "2d": {
+      "front": 0.94,
+      "back": 0.98
+    },
+    "3d": {
+      "front": 0.94,
+      "back": 0.98
+    }
+  },
+  "kingdra": {
+    "2d": {
+      "front": 0.92,
+      "back": 1.02
+    },
+    "3d": {
+      "front": 0.637,
+      "back": 0.538
+    }
+  },
+  "nosepass": {
+    "2d": {
+      "front": 0.465,
+      "back": 0.521
+    },
+    "3d": {
+      "front": 0.381,
+      "back": 0.321
+    }
+  },
+  "machop": {
+    "2d": {
+      "front": 0.505,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.414,
+      "back": 0.349
+    }
+  },
+  "meditite": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.327
+    }
+  },
+  "makuhita": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.676
+    },
+    "3d": {
+      "front": 0.434,
+      "back": 0.371
+    }
+  },
+  "magneton": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.654,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.388,
+      "lift": 0.08
+    }
+  },
+  "electrike": {
+    "2d": {
+      "front": 0.364,
+      "back": 0.377
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "manectric": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.526,
+      "back": 0.427
+    }
+  },
+  "numel": {
+    "2d": {
+      "front": 0.485,
+      "back": 0.587
+    },
+    "3d": {
+      "front": 0.368,
+      "back": 0.305
+    }
+  },
+  "slugma": {
+    "2d": {
+      "front": 0.404,
+      "back": 0.466
+    },
+    "3d": {
+      "front": 0.414,
+      "back": 0.344
+    }
+  },
+  "camerupt": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.687
+    },
+    "3d": {
+      "front": 0.486,
+      "back": 0.405
+    }
+  },
+  "torkoal": {
+    "2d": {
+      "front": 0.657,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.432
+    }
+  },
+  "spinda": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.382
+    }
+  },
+  "vigoroth": {
+    "2d": {
+      "front": 0.657,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.526,
+      "back": 0.416
+    }
+  },
+  "linoone": {
+    "2d": {
+      "front": 0.415,
+      "back": 0.599
+    },
+    "3d": {
+      "front": 0.256,
+      "back": 0.25
+    }
+  },
+  "slaking": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.473,
+      "back": 0.371
+    }
+  },
+  "swablu": {
+    "2d": {
+      "front": 0.495,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.348,
+      "back": 0.31
+    }
+  },
+  "tropius": {
+    "2d": {
+      "front": 0.809,
+      "back": 0.942
+    },
+    "3d": {
+      "front": 0.519,
+      "back": 0.405
+    }
+  },
+  "pelipper": {
+    "2d": {
+      "front": 0.768,
+      "back": 0.82
+    },
+    "3d": {
+      "front": 0.605,
+      "back": 0.51
+    }
+  },
+  "skarmory": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.765
+    },
+    "3d": {
+      "front": 0.421,
+      "back": 0.349
+    }
+  },
+  "altaria": {
+    "2d": {
+      "front": 0.647,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.585,
+      "back": 0.515
+    }
+  },
+  "claydol": {
+    "2d": {
+      "front": 0.728,
+      "back": 0.798
+    },
+    "3d": {
+      "front": 0.559,
+      "back": 0.471
+    }
+  },
+  "xatu": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.381,
+      "back": 0.333
+    }
+  },
+  "lunatone": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.421,
+      "back": 0.349
+    }
+  },
+  "solrock": {
+    "2d": {
+      "front": 0.667,
+      "back": 0.72
+    },
+    "3d": {
+      "front": 0.519,
+      "back": 0.443
+    }
+  },
+  "luvdisc": {
+    "2d": {
+      "front": 0.374,
+      "back": 0.41
+    },
+    "3d": {
+      "front": 0.283,
+      "back": 0.25
+    }
+  },
+  "whiscash": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.599
+    },
+    "3d": {
+      "front": 0.407,
+      "back": 0.366
+    }
+  },
+  "sealeo": {
+    "2d": {
+      "front": 0.495,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.329,
+      "back": 0.266
+    }
+  },
+  "crawdaunt": {
+    "2d": {
+      "front": 0.647,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.486,
+      "back": 0.382
+    }
+  },
+  "cranidos": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.676
+    },
+    "3d": {
+      "front": 0.447,
+      "back": 0.355
+    }
+  },
+  "cherrim": {
+    "2d": {
+      "front": 0.505,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.375,
+      "back": 0.305
+    }
+  },
+  "roserade": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.421
+    }
+  },
+  "duskull": {
+    "2d": {
+      "front": 0.455,
+      "back": 0.521
+    },
+    "3d": {
+      "front": 0.421,
+      "back": 0.349
+    }
+  },
+  "mismagius": {
+    "2d": {
+      "front": 0.849,
+      "back": 1.009
+    },
+    "3d": {
+      "front": 0.762,
+      "back": 0.648
+    }
+  },
+  "machoke": {
+    "2d": {
+      "front": 0.718,
+      "back": 0.798
+    },
+    "3d": {
+      "front": 0.572,
+      "back": 0.488
+    }
+  },
+  "lucario": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.72
+    },
+    "3d": {
+      "front": 0.631,
+      "back": 0.532
+    }
+  },
+  "quagsire": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.421
+    }
+  },
+  "floatzel": {
+    "2d": {
+      "front": 0.718,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.611,
+      "back": 0.527
+    }
+  },
+  "bastiodon": {
+    "2d": {
+      "front": 0.647,
+      "back": 0.732
+    },
+    "3d": {
+      "front": 0.526,
+      "back": 0.41
+    }
+  },
+  "sneasel": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.473,
+      "back": 0.377
+    }
+  },
+  "abomasnow": {
+    "2d": {
+      "front": 0.799,
+      "back": 0.953
+    },
+    "3d": {
+      "front": 0.572,
+      "back": 0.482
+    }
+  },
+  "froslass": {
+    "2d": {
+      "front": 0.758,
+      "back": 0.798
+    },
+    "3d": {
+      "front": 0.519,
+      "back": 0.438
+    }
+  },
+  "jolteon": {
+    "2d": {
+      "front": 0.495,
+      "back": 0.532
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.366
+    }
+  },
+  "luxray": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.732
+    },
+    "3d": {
+      "front": 0.651,
+      "back": 0.504
+    }
+  },
+  "electivire": {
+    "2d": {
+      "front": 0.859,
+      "back": 0.942
+    },
+    "3d": {
+      "front": 0.559,
+      "back": 0.482
+    }
+  },
+  "emolga": {
+    "2d": {
+      "front": 0.768,
+      "back": 0.842
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.333
+    }
+  },
+  "zebstrika": {
+    "2d": {
+      "front": 0.758,
+      "back": 0.82
+    },
+    "3d": {
+      "front": 0.631,
+      "back": 0.504
+    }
+  },
+  "krokorok": {
+    "2d": {
+      "front": 0.627,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.499,
+      "back": 0.41
+    }
+  },
+  "palpitoad": {
+    "2d": {
+      "front": 0.576,
+      "back": 0.599
+    },
+    "3d": {
+      "front": 0.434,
+      "back": 0.36
+    }
+  },
+  "excadrill": {
+    "2d": {
+      "front": 0.768,
+      "back": 0.887
+    },
+    "3d": {
+      "front": 0.519,
+      "back": 0.41
+    }
+  },
+  "swoobat": {
+    "2d": {
+      "front": 1.02,
+      "back": 1.02
+    },
+    "3d": {
+      "front": 0.703,
+      "back": 0.637
+    }
+  },
+  "unfezant": {
+    "2d": {
+      "front": 0.768,
+      "back": 0.876
+    },
+    "3d": {
+      "front": 0.933,
+      "back": 0.837
+    }
+  },
+  "swanna": {
+    "2d": {
+      "front": 0.698,
+      "back": 0.754
+    },
+    "3d": {
+      "front": 1.02,
+      "back": 0.926
+    }
+  },
+  "gossifleur": {
+    "2d": {
+      "front": 0.465,
+      "back": 0.51
+    },
+    "3d": {
+      "front": 0.427,
+      "back": 0.355
+    }
+  },
+  "eldegoss": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.438
+    }
+  },
+  "arrokuda": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.41
+    },
+    "3d": {
+      "front": 0.276,
+      "back": 0.25
+    }
+  },
+  "drednaw": {
+    "2d": {
+      "front": 0.556,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.388
+    }
+  },
+  "cloyster": {
+    "2d": {
+      "front": 0.657,
+      "back": 0.754
+    },
+    "3d": {
+      "front": 0.559,
+      "back": 0.477
+    }
+  },
+  "slowbro": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.467,
+      "back": 0.377
+    }
+  },
+  "jynx": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.434,
+      "back": 0.377
+    }
+  },
+  "hitmonchan": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.405
+    }
+  },
+  "hitmonlee": {
+    "2d": {
+      "front": 0.789,
+      "back": 0.831
+    },
+    "3d": {
+      "front": 0.447,
+      "back": 0.371
+    }
+  },
+  "machamp": {
+    "2d": {
+      "front": 0.778,
+      "back": 0.853
+    },
+    "3d": {
+      "front": 0.657,
+      "back": 0.538
+    }
+  },
+  "golbat": {
+    "2d": {
+      "front": 0.829,
+      "back": 0.931,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.894,
+      "back": 0.765,
+      "lift": 0.08
+    }
+  },
+  "arbok": {
+    "2d": {
+      "front": 0.758,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.545,
+      "back": 0.454
+    }
+  },
+  "exeggutor": {
+    "2d": {
+      "front": 0.738,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.651,
+      "back": 0.554
+    }
+  },
+  "umbreon": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.46,
+      "back": 0.41
+    }
+  },
+  "murkrow": {
+    "2d": {
+      "front": 0.455,
+      "back": 0.521
+    },
+    "3d": {
+      "front": 0.427,
+      "back": 0.36
+    }
+  },
+  "houndoom": {
+    "2d": {
+      "front": 0.728,
+      "back": 0.765
+    },
+    "3d": {
+      "front": 0.565,
+      "back": 0.527
+    }
+  },
+  "mightyena": {
+    "2d": {
+      "front": 0.647,
+      "back": 0.72
+    },
+    "3d": {
+      "front": 0.519,
+      "back": 0.471
+    }
+  },
+  "shiftry": {
+    "2d": {
+      "front": 0.718,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.421
+    }
+  },
+  "cacturne": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.776
+    },
+    "3d": {
+      "front": 0.572,
+      "back": 0.477
+    }
+  },
+  "absol": {
+    "2d": {
+      "front": 0.647,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.605,
+      "back": 0.493
+    }
+  },
+  "dusclops": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.809
+    },
+    "3d": {
+      "front": 0.532,
+      "back": 0.46
+    }
+  },
+  "banette": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.44,
+      "back": 0.371
+    }
+  },
+  "sableye": {
+    "2d": {
+      "front": 0.495,
+      "back": 0.543
+    },
+    "3d": {
+      "front": 0.421,
+      "back": 0.355
+    }
+  },
+  "shelgon": {
+    "2d": {
+      "front": 0.495,
+      "back": 0.554
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.327
+    }
+  },
+  "flygon": {
+    "2d": {
+      "front": 0.829,
+      "back": 0.887
+    },
+    "3d": {
+      "front": 0.697,
+      "back": 0.61
+    }
+  },
+  "salamence": {
+    "2d": {
+      "front": 0.728,
+      "back": 0.909
+    },
+    "3d": {
+      "front": 0.605,
+      "back": 0.466
+    }
+  },
+  "reuniclus": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.743
+    },
+    "3d": {
+      "front": 0.493,
+      "back": 0.416
+    }
+  },
+  "musharna": {
+    "2d": {
+      "front": 0.748,
+      "back": 0.809
+    },
+    "3d": {
+      "front": 0.736,
+      "back": 0.565
+    }
+  },
+  "sigilyph": {
+    "2d": {
+      "front": 1.001,
+      "back": 1.02
+    },
+    "3d": {
+      "front": 0.769,
+      "back": 0.671
+    }
+  },
+  "gothitelle": {
+    "2d": {
+      "front": 0.738,
+      "back": 0.82
+    },
+    "3d": {
+      "front": 0.664,
+      "back": 0.571
+    }
+  },
+  "throh": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.578,
+      "back": 0.438
+    }
+  },
+  "sawk": {
+    "2d": {
+      "front": 0.667,
+      "back": 0.732
+    },
+    "3d": {
+      "front": 0.545,
+      "back": 0.454
+    }
+  },
+  "conkeldurr": {
+    "2d": {
+      "front": 0.698,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.585,
+      "back": 0.454
+    }
+  },
+  "mienshao": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.732
+    },
+    "3d": {
+      "front": 0.631,
+      "back": 0.515
+    }
+  },
+  "crobat": {
+    "2d": {
+      "front": 0.738,
+      "back": 0.709,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.703,
+      "back": 0.632,
+      "lift": 0.08
+    }
+  },
+  "oricorio-pau": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.61
+    },
+    "3d": {
+      "front": 0.394,
+      "back": 0.327
+    }
+  },
+  "mandibuzz": {
+    "2d": {
+      "front": 0.718,
+      "back": 0.798
+    },
+    "3d": {
+      "front": 0.821,
+      "back": 0.687
+    }
+  },
+  "toucannon": {
+    "2d": {
+      "front": 0.647,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.499,
+      "back": 0.421
+    }
+  },
+  "spiritomb": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.687
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.393
+    }
+  },
+  "togekiss": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.587
+    },
+    "3d": {
+      "front": 0.394,
+      "back": 0.333
+    }
+  },
+  "milotic": {
+    "2d": {
+      "front": 0.789,
+      "back": 0.887
+    },
+    "3d": {
+      "front": 0.618,
+      "back": 0.515
+    }
+  },
+  "garchomp": {
+    "2d": {
+      "front": 0.809,
+      "back": 0.92
+    },
+    "3d": {
+      "front": 0.71,
+      "back": 0.565
+    }
+  },
+  "aggron": {
+    "2d": {
+      "front": 0.768,
+      "back": 0.853
+    },
+    "3d": {
+      "front": 0.637,
+      "back": 0.521
+    }
+  },
+  "cradily": {
+    "2d": {
+      "front": 0.789,
+      "back": 0.876
+    },
+    "3d": {
+      "front": 0.578,
+      "back": 0.482
+    }
+  },
+  "armaldo": {
+    "2d": {
+      "front": 0.687,
+      "back": 0.754
+    },
+    "3d": {
+      "front": 0.532,
+      "back": 0.443
+    }
+  },
+  "metagross": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.405
+    }
+  },
+  "dragonite": {
+    "2d": {
+      "front": 0.92,
+      "back": 0.96
+    },
+    "3d": {
+      "front": 0.92,
+      "back": 0.96
+    }
+  },
+  "aerodactyl": {
+    "2d": {
+      "front": 0.829,
+      "back": 1.02
+    },
+    "3d": {
+      "front": 0.946,
+      "back": 0.887
+    }
+  },
+  "charizard": {
+    "2d": {
+      "front": 0.92,
+      "back": 0.96
+    },
+    "3d": {
+      "front": 0.92,
+      "back": 0.96
+    }
+  },
+  "shinx": {
+    "2d": {
+      "front": 0.384,
+      "back": 0.432
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.31
+    }
+  },
+  "ralts": {
+    "2d": {
+      "front": 0.394,
+      "back": 0.466
+    },
+    "3d": {
+      "front": 0.342,
+      "back": 0.283
+    }
+  },
+  "mareep": {
+    "2d": {
+      "front": 0.415,
+      "back": 0.454
+    },
+    "3d": {
+      "front": 0.355,
+      "back": 0.31
+    }
+  },
+  "nidoranm": {
+    "2d": {
+      "front": 0.374,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.342,
+      "back": 0.288
+    }
+  },
+  "riolu": {
+    "2d": {
+      "front": 0.505,
+      "back": 0.543
+    },
+    "3d": {
+      "front": 0.401,
+      "back": 0.349
+    }
+  },
+  "lillipup": {
+    "2d": {
+      "front": 0.505,
+      "back": 0.532
+    },
+    "3d": {
+      "front": 0.361,
+      "back": 0.305
+    }
+  },
+  "yamper": {
+    "2d": {
+      "front": 0.445,
+      "back": 0.499
+    },
+    "3d": {
+      "front": 0.355,
+      "back": 0.31
+    }
+  },
+  "rookidee": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.421
+    },
+    "3d": {
+      "front": 0.276,
+      "back": 0.25
+    }
+  },
+  "caterpie": {
+    "2d": {
+      "front": 0.29,
+      "back": 0.32
+    },
+    "3d": {
+      "front": 0.29,
+      "back": 0.32
+    }
+  },
+  "bellsprout": {
+    "2d": {
+      "front": 0.445,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.322,
+      "back": 0.272
+    }
+  },
+  "oddish": {
+    "2d": {
+      "front": 0.505,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.315,
+      "back": 0.266
+    }
+  },
+  "heracross": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.798
+    },
+    "3d": {
+      "front": 0.572,
+      "back": 0.449
+    }
+  },
+  "shroomish": {
+    "2d": {
+      "front": 0.485,
+      "back": 0.51
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "budew": {
+    "2d": {
+      "front": 0.566,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.322,
+      "back": 0.283
+    }
+  },
+  "venipede": {
+    "2d": {
+      "front": 0.354,
+      "back": 0.388
+    },
+    "3d": {
+      "front": 0.289,
+      "back": 0.25
+    }
+  },
+  "sewaddle": {
+    "2d": {
+      "front": 0.364,
+      "back": 0.454
+    },
+    "3d": {
+      "front": 0.309,
+      "back": 0.255
+    }
+  },
+  "seedot": {
+    "2d": {
+      "front": 0.384,
+      "back": 0.41
+    },
+    "3d": {
+      "front": 0.302,
+      "back": 0.255
+    }
+  },
+  "hoothoot": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.414,
+      "back": 0.344
+    }
+  },
+  "wooper": {
+    "2d": {
+      "front": 0.334,
+      "back": 0.355
+    },
+    "3d": {
+      "front": 0.309,
+      "back": 0.266
+    }
+  },
+  "lotad": {
+    "2d": {
+      "front": 0.415,
+      "back": 0.443
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "marill": {
+    "2d": {
+      "front": 0.374,
+      "back": 0.399
+    },
+    "3d": {
+      "front": 0.315,
+      "back": 0.266
+    }
+  },
+  "tympole": {
+    "2d": {
+      "front": 0.445,
+      "back": 0.543
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "surskit": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.554
+    },
+    "3d": {
+      "front": 0.342,
+      "back": 0.288
+    }
+  },
+  "wingull": {
+    "2d": {
+      "front": 0.455,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "krabby": {
+    "2d": {
+      "front": 0.404,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.329,
+      "back": 0.288
+    }
+  },
+  "sandygast": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.421,
+      "back": 0.355
+    }
+  },
+  "sandshrew": {
+    "2d": {
+      "front": 0.394,
+      "back": 0.421
+    },
+    "3d": {
+      "front": 0.309,
+      "back": 0.255
+    }
+  },
+  "aron": {
+    "2d": {
+      "front": 0.313,
+      "back": 0.355
+    },
+    "3d": {
+      "front": 0.296,
+      "back": 0.25
+    }
+  },
+  "drilbur": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.488
+    },
+    "3d": {
+      "front": 0.322,
+      "back": 0.266
+    }
+  },
+  "zubat": {
+    "2d": {
+      "front": 0.465,
+      "back": 0.654,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.552,
+      "back": 0.488,
+      "lift": 0.08
+    }
+  },
+  "roggenrola": {
+    "2d": {
+      "front": 0.394,
+      "back": 0.421
+    },
+    "3d": {
+      "front": 0.394,
+      "back": 0.338
+    }
+  },
+  "swinub": {
+    "2d": {
+      "front": 0.253,
+      "back": 0.288
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "snorunt": {
+    "2d": {
+      "front": 0.394,
+      "back": 0.421
+    },
+    "3d": {
+      "front": 0.309,
+      "back": 0.26
+    }
+  },
+  "spheal": {
+    "2d": {
+      "front": 0.384,
+      "back": 0.41
+    },
+    "3d": {
+      "front": 0.276,
+      "back": 0.25
+    }
+  },
+  "snover": {
+    "2d": {
+      "front": 0.566,
+      "back": 0.61
+    },
+    "3d": {
+      "front": 0.401,
+      "back": 0.338
+    }
+  },
+  "cubchoo": {
+    "2d": {
+      "front": 0.384,
+      "back": 0.41
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.327
+    }
+  },
+  "snom": {
+    "2d": {
+      "front": 0.263,
+      "back": 0.288
+    },
+    "3d": {
+      "front": 0.263,
+      "back": 0.25
+    }
+  },
+  "rattata": {
+    "2d": {
+      "front": 0.3,
+      "back": 0.34
+    },
+    "3d": {
+      "front": 0.3,
+      "back": 0.34
+    }
+  },
+  "sentret": {
+    "2d": {
+      "front": 0.687,
+      "back": 0.72
+    },
+    "3d": {
+      "front": 0.361,
+      "back": 0.31
+    }
+  },
+  "poochyena": {
+    "2d": {
+      "front": 0.445,
+      "back": 0.488
+    },
+    "3d": {
+      "front": 0.355,
+      "back": 0.299
+    }
+  },
+  "zigzagoon": {
+    "2d": {
+      "front": 0.435,
+      "back": 0.432
+    },
+    "3d": {
+      "front": 0.309,
+      "back": 0.283
+    }
+  },
+  "wurmple": {
+    "2d": {
+      "front": 0.465,
+      "back": 0.521
+    },
+    "3d": {
+      "front": 0.348,
+      "back": 0.283
+    }
+  },
+  "starly": {
+    "2d": {
+      "front": 0.415,
+      "back": 0.466
+    },
+    "3d": {
+      "front": 0.302,
+      "back": 0.255
+    }
+  },
+  "bidoof": {
+    "2d": {
+      "front": 0.455,
+      "back": 0.499
+    },
+    "3d": {
+      "front": 0.302,
+      "back": 0.255
+    }
+  },
+  "patrat": {
+    "2d": {
+      "front": 0.455,
+      "back": 0.499
+    },
+    "3d": {
+      "front": 0.361,
+      "back": 0.299
+    }
+  },
+  "purrloin": {
+    "2d": {
+      "front": 0.495,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.46,
+      "back": 0.393
+    }
+  },
+  "pikipek": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.466
+    },
+    "3d": {
+      "front": 0.368,
+      "back": 0.31
+    }
+  },
+  "grubbin": {
+    "2d": {
+      "front": 0.25,
+      "back": 0.266
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "yungoos": {
+    "2d": {
+      "front": 0.374,
+      "back": 0.432
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "wooloo": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.466
+    },
+    "3d": {
+      "front": 0.394,
+      "back": 0.327
+    }
+  },
+  "ledyba": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.521
+    },
+    "3d": {
+      "front": 0.329,
+      "back": 0.277
+    }
+  },
+  "spinarak": {
+    "2d": {
+      "front": 0.283,
+      "back": 0.388
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "pidove": {
+    "2d": {
+      "front": 0.384,
+      "back": 0.432
+    },
+    "3d": {
+      "front": 0.322,
+      "back": 0.266
+    }
+  },
+  "blitzle": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.698
+    },
+    "3d": {
+      "front": 0.552,
+      "back": 0.449
+    }
+  },
+  "nidoranf": {
+    "2d": {
+      "front": 0.344,
+      "back": 0.399
+    },
+    "3d": {
+      "front": 0.269,
+      "back": 0.25
+    }
+  },
+  "abra": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.348,
+      "back": 0.283
+    }
+  },
+  "drowzee": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.632
+    },
+    "3d": {
+      "front": 0.375,
+      "back": 0.316
+    }
+  },
+  "diglett": {
+    "2d": {
+      "front": 0.29,
+      "back": 0.33
+    },
+    "3d": {
+      "front": 0.29,
+      "back": 0.33
+    }
+  },
+  "vulpix": {
+    "2d": {
+      "front": 0.505,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.309,
+      "back": 0.272
+    }
+  },
+  "nidorino": {
+    "2d": {
+      "front": 0.566,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.368,
+      "back": 0.31
+    }
+  },
+  "exeggcute": {
+    "2d": {
+      "front": 0.435,
+      "back": 0.443
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "meowth": {
+    "2d": {
+      "front": 0.657,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.401,
+      "back": 0.333
+    }
+  },
+  "grimer": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.51
+    },
+    "3d": {
+      "front": 0.335,
+      "back": 0.272
+    }
+  },
+  "nidorina": {
+    "2d": {
+      "front": 0.475,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.368,
+      "back": 0.31
+    }
+  },
+  "slowpoke": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.381,
+      "back": 0.333
+    }
+  },
+  "stantler": {
+    "2d": {
+      "front": 0.789,
+      "back": 0.876
+    },
+    "3d": {
+      "front": 0.605,
+      "back": 0.499
+    }
+  },
+  "misdreavus": {
+    "2d": {
+      "front": 0.576,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.414,
+      "back": 0.36
+    }
+  },
+  "shuckle": {
+    "2d": {
+      "front": 0.465,
+      "back": 0.521
+    },
+    "3d": {
+      "front": 0.375,
+      "back": 0.305
+    }
+  },
+  "girafarig": {
+    "2d": {
+      "front": 0.778,
+      "back": 0.865
+    },
+    "3d": {
+      "front": 0.578,
+      "back": 0.454
+    }
+  },
+  "gligar": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.591,
+      "back": 0.51
+    }
+  },
+  "dratini": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.414,
+      "back": 0.355
+    }
+  },
+  "taillow": {
+    "2d": {
+      "front": 0.364,
+      "back": 0.388
+    },
+    "3d": {
+      "front": 0.302,
+      "back": 0.25
+    }
+  },
+  "slakoth": {
+    "2d": {
+      "front": 0.313,
+      "back": 0.399
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "roselia": {
+    "2d": {
+      "front": 0.556,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.381,
+      "back": 0.333
+    }
+  },
+  "gulpin": {
+    "2d": {
+      "front": 0.445,
+      "back": 0.466
+    },
+    "3d": {
+      "front": 0.342,
+      "back": 0.31
+    }
+  },
+  "spoink": {
+    "2d": {
+      "front": 0.667,
+      "back": 0.72
+    },
+    "3d": {
+      "front": 0.631,
+      "back": 0.538
+    }
+  },
+  "corphish": {
+    "2d": {
+      "front": 0.465,
+      "back": 0.51
+    },
+    "3d": {
+      "front": 0.361,
+      "back": 0.294
+    }
+  },
+  "kecleon": {
+    "2d": {
+      "front": 0.556,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.44,
+      "back": 0.36
+    }
+  },
+  "wailmer": {
+    "2d": {
+      "front": 0.566,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.447,
+      "back": 0.377
+    }
+  },
+  "bagon": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.554
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.321
+    }
+  },
+  "clamperl": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.355,
+      "back": 0.299
+    }
+  },
+  "relicanth": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.447,
+      "back": 0.399
+    }
+  },
+  "buneary": {
+    "2d": {
+      "front": 0.698,
+      "back": 0.743
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.416
+    }
+  },
+  "houndour": {
+    "2d": {
+      "front": 0.445,
+      "back": 0.488
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.321
+    }
+  },
+  "croagunk": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.587
+    },
+    "3d": {
+      "front": 0.342,
+      "back": 0.288
+    }
+  },
+  "skorupi": {
+    "2d": {
+      "front": 0.465,
+      "back": 0.499
+    },
+    "3d": {
+      "front": 0.421,
+      "back": 0.377
+    }
+  },
+  "yanma": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.543
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.416
+    }
+  },
+  "bronzor": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.361,
+      "back": 0.305
+    }
+  },
+  "electabuzz": {
+    "2d": {
+      "front": 0.657,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.427
+    }
+  },
+  "luxio": {
+    "2d": {
+      "front": 0.495,
+      "back": 0.599
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.399
+    }
+  },
+  "sandile": {
+    "2d": {
+      "front": 0.384,
+      "back": 0.432
+    },
+    "3d": {
+      "front": 0.309,
+      "back": 0.25
+    }
+  },
+  "darumaka": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.401,
+      "back": 0.333
+    }
+  },
+  "trubbish": {
+    "2d": {
+      "front": 0.415,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.375,
+      "back": 0.327
+    }
+  },
+  "ducklett": {
+    "2d": {
+      "front": 0.404,
+      "back": 0.466
+    },
+    "3d": {
+      "front": 0.407,
+      "back": 0.333
+    }
+  },
+  "deerling": {
+    "2d": {
+      "front": 0.505,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.467,
+      "back": 0.388
+    }
+  },
+  "karrablast": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.61
+    },
+    "3d": {
+      "front": 0.44,
+      "back": 0.371
+    }
+  },
+  "joltik": {
+    "2d": {
+      "front": 0.23,
+      "back": 0.26
+    },
+    "3d": {
+      "front": 0.23,
+      "back": 0.26
+    }
+  },
+  "ferroseed": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.466
+    },
+    "3d": {
+      "front": 0.421,
+      "back": 0.355
+    }
+  },
+  "litwick": {
+    "2d": {
+      "front": 0.445,
+      "back": 0.499
+    },
+    "3d": {
+      "front": 0.447,
+      "back": 0.371
+    }
+  },
+  "applin": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.488
+    },
+    "3d": {
+      "front": 0.289,
+      "back": 0.25
+    }
+  },
+  "chewtle": {
+    "2d": {
+      "front": 0.475,
+      "back": 0.543
+    },
+    "3d": {
+      "front": 0.394,
+      "back": 0.338
+    }
+  },
+  "vaporeon": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.427,
+      "back": 0.349
+    }
+  },
+  "flareon": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.611,
+      "back": 0.549
+    }
+  },
+  "espeon": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.443
+    }
+  },
+  "leafeon": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.687
+    },
+    "3d": {
+      "front": 0.539,
+      "back": 0.499
+    }
+  },
+  "glaceon": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.599
+    },
+    "3d": {
+      "front": 0.559,
+      "back": 0.504
+    }
+  },
+  "sylveon": {
+    "2d": {
+      "front": 0.627,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.565,
+      "back": 0.46
+    }
+  },
+  "seaking": {
+    "2d": {
+      "front": 0.677,
+      "back": 0.798
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.416
+    }
+  },
+  "poliwhirl": {
+    "2d": {
+      "front": 0.556,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.329,
+      "back": 0.272
+    }
+  },
+  "tentacruel": {
+    "2d": {
+      "front": 0.859,
+      "back": 0.942
+    },
+    "3d": {
+      "front": 0.559,
+      "back": 0.454
+    }
+  },
+  "lanturn": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.539,
+      "back": 0.466
+    }
+  },
+  "golduck": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.632
+    },
+    "3d": {
+      "front": 0.486,
+      "back": 0.41
+    }
+  },
+  "gastrodon": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.687
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.41
+    }
+  },
+  "ivysaur": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.499
+    },
+    "3d": {
+      "front": 0.434,
+      "back": 0.377
+    }
+  },
+  "charmeleon": {
+    "2d": {
+      "front": 0.566,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.46,
+      "back": 0.416
+    }
+  },
+  "wartortle": {
+    "2d": {
+      "front": 0.576,
+      "back": 0.687
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.399
+    }
+  },
+  "bayleef": {
+    "2d": {
+      "front": 0.809,
+      "back": 0.842
+    },
+    "3d": {
+      "front": 0.552,
+      "back": 0.454
+    }
+  },
+  "quilava": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.587
+    },
+    "3d": {
+      "front": 0.276,
+      "back": 0.25
+    }
+  },
+  "croconaw": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.432
+    }
+  },
+  "grovyle": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.853
+    },
+    "3d": {
+      "front": 0.519,
+      "back": 0.438
+    }
+  },
+  "combusken": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.72
+    },
+    "3d": {
+      "front": 0.545,
+      "back": 0.454
+    }
+  },
+  "marshtomp": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.421
+    }
+  },
+  "grotle": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.687
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.377
+    }
+  },
+  "monferno": {
+    "2d": {
+      "front": 0.687,
+      "back": 0.754
+    },
+    "3d": {
+      "front": 0.598,
+      "back": 0.571
+    }
+  },
+  "prinplup": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.493,
+      "back": 0.416
+    }
+  },
+  "servine": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.676
+    },
+    "3d": {
+      "front": 0.539,
+      "back": 0.454
+    }
+  },
+  "pignite": {
+    "2d": {
+      "front": 0.677,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.405
+    }
+  },
+  "dewott": {
+    "2d": {
+      "front": 0.576,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.41
+    }
+  },
+  "dartrix": {
+    "2d": {
+      "front": 0.475,
+      "back": 0.532
+    },
+    "3d": {
+      "front": 0.447,
+      "back": 0.377
+    }
+  },
+  "torracat": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.486,
+      "back": 0.416
+    }
+  },
+  "brionne": {
+    "2d": {
+      "front": 0.657,
+      "back": 0.732
+    },
+    "3d": {
+      "front": 0.467,
+      "back": 0.382
+    }
+  },
+  "thwackey": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.61
+    },
+    "3d": {
+      "front": 0.637,
+      "back": 0.532
+    }
+  },
+  "raboot": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.632
+    },
+    "3d": {
+      "front": 0.545,
+      "back": 0.46
+    }
+  },
+  "drizzile": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.587
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.416
+    }
+  },
+  "graveler": {
+    "2d": {
+      "front": 0.445,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.327
+    }
+  },
+  "electrode": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.327
+    }
+  },
+  "pichu": {
+    "2d": {
+      "front": 0.28,
+      "back": 0.3
+    },
+    "3d": {
+      "front": 0.28,
+      "back": 0.3
+    }
+  },
+  "raichu-alola": {
+    "2d": {
+      "front": 0.971,
+      "back": 1.02
+    },
+    "3d": {
+      "front": 0.611,
+      "back": 0.515
+    }
+  },
+  "weepinbell": {
+    "2d": {
+      "front": 0.505,
+      "back": 0.599
+    },
+    "3d": {
+      "front": 0.335,
+      "back": 0.288
+    }
+  },
+  "tangrowth": {
+    "2d": {
+      "front": 0.677,
+      "back": 0.743
+    },
+    "3d": {
+      "front": 0.539,
+      "back": 0.443
+    }
+  },
+  "gloom": {
+    "2d": {
+      "front": 0.455,
+      "back": 0.521
+    },
+    "3d": {
+      "front": 0.348,
+      "back": 0.294
+    }
+  },
+  "weezing-galar": {
+    "2d": {
+      "front": 0.94,
+      "back": 1.02,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.973,
+      "back": 0.82,
+      "lift": 0.08
+    }
+  },
+  "mimejr": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.414,
+      "back": 0.355
+    }
+  },
+  "venonat": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.414,
+      "back": 0.344
+    }
+  },
+  "rhydon": {
+    "2d": {
+      "front": 0.687,
+      "back": 0.765
+    },
+    "3d": {
+      "front": 0.539,
+      "back": 0.432
+    }
+  },
+  "pidgeot": {
+    "2d": {
+      "front": 0.74,
+      "back": 0.78
+    },
+    "3d": {
+      "front": 0.74,
+      "back": 0.78
+    }
+  },
+  "butterfree": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.632,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.585,
+      "back": 0.527,
+      "lift": 0.08
+    }
+  },
+  "weedle": {
+    "2d": {
+      "front": 0.26,
+      "back": 0.29
+    },
+    "3d": {
+      "front": 0.26,
+      "back": 0.29
+    }
+  },
+  "beedrill": {
+    "2d": {
+      "front": 0.698,
+      "back": 0.754,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.565,
+      "back": 0.499,
+      "lift": 0.08
+    }
+  },
+  "scizor": {
+    "2d": {
+      "front": 0.738,
+      "back": 0.831
+    },
+    "3d": {
+      "front": 0.611,
+      "back": 0.527
+    }
+  },
+  "cleffa": {
+    "2d": {
+      "front": 0.344,
+      "back": 0.377
+    },
+    "3d": {
+      "front": 0.289,
+      "back": 0.25
+    }
+  },
+  "clefable": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.427,
+      "back": 0.377
+    }
+  },
+  "mankey": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.368,
+      "back": 0.333
+    }
+  },
+  "mamoswine": {
+    "2d": {
+      "front": 0.738,
+      "back": 0.809
+    },
+    "3d": {
+      "front": 0.552,
+      "back": 0.454
+    }
+  },
+  "seadra": {
+    "2d": {
+      "front": 0.576,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.486,
+      "back": 0.416
+    }
+  },
+  "probopass": {
+    "2d": {
+      "front": 0.849,
+      "back": 0.92
+    },
+    "3d": {
+      "front": 0.532,
+      "back": 0.443
+    }
+  },
+  "medicham": {
+    "2d": {
+      "front": 0.748,
+      "back": 0.82
+    },
+    "3d": {
+      "front": 0.591,
+      "back": 0.482
+    }
+  },
+  "hariyama": {
+    "2d": {
+      "front": 0.799,
+      "back": 0.876
+    },
+    "3d": {
+      "front": 0.572,
+      "back": 0.51
+    }
+  },
+  "magnezone": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.61,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.421,
+      "lift": 0.08
+    }
+  },
+  "magcargo": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.676
+    },
+    "3d": {
+      "front": 0.46,
+      "back": 0.388
+    }
+  },
+  "baltoy": {
+    "2d": {
+      "front": 0.404,
+      "back": 0.432
+    },
+    "3d": {
+      "front": 0.394,
+      "back": 0.333
+    }
+  },
+  "natu": {
+    "2d": {
+      "front": 0.415,
+      "back": 0.421
+    },
+    "3d": {
+      "front": 0.315,
+      "back": 0.277
+    }
+  },
+  "barboach": {
+    "2d": {
+      "front": 0.354,
+      "back": 0.399
+    },
+    "3d": {
+      "front": 0.276,
+      "back": 0.25
+    }
+  },
+  "walrein": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.809
+    },
+    "3d": {
+      "front": 0.467,
+      "back": 0.371
+    }
+  },
+  "rampardos": {
+    "2d": {
+      "front": 0.819,
+      "back": 0.909
+    },
+    "3d": {
+      "front": 0.585,
+      "back": 0.477
+    }
+  },
+  "cherubi": {
+    "2d": {
+      "front": 0.384,
+      "back": 0.432
+    },
+    "3d": {
+      "front": 0.315,
+      "back": 0.266
+    }
+  },
+  "shieldon": {
+    "2d": {
+      "front": 0.415,
+      "back": 0.477
+    },
+    "3d": {
+      "front": 0.361,
+      "back": 0.299
+    }
+  },
+  "weavile": {
+    "2d": {
+      "front": 0.819,
+      "back": 0.853
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.427
+    }
+  },
+  "krookodile": {
+    "2d": {
+      "front": 0.728,
+      "back": 0.831
+    },
+    "3d": {
+      "front": 0.618,
+      "back": 0.554
+    }
+  },
+  "seismitoad": {
+    "2d": {
+      "front": 0.667,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.591,
+      "back": 0.471
+    }
+  },
+  "woobat": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.368,
+      "back": 0.321
+    }
+  },
+  "tranquill": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.815,
+      "back": 0.66
+    }
+  },
+  "barraskewda": {
+    "2d": {
+      "front": 0.445,
+      "back": 0.41
+    },
+    "3d": {
+      "front": 0.401,
+      "back": 0.377
+    }
+  },
+  "shellder": {
+    "2d": {
+      "front": 0.384,
+      "back": 0.421
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "smoochum": {
+    "2d": {
+      "front": 0.485,
+      "back": 0.532
+    },
+    "3d": {
+      "front": 0.401,
+      "back": 0.338
+    }
+  },
+  "tyrogue": {
+    "2d": {
+      "front": 0.455,
+      "back": 0.499
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.377
+    }
+  },
+  "ekans": {
+    "2d": {
+      "front": 0.455,
+      "back": 0.554
+    },
+    "3d": {
+      "front": 0.276,
+      "back": 0.25
+    }
+  },
+  "honchkrow": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.743
+    },
+    "3d": {
+      "front": 1.02,
+      "back": 0.981
+    }
+  },
+  "nuzleaf": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.382
+    }
+  },
+  "cacnea": {
+    "2d": {
+      "front": 0.415,
+      "back": 0.454
+    },
+    "3d": {
+      "front": 0.329,
+      "back": 0.277
+    }
+  },
+  "dusknoir": {
+    "2d": {
+      "front": 0.758,
+      "back": 0.865
+    },
+    "3d": {
+      "front": 0.664,
+      "back": 0.554
+    }
+  },
+  "shuppet": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.687
+    },
+    "3d": {
+      "front": 0.414,
+      "back": 0.338
+    }
+  },
+  "vibrava": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.687
+    },
+    "3d": {
+      "front": 0.329,
+      "back": 0.26
+    }
+  },
+  "duosion": {
+    "2d": {
+      "front": 0.667,
+      "back": 0.743
+    },
+    "3d": {
+      "front": 0.421,
+      "back": 0.366
+    }
+  },
+  "munna": {
+    "2d": {
+      "front": 0.465,
+      "back": 0.51
+    },
+    "3d": {
+      "front": 0.355,
+      "back": 0.294
+    }
+  },
+  "gothorita": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.443
+    }
+  },
+  "gurdurr": {
+    "2d": {
+      "front": 0.819,
+      "back": 0.82
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.421
+    }
+  },
+  "mienfoo": {
+    "2d": {
+      "front": 0.667,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.44,
+      "back": 0.371
+    }
+  },
+  "vullaby": {
+    "2d": {
+      "front": 0.627,
+      "back": 0.676
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.388
+    }
+  },
+  "trumbeak": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.631,
+      "back": 0.51
+    }
+  },
+  "togetic": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.809
+    },
+    "3d": {
+      "front": 0.467,
+      "back": 0.388
+    }
+  },
+  "feebas": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.342,
+      "back": 0.305
+    }
+  },
+  "gabite": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.499,
+      "back": 0.41
+    }
+  },
+  "lairon": {
+    "2d": {
+      "front": 0.505,
+      "back": 0.543
+    },
+    "3d": {
+      "front": 0.381,
+      "back": 0.316
+    }
+  },
+  "lileep": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.632
+    },
+    "3d": {
+      "front": 0.447,
+      "back": 0.377
+    }
+  },
+  "anorith": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.488
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "metang": {
+    "2d": {
+      "front": 0.647,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.453,
+      "back": 0.366
+    }
+  },
+  "kirlia": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.698
+    },
+    "3d": {
+      "front": 0.447,
+      "back": 0.377
+    }
+  },
+  "flaaffy": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.44,
+      "back": 0.36
+    }
+  },
+  "herdier": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.486,
+      "back": 0.399
+    }
+  },
+  "boltund": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.591,
+      "back": 0.488
+    }
+  },
+  "corvisquire": {
+    "2d": {
+      "front": 0.94,
+      "back": 1.02
+    },
+    "3d": {
+      "front": 0.867,
+      "back": 0.715
+    }
+  },
+  "breloom": {
+    "2d": {
+      "front": 0.718,
+      "back": 0.798
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.393
+    }
+  },
+  "whirlipede": {
+    "2d": {
+      "front": 0.627,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.427,
+      "back": 0.36
+    }
+  },
+  "swadloon": {
+    "2d": {
+      "front": 0.455,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.375,
+      "back": 0.316
+    }
+  },
+  "noctowl": {
+    "2d": {
+      "front": 0.677,
+      "back": 0.754
+    },
+    "3d": {
+      "front": 0.552,
+      "back": 0.499
+    }
+  },
+  "lombre": {
+    "2d": {
+      "front": 0.526,
+      "back": 0.599
+    },
+    "3d": {
+      "front": 0.407,
+      "back": 0.321
+    }
+  },
+  "azurill": {
+    "2d": {
+      "front": 0.647,
+      "back": 0.732
+    },
+    "3d": {
+      "front": 0.473,
+      "back": 0.399
+    }
+  },
+  "azumarill": {
+    "2d": {
+      "front": 0.617,
+      "back": 0.687
+    },
+    "3d": {
+      "front": 0.591,
+      "back": 0.504
+    }
+  },
+  "masquerain": {
+    "2d": {
+      "front": 0.657,
+      "back": 0.72
+    },
+    "3d": {
+      "front": 0.381,
+      "back": 0.333
+    }
+  },
+  "kingler": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.687
+    },
+    "3d": {
+      "front": 0.545,
+      "back": 0.41
+    }
+  },
+  "palossand": {
+    "2d": {
+      "front": 0.576,
+      "back": 0.632
+    },
+    "3d": {
+      "front": 0.493,
+      "back": 0.427
+    }
+  },
+  "sandslash": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.447,
+      "back": 0.382
+    }
+  },
+  "boldore": {
+    "2d": {
+      "front": 0.536,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.44,
+      "back": 0.377
+    }
+  },
+  "glalie": {
+    "2d": {
+      "front": 0.627,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.493,
+      "back": 0.416
+    }
+  },
+  "beartic": {
+    "2d": {
+      "front": 0.768,
+      "back": 0.82
+    },
+    "3d": {
+      "front": 0.683,
+      "back": 0.576
+    }
+  },
+  "frosmoth": {
+    "2d": {
+      "front": 0.859,
+      "back": 0.953
+    },
+    "3d": {
+      "front": 0.631,
+      "back": 0.604
+    }
+  },
+  "raticate": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.421,
+      "back": 0.349
+    }
+  },
+  "furret": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.676
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.382
+    }
+  },
+  "silcoon": {
+    "2d": {
+      "front": 0.475,
+      "back": 0.499
+    },
+    "3d": {
+      "front": 0.256,
+      "back": 0.25
+    }
+  },
+  "cascoon": {
+    "2d": {
+      "front": 0.404,
+      "back": 0.432
+    },
+    "3d": {
+      "front": 0.263,
+      "back": 0.25
+    }
+  },
+  "staravia": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.802,
+      "back": 0.687
+    }
+  },
+  "bibarel": {
+    "2d": {
+      "front": 0.576,
+      "back": 0.654
+    },
+    "3d": {
+      "front": 0.368,
+      "back": 0.366
+    }
+  },
+  "watchog": {
+    "2d": {
+      "front": 0.698,
+      "back": 0.765
+    },
+    "3d": {
+      "front": 0.519,
+      "back": 0.471
+    }
+  },
+  "liepard": {
+    "2d": {
+      "front": 0.728,
+      "back": 0.798
+    },
+    "3d": {
+      "front": 0.716,
+      "back": 0.665
+    }
+  },
+  "charjabug": {
+    "2d": {
+      "front": 0.324,
+      "back": 0.355
+    },
+    "3d": {
+      "front": 0.315,
+      "back": 0.26
+    }
+  },
+  "gumshoos": {
+    "2d": {
+      "front": 0.627,
+      "back": 0.743
+    },
+    "3d": {
+      "front": 0.519,
+      "back": 0.432
+    }
+  },
+  "dubwool": {
+    "2d": {
+      "front": 0.768,
+      "back": 0.809
+    },
+    "3d": {
+      "front": 0.624,
+      "back": 0.521
+    }
+  },
+  "ledian": {
+    "2d": {
+      "front": 0.657,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.545,
+      "back": 0.466
+    }
+  },
+  "ariados": {
+    "2d": {
+      "front": 0.516,
+      "back": 0.488
+    },
+    "3d": {
+      "front": 0.401,
+      "back": 0.355
+    }
+  },
+  "hypno": {
+    "2d": {
+      "front": 0.627,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.416
+    }
+  },
+  "ninetales": {
+    "2d": {
+      "front": 0.738,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.438
+    }
+  },
+  "exeggutor-alola": {
+    "2d": {
+      "front": 0.99,
+      "back": 1.02
+    },
+    "3d": {
+      "front": 0.99,
+      "back": 1.02
+    }
+  },
+  "persian": {
+    "2d": {
+      "front": 0.627,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.46,
+      "back": 0.366
+    }
+  },
+  "slowking": {
+    "2d": {
+      "front": 0.698,
+      "back": 0.754
+    },
+    "3d": {
+      "front": 0.559,
+      "back": 0.466
+    }
+  },
+  "gliscor": {
+    "2d": {
+      "front": 0.829,
+      "back": 0.975
+    },
+    "3d": {
+      "front": 0.664,
+      "back": 0.565
+    }
+  },
+  "swellow": {
+    "2d": {
+      "front": 0.596,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.289,
+      "back": 0.25
+    }
+  },
+  "swalot": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.46,
+      "back": 0.382
+    }
+  },
+  "grumpig": {
+    "2d": {
+      "front": 0.687,
+      "back": 0.72
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.421
+    }
+  },
+  "wailord": {
+    "2d": {
+      "front": 0.65,
+      "back": 0.68
+    },
+    "3d": {
+      "front": 0.65,
+      "back": 0.68
+    }
+  },
+  "huntail": {
+    "2d": {
+      "front": 0.748,
+      "back": 0.765
+    },
+    "3d": {
+      "front": 0.427,
+      "back": 0.504
+    }
+  },
+  "gorebyss": {
+    "2d": {
+      "front": 0.505,
+      "back": 0.632
+    },
+    "3d": {
+      "front": 0.486,
+      "back": 0.416
+    }
+  },
+  "lopunny": {
+    "2d": {
+      "front": 0.627,
+      "back": 0.698
+    },
+    "3d": {
+      "front": 0.572,
+      "back": 0.488
+    }
+  },
+  "toxicroak": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.698
+    },
+    "3d": {
+      "front": 0.532,
+      "back": 0.438
+    }
+  },
+  "drapion": {
+    "2d": {
+      "front": 0.718,
+      "back": 0.82
+    },
+    "3d": {
+      "front": 0.559,
+      "back": 0.482
+    }
+  },
+  "yanmega": {
+    "2d": {
+      "front": 0.95,
+      "back": 1.009
+    },
+    "3d": {
+      "front": 0.44,
+      "back": 0.321
+    }
+  },
+  "bronzong": {
+    "2d": {
+      "front": 0.748,
+      "back": 0.82
+    },
+    "3d": {
+      "front": 0.48,
+      "back": 0.399
+    }
+  },
+  "elekid": {
+    "2d": {
+      "front": 0.435,
+      "back": 0.499
+    },
+    "3d": {
+      "front": 0.414,
+      "back": 0.349
+    }
+  },
+  "darmanitan": {
+    "2d": {
+      "front": 0.698,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.598,
+      "back": 0.466
+    }
+  },
+  "garbodor": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.931
+    },
+    "3d": {
+      "front": 0.578,
+      "back": 0.527
+    }
+  },
+  "sawsbuck": {
+    "2d": {
+      "front": 0.789,
+      "back": 0.865
+    },
+    "3d": {
+      "front": 0.657,
+      "back": 0.543
+    }
+  },
+  "escavalier": {
+    "2d": {
+      "front": 0.758,
+      "back": 0.853
+    },
+    "3d": {
+      "front": 0.664,
+      "back": 0.549
+    }
+  },
+  "galvantula": {
+    "2d": {
+      "front": 0.566,
+      "back": 0.532
+    },
+    "3d": {
+      "front": 0.322,
+      "back": 0.294
+    }
+  },
+  "ferrothorn": {
+    "2d": {
+      "front": 0.789,
+      "back": 0.865
+    },
+    "3d": {
+      "front": 0.46,
+      "back": 0.388
+    }
+  },
+  "lampent": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.687
+    },
+    "3d": {
+      "front": 0.539,
+      "back": 0.449
+    }
+  },
+  "flapple": {
+    "2d": {
+      "front": 0.586,
+      "back": 0.532
+    },
+    "3d": {
+      "front": 0.493,
+      "back": 0.41
+    }
+  },
+  "appletun": {
+    "2d": {
+      "front": 0.748,
+      "back": 0.82
+    },
+    "3d": {
+      "front": 0.499,
+      "back": 0.41
+    }
+  },
+  "politoed": {
+    "2d": {
+      "front": 0.799,
+      "back": 0.887
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.416
+    }
+  },
+  "venusaur": {
+    "2d": {
+      "front": 0.718,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.506,
+      "back": 0.432
+    }
+  },
+  "blastoise": {
+    "2d": {
+      "front": 0.667,
+      "back": 0.743
+    },
+    "3d": {
+      "front": 0.545,
+      "back": 0.46
+    }
+  },
+  "meganium": {
+    "2d": {
+      "front": 0.829,
+      "back": 0.887
+    },
+    "3d": {
+      "front": 0.611,
+      "back": 0.488
+    }
+  },
+  "typhlosion": {
+    "2d": {
+      "front": 0.728,
+      "back": 0.798
+    },
+    "3d": {
+      "front": 0.775,
+      "back": 0.643
+    }
+  },
+  "feraligatr": {
+    "2d": {
+      "front": 0.728,
+      "back": 0.809
+    },
+    "3d": {
+      "front": 0.644,
+      "back": 0.504
+    }
+  },
+  "sceptile": {
+    "2d": {
+      "front": 0.748,
+      "back": 0.942
+    },
+    "3d": {
+      "front": 0.611,
+      "back": 0.477
+    }
+  },
+  "blaziken": {
+    "2d": {
+      "front": 0.758,
+      "back": 0.798
+    },
+    "3d": {
+      "front": 0.631,
+      "back": 0.515
+    }
+  },
+  "swampert": {
+    "2d": {
+      "front": 0.607,
+      "back": 0.676
+    },
+    "3d": {
+      "front": 0.591,
+      "back": 0.454
+    }
+  },
+  "torterra": {
+    "2d": {
+      "front": 0.809,
+      "back": 0.909
+    },
+    "3d": {
+      "front": 0.697,
+      "back": 0.599
+    }
+  },
+  "infernape": {
+    "2d": {
+      "front": 0.748,
+      "back": 0.865
+    },
+    "3d": {
+      "front": 0.782,
+      "back": 0.654
+    }
+  },
+  "empoleon": {
+    "2d": {
+      "front": 0.789,
+      "back": 0.831
+    },
+    "3d": {
+      "front": 0.729,
+      "back": 0.615
+    }
+  },
+  "serperior": {
+    "2d": {
+      "front": 0.748,
+      "back": 0.887
+    },
+    "3d": {
+      "front": 0.71,
+      "back": 0.582
+    }
+  },
+  "emboar": {
+    "2d": {
+      "front": 0.789,
+      "back": 0.909
+    },
+    "3d": {
+      "front": 0.67,
+      "back": 0.565
+    }
+  },
+  "samurott": {
+    "2d": {
+      "front": 0.95,
+      "back": 1.009
+    },
+    "3d": {
+      "front": 0.71,
+      "back": 0.515
+    }
+  },
+  "decidueye": {
+    "2d": {
+      "front": 0.768,
+      "back": 0.842
+    },
+    "3d": {
+      "front": 0.657,
+      "back": 0.56
+    }
+  },
+  "incineroar": {
+    "2d": {
+      "front": 0.869,
+      "back": 1.02
+    },
+    "3d": {
+      "front": 0.631,
+      "back": 0.515
+    }
+  },
+  "primarina": {
+    "2d": {
+      "front": 0.849,
+      "back": 0.931
+    },
+    "3d": {
+      "front": 0.71,
+      "back": 0.732
+    }
+  },
+  "rillaboom": {
+    "2d": {
+      "front": 0.809,
+      "back": 0.887
+    },
+    "3d": {
+      "front": 0.802,
+      "back": 0.621
+    }
+  },
+  "cinderace": {
+    "2d": {
+      "front": 0.789,
+      "back": 0.887
+    },
+    "3d": {
+      "front": 0.749,
+      "back": 0.626
+    }
+  },
+  "inteleon": {
+    "2d": {
+      "front": 0.809,
+      "back": 0.876
+    },
+    "3d": {
+      "front": 0.907,
+      "back": 0.781
+    }
+  },
+  "golem": {
+    "2d": {
+      "front": 0.576,
+      "back": 0.621
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.427
+    }
+  },
+  "bellossom": {
+    "2d": {
+      "front": 0.566,
+      "back": 0.576
+    },
+    "3d": {
+      "front": 0.361,
+      "back": 0.305
+    }
+  },
+  "mrmime-galar": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.587
+    },
+    "3d": {
+      "front": 0.578,
+      "back": 0.482
+    }
+  },
+  "rhyperior": {
+    "2d": {
+      "front": 0.728,
+      "back": 0.754
+    },
+    "3d": {
+      "front": 0.618,
+      "back": 0.504
+    }
+  },
+  "horsea": {
+    "2d": {
+      "front": 0.435,
+      "back": 0.443
+    },
+    "3d": {
+      "front": 0.375,
+      "back": 0.299
+    }
+  },
+  "hitmontop": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.676
+    },
+    "3d": {
+      "front": 0.467,
+      "back": 0.377
+    }
+  },
+  "trapinch": {
+    "2d": {
+      "front": 0.425,
+      "back": 0.499
+    },
+    "3d": {
+      "front": 0.296,
+      "back": 0.25
+    }
+  },
+  "solosis": {
+    "2d": {
+      "front": 0.364,
+      "back": 0.399
+    },
+    "3d": {
+      "front": 0.296,
+      "back": 0.25
+    }
+  },
+  "gothita": {
+    "2d": {
+      "front": 0.394,
+      "back": 0.443
+    },
+    "3d": {
+      "front": 0.388,
+      "back": 0.321
+    }
+  },
+  "timburr": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.92
+    },
+    "3d": {
+      "front": 0.401,
+      "back": 0.333
+    }
+  },
+  "togepi": {
+    "2d": {
+      "front": 0.29,
+      "back": 0.32
+    },
+    "3d": {
+      "front": 0.29,
+      "back": 0.32
+    }
+  },
+  "gible": {
+    "2d": {
+      "front": 0.546,
+      "back": 0.565
+    },
+    "3d": {
+      "front": 0.375,
+      "back": 0.333
+    }
+  },
+  "beldum": {
+    "2d": {
+      "front": 0.455,
+      "back": 0.488
+    },
+    "3d": {
+      "front": 0.25,
+      "back": 0.25
+    }
+  },
+  "gardevoir": {
+    "2d": {
+      "front": 0.778,
+      "back": 0.853
+    },
+    "3d": {
+      "front": 0.631,
+      "back": 0.538
+    }
+  },
+  "gallade": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.765
+    },
+    "3d": {
+      "front": 0.664,
+      "back": 0.565
+    }
+  },
+  "ampharos": {
+    "2d": {
+      "front": 0.687,
+      "back": 0.709
+    },
+    "3d": {
+      "front": 0.664,
+      "back": 0.56
+    }
+  },
+  "stoutland": {
+    "2d": {
+      "front": 0.718,
+      "back": 0.787
+    },
+    "3d": {
+      "front": 0.578,
+      "back": 0.46
+    }
+  },
+  "corviknight": {
+    "2d": {
+      "front": 0.708,
+      "back": 0.776
+    },
+    "3d": {
+      "front": 1.02,
+      "back": 0.926
+    }
+  },
+  "scolipede": {
+    "2d": {
+      "front": 0.92,
+      "back": 0.975
+    },
+    "3d": {
+      "front": 0.815,
+      "back": 0.604
+    }
+  },
+  "leavanny": {
+    "2d": {
+      "front": 0.758,
+      "back": 0.853
+    },
+    "3d": {
+      "front": 0.716,
+      "back": 0.599
+    }
+  },
+  "ludicolo": {
+    "2d": {
+      "front": 0.809,
+      "back": 0.853
+    },
+    "3d": {
+      "front": 0.591,
+      "back": 0.499
+    }
+  },
+  "gigalith": {
+    "2d": {
+      "front": 0.789,
+      "back": 0.842
+    },
+    "3d": {
+      "front": 0.637,
+      "back": 0.527
+    }
+  },
+  "beautifly": {
+    "2d": {
+      "front": 0.556,
+      "back": 0.665
+    },
+    "3d": {
+      "front": 0.545,
+      "back": 0.532
+    }
+  },
+  "dustox": {
+    "2d": {
+      "front": 0.475,
+      "back": 0.587
+    },
+    "3d": {
+      "front": 0.467,
+      "back": 0.443
+    }
+  },
+  "staraptor": {
+    "2d": {
+      "front": 0.698,
+      "back": 0.754
+    },
+    "3d": {
+      "front": 1.02,
+      "back": 1.02
+    }
+  },
+  "vikavolt": {
+    "2d": {
+      "front": 0.728,
+      "back": 0.82
+    },
+    "3d": {
+      "front": 0.513,
+      "back": 0.438
+    }
+  },
+  "chandelure": {
+    "2d": {
+      "front": 0.91,
+      "back": 0.998,
+      "lift": 0.08
+    },
+    "3d": {
+      "front": 0.71,
+      "back": 0.61,
+      "lift": 0.08
+    }
+  },
+  "mrrime": {
+    "2d": {
+      "front": 0.637,
+      "back": 0.643
+    },
+    "3d": {
+      "front": 0.572,
+      "back": 0.488
+    }
+  }
+}

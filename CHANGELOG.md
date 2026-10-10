@@ -1,5 +1,12 @@
 # Histórico
 
+## 0.16.0 — Batalha na medida · 10/10/2026
+
+- Escala visual por espécie, estilo 2D/3D e frente/costas. Pidgey e pequenos deixam de preencher quase toda a caixa; evoluções ficam progressivamente maiores. Ajustes próprios para gigantes e espécies compridas.
+- Geometria medida em todos os quadros das fontes existentes: margens transparentes não alteram apoio ou proporção. Escala constante no ciclo, alinhamento à plataforma e perspectiva de costas 12% maior, respeitando limites da arena.
+- Tamanho acompanha o espaço disponível em PC, celular, paisagem, tela cheia e redimensionamento; sprites cabem sem mudar o HUD ou os comandos. Fallback recalibra pela imagem efetivamente carregada e prefere 2D local da forma correta.
+- Cores shiny, animações e saves preservados. Sem mudanças em regras, RNG, atributos ou decisões de batalha. 132 testes, revisão em navegador e documentação de medição/importação.
+
 ## 0.15.0 — Uma estrela no mato · 10/10/2026
 
 - Shiny com chance de 1/1024 por inicial escolhido ou novo encontro, incluindo pesca, surf, lendários e eventos. Sorteio independente do RNG da campanha; marca fixada antes da primeira tentativa, sem rerrolar ao falhar ou recarregar.

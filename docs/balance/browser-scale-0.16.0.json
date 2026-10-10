@@ -1,0 +1,3167 @@
+{
+  "reports": [
+    {
+      "name": "escala-pidgey-2d-normal-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-normal-1280-troca",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-shiny-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-shiny-1280-troca",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-normal-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-normal-1280-troca",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-shiny-1280",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-shiny-1280-troca",
+      "width": 1280,
+      "height": 720,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-normal-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-normal-390-troca",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-shiny-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-shiny-390-troca",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-normal-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-normal-390-troca",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-shiny-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-shiny-390-troca",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-normal-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-normal-320-troca",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-shiny-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-shiny-320-troca",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-normal-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-normal-320-troca",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-shiny-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-shiny-320-troca",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-normal-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-normal-844-troca",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-shiny-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-2d-shiny-844-troca",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-normal-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-normal-844-troca",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-shiny-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-pidgey-3d-shiny-844-troca",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Onix-Wailord-2d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Onix-Wailord-3d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Steelix-Exeggutor-Alola-2d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Steelix-Exeggutor-Alola-3d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Pichu-Blastoise-2d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Pichu-Blastoise-3d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Raichu-Alola-Gyarados-2d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Raichu-Alola-Gyarados-3d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Gastly-Butterfree-2d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Gastly-Butterfree-3d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Joltik-Dragonite-2d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-Joltik-Dragonite-3d",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-resize-celular",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    },
+    {
+      "name": "escala-tela-cheia",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "mainOverflow": 0,
+      "clippedHeader": false,
+      "controls": [],
+      "broken": [],
+      "pixelErrors": [],
+      "dialogOverflow": false
+    }
+  ],
+  "flows": [
+    {
+      "label": "escala-pidgey-2d-normal-1280",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 79.38339107142856,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 79.375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "111.871px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 33.112649202127656,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 33.109375,
+          "imageHeight": 34.578125,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "135.006px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-1280-quadros",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 79.38339107142856,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 79.375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "111.871px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 33.112649202127656,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 33.109375,
+          "imageHeight": 34.578125,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "135.006px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-1280-reload",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 79.38339107142856,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 79.375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "111.871px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 33.112649202127656,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 33.109375,
+          "imageHeight": 34.578125,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "135.006px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-1280-troca",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 79.38339107142856,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 79.375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "111.871px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/charizard.gif",
+          "visibleHeight": 91.61859375000002,
+          "visibleWidth": 108.17617093373495,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 108.171875,
+          "imageHeight": 91.609375,
+          "naturalWidth": 98,
+          "naturalHeight": 83,
+          "left": "97.4744px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-1280",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 79.38339107142856,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 79.375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "111.871px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 33.112649202127656,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 33.109375,
+          "imageHeight": 34.578125,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "135.006px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-1280-quadros",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 79.38339107142856,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 79.375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "111.871px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 33.112649202127656,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 33.109375,
+          "imageHeight": 34.578125,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "135.006px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-1280-reload",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 79.38339107142856,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 79.375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "111.871px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 33.112649202127656,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 33.109375,
+          "imageHeight": 34.578125,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "135.006px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-1280-troca",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 79.38339107142856,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 79.375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "111.871px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/charizard.gif",
+          "visibleHeight": 91.61859375000002,
+          "visibleWidth": 108.17617093373495,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 108.171875,
+          "imageHeight": 91.609375,
+          "naturalWidth": 98,
+          "naturalHeight": 83,
+          "left": "97.4744px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-1280",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 77.108923125,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 77.09375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "113.008px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 35.304829218749994,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 35.296875,
+          "imageHeight": 34.578125,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "133.91px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-1280-quadros",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 77.108923125,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 77.09375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "113.008px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 35.304829218749994,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 35.296875,
+          "imageHeight": 34.578125,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "133.91px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-1280-reload",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 77.108923125,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 77.09375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "113.008px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 35.304829218749994,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 35.296875,
+          "imageHeight": 34.578125,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "133.91px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-1280-troca",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 77.108923125,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 77.09375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "113.008px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/charizard.gif",
+          "visibleHeight": 91.61859375000002,
+          "visibleWidth": 94.930109186747,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 94.921875,
+          "imageHeight": 91.609375,
+          "naturalWidth": 172,
+          "naturalHeight": 166,
+          "left": "104.097px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-1280",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 77.108923125,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 77.09375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "113.008px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 35.304829218749994,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 35.296875,
+          "imageHeight": 34.578125,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "133.91px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-1280-quadros",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 77.108923125,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 77.09375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "113.008px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 35.304829218749994,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 35.296875,
+          "imageHeight": 34.578125,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "133.91px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-1280-reload",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 77.108923125,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 77.09375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "113.008px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 35.304829218749994,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 35.296875,
+          "imageHeight": 34.578125,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "133.91px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-1280-troca",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 77.108923125,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 77.09375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "113.008px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/charizard.gif",
+          "visibleHeight": 91.61859375000002,
+          "visibleWidth": 94.930109186747,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 94.921875,
+          "imageHeight": 91.609375,
+          "naturalWidth": 172,
+          "naturalHeight": 166,
+          "left": "104.097px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-390",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 125.72570224719102,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 125.71875,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 54.88,
+          "visibleWidth": 52.54468085106383,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 52.53125,
+          "imageHeight": 54.875,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "42.0402px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-390-quadros",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 125.72570224719102,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 125.71875,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 54.88,
+          "visibleWidth": 52.54468085106383,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 52.53125,
+          "imageHeight": 54.875,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "42.0402px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-390-reload",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 125.72570224719102,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 125.71875,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 54.88,
+          "visibleWidth": 52.54468085106383,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 52.53125,
+          "imageHeight": 54.875,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "42.0402px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-390-troca",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 125.72570224719102,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 125.71875,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/charizard.gif",
+          "visibleHeight": 104.14170918367348,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 104.140625,
+          "naturalWidth": 98,
+          "naturalHeight": 83,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-390",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 125.72570224719102,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 125.71875,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 54.88,
+          "visibleWidth": 52.54468085106383,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 52.53125,
+          "imageHeight": 54.875,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "42.0402px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-390-quadros",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 125.72570224719102,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 125.71875,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 54.88,
+          "visibleWidth": 52.54468085106383,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 52.53125,
+          "imageHeight": 54.875,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "42.0402px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-390-reload",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 125.72570224719102,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 125.71875,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 54.88,
+          "visibleWidth": 52.54468085106383,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 52.53125,
+          "imageHeight": 54.875,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "42.0402px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-390-troca",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 125.72570224719102,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 125.71875,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/charizard.gif",
+          "visibleHeight": 104.14170918367348,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 104.140625,
+          "naturalWidth": 98,
+          "naturalHeight": 83,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-390",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 128.8,
+          "visibleWidth": 122.36,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.359375,
+          "imageHeight": 128.796875,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "7.1325px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 54.879999999999995,
+          "visibleWidth": 56.02333333333333,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 56.015625,
+          "imageHeight": 54.875,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3008px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-390-quadros",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 128.8,
+          "visibleWidth": 122.36,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.359375,
+          "imageHeight": 128.796875,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "7.1325px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 54.879999999999995,
+          "visibleWidth": 56.02333333333333,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 56.015625,
+          "imageHeight": 54.875,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3008px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-390-reload",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 128.8,
+          "visibleWidth": 122.36,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.359375,
+          "imageHeight": 128.796875,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "7.1325px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 54.879999999999995,
+          "visibleWidth": 56.02333333333333,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 56.015625,
+          "imageHeight": 54.875,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3008px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-390-troca",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 128.8,
+          "visibleWidth": 122.36,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.359375,
+          "imageHeight": 128.796875,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "7.1325px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/charizard.gif",
+          "visibleHeight": 118.67311046511628,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 118.671875,
+          "naturalWidth": 172,
+          "naturalHeight": 166,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-390",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 128.8,
+          "visibleWidth": 122.36,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.359375,
+          "imageHeight": 128.796875,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "7.1325px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 54.879999999999995,
+          "visibleWidth": 56.02333333333333,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 56.015625,
+          "imageHeight": 54.875,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3008px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-390-quadros",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 128.8,
+          "visibleWidth": 122.36,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.359375,
+          "imageHeight": 128.796875,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "7.1325px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 54.879999999999995,
+          "visibleWidth": 56.02333333333333,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 56.015625,
+          "imageHeight": 54.875,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3008px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-390-reload",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 128.8,
+          "visibleWidth": 122.36,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.359375,
+          "imageHeight": 128.796875,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "7.1325px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 54.879999999999995,
+          "visibleWidth": 56.02333333333333,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 56.015625,
+          "imageHeight": 54.875,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3008px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-390-troca",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 128.8,
+          "visibleWidth": 122.36,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.359375,
+          "imageHeight": 128.796875,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "7.1325px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/charizard.gif",
+          "visibleHeight": 118.67311046511628,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 118.671875,
+          "naturalWidth": 172,
+          "naturalHeight": 166,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-320",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 67.57293214285716,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 67.5625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "21.5885px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 28.1862335106383,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 28.171875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "41.2819px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-320-quadros",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 67.57293214285716,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 67.5625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "21.5885px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 28.1862335106383,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 28.171875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "41.2819px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-320-reload",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 67.57293214285716,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 67.5625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "21.5885px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 28.1862335106383,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 28.171875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "41.2819px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-320-troca",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 67.57293214285716,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 67.5625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "21.5885px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/charizard.gif",
+          "visibleHeight": 77.9878125,
+          "visibleWidth": 92.08199548192772,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 92.078125,
+          "imageHeight": 77.984375,
+          "naturalWidth": 98,
+          "naturalHeight": 83,
+          "left": "9.334px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-320",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 67.57293214285716,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 67.5625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "21.5885px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 28.1862335106383,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 28.171875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "41.2819px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-320-quadros",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 67.57293214285716,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 67.5625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "21.5885px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 28.1862335106383,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 28.171875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "41.2819px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-320-reload",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 67.57293214285716,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 67.5625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "21.5885px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 28.1862335106383,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 28.171875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "41.2819px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-320-troca",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 67.57293214285716,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 67.5625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "21.5885px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/charizard.gif",
+          "visibleHeight": 77.9878125,
+          "visibleWidth": 92.08199548192772,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 92.078125,
+          "imageHeight": 77.984375,
+          "naturalWidth": 98,
+          "naturalHeight": 83,
+          "left": "9.334px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-320",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 65.63685375000001,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 65.625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "22.5566px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 30.052266562500005,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 30.046875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3489px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-320-quadros",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 65.63685375000001,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 65.625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "22.5566px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 30.052266562500005,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 30.046875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3489px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-320-reload",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 65.63685375000001,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 65.625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "22.5566px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 30.052266562500005,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 30.046875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3489px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-320-troca",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 65.63685375000001,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 65.625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "22.5566px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/charizard.gif",
+          "visibleHeight": 77.9878125,
+          "visibleWidth": 80.80664909638554,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 80.796875,
+          "imageHeight": 77.984375,
+          "naturalWidth": 172,
+          "naturalHeight": 166,
+          "left": "14.9717px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-320",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 65.63685375000001,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 65.625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "22.5566px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 30.052266562500005,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 30.046875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3489px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-320-quadros",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 65.63685375000001,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 65.625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "22.5566px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 30.052266562500005,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 30.046875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3489px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-320-reload",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 65.63685375000001,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 65.625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "22.5566px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 29.438955000000004,
+          "visibleWidth": 30.052266562500005,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 30.046875,
+          "imageHeight": 29.4375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3489px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-320-troca",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 69.09142500000002,
+          "visibleWidth": 65.63685375000001,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 65.625,
+          "imageHeight": 69.078125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "22.5566px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/charizard.gif",
+          "visibleHeight": 77.9878125,
+          "visibleWidth": 80.80664909638554,
+          "width": 110.75,
+          "height": 96.28125,
+          "imageWidth": 80.796875,
+          "imageHeight": 77.984375,
+          "naturalWidth": 172,
+          "naturalHeight": 166,
+          "left": "14.9717px",
+          "bottom": "16.3678px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-844",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 59.370310714285715,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 59.359375,
+          "imageHeight": 60.703125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "50.3461px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 25.865385,
+          "visibleWidth": 24.764730319148935,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 24.75,
+          "imageHeight": 25.859375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "67.6489px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-844-quadros",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 59.370310714285715,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 59.359375,
+          "imageHeight": 60.703125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "50.3461px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 25.865385,
+          "visibleWidth": 24.764730319148935,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 24.75,
+          "imageHeight": 25.859375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "67.6489px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-844-reload",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 59.370310714285715,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 59.359375,
+          "imageHeight": 60.703125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "50.3461px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pidgey.gif",
+          "visibleHeight": 25.865385,
+          "visibleWidth": 24.764730319148935,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 24.75,
+          "imageHeight": 25.859375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "67.6489px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-normal-844-troca",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 59.370310714285715,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 59.359375,
+          "imageHeight": 60.703125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "50.3461px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/charizard.gif",
+          "visibleHeight": 68.5209375,
+          "visibleWidth": 80.90423945783132,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 80.890625,
+          "imageHeight": 68.515625,
+          "naturalWidth": 98,
+          "naturalHeight": 83,
+          "left": "39.5791px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-844",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 59.370310714285715,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 59.359375,
+          "imageHeight": 60.703125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "50.3461px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 25.865385,
+          "visibleWidth": 24.764730319148935,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 24.75,
+          "imageHeight": 25.859375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "67.6489px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-844-quadros",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 59.370310714285715,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 59.359375,
+          "imageHeight": 60.703125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "50.3461px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 25.865385,
+          "visibleWidth": 24.764730319148935,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 24.75,
+          "imageHeight": 25.859375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "67.6489px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-844-reload",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 59.370310714285715,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 59.359375,
+          "imageHeight": 60.703125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "50.3461px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "visibleHeight": 25.865385,
+          "visibleWidth": 24.764730319148935,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 24.75,
+          "imageHeight": 25.859375,
+          "naturalWidth": 45,
+          "naturalHeight": 47,
+          "left": "67.6489px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-2d-shiny-844-troca",
+      "result": [
+        {
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 59.370310714285715,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 59.359375,
+          "imageHeight": 60.703125,
+          "naturalWidth": 89,
+          "naturalHeight": 91,
+          "left": "50.3461px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back-shiny/charizard.gif",
+          "visibleHeight": 68.5209375,
+          "visibleWidth": 80.90423945783132,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 80.890625,
+          "imageHeight": 68.515625,
+          "naturalWidth": 98,
+          "naturalHeight": 83,
+          "left": "39.5791px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-844",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 57.66925125,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 57.65625,
+          "imageHeight": 60.703125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "51.1966px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 25.865385000000003,
+          "visibleWidth": 26.4042471875,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 26.390625,
+          "imageHeight": 25.859375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "66.8291px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-844-quadros",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 57.66925125,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 57.65625,
+          "imageHeight": 60.703125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "51.1966px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 25.865385000000003,
+          "visibleWidth": 26.4042471875,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 26.390625,
+          "imageHeight": 25.859375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "66.8291px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-844-reload",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 57.66925125,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 57.65625,
+          "imageHeight": 60.703125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "51.1966px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 25.865385000000003,
+          "visibleWidth": 26.4042471875,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 26.390625,
+          "imageHeight": 25.859375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "66.8291px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-normal-844-troca",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 57.66925125,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 57.65625,
+          "imageHeight": 60.703125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "51.1966px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/charizard.gif",
+          "visibleHeight": 68.5209375,
+          "visibleWidth": 70.99759789156627,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 70.984375,
+          "imageHeight": 68.515625,
+          "naturalWidth": 172,
+          "naturalHeight": 166,
+          "left": "44.5325px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-844",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 57.66925125,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 57.65625,
+          "imageHeight": 60.703125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "51.1966px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 25.865385000000003,
+          "visibleWidth": 26.4042471875,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 26.390625,
+          "imageHeight": 25.859375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "66.8291px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-844-quadros",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 57.66925125,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 57.65625,
+          "imageHeight": 60.703125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "51.1966px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 25.865385000000003,
+          "visibleWidth": 26.4042471875,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 26.390625,
+          "imageHeight": 25.859375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "66.8291px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-844-reload",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 57.66925125,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 57.65625,
+          "imageHeight": 60.703125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "51.1966px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "visibleHeight": 25.865385000000003,
+          "visibleWidth": 26.4042471875,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 26.390625,
+          "imageHeight": 25.859375,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "66.8291px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-pidgey-3d-shiny-844-troca",
+      "result": [
+        {
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "visibleHeight": 60.704475,
+          "visibleWidth": 57.66925125,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 57.65625,
+          "imageHeight": 60.703125,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "51.1966px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back-shiny/charizard.gif",
+          "visibleHeight": 68.5209375,
+          "visibleWidth": 70.99759789156627,
+          "width": 160.0625,
+          "height": 84.59375,
+          "imageWidth": 70.984375,
+          "imageHeight": 68.515625,
+          "naturalWidth": 172,
+          "naturalHeight": 166,
+          "left": "44.5325px",
+          "bottom": "14.3809px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Onix-Wailord-2d",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/wailord.gif",
+          "visibleHeight": 91,
+          "visibleWidth": 106.51136363636364,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 106.5,
+          "imageHeight": 91,
+          "naturalWidth": 103,
+          "naturalHeight": 88,
+          "left": "15.0568px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/onix.gif",
+          "visibleHeight": 87.83035714285715,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 87.828125,
+          "naturalWidth": 98,
+          "naturalHeight": 70,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Onix-Wailord-3d",
+      "result": [
+        {
+          "geometry": "sprites/ani/wailord.gif",
+          "visibleHeight": 68.21892123287671,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 68.21875,
+          "naturalWidth": 146,
+          "naturalHeight": 81,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/onix.gif",
+          "visibleHeight": 140.52857142857144,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 140.515625,
+          "naturalWidth": 98,
+          "naturalHeight": 112,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Steelix-Exeggutor-Alola-2d",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/exeggutor-alola.gif",
+          "visibleHeight": 110.99269911504426,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 110.984375,
+          "naturalWidth": 113,
+          "naturalHeight": 102,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/steelix.gif",
+          "visibleHeight": 119.07947368421053,
+          "visibleWidth": 122.96249999999999,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 119.078125,
+          "naturalWidth": 95,
+          "naturalHeight": 92,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Steelix-Exeggutor-Alola-3d",
+      "result": [
+        {
+          "geometry": "sprites/ani/exeggutor-alola.gif",
+          "visibleHeight": 138.6,
+          "visibleWidth": 85.47,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 85.46875,
+          "imageHeight": 138.59375,
+          "naturalWidth": 111,
+          "naturalHeight": 180,
+          "left": "25.5775px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/steelix.gif",
+          "visibleHeight": 110.55344036697248,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 110.546875,
+          "naturalWidth": 109,
+          "naturalHeight": 98,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Pichu-Blastoise-2d",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/blastoise.gif",
+          "visibleHeight": 93.38000000000001,
+          "visibleWidth": 99.03939393939395,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 99.03125,
+          "imageHeight": 93.375,
+          "naturalWidth": 70,
+          "naturalHeight": 66,
+          "left": "18.7928px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/pichu.gif",
+          "visibleHeight": 47.040000000000006,
+          "visibleWidth": 41.28,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 41.265625,
+          "imageHeight": 47.03125,
+          "naturalWidth": 43,
+          "naturalHeight": 49,
+          "left": "47.6725px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Pichu-Blastoise-3d",
+      "result": [
+        {
+          "geometry": "sprites/ani/blastoise.gif",
+          "visibleHeight": 76.30000000000001,
+          "visibleWidth": 80.89638554216869,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 80.890625,
+          "imageHeight": 76.296875,
+          "naturalWidth": 88,
+          "naturalHeight": 83,
+          "left": "27.8643px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pichu.gif",
+          "visibleHeight": 47.040000000000006,
+          "visibleWidth": 37.99384615384616,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 37.984375,
+          "imageHeight": 47.03125,
+          "naturalWidth": 42,
+          "naturalHeight": 52,
+          "left": "49.3156px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Raichu-Alola-Gyarados-2d",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/gyarados.gif",
+          "visibleHeight": 101.26323529411765,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 101.25,
+          "naturalWidth": 102,
+          "naturalHeight": 84,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/raichu-alola.gif",
+          "visibleHeight": 92.97164634146343,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 92.96875,
+          "naturalWidth": 123,
+          "naturalHeight": 93,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Raichu-Alola-Gyarados-3d",
+      "result": [
+        {
+          "geometry": "sprites/ani/gyarados.gif",
+          "visibleHeight": 105.85467391304347,
+          "visibleWidth": 122.96249999999999,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 105.84375,
+          "naturalWidth": 115,
+          "naturalHeight": 99,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/raichu-alola.gif",
+          "visibleHeight": 80.75200000000002,
+          "visibleWidth": 76.41049462365594,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 76.40625,
+          "imageHeight": 80.75,
+          "naturalWidth": 88,
+          "naturalHeight": 93,
+          "left": "30.1073px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Gastly-Butterfree-2d",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/butterfree.gif",
+          "visibleHeight": 82.03999999999999,
+          "visibleWidth": 86.28344827586207,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 86.28125,
+          "imageHeight": 82.03125,
+          "naturalWidth": 61,
+          "naturalHeight": 58,
+          "left": "25.1708px",
+          "bottom": "45.9092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/gastly.gif",
+          "visibleHeight": 135.632,
+          "visibleWidth": 111.28779487179487,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 111.28125,
+          "imageHeight": 135.625,
+          "naturalWidth": 64,
+          "naturalHeight": 78,
+          "left": "12.6686px",
+          "bottom": "45.9092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Gastly-Butterfree-3d",
+      "result": [
+        {
+          "geometry": "sprites/ani/butterfree.gif",
+          "visibleHeight": 81.89999999999999,
+          "visibleWidth": 85.58089887640448,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 85.578125,
+          "imageHeight": 81.890625,
+          "naturalWidth": 93,
+          "naturalHeight": 89,
+          "left": "25.5221px",
+          "bottom": "45.9092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/gastly.gif",
+          "visibleHeight": 52.21440000000001,
+          "visibleWidth": 46.122720000000015,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 46.109375,
+          "imageHeight": 52.203125,
+          "naturalWidth": 53,
+          "naturalHeight": 60,
+          "left": "45.2511px",
+          "bottom": "45.9092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Joltik-Dragonite-2d",
+      "result": [
+        {
+          "geometry": "battle-sprites/front/dragonite.gif",
+          "visibleHeight": 126.0365625,
+          "visibleWidth": 122.9625,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.953125,
+          "imageHeight": 126.03125,
+          "naturalWidth": 80,
+          "naturalHeight": 82,
+          "left": "6.83125px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "battle-sprites/back/joltik.gif",
+          "visibleHeight": 40.768,
+          "visibleWidth": 48.921600000000005,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 48.90625,
+          "imageHeight": 40.765625,
+          "naturalWidth": 42,
+          "naturalHeight": 35,
+          "left": "43.8517px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "escala-Joltik-Dragonite-3d",
+      "result": [
+        {
+          "geometry": "sprites/ani/dragonite.gif",
+          "visibleHeight": 128.8,
+          "visibleWidth": 111.71428571428574,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 111.703125,
+          "imageHeight": 128.796875,
+          "naturalWidth": 85,
+          "naturalHeight": 98,
+          "left": "12.4554px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/joltik.gif",
+          "visibleHeight": 40.768,
+          "visibleWidth": 58.063515151515155,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 58.0625,
+          "imageHeight": 40.765625,
+          "naturalWidth": 47,
+          "naturalHeight": 33,
+          "left": "39.2807px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "resize-antes",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 81.1672875,
+          "visibleWidth": 77.108923125,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 77.09375,
+          "imageHeight": 81.15625,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "113.008px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 34.5843225,
+          "visibleWidth": 35.304829218749994,
+          "width": 303.125,
+          "height": 113.109375,
+          "imageWidth": 35.296875,
+          "imageHeight": 34.578125,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "133.91px",
+          "bottom": "19.2286px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "resize-celular",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 128.8,
+          "visibleWidth": 122.36,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.359375,
+          "imageHeight": 128.796875,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "7.1325px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 54.879999999999995,
+          "visibleWidth": 56.02333333333333,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 56.015625,
+          "imageHeight": 54.875,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3008px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "label": "resize-fullscreen",
+      "result": [
+        {
+          "geometry": "sprites/ani/charizard.gif",
+          "visibleHeight": 128.8,
+          "visibleWidth": 122.36,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 122.359375,
+          "imageHeight": 128.796875,
+          "naturalWidth": 133,
+          "naturalHeight": 140,
+          "left": "7.1325px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        },
+        {
+          "geometry": "sprites/ani-back/pidgey.gif",
+          "visibleHeight": 54.879999999999995,
+          "visibleWidth": 56.02333333333333,
+          "width": 136.625,
+          "height": 204.171875,
+          "imageWidth": 56.015625,
+          "imageHeight": 54.875,
+          "naturalWidth": 49,
+          "naturalHeight": 48,
+          "left": "40.3008px",
+          "bottom": "34.7092px",
+          "visibility": "visible"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "network": []
+}

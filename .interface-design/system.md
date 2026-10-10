@@ -52,3 +52,7 @@ Preservar a carcaça e as fontes externas. PixelViewport usa a altura livre; inf
 Equipe: seis seletores juntos, Ficha e golpes / Reserva como botões com aria-pressed. No telefone, sprite no seletor e nome/nível acessível; detalhes do selecionado ficam na ficha. No horizontal, seletores à esquerda, conteúdo à direita e quatro golpes em uma linha. Mochila e mapa usam a altura disponível, sem sobrepor controles. 35 CSS ativos incluindo índice; regras de enquadramento em pixel-screens.css e panel-fit.css, no fim da cascata existente.
 
 Tela cheia imediatamente após Pokédex, com estado da API nativa. Movimento segurado encerra em release, blur, janela, invisibilidade e desmontagem. Critério: ações sem cobertura por outro painel, não apenas ausência de scrollbar. Hit-test e limites verificados em 320×568 e horizontal 667×375, além de seis outros tamanhos.
+
+## Escala de batalha — 0.16.0
+
+Corpos preservam proporção e mantêm escala fixa no ciclo. Tabela por espécie/estilo/lado; union de pixels visíveis de todos os quadros. Apoio no centro da plataforma a 17% da altura da caixa; costas com perspectiva 1,12. Máximo de largura 90% e altura 81% menos elevação, piso legível 16 px subordinado ao espaço disponível. Referência responsive 160/140/94/84 px. Não dimensionar todos os sprites por percentuais semelhantes da caixa nem usar metros como única regra. Metadados fixos + ResizeObserver/load; movimentos de ataques continuam em transform/opacity. Fallback deve usar geometria da fonte efetivamente carregada.

@@ -100,6 +100,7 @@
   align-items: center;
 }
 .battle-sprite {
+  --battle-sprite-limit: 160;
   position: relative;
   width: 40%;
   height: 100%;
@@ -119,10 +120,9 @@
   box-shadow: 0 4px 0 #374f3855;
 }
 .battle-sprite .sprite {
-  position: relative;
-  width: var(--species-size, 90%);
-  height: var(--species-size, 90%);
-  max-height: 160px;
+  position: absolute;
+  max-width: none;
+  max-height: none;
   object-fit: contain;
   object-position: center bottom;
   image-rendering: pixelated;

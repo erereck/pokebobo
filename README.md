@@ -1,6 +1,8 @@
-# Pokébobo — 0.15.0 · Uma estrela no mato
+# Pokébobo — 0.16.0 · Batalha na medida
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.16.0 calibra **o tamanho dos Pokémon em batalha por espécie, estilo e lado**. Pidgey fica pequeno, evoluções crescem e gigantes cabem na arena. Escala fixa no ciclo de animação, margens transparentes medidas, apoio na plataforma e adaptação a PC/celular/tela cheia. Cores shiny e regras/saves preservados. [Batalha 2D](docs/images/escala-2d-0.16-celular.png) · [Batalha 3D](docs/images/escala-3d-0.16-celular.png) · [Medição](docs/ESCALA-DOS-SPRITES.md).
 
 A 0.15.0 adiciona **shinies com chance de 1/1024** em iniciais e novos encontros, incluindo pesca, surf e eventos. Cores reais na captura e nas batalhas 2D/3D, com marca preservada em evolução, reserva, saves, Hall e Pokédex. O filtro **Shinies** reúne suas espécies raras. Sem bônus em stats/captura e sem novo sorteio ao repetir uma bola; Pokémon já gerados em saves antigos continuam normais. [Captura shiny](docs/images/shiny-captura-0.15-celular.png) · [Batalha shiny](docs/images/shiny-batalha-0.15-celular.png) · [Créditos](public/sprites/SHINY-ASSETS.md).
 

@@ -1,5 +1,9 @@
 # Onde editar
 
+## Escala dos sprites — 0.16.0
+
+Escala/apoio em `components/pokemon/battleSpriteLayout.js`, geometria por arquivo em `spriteGeometry.json` e calibração por espécie/estilo/lado em `battleSpeciesScale.json`. `features/battle/BattlePokemonSprite.jsx` mede a caixa e recebe a fonte carregada por `Sprite`; `BattleArena` compõe os lados. Limites responsive ficam nas variáveis --battle-sprite-limit do CSS. Dados estão na apresentação, não no motor/save. Geradores, decisões, reprodução e limites em [ESCALA-DOS-SPRITES.md](ESCALA-DOS-SPRITES.md); testes em `tests/battle-sprite-scale.test.js`.
+
 ## Hall, Future Sight e sprites — 0.14.0
 
 - Botão final do Hall: `src/app/App.jsx` passa `onHall` a `features/ending/Ending.jsx`; janela em `features/history/HallOfFameDialog.jsx`.
