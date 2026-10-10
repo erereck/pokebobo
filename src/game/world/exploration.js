@@ -51,6 +51,10 @@ export function completeRouteStep(r, id) {
   if (!e?.walk || e.walk.id !== id) return false;
   const index = e.walk.encounterIndex;
   e.walk = null;
+  if (e.steps >= EXPLORATION_RULES.maxRouteSteps) {
+    finishExploration(r);
+    return true;
+  }
   if (index != null) {
     revealWild(r, index);
     e.activeIndex = index;
@@ -67,6 +71,10 @@ export function finishExploration(r) {
 
 export function finishWildEncounter(r) {
   if (r.exploration) {
+    if (r.exploration.steps >= EXPLORATION_RULES.maxRouteSteps) {
+      finishExploration(r);
+      return;
+    }
     r.exploration.activeIndex = null;
     r.exploration.grassSteps = 0;
     r.exploration.cooldown = EXPLORATION_RULES.encounterCooldown;
@@ -108,7 +116,8 @@ export function moveExplorer(r, dx, dy, animate = false) {
     !mon.used && mon.habitat !== "water" ? [i] : [],
   );
   let index = null;
-  if (e.cooldown > 0) e.cooldown--;
+  if (e.steps >= EXPLORATION_RULES.maxRouteSteps) index = null;
+  else if (e.cooldown > 0) e.cooldown--;
   else if (isTallGrass(e, x, y) && candidates.length && r.balls > 0) {
     e.grassSteps = (e.grassSteps || 0) + 1;
     if (

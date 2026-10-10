@@ -1,0 +1,5288 @@
+{
+  "version": "0.12.0",
+  "seed": 20260913,
+  "runsPerStrategy": 20,
+  "mode": "rush",
+  "progression": {
+    "initialLevel": 10,
+    "maxLevel": 100,
+    "trainingMin": 1,
+    "trainingMax": 3,
+    "rushTrainingBonus": 1,
+    "travelLevels": 0,
+    "gymVictoryLevels": 1,
+    "leagueVictoryLevels": 1,
+    "ambushVictoryLevels": 0,
+    "gymCatchupThreshold": 10,
+    "gymCatchupLevels": 6,
+    "earlyTargetLevel": 10,
+    "leagueFirstLevel": 50,
+    "leagueLevelStep": 3,
+    "aceBonus": 2,
+    "captureMinLevel": 8,
+    "captureTargetOffset": -1,
+    "captureLevelSpread": 3
+  },
+  "durationSeconds": 5.18,
+  "methodology": "Campanhas completas com ações do reducer e batalhas reais @pkmn/sim. Mesmas seeds por estratégia; política de decisão usa RNG separado. Ambos os lados usam a IA observável. Limite de 180 turnos por combate: truncamentos são reportados separadamente, não contam como derrota. Vitórias não são estimativa de jogadores humanos.",
+  "summaries": [
+    {
+      "strategy": "balanced",
+      "runs": 20,
+      "completed": 20,
+      "censored": 0,
+      "wins": 1,
+      "winRate": 5,
+      "winRate95": [
+        0.89,
+        23.61
+      ],
+      "meanBadges": 6.2,
+      "leagueEntries": 10,
+      "medianLeagueLevel": 65,
+      "deaths": {
+        "Ginásio 4": 2,
+        "Ginásio 8": 3,
+        "Ginásio 6": 1,
+        "Liga 5": 4,
+        "Ginásio 5": 1,
+        "Liga 2": 2,
+        "Liga 4": 2,
+        "Ginásio 2": 2,
+        "Liga 1": 1,
+        "Ginásio 7": 1
+      },
+      "uniqueFinalSpecies": 66,
+      "byStarter": [
+        {
+          "starter": "Charmander",
+          "runs": 1,
+          "completed": 1,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            79.35
+          ],
+          "meanBadges": 8,
+          "leagueEntries": 1,
+          "medianLeagueLevel": 73,
+          "deaths": {
+            "Liga 5": 1
+          },
+          "uniqueFinalSpecies": 4
+        },
+        {
+          "starter": "Chimchar",
+          "runs": 1,
+          "completed": 1,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            79.35
+          ],
+          "meanBadges": 8,
+          "leagueEntries": 1,
+          "medianLeagueLevel": 54,
+          "deaths": {
+            "Liga 1": 1
+          },
+          "uniqueFinalSpecies": 5
+        },
+        {
+          "starter": "Cyndaquil",
+          "runs": 1,
+          "completed": 1,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            79.35
+          ],
+          "meanBadges": 3,
+          "leagueEntries": 0,
+          "medianLeagueLevel": null,
+          "deaths": {
+            "Ginásio 4": 1
+          },
+          "uniqueFinalSpecies": 5
+        },
+        {
+          "starter": "Litten",
+          "runs": 2,
+          "completed": 2,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            65.76
+          ],
+          "meanBadges": 4.5,
+          "leagueEntries": 1,
+          "medianLeagueLevel": 57,
+          "deaths": {
+            "Liga 4": 1,
+            "Ginásio 2": 1
+          },
+          "uniqueFinalSpecies": 9
+        },
+        {
+          "starter": "Mudkip",
+          "runs": 1,
+          "completed": 1,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            79.35
+          ],
+          "meanBadges": 5,
+          "leagueEntries": 0,
+          "medianLeagueLevel": null,
+          "deaths": {
+            "Ginásio 6": 1
+          },
+          "uniqueFinalSpecies": 5
+        },
+        {
+          "starter": "Oshawott",
+          "runs": 2,
+          "completed": 2,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            65.76
+          ],
+          "meanBadges": 8,
+          "leagueEntries": 2,
+          "medianLeagueLevel": 62,
+          "deaths": {
+            "Liga 5": 1,
+            "Liga 2": 1
+          },
+          "uniqueFinalSpecies": 7
+        },
+        {
+          "starter": "Piplup",
+          "runs": 1,
+          "completed": 1,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            79.35
+          ],
+          "meanBadges": 8,
+          "leagueEntries": 1,
+          "medianLeagueLevel": 65,
+          "deaths": {
+            "Liga 5": 1
+          },
+          "uniqueFinalSpecies": 4
+        },
+        {
+          "starter": "Popplio",
+          "runs": 1,
+          "completed": 1,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            79.35
+          ],
+          "meanBadges": 7,
+          "leagueEntries": 0,
+          "medianLeagueLevel": null,
+          "deaths": {
+            "Ginásio 8": 1
+          },
+          "uniqueFinalSpecies": 4
+        },
+        {
+          "starter": "Rowlet",
+          "runs": 2,
+          "completed": 2,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            65.76
+          ],
+          "meanBadges": 8,
+          "leagueEntries": 2,
+          "medianLeagueLevel": 72,
+          "deaths": {
+            "Liga 2": 1,
+            "Liga 5": 1
+          },
+          "uniqueFinalSpecies": 11
+        },
+        {
+          "starter": "Scorbunny",
+          "runs": 2,
+          "completed": 2,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            65.76
+          ],
+          "meanBadges": 2.5,
+          "leagueEntries": 0,
+          "medianLeagueLevel": null,
+          "deaths": {
+            "Ginásio 5": 1,
+            "Ginásio 2": 1
+          },
+          "uniqueFinalSpecies": 7
+        },
+        {
+          "starter": "Snivy",
+          "runs": 1,
+          "completed": 1,
+          "censored": 0,
+          "wins": 1,
+          "winRate": 100,
+          "winRate95": [
+            20.65,
+            100
+          ],
+          "meanBadges": 8,
+          "leagueEntries": 1,
+          "medianLeagueLevel": 79,
+          "deaths": {},
+          "uniqueFinalSpecies": 4
+        },
+        {
+          "starter": "Tepig",
+          "runs": 2,
+          "completed": 2,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            65.76
+          ],
+          "meanBadges": 5,
+          "leagueEntries": 0,
+          "medianLeagueLevel": null,
+          "deaths": {
+            "Ginásio 4": 1,
+            "Ginásio 8": 1
+          },
+          "uniqueFinalSpecies": 6
+        },
+        {
+          "starter": "Torchic",
+          "runs": 1,
+          "completed": 1,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            79.35
+          ],
+          "meanBadges": 7,
+          "leagueEntries": 0,
+          "medianLeagueLevel": null,
+          "deaths": {
+            "Ginásio 8": 1
+          },
+          "uniqueFinalSpecies": 6
+        },
+        {
+          "starter": "Totodile",
+          "runs": 1,
+          "completed": 1,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            79.35
+          ],
+          "meanBadges": 8,
+          "leagueEntries": 1,
+          "medianLeagueLevel": 69,
+          "deaths": {
+            "Liga 4": 1
+          },
+          "uniqueFinalSpecies": 6
+        },
+        {
+          "starter": "Turtwig",
+          "runs": 1,
+          "completed": 1,
+          "censored": 0,
+          "wins": 0,
+          "winRate": 0,
+          "winRate95": [
+            0,
+            79.35
+          ],
+          "meanBadges": 6,
+          "leagueEntries": 0,
+          "medianLeagueLevel": null,
+          "deaths": {
+            "Ginásio 7": 1
+          },
+          "uniqueFinalSpecies": 4
+        }
+      ],
+      "byOpponent": [
+        {
+          "kind": "ambush",
+          "name": "Contrabandista",
+          "encounters": 1,
+          "completed": 1,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            79.35
+          ],
+          "medianTurns": 2,
+          "medianPlayerLevel": 36,
+          "meanPartySize": 5
+        },
+        {
+          "kind": "ambush",
+          "name": "Mochileiro Caio",
+          "encounters": 4,
+          "completed": 4,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            48.99
+          ],
+          "medianTurns": 3,
+          "medianPlayerLevel": 41,
+          "meanPartySize": 4.5
+        },
+        {
+          "kind": "ambush",
+          "name": "Rival Nico",
+          "encounters": 7,
+          "completed": 7,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            35.43
+          ],
+          "medianTurns": 3,
+          "medianPlayerLevel": 46,
+          "meanPartySize": 4.714285714285714
+        },
+        {
+          "kind": "ambush",
+          "name": "Treinadora Bia",
+          "encounters": 4,
+          "completed": 4,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            48.99
+          ],
+          "medianTurns": 5,
+          "medianPlayerLevel": 27,
+          "meanPartySize": 3.5
+        },
+        {
+          "kind": "ambush",
+          "name": "Treinadora Lia",
+          "encounters": 8,
+          "completed": 8,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            32.44
+          ],
+          "medianTurns": 5,
+          "medianPlayerLevel": 24,
+          "meanPartySize": 4.25
+        },
+        {
+          "kind": "gym",
+          "name": "Blaine",
+          "encounters": 6,
+          "completed": 6,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            39.03
+          ],
+          "medianTurns": 5,
+          "medianPlayerLevel": 58,
+          "meanPartySize": 4.833333333333333
+        },
+        {
+          "kind": "gym",
+          "name": "Brawly",
+          "encounters": 4,
+          "completed": 4,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            48.99
+          ],
+          "medianTurns": 8,
+          "medianPlayerLevel": 30,
+          "meanPartySize": 4.5
+        },
+        {
+          "kind": "gym",
+          "name": "Brock",
+          "encounters": 7,
+          "completed": 7,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            35.43
+          ],
+          "medianTurns": 6,
+          "medianPlayerLevel": 25,
+          "meanPartySize": 4.571428571428571
+        },
+        {
+          "kind": "gym",
+          "name": "Bugsy",
+          "encounters": 6,
+          "completed": 6,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            39.03
+          ],
+          "medianTurns": 8,
+          "medianPlayerLevel": 30,
+          "meanPartySize": 4.333333333333333
+        },
+        {
+          "kind": "gym",
+          "name": "Byron",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 29,
+          "medianPlayerLevel": 53,
+          "meanPartySize": 5.5
+        },
+        {
+          "kind": "gym",
+          "name": "Candice",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 50,
+          "defeatRate95": [
+            9.45,
+            90.55
+          ],
+          "medianTurns": 18,
+          "medianPlayerLevel": 60,
+          "meanPartySize": 4
+        },
+        {
+          "kind": "gym",
+          "name": "Chuck",
+          "encounters": 3,
+          "completed": 3,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            56.15
+          ],
+          "medianTurns": 4,
+          "medianPlayerLevel": 52,
+          "meanPartySize": 4.666666666666667
+        },
+        {
+          "kind": "gym",
+          "name": "Clair",
+          "encounters": 4,
+          "completed": 4,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            48.99
+          ],
+          "medianTurns": 13,
+          "medianPlayerLevel": 61,
+          "meanPartySize": 5.25
+        },
+        {
+          "kind": "gym",
+          "name": "Clay",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 7,
+          "medianPlayerLevel": 51,
+          "meanPartySize": 4
+        },
+        {
+          "kind": "gym",
+          "name": "Crasher Wake",
+          "encounters": 4,
+          "completed": 4,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            48.99
+          ],
+          "medianTurns": 11,
+          "medianPlayerLevel": 44,
+          "meanPartySize": 5.25
+        },
+        {
+          "kind": "gym",
+          "name": "Elesa",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 8,
+          "medianPlayerLevel": 42,
+          "meanPartySize": 6
+        },
+        {
+          "kind": "gym",
+          "name": "Erika",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 9,
+          "medianPlayerLevel": 38,
+          "meanPartySize": 4.5
+        },
+        {
+          "kind": "gym",
+          "name": "Falkner",
+          "encounters": 5,
+          "completed": 5,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            43.45
+          ],
+          "medianTurns": 3,
+          "medianPlayerLevel": 23,
+          "meanPartySize": 4.2
+        },
+        {
+          "kind": "gym",
+          "name": "Fantina",
+          "encounters": 3,
+          "completed": 3,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            56.15
+          ],
+          "medianTurns": 6,
+          "medianPlayerLevel": 37,
+          "meanPartySize": 4.333333333333333
+        },
+        {
+          "kind": "gym",
+          "name": "Flannery",
+          "encounters": 4,
+          "completed": 4,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 25,
+          "defeatRate95": [
+            4.56,
+            69.94
+          ],
+          "medianTurns": 6,
+          "medianPlayerLevel": 43,
+          "meanPartySize": 4.25
+        },
+        {
+          "kind": "gym",
+          "name": "Gardenia",
+          "encounters": 4,
+          "completed": 4,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 25,
+          "defeatRate95": [
+            4.56,
+            69.94
+          ],
+          "medianTurns": 9,
+          "medianPlayerLevel": 29,
+          "meanPartySize": 4.25
+        },
+        {
+          "kind": "gym",
+          "name": "Giovanni",
+          "encounters": 3,
+          "completed": 3,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 33.33,
+          "defeatRate95": [
+            6.15,
+            79.23
+          ],
+          "medianTurns": 9,
+          "medianPlayerLevel": 68,
+          "meanPartySize": 6
+        },
+        {
+          "kind": "gym",
+          "name": "Jasmine",
+          "encounters": 3,
+          "completed": 3,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            56.15
+          ],
+          "medianTurns": 7,
+          "medianPlayerLevel": 54,
+          "meanPartySize": 4.666666666666667
+        },
+        {
+          "kind": "gym",
+          "name": "Juan",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 50,
+          "defeatRate95": [
+            9.45,
+            90.55
+          ],
+          "medianTurns": 14,
+          "medianPlayerLevel": 78,
+          "meanPartySize": 4
+        },
+        {
+          "kind": "gym",
+          "name": "Koga",
+          "encounters": 5,
+          "completed": 5,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 20,
+          "defeatRate95": [
+            3.62,
+            62.45
+          ],
+          "medianTurns": 12,
+          "medianPlayerLevel": 39,
+          "meanPartySize": 4.4
+        },
+        {
+          "kind": "gym",
+          "name": "Lt. Surge",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 6,
+          "medianPlayerLevel": 46,
+          "meanPartySize": 5
+        },
+        {
+          "kind": "gym",
+          "name": "Maylene",
+          "encounters": 6,
+          "completed": 6,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 16.67,
+          "defeatRate95": [
+            3.01,
+            56.35
+          ],
+          "medianTurns": 11,
+          "medianPlayerLevel": 39,
+          "meanPartySize": 4.833333333333333
+        },
+        {
+          "kind": "gym",
+          "name": "Milo",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 8,
+          "medianPlayerLevel": 25,
+          "meanPartySize": 4
+        },
+        {
+          "kind": "gym",
+          "name": "Misty",
+          "encounters": 3,
+          "completed": 3,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            56.15
+          ],
+          "medianTurns": 7,
+          "medianPlayerLevel": 27,
+          "meanPartySize": 4.666666666666667
+        },
+        {
+          "kind": "gym",
+          "name": "Morty",
+          "encounters": 4,
+          "completed": 4,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            48.99
+          ],
+          "medianTurns": 9,
+          "medianPlayerLevel": 44,
+          "meanPartySize": 4.25
+        },
+        {
+          "kind": "gym",
+          "name": "Nessa",
+          "encounters": 3,
+          "completed": 3,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 33.33,
+          "defeatRate95": [
+            6.15,
+            79.23
+          ],
+          "medianTurns": 10,
+          "medianPlayerLevel": 30,
+          "meanPartySize": 4.666666666666667
+        },
+        {
+          "kind": "gym",
+          "name": "Norman",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 8,
+          "medianPlayerLevel": 48,
+          "meanPartySize": 5
+        },
+        {
+          "kind": "gym",
+          "name": "Pryce",
+          "encounters": 3,
+          "completed": 3,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            56.15
+          ],
+          "medianTurns": 8,
+          "medianPlayerLevel": 57,
+          "meanPartySize": 5
+        },
+        {
+          "kind": "gym",
+          "name": "Roark",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 4,
+          "medianPlayerLevel": 24,
+          "meanPartySize": 4
+        },
+        {
+          "kind": "gym",
+          "name": "Roxanne",
+          "encounters": 4,
+          "completed": 4,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            48.99
+          ],
+          "medianTurns": 11,
+          "medianPlayerLevel": 24,
+          "meanPartySize": 4.5
+        },
+        {
+          "kind": "gym",
+          "name": "Sabrina",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 12,
+          "medianPlayerLevel": 53,
+          "meanPartySize": 5.5
+        },
+        {
+          "kind": "gym",
+          "name": "Skyla",
+          "encounters": 5,
+          "completed": 5,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            43.45
+          ],
+          "medianTurns": 5,
+          "medianPlayerLevel": 53,
+          "meanPartySize": 4.4
+        },
+        {
+          "kind": "gym",
+          "name": "Tate & Liza",
+          "encounters": 3,
+          "completed": 3,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            56.15
+          ],
+          "medianTurns": 13,
+          "medianPlayerLevel": 62,
+          "meanPartySize": 5.333333333333333
+        },
+        {
+          "kind": "gym",
+          "name": "Volkner",
+          "encounters": 4,
+          "completed": 4,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 25,
+          "defeatRate95": [
+            4.56,
+            69.94
+          ],
+          "medianTurns": 10,
+          "medianPlayerLevel": 62,
+          "meanPartySize": 4.25
+        },
+        {
+          "kind": "gym",
+          "name": "Wattson",
+          "encounters": 7,
+          "completed": 7,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            35.43
+          ],
+          "medianTurns": 11,
+          "medianPlayerLevel": 37,
+          "meanPartySize": 4.714285714285714
+        },
+        {
+          "kind": "gym",
+          "name": "Whitney",
+          "encounters": 6,
+          "completed": 6,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            39.03
+          ],
+          "medianTurns": 8,
+          "medianPlayerLevel": 32,
+          "meanPartySize": 4.5
+        },
+        {
+          "kind": "gym",
+          "name": "Winona",
+          "encounters": 3,
+          "completed": 3,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 33.33,
+          "defeatRate95": [
+            6.15,
+            79.23
+          ],
+          "medianTurns": 17,
+          "medianPlayerLevel": 48,
+          "meanPartySize": 5
+        },
+        {
+          "kind": "league",
+          "name": "Agatha",
+          "encounters": 1,
+          "completed": 1,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            79.35
+          ],
+          "medianTurns": 9,
+          "medianPlayerLevel": 66,
+          "meanPartySize": 4
+        },
+        {
+          "kind": "league",
+          "name": "Bruno",
+          "encounters": 5,
+          "completed": 5,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            43.45
+          ],
+          "medianTurns": 15,
+          "medianPlayerLevel": 63,
+          "meanPartySize": 5.4
+        },
+        {
+          "kind": "league",
+          "name": "Caitlin",
+          "encounters": 6,
+          "completed": 6,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            39.03
+          ],
+          "medianTurns": 14,
+          "medianPlayerLevel": 69,
+          "meanPartySize": 4.833333333333333
+        },
+        {
+          "kind": "league",
+          "name": "Cynthia",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 50,
+          "defeatRate95": [
+            9.45,
+            90.55
+          ],
+          "medianTurns": 27,
+          "medianPlayerLevel": 83,
+          "meanPartySize": 4
+        },
+        {
+          "kind": "league",
+          "name": "Drake",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 50,
+          "defeatRate95": [
+            9.45,
+            90.55
+          ],
+          "medianTurns": 21,
+          "medianPlayerLevel": 70,
+          "meanPartySize": 6
+        },
+        {
+          "kind": "league",
+          "name": "Kahili",
+          "encounters": 4,
+          "completed": 4,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 25,
+          "defeatRate95": [
+            4.56,
+            69.94
+          ],
+          "medianTurns": 12,
+          "medianPlayerLevel": 74,
+          "meanPartySize": 5
+        },
+        {
+          "kind": "league",
+          "name": "Karen",
+          "encounters": 5,
+          "completed": 5,
+          "censored": 0,
+          "playerDefeats": 1,
+          "defeatRate": 20,
+          "defeatRate95": [
+            3.62,
+            62.45
+          ],
+          "medianTurns": 15,
+          "medianPlayerLevel": 71,
+          "meanPartySize": 5.2
+        },
+        {
+          "kind": "league",
+          "name": "Lorelei",
+          "encounters": 1,
+          "completed": 1,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            79.35
+          ],
+          "medianTurns": 20,
+          "medianPlayerLevel": 64,
+          "meanPartySize": 5
+        },
+        {
+          "kind": "league",
+          "name": "Marshal",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 7,
+          "medianPlayerLevel": 72,
+          "meanPartySize": 5
+        },
+        {
+          "kind": "league",
+          "name": "Phoebe",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 2,
+          "defeatRate": 100,
+          "defeatRate95": [
+            34.24,
+            100
+          ],
+          "medianTurns": 35,
+          "medianPlayerLevel": 72,
+          "meanPartySize": 5
+        },
+        {
+          "kind": "league",
+          "name": "Sidney",
+          "encounters": 2,
+          "completed": 2,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            65.76
+          ],
+          "medianTurns": 15,
+          "medianPlayerLevel": 79,
+          "meanPartySize": 5
+        },
+        {
+          "kind": "league",
+          "name": "Steven",
+          "encounters": 3,
+          "completed": 3,
+          "censored": 0,
+          "playerDefeats": 3,
+          "defeatRate": 100,
+          "defeatRate95": [
+            43.85,
+            100
+          ],
+          "medianTurns": 16,
+          "medianPlayerLevel": 69,
+          "meanPartySize": 5
+        },
+        {
+          "kind": "league",
+          "name": "Will",
+          "encounters": 3,
+          "completed": 3,
+          "censored": 0,
+          "playerDefeats": 0,
+          "defeatRate": 0,
+          "defeatRate95": [
+            0,
+            56.15
+          ],
+          "medianTurns": 13,
+          "medianPlayerLevel": 73,
+          "meanPartySize": 4
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "seed": 2674696674,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Nuvema",
+      "starter": "Tepig",
+      "won": false,
+      "censored": false,
+      "badges": 3,
+      "leagueWins": 0,
+      "week": 13,
+      "party": [
+        {
+          "name": "Emboar",
+          "level": 41
+        },
+        {
+          "name": "Ampharos",
+          "level": 33
+        },
+        {
+          "name": "Boltund",
+          "level": 35
+        },
+        {
+          "name": "Stoutland",
+          "level": 35
+        }
+      ],
+      "box": [],
+      "route": [
+        "nuvema",
+        "cherrygrove",
+        "violet",
+        "azalea",
+        "goldenrod",
+        "veilstone",
+        "driftveil",
+        "olivine",
+        "mahogany",
+        "sootopolis"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "EVENT_CHOICE": 10,
+        "TRAIN": 7,
+        "MOVE_CHOICE": 29,
+        "PREPARE": 3
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Falkner",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 23,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 19,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Treinadora Bia",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 2,
+          "playerMaxLevel": 27,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 13,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Bugsy",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 27,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 23,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Whitney",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 35,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 25,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Maylene",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 15,
+          "playerMaxLevel": 41,
+          "partySize": 4,
+          "losses": 4,
+          "leaderMaxLevel": 32,
+          "boost": 0,
+          "winner": "Maylene",
+          "engineWinner": "Maylene",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 1034165139,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Nuvema",
+      "starter": "Tepig",
+      "won": false,
+      "censored": false,
+      "badges": 7,
+      "leagueWins": 0,
+      "week": 21,
+      "party": [
+        {
+          "name": "Emboar",
+          "level": 57
+        },
+        {
+          "name": "Liepard",
+          "level": 55
+        },
+        {
+          "name": "Boltund",
+          "level": 56
+        },
+        {
+          "name": "Ariados",
+          "level": 56
+        }
+      ],
+      "box": [],
+      "route": [
+        "nuvema",
+        "cherrygrove",
+        "rustboro",
+        "azalea",
+        "goldenrod",
+        "celadon",
+        "pastoria",
+        "fortree",
+        "snowpoint",
+        "sootopolis"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "EVENT_CHOICE": 14,
+        "TRAIN": 13,
+        "MOVE_CHOICE": 39,
+        "PREPARE": 6
+      },
+      "battles": [
+        {
+          "kind": "ambush",
+          "name": "Rival Nico",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 7,
+          "playerMaxLevel": 10,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 10,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Roxanne",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 13,
+          "playerMaxLevel": 24,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 15,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Bugsy",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 30,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 23,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Whitney",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 35,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 25,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Erika",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 38,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 29,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Crasher Wake",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 11,
+          "playerMaxLevel": 42,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 37,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Winona",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 9,
+          "playerMaxLevel": 48,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 39,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Candice",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 53,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 44,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Juan",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 14,
+          "playerMaxLevel": 57,
+          "partySize": 4,
+          "losses": 4,
+          "leaderMaxLevel": 52,
+          "boost": 6,
+          "winner": "Juan",
+          "engineWinner": "Juan",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3688600900,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Littleroot",
+      "starter": "Mudkip",
+      "won": false,
+      "censored": false,
+      "badges": 5,
+      "leagueWins": 0,
+      "week": 17,
+      "party": [
+        {
+          "name": "Swampert",
+          "level": 46
+        },
+        {
+          "name": "Noctowl",
+          "level": 44
+        },
+        {
+          "name": "Beautifly",
+          "level": 45
+        },
+        {
+          "name": "Heracross",
+          "level": 44
+        },
+        {
+          "name": "Kadabra",
+          "level": 31
+        }
+      ],
+      "box": [],
+      "route": [
+        "littleroot",
+        "cherrygrove",
+        "violet",
+        "azalea",
+        "goldenrod",
+        "veilstone",
+        "pastoria",
+        "fortree",
+        "snowpoint",
+        "viridian"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "EVENT_CHOICE": 12,
+        "TRAIN": 9,
+        "MOVE_CHOICE": 42,
+        "PREPARE": 6
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Falkner",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 23,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 19,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Bugsy",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 11,
+          "playerMaxLevel": 27,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 23,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Whitney",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 9,
+          "playerMaxLevel": 32,
+          "partySize": 5,
+          "losses": 1,
+          "leaderMaxLevel": 25,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Maylene",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 9,
+          "playerMaxLevel": 35,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 32,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Mochileiro Caio",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 41,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 33,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Crasher Wake",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 11,
+          "playerMaxLevel": 42,
+          "partySize": 5,
+          "losses": 1,
+          "leaderMaxLevel": 37,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Winona",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 25,
+          "playerMaxLevel": 46,
+          "partySize": 5,
+          "losses": 5,
+          "leaderMaxLevel": 39,
+          "boost": 6,
+          "winner": "Winona",
+          "engineWinner": "Winona",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 2048069365,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Nuvema",
+      "starter": "Snivy",
+      "won": true,
+      "censored": false,
+      "badges": 8,
+      "leagueWins": 5,
+      "week": 25,
+      "party": [
+        {
+          "name": "Serperior",
+          "level": 84
+        },
+        {
+          "name": "Pidgeot",
+          "level": 78
+        },
+        {
+          "name": "Stoutland",
+          "level": 78
+        },
+        {
+          "name": "Luxray",
+          "level": 79
+        }
+      ],
+      "box": [],
+      "route": [
+        "nuvema",
+        "accumula",
+        "violet",
+        "dewford",
+        "vermilion",
+        "veilstone",
+        "fuchsia",
+        "olivine",
+        "cinnabar",
+        "sootopolis"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "EVENT_CHOICE": 19,
+        "TRAIN": 16,
+        "MOVE_CHOICE": 42,
+        "PREPARE": 6,
+        "CHALLENGE": 5
+      },
+      "battles": [
+        {
+          "kind": "ambush",
+          "name": "Mochileiro Caio",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 2,
+          "playerMaxLevel": 25,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 10,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Falkner",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 34,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 19,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Brawly",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 41,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 25,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Lt. Surge",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 46,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 30,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Maylene",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 11,
+          "playerMaxLevel": 50,
+          "partySize": 4,
+          "losses": 2,
+          "leaderMaxLevel": 38,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Koga",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 11,
+          "playerMaxLevel": 55,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 49,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Rival Nico",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 58,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 31,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Jasmine",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 7,
+          "playerMaxLevel": 61,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 41,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Blaine",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 67,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 53,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Juan",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 13,
+          "playerMaxLevel": 78,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 52,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Sidney",
+          "stage": 9,
+          "leagueIndex": 1,
+          "turns": 11,
+          "playerMaxLevel": 79,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 52,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Karen",
+          "stage": 9,
+          "leagueIndex": 2,
+          "turns": 15,
+          "playerMaxLevel": 80,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 55,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Caitlin",
+          "stage": 9,
+          "leagueIndex": 3,
+          "turns": 15,
+          "playerMaxLevel": 81,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 58,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Will",
+          "stage": 9,
+          "leagueIndex": 4,
+          "turns": 13,
+          "playerMaxLevel": 82,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 61,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Cynthia",
+          "stage": 9,
+          "leagueIndex": 5,
+          "turns": 21,
+          "playerMaxLevel": 83,
+          "partySize": 4,
+          "losses": 2,
+          "leaderMaxLevel": 64,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 407537830,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Nuvema",
+      "starter": "Oshawott",
+      "won": false,
+      "censored": false,
+      "badges": 8,
+      "leagueWins": 4,
+      "week": 21,
+      "party": [
+        {
+          "name": "Samurott",
+          "level": 66
+        },
+        {
+          "name": "Stoutland",
+          "level": 62
+        },
+        {
+          "name": "Watchog",
+          "level": 60
+        },
+        {
+          "name": "Quagsire",
+          "level": 62
+        },
+        {
+          "name": "Tentacruel",
+          "level": 54
+        }
+      ],
+      "box": [],
+      "route": [
+        "nuvema",
+        "cherrygrove",
+        "turffield",
+        "azalea",
+        "mauville",
+        "ecruteak",
+        "fuchsia",
+        "saffron",
+        "cinnabar",
+        "blackthorn"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "EVENT_CHOICE": 13,
+        "TRAIN": 13,
+        "MOVE_CHOICE": 48,
+        "PREPARE": 6,
+        "CHALLENGE": 5
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Milo",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 23,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 20,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Bugsy",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 30,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 23,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Wattson",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 40,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 30,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Treinadora Bia",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 46,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 21,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Morty",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 91,
+          "playerMaxLevel": 46,
+          "partySize": 4,
+          "losses": 3,
+          "leaderMaxLevel": 31,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Koga",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 10,
+          "playerMaxLevel": 49,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 43,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Sabrina",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 10,
+          "playerMaxLevel": 53,
+          "partySize": 5,
+          "losses": 1,
+          "leaderMaxLevel": 49,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Blaine",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 57,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 53,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Clair",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 12,
+          "playerMaxLevel": 61,
+          "partySize": 5,
+          "losses": 1,
+          "leaderMaxLevel": 47,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Caitlin",
+          "stage": 9,
+          "leagueIndex": 1,
+          "turns": 14,
+          "playerMaxLevel": 62,
+          "partySize": 5,
+          "losses": 1,
+          "leaderMaxLevel": 52,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Bruno",
+          "stage": 9,
+          "leagueIndex": 2,
+          "turns": 7,
+          "playerMaxLevel": 63,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 55,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Lorelei",
+          "stage": 9,
+          "leagueIndex": 3,
+          "turns": 20,
+          "playerMaxLevel": 64,
+          "partySize": 5,
+          "losses": 3,
+          "leaderMaxLevel": 58,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Karen",
+          "stage": 9,
+          "leagueIndex": 4,
+          "turns": 13,
+          "playerMaxLevel": 65,
+          "partySize": 5,
+          "losses": 2,
+          "leaderMaxLevel": 61,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Steven",
+          "stage": 9,
+          "leagueIndex": 5,
+          "turns": 16,
+          "playerMaxLevel": 66,
+          "partySize": 5,
+          "losses": 5,
+          "leaderMaxLevel": 64,
+          "boost": 0,
+          "winner": "Steven",
+          "engineWinner": "Steven",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3061973591,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Postwick",
+      "starter": "Scorbunny",
+      "won": false,
+      "censored": false,
+      "badges": 4,
+      "leagueWins": 0,
+      "week": 16,
+      "party": [
+        {
+          "name": "Cinderace",
+          "level": 38
+        },
+        {
+          "name": "Dubwool",
+          "level": 39
+        },
+        {
+          "name": "Boltund",
+          "level": 37
+        },
+        {
+          "name": "Gastrodon",
+          "level": 39
+        }
+      ],
+      "box": [],
+      "route": [
+        "postwick",
+        "sandgem",
+        "violet",
+        "eterna",
+        "goldenrod",
+        "lavaridge",
+        "fuchsia",
+        "fortree",
+        "mossdeep",
+        "sunyshore"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "EVENT_CHOICE": 13,
+        "TRAIN": 9,
+        "MOVE_CHOICE": 25,
+        "PREPARE": 5
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Falkner",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 26,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 19,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Gardenia",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 9,
+          "playerMaxLevel": 29,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 22,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Whitney",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 32,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 25,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Flannery",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 36,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 29,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Koga",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 19,
+          "playerMaxLevel": 39,
+          "partySize": 4,
+          "losses": 4,
+          "leaderMaxLevel": 43,
+          "boost": 0,
+          "winner": "Koga",
+          "engineWinner": "Koga",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 1421442056,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Hau’oli",
+      "starter": "Rowlet",
+      "won": false,
+      "censored": false,
+      "badges": 8,
+      "leagueWins": 1,
+      "week": 21,
+      "party": [
+        {
+          "name": "Decidueye",
+          "level": 58
+        },
+        {
+          "name": "Toucannon",
+          "level": 58
+        },
+        {
+          "name": "Roserade",
+          "level": 58
+        },
+        {
+          "name": "Luxray",
+          "level": 55
+        },
+        {
+          "name": "Golem",
+          "level": 55
+        },
+        {
+          "name": "Espeon",
+          "level": 48
+        }
+      ],
+      "box": [],
+      "route": [
+        "hauoli",
+        "sandgem",
+        "pewter",
+        "eterna",
+        "hearthome",
+        "nimbasa",
+        "pastoria",
+        "saffron",
+        "mossdeep",
+        "blackthorn"
+      ],
+      "actions": {
+        "EXPLORE": 2,
+        "EVENT_CHOICE": 13,
+        "TRAIN": 13,
+        "MOVE_CHOICE": 63,
+        "PREPARE": 5,
+        "CHALLENGE": 2
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Brock",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 10,
+          "playerMaxLevel": 19,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 14,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Gardenia",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 23,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 22,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Rival Nico",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 29,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 22,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Fantina",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 10,
+          "playerMaxLevel": 33,
+          "partySize": 5,
+          "losses": 1,
+          "leaderMaxLevel": 26,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Contrabandista",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 2,
+          "playerMaxLevel": 36,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 23,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Elesa",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 39,
+          "partySize": 6,
+          "losses": 2,
+          "leaderMaxLevel": 33,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Crasher Wake",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 9,
+          "playerMaxLevel": 44,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 37,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Sabrina",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 12,
+          "playerMaxLevel": 48,
+          "partySize": 6,
+          "losses": 2,
+          "leaderMaxLevel": 43,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Tate & Liza",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 13,
+          "playerMaxLevel": 52,
+          "partySize": 6,
+          "losses": 2,
+          "leaderMaxLevel": 48,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Clair",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 11,
+          "playerMaxLevel": 56,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 47,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Bruno",
+          "stage": 9,
+          "leagueIndex": 1,
+          "turns": 22,
+          "playerMaxLevel": 57,
+          "partySize": 6,
+          "losses": 3,
+          "leaderMaxLevel": 52,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Drake",
+          "stage": 9,
+          "leagueIndex": 2,
+          "turns": 15,
+          "playerMaxLevel": 58,
+          "partySize": 6,
+          "losses": 6,
+          "leaderMaxLevel": 55,
+          "boost": 0,
+          "winner": "Drake",
+          "engineWinner": "Drake",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 4075877817,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Nuvema",
+      "starter": "Oshawott",
+      "won": false,
+      "censored": false,
+      "badges": 8,
+      "leagueWins": 1,
+      "week": 21,
+      "party": [
+        {
+          "name": "Samurott",
+          "level": 62
+        },
+        {
+          "name": "Stoutland",
+          "level": 62
+        },
+        {
+          "name": "Zebstrika",
+          "level": 61
+        },
+        {
+          "name": "Unfezant",
+          "level": 61
+        }
+      ],
+      "box": [],
+      "route": [
+        "nuvema",
+        "accumula",
+        "pewter",
+        "hulbury",
+        "mauville",
+        "ecruteak",
+        "petalburg",
+        "mistralton",
+        "cinnabar",
+        "sunyshore"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "TRAIN": 13,
+        "MOVE_CHOICE": 41,
+        "EVENT_CHOICE": 13,
+        "PREPARE": 6,
+        "CHALLENGE": 2
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Brock",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 27,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 20,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Nessa",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 10,
+          "playerMaxLevel": 30,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 24,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Wattson",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 10,
+          "playerMaxLevel": 39,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 30,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Morty",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 43,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 31,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Rival Nico",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 46,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 27,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Norman",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 46,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 37,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Skyla",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 53,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 41,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Blaine",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 56,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 47,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Volkner",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 10,
+          "playerMaxLevel": 60,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 56,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Marshal",
+          "stage": 9,
+          "leagueIndex": 1,
+          "turns": 7,
+          "playerMaxLevel": 61,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 52,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Phoebe",
+          "stage": 9,
+          "leagueIndex": 2,
+          "turns": 27,
+          "playerMaxLevel": 62,
+          "partySize": 4,
+          "losses": 4,
+          "leaderMaxLevel": 55,
+          "boost": 0,
+          "winner": "Phoebe",
+          "engineWinner": "Phoebe",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 2435346282,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Hau’oli",
+      "starter": "Litten",
+      "won": false,
+      "censored": false,
+      "badges": 8,
+      "leagueWins": 3,
+      "week": 21,
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 60
+        },
+        {
+          "name": "Gumshoos",
+          "level": 57
+        },
+        {
+          "name": "Lanturn",
+          "level": 58
+        },
+        {
+          "name": "Crobat",
+          "level": 52
+        },
+        {
+          "name": "Ludicolo",
+          "level": 54
+        },
+        {
+          "name": "Starmie",
+          "level": 50
+        }
+      ],
+      "box": [],
+      "route": [
+        "hauoli",
+        "oldale",
+        "pewter",
+        "dewford",
+        "goldenrod",
+        "celadon",
+        "fuchsia",
+        "mistralton",
+        "cinnabar",
+        "blackthorn"
+      ],
+      "actions": {
+        "EXPLORE": 2,
+        "EVENT_CHOICE": 15,
+        "TRAIN": 12,
+        "MOVE_CHOICE": 57,
+        "PREPARE": 6,
+        "CHALLENGE": 4
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Brock",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 22,
+          "partySize": 5,
+          "losses": 1,
+          "leaderMaxLevel": 14,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Brawly",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 16,
+          "playerMaxLevel": 26,
+          "partySize": 5,
+          "losses": 1,
+          "leaderMaxLevel": 19,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Whitney",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 29,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 25,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Erika",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 9,
+          "playerMaxLevel": 35,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 29,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Mochileiro Caio",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 38,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 39,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Koga",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 12,
+          "playerMaxLevel": 39,
+          "partySize": 5,
+          "losses": 3,
+          "leaderMaxLevel": 43,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Skyla",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 9,
+          "playerMaxLevel": 43,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 35,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Blaine",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 49,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 47,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Clair",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 13,
+          "playerMaxLevel": 56,
+          "partySize": 6,
+          "losses": 2,
+          "leaderMaxLevel": 47,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Bruno",
+          "stage": 9,
+          "leagueIndex": 1,
+          "turns": 15,
+          "playerMaxLevel": 57,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 52,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Sidney",
+          "stage": 9,
+          "leagueIndex": 2,
+          "turns": 15,
+          "playerMaxLevel": 58,
+          "partySize": 6,
+          "losses": 2,
+          "leaderMaxLevel": 55,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Caitlin",
+          "stage": 9,
+          "leagueIndex": 3,
+          "turns": 13,
+          "playerMaxLevel": 59,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 58,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Kahili",
+          "stage": 9,
+          "leagueIndex": 4,
+          "turns": 14,
+          "playerMaxLevel": 60,
+          "partySize": 6,
+          "losses": 6,
+          "leaderMaxLevel": 61,
+          "boost": 0,
+          "winner": "Kahili",
+          "engineWinner": "Kahili",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 794814747,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Littleroot",
+      "starter": "Torchic",
+      "won": false,
+      "censored": false,
+      "badges": 7,
+      "leagueWins": 0,
+      "week": 23,
+      "party": [
+        {
+          "name": "Blaziken",
+          "level": 60
+        },
+        {
+          "name": "Heracross",
+          "level": 59
+        },
+        {
+          "name": "Mightyena",
+          "level": 57
+        },
+        {
+          "name": "Excadrill",
+          "level": 54
+        },
+        {
+          "name": "Roserade",
+          "level": 55
+        },
+        {
+          "name": "Shiftry",
+          "level": 54
+        }
+      ],
+      "box": [
+        {
+          "name": "Lanturn",
+          "level": 43
+        }
+      ],
+      "route": [
+        "littleroot",
+        "oldale",
+        "pewter",
+        "hulbury",
+        "mauville",
+        "nimbasa",
+        "cianwood",
+        "fortree",
+        "mahogany",
+        "viridian"
+      ],
+      "actions": {
+        "EXPLORE": 2,
+        "EVENT_CHOICE": 17,
+        "TRAIN": 12,
+        "MOVE_CHOICE": 77,
+        "PREPARE": 7
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Brock",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 26,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 20,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Nessa",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 32,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 24,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Treinadora Lia",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 37,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 20,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Wattson",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 11,
+          "playerMaxLevel": 38,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 30,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Elesa",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 42,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 33,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Chuck",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 47,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 37,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Winona",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 17,
+          "playerMaxLevel": 52,
+          "partySize": 6,
+          "losses": 2,
+          "leaderMaxLevel": 39,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Pryce",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 57,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 40,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Giovanni",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 28,
+          "playerMaxLevel": 60,
+          "partySize": 6,
+          "losses": 6,
+          "leaderMaxLevel": 56,
+          "boost": 6,
+          "winner": "Giovanni",
+          "engineWinner": "Giovanni",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3449250508,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Hau’oli",
+      "starter": "Popplio",
+      "won": false,
+      "censored": false,
+      "badges": 7,
+      "leagueWins": 0,
+      "week": 22,
+      "party": [
+        {
+          "name": "Primarina",
+          "level": 62
+        },
+        {
+          "name": "Vileplume",
+          "level": 55
+        },
+        {
+          "name": "Palossand",
+          "level": 57
+        },
+        {
+          "name": "Toucannon",
+          "level": 55
+        }
+      ],
+      "box": [],
+      "route": [
+        "hauoli",
+        "oldale",
+        "oreburgh",
+        "cerulean",
+        "mauville",
+        "veilstone",
+        "driftveil",
+        "mistralton",
+        "cinnabar",
+        "sunyshore"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "EVENT_CHOICE": 17,
+        "TRAIN": 13,
+        "MOVE_CHOICE": 39,
+        "PREPARE": 6
+      },
+      "battles": [
+        {
+          "kind": "ambush",
+          "name": "Treinadora Lia",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 10,
+          "playerMaxLevel": 11,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 10,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Treinadora Lia",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 24,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 10,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Roark",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 24,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 20,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Misty",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 27,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 21,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Rival Nico",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 30,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 20,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Wattson",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 17,
+          "playerMaxLevel": 30,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 24,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Maylene",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 39,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 32,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Clay",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 7,
+          "playerMaxLevel": 45,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 37,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Skyla",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 49,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 41,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Blaine",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 58,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 53,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Volkner",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 24,
+          "playerMaxLevel": 62,
+          "partySize": 4,
+          "losses": 4,
+          "leaderMaxLevel": 56,
+          "boost": 6,
+          "winner": "Volkner",
+          "engineWinner": "Volkner",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 1808718973,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Twinleaf",
+      "starter": "Piplup",
+      "won": false,
+      "censored": false,
+      "badges": 8,
+      "leagueWins": 4,
+      "week": 22,
+      "party": [
+        {
+          "name": "Empoleon",
+          "level": 69
+        },
+        {
+          "name": "Bibarel",
+          "level": 67
+        },
+        {
+          "name": "Tentacruel",
+          "level": 69
+        },
+        {
+          "name": "Azumarill",
+          "level": 69
+        }
+      ],
+      "box": [],
+      "route": [
+        "twinleaf",
+        "cherrygrove",
+        "rustboro",
+        "azalea",
+        "mauville",
+        "lavaridge",
+        "driftveil",
+        "olivine",
+        "mahogany",
+        "blackthorn"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "EVENT_CHOICE": 16,
+        "TRAIN": 16,
+        "MOVE_CHOICE": 39,
+        "PREPARE": 4,
+        "CHALLENGE": 5
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Roxanne",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 10,
+          "playerMaxLevel": 24,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 15,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Bugsy",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 30,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 23,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Wattson",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 13,
+          "playerMaxLevel": 37,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 30,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Flannery",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 43,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 35,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Clay",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 7,
+          "playerMaxLevel": 51,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 37,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Jasmine",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 54,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 41,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Pryce",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 7,
+          "playerMaxLevel": 58,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 40,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Clair",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 20,
+          "playerMaxLevel": 64,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 47,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Caitlin",
+          "stage": 9,
+          "leagueIndex": 1,
+          "turns": 15,
+          "playerMaxLevel": 65,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 52,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Agatha",
+          "stage": 9,
+          "leagueIndex": 2,
+          "turns": 9,
+          "playerMaxLevel": 66,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 55,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Kahili",
+          "stage": 9,
+          "leagueIndex": 3,
+          "turns": 12,
+          "playerMaxLevel": 67,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 58,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Will",
+          "stage": 9,
+          "leagueIndex": 4,
+          "turns": 16,
+          "playerMaxLevel": 68,
+          "partySize": 4,
+          "losses": 3,
+          "leaderMaxLevel": 61,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Steven",
+          "stage": 9,
+          "leagueIndex": 5,
+          "turns": 12,
+          "playerMaxLevel": 69,
+          "partySize": 4,
+          "losses": 4,
+          "leaderMaxLevel": 64,
+          "boost": 0,
+          "winner": "Steven",
+          "engineWinner": "Steven",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 168187438,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Pallet",
+      "starter": "Charmander",
+      "won": false,
+      "censored": false,
+      "badges": 8,
+      "leagueWins": 4,
+      "week": 21,
+      "party": [
+        {
+          "name": "Charizard",
+          "level": 77
+        },
+        {
+          "name": "Espeon",
+          "level": 72
+        },
+        {
+          "name": "Nidoking",
+          "level": 74
+        },
+        {
+          "name": "Luxray",
+          "level": 73
+        }
+      ],
+      "box": [],
+      "route": [
+        "pallet",
+        "accumula",
+        "pewter",
+        "eterna",
+        "hearthome",
+        "ecruteak",
+        "cianwood",
+        "mistralton",
+        "mossdeep",
+        "sunyshore"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "TRAIN": 16,
+        "EVENT_CHOICE": 14,
+        "MOVE_CHOICE": 45,
+        "PREPARE": 3,
+        "CHALLENGE": 5
+      },
+      "battles": [
+        {
+          "kind": "ambush",
+          "name": "Treinadora Bia",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 15,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 10,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Brock",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 29,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 20,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Gardenia",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 35,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 28,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Fantina",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 40,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 32,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Morty",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 44,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 31,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Chuck",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 52,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 37,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Skyla",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 60,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 41,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Tate & Liza",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 22,
+          "playerMaxLevel": 68,
+          "partySize": 4,
+          "losses": 2,
+          "leaderMaxLevel": 48,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Volkner",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 72,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 56,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Will",
+          "stage": 9,
+          "leagueIndex": 1,
+          "turns": 9,
+          "playerMaxLevel": 73,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 52,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Kahili",
+          "stage": 9,
+          "leagueIndex": 2,
+          "turns": 12,
+          "playerMaxLevel": 74,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 55,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Caitlin",
+          "stage": 9,
+          "leagueIndex": 3,
+          "turns": 13,
+          "playerMaxLevel": 75,
+          "partySize": 4,
+          "losses": 2,
+          "leaderMaxLevel": 58,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Bruno",
+          "stage": 9,
+          "leagueIndex": 4,
+          "turns": 13,
+          "playerMaxLevel": 76,
+          "partySize": 4,
+          "losses": 2,
+          "leaderMaxLevel": 61,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Cynthia",
+          "stage": 9,
+          "leagueIndex": 5,
+          "turns": 27,
+          "playerMaxLevel": 77,
+          "partySize": 4,
+          "losses": 4,
+          "leaderMaxLevel": 64,
+          "boost": 0,
+          "winner": "Cynthia",
+          "engineWinner": "Cynthia",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 2822623199,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Postwick",
+      "starter": "Scorbunny",
+      "won": false,
+      "censored": false,
+      "badges": 1,
+      "leagueWins": 0,
+      "week": 9,
+      "party": [
+        {
+          "name": "Raboot",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 24
+        },
+        {
+          "name": "Dubwool",
+          "level": 24
+        },
+        {
+          "name": "Espeon",
+          "level": 22
+        }
+      ],
+      "box": [],
+      "route": [
+        "postwick",
+        "cherrygrove",
+        "rustboro",
+        "hulbury",
+        "hearthome",
+        "veilstone",
+        "pastoria",
+        "saffron",
+        "mossdeep",
+        "viridian"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "EVENT_CHOICE": 4,
+        "TRAIN": 4,
+        "MOVE_CHOICE": 12,
+        "PREPARE": 2
+      },
+      "battles": [
+        {
+          "kind": "ambush",
+          "name": "Treinadora Lia",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 20,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 11,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Roxanne",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 11,
+          "playerMaxLevel": 20,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 15,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Nessa",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 12,
+          "playerMaxLevel": 24,
+          "partySize": 4,
+          "losses": 4,
+          "leaderMaxLevel": 24,
+          "boost": 0,
+          "winner": "Nessa",
+          "engineWinner": "Nessa",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 1182091664,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Hau’oli",
+      "starter": "Rowlet",
+      "won": false,
+      "censored": false,
+      "badges": 8,
+      "leagueWins": 4,
+      "week": 24,
+      "party": [
+        {
+          "name": "Decidueye",
+          "level": 76
+        },
+        {
+          "name": "Starmie",
+          "level": 72
+        },
+        {
+          "name": "Gumshoos",
+          "level": 71
+        },
+        {
+          "name": "Gigalith",
+          "level": 67
+        },
+        {
+          "name": "Camerupt",
+          "level": 67
+        },
+        {
+          "name": "Zebstrika",
+          "level": 68
+        }
+      ],
+      "box": [
+        {
+          "name": "Rapidash",
+          "level": 62
+        }
+      ],
+      "route": [
+        "hauoli",
+        "accumula",
+        "pewter",
+        "cerulean",
+        "mauville",
+        "veilstone",
+        "petalburg",
+        "olivine",
+        "mossdeep",
+        "viridian"
+      ],
+      "actions": {
+        "EXPLORE": 2,
+        "TRAIN": 16,
+        "MOVE_CHOICE": 70,
+        "EVENT_CHOICE": 19,
+        "PREPARE": 4,
+        "CHALLENGE": 5
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Brock",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 25,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 20,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Misty",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 31,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 27,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Wattson",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 34,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 30,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Maylene",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 39,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 32,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Norman",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 48,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 37,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Rival Nico",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 52,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 31,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Jasmine",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 53,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 41,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Tate & Liza",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 10,
+          "playerMaxLevel": 62,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 48,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Giovanni",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 9,
+          "playerMaxLevel": 71,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 56,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Marshal",
+          "stage": 9,
+          "leagueIndex": 1,
+          "turns": 6,
+          "playerMaxLevel": 72,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 52,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Karen",
+          "stage": 9,
+          "leagueIndex": 2,
+          "turns": 11,
+          "playerMaxLevel": 73,
+          "partySize": 6,
+          "losses": 2,
+          "leaderMaxLevel": 55,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Kahili",
+          "stage": 9,
+          "leagueIndex": 3,
+          "turns": 12,
+          "playerMaxLevel": 74,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 58,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Bruno",
+          "stage": 9,
+          "leagueIndex": 4,
+          "turns": 18,
+          "playerMaxLevel": 75,
+          "partySize": 6,
+          "losses": 4,
+          "leaderMaxLevel": 61,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Steven",
+          "stage": 9,
+          "leagueIndex": 5,
+          "turns": 22,
+          "playerMaxLevel": 76,
+          "partySize": 6,
+          "losses": 6,
+          "leaderMaxLevel": 64,
+          "boost": 0,
+          "winner": "Steven",
+          "engineWinner": "Steven",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3836527425,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "New Bark",
+      "starter": "Cyndaquil",
+      "won": false,
+      "censored": false,
+      "badges": 3,
+      "leagueWins": 0,
+      "week": 13,
+      "party": [
+        {
+          "name": "Quilava",
+          "level": 33
+        },
+        {
+          "name": "Furret",
+          "level": 29
+        },
+        {
+          "name": "Lucario",
+          "level": 29
+        },
+        {
+          "name": "Blitzle",
+          "level": 25
+        },
+        {
+          "name": "Kirlia",
+          "level": 26
+        }
+      ],
+      "box": [],
+      "route": [
+        "newbark",
+        "accumula",
+        "violet",
+        "dewford",
+        "goldenrod",
+        "lavaridge",
+        "petalburg",
+        "fortree",
+        "snowpoint",
+        "blackthorn"
+      ],
+      "actions": {
+        "EXPLORE": 2,
+        "EVENT_CHOICE": 6,
+        "TRAIN": 6,
+        "PREPARE": 3,
+        "MOVE_CHOICE": 23
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Falkner",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 17,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 13,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Brawly",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 20,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 19,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Whitney",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 15,
+          "playerMaxLevel": 25,
+          "partySize": 5,
+          "losses": 1,
+          "leaderMaxLevel": 19,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Flannery",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 11,
+          "playerMaxLevel": 33,
+          "partySize": 5,
+          "losses": 5,
+          "leaderMaxLevel": 29,
+          "boost": 0,
+          "winner": "Flannery",
+          "engineWinner": "Flannery",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 2195995890,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Twinleaf",
+      "starter": "Chimchar",
+      "won": false,
+      "censored": false,
+      "badges": 8,
+      "leagueWins": 0,
+      "week": 21,
+      "party": [
+        {
+          "name": "Infernape",
+          "level": 54
+        },
+        {
+          "name": "Bibarel",
+          "level": 51
+        },
+        {
+          "name": "Alakazam",
+          "level": 47
+        },
+        {
+          "name": "Gardevoir",
+          "level": 47
+        },
+        {
+          "name": "Heracross",
+          "level": 45
+        }
+      ],
+      "box": [],
+      "route": [
+        "twinleaf",
+        "accumula",
+        "pewter",
+        "cerulean",
+        "mauville",
+        "ecruteak",
+        "fuchsia",
+        "canalave",
+        "mahogany",
+        "sunyshore"
+      ],
+      "actions": {
+        "EXPLORE": 2,
+        "EVENT_CHOICE": 16,
+        "TRAIN": 10,
+        "MOVE_CHOICE": 36,
+        "PREPARE": 8,
+        "CHALLENGE": 1
+      },
+      "battles": [
+        {
+          "kind": "ambush",
+          "name": "Treinadora Bia",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 11,
+          "partySize": 2,
+          "losses": 0,
+          "leaderMaxLevel": 10,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Brock",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 10,
+          "playerMaxLevel": 23,
+          "partySize": 2,
+          "losses": 1,
+          "leaderMaxLevel": 14,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Treinadora Lia",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 24,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 17,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Misty",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 7,
+          "playerMaxLevel": 24,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 21,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Wattson",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 21,
+          "playerMaxLevel": 29,
+          "partySize": 5,
+          "losses": 3,
+          "leaderMaxLevel": 24,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Morty",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 9,
+          "playerMaxLevel": 34,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 25,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Koga",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 12,
+          "playerMaxLevel": 37,
+          "partySize": 5,
+          "losses": 3,
+          "leaderMaxLevel": 43,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Byron",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 29,
+          "playerMaxLevel": 41,
+          "partySize": 5,
+          "losses": 2,
+          "leaderMaxLevel": 41,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Pryce",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 11,
+          "playerMaxLevel": 46,
+          "partySize": 5,
+          "losses": 0,
+          "leaderMaxLevel": 40,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Treinadora Lia",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 53,
+          "partySize": 5,
+          "losses": 1,
+          "leaderMaxLevel": 46,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Volkner",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 9,
+          "playerMaxLevel": 53,
+          "partySize": 5,
+          "losses": 3,
+          "leaderMaxLevel": 50,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Karen",
+          "stage": 9,
+          "leagueIndex": 1,
+          "turns": 16,
+          "playerMaxLevel": 54,
+          "partySize": 5,
+          "losses": 5,
+          "leaderMaxLevel": 52,
+          "boost": 0,
+          "winner": "Karen",
+          "engineWinner": "Karen",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 555464355,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Twinleaf",
+      "starter": "Turtwig",
+      "won": false,
+      "censored": false,
+      "badges": 6,
+      "leagueWins": 0,
+      "week": 19,
+      "party": [
+        {
+          "name": "Torterra",
+          "level": 60
+        },
+        {
+          "name": "Kingler",
+          "level": 59
+        },
+        {
+          "name": "Gyarados",
+          "level": 60
+        },
+        {
+          "name": "Staraptor",
+          "level": 59
+        }
+      ],
+      "box": [],
+      "route": [
+        "twinleaf",
+        "sandgem",
+        "turffield",
+        "dewford",
+        "hearthome",
+        "lavaridge",
+        "cianwood",
+        "mistralton",
+        "snowpoint",
+        "viridian"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "EVENT_CHOICE": 13,
+        "TRAIN": 13,
+        "MOVE_CHOICE": 38,
+        "PREPARE": 4
+      },
+      "battles": [
+        {
+          "kind": "gym",
+          "name": "Milo",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 25,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 20,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Brawly",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 30,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 25,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Fantina",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 37,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 32,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Flannery",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 44,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 35,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Mochileiro Caio",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 3,
+          "playerMaxLevel": 48,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 27,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Chuck",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 2,
+          "playerMaxLevel": 53,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 37,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Skyla",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 9,
+          "playerMaxLevel": 56,
+          "partySize": 4,
+          "losses": 1,
+          "leaderMaxLevel": 41,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Candice",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 18,
+          "playerMaxLevel": 60,
+          "partySize": 4,
+          "losses": 4,
+          "leaderMaxLevel": 50,
+          "boost": 6,
+          "winner": "Candice",
+          "engineWinner": "Candice",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 3209900116,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "New Bark",
+      "starter": "Totodile",
+      "won": false,
+      "censored": false,
+      "badges": 8,
+      "leagueWins": 3,
+      "week": 21,
+      "party": [
+        {
+          "name": "Feraligatr",
+          "level": 72
+        },
+        {
+          "name": "Gardevoir",
+          "level": 65
+        },
+        {
+          "name": "Noctowl",
+          "level": 66
+        },
+        {
+          "name": "Liepard",
+          "level": 61
+        },
+        {
+          "name": "Excadrill",
+          "level": 62
+        },
+        {
+          "name": "Stoutland",
+          "level": 62
+        }
+      ],
+      "box": [],
+      "route": [
+        "newbark",
+        "accumula",
+        "rustboro",
+        "azalea",
+        "vermilion",
+        "veilstone",
+        "pastoria",
+        "canalave",
+        "cinnabar",
+        "viridian"
+      ],
+      "actions": {
+        "EXPLORE": 2,
+        "EVENT_CHOICE": 11,
+        "TRAIN": 12,
+        "MOVE_CHOICE": 60,
+        "PREPARE": 5,
+        "CHALLENGE": 4
+      },
+      "battles": [
+        {
+          "kind": "ambush",
+          "name": "Treinadora Lia",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 11,
+          "partySize": 3,
+          "losses": 0,
+          "leaderMaxLevel": 10,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Roxanne",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 11,
+          "playerMaxLevel": 24,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 15,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Bugsy",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 29,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 23,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Lt. Surge",
+          "stage": 3,
+          "leagueIndex": null,
+          "turns": 6,
+          "playerMaxLevel": 33,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 24,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Maylene",
+          "stage": 4,
+          "leagueIndex": null,
+          "turns": 13,
+          "playerMaxLevel": 39,
+          "partySize": 6,
+          "losses": 2,
+          "leaderMaxLevel": 32,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Crasher Wake",
+          "stage": 5,
+          "leagueIndex": null,
+          "turns": 12,
+          "playerMaxLevel": 45,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 37,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Byron",
+          "stage": 6,
+          "leagueIndex": null,
+          "turns": 7,
+          "playerMaxLevel": 53,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 47,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Blaine",
+          "stage": 7,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 61,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 53,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "ambush",
+          "name": "Rival Nico",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 8,
+          "playerMaxLevel": 68,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 46,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Giovanni",
+          "stage": 8,
+          "leagueIndex": null,
+          "turns": 5,
+          "playerMaxLevel": 68,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 56,
+          "boost": 6,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Caitlin",
+          "stage": 9,
+          "leagueIndex": 1,
+          "turns": 8,
+          "playerMaxLevel": 69,
+          "partySize": 6,
+          "losses": 0,
+          "leaderMaxLevel": 52,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Drake",
+          "stage": 9,
+          "leagueIndex": 2,
+          "turns": 21,
+          "playerMaxLevel": 70,
+          "partySize": 6,
+          "losses": 4,
+          "leaderMaxLevel": 55,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Karen",
+          "stage": 9,
+          "leagueIndex": 3,
+          "turns": 17,
+          "playerMaxLevel": 71,
+          "partySize": 6,
+          "losses": 1,
+          "leaderMaxLevel": 58,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "league",
+          "name": "Phoebe",
+          "stage": 9,
+          "leagueIndex": 4,
+          "turns": 35,
+          "playerMaxLevel": 72,
+          "partySize": 6,
+          "losses": 6,
+          "leaderMaxLevel": 61,
+          "boost": 0,
+          "winner": "Phoebe",
+          "engineWinner": "Phoebe",
+          "censored": false
+        }
+      ]
+    },
+    {
+      "seed": 1569368581,
+      "strategy": "balanced",
+      "mode": "rush",
+      "origin": "Hau’oli",
+      "starter": "Litten",
+      "won": false,
+      "censored": false,
+      "badges": 1,
+      "leagueWins": 0,
+      "week": 9,
+      "party": [
+        {
+          "name": "Torracat",
+          "level": 24
+        },
+        {
+          "name": "Luxio",
+          "level": 22
+        },
+        {
+          "name": "Wingull",
+          "level": 21
+        },
+        {
+          "name": "Gumshoos",
+          "level": 22
+        }
+      ],
+      "box": [],
+      "route": [
+        "hauoli",
+        "accumula",
+        "oreburgh",
+        "eterna",
+        "goldenrod",
+        "lavaridge",
+        "cianwood",
+        "canalave",
+        "cinnabar",
+        "viridian"
+      ],
+      "actions": {
+        "EXPLORE": 1,
+        "EVENT_CHOICE": 7,
+        "TRAIN": 5,
+        "MOVE_CHOICE": 13,
+        "PREPARE": 2
+      },
+      "battles": [
+        {
+          "kind": "ambush",
+          "name": "Treinadora Lia",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 2,
+          "playerMaxLevel": 20,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 10,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Roark",
+          "stage": 1,
+          "leagueIndex": null,
+          "turns": 4,
+          "playerMaxLevel": 20,
+          "partySize": 4,
+          "losses": 0,
+          "leaderMaxLevel": 14,
+          "boost": 0,
+          "winner": "Você",
+          "engineWinner": "Você",
+          "censored": false
+        },
+        {
+          "kind": "gym",
+          "name": "Gardenia",
+          "stage": 2,
+          "leagueIndex": null,
+          "turns": 16,
+          "playerMaxLevel": 24,
+          "partySize": 4,
+          "losses": 4,
+          "leaderMaxLevel": 22,
+          "boost": 0,
+          "winner": "Gardenia",
+          "engineWinner": "Gardenia",
+          "censored": false
+        }
+      ]
+    }
+  ]
+}

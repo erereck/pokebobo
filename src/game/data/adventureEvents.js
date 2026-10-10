@@ -107,7 +107,7 @@ export const ADVENTURE_EVENTS = [
     },
     title: "O vento sobre a água",
     kicker: "ENCONTRO SECRETO · SUICUNE",
-    text: "O lago que você ajudou ficou cristalino. Suicune espera na margem. Há tempo para uma tentativa antes de ele voltar ao vento.",
+    text: "O lago que você ajudou ficou cristalino. Suicune espera na margem. Prepare suas Poké Bolas antes de ele voltar ao vento.",
     choices: [
       {
         id: "approach",

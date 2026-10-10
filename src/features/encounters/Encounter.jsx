@@ -1,11 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CaptureCanvas } from "./CaptureCanvas.jsx";
 import { PixelViewport } from "./PixelViewport.jsx";
 import { targetLevel } from "../../game/selectors/targetLevel.js";
-import { ENCOUNTER_RULES } from "../../game/config/encounters.js";
-import { captureChanceForRun } from "../../game/career/weekEvents.js";
 import { CAMPAIGN_RULES } from "../../game/config/campaign.js";
-import { EXPLORATION_RULES } from "../../game/config/exploration.js";
 
 export function Encounter({ run: r, act }) {
   const [replaceId, setReplaceId] = useState("");
@@ -13,9 +10,9 @@ export function Encounter({ run: r, act }) {
     r.encounters.findIndex((e) => !e.used),
   );
   const [ready, setReady] = useState(false);
-  const [finished, setFinished] = useState(false);
   const [skip, setSkip] = useState(false);
   const [selectedAction, setSelectedAction] = useState("ball");
+  const ballButton = useRef(null);
   const attempt = r.phase === "capture" ? r.captureAttempt : null;
   const index =
     attempt?.index ??
@@ -25,22 +22,25 @@ export function Encounter({ run: r, act }) {
   const wild = r.encounters[index];
   useEffect(() => {
     setReady(false);
-    setFinished(false);
     setSkip(false);
     setReplaceId("");
     setSelectedAction("ball");
   }, [index, wild?.name]);
+  useEffect(() => {
+    setSkip(false);
+  }, [attempt?.id]);
+  useEffect(() => {
+    if (
+      !attempt &&
+      ready &&
+      wild?.captureAttempts &&
+      document.activeElement === document.body
+    )
+      ballButton.current?.focus({ preventScroll: true });
+  }, [attempt, ready, wild?.captureAttempts]);
   const box = r.box || [];
   const fullParty = r.party.length >= CAMPAIGN_RULES.partySize;
   const fullBox = box.length >= CAMPAIGN_RULES.boxSize;
-  const chance = wild?.theft
-    ? 1
-    : captureChanceForRun(
-        r,
-        wild?.legendary
-          ? EXPLORATION_RULES.legendaryCaptureChance
-          : ENCOUNTER_RULES.captureChance,
-      );
   if (!wild) return null;
   const result = attempt?.success
     ? `${wild.name} foi capturado!`
@@ -53,13 +53,9 @@ export function Encounter({ run: r, act }) {
     !r.balls ||
     (fullParty && fullBox && !r.party.some((mon) => mon.id === replaceId));
   return (
-    <section className="wild-screen">
-      <header className="pixel-screen-heading">
-        <h1>{wild.name}</h1>
-        <span>NÍVEL {level}</span>
-      </header>
+    <section className="wild-screen" aria-label={`Encontro com ${wild.name}`}>
       <PixelViewport width={240} height={160}>
-        <div className="gba-capture" aria-busy={!!attempt && !finished}>
+        <div className="gba-capture" aria-busy={!!attempt}>
           <CaptureCanvas
             name={wild.name}
             level={level}
@@ -68,9 +64,14 @@ export function Encounter({ run: r, act }) {
             attempt={attempt}
             skip={skip}
             exploration={r.exploration}
+            returning={!!wild.captureAttempts}
             selectedAction={selectedAction}
             ballDisabled={ballDisabled}
-            onComplete={() => (attempt ? setFinished(true) : setReady(true))}
+            onComplete={() =>
+              attempt
+                ? act({ type: "CAPTURE_FINISH", id: attempt.id })
+                : setReady(true)
+            }
           />
           {!attempt && (
             <div
@@ -79,6 +80,7 @@ export function Encounter({ run: r, act }) {
               aria-label="Ações do encontro"
             >
               <button
+                ref={ballButton}
                 aria-label="Lançar Poké Bola"
                 disabled={ballDisabled}
                 onPointerEnter={() => setSelectedAction("ball")}
@@ -105,14 +107,14 @@ export function Encounter({ run: r, act }) {
         </div>
       </PixelViewport>
       <div className={`capture-footer${fullParty ? " with-destination" : ""}`}>
-        <p className="capture-live" role="status" aria-live="polite">
-          {finished
-            ? result
-            : attempt
-              ? "Poké Bola lançada. Acompanhe a captura…"
-              : ready
-                ? `${wild.name} selvagem apareceu!`
-                : "Um Pokémon saiu do mato…"}
+        <p className="sr-only" role="status" aria-live="polite">
+          {attempt
+            ? "Poké Bola lançada. Acompanhe a captura…"
+            : ready
+              ? wild.captureAttempts
+                ? `${result} Escolha sua próxima ação.`
+                : `${wild.name} selvagem apareceu!`
+              : "Um Pokémon saiu do mato…"}
         </p>
         {!attempt && (
           <>
@@ -163,30 +165,16 @@ export function Encounter({ run: r, act }) {
                 </small>
               </label>
             )}
-            <p className="fine-print">
-              {Math.round(chance * 100)}% de captura · reserva {box.length}/
-              {CAMPAIGN_RULES.boxSize} · uma tentativa
-            </p>
           </>
         )}
         {attempt && (
           <div className="capture-result-actions">
-            {finished ? (
-              <button
-                className="button primary full"
-                onClick={() => act({ type: "CAPTURE_FINISH", id: attempt.id })}
-              >
-                {r.exploration ? "Continuar explorando" : "Continuar jornada"}
-              </button>
-            ) : (
-              <button
-                className="button secondary full"
-                onClick={() => setSkip(true)}
-              >
-                Pular animação
-              </button>
-            )}
-            <small>Resultado salvo · recarregar não gasta outra bola.</small>
+            <button
+              className="button secondary full"
+              onClick={() => setSkip(true)}
+            >
+              Pular animação
+            </button>
           </div>
         )}
       </div>

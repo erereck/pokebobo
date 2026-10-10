@@ -1,5 +1,19 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Entrega de 10/10/2026 — 0.12.0: Mais uma Poké Bola
+
+**Pedido:** ocultar oportunidades e limitar a rota a 50 passos; acelerar entrada/finalização; retirar nome, anúncio e probabilidade duplicados; reduzir o nível na caixa de HP; permitir novos lançamentos com 67% de chance base; estabilizar Voltar enquanto os controles ficam pressionados; suavizar as margens de terra/água. Continuação do refinamento com merge direto já autorizado.
+
+**Regras:** movimentos válidos contam até 50, sem contador. O último passo termina visualmente antes de sair e não sorteia outro encontro. A saída resolve a semana uma vez, com avanço/evento/batalha normal quando aplicável. Rota antiga já acima do limite sai ao abrir o campo. CAPTURE continua debitando uma bola e salvando o resultado antes da animação; só marca a oportunidade como usada ao capturar, fugir ou gastar a última bola. A falha conserva o mesmo Pokémon, nível, índice/evento e semana; não entrega Pokémon nem modifica reserva. O bônus de evento vale para o lançamento seguinte, uma vez. Chance comum 67%; lendários e recompensa do roubo preservam suas regras específicas.
+
+**Apresentação:** entrada terrestre em cerca de 1,12 s e aquática em 1,46–1,49 s no Edge testado. Pulsos e cortes/ondulação continuam, com passagem mais rápida e deslocamento de seis pixels por tick. O final passou de 348 para 65 ticks após a última sacudida, preservando 24 ticks de estrelas. A conclusão retorna automaticamente ao campo ou ao menu do mesmo selvagem na falha, sem novo efeito de entrada. Nome/nível permanecem na caixa de HP; nível a 75% da fonte. Textos externos removidos, status acessível preservado. Rodapé guarda espaço estável para o destino com time cheio; retry conserva o substituto e devolve foco ao lançamento quando o controle anterior desaparece.
+
+**Campo e arte:** o estado de controles pressionados fica separado da direção em repetição; Voltar não se libera a cada término de passo, nem ao atingir uma borda. O atlas passou de seis para 32 quadros, com treze bordas originais de trilha e treze margens derivadas de grama/água. Quadrantes consideram vizinhos e diagonais, cobrindo corredor de uma casa, cruzamentos e cantos internos. Colisão, RNG, quantidade de oportunidades e marcos de pesca/Surf não dependem desses gráficos. Importador aceita checkout local; origem e transformação documentadas.
+
+**Validação:** 104 testes, 195 módulos, build e auditoria. 99 registros locais de navegador, oito tamanhos, incluindo retry/sucesso, última bola, fuga, evento, reserva lotada, reload a 1×, duplo clique, controles segurados/soltos, 50º passo e saves antigos. Nenhum erro nos fluxos normais; um 404 intencional valida fallback. 60 campanhas de política equilibrada com batalhas reais, 20 por modo: 3 títulos no Clássico, um na Correria e zero no Nuzlocke, sem truncamentos. Medições e limites completos em VALIDACAO.md; relatórios anteriores preservados abaixo.
+
+**Limites e próximas sugestões:** a amostra de IA não mede a experiência humana nem isola o efeito da chance de captura. Não ajustar níveis/estoque a partir desses títulos isoladamente; uma próxima rodada pode registrar bolas gastas por captura e comparar políticas nas mesmas seeds. Campo e margens são adaptações com gráficos de FRLG, sem promessa de cartucho idêntico. Uma sessão em telefone físico/iOS continua útil para avaliar toque, foco e tela cheia.
+
 ## Entrega de 09/10/2026 — 0.11.0: Ritmo de Kanto
 
 **Pedido:** polimento geral de fontes, botões, enquadramento e animações; corrigir o salto da bola na absorção e a sobreposição do mato; controles segurados, tela cheia junto da Pokédex, entrada no encontro e menu de captura melhores. Merge direto autorizado pelo usuário após revisão.

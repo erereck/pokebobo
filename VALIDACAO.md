@@ -1,4 +1,16 @@
-# Validação — Pokébobo 0.11.0
+# Validação — Pokébobo 0.12.0
+
+## 0.12.0 — Mais uma Poké Bola · 10/10/2026
+
+- `npm run verify`: 195 módulos sem ciclos/import de UI no motor, 104/104 testes, build Vite com 2.074 módulos. Sem geração de HTML standalone.
+- Regressões novas: 50º passo animado/instantâneo, movimentos inválidos, reload do último passo e avanço de semana/cidade uma vez; novas tentativas, última bola, nível/espécie fixos, cobrança e conclusão por id, saves anteriores pendentes, sucesso sem duplicação, alvo de evento/legado e bônus consumido uma vez. Continuidade da bola e mato da 0.11.0 seguem cobertas.
+- Edge/Playwright: 68 registros gerais em oito tamanhos, de 320×568 a 1440×900, incluindo horizontal 667×375/844×390. Campo, captura, destino lotado, painéis, janelas, turno real e tela cheia. Sem overflow, controles encobertos, sprites quebrados ou erros. `docs/balance/browser-polish-0.12.0.json`.
+- Captura/controles: 26 registros adicionais. Falha → nova tentativa → sucesso em cinco layouts, incluindo estoque lotado e substituto preservado; última bola, fuga após falha, evento, save antigo com captura pendente, duplo clique, reload durante arremesso a 1×, retorno automático e cena com dimensões estáveis. Voltar permanece desabilitado durante teclas/ponteiro, entre passos, ao atingir a borda e com duas teclas; soltar fora do botão libera. O 50º passo retorna automaticamente. `docs/balance/browser-capture-0.12.0.json`.
+- Medidas no navegador a 1×: entrada terrestre aproximadamente 1,12 s; pesca/Surf aproximadamente 1,46–1,49 s. Conclusão bem-sucedida tem 65 ticks após a última sacudida, mantendo os 24 ticks de estrelas; a pausa anterior tinha 348 ticks. Falha retorna ao menu sem repetir entrada. Timings do navegador dependem da máquina.
+- Saves/recuperação: dois registros de rota antiga acima de 50 passos e retry legado com alvo fixo, sem apagar a carreira; mais três de repetição nativa e recurso ausente. Um 404 da fonte foi injetado deliberadamente e validou ações legíveis/fuga sem gastar bola. Fluxos normais sem erros. `docs/balance/browser-save-0.12.0.json` e `browser-recovery-0.12.0.json`. Total: 99 registros locais.
+- `npm run balance:audit`: orçamento-base preservado. 60 campanhas completas com combates reais, política equilibrada, 20 por modo, seed-base 20260913. Clássico: 3/20 títulos, 7,8 insígnias médias; Correria: 1/20, 6,2; Nuzlocke: 0/20, 7,2. Zero truncamentos. JSONs `docs/balance/monte-carlo-0.12.0-*.json`. Amostra exploratória pequena de IA, sem estimar dificuldade para humanos ou atribuir diferenças entre versões à chance de captura isoladamente.
+- Atlas local regenerado do checkout FRLG congelado: 32 quadros; bordas e cruzamentos inspecionados no campo e na transição. Créditos distinguem tiles originais de margens derivadas. GIF: 117 quadros coletados; 116 úteis codificados, cerca de 10,53 s com entrada, captura e retorno ao campo.
+- Limites: Edge automatizado; sem dispositivo físico/iOS. Fórmula de captura, margens e timings são adaptações web. Chance comum de 67% por bola; lendários preservam 48%, roubo recompensado 100%, bônus de evento continuam respeitando o teto. Fonte de nível menor usa pixels sem interpolação.
 
 ## 0.11.0 — Ritmo de Kanto · 09/10/2026
 

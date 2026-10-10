@@ -1,8 +1,10 @@
-# Pokébobo — 0.11.0 · Ritmo de Kanto
+# Pokébobo — 0.12.0 · Mais uma Poké Bola
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
 
-A 0.11.0 refina campo, captura e os demais painéis para caberem no visor. Segure setas, WASD ou o direcional; use tela cheia ao lado da Pokédex. A bola segue ligada ao impacto durante a absorção, e o mato cobre apenas os pés enquanto Red cruza as casas. A entrada no encontro usa cortes ou ondulação, e o menu tem fonte bitmap na mesma escala da cena, estoque e duas áreas grandes de toque. Ficha e reserva têm seletores próprios; mochila e mapa aproveitam a altura disponível. [Campo no celular](docs/images/rota-0.11-celular.png) · [Captura](docs/images/captura-0.11-celular.png) · [Equipe](docs/images/equipe-0.11-celular.png).
+A 0.12.0 permite tentar capturar o mesmo Pokémon até conseguir, fugir ou acabar o estoque: cada lançamento custa uma bola e tem 67% de chance base. A exploração oculta as oportunidades e retorna automaticamente após 50 passos válidos. Entrada mais rápida, conclusão automática e estrelas sem a pausa longa; nome e nível ficam apenas na cena, com nível menor. Voltar permanece desabilitado até soltar os controles e terminar o passo. Trilhas e lago têm bordas irregulares de grama, incluindo cruzamentos. [Campo no celular](docs/images/rota-0.12-celular.png) · [Captura](docs/images/captura-0.12-celular.png).
+
+A 0.11.0 trouxe tela cheia junto da Pokédex, controles segurados, cena que se ajusta ao visor, correção da bola durante absorção e mato cobrindo somente os pés. Ficha/golpes e reserva têm seletores próprios; mochila e mapa aproveitam a altura disponível.
 
 A 0.10.0 trouxe mato alto contínuo com encontros por passo e captura em uma cena 240×160 baseada em FRLG: Red de costas, arremesso de Poké Bola normal, absorção, quicados, sacudidas, estrelas e fuga. O resultado fica salvo antes da animação.
 
@@ -52,7 +54,7 @@ O save fica no navegador. Há três slots independentes de carreira; o Hall da F
 - Treino (+1 a 3 níveis na equipe; +2 a 4 na Correria), exploração, captura, busca de itens e preparação com berries. Viagem e emboscada: zero níveis. Vitória em ginásio ou Liga: +1.
 - Níveis originais por Pokémon do líder. Se o maior nível do jogador exceder o ás original em 10 ou mais, o líder recebe +6 em todos, uma vez. Não há limite de nível por etapa.
 - Quatro golpes juntos na batalha, trocas em grade, troca por arrastar na Equipe Conectada, HP ao vivo dos seis e registro completo em uma janela separada. Cada turno é apresentado em sequência (ataque, HP, status, queda e troca), com velocidade 1×/2×.
-- Duas ou três oportunidades por rota, com áreas contínuas de mato alto e lago. Encontros são sorteados ao caminhar, com intervalo após encontros e proteção contra espera excessiva. Caminhar/capturar custa uma única semana; cada encontro permite uma tentativa, com 86% de chance base (eventos podem elevar até 98%) e uma Poké Bola. Fishing Rod na terceira insígnia; Surf na quinta. Pesca e Surf compartilham a oportunidade do lago. Equipe de até seis; com time e reserva cheios, escolha quem sai apenas se a captura der certo.
+- Duas ou três oportunidades ocultas por rota, com áreas contínuas de mato alto e lago. Encontros são sorteados ao caminhar, com intervalo após encontros e proteção contra espera excessiva. A caminhada inteira custa uma semana e termina após 50 passos válidos ou saída manual. Falhar permite outro lançamento contra o mesmo Pokémon, sem nova semana ou nível: 67% de chance base por bola (eventos podem elevar até 98%; lendários mantêm 48%). Capturar, fugir ou gastar a última bola encerra o encontro. Fishing Rod na terceira insígnia; Surf na quinta. Pesca e Surf compartilham a oportunidade do lago. Equipe de até seis; com time e reserva cheios, escolha quem sai apenas se a captura der certo.
 - Batalhas aleatórias: chance de 10% após uma ação elegível, com intervalo mínimo de três semanas entre emboscadas.
 - Batalhas reais do Pokémon Showdown via `@pkmn/sim`, inteiramente no navegador. Golpes, PP, habilidades, tipos, status, prioridade, dano, trocas e itens seguem o motor.
 - Saves reproduzíveis de batalha por seed e histórico de decisões. Recarregar não rerrola a luta.

@@ -24,6 +24,7 @@ export function CaptureCanvas({
   skip,
   onComplete,
   exploration,
+  returning = false,
   selectedAction = "ball",
   ballDisabled = false,
 }) {
@@ -36,9 +37,10 @@ export function CaptureCanvas({
     [attempt, monY],
   );
   const sprite = `${import.meta.env.BASE_URL}sprites/${original ? "frlg/" : ""}${num}.png`;
-  const transitionDuration = exploration
-    ? encounterTransitionDuration(water)
-    : 0;
+  const transitionDuration =
+    exploration && !returning
+      ? Math.ceil(encounterTransitionDuration(water) / 2)
+      : 0;
   const { canvasRef, error } = usePixelCanvas({
     sources: [
       fieldAsset(water ? "capture_water" : "capture_grass"),
@@ -56,7 +58,11 @@ export function CaptureCanvas({
       ),
     ],
     animationKey: attempt?.id || name,
-    duration: timeline ? timeline.frames.length - 1 : transitionDuration + 120,
+    duration: timeline
+      ? timeline.frames.length - 1
+      : returning
+        ? 0
+        : transitionDuration + 40,
     skip,
     onComplete,
     draw: (
@@ -96,7 +102,7 @@ export function CaptureCanvas({
           surface.drawImage(native, 0, 0, 240, 160);
           fieldFrame.current = { key: exploration, image: snapshot };
         }
-        drawEncounterTransition(ctx, fieldFrame.current.image, tick, water);
+        drawEncounterTransition(ctx, fieldFrame.current.image, tick * 2, water);
         return;
       }
       const frame =
@@ -106,9 +112,10 @@ export function CaptureCanvas({
         0,
         0,
       );
-      const intro = timeline
-        ? 0
-        : Math.max(0, 240 - (tick - transitionDuration) * 2);
+      const intro =
+        timeline || returning
+          ? 0
+          : Math.max(0, 240 - (tick - transitionDuration) * 6);
       const [trainerFrame, trainerX] = timeline
         ? trainerThrowFrame(tick)
         : [0, 48];
@@ -161,7 +168,11 @@ export function CaptureCanvas({
       if (!frame || !["caught", "escaped"].includes(frame.stage)) {
         ctx.drawImage(healthbox, 12, 14);
         pixelText(ctx, font, name.toUpperCase(), 18, 16, 60, 1);
-        pixelText(ctx, font, `${level}`, 82, 16, 22, 1);
+        ctx.save();
+        ctx.translate(82, 18);
+        ctx.scale(0.75, 0.75);
+        pixelText(ctx, font, `${level}`, 0, 0, 22, 1);
+        ctx.restore();
         ctx.drawImage(hp, 36, 30);
       }
       ctx.drawImage(

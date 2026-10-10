@@ -27,7 +27,7 @@ function walkToFirst(s) {
   return s;
 }
 
-test("captura cobra uma semana e uma bola, não permite repetir encontro", () => {
+test("captura cobra uma semana e uma bola, sem repetir Pokémon já capturado", () => {
   let s = drafted();
   s.run.lastAmbush = 999;
   const week = s.run.week,

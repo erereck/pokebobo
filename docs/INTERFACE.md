@@ -1,5 +1,11 @@
 # Interface — Pokédex de campo
 
+## Captura e campo — 0.12.0
+
+A captura concentra nome, nível e ações no canvas; o nível usa 75% da fonte do nome. O resultado retorna automaticamente ao campo ou, na falha com bolas, ao menu do mesmo Pokémon. Não repete a entrada nem pede confirmação para continuar. O rodapé mantém o espaço do destino escolhido com equipe cheia e oferece Pular animação durante o lançamento. Mensagens externas de estado permanecem apenas para leitores de tela.
+
+No campo, as oportunidades e o limite de passos não são expostos como contadores. Voltar permanece desabilitado enquanto há controles pressionados ou passo pendente. O atlas por quadrantes suaviza as margens de trilha e lago sem interpolação, mantendo a linguagem de pixels da cena.
+
 A 0.3.0 transforma o jogo em um dispositivo vermelho com visor claro. O cenário, a decisão e a equipe têm lugares estáveis. Direção solicitada pelo usuário; processo apoiado pela [skill interface-design](https://github.com/Dammyjay93/interface-design).
 
 ## Encontrar o que precisa

@@ -16,12 +16,16 @@ import {
   isTallGrass,
 } from "../../game/world/exploration.js";
 import { FieldCanvas } from "./FieldCanvas.jsx";
+import { useEffect } from "react";
 
 export function ExplorationScreen({ run: r, act }) {
   const e = r.exploration;
   const controls = useFieldControls(e, act);
+  useEffect(() => {
+    if (e && !e.walk && e.steps >= EXPLORATION_RULES.maxRouteSteps)
+      act({ type: "EXIT_ROUTE" });
+  }, [e, act]);
   if (!e) return null;
-  const remaining = r.encounters.filter((mon) => !mon.used).length;
   const lakeAvailable = r.encounters.some(
     (mon) => mon.habitat === "water" && !mon.used,
   );
@@ -39,7 +43,6 @@ export function ExplorationScreen({ run: r, act }) {
         <span>EXPLORAR</span>
       </header>
       <div className="field-status">
-        <span>{remaining} encontros restantes</span>
         <span>{r.balls} Poké Bolas</span>
       </div>
       <PixelViewport width={192} height={128}>
@@ -128,8 +131,8 @@ export function ExplorationScreen({ run: r, act }) {
           </button>
           <button
             className="button primary field-exit"
-            disabled={!!e.walk}
-            aria-label={remaining ? "Encerrar exploração" : "Voltar à jornada"}
+            disabled={!!e.walk || controls.isHolding}
+            aria-label="Voltar à jornada"
             onClick={() => act({ type: "EXIT_ROUTE" })}
           >
             <LogOut size={16} /> Voltar
@@ -145,7 +148,7 @@ export function ExplorationScreen({ run: r, act }) {
               ? "Aproxime-se da margem para usar o lago."
               : r.badges < EXPLORATION_RULES.surfBadges
                 ? "Fishing Rod liberada · Surf: 5ª insígnia"
-                : "Escolha pescar ou usar Surf: 1 encontro no lago."}
+                : "Escolha pescar ou usar Surf."}
       </p>
     </section>
   );

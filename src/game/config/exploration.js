@@ -1,6 +1,7 @@
 export const EXPLORATION_RULES = Object.freeze({
   width: 12,
   height: 8,
+  maxRouteSteps: 50,
   grassEncounterChance: 0.22,
   maxGrassSteps: 10,
   encounterCooldown: 2,

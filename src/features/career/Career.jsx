@@ -50,7 +50,7 @@ export function Career({ run: r, act }) {
           <div className="route-hint">
             <Route size={15} />
             <span>{r.routeName}</span>
-            <span>{r.encounters.length} espécies</span>
+            <span>Mato alto · lago</span>
           </div>
         </>
       ) : (

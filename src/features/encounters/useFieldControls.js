@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const keys = {
   ArrowUp: [0, -1],
@@ -15,6 +15,8 @@ export function useFieldControls(exploration, act) {
   const held = useRef(null);
   const lastSent = useRef(-1);
   const nextRepeat = useRef(0);
+  const pressed = useRef(new Set());
+  const [isHolding, setIsHolding] = useState(false);
   useEffect(() => {
     latest.current = { exploration, act };
   });
@@ -45,14 +47,20 @@ export function useFieldControls(exploration, act) {
         return;
       event.preventDefault();
       if (event.repeat) return;
+      pressed.current.add(event.key.toLowerCase());
+      setIsHolding(true);
       held.current = { direction, key: event.key.toLowerCase() };
       move(...direction);
     };
     const up = (event) => {
+      pressed.current.delete(event.key.toLowerCase());
+      setIsHolding(pressed.current.size > 0);
       if (held.current?.key === event.key.toLowerCase()) held.current = null;
     };
     const stop = () => {
       held.current = null;
+      pressed.current.clear();
+      setIsHolding(false);
     };
     const visibility = () => {
       if (document.hidden) stop();
@@ -79,15 +87,20 @@ export function useFieldControls(exploration, act) {
     };
   }, []);
   return {
+    isHolding,
     move,
     press: (event, dx, dy) => {
       if (event.button !== 0) return;
       event.currentTarget.setPointerCapture(event.pointerId);
+      pressed.current.add(`pointer-${event.pointerId}`);
+      setIsHolding(true);
       held.current = { direction: [dx, dy], pointer: event.pointerId };
       move(dx, dy);
     },
-    release: () => {
-      held.current = null;
+    release: (event) => {
+      pressed.current.delete(`pointer-${event.pointerId}`);
+      setIsHolding(pressed.current.size > 0);
+      if (held.current?.pointer === event.pointerId) held.current = null;
     },
   };
 }

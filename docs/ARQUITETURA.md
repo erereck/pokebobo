@@ -1,5 +1,13 @@
 # Arquitetura do Pokébobo 0.3.0
 
+## Campo e captura — 0.12.0
+
+O projeto atual tem 195 módulos JS/JSX. `maxRouteSteps` em config/exploration limita a caminhada; `completeRouteStep` resolve o último passo antes de `finishExploration`/`afterWeek`. A 50ª casa não sorteia encontro e o id impede conclusão duplicada. A apresentação também encerra uma rota de save anterior já acima do limite quando não existe passo pendente.
+
+`CAPTURE` debita uma bola e persiste o sorteio, mas não marca o selvagem como usado. `completeCapture` só encerra a oportunidade após sucesso, fuga ou última bola; na falha com estoque mantém nível, índice ativo/evento e semana. `captureAttempts` permite voltar imediatamente ao menu, inclusive após reload. O id continua protegendo CAPTURE_FINISH; resultado prévio de save antigo é aplicado sem novo sorteio. Um encontro legado sem exploração passa a fixar o índice após a primeira falha.
+
+`terrainPresentation` escolhe quadrantes de borda a partir dos vizinhos, sem RNG ou efeito na colisão. `drawField` compartilha o atlas de 32 quadros entre campo e snapshot da entrada. `useFieldControls` distingue a direção a repetir dos controles ainda pressionados, mantendo Voltar bloqueado também entre passos ou ao atingir uma borda. A conclusão de `CaptureCanvas` retorna automaticamente ao menu ou campo, usando as mesmas regras da captura instantânea.
+
 O código foi dividido por responsabilidade, com 148 módulos JavaScript/JSX e 29 arquivos CSS (incluindo o índice de estilos). Telas, ações, regras, dados e persistência têm pastas próprias. O objetivo é localizar uma mudança sem reler o jogo inteiro.
 
 ## Fluxo principal

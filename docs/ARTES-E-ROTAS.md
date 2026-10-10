@@ -1,5 +1,9 @@
 # Capas de rotas e exploração de campo
 
+## 0.12.0 — bordas de trilha e lago
+
+O atlas de terreno passou de seis para 32 quadros. Treze bordas originais de trilha permitem cruzamentos, casas estreitas e cantos internos. Outros treze quadros combinam o contorno irregular de grama dessas bordas com a textura original de água. `terrainPresentation.js` escolhe cada quadrante a partir dos vizinhos, e `drawField.js` desenha sem interpolação. A colisão e a localização do lago permanecem em `game/world/exploration.js`; nenhum sorteio depende dos gráficos. O campo atual usa canvas, compartilhado com a transição de captura. Fonte congelada, transformações e termos em [FRLG-ASSETS](../licenses/FRLG-ASSETS.md).
+
 ## 0.9.0 — campo com tiles de FireRed / LeafGreen
 
 A caminhada usa metatiles e os sprites de Red originais de FRLG, extraídos de uma referência congelada de `pret/pokefirered`. Os mapas pequenos, os matinhos e as oportunidades são uma curadoria procedural do Pokébobo. São três PNGs locais em `public/field/`; fonte, titularidade, transformação e termos estão em [FRLG-ASSETS](../licenses/FRLG-ASSETS.md). O importador reproduzível é `scripts/import-field-assets.py`.

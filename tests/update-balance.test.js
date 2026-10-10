@@ -133,7 +133,7 @@ test("time completo usa a reserva antes de exigir liberação", () => {
   assert.equal(reducer(crowded, { type: "CAPTURE", index: 0 }), crowded);
 
   let failSeed = 1;
-  while (random({ rng: failSeed }) < 0.86) failSeed++;
+  while (random({ rng: failSeed }) < 0.67) failSeed++;
   crowded.run.rng = failSeed;
   const failed = reducer(crowded, {
     type: "CAPTURE",
