@@ -191,9 +191,16 @@ test("geometria congelada inclui todos os quadros e cobre a animação inteira",
   const data = await readFile(
     new URL("../src/components/pokemon/spriteGeometry.json", import.meta.url),
   );
+  const digest = (text) =>
+    createHash("sha256")
+      .update(text.replace(/\r\n/g, "\n"), "utf8")
+      .digest("hex");
+  assert.equal(report.sourceEncoding, "utf8-lf");
+  assert.equal(digest(data.toString("utf8")), report.sourceSha256);
   assert.equal(
-    createHash("sha256").update(data).digest("hex"),
+    digest(data.toString("utf8").replace(/\r?\n/g, "\r\n")),
     report.sourceSha256,
+    "checkout Windows e Linux conservam a assinatura textual",
   );
   assert.equal(Object.keys(geometry).length, report.files);
   for (const source of report.sources) {

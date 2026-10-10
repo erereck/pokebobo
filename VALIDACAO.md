@@ -2,6 +2,8 @@
 
 ## 0.16.0 — Batalha na medida · 10/10/2026
 
+A assinatura textual da geometria é canonizada em UTF-8/LF e testada com LF/CRLF, mantendo integridade entre Windows e Linux. Hashes de imagens conferem os bytes originais.
+
 - `npm run verify`: 203 módulos de código sem ciclos/UI no motor, 132/132 testes e build Vite de 2.086 módulos com `VITE_BASE=/pokebobo/`. Sem standalone. Mudança só de apresentação; nenhum RNG, decisão, regra ou schema alterado.
 - Cinco novos testes: Pidgey menor que metade da altura visível de Charizard nos dois estilos/lados/cores; 11.664 combinações de espécie/forma, estilo, lado, cor e caixas curta/média/larga com corpo dentro do espaço e proporção preservada; normal/shiny consistente; fallback/prefixo Pages e dimensões externas novas; integridade da geometria e cobertura dos quadros. Altura visível refere-se ao limite do ciclo, não à pose de um quadro.
 - Pillow mediu a união dos pixels não transparentes de todos os 227.842 quadros de 4.848 fontes: 1.940 BW locais, 1.940 3D existentes e 968 PNGs locais de fallback. Nenhuma imagem foi editada ou adicionada ao build. Manifesto com origem/hash/primeiro/último quadro em `docs/balance/sprite-geometry-0.16.0.json`; cache 3D congelado em `sprite-geometry-sources.json`. Importador conferiu os hashes das 1.940 fontes 3D no cache externo.

@@ -60,7 +60,7 @@ with ThreadPoolExecutor(max_workers=4) as pool:
   if (i+1)%400==0:print(f'{i+1}/{len(jobs)}',flush=True)
 out=ROOT/'src/components/pokemon/spriteGeometry.json'
 if args.bw_only:out=ROOT.parent/'bw-geometry.json'
-out.write_text(json.dumps(dict(sorted(geometry.items())),separators=(',',':'))+'\n')
-report={'files':len(geometry),'frames':sum(r['frames'] for r in geometry.values()),'sourceSha256':sha256(out.read_bytes()).hexdigest(),'sources':sources}
+out.write_bytes((json.dumps(dict(sorted(geometry.items())),separators=(',',':'))+'\n').encode('utf-8'))
+report={'files':len(geometry),'frames':sum(r['frames'] for r in geometry.values()),'sourceEncoding':'utf8-lf','sourceSha256':sha256(out.read_bytes()).hexdigest(),'sources':sources}
 (ROOT/'docs/balance'/('bw-geometry-report.json' if args.bw_only else 'sprite-geometry-0.16.0.json')).write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({k:v for k,v in report.items() if k!='sources'}))

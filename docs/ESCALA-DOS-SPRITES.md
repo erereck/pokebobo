@@ -1,5 +1,7 @@
 # Escala dos sprites de batalha — 0.16.0
 
+A assinatura textual da geometria usa UTF-8/LF, conservando o mesmo hash entre checkouts Windows e Linux. Hashes de GIF/PNG continuam sendo dos bytes originais, sem normalização.
+
 `components/pokemon/battleSpeciesScale.json` guarda ratios de altura visual por espécie/forma, estilo (2d/3d) e lado (front/back), mais elevação de alguns flutuantes. `spriteGeometry.json` guarda canvas, união dos limites não transparentes e número de quadros por fonte. A referência é o espaço da cena: 78% da altura disponível, limitada por largura e CSS; pequeno tem ratio menor. A altura da Pokédex deixa de determinar o tamanho final.
 
 `battleSpriteLayout.js` aplica a calibração, perspectiva de costas de 1,12, piso de legibilidade de 16 px (subordinado ao limite da caixa), largura máxima de 90% e altura máxima de 81% menos elevação. O limite do ciclo é centrado horizontalmente e apoiado no centro da plataforma (17% da altura acima da base). Margens transparentes são descontadas da posição; largura/altura do canvas mantêm a proporção. `BattlePokemonSprite.jsx` usa ResizeObserver e load para calcular offsets fixos. Não existe leitura de pixels nem novo sorteio por frame no navegador. Ataques podem mover o sprite temporariamente, como antes.

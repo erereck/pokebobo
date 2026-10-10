@@ -1,7 +1,7 @@
 {
   "files": 4848,
   "frames": 227842,
-  "sourceSha256": "b50eb282e2f7699a1575f493abd3caaa89e4709cbcf5240079ea6d57af9e74bf",
+  "sourceSha256": "9d28ad32d2a1517c3a4662204c6857cd4de538a1456f930c28fbb84a446ff2cd",
   "sources": [
     {
       "file": "battle-sprites/front/mew.gif",
@@ -87267,5 +87267,6 @@
         87
       ]
     }
-  ]
+  ],
+  "sourceEncoding": "utf8-lf"
 }
