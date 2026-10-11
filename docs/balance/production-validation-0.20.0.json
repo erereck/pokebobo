@@ -1,0 +1,517 @@
+{
+  "version": "0.20.0",
+  "url": "https://erereck.github.io/pokebobo/",
+  "applicationCommit": "6789fbb18751787c4bcb9d766a370ee80346cd0e",
+  "manifestFixCommit": "98ba6253aed82258b450cc5141e7e7ddac92b6e1",
+  "pullRequests": [
+    23,
+    24
+  ],
+  "applicationCI": 38158370782,
+  "applicationPages": 38158370767,
+  "identityPRCI": 38159245266,
+  "generatedAt": "2026-10-11T17:26:50.775Z",
+  "checks": [
+    {
+      "area": "field",
+      "engine": "Edge",
+      "screens": 20,
+      "flows": [
+        "quatro campos, quatro visores, controles visíveis, números ocultos, reload não altera save",
+        "vara nas quatro direções: prévia bloqueia passos/voltar, sem RNG/bola antes da conclusão, encontro único, fugir retorna",
+        "Surf com movimento reduzido conclui imediatamente e conserva regras"
+      ],
+      "errors": [],
+      "network": [],
+      "viewports": []
+    },
+    {
+      "area": "decisions",
+      "engine": "Edge",
+      "screens": 8,
+      "flows": [
+        "comparação de golpe: 5 resumos, descrição do novo, quatro visores e substituição real de Ember por Flamethrower",
+        "caderno com Chuva, Reflect e Spikes reais, quatro visores/fechar"
+      ],
+      "errors": [],
+      "network": [],
+      "viewports": []
+    },
+    {
+      "area": "field",
+      "engine": "WebKit Windows",
+      "screens": 20,
+      "flows": [
+        "quatro campos, quatro visores, controles visíveis, números ocultos, reload não altera save",
+        "vara nas quatro direções: prévia bloqueia passos/voltar, sem RNG/bola antes da conclusão, encontro único, fugir retorna",
+        "Surf com movimento reduzido conclui imediatamente e conserva regras"
+      ],
+      "errors": [],
+      "network": [],
+      "viewports": []
+    },
+    {
+      "area": "decisions",
+      "engine": "WebKit Windows",
+      "screens": 8,
+      "flows": [
+        "comparação de golpe: 5 resumos, descrição do novo, quatro visores e substituição real de Ember por Flamethrower",
+        "caderno com Chuva, Reflect e Spikes reais, quatro visores/fechar"
+      ],
+      "errors": [],
+      "network": [],
+      "viewports": []
+    },
+    {
+      "area": "offline",
+      "engine": "Edge",
+      "screens": 4,
+      "flows": [
+        "shell/fontes/field, reload offline sem alterar save, turno real +2, caderno e exportação real",
+        "música usada em cache atende Range de 200 bytes sem rede",
+        "instalação nativa: botão chama prompt uma vez e cancelamento mantém jogo"
+      ],
+      "errors": [],
+      "network": [],
+      "viewports": []
+    },
+    {
+      "area": "presence",
+      "engine": "Edge",
+      "screens": 24,
+      "flows": [
+        "estilo sem alterar save; turno real e reload 2d",
+        "estilo sem alterar save; turno real e reload 3d",
+        "shiny, estabilidade e resize Pidgey 2d",
+        "shiny, estabilidade e resize Pidgey 3d",
+        "shiny, estabilidade e resize Onix 2d",
+        "shiny, estabilidade e resize Onix 3d",
+        "shiny, estabilidade e resize Joltik 2d",
+        "shiny, estabilidade e resize Joltik 3d"
+      ],
+      "errors": [],
+      "network": [],
+      "viewports": [
+        "1920×1080",
+        "1280×800",
+        "390×844",
+        "320×568",
+        "844×390"
+      ]
+    },
+    {
+      "area": "session",
+      "engine": "Edge",
+      "screens": 6,
+      "flows": [
+        "começo novo → origem/inicial → nove escolhas → região com dez cidades → 50 passos válidos → retorno automático/reload → exportação → encerramento/Hall → nova aventura",
+        "batalha real perdida → resultado → fim → Hall funciona",
+        "efeito real não desenha sobre HP/nome nem intercepta cliques"
+      ],
+      "errors": [],
+      "network": [],
+      "viewports": []
+    },
+    {
+      "area": "audio",
+      "engine": "Edge",
+      "screens": 13,
+      "flows": [
+        {
+          "name": "playlist, volumes, cry, mute/reload, visibilidade, save intacto",
+          "wave": {
+            "peak": 0.09993717074394226,
+            "rms": 0.013243209764942218,
+            "nonzero": 23281
+          },
+          "requests": 5
+        },
+        {
+          "name": "passo animado com efeito audível",
+          "state": {
+            "contexts": 1,
+            "state": "running",
+            "time": 1.0213333333333334,
+            "gains": [
+              1,
+              0.6499999761581421,
+              0.33000001311302185,
+              0.2976747751235962,
+              0.12232497334480286,
+              0.00009999999747378752
+            ],
+            "media": [
+              {
+                "src": "",
+                "paused": true,
+                "time": 0
+              },
+              {
+                "src": "https://erereck.github.io/pokebobo/audio/music/route1.mp3",
+                "paused": false,
+                "time": 0.19737
+              }
+            ],
+            "sources": 1
+          }
+        },
+        {
+          "name": "encounter",
+          "state": {
+            "contexts": 1,
+            "state": "running",
+            "time": 10.08,
+            "gains": [
+              1,
+              0.6499999761581421,
+              0.33000001311302185,
+              0.11523420363664627,
+              0.04436568543314934,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.8500000238418579
+            ],
+            "media": [
+              {
+                "src": "https://erereck.github.io/pokebobo/audio/music/route1.mp3",
+                "paused": false,
+                "time": 0.480318
+              },
+              {
+                "src": "https://erereck.github.io/pokebobo/audio/music/wild.mp3",
+                "paused": false,
+                "time": 10.041174
+              }
+            ],
+            "sources": 17
+          },
+          "requests": [
+            "https://erereck.github.io/pokebobo/audio/music/wild.mp3",
+            "https://erereck.github.io/pokebobo/audio/cries/pidgey.mp3",
+            "https://erereck.github.io/pokebobo/audio/fanfares/caught.mp3",
+            "https://erereck.github.io/pokebobo/audio/music/route1.mp3"
+          ]
+        },
+        {
+          "name": "capture",
+          "state": {
+            "contexts": 1,
+            "state": "running",
+            "time": 8.530666666666667,
+            "gains": [
+              1,
+              0.6499999761581421,
+              0.33000001311302185,
+              0.15960000455379486,
+              0,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.8500000238418579
+            ],
+            "media": [
+              {
+                "src": "https://erereck.github.io/pokebobo/audio/music/route1.mp3",
+                "paused": false,
+                "time": 0.990994
+              },
+              {
+                "src": "https://erereck.github.io/pokebobo/audio/music/wild.mp3",
+                "paused": true,
+                "time": 8.041708
+              }
+            ],
+            "sources": 15
+          },
+          "requests": [
+            "https://erereck.github.io/pokebobo/audio/music/wild.mp3",
+            "https://erereck.github.io/pokebobo/audio/fanfares/caught.mp3",
+            "https://erereck.github.io/pokebobo/audio/music/route1.mp3"
+          ]
+        },
+        {
+          "name": "failure",
+          "state": {
+            "contexts": 1,
+            "state": "running",
+            "time": 6.810666666666667,
+            "gains": [
+              1,
+              0.6499999761581421,
+              0.33000001311302185,
+              0,
+              0.41999998688697815,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752
+            ],
+            "media": [
+              {
+                "src": "",
+                "paused": true,
+                "time": 0
+              },
+              {
+                "src": "https://erereck.github.io/pokebobo/audio/music/wild.mp3",
+                "paused": false,
+                "time": 5.898574
+              }
+            ],
+            "sources": 13
+          },
+          "requests": [
+            "https://erereck.github.io/pokebobo/audio/music/wild.mp3",
+            "https://erereck.github.io/pokebobo/audio/fanfares/caught.mp3",
+            "https://erereck.github.io/pokebobo/audio/cries/pidgey.mp3"
+          ]
+        },
+        {
+          "name": "turno real com efeitos e cries",
+          "state": {
+            "contexts": 1,
+            "state": "running",
+            "time": 7.530666666666667,
+            "gains": [
+              1,
+              0.6499999761581421,
+              0.33000001311302185,
+              0,
+              0.41999998688697815,
+              1,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752,
+              0.00009999999747378752
+            ],
+            "media": [
+              {
+                "src": "",
+                "paused": true,
+                "time": 0
+              },
+              {
+                "src": "https://erereck.github.io/pokebobo/audio/music/gym.mp3",
+                "paused": false,
+                "time": 6.681542
+              }
+            ],
+            "sources": 8
+          }
+        },
+        {
+          "name": "mute lembrado não baixa nem toca áudio"
+        }
+      ],
+      "errors": [],
+      "network": [],
+      "viewports": [
+        "1280×800",
+        "390×844",
+        "320×568",
+        "844×390"
+      ]
+    },
+    {
+      "area": "quality",
+      "engine": "Edge",
+      "screens": 30,
+      "flows": [
+        "caderno: três páginas, quatro visores, foco/Escape, boost real +2",
+        "direções seguradas: retoma direita ao soltar cima, voltar bloqueado até release, parada estável",
+        "restaurar backup: inválido sem alteração, prévia, slot vazio 2, slot 1 intacto, reload e download real em quatro visores",
+        "getter de storage bloqueado: nova jornada em memória, aviso verdadeiro e exportação real"
+      ],
+      "errors": [],
+      "network": [],
+      "viewports": [
+        "1280×800",
+        "390×844",
+        "320×568",
+        "844×390"
+      ]
+    },
+    {
+      "area": "inputs/layout",
+      "engine": "Edge",
+      "screens": 12,
+      "flows": [
+        "seis visores adicionais, 2D/3D, seis Pokémon; comandos dentro da tela e sem overflow",
+        "dois dedos reais em CDP: soltar cima retoma direita, Voltar espera ambos",
+        "botão do D-pad funciona por foco e Enter"
+      ],
+      "errors": [],
+      "network": [],
+      "viewports": [
+        "360×640",
+        "412×915",
+        "768×1024",
+        "1024×768",
+        "1366×768",
+        "1536×864"
+      ]
+    }
+  ],
+  "summary": {
+    "screens": 145,
+    "flows": 38
+  },
+  "campaign": {
+    "seed": 4075877915,
+    "commands": 85,
+    "actions": 195,
+    "battles": 14,
+    "badges": 8,
+    "won": true,
+    "party": [
+      {
+        "name": "Incineroar",
+        "level": 82
+      },
+      {
+        "name": "Pelipper",
+        "level": 80
+      },
+      {
+        "name": "Victreebel",
+        "level": 67
+      }
+    ],
+    "errors": [],
+    "network": []
+  },
+  "offline": {
+    "audioRange": {
+      "status": 206,
+      "range": "bytes 100-299/1215312",
+      "bytes": 200
+    },
+    "nativeAudio": {
+      "time": 0.279128,
+      "duration": 86.735193,
+      "ready": 4
+    },
+    "shellFiles": 52
+  },
+  "installation": {
+    "manifestErrors": [],
+    "installabilityErrors": [],
+    "id": "https://erereck.github.io/pokebobo/",
+    "scope": "https://erereck.github.io/pokebobo/",
+    "startUrl": "https://erereck.github.io/pokebobo/"
+  },
+  "limitations": [
+    "Visores emulados em Windows; nenhum telefone físico ou instalação no sistema do usuário.",
+    "Prompt de instalação/compartilhamento foi simulado; elegibilidade foi verificada por protocolo nativo em perfil isolado comum.",
+    "A primeira medição de áudio usou espera fixa de 600 ms sob cinco navegadores e não passou; repetição aguardou avanço real e manteve asserções de reprodução/readyState.",
+    "Offline WebKit não confirmado: reload com context.setOffline produz erro interno também no controle mínimo sem jogo; Edge passa no mesmo controle. Safari/iPhone físico permanece pendente.",
+    "Campanha usa política automatizada observável e seed vencedora da auditoria; não comprova dificuldade humana."
+  ],
+  "webkitOfflineControl": [
+    {
+      "browser": "edge",
+      "reload": true,
+      "text": "Offline control"
+    },
+    {
+      "browser": "webkit",
+      "reload": false,
+      "error": "page.reload: WebKit encountered an internal error\nCall log:\n  - waiting for navigation until \"load\"\n"
+    }
+  ],
+  "identityCI": 38159363945,
+  "identityPages": 38159363956,
+  "deployment": {
+    "base": "https://erereck.github.io/pokebobo/",
+    "version": "0.20.0-d4000dba0567",
+    "files": [
+      {
+        "file": "index.html",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 764,
+        "sha256": "721d850a453699ca4dda5415c81e2521d5cde4586cf49aec8279e9971a4c3617"
+      },
+      {
+        "file": "assets/index-DwLQh79D.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8",
+        "bytes": 5432286,
+        "sha256": "24ada8ec08b711a54f853d99e6ad899d9221dfabd372b91d87cc3d7509a710e6"
+      },
+      {
+        "file": "assets/index-CQQHkfWI.css",
+        "status": 200,
+        "contentType": "text/css; charset=utf-8",
+        "bytes": 120374,
+        "sha256": "44788ce882b7f8fe50616ea0c67707f1d755d5aae4d14f145ba735f176d5a176"
+      },
+      {
+        "file": "manifest.webmanifest",
+        "status": 200,
+        "contentType": "application/manifest+json; charset=utf-8",
+        "bytes": 513,
+        "sha256": "fea6e5924345de768857dcfe1d5e284591bd6b7365d0f2f86eec3f3f9707b4ec"
+      },
+      {
+        "file": "icons/pokebobo-192.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 9251,
+        "sha256": "59fe4589998cf02e630fd606df9d5116ebc66291c07e314ee55cd7125ccfbb05"
+      },
+      {
+        "file": "icons/pokebobo-512.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 24546,
+        "sha256": "58fa53ac2550736606ec2a5b98e723539c3a56bdd529340445fbd8ffc6e2dfb7"
+      },
+      {
+        "file": "field/red_fish_sheet.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2835,
+        "sha256": "09653a49fd8b5518ecea1b42b4344b442233b9c44c94cedb77f2911580f7e06e"
+      }
+    ],
+    "method": "Hash SHA-256 dos arquivos servidos comparado ao build local final; worker identificado por versão, sem exigir hash entre plataformas"
+  }
+}

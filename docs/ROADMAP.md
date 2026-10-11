@@ -14,6 +14,8 @@
 
 **Limites e próximos trabalhos:** mapas autorais com tiles FRLG, não todas as rotas canônicas; espera/mordida encurtadas, sem minijogo de pesca. Offline não baixa o catálogo inteiro e depende do espaço mantido pelo navegador; instalação física/iPhone e campanha humana seguem pendentes. Sugiro aprofundar os segredos do campo, testar uma jornada no celular real e, para IA, construir casos de avaliação de golpes como Body Press/Foul Play com preservação explícita das decisões já salvas antes de mudar a política. Níveis/porcentagens não foram ajustados só por resultado de bots.
 
+**Publicação e fechamento:** PR 23/24 mergeadas com CI e Pages verdes. Site público passou 145 registros/38 fluxos, mais campanha completa de 85 comandos e protocolo nativo de elegibilidade. A conferência encontrou e corrigiu a identidade do manifesto para incluir a pasta do jogo; sete hashes publicados iguais ao build final. Offline/audio/exportação repetidos em Edge; WebKit offline permanece pendente porque o navegador de teste Windows também falha num controle mínimo sem jogo. Evidências e restrições em [relatório público](balance/production-validation-0.20.0.json).
+
 ## 0.19.0 — Jornada mais viva · 11/10/2026
 
 **Pedido:** usar a janela de duas horas autorizada para melhorar/revisar o jogo por julgamento próprio e publicar diretamente o que estiver pronto. Prioridades escolhidas: efeitos de golpes, clareza do combate, segurança do progresso, controles e carregamento. A rodada conserva níveis, IA, regras e schema, permitindo comparar resultados sem uma mudança de balanceamento junto.
