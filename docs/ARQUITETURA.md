@@ -1,5 +1,11 @@
 # Arquitetura do Pokébobo
 
+## Área visível e gestos — 0.20.1
+
+`useVisualViewport` pertence à apresentação e escreve apenas altura/deslocamento visíveis em CSS. Atualizações são agrupadas por requestAnimationFrame, eventos/variáveis limpos ao desmontar; zoom mantém viewport nativo. Carcaça e dialog combinam essas medidas com tokens de áreas seguras. Sem essa API, CSS usa dvh. Nenhum dado entra em save ou no motor.
+
+`Modal` exige gesto completo no fundo para fechar por ponteiro; padding interno/arrasto não encerram a janela. Escape e botão Fechar mantêm o contrato nativo, retorno de foco usa preventScroll. Rodapé de evoluções e layout de toque ficam na UI/CSS, mantendo os mesmos comandos. Cache lê arquivos estáticos locais com ignoreVary para suportar diferenças de Origin em servidores; a whitelist e os limites continuam restritos, sem API/save. [Guia mobile](MOBILE.md).
+
 ## Campo, condições públicas e acesso sem conexão — 0.20.0
 
 `game/data/fieldLayouts.js` guarda quatro matrizes de terreno; `world/fieldLayout.js` escolhe por hash de seed/rota sem consumir RNG. `exploration.layoutId` é opcional, preservando campos já abertos sem redesenhar a posição. `terrainAt/isTallGrass/lakeDirection` alimentam tanto colisão quanto desenho/quadrantes e ações do lago. Preparação de pesca/Surf pertence à apresentação e conclui no comando existente. `drawField` inclui faixa superior de 16 px; grade física permanece 12×8, canvas 192×144. Sprite da vara carrega somente ao pescar.

@@ -1,5 +1,11 @@
 # Onde editar
 
+## Na palma da mão — 0.20.1
+
+- Área visível: `app/hooks/useVisualViewport.js`, chamado por `App`; altura/deslocamento em variáveis CSS, limpeza de eventos e zoom nativo. Tokens de áreas seguras em `styles/foundations/tokens.css`; geometria das janelas em `styles/components/dialogs.css`.
+- Toque/paisagem: `styles/responsive/pokedex/mobile-ergonomics.css`, importado no fim da cascata. Rodapé das evoluções em `EvolutionDialog`/`equipe-viva.css`. Conferir todas as opções, rolagem e confirmação, não apenas a primeira.
+- Gestos de janela: `components/ui/Modal.jsx`; fechamento requer início e fim fora, preservando padding/arrasto, Escape e foco. Offline: leituras estáticas com `ignoreVary` em `scripts/serviceWorker.js`; não ampliar a whitelist para APIs/dados pessoais. [Guia e limites](MOBILE.md).
+
 ## Novos caminhos — 0.20.0
 
 - Campo: matrizes em `game/data/fieldLayouts.js`, hash/leitura em `world/fieldLayout.js`, colisão/margem em `world/exploration.js`. Preservar concordância entre terreno visível e movimentos; `layoutId` ausente conserva a caminhada aberta. Testes: `field-layouts.test.js` e suítes anteriores de exploração.

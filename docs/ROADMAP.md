@@ -2,6 +2,8 @@
 
 ## 0.20.1 — Na palma da mão · 11/10/2026
 
+**Publicação:** PR 25 mergeada após CI aprovado; CI main e Pages verdes. Site público: 28 registros/17 fluxos em Edge/WebKit, incluindo rotação com janela aberta e offline Edge com música/exportação reais; sete hashes publicados conferem com o build. [Evidência final](balance/production-validation-0.20.1.json).
+
 **Pedido:** até mais uma hora de refinamento com foco na experiência mobile, revisão e publicação autorizada.
 
 **Entrega e motivo:** comandos principais com 44 px para facilitar toque, áreas seguras e VisualViewport para conservar campos/ações com teclado aberto. Paisagem curta ganha espaço para arena/captura/campo. Eevee mantém oito caminhos roláveis e confirmação acessível. Arrastos e toques no espaçamento interno deixam de fechar janelas acidentalmente; foco retorna sem salto.
