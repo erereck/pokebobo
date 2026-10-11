@@ -55,7 +55,9 @@ export function Setup({ run: r, act }) {
               : starter
                 ? "Os três estão no nível 10. Só um vai dar o primeiro passo com você."
                 : ready
-                  ? "Um último olhar no mapa. Daqui pra frente, cada semana conta."
+                  ? r.challenge
+                    ? "A região do convite está pronta. Suas decisões fazem uma nova história."
+                    : "Um último olhar no mapa. Daqui pra frente, cada semana conta."
                   : r.route.length === 1
                     ? "Uma cidade para conhecer sua equipe, explorar e ganhar alguns níveis."
                     : `Todos são ${r.route.length - 1}º ginásios nos jogos de origem. O nome da cidade é a pista.`}

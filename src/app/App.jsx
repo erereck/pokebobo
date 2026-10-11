@@ -19,6 +19,9 @@ import { PokedexDialog } from "../features/pokedex/PokedexDialog.jsx";
 import { ResetDialog } from "../features/settings/ResetDialog.jsx";
 import { initialState } from "../game/state/initialState.js";
 import { useBattleSpriteStyle } from "./hooks/useBattleSpriteStyle.js";
+import { useRegionInvitation } from "./hooks/useRegionInvitation.js";
+import { ChallengeDialog } from "../features/onboarding/ChallengeDialog.jsx";
+import { ShareJourneyDialog } from "../features/history/ShareJourneyDialog.jsx";
 
 export function App() {
   const { spriteStyle, changeSpriteStyle, spritePreferenceSaved } =
@@ -49,6 +52,23 @@ export function App() {
     saveSlots,
     switchSaveSlot,
   } = useGameSession();
+  const {
+    invitationText,
+    setInvitationText,
+    incomingInvitation,
+    startJourney,
+    closeInvitation,
+    switchInvitationSlot,
+  } = useRegionInvitation({
+    run,
+    name,
+    mode,
+    moveLearningMode,
+    act,
+    setModal,
+    setError,
+    switchSaveSlot,
+  });
   const setup =
     run && ["origin", "starter", "draft", "ready"].includes(run.phase);
   const playing = run && !setup && run.phase !== "ended";
@@ -91,14 +111,9 @@ export function App() {
           moveLearningMode={moveLearningMode}
           setMoveLearningMode={setMoveLearningMode}
           meta={state.meta}
-          onStart={() =>
-            act({
-              type: "NEW",
-              name,
-              mode,
-              moveLearningMode,
-            })
-          }
+          invitationText={invitationText}
+          setInvitationText={setInvitationText}
+          onStart={startJourney}
         />
       ) : setup ? (
         <Setup run={run} act={act} />
@@ -107,6 +122,7 @@ export function App() {
           run={run}
           meta={state.meta}
           onHall={() => setModal("hall")}
+          onShare={() => setModal("share-ended")}
           onNew={() => {
             setName(run.name);
             setState((s) => ({
@@ -166,6 +182,19 @@ export function App() {
           onClose={() => setModal(null)}
         />
       )}
+      {modal === "share-ended" && run?.phase === "ended" && (
+        <ShareJourneyDialog
+          run={
+            state.meta.history.find(
+              (entry) =>
+                entry.id === run.number &&
+                entry.seed === run.seed &&
+                (!entry.slot || entry.slot === activeSlot),
+            ) || { ...run, id: run.number, team: run.party }
+          }
+          onClose={() => setModal(null)}
+        />
+      )}
       {modal === "help" && <HelpDialog setModal={setModal} />}
       {modal === "settings" && (
         <SettingsDialog
@@ -179,6 +208,21 @@ export function App() {
           activeSlot={activeSlot}
           saveSlots={saveSlots}
           switchSaveSlot={switchSaveSlot}
+          onChallenge={() => setModal("challenge")}
+        />
+      )}
+      {(modal === "challenge" || (incomingInvitation && Boolean(run))) && (
+        <ChallengeDialog
+          state={state}
+          activeSlot={activeSlot}
+          saveSlots={saveSlots}
+          switchSaveSlot={switchInvitationSlot}
+          value={invitationText}
+          onChange={setInvitationText}
+          name={name}
+          setName={setName}
+          onStart={startJourney}
+          onClose={closeInvitation}
         />
       )}
       {modal === "abandon" && <AbandonDialog setModal={setModal} act={act} />}

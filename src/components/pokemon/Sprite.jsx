@@ -57,6 +57,7 @@ export function Sprite({
   shiny = false,
   style,
   onLoad,
+  loading,
 }) {
   const mon = catalog[name];
   if (!mon) return <Ball size={48} />;
@@ -66,6 +67,7 @@ export function Sprite({
     <img
       key={`${name}-${back}-${animated}-${battleStyle}-${shiny}`}
       draggable="false"
+      loading={loading}
       className={cx("sprite", back && "sprite-back", className)}
       src={sources[0]}
       data-source-index="0"

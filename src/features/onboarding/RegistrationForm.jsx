@@ -2,6 +2,8 @@ import { cx } from "../../shared/classNames.js";
 import { Lock } from "lucide-react";
 import { Check } from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import { InvitationInput } from "./InvitationInput.jsx";
+import { parseInvitation } from "../../shared/regionInvitation.js";
 
 export function RegistrationForm({
   meta,
@@ -12,7 +14,17 @@ export function RegistrationForm({
   setMode,
   moveLearningMode,
   setMoveLearningMode,
+  invitationText,
+  setInvitationText,
 }) {
+  let invitation, invitationError;
+  try {
+    invitation = parseInvitation(invitationText);
+  } catch (error) {
+    invitationError = error;
+  }
+  const challengeMode = invitation?.challenge?.mode;
+  const chosenMode = challengeMode || mode;
   return (
     <section className="registration">
       <span className="section-label">
@@ -39,7 +51,11 @@ export function RegistrationForm({
         <div className="mode-heading">
           <label>MODO DA RUN</label>
           <span>
-            {meta.wins ? "MODOS DESBLOQUEADOS" : "2 MODOS PARA DESBLOQUEAR"}
+            {challengeMode
+              ? "MODO DO CONVITE"
+              : meta.wins
+                ? "MODOS DESBLOQUEADOS"
+                : "2 MODOS PARA DESBLOQUEAR"}
           </span>
         </div>
         <div className="mode-options">
@@ -51,14 +67,20 @@ export function RegistrationForm({
             <button
               type="button"
               key={id}
-              disabled={id !== "normal" && !meta.wins}
-              aria-pressed={mode === id}
-              className={cx(mode === id && "selected")}
-              onClick={() => setMode(id)}
+              disabled={
+                challengeMode
+                  ? id !== challengeMode
+                  : id !== "normal" && !meta.wins
+              }
+              aria-pressed={chosenMode === id}
+              className={cx(chosenMode === id && "selected")}
+              onClick={() => {
+                if (!challengeMode) setMode(id);
+              }}
             >
-              {id !== "normal" && !meta.wins ? (
+              {id !== "normal" && !meta.wins && id !== challengeMode ? (
                 <Lock size={12} />
-              ) : mode === id ? (
+              ) : chosenMode === id ? (
                 <Check size={12} />
               ) : null}
               {label}
@@ -66,9 +88,9 @@ export function RegistrationForm({
           ))}
         </div>
         <p className="mode-desc">
-          {mode === "rush"
+          {chosenMode === "rush"
             ? "Duas semanas por cidade. Treinos rendem +2 a +4 níveis."
-            : mode === "nuzlocke"
+            : chosenMode === "nuzlocke"
               ? "Quem cair em batalha deixa a equipe para sempre."
               : "3 semanas por cidade. Perdeu uma batalha, acabou."}
         </p>
@@ -100,8 +122,14 @@ export function RegistrationForm({
             : "Vagas livres são preenchidas direto. Com 4 golpes, você escolhe qual esquecer quando aprender um novo."}
         </p>
 
-        <button className="button primary start-button" type="submit">
-          Iniciar aventura <ArrowRight size={21} />
+        <InvitationInput value={invitationText} onChange={setInvitationText} />
+        <button
+          className="button primary start-button"
+          type="submit"
+          disabled={Boolean(invitationError)}
+        >
+          {invitation ? "Começar desafio" : "Iniciar aventura"}{" "}
+          <ArrowRight size={21} />
         </button>
       </form>
       <div className="registration-foot">

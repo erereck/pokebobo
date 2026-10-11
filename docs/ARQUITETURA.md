@@ -1,5 +1,13 @@
 # Arquitetura do Pokébobo
 
+## Pokédex e jornadas compartilhadas — 0.17.0
+
+`features/pokedex/dexModel.js` deriva um índice normal/shiny da coleção permanente, deduplica aliases, atribui regionais à região da forma e aplica filtros sem alterar o save. `DexProgress`, `DexDetails` e `DexVariants` compõem a janela; comparação depende dos dois registros reais. Sprite 2D local conserva formas, e loading lazy limita a lista.
+
+`features/history/journeyCardModel.js` normaliza registros novos/antigos; `renderJourneyCard.js` compõe canvas e QR com fontes/sprites locais, em import dinâmico. O efeito renderiza num canvas provisório e só publica o arquivo se a janela ainda estiver aberta. `ShareJourneyDialog` oferece download, clipboard com seleção manual de fallback e Web Share imediatamente no gesto do botão, depois de o arquivo estar pronto. Cancelar não reporta sucesso. Dialog nativo trata ESC sem fechar também o Hall de trás.
+
+`game/world/regionChallenge.js` valida exclusivamente cidades canônicas, posição/ordem, unicidade, modo e uint32. `shared/regionInvitation.js` codifica fragmento PB1 e valida links/seeds; não carrega equipe ou recursos. `useRegionInvitation` recebe hashchange/convite inicial e protege a run ativa; modos de convite valem somente para aquela aventura. NEW/STARTER montam a região validada, mantendo o sorteio shiny separado. BEGIN grava `challengeStartRng` antes de arrival; finishRun o copia. Migração schema 4 já preserva campos adicionais. `fixedSeedDraft` faz a seed manual consumir os mesmos sorteios de origem independentemente do número de runs, enquanto novas aventuras comuns conservam o começo existente.
+
 ## Escala dos sprites — 0.16.0
 
 Escala/apoio em `components/pokemon/battleSpriteLayout.js`, geometria por arquivo em `spriteGeometry.json` e calibração por espécie/estilo/lado em `battleSpeciesScale.json`. `features/battle/BattlePokemonSprite.jsx` mede a caixa e recebe a fonte carregada por `Sprite`; `BattleArena` compõe os lados. Limites responsive ficam nas variáveis --battle-sprite-limit do CSS. Dados estão na apresentação, não no motor/save. Geradores, decisões, reprodução e limites em [ESCALA-DOS-SPRITES.md](ESCALA-DOS-SPRITES.md); testes em `tests/battle-sprite-scale.test.js`.

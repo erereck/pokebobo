@@ -1,0 +1,127 @@
+{
+  "reports": [
+    {
+      "name": "compartilhar-direto-tela-final-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "cartao-derrota-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "cartao-encerrada-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "cartao-antiga-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "cartao-sem-equipe-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "cartao-falha-sprite-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "cartao-recuperado-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "pokébobo.POKÉDEX DE CAMPO v0.17.0PokédexTela cheiaHallAjudaOpçõesRUN 001 · PÁGIN"
+    },
+    {
+      "name": "convite-invalido-protegido-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "seed-manual-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": ""
+    }
+  ],
+  "flows": [
+    {
+      "name": "native-share-mocked-success-cancel-error-clipboard-fallback",
+      "data": {
+        "title": "Minha jornada no Pokébobo",
+        "text": "Erick · 8/8 insígnias · Clássico\nhttps://erereck.github.io/pokebobo/#desafio=PB1.ya.c.1e3pa8z.pallet~sandgem~oreburgh~azalea~hearthome~celadon~driftveil~olivine~cinnabar~blackthorn",
+        "files": [
+          {
+            "name": "pokebobo-run-1-seed-1234.png",
+            "type": "image/png",
+            "size": 187072
+          }
+        ]
+      },
+      "fallbackSelected": true
+    },
+    {
+      "name": "cartao-derrota"
+    },
+    {
+      "name": "cartao-encerrada"
+    },
+    {
+      "name": "cartao-antiga"
+    },
+    {
+      "name": "cartao-sem-equipe"
+    },
+    {
+      "name": "sprite-invalid-error-retry",
+      "deliberate": true
+    },
+    {
+      "name": "invalid-link-does-not-touch-run"
+    },
+    {
+      "name": "manual-seed-invalid-and-valid",
+      "seed": 811
+    }
+  ],
+  "errors": [],
+  "network": []
+}

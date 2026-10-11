@@ -1,6 +1,6 @@
 {
   "name": "pokebobo",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,6 +17,7 @@
   "dependencies": {
     "@pkmn/sim": "0.10.11",
     "lucide-react": "0.577.0",
+    "qrcode": "1.5.4",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },

@@ -5,6 +5,7 @@ import { city } from "../selectors/city.js";
 export function handleBegin(s, action, state) {
   let r = s.run;
   if (action.type === "BEGIN" && r.phase === "ready") {
+    r.challengeStartRng = r.rng;
     r.phase = "career";
     arrival(r);
     note(

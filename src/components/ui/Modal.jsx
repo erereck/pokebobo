@@ -28,6 +28,7 @@ export function Modal({
       className={className}
       aria-labelledby={titleId}
       onCancel={(event) => {
+        event.stopPropagation();
         if (!dismissible) event.preventDefault();
         else onClose();
       }}

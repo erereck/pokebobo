@@ -7,8 +7,9 @@ import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { Lock } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import { Medal } from "lucide-react";
+import { Share2 } from "lucide-react";
 
-export function Ending({ run: r, meta, onNew, onHall }) {
+export function Ending({ run: r, meta, onNew, onHall, onShare }) {
   return (
     <main className="ending">
       <div className={cx("result-emblem", !r.won && "lost")}>
@@ -64,11 +65,14 @@ export function Ending({ run: r, meta, onNew, onHall }) {
         </div>
       )}
       <div className="ending-actions">
+        <button className="button primary" onClick={onShare}>
+          <Share2 size={18} /> Compartilhar jornada
+        </button>
         <button className="button secondary" onClick={onHall}>
           <Medal size={18} />
           Ver Hall da Fama
         </button>
-        <button className="button primary" onClick={onNew}>
+        <button className="button secondary" onClick={onNew}>
           Outra região. Outra história.
           <ArrowRight size={19} />
         </button>

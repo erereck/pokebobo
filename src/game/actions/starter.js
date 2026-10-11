@@ -4,6 +4,7 @@ import { PROGRESSION } from "../config/progression.js";
 import { sample } from "../random/sample.js";
 import { VILLAGES } from "../data/villages.js";
 import { registerPokemon } from "../pokemon/collection.js";
+import { challengeRoute } from "../world/regionChallenge.js";
 
 export function handleStarter(s, action, state) {
   let r = s.run;
@@ -18,6 +19,12 @@ export function handleStarter(s, action, state) {
     registerPokemon(r, r.party[0], "starter");
     r.phase = "draft";
     r.offers = sample(r, VILLAGES, 3).map((x) => x.id);
+    if (r.challenge) {
+      r.route = challengeRoute(r.challenge);
+      r.rng = r.challenge.rng;
+      r.phase = "ready";
+      r.offers = [];
+    }
     return s;
   }
   return state;

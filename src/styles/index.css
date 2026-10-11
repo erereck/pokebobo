@@ -14,6 +14,8 @@
 @import "./features/adventure.css";
 @import "./features/capture.css";
 @import "./components/dialogs.css";
+@import "./features/pokedex.css";
+@import "./features/sharing.css";
 @import "./responsive/pokedex/desktop-height.css";
 @import "./responsive/pokedex/tablet.css";
 @import "./responsive/pokedex/mobile.css";

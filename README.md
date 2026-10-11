@@ -1,6 +1,8 @@
-# Pokébobo — 0.16.0 · Batalha na medida
+# Pokébobo — 0.17.0 · Histórias para compartilhar
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.17.0 traz uma **Pokédex para completar e jornadas para compartilhar**: comparação normal/shiny, progresso pelas oito regiões do catálogo e filtros por tipo, região e variantes. **Compartilhar jornada**, na tela final ou no Hall, gera um PNG com equipe, shinies, insígnias, modo e seed. O QR e o convite permitem jogar as mesmas cidades com um inicial à sua escolha. Também é possível digitar uma seed em Nova aventura ou Opções → Jogar desafio de um amigo; slots em andamento ficam protegidos. [Pokédex](docs/images/pokedex-comparacao-0.17-celular.png) · [Cartão de exemplo](docs/images/cartao-jornada-0.17.png) · [Como funciona](docs/POKEDEX-E-COMPARTILHAMENTO.md).
 
 A 0.16.0 calibra **o tamanho dos Pokémon em batalha por espécie, estilo e lado**. Pidgey fica pequeno, evoluções crescem e gigantes cabem na arena. Escala fixa no ciclo de animação, margens transparentes medidas, apoio na plataforma e adaptação a PC/celular/tela cheia. Cores shiny e regras/saves preservados. [Batalha 2D](docs/images/escala-2d-0.16-celular.png) · [Batalha 3D](docs/images/escala-3d-0.16-celular.png) · [Medição](docs/ESCALA-DOS-SPRITES.md).
 

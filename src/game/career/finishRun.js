@@ -47,6 +47,7 @@ export function finishRun(s, won, details = won ? "champion" : "defeat") {
     boxLevels: box.map((mon) => mon.level),
     mode: r.mode || "normal",
     seed: r.seed || 0,
+    challengeStartRng: r.challengeStartRng || null,
     leagueIndex: r.leagueIndex || 0,
     reason,
     ending,

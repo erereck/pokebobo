@@ -1,4 +1,6 @@
-import { Archive, BookOpen, Flag, Trophy } from "lucide-react";
+import { Archive, BookOpen, Flag, Trophy, Share2 } from "lucide-react";
+import { useState } from "react";
+import { ShareJourneyDialog } from "./ShareJourneyDialog.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { Modal } from "../../components/ui/Modal.jsx";
 import { cx } from "../../shared/classNames.js";
@@ -46,6 +48,7 @@ function MonStrip({ mons }) {
 }
 
 export function HallOfFameDialog({ history = [], onClose }) {
+  const [sharingRun, setSharingRun] = useState(null);
   const champions = history.filter((run) => run.won).length;
   const best = history.reduce(
     (maximum, run) => Math.max(maximum, Number(run.badges) || 0),
@@ -140,10 +143,22 @@ export function HallOfFameDialog({ history = [], onClose }) {
                     Último rival: <b>{run.opponent}</b>
                   </small>
                 ) : null}
+                <button
+                  className="button secondary full hall-share-button"
+                  onClick={() => setSharingRun(run)}
+                >
+                  <Share2 size={16} /> Compartilhar jornada
+                </button>
               </article>
             );
           })}
         </div>
+      )}
+      {sharingRun && (
+        <ShareJourneyDialog
+          run={sharingRun}
+          onClose={() => setSharingRun(null)}
+        />
       )}
     </Modal>
   );

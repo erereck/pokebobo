@@ -1,5 +1,13 @@
 # Onde editar
 
+## Pokédex e compartilhamento — 0.17.0
+
+- Coleção, variantes, regiões, aliases e filtros: `features/pokedex/dexModel.js`; composição em PokedexDialog/DexProgress/DexDetails/DexVariants. CSS próprio em `styles/features/pokedex.css`, junto da cascata existente.
+- Cartão/modelo antigo: `features/history/journeyCardModel.js`, `renderJourneyCard.js` e `cardDrawing.js`. Exportação em ShareJourneyDialog, gatilhos em Ending/HallOfFameDialog; layout em `styles/features/sharing.css`. Sprite/fontes são existentes; licenças do QR em public/licenses.
+- Convites e seeds: `shared/regionInvitation.js`, `game/world/regionChallenge.js` e `app/hooks/useRegionInvitation.js`. Recepção em RegistrationForm/InvitationInput/ChallengeDialog. Preservar a validação e o bloqueio de slots em andamento.
+- RNG inicial e seeds manuais: `game/actions/new.js`, `starter.js`, `begin.js` e `career/finishRun.js`. Não usar o RNG atual de uma run avançada como sorteio inicial. Detalhes/limites em [POKEDEX-E-COMPARTILHAMENTO.md](POKEDEX-E-COMPARTILHAMENTO.md).
+- Testes: `tests/pokedex-collection.test.js`, `region-invitations.test.js`; evidência de navegador/QR em docs/balance/*sharing*0.17.0.json.
+
 ## Escala dos sprites — 0.16.0
 
 Escala/apoio em `components/pokemon/battleSpriteLayout.js`, geometria por arquivo em `spriteGeometry.json` e calibração por espécie/estilo/lado em `battleSpeciesScale.json`. `features/battle/BattlePokemonSprite.jsx` mede a caixa e recebe a fonte carregada por `Sprite`; `BattleArena` compõe os lados. Limites responsive ficam nas variáveis --battle-sprite-limit do CSS. Dados estão na apresentação, não no motor/save. Geradores, decisões, reprodução e limites em [ESCALA-DOS-SPRITES.md](ESCALA-DOS-SPRITES.md); testes em `tests/battle-sprite-scale.test.js`.
