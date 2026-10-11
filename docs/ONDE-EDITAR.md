@@ -1,5 +1,9 @@
 # Onde editar
 
+## Presença na arena — 0.18.1
+
+Referência da caixa, piso do 3D e limite comum normal/shiny em `components/pokemon/battleSpriteLayout.js`; medição em `features/battle/BattlePokemonSprite.jsx`. Não há mais --battle-sprite-limit nos breakpoints. Tabelas/imagens são as mesmas, sem mudanças em gameplay. [Guia atual](ESCALA-DOS-SPRITES.md); testes em battle-sprite-scale.test.js.
+
 ## Áudio — 0.18.0
 
 - Mixer, autoplay, crossfade, mute, cache e visibilidade: `features/audio/AudioEngine.js`; integração, cenas e preferências: AudioProvider/audioScene/audioPreferences. Nunca importar isso em `game/`.

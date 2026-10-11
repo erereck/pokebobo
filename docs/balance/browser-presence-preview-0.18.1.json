@@ -1,0 +1,1290 @@
+{
+  "tag": "preview",
+  "base": "http://localhost:4174/pokebobo/",
+  "screens": [
+    {
+      "name": "pignite-geodude-2d-1920",
+      "fullscreen": true,
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "arenaHeight": 535,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front/geodude.gif",
+          "geometry": "battle-sprites/front/geodude.gif",
+          "width": 542.15625,
+          "height": 240.90625,
+          "visibleHeight": 98.65110937499999,
+          "visibleWidth": 133.72705937499998,
+          "imageRatio": 1.3556153968002533,
+          "naturalRatio": 1.3555555555555556
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back/pignite.gif",
+          "geometry": "battle-sprites/back/pignite.gif",
+          "width": 542.15625,
+          "height": 240.90625,
+          "visibleHeight": 191.10996450000002,
+          "visibleWidth": 158.80968880985915,
+          "imageRatio": 0.8309214291554248,
+          "naturalRatio": 0.8309859154929577
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pignite-geodude-3d-1920",
+      "fullscreen": true,
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "arenaHeight": 535,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "https://play.pokemonshowdown.com/sprites/ani/geodude.gif",
+          "geometry": "sprites/ani/geodude.gif",
+          "width": 542.15625,
+          "height": 240.90625,
+          "visibleHeight": 98.651109375,
+          "visibleWidth": 211.395234375,
+          "imageRatio": 2.143038175194044,
+          "naturalRatio": 2.142857142857143
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back/pignite.gif",
+          "geometry": "sprites/ani-back/pignite.gif",
+          "width": 542.15625,
+          "height": 240.90625,
+          "visibleHeight": 191.10996450000002,
+          "visibleWidth": 204.19968809589042,
+          "imageRatio": 1.0684326710816776,
+          "naturalRatio": 1.0684931506849316
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pignite-geodude-2d-1280",
+      "fullscreen": false,
+      "width": 1280,
+      "height": 800,
+      "dpr": 1,
+      "arenaHeight": 257,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front/geodude.gif",
+          "geometry": "battle-sprites/front/geodude.gif",
+          "width": 303.125,
+          "height": 115.8125,
+          "visibleHeight": 47.425218750000006,
+          "visibleWidth": 64.28751875,
+          "imageRatio": 1.355518945634267,
+          "naturalRatio": 1.3555555555555556
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back/pignite.gif",
+          "geometry": "battle-sprites/back/pignite.gif",
+          "width": 303.125,
+          "height": 115.8125,
+          "visibleHeight": 91.87359300000001,
+          "visibleWidth": 76.3456617887324,
+          "imageRatio": 0.8310937234223508,
+          "naturalRatio": 0.8309859154929577
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pignite-geodude-3d-1280",
+      "fullscreen": false,
+      "width": 1280,
+      "height": 800,
+      "dpr": 1,
+      "arenaHeight": 257,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "https://play.pokemonshowdown.com/sprites/ani/geodude.gif",
+          "geometry": "sprites/ani/geodude.gif",
+          "width": 303.125,
+          "height": 115.8125,
+          "visibleHeight": 47.425218750000006,
+          "visibleWidth": 101.62546875000001,
+          "imageRatio": 2.142998352553542,
+          "naturalRatio": 2.142857142857143
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back/pignite.gif",
+          "geometry": "sprites/ani-back/pignite.gif",
+          "width": 303.125,
+          "height": 115.8125,
+          "visibleHeight": 91.87359300000001,
+          "visibleWidth": 98.16630484931508,
+          "imageRatio": 1.0685490729715938,
+          "naturalRatio": 1.0684931506849316
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pignite-geodude-2d-390",
+      "fullscreen": false,
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "arenaHeight": 384,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front/geodude.gif",
+          "geometry": "battle-sprites/front/geodude.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 59.056156249999994,
+          "visibleWidth": 80.05390069444444,
+          "imageRatio": 1.3556496427626357,
+          "naturalRatio": 1.3555555555555556
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back/pignite.gif",
+          "geometry": "battle-sprites/back/pignite.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 114.405403,
+          "visibleWidth": 95.06927854929579,
+          "imageRatio": 0.8310340117470291,
+          "naturalRatio": 0.8309859154929577
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "turno-reload-2d-390",
+      "fullscreen": false,
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "arenaHeight": 384,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "https://play.pokemonshowdown.com/sprites/ani/geodude.gif",
+          "geometry": "sprites/ani/geodude.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 57.38250000000001,
+          "visibleWidth": 122.96250000000002,
+          "imageRatio": 2.1429738562091503,
+          "naturalRatio": 2.142857142857143
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back/pignite.gif",
+          "geometry": "sprites/ani-back/pignite.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 114.405403,
+          "visibleWidth": 122.24138950684932,
+          "imageRatio": 1.0685698675044393,
+          "naturalRatio": 1.0684931506849316
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pignite-geodude-3d-390",
+      "fullscreen": false,
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "arenaHeight": 384,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "https://play.pokemonshowdown.com/sprites/ani/geodude.gif",
+          "geometry": "sprites/ani/geodude.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 57.38250000000001,
+          "visibleWidth": 122.96250000000002,
+          "imageRatio": 2.1429738562091503,
+          "naturalRatio": 2.142857142857143
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back/pignite.gif",
+          "geometry": "sprites/ani-back/pignite.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 114.405403,
+          "visibleWidth": 122.24138950684932,
+          "imageRatio": 1.0685698675044393,
+          "naturalRatio": 1.0684931506849316
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "turno-reload-3d-390",
+      "fullscreen": false,
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "arenaHeight": 384,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front/geodude.gif",
+          "geometry": "battle-sprites/front/geodude.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 59.056156249999994,
+          "visibleWidth": 80.05390069444444,
+          "imageRatio": 1.3556496427626357,
+          "naturalRatio": 1.3555555555555556
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back/pignite.gif",
+          "geometry": "battle-sprites/back/pignite.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 114.405403,
+          "visibleWidth": 95.06927854929579,
+          "imageRatio": 0.8310340117470291,
+          "naturalRatio": 0.8309859154929577
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pignite-geodude-2d-320",
+      "fullscreen": false,
+      "width": 320,
+      "height": 568,
+      "dpr": 1,
+      "arenaHeight": 150,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front/geodude.gif",
+          "geometry": "battle-sprites/front/geodude.gif",
+          "width": 110.75,
+          "height": 67.484375,
+          "visibleHeight": 27.6348515625,
+          "visibleWidth": 37.4605765625,
+          "imageRatio": 1.3557692307692308,
+          "naturalRatio": 1.3555555555555556
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back/pignite.gif",
+          "geometry": "battle-sprites/back/pignite.gif",
+          "width": 110.75,
+          "height": 67.484375,
+          "visibleHeight": 53.53508475,
+          "visibleWidth": 44.486901411971836,
+          "imageRatio": 0.8309982486865148,
+          "naturalRatio": 0.8309859154929577
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 58,
+          "visible": true
+        },
+        {
+          "height": 58,
+          "visible": true
+        },
+        {
+          "height": 58,
+          "visible": true
+        },
+        {
+          "height": 58,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pignite-geodude-3d-320",
+      "fullscreen": false,
+      "width": 320,
+      "height": 568,
+      "dpr": 1,
+      "arenaHeight": 150,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "https://play.pokemonshowdown.com/sprites/ani/geodude.gif",
+          "geometry": "sprites/ani/geodude.gif",
+          "width": 110.75,
+          "height": 67.484375,
+          "visibleHeight": 27.6348515625,
+          "visibleWidth": 59.2175390625,
+          "imageRatio": 2.143099547511312,
+          "naturalRatio": 2.142857142857143
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back/pignite.gif",
+          "geometry": "sprites/ani-back/pignite.gif",
+          "width": 110.75,
+          "height": 67.484375,
+          "visibleHeight": 53.53508475,
+          "visibleWidth": 57.20187137671233,
+          "imageRatio": 1.0683012259194395,
+          "naturalRatio": 1.0684931506849316
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 58,
+          "visible": true
+        },
+        {
+          "height": 58,
+          "visible": true
+        },
+        {
+          "height": 58,
+          "visible": true
+        },
+        {
+          "height": 58,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pignite-geodude-2d-844",
+      "fullscreen": false,
+      "width": 844,
+      "height": 390,
+      "dpr": 1,
+      "arenaHeight": 188,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front/geodude.gif",
+          "geometry": "battle-sprites/front/geodude.gif",
+          "width": 160.0625,
+          "height": 84.59375,
+          "visibleHeight": 34.641140625000006,
+          "visibleWidth": 46.95799062500001,
+          "imageRatio": 1.3554352728912946,
+          "naturalRatio": 1.3555555555555556
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back/pignite.gif",
+          "geometry": "battle-sprites/back/pignite.gif",
+          "width": 160.0625,
+          "height": 84.59375,
+          "visibleHeight": 67.10788350000001,
+          "visibleWidth": 55.76570600704227,
+          "imageRatio": 0.8311597578015836,
+          "naturalRatio": 0.8309859154929577
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 87,
+          "visible": true
+        },
+        {
+          "height": 87,
+          "visible": true
+        },
+        {
+          "height": 93,
+          "visible": true
+        },
+        {
+          "height": 93,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pignite-geodude-3d-844",
+      "fullscreen": false,
+      "width": 844,
+      "height": 390,
+      "dpr": 1,
+      "arenaHeight": 188,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "https://play.pokemonshowdown.com/sprites/ani/geodude.gif",
+          "geometry": "sprites/ani/geodude.gif",
+          "width": 160.0625,
+          "height": 84.59375,
+          "visibleHeight": 34.641140625000006,
+          "visibleWidth": 74.23101562500001,
+          "imageRatio": 2.1425349571493006,
+          "naturalRatio": 2.142857142857143
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back/pignite.gif",
+          "geometry": "sprites/ani-back/pignite.gif",
+          "width": 160.0625,
+          "height": 84.59375,
+          "visibleHeight": 67.10788350000001,
+          "visibleWidth": 71.70431387671235,
+          "imageRatio": 1.068700512342804,
+          "naturalRatio": 1.0684931506849316
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 87,
+          "visible": true
+        },
+        {
+          "height": 87,
+          "visible": true
+        },
+        {
+          "height": 93,
+          "visible": true
+        },
+        {
+          "height": 93,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Pidgey-Charizard-2d",
+      "fullscreen": false,
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "arenaHeight": 384,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Charizard shiny",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front-shiny/charizard.gif",
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 119.41024999999999,
+          "visibleWidth": 116.78584890109889,
+          "imageRatio": 0.9780162261188171,
+          "naturalRatio": 0.978021978021978
+        },
+        {
+          "name": "Pidgey shiny de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back-shiny/pidgey.gif",
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 50.879149999999996,
+          "visibleWidth": 48.71407978723404,
+          "imageRatio": 0.9573095823095823,
+          "naturalRatio": 0.9574468085106383
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Pidgey-Charizard-2d-resize",
+      "fullscreen": false,
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "arenaHeight": 487,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Charizard shiny",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front-shiny/charizard.gif",
+          "geometry": "battle-sprites/front-shiny/charizard.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 177.643125,
+          "visibleWidth": 173.7388804945055,
+          "imageRatio": 0.9780103791010643,
+          "naturalRatio": 0.978021978021978
+        },
+        {
+          "name": "Pidgey shiny de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back-shiny/pidgey.gif",
+          "geometry": "battle-sprites/back-shiny/pidgey.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 77.37344999999999,
+          "visibleWidth": 74.08096276595744,
+          "imageRatio": 0.9575843263987074,
+          "naturalRatio": 0.9574468085106383
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Pidgey-Charizard-3d",
+      "fullscreen": false,
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "arenaHeight": 384,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Charizard shiny",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-shiny/charizard.gif",
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 119.41024999999999,
+          "visibleWidth": 113.43973749999998,
+          "imageRatio": 0.9500130855796912,
+          "naturalRatio": 0.95
+        },
+        {
+          "name": "Pidgey shiny de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/pidgey.gif",
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 50.879149999999996,
+          "visibleWidth": 51.93913229166666,
+          "imageRatio": 1.020884520884521,
+          "naturalRatio": 1.0208333333333333
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Pidgey-Charizard-3d-resize",
+      "fullscreen": false,
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "arenaHeight": 487,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Charizard shiny",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-shiny/charizard.gif",
+          "geometry": "sprites/ani-shiny/charizard.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 177.643125,
+          "visibleWidth": 168.76096875,
+          "imageRatio": 0.9499516228340223,
+          "naturalRatio": 0.95
+        },
+        {
+          "name": "Pidgey shiny de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/pidgey.gif",
+          "geometry": "sprites/ani-back-shiny/pidgey.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 77.37344999999999,
+          "visibleWidth": 78.98539687499999,
+          "imageRatio": 1.021005857402545,
+          "naturalRatio": 1.0208333333333333
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Onix-Wailord-2d",
+      "fullscreen": false,
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "arenaHeight": 384,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Wailord shiny",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front-shiny/wailord.gif",
+          "geometry": "battle-sprites/front-shiny/wailord.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 84.3659375,
+          "visibleWidth": 98.7464950284091,
+          "imageRatio": 1.1704019262826448,
+          "naturalRatio": 1.1704545454545454
+        },
+        {
+          "name": "Onix shiny de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back-shiny/onix.gif",
+          "geometry": "battle-sprites/back-shiny/onix.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 87.83035714285715,
+          "visibleWidth": 122.9625,
+          "imageRatio": 1.3999288382850026,
+          "naturalRatio": 1.4
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Onix-Wailord-2d-resize",
+      "fullscreen": false,
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "arenaHeight": 487,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Wailord shiny",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front-shiny/wailord.gif",
+          "geometry": "battle-sprites/front-shiny/wailord.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 128.2978125,
+          "visibleWidth": 150.16675781249998,
+          "imageRatio": 1.1703811959566435,
+          "naturalRatio": 1.1704545454545454
+        },
+        {
+          "name": "Onix shiny de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back-shiny/onix.gif",
+          "geometry": "battle-sprites/back-shiny/onix.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 177.643125,
+          "visibleWidth": 248.70037499999998,
+          "imageRatio": 1.3999472249098426,
+          "naturalRatio": 1.4
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Onix-Wailord-3d",
+      "fullscreen": false,
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "arenaHeight": 384,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Wailord shiny",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-shiny/wailord.gif",
+          "geometry": "sprites/ani-shiny/wailord.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 68.21892123287671,
+          "visibleWidth": 122.9625,
+          "imageRatio": 1.8023362345396243,
+          "naturalRatio": 1.8024691358024691
+        },
+        {
+          "name": "Onix shiny de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/onix.gif",
+          "geometry": "sprites/ani-back-shiny/onix.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 139.86421875000002,
+          "visibleWidth": 122.38119140625003,
+          "imageRatio": 0.8749860350798794,
+          "naturalRatio": 0.875
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Onix-Wailord-3d-resize",
+      "fullscreen": false,
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "arenaHeight": 487,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Wailord shiny",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-shiny/wailord.gif",
+          "geometry": "sprites/ani-shiny/wailord.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 128.2978125,
+          "visibleWidth": 231.25284722222221,
+          "imageRatio": 1.8024601144805747,
+          "naturalRatio": 1.8024691358024691
+        },
+        {
+          "name": "Onix shiny de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/onix.gif",
+          "geometry": "sprites/ani-back-shiny/onix.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 177.643125,
+          "visibleWidth": 155.437734375,
+          "imageRatio": 0.8750109948104494,
+          "naturalRatio": 0.875
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Joltik-Dragonite-2d",
+      "fullscreen": false,
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "arenaHeight": 384,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Dragonite shiny",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front-shiny/dragonite.gif",
+          "geometry": "battle-sprites/front-shiny/dragonite.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 119.41024999999999,
+          "visibleWidth": 116.49780487804877,
+          "imageRatio": 0.9755299659774928,
+          "naturalRatio": 0.975609756097561
+        },
+        {
+          "name": "Joltik shiny de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back-shiny/joltik.gif",
+          "geometry": "battle-sprites/back-shiny/joltik.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 37.79594,
+          "visibleWidth": 45.355128,
+          "imageRatio": 1.2001654259718775,
+          "naturalRatio": 1.2
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Joltik-Dragonite-2d-resize",
+      "fullscreen": false,
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "arenaHeight": 487,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Dragonite shiny",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front-shiny/dragonite.gif",
+          "geometry": "battle-sprites/front-shiny/dragonite.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 177.643125,
+          "visibleWidth": 173.31036585365854,
+          "imageRatio": 0.9755475415603835,
+          "naturalRatio": 0.975609756097561
+        },
+        {
+          "name": "Joltik shiny de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back-shiny/joltik.gif",
+          "geometry": "battle-sprites/back-shiny/joltik.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 57.47742,
+          "visibleWidth": 68.972904,
+          "imageRatio": 1.2001087547580207,
+          "naturalRatio": 1.2
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Joltik-Dragonite-3d",
+      "fullscreen": false,
+      "width": 390,
+      "height": 844,
+      "dpr": 1,
+      "arenaHeight": 384,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Dragonite shiny",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-shiny/dragonite.gif",
+          "geometry": "sprites/ani-shiny/dragonite.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 119.41024999999999,
+          "visibleWidth": 103.57011479591836,
+          "imageRatio": 0.8673122219314315,
+          "naturalRatio": 0.8673469387755102
+        },
+        {
+          "name": "Joltik shiny de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/joltik.gif",
+          "geometry": "sprites/ani-back-shiny/joltik.gif",
+          "width": 136.625,
+          "height": 172.671875,
+          "visibleHeight": 37.79594,
+          "visibleWidth": 53.83058121212121,
+          "imageRatio": 1.424731182795699,
+          "naturalRatio": 1.4242424242424243
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        },
+        {
+          "height": 64,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "Joltik-Dragonite-3d-resize",
+      "fullscreen": false,
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1,
+      "arenaHeight": 487,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Dragonite shiny",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-shiny/dragonite.gif",
+          "geometry": "sprites/ani-shiny/dragonite.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 177.643125,
+          "visibleWidth": 154.0782206632653,
+          "imageRatio": 0.8673586067376199,
+          "naturalRatio": 0.8673469387755102
+        },
+        {
+          "name": "Joltik shiny de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back-shiny/joltik.gif",
+          "geometry": "sprites/ani-back-shiny/joltik.gif",
+          "width": 369.359375,
+          "height": 219.3125,
+          "visibleHeight": 57.47742,
+          "visibleWidth": 81.86178000000001,
+          "imageRatio": 1.4244154431756388,
+          "naturalRatio": 1.4242424242424243
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "flows": [
+    "estilo sem alterar save; turno real e reload 2d",
+    "estilo sem alterar save; turno real e reload 3d",
+    "shiny, estabilidade e resize Pidgey 2d",
+    "shiny, estabilidade e resize Pidgey 3d",
+    "shiny, estabilidade e resize Onix 2d",
+    "shiny, estabilidade e resize Onix 3d",
+    "shiny, estabilidade e resize Joltik 2d",
+    "shiny, estabilidade e resize Joltik 3d"
+  ],
+  "errors": [],
+  "network": []
+}

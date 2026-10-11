@@ -1,4 +1,13 @@
-# Validação — Pokébobo 0.18.0
+# Validação — Pokébobo 0.18.1
+
+## 0.18.1 — Pokémon em destaque · 11/10/2026
+
+- `npm run verify`, `VITE_BASE=/pokebobo/`: 153 testes e build web. Arquitetura continua com 228 módulos, sem ciclos/UI no motor. Regressão nova verifica crescimento proporcional da arena e presença 3D/2D de Geodude/Pignite; todos os perfis/lados/cores conferidos também em caixa maior de 560×400. Testes preservam Pidgey com menos de metade da altura de Charizard, bounds/proporção, estabilidade normal/shiny e hash da geometria original.
+- Dois registros antes e 24 depois em Edge: Pignite/Geodude nos estilos 2D/3D em 1920×1080 com tela cheia, 1280×800, 390×844, 320×568 e 844×390. Troca de estilo preserva save; turno real e reload nos dois estilos. Pidgey/Charizard, Onix/Wailord e Joltik/Dragonite shiny, estabilidade entre quadros e resize de celular para desktop. Sem erros de console/rede, sprites quebrados, overflow horizontal/vertical no main ou comandos fora do visor. `docs/balance/browser-presence-before-0.18.1.json` e `browser-presence-0.18.1.json`.
+- Reprodução 1920×1080, arena de 535 px: altura visual medida na união dos quadros 3D, Geodude 40→98,65 px e Pignite de costas 72,576→191,11 px. Cada frame efetivo pode ocupar menos que a união, mantendo escala estável. Dados comparáveis com mesmo fixture/visor; não medir body pelo canvas transparente.
+- Build verificado também em viewport CSS 1536×864 / DPR 1,25 (imagem física 1920×1080), tela cheia, ambos os estilos. O pedido usou captura de tela; este cenário confere escalonamento do visor sem afirmar qual zoom/DPR o usuário usa. `browser-presence-escala125-0.18.1.json`.
+- Os 24 registros/oito fluxos passaram novamente no preview do build em `/pokebobo/`, com ambos os estilos, resize, turno e reload; mesmo resultado sem console/rede/overflow. `browser-presence-preview-0.18.1.json`. Não houve mudança adicional de código após o verify.
+- Limites: celular é emulado, sem aparelho físico/iOS. Escala continua estilizada, sem metros literais. Nenhum dado/asset de Pokémon, código do motor, áudio, save/schema ou standalone foi alterado. Apenas apresentação e documentação.
 
 ## 0.18.0 — A jornada tem som · 10/10/2026
 

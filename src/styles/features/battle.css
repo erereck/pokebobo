@@ -100,7 +100,6 @@
   align-items: center;
 }
 .battle-sprite {
-  --battle-sprite-limit: 160;
   position: relative;
   width: 40%;
   height: 100%;

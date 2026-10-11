@@ -1,5 +1,9 @@
 # Arquitetura do Pokébobo
 
+## Presença na arena — 0.18.1
+
+`battleSpriteLayout` deriva escala diretamente da caixa medida, sem teto fixo CSS. Perfil 2D atua como piso de presença do 3D da mesma espécie/lado; normal/shiny compartilham o aspecto mais largo para estabilidade. `BattlePokemonSprite` mede somente width/height. Limites de corpo, proporção/apoio/frames e renderer das animações continuam os mesmos. [Critérios atuais](ESCALA-DOS-SPRITES.md); descrição da 0.16 abaixo é histórica.
+
 ## Áudio — 0.18.0
 
 `features/audio/AudioProvider` cria/destrói o mixer no ciclo de vida da aplicação; expõe comandos por contexto, guarda preferências fora do save e deriva a trilha em `audioScene`. `AudioEngine` usa Web Audio + dois media elements, transições, mute, ducking, cache/token por cena e visibilidade. O contexto só nasce no gesto. `chipEffects` contém síntese própria; tracks/cryIndex contêm apenas índices locais. Motor/game não importa áudio/DOM nem muda RNG.

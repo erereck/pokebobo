@@ -1,5 +1,15 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## 0.18.1 — Pokémon em destaque · 11/10/2026
+
+**Pedido:** corrigir Pokémon pequenos demais na arena; captura anexada mostra Pignite/Geodude em tela cheia. Publicação direta continua autorizada.
+
+**Causa/ajuste:** perfil 3D derivado do corpo nativo fazia Pignite/Geodude bem menores que o 2D, e tetos de 160/140/94/84 px impediam acompanhar arenas maiores. Agora a referência acompanha a caixa (90% da altura / 95% da largura), sem tetos, com o perfil 2D como piso de presença do 3D da mesma espécie/lado. Mantém pequenos menores, gigantes contidos, geometria de todos os frames, proporção/apoio e perspectiva de costas. O maior aspecto normal/shiny limita largura de ambas as paletas para preservar altura; sem regenerar artes/tabelas ou mudar regras/áudio/save/RNG.
+
+**Evidência:** 153 testes, 228 módulos e build Pages. Dois registros antes, 24 depois nos dois estilos e cinco visores, com tela cheia, turno real/reload, troca de estilo sem alterar save, shinies, pequenos/gigantes, estabilidade e resize. Os 24 registros/oito fluxos passaram também no preview `/pokebobo/`; dois casos adicionais em DPR 1,25/tela cheia. Geodude 40→98,65 px e Pignite 72,576→191,11 px na reprodução de arena de 535 px. Limites geométricos/proporção preservados, sem erro de console/rede ou overflow/comandos cortados. Detalhes em [VALIDACAO](../VALIDACAO.md), critério atual em [ESCALA-DOS-SPRITES](ESCALA-DOS-SPRITES.md).
+
+**Limites/próximo passo:** imagens variam de pose no ciclo, embora a escala se mantenha fixa. Escala é estilizada e respeita a caixa em visores curtos; celular emulado não equivale a aparelho físico. Se outra espécie destoar, ajustar o perfil correspondente mantendo estes limites. O backlog de áudio/compartilhamento/Pokédex permanece entregue; esta rodada só corrige presença na batalha.
+
 ## 0.18.0 — A jornada tem som · 10/10/2026
 
 **Pedido:** implementar a sugestão 1, áudio caprichado, com playlist de músicas do game baixadas do YouTube por yt-dlp. Integração direta continua autorizada; os outros itens ficam para próximas rodadas.

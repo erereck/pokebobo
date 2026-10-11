@@ -1,4 +1,14 @@
-# Escala dos sprites de batalha — 0.16.0
+# Escala dos sprites de batalha
+
+## 0.18.1 — presença na arena
+
+A referência agora é proporcional à caixa do Pokémon: menor entre 90% da altura e 95% da largura, sem tetos fixos por dispositivo. O 3D usa o perfil 2D da mesma espécie/lado como piso; desenhos 3D nativos compactos, como Geodude/Pignite, deixam de reduzir o corpo duas vezes. Perfis de pequenos/grandes, proporção da fonte, união dos quadros, perspectiva de costas 1,12 e apoio são preservados. O corpo continua limitado a 90% da largura e 81% da altura menos elevação, sem cobrir o HUD.
+
+Normal/shiny usam o maior aspecto medido das duas paletas para limitar largura. Assim, diferenças nas margens/ciclos de arquivos publicados não mudam a altura ao alternar cor. Cada fonte conserva a sua geometria e âncora. Não regenerou imagens nem os dados de calibração da 0.16; só mudou sua aplicação na apresentação. ResizeObserver continua recalculando em resize/tela cheia.
+
+Na reprodução da captura de tela do usuário, em 1920×1080 com tela cheia, ambos os estilos foram conferidos antes/depois. PC, celular estreito e paisagem, pequenos, gigantes, shinies, troca de estilo, turno e reload recebem verificação. Resultados/limites em VALIDACAO.md; não equivale a um teste de aparelho físico/iOS. A altura em metros continua fora da fórmula.
+
+## Referência histórica — 0.16.0
 
 A assinatura textual da geometria usa UTF-8/LF, conservando o mesmo hash entre checkouts Windows e Linux. Hashes de GIF/PNG continuam sendo dos bytes originais, sem normalização.
 
