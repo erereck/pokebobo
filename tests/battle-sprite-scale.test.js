@@ -31,7 +31,7 @@ function layout(
   style,
   back,
   shiny = false,
-  box = { width: 144, height: 180, limit: 140 },
+  box = { width: 144, height: 180 },
 ) {
   return battleSpriteLayout({
     name,
@@ -70,9 +70,10 @@ test("todo catálogo tem perfil e limites medidos; corpos cabem sem distorção 
       for (const back of [false, true])
         for (const shiny of [false, true])
           for (const box of [
-            { width: 64, height: 54, limit: 84 },
-            { width: 144, height: 180, limit: 140 },
-            { width: 280, height: 240, limit: 160 },
+            { width: 64, height: 54 },
+            { width: 144, height: 180 },
+            { width: 280, height: 240 },
+            { width: 560, height: 400 },
           ]) {
             const src = source(name, style, back, shiny),
               g = geometry[spriteGeometryKey(src)];
@@ -99,6 +100,33 @@ test("todo catálogo tem perfil e limites medidos; corpos cabem sem distorção 
             assert.ok(visibleBottom >= box.height * 0.17 - 0.001, name);
           }
   }
+});
+
+test("tela cheia amplia a espécie junto da arena e o 3D compacto conserva a presença do 2D", () => {
+  for (const [name, back] of [
+    ["Geodude", false],
+    ["Pignite", true],
+  ]) {
+    const standard = layout(name, "3d", back, false, {
+      width: 500,
+      height: 200,
+    });
+    const large = layout(name, "3d", back, false, { width: 1000, height: 400 });
+    assert.ok(
+      Math.abs(large.visibleHeight / standard.visibleHeight - 2) < 0.001,
+      name,
+    );
+    const pixel = layout(name, "2d", back, false, { width: 500, height: 200 });
+    assert.ok(Math.abs(standard.visibleHeight - pixel.visibleHeight) < 1, name);
+  }
+  assert.ok(
+    layout("Geodude", "3d", false, false, { width: 500, height: 200 })
+      .visibleHeight > 80,
+  );
+  assert.ok(
+    layout("Pignite", "3d", true, false, { width: 500, height: 200 })
+      .visibleHeight > 150,
+  );
 });
 
 test("cor normal/shiny conserva tamanho visual e margem transparente não muda o apoio", () => {

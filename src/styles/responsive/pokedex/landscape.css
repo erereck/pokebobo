@@ -116,9 +116,6 @@
   .switch-options button {
     min-height: 44px;
   }
-  .battle-sprite {
-    --battle-sprite-limit: 84;
-  }
   .health-card {
     padding: 4px 6px;
   }

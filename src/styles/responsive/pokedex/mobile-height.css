@@ -135,9 +135,6 @@
   .battle-topline h1 {
     font-size: 17px;
   }
-  .battle-sprite {
-    --battle-sprite-limit: 94;
-  }
   .switch-options button {
     min-height: 58px;
   }

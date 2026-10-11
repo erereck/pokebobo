@@ -15,16 +15,10 @@ export function BattlePokemonSprite({
     const element = container.current;
     const update = () => {
       const { width, height } = element.getBoundingClientRect();
-      const limit =
-        parseFloat(
-          getComputedStyle(element).getPropertyValue("--battle-sprite-limit"),
-        ) || 160;
       setBox((previous) =>
-        previous?.width === width &&
-        previous?.height === height &&
-        previous?.limit === limit
+        previous?.width === width && previous?.height === height
           ? previous
-          : { width, height, limit },
+          : { width, height },
       );
     };
     update();

@@ -1,5 +1,9 @@
 # Pokébobo — sistema de interface 0.3.0
 
+## Presença dos Pokémon — 0.18.1
+
+Arena usa referência proporcional à caixa, sem tetos por dispositivo: min(altura×0,90, largura×0,95). Piso de ratio 2D para o 3D da mesma espécie/lado evita corpos nativos compactos virarem miniaturas. Mantém limites de corpo 90%/81%, apoio/perspectiva/union dos quadros e pequenos/grandes. Aspecto mais largo de normal/shiny impede altura variar pela paleta. Não ampliar por transform CSS; o renderer aplica offsets sobre a fonte real, preservando as animações dos golpes.
+
 ## Som e playlist — 0.18.0
 
 Mute no cabeçalho como botão físico de 44 px (40 px no visor de 320), com estado acessível; logo vira Poké Bola no cabeçalho até 500 px para conservar seis controles. Opções abre Som e playlist. Modal de 840 px, cabeçalho sticky: faixa/transportes no topo, volumes/modos à esquerda, biblioteca à direita; até 640 px vira uma coluna. Ranges nativos com rótulo/percentual, três canais, seleção verde LCD e transportes de 48 px. Playlist com índice, título oficial, contexto e duração; lista rola separadamente. Mantém tipos/cores existentes e foco visível. Sem detalhes técnicos de codecs/cortes nas ações do jogador; fontes/termos em link próprio.

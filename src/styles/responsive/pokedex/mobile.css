@@ -520,7 +520,6 @@
     gap: 6px;
   }
   .battle-sprite {
-    --battle-sprite-limit: 140;
     width: 43%;
   }
   .battle-comment {

@@ -1,6 +1,8 @@
-# Pokébobo — 0.18.0 · A jornada tem som
+# Pokébobo — 0.18.1 · Pokémon em destaque
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.18.1 amplia **a presença dos Pokémon na arena**, especialmente o 3D de Pignite e Geodude. A escala acompanha o espaço da batalha em tela cheia, sem os antigos tetos em pixels; pequenos continuam menores e gigantes respeitam a caixa. Normal/shiny compartilham o limite de largura para manter altura consistente. [Critérios de escala](docs/ESCALA-DOS-SPRITES.md).
 
 A 0.18.0 traz **música, cries e efeitos sincronizados**. Vinte músicas de FireRed / LeafGreen acompanham as cenas; em Opções → Som e playlist você pode escolher uma faixa e ouvir a sequência livre, ajustar três volumes ou silenciar tudo pelo topo. Cries reais de todo o catálogo, passos em grama/água, arremesso, quicados, shakes, captura, golpes, cura, desmaio e fanfares. Preferências lembradas, transições suaves, pausa ao sair da aba e retomada da trilha da rota. Arquivos locais obtidos com yt-dlp/Showdown, sem YouTube durante a partida. [Controles](docs/images/audio-0.18-desktop.png) · [Como funciona](docs/AUDIO.md) · [Fontes e créditos](public/audio/README.md).
 

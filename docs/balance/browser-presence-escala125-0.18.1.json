@@ -1,0 +1,115 @@
+{
+  "tag": "escala125",
+  "base": "http://localhost:4174/pokebobo/",
+  "screens": [
+    {
+      "name": "pignite-geodude-2d-1536",
+      "fullscreen": true,
+      "width": 1536,
+      "height": 864,
+      "dpr": 1.25,
+      "arenaHeight": 353,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/front/geodude.gif",
+          "geometry": "battle-sprites/front/geodude.gif",
+          "width": 406.796875,
+          "height": 159.015625,
+          "visibleHeight": 65.11689843750001,
+          "visibleWidth": 88.26957343750003,
+          "imageRatio": 1.35565154787617,
+          "naturalRatio": 1.3555555555555556
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "http://localhost:4174/pokebobo/battle-sprites/back/pignite.gif",
+          "geometry": "battle-sprites/back/pignite.gif",
+          "width": 406.796875,
+          "height": 159.015625,
+          "visibleHeight": 126.14645925000002,
+          "visibleWidth": 104.82593092605636,
+          "imageRatio": 0.8309178743961353,
+          "naturalRatio": 0.8309859154929577
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pignite-geodude-3d-1536",
+      "fullscreen": true,
+      "width": 1536,
+      "height": 864,
+      "dpr": 1.25,
+      "arenaHeight": 353,
+      "overflow": false,
+      "mainOverflow": 0,
+      "sprites": [
+        {
+          "name": "Geodude",
+          "source": "https://play.pokemonshowdown.com/sprites/ani/geodude.gif",
+          "geometry": "sprites/ani/geodude.gif",
+          "width": 406.796875,
+          "height": 159.015625,
+          "visibleHeight": 65.11689843750001,
+          "visibleWidth": 139.53621093750002,
+          "imageRatio": 2.143028557715383,
+          "naturalRatio": 2.142857142857143
+        },
+        {
+          "name": "Pignite de costas",
+          "source": "https://play.pokemonshowdown.com/sprites/ani-back/pignite.gif",
+          "geometry": "sprites/ani-back/pignite.gif",
+          "width": 406.796875,
+          "height": 159.015625,
+          "visibleHeight": 126.14645925000002,
+          "visibleWidth": 134.78662769178084,
+          "imageRatio": 1.0684999380651554,
+          "naturalRatio": 1.0684931506849316
+        }
+      ],
+      "broken": [],
+      "moves": [
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        },
+        {
+          "height": 66,
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "flows": [],
+  "errors": [],
+  "network": []
+}

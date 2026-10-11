@@ -1,5 +1,11 @@
 # Histórico
 
+## 0.18.1 — Pokémon em destaque · 11/10/2026
+
+- Pokémon maiores na arena, especialmente Pignite e Geodude em 3D. Perfil 2D funciona como piso de presença para a mesma espécie/lado; a escala acompanha a caixa real, inclusive em tela cheia, sem tetos fixos em pixels.
+- Pequenos continuam menores, gigantes respeitam os limites da arena, e normal/shiny compartilham limite de aspecto para não variar altura pela cor. Geometria de todos os quadros, proporção, apoio e perspectiva de costas preservados.
+- Renderer mede apenas width/height; removidos os limites antigos dos breakpoints. Nenhuma imagem/calibração regenerada, sem mudar áudio, saves, RNG ou regras. Regressão de tela cheia e verificação de PC/celular/paisagem em ambos os estilos.
+
 ## 0.18.0 — A jornada tem som · 10/10/2026
 
 - Vinte músicas e cinco fanfares de FireRed / LeafGreen, baixadas com yt-dlp e incorporadas localmente. Seleção automática por cena/bioma, ginásio/Liga/campeão, lendários, vitória e Hall; playlist livre com escolha, anterior/próxima e avanço circular. Crossfade e retorno à posição da rota após captura.
