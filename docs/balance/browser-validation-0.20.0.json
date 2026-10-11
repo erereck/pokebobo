@@ -1,0 +1,79 @@
+{
+  "version": "0.20.0",
+  "normalTests": 182,
+  "browserSimulatorTests": 177,
+  "modules": 252,
+  "mainJsKB": 5432.29,
+  "gzipJsKB": 1014.79,
+  "cssKB": 120.37,
+  "reports": [
+    {
+      "file": "browser-field-0.20.0.json",
+      "screens": 20,
+      "flows": 3
+    },
+    {
+      "file": "browser-decisions-0.20.0.json",
+      "screens": 8,
+      "flows": 2
+    },
+    {
+      "file": "browser-field-webkit-0.20.0.json",
+      "screens": 20,
+      "flows": 3
+    },
+    {
+      "file": "browser-decisions-webkit-0.20.0.json",
+      "screens": 8,
+      "flows": 2
+    },
+    {
+      "file": "browser-quality-0.20.0.json",
+      "screens": 30,
+      "flows": 4
+    },
+    {
+      "file": "browser-advanced-0.20.0.json",
+      "screens": 0,
+      "flows": 7
+    },
+    {
+      "file": "browser-session-0.20.0.json",
+      "screens": 6,
+      "flows": 3
+    },
+    {
+      "file": "browser-presence-0.20.0.json",
+      "screens": 24,
+      "flows": 8
+    },
+    {
+      "file": "browser-audio-0.20.0.json",
+      "screens": 13,
+      "flows": 7
+    },
+    {
+      "file": "browser-sharing-0.20.0.json",
+      "screens": 22,
+      "flows": 6
+    },
+    {
+      "file": "browser-offline-0.20.0.json",
+      "screens": 5,
+      "flows": 4
+    },
+    {
+      "file": "browser-campaign-0.20.0.json",
+      "screens": 0,
+      "flows": 0
+    }
+  ],
+  "uiCampaign": {
+    "commands": 85,
+    "actions": 195,
+    "battles": 14,
+    "badges": 8,
+    "won": true
+  },
+  "method": "Edge/WebKit isolados e visores emulados; áudio/download reais, prompt nativo simulado; campanha segue política observável, não pessoas; nenhum aparelho físico"
+}

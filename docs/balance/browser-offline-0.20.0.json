@@ -1,0 +1,110 @@
+{
+  "base": "http://localhost:4177/pokebobo/",
+  "tag": "release020",
+  "flows": [
+    "shell/fontes/field, reload offline sem alterar save, turno real +2, caderno e exportação real",
+    "música usada em cache atende Range de 200 bytes sem rede",
+    "nova versão espera durante a jornada; fechar/reabrir ativa nova versão e conserva save/turno",
+    "instalação nativa: botão chama prompt uma vez e cancelamento mantém jogo"
+  ],
+  "screens": [
+    {
+      "name": "pronto",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "name": "batalha-offline",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "name": "caderno-offline",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "name": "backup-offline",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "name": "atualizacao",
+      "overflow": false,
+      "broken": []
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "cache": {
+    "names": [
+      "pokebobo-shell-0.20.0-94b2f0cb5bd0-qa1",
+      "pokebobo-media-v1"
+    ],
+    "files": [
+      "http://localhost:4177/pokebobo/index.html",
+      "http://localhost:4177/pokebobo/assets/font-0-CB7WfZ8W.woff2",
+      "http://localhost:4177/pokebobo/assets/font-1-DCQhiIS7.woff2",
+      "http://localhost:4177/pokebobo/assets/font-2-CYvJJk-g.woff2",
+      "http://localhost:4177/pokebobo/assets/font-3-BQ0abr9c.woff2",
+      "http://localhost:4177/pokebobo/assets/font-4-DpFQlKNO.woff2",
+      "http://localhost:4177/pokebobo/assets/font-5-DnsmCY5X.woff2",
+      "http://localhost:4177/pokebobo/assets/font-6-DjqJml4C.woff2",
+      "http://localhost:4177/pokebobo/assets/font-7-Bx5ssXV-.woff2",
+      "http://localhost:4177/pokebobo/assets/index-CQQHkfWI.css",
+      "http://localhost:4177/pokebobo/assets/index-DwLQh79D.js",
+      "http://localhost:4177/pokebobo/assets/renderJourneyCard-B8CAqfmt.js",
+      "http://localhost:4177/pokebobo/assets/silkscreen-CXGsBV3a.ttf",
+      "http://localhost:4177/pokebobo/favicon.svg",
+      "http://localhost:4177/pokebobo/manifest.webmanifest",
+      "http://localhost:4177/pokebobo/icons/pokebobo-192.png",
+      "http://localhost:4177/pokebobo/icons/pokebobo-512.png",
+      "http://localhost:4177/pokebobo/battle-effects/air_wave.png",
+      "http://localhost:4177/pokebobo/battle-effects/blue_flames.png",
+      "http://localhost:4177/pokebobo/battle-effects/blue_star.png",
+      "http://localhost:4177/pokebobo/battle-effects/bubble.png",
+      "http://localhost:4177/pokebobo/battle-effects/circle_impact.png",
+      "http://localhost:4177/pokebobo/battle-effects/claw_slash.png",
+      "http://localhost:4177/pokebobo/battle-effects/cross_impact.png",
+      "http://localhost:4177/pokebobo/battle-effects/electricity.png",
+      "http://localhost:4177/pokebobo/battle-effects/fire.png",
+      "http://localhost:4177/pokebobo/battle-effects/ice_crystals_0.png",
+      "http://localhost:4177/pokebobo/battle-effects/impact.png",
+      "http://localhost:4177/pokebobo/battle-effects/needle.png",
+      "http://localhost:4177/pokebobo/battle-effects/poison_bubble.png",
+      "http://localhost:4177/pokebobo/battle-effects/punch_impact.png",
+      "http://localhost:4177/pokebobo/battle-effects/razor_leaf.png",
+      "http://localhost:4177/pokebobo/battle-effects/ring.png",
+      "http://localhost:4177/pokebobo/battle-effects/rocks.png",
+      "http://localhost:4177/pokebobo/battle-effects/shadow_ball.png",
+      "http://localhost:4177/pokebobo/field/ball_particles.png",
+      "http://localhost:4177/pokebobo/field/capture_grass.png",
+      "http://localhost:4177/pokebobo/field/capture_water.png",
+      "http://localhost:4177/pokebobo/field/font_dark.png",
+      "http://localhost:4177/pokebobo/field/font_light.png",
+      "http://localhost:4177/pokebobo/field/healthbar.png",
+      "http://localhost:4177/pokebobo/field/healthbox.png",
+      "http://localhost:4177/pokebobo/field/poke_ball.png",
+      "http://localhost:4177/pokebobo/field/red_back.png",
+      "http://localhost:4177/pokebobo/field/red_fish_sheet.png",
+      "http://localhost:4177/pokebobo/field/red_normal.png",
+      "http://localhost:4177/pokebobo/field/red_normal_sheet.png",
+      "http://localhost:4177/pokebobo/field/red_surf.png",
+      "http://localhost:4177/pokebobo/field/red_surf_sheet.png",
+      "http://localhost:4177/pokebobo/field/tall_grass.png",
+      "http://localhost:4177/pokebobo/field/terrain.png",
+      "http://localhost:4177/pokebobo/field/textbox.png"
+    ]
+  },
+  "audioRange": {
+    "status": 206,
+    "range": "bytes 100-299/1215312",
+    "bytes": 200
+  },
+  "nativeAudio": {
+    "time": 0.405931,
+    "duration": 86.735193,
+    "ready": 4
+  },
+  "activeVersion": "0.20.0-94b2f0cb5bd0-qa2"
+}

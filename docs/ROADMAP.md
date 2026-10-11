@@ -1,5 +1,19 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## 0.20.0 — Novos caminhos · 11/10/2026
+
+**Pedido:** repetir a rodada autônoma de duas horas de refinamento, revisão e publicação direta. Prioridades escolhidas: variedade/ritmo do campo, clareza de decisões, compatibilidade e acesso sem conexão.
+
+**Entrega:** quatro composições de trilhas/mato/lago escolhidas por seed/rota; margens alcançáveis, colisão e quadrantes usam a mesma matriz. Campo aberto conserva seu desenho e ganha uma faixa superior para a cabeça de Red. Vara usa doze poses originais/offsets e espera breve, Surf ganha preparação; nenhuma cobrança/sorteio antecipado, movimento reduzido/fallback e bloqueio dos controles durante a ação. Quantidades de encontros/passos continuam ocultas; 50 passos e 67% por bola mantidos.
+
+**Decisões:** comparação factual dos quatro golpes ao aprender, descrição do novo, cabeçalho compacto em 320 px. Caderno mostra condições públicas, clima/terreno, telas e hazards/camadas, sem duração interna/itens/habilidades ocultos. Fonte WOFF2 corrigida; Fechar conserva tamanho em títulos longos. IA e fórmulas do motor permanecem: mudar a decisão da IA agora poderia reinterpretar lutas salvas pelo replay.
+
+**Instalação/offline:** manifesto/ícones locais e opção contextual de instalar. Código/fontes/cenas de campo/partículas entram no shell preparado; artes/sons usados são guardados em cache limitado. Range de música suportado, escrita inteira e leitura offline sem remover uma entrada. Nova versão espera fechar todas as abas/janelas; Opções avisa para aguardar alguns segundos e reabrir. Cache não lê ou substitui save. [Guia completo](CAMPO-E-OFFLINE.md).
+
+**Evidência:** 182 testes + 177 do motor de publicação, 252 módulos/build Pages. Edge/WebKit conferem quatro visores, 20 registros/três fluxos de campo e oito/dois de decisões em cada motor. Regressões de backups/controles/durabilidade, 24 registros/oito fluxos de presença (2D/3D/tela cheia/pequenos/gigantes), 13/sete de áudio e 22/seis de coleção/cartão/convite. Jornada nova/50 passos/fim/Hall e derrota real verdes. Cinco registros/quatro fluxos offline: reload/turno/caderno/exportação/áudio verdadeiro/atualização nativa, prompt simulado. Sessenta campanhas reais sem censura conservam resultados; campanha completa na UI venceu oito ginásios/Liga com 85 comandos/14 batalhas e equipe final de referência. JS cresce aproximadamente 0,24%; dados essenciais e limites em [VALIDACAO](../VALIDACAO.md).
+
+**Limites e próximos trabalhos:** mapas autorais com tiles FRLG, não todas as rotas canônicas; espera/mordida encurtadas, sem minijogo de pesca. Offline não baixa o catálogo inteiro e depende do espaço mantido pelo navegador; instalação física/iPhone e campanha humana seguem pendentes. Sugiro aprofundar os segredos do campo, testar uma jornada no celular real e, para IA, construir casos de avaliação de golpes como Body Press/Foul Play com preservação explícita das decisões já salvas antes de mudar a política. Níveis/porcentagens não foram ajustados só por resultado de bots.
+
 ## 0.19.0 — Jornada mais viva · 11/10/2026
 
 **Pedido:** usar a janela de duas horas autorizada para melhorar/revisar o jogo por julgamento próprio e publicar diretamente o que estiver pronto. Prioridades escolhidas: efeitos de golpes, clareza do combate, segurança do progresso, controles e carregamento. A rodada conserva níveis, IA, regras e schema, permitindo comparar resultados sem uma mudança de balanceamento junto.

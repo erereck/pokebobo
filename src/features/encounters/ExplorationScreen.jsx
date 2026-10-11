@@ -16,11 +16,27 @@ import {
   isTallGrass,
 } from "../../game/world/exploration.js";
 import { FieldCanvas } from "./FieldCanvas.jsx";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function ExplorationScreen({ run: r, act }) {
   const e = r.exploration;
-  const controls = useFieldControls(e, act);
+  const [preparation, setPreparation] = useState(null);
+  const preparing = useRef(null);
+  const sendFieldAction = (action) =>
+    preparing.current && action.type === "MOVE_ROUTE" ? false : act(action);
+  const controls = useFieldControls(e, sendFieldAction, !preparation);
+  const startLake = (method) => {
+    if (preparing.current) return;
+    preparing.current = method;
+    setPreparation(method);
+  };
+  const onPrepared = () => {
+    const method = preparing.current;
+    if (!method) return;
+    preparing.current = null;
+    setPreparation(null);
+    act({ type: "LAKE_ENCOUNTER", method });
+  };
   useEffect(() => {
     if (e && !e.walk && e.steps >= EXPLORATION_RULES.maxRouteSteps)
       act({ type: "EXIT_ROUTE" });
@@ -45,20 +61,25 @@ export function ExplorationScreen({ run: r, act }) {
       <div className="field-status">
         <span>{r.balls} Poké Bolas</span>
       </div>
-      <PixelViewport width={192} height={128}>
+      <PixelViewport width={192} height={144}>
         <div
           className="field-map"
           role="group"
           tabIndex={0}
           aria-label={`Rota: posição ${e.x + 1}, ${e.y + 1}. Use as setas para caminhar.`}
         >
-          <FieldCanvas exploration={e} act={act} />
+          <FieldCanvas
+            exploration={e}
+            act={act}
+            preparation={preparation}
+            onPrepared={onPrepared}
+          />
           {Array.from(
             { length: EXPLORATION_RULES.width * EXPLORATION_RULES.height },
             (_, index) => {
               const x = index % EXPLORATION_RULES.width,
                 y = Math.floor(index / EXPLORATION_RULES.width);
-              const terrain = terrainAt(x, y);
+              const terrain = terrainAt(x, y, e);
               const grass = isTallGrass(e, x, y);
               const nearby = Math.abs(x - e.x) + Math.abs(y - e.y) === 1;
               return (
@@ -67,7 +88,10 @@ export function ExplorationScreen({ run: r, act }) {
                   tabIndex={-1}
                   className={`field-tile${grass ? " is-grass" : ""}`}
                   disabled={
-                    !!e.walk || !nearby || (terrain === "water" && !e.surfing)
+                    !!preparation ||
+                    !!e.walk ||
+                    !nearby ||
+                    (terrain === "water" && !e.surfing)
                   }
                   aria-label={`${terrain === "water" ? "Lago" : grass ? "Mato alto" : "Trilha"}, ${x + 1}, ${y + 1}`}
                   onClick={() => move(x - e.x, y - e.y)}
@@ -78,8 +102,11 @@ export function ExplorationScreen({ run: r, act }) {
         </div>
       </PixelViewport>
       <p className="field-guide">
-        Segure as setas ou WASD para caminhar. Entre e saia do mato para
-        encontrar Pokémon.
+        {preparation === "fish"
+          ? "Vara lançada… algo puxou a linha!"
+          : preparation === "surf"
+            ? "Preparando Surf…"
+            : "Segure as setas ou WASD. Entre e saia do mato para encontrar Pokémon."}
       </p>
       <div className="field-controls">
         <div className="field-dpad" aria-label="Controles da caminhada">
@@ -88,6 +115,7 @@ export function ExplorationScreen({ run: r, act }) {
               key={label}
               className="hardware-button"
               aria-label={label}
+              disabled={!!preparation}
               onPointerDown={(event) => controls.press(event, dx, dy)}
               onPointerUp={controls.release}
               onPointerCancel={controls.release}
@@ -105,12 +133,14 @@ export function ExplorationScreen({ run: r, act }) {
             className="button secondary"
             disabled={
               !atLake(e) ||
+              !!preparation ||
+              controls.isHolding ||
               !!e.walk ||
               !lakeAvailable ||
               !r.balls ||
               r.badges < EXPLORATION_RULES.fishingBadges
             }
-            onClick={() => act({ type: "LAKE_ENCOUNTER", method: "fish" })}
+            onClick={() => startLake("fish")}
           >
             <Fish size={18} />
             Pescar
@@ -119,19 +149,21 @@ export function ExplorationScreen({ run: r, act }) {
             className="button secondary"
             disabled={
               !atLake(e) ||
+              !!preparation ||
+              controls.isHolding ||
               !!e.walk ||
               !lakeAvailable ||
               !r.balls ||
               r.badges < EXPLORATION_RULES.surfBadges
             }
-            onClick={() => act({ type: "LAKE_ENCOUNTER", method: "surf" })}
+            onClick={() => startLake("surf")}
           >
             <Waves size={18} />
             Surf
           </button>
           <button
             className="button primary field-exit"
-            disabled={!!e.walk || controls.isHolding}
+            disabled={!!preparation || !!e.walk || controls.isHolding}
             aria-label="Voltar à jornada"
             onClick={() => act({ type: "EXIT_ROUTE" })}
           >
@@ -140,15 +172,19 @@ export function ExplorationScreen({ run: r, act }) {
         </div>
       </div>
       <p className="field-lake-guide">
-        {r.badges < EXPLORATION_RULES.fishingBadges
-          ? "Fishing Rod: 3ª insígnia · Surf: 5ª"
-          : !lakeAvailable
-            ? "O lago não tem mais encontros nesta rota."
-            : !atLake(e)
-              ? "Aproxime-se da margem para usar o lago."
-              : r.badges < EXPLORATION_RULES.surfBadges
-                ? "Fishing Rod liberada · Surf: 5ª insígnia"
-                : "Escolha pescar ou usar Surf."}
+        {preparation
+          ? "Aguarde um instante…"
+          : !r.balls
+            ? "Sem Poké Bolas. Volte à jornada para reabastecer."
+            : r.badges < EXPLORATION_RULES.fishingBadges
+              ? "Fishing Rod: 3ª insígnia · Surf: 5ª"
+              : !lakeAvailable
+                ? "O lago não tem mais encontros nesta rota."
+                : !atLake(e)
+                  ? "Aproxime-se da margem para usar o lago."
+                  : r.badges < EXPLORATION_RULES.surfBadges
+                    ? "Fishing Rod liberada · Surf: 5ª insígnia"
+                    : "Escolha pescar ou usar Surf."}
       </p>
     </section>
   );

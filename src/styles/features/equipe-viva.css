@@ -101,6 +101,8 @@
 }
 .move-learn-hero .sprite { width: 92px; height: 92px; flex: 0 0 auto; }
 .move-learn-hero h3 { margin: 4px 0 6px; font-size: 20px; }
+.move-learn-hero h3 small { font: 10px var(--mono); white-space: nowrap; color: var(--ink-soft); }
+.move-learn-hero > div { min-width: 0; }
 .move-learn-hero p { font-size: 12px; color: var(--ink-soft); }
 .new-move-card {
   margin: 12px 0;
@@ -138,7 +140,11 @@
   border-radius: 5px;
 }
 .forget-move-button:hover { border-color: var(--amber); }
-.forget-move-button > span { display: flex; align-items: center; gap: 7px; }
+.forget-move-content { display: grid; gap: 6px; min-width: 0; }
+.forget-move-name { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+.move-summary { display: grid; gap: 6px; font-size: 12px; line-height: 1.45; color: var(--ink-soft); font-weight: 400; }
+.new-move-card > .move-summary { margin-top: 8px; }
+.new-move-card > .move-summary > span + span { color: var(--ink); }
 .forget-move-button small { max-width: 46%; color: var(--ink-soft); }
 
 .hall-reserve {

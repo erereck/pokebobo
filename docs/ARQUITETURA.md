@@ -1,5 +1,13 @@
 # Arquitetura do Pokébobo
 
+## Campo, condições públicas e acesso sem conexão — 0.20.0
+
+`game/data/fieldLayouts.js` guarda quatro matrizes de terreno; `world/fieldLayout.js` escolhe por hash de seed/rota sem consumir RNG. `exploration.layoutId` é opcional, preservando campos já abertos sem redesenhar a posição. `terrainAt/isTallGrass/lakeDirection` alimentam tanto colisão quanto desenho/quadrantes e ações do lago. Preparação de pesca/Surf pertence à apresentação e conclui no comando existente. `drawField` inclui faixa superior de 16 px; grade física permanece 12×8, canvas 192×144. Sprite da vara carrega somente ao pescar.
+
+`publicConditions` copia apenas identificadores públicos e camadas de hazards para o snapshot. `FieldConditions` traduz usando dados separados; nada de duração interna, fontes do motor, item ou habilidade escondida. `MoveSummary` usa `moveGuide` no aprendizado, conservando regras de escolha/PP do jogo.
+
+`offlinePlugin.mjs` gera service worker apenas no build. Identidade depende do conteúdo do shell/template/assets essenciais. O worker guarda arquivos, nunca saves ou informações pessoais; shell versionado, uma versão anterior conservada, mídia compartilhada limitada (200 arquivos/60 MiB/4 MiB por arquivo). `put` é inteiro; leituras offline não regravam uma entrada em uso. Música atende Range sobre bytes completos. Nova versão espera todas as páginas anteriores fecharem, com aviso em Opções. `offlineClient` trata ciclo/conexão/prompt; não há atualização forçada em gameplay. Manifesto e ícones ficam em public; desenvolvimento não registra worker. [Guia e limites](CAMPO-E-OFFLINE.md).
+
 ## Batalha, backups e bundle — 0.19.0
 
 `presentationEvents` enriquece o protocolo com golpe, alvo, resultado visual e causas públicas; não calcula dano. `battleSnapshot` interpreta o log uma vez e copia tipos/boosts. `useBattlePresentation` controla uma única sequência cancelável, concluída por fim, Pular, navegação ou pagehide/visibility. `useAutosave.persistNow` grava ações válidas antes de depender de uma renderização posterior. Não reexecutar histórico ao carregar.

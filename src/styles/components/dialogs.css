@@ -30,8 +30,11 @@ dialog::backdrop {
 }
 .modal-head h2 {
   font-size: 23px;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .modal-head .icon-button {
+  flex-shrink: 0;
   background: var(--lcd-dim);
   border: 1px solid var(--lcd-line);
 }

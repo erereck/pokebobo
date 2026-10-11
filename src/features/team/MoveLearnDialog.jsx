@@ -4,6 +4,7 @@ import catalog from "../../game/catalog.json" with { type: "json" };
 import { Modal } from "../../components/ui/Modal.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
+import { MoveSummary } from "./MoveSummary.jsx";
 
 function findMon(run, id) {
   return (
@@ -52,11 +53,11 @@ export function MoveLearnDialog({ run, act }) {
             APRENDIZADO · {remaining} {remaining === 1 ? "DECISÃO" : "DECISÕES"}
           </span>
           <h3>
-            {mon.name} quer aprender {learned?.name || pending.moveId}.
+            {mon.name} <small>NV. {mon.level}</small>
           </h3>
           <p>
-            Os quatro slots estão ocupados. Escolha um golpe para esquecer ou
-            ignore o novo.
+            Quer aprender um novo golpe. Escolha o que sai ou mantenha os quatro
+            atuais.
           </p>
         </div>
       </section>
@@ -67,15 +68,7 @@ export function MoveLearnDialog({ run, act }) {
           <strong>{learned?.name || pending.moveId}</strong>
           {learned?.type && <TypeTag type={learned.type} />}
         </div>
-        <small>
-          {learned?.category === "Status"
-            ? "Status"
-            : `Poder ${learned?.power || "—"}`}{" "}
-          ·{" "}
-          {learned?.accuracy === true
-            ? "sem teste de precisão"
-            : `${learned?.accuracy || "—"}% precisão`}
-        </small>
+        <MoveSummary id={pending.moveId} explain />
       </div>
 
       <div className="forget-move-list">
@@ -96,9 +89,12 @@ export function MoveLearnDialog({ run, act }) {
                 })
               }
             >
-              <span>
-                <strong>{move?.name || id}</strong>
-                {move?.type && <TypeTag type={move.type} />}
+              <span className="forget-move-content">
+                <span className="forget-move-name">
+                  <strong>{move?.name || id}</strong>
+                  {move?.type && <TypeTag type={move.type} />}
+                </span>
+                <MoveSummary id={id} />
               </span>
               <small>
                 Esquecer este e aprender {learned?.name || pending.moveId}

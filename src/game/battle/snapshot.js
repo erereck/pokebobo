@@ -1,5 +1,9 @@
 import { presentationEvents } from "./presentationEvents.js";
 import { Dex } from "@pkmn/sim";
+import {
+  publicMonConditions,
+  publicFieldConditions,
+} from "./publicConditions.js";
 
 export function battleSnapshot(b) {
   const events = presentationEvents(b.log);
@@ -16,6 +20,7 @@ export function battleSnapshot(b) {
     item: p.item,
     types: p.getTypes(),
     boosts: { ...p.boosts },
+    conditions: publicMonConditions(p),
   });
   return {
     turn: b.turn,
@@ -26,6 +31,7 @@ export function battleSnapshot(b) {
     active: mon(b.p1.active[0]),
     foe: mon(b.p2.active[0]),
     request: b.p1.activeRequest,
+    field: publicFieldConditions(b),
     futureMoves: [b.p1, b.p2].flatMap((side) => {
       const future = side.slotConditions[0]?.futuremove;
       return future

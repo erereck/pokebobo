@@ -1,6 +1,10 @@
-# Pokébobo — 0.19.0 · Jornada mais viva
+# Pokébobo — 0.20.0 · Novos caminhos
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.20.0 varia a exploração com **quatro desenhos de trilhas, clareiras e lago**, escolhidos pela seed e rota. Red usa os quadros originais da vara antes de pescar; Surf também tem preparação. Uma faixa acima do campo conserva a cabeça do treinador na borda. **Novo golpe** compara categoria, poder, precisão e prioridade dos quatro atuais; o caderno mostra confusão, sementes, telas, hazards, clima e terreno. **Opções → Leve o Pokébobo com você** explica a instalação e confirma quando o jogo está pronto para reabrir sem conexão. Artes e músicas usadas ficam em cache limitado; conteúdos ainda não usados podem precisar de internet. Atualizações entram após fechar todas as abas e reabrir. Níveis, IA, captura de 67%, 50 passos ocultos, escala da batalha e schema 4 preservados. [Guia e limites](docs/CAMPO-E-OFFLINE.md).
+
+[Campo](docs/images/rota-0.20-celular.png) · [Vara](docs/images/pesca-0.20-celular.png) · [Aprendizado](docs/images/novo-golpe-0.20-celular.png) · [Condições](docs/images/caderno-condicoes-0.20-celular.png) · [Instalação](docs/images/offline-0.20-celular.png).
 
 A 0.19.0 traz **efeitos de golpes, caderno de batalha e restauração de backups**. Fogo, água, eletricidade e os outros tipos têm partículas e sons próprios; cura, proteção, status e Future Sight seguem os eventos reais. O caderno explica seus golpes e mostra mudanças de atributos. Pular, trocar de tela ou recarregar preserva o comando escolhido. Opções → Restaurar backup abre o JSON, mostra a jornada e permite escolher um slot. Controles segurados mais consistentes e carregamento mais leve: JavaScript principal cerca de 41% menor. [Efeitos](docs/images/batalha-efeitos-0.19-desktop.png) · [Caderno](docs/images/caderno-0.19-celular.png) · [Backup](docs/images/backup-0.19-celular.png) · [Funcionamento e limites](docs/BATALHAS-E-BACKUPS.md).
 
@@ -36,7 +40,7 @@ Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde edit
 
 ## Jogar
 
-**Saves compatíveis são preservados.** O jogo usa schema 4 e normaliza campos reconhecíveis sem apagar run, equipe, seed ou histórico. A 0.19.0 mantém esse schema; restaurar arquivos exige a versão atual. Existe uma única regra ativa: mudanças futuras incompatíveis devem incrementar SAVE_VERSION e rejeitar os arquivos incompatíveis, sem manter motores paralelos. Opções → Zerar progresso de teste continua existindo, mas só por ação explícita.
+**Saves compatíveis são preservados.** O jogo usa schema 4 e normaliza campos reconhecíveis sem apagar run, equipe, seed ou histórico. A 0.20.0 mantém esse schema; caminhadas já abertas conservam o desenho anterior. Restaurar arquivos exige a versão atual. Existe uma única regra ativa: mudanças futuras incompatíveis devem incrementar SAVE_VERSION e rejeitar os arquivos incompatíveis, sem manter motores paralelos. Opções → Zerar progresso de teste continua existindo, mas só por ação explícita.
 
 Requer Node.js 22.13+ e npm. Para rodar o jogo:
 

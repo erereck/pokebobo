@@ -11,19 +11,19 @@ const keys = {
   ArrowRight: [1, 0],
   d: [1, 0],
 };
-export function useFieldControls(exploration, act) {
-  const latest = useRef({ exploration, act });
+export function useFieldControls(exploration, act, enabled = true) {
+  const latest = useRef({ exploration, act, enabled });
   const held = useRef(null);
   const lastSent = useRef(-1);
   const nextRepeat = useRef(0);
   const pressed = useRef(new Map());
   const [isHolding, setIsHolding] = useState(false);
   useEffect(() => {
-    latest.current = { exploration, act };
+    latest.current = { exploration, act, enabled };
   });
   const move = (dx, dy) => {
-    const { exploration: e, act: send } = latest.current;
-    if (!e || e.walk || lastSent.current === e.steps) return;
+    const { exploration: e, act: send, enabled: allowed } = latest.current;
+    if (!allowed || !e || e.walk || lastSent.current === e.steps) return;
     if (send({ type: "MOVE_ROUTE", dx, dy, animate: true })) {
       lastSent.current = e.steps;
       nextRepeat.current = performance.now() + (1000 * 16) / 60;
@@ -32,7 +32,8 @@ export function useFieldControls(exploration, act) {
   useEffect(() => {
     const blocked = () =>
       Boolean(
-        document.querySelector("dialog[open]") ||
+        !latest.current.enabled ||
+          document.querySelector("dialog[open]") ||
           document.activeElement?.closest(
             'input,textarea,select,[contenteditable="true"]',
           ),
@@ -96,7 +97,7 @@ export function useFieldControls(exploration, act) {
     isHolding,
     move,
     press: (event, dx, dy) => {
-      if (event.button !== 0) return;
+      if (event.button !== 0 || !latest.current.enabled) return;
       event.currentTarget.setPointerCapture(event.pointerId);
       held.current = holdDirection(
         pressed.current,

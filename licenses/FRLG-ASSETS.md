@@ -1,5 +1,9 @@
 # Gráficos e animações de campo/captura — FireRed / LeafGreen
 
+## Pesca — 0.20.0
+
+Folha `graphics/object_events/pics/people/red_fish.png`, na mesma revisão congelada abaixo, com 12 poses de 32×32 e paleta embutida. `scripts/import-fishing.py` torna somente o índice zero transparente e preserva pixels/poses. Arquivo local: `public/field/red_fish_sheet.png`, 2.835 bytes; fontes/dimensões/hash em `public/field/fishing-manifest.json`. Sequências de lançamento (quatro ticks por quadro) vêm de `src/data/object_events/object_event_anims.h`; offsets por pose de `AlignFishingAnimationFrames` em `src/field_player_avatar.c`. Espera/mordida de 64 ticks totais e exclamação são adaptações para o ritmo do Pokébobo. Não há minijogo original da vara. Quatro mapas são composições autorais dos tiles anteriores, não mapas canônicos.
+
 ## Partículas de batalha — 0.19.0
 
 18 folhas originais de `graphics/battle_anims/sprites/` na mesma revisão congelada, sem ROM. `scripts/import-battle-effects.py` conserva paletas embutidas/folhas completas e torna o índice zero transparente. Hashes, fontes, quadros e termos em [public/battle-effects/README.md](../public/battle-effects/README.md) e manifesto. Canvas usa chamas, bolhas, folhas, cristais, pedras, ondas, impactos, estrelas e outras partículas; trajetórias/tempos e famílias de golpes são adaptações do Pokébobo. Não há promessa de reproduzir cada animação do cartucho; gráficos de gerações posteriores/Fada são representados com estas partículas existentes. Áudio dos golpes é síntese própria, separada dos gráficos.

@@ -2,13 +2,25 @@ import { EXPLORATION_RULES } from "../../game/config/exploration.js";
 import { terrainAt, isTallGrass } from "../../game/world/exploration.js";
 import { fieldPose, grassUnderFeet } from "./fieldPresentation.js";
 import { terrainQuadrants } from "./terrainPresentation.js";
+import { drawLakeTrainer } from "./lakePresentation.js";
 
-export function drawField(ctx, [tiles, trainer, surf, grass], e, tick) {
+export function drawField(
+  ctx,
+  [tiles, trainer, surf, grass, fishing],
+  e,
+  tick,
+  preparation,
+) {
   const { width, height } = EXPLORATION_RULES;
-  ctx.clearRect(0, 0, width * 16, height * 16);
+  ctx.clearRect(0, 0, width * 16, (height + 1) * 16);
+  // Uma faixa de terreno acima da grade deixa cabeça/vara visíveis na linha 0.
+  for (let x = 0; x < width; x++)
+    ctx.drawImage(tiles, 0, 0, 16, 16, x * 16, 0, 16, 16);
+  ctx.save();
+  ctx.translate(0, 16);
   for (let y = 0; y < height; y++)
     for (let x = 0; x < width; x++) {
-      const terrain = terrainAt(x, y);
+      const terrain = terrainAt(x, y, e);
       const tile =
         terrain === "water"
           ? 3
@@ -17,7 +29,7 @@ export function drawField(ctx, [tiles, trainer, surf, grass], e, tick) {
             : isTallGrass(e, x, y)
               ? 1
               : 0;
-      const quadrants = terrainQuadrants(x, y);
+      const quadrants = terrainQuadrants(x, y, e);
       if (quadrants) {
         for (const part of quadrants)
           ctx.drawImage(
@@ -39,6 +51,11 @@ export function drawField(ctx, [tiles, trainer, surf, grass], e, tick) {
       )
         ctx.drawImage(tiles, 64, 0, 16, 16, x * 16, y * 16, 16, 16);
     }
+  if (preparation) {
+    drawLakeTrainer(ctx, [trainer, surf, fishing], e, preparation, tick);
+    ctx.restore();
+    return;
+  }
   const { x, y } = fieldPose(e, tick);
   const facing = e.facing || "south";
   const idle = facing === "south" ? 0 : facing === "north" ? 1 : 2;
@@ -82,4 +99,5 @@ export function drawField(ctx, [tiles, trainer, surf, grass], e, tick) {
       );
     ctx.restore();
   }
+  ctx.restore();
 }

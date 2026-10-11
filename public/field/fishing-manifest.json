@@ -1,0 +1,17 @@
+{
+  "revision": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+  "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/object_events/pics/people/red_fish.png",
+  "sourceSha256": "b74f893aa13c6e442d6821815508b2e1949283bf1155c9031e8a010ad1d584dd",
+  "sha256": "09653a49fd8b5518ecea1b42b4344b442233b9c44c94cedb77f2911580f7e06e",
+  "bytes": 2835,
+  "size": [
+    384,
+    32
+  ],
+  "frames": 12,
+  "frame": [
+    32,
+    32
+  ],
+  "conversion": "PNG RGBA, índice zero transparente; pixels/poses preservados"
+}
