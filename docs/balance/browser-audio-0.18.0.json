@@ -1,0 +1,347 @@
+{
+  "tag": "dev",
+  "base": "http://localhost:4173/",
+  "errors": [],
+  "network": [],
+  "flows": [
+    {
+      "name": "playlist, volumes, cry, mute/reload, visibilidade, save intacto",
+      "wave": {
+        "peak": 0.13758349418640137,
+        "rms": 0.00966102712184711,
+        "nonzero": 39826
+      },
+      "requests": 5
+    },
+    {
+      "name": "passo animado com efeito audível",
+      "state": {
+        "contexts": 1,
+        "state": "running",
+        "time": 1.112,
+        "gains": [
+          1,
+          0.6499999761581421,
+          0.33000001311302185,
+          0,
+          0.41999998688697815,
+          0.00009999999747378752
+        ],
+        "media": [
+          {
+            "src": "",
+            "paused": true,
+            "time": 0
+          },
+          {
+            "src": "http://localhost:4173/audio/music/route1.mp3",
+            "paused": false,
+            "time": 1.114558
+          }
+        ],
+        "sources": 1
+      }
+    },
+    {
+      "name": "encounter",
+      "state": {
+        "contexts": 1,
+        "state": "running",
+        "time": 8.741333333333333,
+        "gains": [
+          1,
+          0.6499999761581421,
+          0.33000001311302185,
+          0,
+          0.15960000455379486,
+          1,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.8500000238418579
+        ],
+        "media": [
+          {
+            "src": "",
+            "paused": true,
+            "time": 0
+          },
+          {
+            "src": "http://localhost:4173/audio/music/wild.mp3",
+            "paused": false,
+            "time": 8.742313
+          }
+        ],
+        "sources": 16
+      },
+      "requests": [
+        "http://localhost:4173/audio/music/wild.mp3",
+        "http://localhost:4173/audio/cries/pidgey.mp3",
+        "http://localhost:4173/audio/fanfares/caught.mp3"
+      ]
+    },
+    {
+      "name": "capture",
+      "state": {
+        "contexts": 1,
+        "state": "running",
+        "time": 7.021333333333334,
+        "gains": [
+          1,
+          0.6499999761581421,
+          0.33000001311302185,
+          0,
+          0.15960000455379486,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.8500000238418579
+        ],
+        "media": [
+          {
+            "src": "",
+            "paused": true,
+            "time": 0
+          },
+          {
+            "src": "http://localhost:4173/audio/music/wild.mp3",
+            "paused": false,
+            "time": 7.012426
+          }
+        ],
+        "sources": 15
+      },
+      "requests": [
+        "http://localhost:4173/audio/music/wild.mp3",
+        "http://localhost:4173/audio/fanfares/caught.mp3"
+      ]
+    },
+    {
+      "name": "failure",
+      "state": {
+        "contexts": 1,
+        "state": "running",
+        "time": 7.010666666666666,
+        "gains": [
+          1,
+          0.6499999761581421,
+          0.33000001311302185,
+          0,
+          0.41999998688697815,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752
+        ],
+        "media": [
+          {
+            "src": "",
+            "paused": true,
+            "time": 0
+          },
+          {
+            "src": "http://localhost:4173/audio/music/wild.mp3",
+            "paused": false,
+            "time": 7.010388
+          }
+        ],
+        "sources": 14
+      },
+      "requests": [
+        "http://localhost:4173/audio/music/wild.mp3",
+        "http://localhost:4173/audio/fanfares/caught.mp3",
+        "http://localhost:4173/audio/cries/pidgey.mp3"
+      ]
+    },
+    {
+      "name": "turno real com efeitos e cries",
+      "state": {
+        "contexts": 1,
+        "state": "running",
+        "time": 7.48,
+        "gains": [
+          1,
+          0.6499999761581421,
+          0.33000001311302185,
+          0,
+          0.41999998688697815,
+          1,
+          0.00009999999747378752,
+          0.00010009641846409068,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.0110753383487463,
+          1
+        ],
+        "media": [
+          {
+            "src": "",
+            "paused": true,
+            "time": 0
+          },
+          {
+            "src": "http://localhost:4173/audio/music/gym.mp3",
+            "paused": false,
+            "time": 7.45941
+          }
+        ],
+        "sources": 8
+      }
+    },
+    {
+      "name": "mute lembrado não baixa nem toca áudio"
+    }
+  ],
+  "screens": [
+    {
+      "name": "playlist-desktop",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "jornada-390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "playlist-390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "jornada-320",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "playlist-320",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "jornada-844",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "playlist-844",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "passo",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "encounter",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "capture",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "failure",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "batalha",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "mute-respeitado",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    }
+  ]
+}

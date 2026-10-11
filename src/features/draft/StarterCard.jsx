@@ -4,14 +4,19 @@ import { Check } from "lucide-react";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
 import { STARTER_NOTES } from "../../game/data/starterNotes.js";
+import { useAudio } from "../audio/AudioContext.js";
 
 export function StarterCard({ n, selected, setSelected }) {
+  const audio = useAudio();
   return (
     <button
       key={n}
       className={cx("starter-card", selected === n && "selected")}
       aria-pressed={selected === n}
-      onClick={() => setSelected(n)}
+      onClick={() => {
+        setSelected(n);
+        audio?.cry(n, { scope: "preview" });
+      }}
     >
       <span className="starter-top">
         <span className="mono">

@@ -15,6 +15,8 @@ import {
   trainerThrowFrame,
   drawBallParticles,
 } from "./captureTimeline.js";
+import { useAnimationAudio } from "../audio/useAnimationAudio.js";
+import { captureCues } from "../audio/audioCues.js";
 
 export function CaptureCanvas({
   name,
@@ -45,6 +47,23 @@ export function CaptureCanvas({
     exploration && !returning
       ? Math.ceil(encounterTransitionDuration(water) / 2)
       : 0;
+  const audioKey = attempt?.id || `${name}-${returning ? "return" : "intro"}`;
+  const soundCues = useMemo(
+    () =>
+      timeline
+        ? captureCues(timeline.frames)
+        : returning
+          ? []
+          : [
+              { tick: 0, sound: "encounter" },
+              { tick: transitionDuration + 40, cry: name },
+              ...(shiny
+                ? [{ tick: transitionDuration + 40, sound: "shiny" }]
+                : []),
+            ],
+    [timeline, returning, name, shiny, transitionDuration],
+  );
+  const onAudioFrame = useAnimationAudio(audioKey, soundCues, name);
   const { canvasRef, error } = usePixelCanvas({
     sources: [
       fieldAsset(water ? "capture_water" : "capture_grass"),
@@ -69,6 +88,7 @@ export function CaptureCanvas({
         : transitionDuration + 40,
     skip,
     onComplete,
+    onFrame: onAudioFrame,
     draw: (
       ctx,
       [

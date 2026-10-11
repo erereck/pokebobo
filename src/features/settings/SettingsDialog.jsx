@@ -1,6 +1,6 @@
 import { VERSION, RELEASE_NAME } from "../../app/version.js";
 import { Modal } from "../../components/ui/Modal.jsx";
-import { Download, Trophy, Compass } from "lucide-react";
+import { Download, Trophy, Compass, Music2 } from "lucide-react";
 import { SaveSlots } from "./SaveSlots.jsx";
 import { BattleSpriteOptions } from "./BattleSpriteOptions.jsx";
 
@@ -19,6 +19,13 @@ export function SettingsDialog({
 }) {
   return (
     <Modal title="Opções e progresso" onClose={() => setModal(null)}>
+      <button
+        className="button secondary full"
+        onClick={() => setModal("audio")}
+      >
+        <Music2 size={18} />
+        Som e playlist
+      </button>
       <BattleSpriteOptions
         style={spriteStyle}
         onChange={changeSpriteStyle}

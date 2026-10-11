@@ -1,5 +1,19 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## 0.18.0 — A jornada tem som · 10/10/2026
+
+**Pedido:** implementar a sugestão 1, áudio caprichado, com playlist de músicas do game baixadas do YouTube por yt-dlp. Integração direta continua autorizada; os outros itens ficam para próximas rodadas.
+
+**Entrega:** vinte músicas e cinco fanfares reais de FireRed / LeafGreen, da gravação publicada por F4m1LyGuy10. Trilha automática por cena/bioma, ginásio/Liga/campeão, lendário, vitória e Hall; playlist livre com escolha e avanço circular. Cries reais locais para todas as entradas do catálogo. Síntese própria para passos/grama/água, transição, arremesso, absorção, chão/shakes, envio, ataque/dano/status/cura/desmaio, shiny e ataques atrasados. CaptureCanvas usa cues derivados do timeline, sem timers paralelos; pular toca apenas resultado/fanfare, sem esperar por ela.
+
+**Controles e robustez:** Som no topo e Opções → Som e playlist. Três volumes, zero em cada canal, mute global lembrado entre slots. Playlist ao lado dos volumes no PC, uma coluna no celular; todos os seis controles do topo cabem em 320 px. Contexto no gesto, sem MP3 antes disso; crossfade de 650 ms, retorno à posição da rota, ducking para cries/fanfares, cache de 48, cancelamento por cena e suspensão em segundo plano. Sem player/ads/YouTube em gameplay. Silêncios longos do álbum removidos, música normalizada. Save, regras, RNG e standalone preservados.
+
+**Evidências:** 152 testes, build `/pokebobo/` e 228 módulos. Todos os 506 arquivos decodificados: 29,89 MiB, zero saturação nas músicas/fanfares e silêncio inicial máximo 71,1 ms. Quinze registros e doze fluxos no dev, repetidos no preview: controles, desktop/celular/paisagem, mute/reload/zero, cries, passos, captura, turno real, teclado, retorno de posição, fim da faixa, trocas rápidas, duas bolas/pular/reload, movimento reduzido e storage indisponível. Sem erros inesperados de console/rede ou overflow. Vídeo do canvas com o mixer real. Detalhes em [VALIDACAO](../VALIDACAO.md), [AUDIO](AUDIO.md) e manifesto.
+
+**Limites:** sem aparelho físico/iOS/Bluetooth; medições e emulação não confirmam cada hardware. Políticas do sistema podem exigir novo gesto. Música é gravação de álbum com crossfade, sem ROM; efeitos próprios não são sons oficiais específicos de cada golpe. Direitos/termos registrados separadamente do código. Sem músicas de outras gerações/offline completo nesta rodada.
+
+**Próximas sugestões:** prioridade 1 pronta, junto das 4/8 (Pokédex e compartilhamento). Restam cinco frentes: efeitos visuais dos golpes; exploração/segredos; IA estratégica; balanceamento com campanhas humanas; aparelhos físicos/desempenho/controles. Sugestão seguinte: verificar uma campanha no seu celular com fones, depois focar nos efeitos dos golpes aproveitando os cues de apresentação.
+
 ## 0.17.0 — Histórias para compartilhar · 10/10/2026
 
 As prioridades 4 e 8 escolhidas pelo usuário estão implementadas: uma Pokédex para completar e jornadas prontas para divulgar.

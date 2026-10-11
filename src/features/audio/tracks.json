@@ -1,0 +1,142 @@
+[
+  {
+    "id": "opening",
+    "title": "Opening",
+    "scene": "Início",
+    "file": "music/opening.mp3",
+    "duration": 86.73519274376417
+  },
+  {
+    "id": "welcome",
+    "title": "Welcome to the World of Pokémon",
+    "scene": "Sua região",
+    "file": "music/welcome.mp3",
+    "duration": 54.31614512471654
+  },
+  {
+    "id": "pallet",
+    "title": "Pallet Town",
+    "scene": "Cidade",
+    "file": "music/pallet.mp3",
+    "duration": 84.28621315192743
+  },
+  {
+    "id": "route1",
+    "title": "Route 1",
+    "scene": "Exploração",
+    "file": "music/route1.mp3",
+    "duration": 45.214104308390006
+  },
+  {
+    "id": "route3",
+    "title": "Route 3",
+    "scene": "Exploração",
+    "file": "music/route3.mp3",
+    "duration": 62.18643990929695
+  },
+  {
+    "id": "route12",
+    "title": "Route 12",
+    "scene": "Exploração",
+    "file": "music/route12.mp3",
+    "duration": 62.204126984127015
+  },
+  {
+    "id": "forest",
+    "title": "Viridian Forest",
+    "scene": "Floresta",
+    "file": "music/forest.mp3",
+    "duration": 155.9746485260771
+  },
+  {
+    "id": "cave",
+    "title": "Mt. Moon",
+    "scene": "Serra e neve",
+    "file": "music/cave.mp3",
+    "duration": 152.85492063492075
+  },
+  {
+    "id": "pewter",
+    "title": "Pewter City",
+    "scene": "Cidade",
+    "file": "music/pewter.mp3",
+    "duration": 116.46580498866217
+  },
+  {
+    "id": "cerulean",
+    "title": "Cerulean City",
+    "scene": "Cidade",
+    "file": "music/cerulean.mp3",
+    "duration": 68.59551020408162
+  },
+  {
+    "id": "center",
+    "title": "Pokémon Center",
+    "scene": "Equipe",
+    "file": "music/center.mp3",
+    "duration": 63.23632653061213
+  },
+  {
+    "id": "surf",
+    "title": "Surf",
+    "scene": "Lago e litoral",
+    "file": "music/surf.mp3",
+    "duration": 62.89482993197271
+  },
+  {
+    "id": "wild",
+    "title": "Battle (VS Wild Pokémon)",
+    "scene": "Captura",
+    "file": "music/wild.mp3",
+    "duration": 81.89482993197271
+  },
+  {
+    "id": "legendary",
+    "title": "Battle (VS Legendary Pokémon)",
+    "scene": "Encontro secreto",
+    "file": "music/legendary.mp3",
+    "duration": 49.13428571428585
+  },
+  {
+    "id": "trainer",
+    "title": "Battle (VS Trainer)",
+    "scene": "Batalha",
+    "file": "music/trainer.mp3",
+    "duration": 182.29619047619047
+  },
+  {
+    "id": "gym",
+    "title": "Battle (VS Gym Leader)",
+    "scene": "Ginásio e Liga",
+    "file": "music/gym.mp3",
+    "duration": 115.01455782312928
+  },
+  {
+    "id": "champion",
+    "title": "Last Battle (VS Rival)",
+    "scene": "Campeão",
+    "file": "music/champion.mp3",
+    "duration": 147.17419501133827
+  },
+  {
+    "id": "victory",
+    "title": "Victory (VS Gym Leader)",
+    "scene": "Vitória",
+    "file": "music/victory.mp3",
+    "duration": 50.19641723356017
+  },
+  {
+    "id": "hall",
+    "title": "Induction Into the Hall of Fame",
+    "scene": "Hall da Fama",
+    "file": "music/hall.mp3",
+    "duration": 53.07442176870791
+  },
+  {
+    "id": "ending",
+    "title": "Ending",
+    "scene": "Fim da jornada",
+    "file": "music/ending.mp3",
+    "duration": 245.1043537414962
+  }
+]

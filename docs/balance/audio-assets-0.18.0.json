@@ -1,0 +1,5072 @@
+{
+  "tracks": 20,
+  "fanfares": 5,
+  "cries": 481,
+  "totalBytes": 31346756,
+  "decodedFiles": 506,
+  "musicClippedSamples": 0,
+  "maxMusicLeadingSilence": 0.07102040816326531,
+  "results": [
+    {
+      "file": "cries/abomasnow.mp3",
+      "bytes": 11965,
+      "duration": 1.9500226757369614,
+      "peak": 0.6345844268798828,
+      "rms": 0.1396380168609615,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.0654421768707483
+    },
+    {
+      "file": "cries/abra.mp3",
+      "bytes": 9288,
+      "duration": 1.2862585034013605,
+      "peak": 0.4702250361442566,
+      "rms": 0.10099568418164159,
+      "clipped": 0,
+      "leadingSilence": 0.014603174603174604,
+      "trailingSilence": 0.06770975056689342
+    },
+    {
+      "file": "cries/absol.mp3",
+      "bytes": 5232,
+      "duration": 0.7131065759637188,
+      "peak": 0.6006069183349609,
+      "rms": 0.18869391976112596,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.09401360544217686
+    },
+    {
+      "file": "cries/aerodactyl.mp3",
+      "bytes": 10944,
+      "duration": 1.5404081632653062,
+      "peak": 0.6371920108795166,
+      "rms": 0.1526327265386149,
+      "clipped": 0,
+      "leadingSilence": 0.030476190476190476,
+      "trailingSilence": 0.11070294784580499
+    },
+    {
+      "file": "cries/aggron.mp3",
+      "bytes": 10224,
+      "duration": 1.4790929705215419,
+      "peak": 0.5921951532363892,
+      "rms": 0.16094604895876605,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.08521541950113379
+    },
+    {
+      "file": "cries/alakazam.mp3",
+      "bytes": 11832,
+      "duration": 1.6570521541950114,
+      "peak": 0.5779128074645996,
+      "rms": 0.09098143437571707,
+      "clipped": 0,
+      "leadingSilence": 0.013786848072562358,
+      "trailingSilence": 0.028072562358276643
+    },
+    {
+      "file": "cries/altaria.mp3",
+      "bytes": 5472,
+      "duration": 0.7264399092970522,
+      "peak": 0.6485534906387329,
+      "rms": 0.19993479770434225,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.07315192743764172
+    },
+    {
+      "file": "cries/ampharos.mp3",
+      "bytes": 7368,
+      "duration": 0.9732426303854875,
+      "peak": 0.5880118012428284,
+      "rms": 0.1475045734101187,
+      "clipped": 0,
+      "leadingSilence": 0.013333333333333334,
+      "trailingSilence": 0.042222222222222223
+    },
+    {
+      "file": "cries/anorith.mp3",
+      "bytes": 4872,
+      "duration": 0.593469387755102,
+      "peak": 0.6260520815849304,
+      "rms": 0.1064820824105052,
+      "clipped": 0,
+      "leadingSilence": 0.012517006802721088,
+      "trailingSilence": 0.027891156462585033
+    },
+    {
+      "file": "cries/appletun.mp3",
+      "bytes": 14084,
+      "duration": 1.686984126984127,
+      "peak": 0.6001136302947998,
+      "rms": 0.11321165867866102,
+      "clipped": 0,
+      "leadingSilence": 0.0020861678004535146,
+      "trailingSilence": 0.013650793650793651
+    },
+    {
+      "file": "cries/applin.mp3",
+      "bytes": 6948,
+      "duration": 0.8753741496598639,
+      "peak": 0.5579512715339661,
+      "rms": 0.035667741872631595,
+      "clipped": 0,
+      "leadingSilence": 0.009070294784580499,
+      "trailingSilence": 0.0016780045351473922
+    },
+    {
+      "file": "cries/arbok.mp3",
+      "bytes": 8280,
+      "duration": 1.0733786848072562,
+      "peak": 0.5102657675743103,
+      "rms": 0.09471542593778871,
+      "clipped": 0,
+      "leadingSilence": 0.013968253968253968,
+      "trailingSilence": 0.09555555555555556
+    },
+    {
+      "file": "cries/arcanine.mp3",
+      "bytes": 7857,
+      "duration": 1.0881632653061224,
+      "peak": 0.4819566309452057,
+      "rms": 0.10128423292441716,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.11532879818594104
+    },
+    {
+      "file": "cries/ariados.mp3",
+      "bytes": 6288,
+      "duration": 0.830204081632653,
+      "peak": 0.5626441240310669,
+      "rms": 0.14228871082168915,
+      "clipped": 0,
+      "leadingSilence": 0.029750566893424035,
+      "trailingSilence": 0.03732426303854875
+    },
+    {
+      "file": "cries/armaldo.mp3",
+      "bytes": 8496,
+      "duration": 1.1817687074829932,
+      "peak": 0.635206937789917,
+      "rms": 0.15511623101825986,
+      "clipped": 0,
+      "leadingSilence": 0.013786848072562358,
+      "trailingSilence": 0.0581859410430839
+    },
+    {
+      "file": "cries/aron.mp3",
+      "bytes": 4248,
+      "duration": 0.5229024943310657,
+      "peak": 0.6420405507087708,
+      "rms": 0.13666911852295618,
+      "clipped": 0,
+      "leadingSilence": 0.011337868480725623,
+      "trailingSilence": 0.03614512471655329
+    },
+    {
+      "file": "cries/arrokuda.mp3",
+      "bytes": 9188,
+      "duration": 1.0587755102040817,
+      "peak": 0.6188644170761108,
+      "rms": 0.06318421176270024,
+      "clipped": 0,
+      "leadingSilence": 0,
+      "trailingSilence": 0.00013605442176870748
+    },
+    {
+      "file": "cries/azumarill.mp3",
+      "bytes": 7272,
+      "duration": 0.9295238095238095,
+      "peak": 0.5685817003250122,
+      "rms": 0.14125833239417993,
+      "clipped": 0,
+      "leadingSilence": 0.013151927437641724,
+      "trailingSilence": 0.03696145124716553
+    },
+    {
+      "file": "cries/azurill.mp3",
+      "bytes": 5520,
+      "duration": 0.6862585034013605,
+      "peak": 0.5847887992858887,
+      "rms": 0.12257526501550452,
+      "clipped": 0,
+      "leadingSilence": 0.011882086167800454,
+      "trailingSilence": 0.08748299319727891
+    },
+    {
+      "file": "cries/bagon.mp3",
+      "bytes": 4728,
+      "duration": 0.6154195011337869,
+      "peak": 0.5912883281707764,
+      "rms": 0.1370386410620286,
+      "clipped": 0,
+      "leadingSilence": 0.011337868480725623,
+      "trailingSilence": 0.11541950113378685
+    },
+    {
+      "file": "cries/baltoy.mp3",
+      "bytes": 6433,
+      "duration": 0.7136507936507936,
+      "peak": 0.5981309413909912,
+      "rms": 0.12221824628877817,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.028798185941043084
+    },
+    {
+      "file": "cries/banette.mp3",
+      "bytes": 7632,
+      "duration": 1.0443537414965987,
+      "peak": 0.6257525682449341,
+      "rms": 0.1607175889900563,
+      "clipped": 0,
+      "leadingSilence": 0.012517006802721088,
+      "trailingSilence": 0.07941043083900227
+    },
+    {
+      "file": "cries/barboach.mp3",
+      "bytes": 5048,
+      "duration": 0.6600453514739228,
+      "peak": 0.5724442005157471,
+      "rms": 0.15058436100667125,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.09219954648526077
+    },
+    {
+      "file": "cries/barraskewda.mp3",
+      "bytes": 11314,
+      "duration": 1.6854421768707484,
+      "peak": 0.6998238563537598,
+      "rms": 0.17885834152155722,
+      "clipped": 0,
+      "leadingSilence": 0.0010884353741496598,
+      "trailingSilence": 0.03369614512471655
+    },
+    {
+      "file": "cries/bastiodon.mp3",
+      "bytes": 11424,
+      "duration": 1.5546485260770975,
+      "peak": 0.6810212135314941,
+      "rms": 0.14404979877901838,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.09346938775510204
+    },
+    {
+      "file": "cries/bayleef.mp3",
+      "bytes": 5208,
+      "duration": 0.6666666666666666,
+      "peak": 0.5330471992492676,
+      "rms": 0.12719185070970496,
+      "clipped": 0,
+      "leadingSilence": 0.010612244897959184,
+      "trailingSilence": 0.08802721088435374
+    },
+    {
+      "file": "cries/beartic.mp3",
+      "bytes": 8064,
+      "duration": 1.2784580498866214,
+      "peak": 0.6261565685272217,
+      "rms": 0.19749316665768218,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.0800453514739229
+    },
+    {
+      "file": "cries/beautifly.mp3",
+      "bytes": 5208,
+      "duration": 0.6191383219954648,
+      "peak": 0.6473631858825684,
+      "rms": 0.13994782029921143,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.10263038548752834
+    },
+    {
+      "file": "cries/beedrill.mp3",
+      "bytes": 8592,
+      "duration": 1.16,
+      "peak": 0.36805036664009094,
+      "rms": 0.08448986857331339,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.031247165532879817
+    },
+    {
+      "file": "cries/beldum.mp3",
+      "bytes": 5352,
+      "duration": 0.6636734693877551,
+      "peak": 0.5661990642547607,
+      "rms": 0.11951018955158796,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.10399092970521542
+    },
+    {
+      "file": "cries/bellossom.mp3",
+      "bytes": 7389,
+      "duration": 0.946031746031746,
+      "peak": 0.6348080635070801,
+      "rms": 0.17787138178049514,
+      "clipped": 0,
+      "leadingSilence": 0.030113378684807256,
+      "trailingSilence": 0.06498866213151927
+    },
+    {
+      "file": "cries/bellsprout.mp3",
+      "bytes": 4992,
+      "duration": 0.5983673469387755,
+      "peak": 0.5731279850006104,
+      "rms": 0.1228007007024058,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.07224489795918368
+    },
+    {
+      "file": "cries/bibarel.mp3",
+      "bytes": 9600,
+      "duration": 1.2510657596371881,
+      "peak": 0.6250550746917725,
+      "rms": 0.12939134667449145,
+      "clipped": 0,
+      "leadingSilence": 0.009977324263038548,
+      "trailingSilence": 0.08095238095238096
+    },
+    {
+      "file": "cries/bidoof.mp3",
+      "bytes": 9912,
+      "duration": 1.036734693877551,
+      "peak": 0.623680591583252,
+      "rms": 0.12825585140323847,
+      "clipped": 0,
+      "leadingSilence": 0.009977324263038548,
+      "trailingSilence": 0.0908390022675737
+    },
+    {
+      "file": "cries/blastoise.mp3",
+      "bytes": 8663,
+      "duration": 1.2156009070294784,
+      "peak": 0.5073971748352051,
+      "rms": 0.11758270036792585,
+      "clipped": 0,
+      "leadingSilence": 0.011428571428571429,
+      "trailingSilence": 0.096281179138322
+    },
+    {
+      "file": "cries/blaziken.mp3",
+      "bytes": 13608,
+      "duration": 2.0025396825396826,
+      "peak": 0.6065003275871277,
+      "rms": 0.13433912036767456,
+      "clipped": 0,
+      "leadingSilence": 0.01197278911564626,
+      "trailingSilence": 0.07605442176870748
+    },
+    {
+      "file": "cries/blitzle.mp3",
+      "bytes": 7368,
+      "duration": 0.9639002267573696,
+      "peak": 0.600503146648407,
+      "rms": 0.12185042731331897,
+      "clipped": 0,
+      "leadingSilence": 0.029024943310657598,
+      "trailingSilence": 0.04929705215419501
+    },
+    {
+      "file": "cries/boldore.mp3",
+      "bytes": 9287,
+      "duration": 1.4206802721088436,
+      "peak": 0.608689546585083,
+      "rms": 0.13219019886173078,
+      "clipped": 0,
+      "leadingSilence": 0.026757369614512472,
+      "trailingSilence": 0.05609977324263039
+    },
+    {
+      "file": "cries/boltund.mp3",
+      "bytes": 5724,
+      "duration": 0.8013605442176871,
+      "peak": 0.7257927656173706,
+      "rms": 0.16982283744969837,
+      "clipped": 0,
+      "leadingSilence": 0.0022675736961451248,
+      "trailingSilence": 0.11523809523809524
+    },
+    {
+      "file": "cries/breloom.mp3",
+      "bytes": 6168,
+      "duration": 0.799546485260771,
+      "peak": 0.6456353664398193,
+      "rms": 0.1756014741631945,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.07333333333333333
+    },
+    {
+      "file": "cries/brionne.mp3",
+      "bytes": 9520,
+      "duration": 1.3858503401360545,
+      "peak": 0.6242702007293701,
+      "rms": 0.09382982819042672,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.08476190476190476
+    },
+    {
+      "file": "cries/bronzong.mp3",
+      "bytes": 11418,
+      "duration": 1.8009070294784582,
+      "peak": 0.6141498684883118,
+      "rms": 0.13143051080275708,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.07551020408163266
+    },
+    {
+      "file": "cries/bronzor.mp3",
+      "bytes": 7390,
+      "duration": 0.9299773242630386,
+      "peak": 0.5335820913314819,
+      "rms": 0.1090233048791746,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.09582766439909297
+    },
+    {
+      "file": "cries/budew.mp3",
+      "bytes": 7936,
+      "duration": 1.1405895691609977,
+      "peak": 0.6381729245185852,
+      "rms": 0.12371439069886991,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.05528344671201814
+    },
+    {
+      "file": "cries/buizel.mp3",
+      "bytes": 7920,
+      "duration": 1.0031746031746032,
+      "peak": 0.6183067560195923,
+      "rms": 0.1398725502640327,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.0908390022675737
+    },
+    {
+      "file": "cries/bulbasaur.mp3",
+      "bytes": 8433,
+      "duration": 1.0551473922902495,
+      "peak": 0.5624112486839294,
+      "rms": 0.09927987767941528,
+      "clipped": 0,
+      "leadingSilence": 0.011337868480725623,
+      "trailingSilence": 0.09945578231292516
+    },
+    {
+      "file": "cries/buneary.mp3",
+      "bytes": 8976,
+      "duration": 1.188390022675737,
+      "peak": 0.6765450239181519,
+      "rms": 0.15880268512201087,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.06462585034013606
+    },
+    {
+      "file": "cries/butterfree.mp3",
+      "bytes": 6607,
+      "duration": 0.8225850340136054,
+      "peak": 0.45999234914779663,
+      "rms": 0.12558358513978796,
+      "clipped": 0,
+      "leadingSilence": 0.010249433106575964,
+      "trailingSilence": 0.1291156462585034
+    },
+    {
+      "file": "cries/cacnea.mp3",
+      "bytes": 4944,
+      "duration": 0.6105215419501134,
+      "peak": 0.6330631971359253,
+      "rms": 0.1261061383990548,
+      "clipped": 0,
+      "leadingSilence": 0.011428571428571429,
+      "trailingSilence": 0.09229024943310657
+    },
+    {
+      "file": "cries/cacturne.mp3",
+      "bytes": 8136,
+      "duration": 1.1484807256235827,
+      "peak": 0.5989522933959961,
+      "rms": 0.1315049342817065,
+      "clipped": 0,
+      "leadingSilence": 0.014331065759637189,
+      "trailingSilence": 0.0545578231292517
+    },
+    {
+      "file": "cries/camerupt.mp3",
+      "bytes": 8280,
+      "duration": 1.3007709750566894,
+      "peak": 0.6222633123397827,
+      "rms": 0.17356133453194436,
+      "clipped": 0,
+      "leadingSilence": 0.015600907029478459,
+      "trailingSilence": 0.1072562358276644
+    },
+    {
+      "file": "cries/cascoon.mp3",
+      "bytes": 6456,
+      "duration": 0.8439002267573696,
+      "peak": 0.6481744050979614,
+      "rms": 0.10336444432110543,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.031247165532879817
+    },
+    {
+      "file": "cries/caterpie.mp3",
+      "bytes": 5152,
+      "duration": 0.6217687074829932,
+      "peak": 0.4215502142906189,
+      "rms": 0.09540187741539831,
+      "clipped": 0,
+      "leadingSilence": 0.011428571428571429,
+      "trailingSilence": 0.05718820861678005
+    },
+    {
+      "file": "cries/chandelure.mp3",
+      "bytes": 16228,
+      "duration": 2.552108843537415,
+      "peak": 0.6452614068984985,
+      "rms": 0.09942947802227131,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.00031746031746031746
+    },
+    {
+      "file": "cries/charizard.mp3",
+      "bytes": 7778,
+      "duration": 1.0952380952380953,
+      "peak": 0.5683283805847168,
+      "rms": 0.10504721060029541,
+      "clipped": 0,
+      "leadingSilence": 0.011247165532879818,
+      "trailingSilence": 0.07614512471655328
+    },
+    {
+      "file": "cries/charjabug.mp3",
+      "bytes": 9710,
+      "duration": 1.251609977324263,
+      "peak": 0.5833152532577515,
+      "rms": 0.10523032787326132,
+      "clipped": 0,
+      "leadingSilence": 0.011065759637188208,
+      "trailingSilence": 0.10226757369614513
+    },
+    {
+      "file": "cries/charmander.mp3",
+      "bytes": 6245,
+      "duration": 0.8173242630385488,
+      "peak": 0.5101709365844727,
+      "rms": 0.11787322290934957,
+      "clipped": 0,
+      "leadingSilence": 0.011882086167800454,
+      "trailingSilence": 0.06571428571428571
+    },
+    {
+      "file": "cries/charmeleon.mp3",
+      "bytes": 7440,
+      "duration": 1.0610430839002267,
+      "peak": 0.6295149326324463,
+      "rms": 0.1284562626539848,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.04766439909297052
+    },
+    {
+      "file": "cries/cherrim.mp3",
+      "bytes": 8691,
+      "duration": 1.2765532879818595,
+      "peak": 0.6232559680938721,
+      "rms": 0.11636825332916156,
+      "clipped": 0,
+      "leadingSilence": 0.01052154195011338,
+      "trailingSilence": 0.11034013605442176
+    },
+    {
+      "file": "cries/cherubi.mp3",
+      "bytes": 5647,
+      "duration": 0.680907029478458,
+      "peak": 0.5910641551017761,
+      "rms": 0.17885061283888845,
+      "clipped": 0,
+      "leadingSilence": 0.00816326530612245,
+      "trailingSilence": 0.04439909297052154
+    },
+    {
+      "file": "cries/chewtle.mp3",
+      "bytes": 8611,
+      "duration": 1.0865306122448979,
+      "peak": 0.6935418844223022,
+      "rms": 0.1482624163068351,
+      "clipped": 0,
+      "leadingSilence": 0.006984126984126984,
+      "trailingSilence": 0.024444444444444446
+    },
+    {
+      "file": "cries/chikorita.mp3",
+      "bytes": 3984,
+      "duration": 0.4748299319727891,
+      "peak": 0.5580947399139404,
+      "rms": 0.12494342367424345,
+      "clipped": 0,
+      "leadingSilence": 0.029387755102040815,
+      "trailingSilence": 0.05337868480725624
+    },
+    {
+      "file": "cries/chimchar.mp3",
+      "bytes": 10104,
+      "duration": 1.4101587301587302,
+      "peak": 0.6357077360153198,
+      "rms": 0.1588364608495851,
+      "clipped": 0,
+      "leadingSilence": 0.012970521541950114,
+      "trailingSilence": 0.03804988662131519
+    },
+    {
+      "file": "cries/chinchou.mp3",
+      "bytes": 6685,
+      "duration": 0.9559183673469388,
+      "peak": 0.6537666916847229,
+      "rms": 0.12156005841860627,
+      "clipped": 0,
+      "leadingSilence": 0.029659863945578232,
+      "trailingSilence": 0.08802721088435374
+    },
+    {
+      "file": "cries/cinderace.mp3",
+      "bytes": 13940,
+      "duration": 1.9853968253968255,
+      "peak": 0.5578733682632446,
+      "rms": 0.11361760085661148,
+      "clipped": 0,
+      "leadingSilence": 0.015510204081632653,
+      "trailingSilence": 0.0009523809523809524
+    },
+    {
+      "file": "cries/clamperl.mp3",
+      "bytes": 7320,
+      "duration": 0.9349659863945579,
+      "peak": 0.6420795321464539,
+      "rms": 0.12346777282262286,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.05655328798185941
+    },
+    {
+      "file": "cries/claydol.mp3",
+      "bytes": 7336,
+      "duration": 1.0257596371882085,
+      "peak": 0.5886552333831787,
+      "rms": 0.14972001427718365,
+      "clipped": 0,
+      "leadingSilence": 0.013242630385487529,
+      "trailingSilence": 0.059727891156462584
+    },
+    {
+      "file": "cries/clefable.mp3",
+      "bytes": 5360,
+      "duration": 0.7352380952380952,
+      "peak": 0.36524221301078796,
+      "rms": 0.09830165620631404,
+      "clipped": 0,
+      "leadingSilence": 0.030294784580498866,
+      "trailingSilence": 0.10072562358276645
+    },
+    {
+      "file": "cries/clefairy.mp3",
+      "bytes": 5546,
+      "duration": 0.6273922902494331,
+      "peak": 0.43911075592041016,
+      "rms": 0.0969816844740587,
+      "clipped": 0,
+      "leadingSilence": 0.027755102040816326,
+      "trailingSilence": 0.032879818594104306
+    },
+    {
+      "file": "cries/cleffa.mp3",
+      "bytes": 4164,
+      "duration": 0.49578231292517005,
+      "peak": 0.5723523497581482,
+      "rms": 0.15724059068309534,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.05863945578231292
+    },
+    {
+      "file": "cries/cloyster.mp3",
+      "bytes": 8480,
+      "duration": 1.1863038548752833,
+      "peak": 0.5669757127761841,
+      "rms": 0.12241964143083253,
+      "clipped": 0,
+      "leadingSilence": 0.011247165532879818,
+      "trailingSilence": 0.034784580498866215
+    },
+    {
+      "file": "cries/combusken.mp3",
+      "bytes": 9600,
+      "duration": 1.404625850340136,
+      "peak": 0.6278851628303528,
+      "rms": 0.14562203723935163,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.07297052154195012
+    },
+    {
+      "file": "cries/conkeldurr.mp3",
+      "bytes": 9649,
+      "duration": 1.531609977324263,
+      "peak": 0.6461509466171265,
+      "rms": 0.1483499455860513,
+      "clipped": 0,
+      "leadingSilence": 0.01070294784580499,
+      "trailingSilence": 0.15424036281179138
+    },
+    {
+      "file": "cries/corphish.mp3",
+      "bytes": 6402,
+      "duration": 0.78140589569161,
+      "peak": 0.617202877998352,
+      "rms": 0.1135373330165122,
+      "clipped": 0,
+      "leadingSilence": 0.013605442176870748,
+      "trailingSilence": 0.0784126984126984
+    },
+    {
+      "file": "cries/corviknight.mp3",
+      "bytes": 10664,
+      "duration": 1.4612244897959183,
+      "peak": 0.6211897134780884,
+      "rms": 0.10813165098803992,
+      "clipped": 0,
+      "leadingSilence": 0.023219954648526078,
+      "trailingSilence": 0.0004988662131519275
+    },
+    {
+      "file": "cries/corvisquire.mp3",
+      "bytes": 11346,
+      "duration": 1.3936507936507936,
+      "peak": 0.6129733324050903,
+      "rms": 0.15094488367322254,
+      "clipped": 0,
+      "leadingSilence": 0.022131519274376416,
+      "trailingSilence": 0.006666666666666667
+    },
+    {
+      "file": "cries/cradily.mp3",
+      "bytes": 10488,
+      "duration": 1.5581859410430838,
+      "peak": 0.6543207764625549,
+      "rms": 0.17496808229897035,
+      "clipped": 0,
+      "leadingSilence": 0.012517006802721088,
+      "trailingSilence": 0.10879818594104308
+    },
+    {
+      "file": "cries/cranidos.mp3",
+      "bytes": 6576,
+      "duration": 0.8219501133786848,
+      "peak": 0.6495853662490845,
+      "rms": 0.10937480994947799,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.08448979591836735
+    },
+    {
+      "file": "cries/crawdaunt.mp3",
+      "bytes": 8818,
+      "duration": 1.2971428571428572,
+      "peak": 0.6430190205574036,
+      "rms": 0.1488421879415706,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.06752834467120182
+    },
+    {
+      "file": "cries/croagunk.mp3",
+      "bytes": 9442,
+      "duration": 1.2002721088435375,
+      "peak": 0.5852662324905396,
+      "rms": 0.09312802893519258,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.11224489795918367
+    },
+    {
+      "file": "cries/crobat.mp3",
+      "bytes": 9264,
+      "duration": 1.301859410430839,
+      "peak": 0.6953285932540894,
+      "rms": 0.1328992457851153,
+      "clipped": 0,
+      "leadingSilence": 0.011700680272108844,
+      "trailingSilence": 0.0599092970521542
+    },
+    {
+      "file": "cries/croconaw.mp3",
+      "bytes": 8832,
+      "duration": 1.2175056689342403,
+      "peak": 0.6713423132896423,
+      "rms": 0.12120445477209749,
+      "clipped": 0,
+      "leadingSilence": 0.011065759637188208,
+      "trailingSilence": 0.019365079365079366
+    },
+    {
+      "file": "cries/cubchoo.mp3",
+      "bytes": 4087,
+      "duration": 0.5431292517006803,
+      "peak": 0.6338919401168823,
+      "rms": 0.12338675601220184,
+      "clipped": 0,
+      "leadingSilence": 0.029931972789115645,
+      "trailingSilence": 0.06299319727891156
+    },
+    {
+      "file": "cries/cyndaquil.mp3",
+      "bytes": 4488,
+      "duration": 0.5695238095238095,
+      "peak": 0.5975795984268188,
+      "rms": 0.1319226026864905,
+      "clipped": 0,
+      "leadingSilence": 0.029750566893424035,
+      "trailingSilence": 0.09310657596371882
+    },
+    {
+      "file": "cries/darmanitan.mp3",
+      "bytes": 9623,
+      "duration": 1.5920181405895693,
+      "peak": 0.5712392330169678,
+      "rms": 0.15979089135958208,
+      "clipped": 0,
+      "leadingSilence": 0.028843537414965988,
+      "trailingSilence": 0.10208616780045351
+    },
+    {
+      "file": "cries/dartrix.mp3",
+      "bytes": 10692,
+      "duration": 1.5004081632653061,
+      "peak": 0.6103036403656006,
+      "rms": 0.13574200501575415,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.08938775510204082
+    },
+    {
+      "file": "cries/darumaka.mp3",
+      "bytes": 8454,
+      "duration": 1.3541043083900226,
+      "peak": 0.6224400401115417,
+      "rms": 0.13942933100376745,
+      "clipped": 0,
+      "leadingSilence": 0.010340136054421769,
+      "trailingSilence": 0.0981859410430839
+    },
+    {
+      "file": "cries/decidueye.mp3",
+      "bytes": 13628,
+      "duration": 2.0240362811791384,
+      "peak": 0.6188735961914062,
+      "rms": 0.1538533279416953,
+      "clipped": 0,
+      "leadingSilence": 0.010249433106575964,
+      "trailingSilence": 0.05609977324263039
+    },
+    {
+      "file": "cries/deerling.mp3",
+      "bytes": 5400,
+      "duration": 0.6551473922902494,
+      "peak": 0.5410066843032837,
+      "rms": 0.07746780080414058,
+      "clipped": 0,
+      "leadingSilence": 0.02929705215419501,
+      "trailingSilence": 0.04149659863945578
+    },
+    {
+      "file": "cries/dewgong.mp3",
+      "bytes": 8448,
+      "duration": 1.1649886621315193,
+      "peak": 0.6428655982017517,
+      "rms": 0.17066896406886004,
+      "clipped": 0,
+      "leadingSilence": 0.012970521541950114,
+      "trailingSilence": 0.06752834467120182
+    },
+    {
+      "file": "cries/dewott.mp3",
+      "bytes": 5904,
+      "duration": 0.7077551020408164,
+      "peak": 0.643114447593689,
+      "rms": 0.1054739806268974,
+      "clipped": 0,
+      "leadingSilence": 0.013242630385487529,
+      "trailingSilence": 0.11414965986394558
+    },
+    {
+      "file": "cries/diglett.mp3",
+      "bytes": 8768,
+      "duration": 1.134784580498866,
+      "peak": 0.2765349745750427,
+      "rms": 0.04053930755680188,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.05646258503401361
+    },
+    {
+      "file": "cries/dragonair.mp3",
+      "bytes": 7728,
+      "duration": 1.0409977324263038,
+      "peak": 0.6161789298057556,
+      "rms": 0.16005440616502928,
+      "clipped": 0,
+      "leadingSilence": 0.02929705215419501,
+      "trailingSilence": 0.048027210884353744
+    },
+    {
+      "file": "cries/dragonite.mp3",
+      "bytes": 8400,
+      "duration": 1.1141043083900226,
+      "peak": 0.598874568939209,
+      "rms": 0.15241145759100216,
+      "clipped": 0,
+      "leadingSilence": 0.013151927437641724,
+      "trailingSilence": 0.032879818594104306
+    },
+    {
+      "file": "cries/drapion.mp3",
+      "bytes": 7258,
+      "duration": 0.9901133786848073,
+      "peak": 0.5579113960266113,
+      "rms": 0.10915819410580481,
+      "clipped": 0,
+      "leadingSilence": 0.01197278911564626,
+      "trailingSilence": 0.03424036281179138
+    },
+    {
+      "file": "cries/dratini.mp3",
+      "bytes": 6072,
+      "duration": 0.7833106575963719,
+      "peak": 0.6062614917755127,
+      "rms": 0.15631780960527922,
+      "clipped": 0,
+      "leadingSilence": 0.012879818594104309,
+      "trailingSilence": 0.03804988662131519
+    },
+    {
+      "file": "cries/drednaw.mp3",
+      "bytes": 12691,
+      "duration": 1.9407709750566893,
+      "peak": 0.6170914769172668,
+      "rms": 0.09684977320708157,
+      "clipped": 0,
+      "leadingSilence": 0.06984126984126984,
+      "trailingSilence": 0.011746031746031746
+    },
+    {
+      "file": "cries/drilbur.mp3",
+      "bytes": 7907,
+      "duration": 1.169795918367347,
+      "peak": 0.6365447044372559,
+      "rms": 0.1287339850215612,
+      "clipped": 0,
+      "leadingSilence": 0.026122448979591838,
+      "trailingSilence": 0.08612244897959184
+    },
+    {
+      "file": "cries/drizzile.mp3",
+      "bytes": 6998,
+      "duration": 0.9224489795918367,
+      "peak": 0.5394320487976074,
+      "rms": 0.045173571373664505,
+      "clipped": 0,
+      "leadingSilence": 0.007074829931972789,
+      "trailingSilence": 0.034058956916099774
+    },
+    {
+      "file": "cries/drowzee.mp3",
+      "bytes": 12240,
+      "duration": 1.6228571428571428,
+      "peak": 0.6223403215408325,
+      "rms": 0.12309754480093729,
+      "clipped": 0,
+      "leadingSilence": 0.012426303854875283,
+      "trailingSilence": 0.10580498866213152
+    },
+    {
+      "file": "cries/dubwool.mp3",
+      "bytes": 7544,
+      "duration": 0.987482993197279,
+      "peak": 0.7180918455123901,
+      "rms": 0.16855825932463192,
+      "clipped": 0,
+      "leadingSilence": 0.0012698412698412698,
+      "trailingSilence": 0.02018140589569161
+    },
+    {
+      "file": "cries/ducklett.mp3",
+      "bytes": 4416,
+      "duration": 0.5558276643990929,
+      "peak": 0.6502779722213745,
+      "rms": 0.11482608981635883,
+      "clipped": 0,
+      "leadingSilence": 0.017142857142857144,
+      "trailingSilence": 0.09201814058956916
+    },
+    {
+      "file": "cries/dugtrio.mp3",
+      "bytes": 9651,
+      "duration": 1.3542857142857143,
+      "peak": 0.4049009680747986,
+      "rms": 0.05039379529970836,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.09174603174603174
+    },
+    {
+      "file": "cries/duosion.mp3",
+      "bytes": 7702,
+      "duration": 1.0650340136054421,
+      "peak": 0.6207424998283386,
+      "rms": 0.1394471617370152,
+      "clipped": 0,
+      "leadingSilence": 0.030476190476190476,
+      "trailingSilence": 0.0980952380952381
+    },
+    {
+      "file": "cries/dusclops.mp3",
+      "bytes": 6998,
+      "duration": 1.059501133786848,
+      "peak": 0.5728380084037781,
+      "rms": 0.1290768415199568,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.08875283446712018
+    },
+    {
+      "file": "cries/dusknoir.mp3",
+      "bytes": 13940,
+      "duration": 2.0829024943310657,
+      "peak": 0.577375590801239,
+      "rms": 0.1301485090024893,
+      "clipped": 0,
+      "leadingSilence": 0.011065759637188208,
+      "trailingSilence": 0.11151927437641723
+    },
+    {
+      "file": "cries/duskull.mp3",
+      "bytes": 6088,
+      "duration": 0.9131972789115647,
+      "peak": 0.6139539480209351,
+      "rms": 0.11647243919855171,
+      "clipped": 0,
+      "leadingSilence": 0.014421768707482994,
+      "trailingSilence": 0.030612244897959183
+    },
+    {
+      "file": "cries/dustox.mp3",
+      "bytes": 5832,
+      "duration": 0.7848526077097505,
+      "peak": 0.589870810508728,
+      "rms": 0.11872690876449417,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.0746938775510204
+    },
+    {
+      "file": "cries/eevee.mp3",
+      "bytes": 6816,
+      "duration": 0.8596825396825397,
+      "peak": 0.6423776149749756,
+      "rms": 0.16657989845033788,
+      "clipped": 0,
+      "leadingSilence": 0,
+      "trailingSilence": 0.000045351473922902495
+    },
+    {
+      "file": "cries/ekans.mp3",
+      "bytes": 8976,
+      "duration": 1.2525170068027212,
+      "peak": 0.6070987582206726,
+      "rms": 0.11469955639061555,
+      "clipped": 0,
+      "leadingSilence": 0.030294784580498866,
+      "trailingSilence": 0.10780045351473923
+    },
+    {
+      "file": "cries/eldegoss.mp3",
+      "bytes": 11522,
+      "duration": 1.5908390022675738,
+      "peak": 0.5041137933731079,
+      "rms": 0.09867695339503127,
+      "clipped": 0,
+      "leadingSilence": 0.014693877551020407,
+      "trailingSilence": 0.02163265306122449
+    },
+    {
+      "file": "cries/electabuzz.mp3",
+      "bytes": 10800,
+      "duration": 1.5825850340136054,
+      "peak": 0.6298455595970154,
+      "rms": 0.11889678772417359,
+      "clipped": 0,
+      "leadingSilence": 0.014875283446712018,
+      "trailingSilence": 0.11342403628117914
+    },
+    {
+      "file": "cries/electivire.mp3",
+      "bytes": 15576,
+      "duration": 2.0710204081632653,
+      "peak": 0.6092017889022827,
+      "rms": 0.13750011710458296,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.06444444444444444
+    },
+    {
+      "file": "cries/electrike.mp3",
+      "bytes": 5360,
+      "duration": 0.6810884353741496,
+      "peak": 0.599617600440979,
+      "rms": 0.14727441935877872,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.02163265306122449
+    },
+    {
+      "file": "cries/electrode.mp3",
+      "bytes": 11832,
+      "duration": 1.487891156462585,
+      "peak": 0.6292856931686401,
+      "rms": 0.15736368546640267,
+      "clipped": 0,
+      "leadingSilence": 0.011700680272108844,
+      "trailingSilence": 0.11750566893424036
+    },
+    {
+      "file": "cries/elekid.mp3",
+      "bytes": 5568,
+      "duration": 0.673469387755102,
+      "peak": 0.5044262409210205,
+      "rms": 0.12493492695821147,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.03977324263038549
+    },
+    {
+      "file": "cries/emboar.mp3",
+      "bytes": 9456,
+      "duration": 1.3709750566893424,
+      "peak": 0.5914812088012695,
+      "rms": 0.14101027346524564,
+      "clipped": 0,
+      "leadingSilence": 0.00925170068027211,
+      "trailingSilence": 0.06870748299319727
+    },
+    {
+      "file": "cries/emolga.mp3",
+      "bytes": 5232,
+      "duration": 0.6328344671201814,
+      "peak": 0.5748591423034668,
+      "rms": 0.13532705011642104,
+      "clipped": 0,
+      "leadingSilence": 0.017052154195011337,
+      "trailingSilence": 0.10208616780045351
+    },
+    {
+      "file": "cries/empoleon.mp3",
+      "bytes": 10104,
+      "duration": 1.4219501133786847,
+      "peak": 0.6253273487091064,
+      "rms": 0.14743986154308902,
+      "clipped": 0,
+      "leadingSilence": 0.010612244897959184,
+      "trailingSilence": 0.08702947845804988
+    },
+    {
+      "file": "cries/escavalier.mp3",
+      "bytes": 8739,
+      "duration": 1.409795918367347,
+      "peak": 0.6566566228866577,
+      "rms": 0.14194678663456226,
+      "clipped": 0,
+      "leadingSilence": 0.027573696145124716,
+      "trailingSilence": 0.10526077097505669
+    },
+    {
+      "file": "cries/espeon.mp3",
+      "bytes": 8819,
+      "duration": 1.1636281179138321,
+      "peak": 0.612521767616272,
+      "rms": 0.14640055282719044,
+      "clipped": 0,
+      "leadingSilence": 0.012426303854875283,
+      "trailingSilence": 0.0490249433106576
+    },
+    {
+      "file": "cries/excadrill.mp3",
+      "bytes": 10611,
+      "duration": 1.5464852607709751,
+      "peak": 0.5566682815551758,
+      "rms": 0.09131445907454105,
+      "clipped": 0,
+      "leadingSilence": 0.02657596371882086,
+      "trailingSilence": 0.061179138321995466
+    },
+    {
+      "file": "cries/exeggcute.mp3",
+      "bytes": 9672,
+      "duration": 1.196734693877551,
+      "peak": 0.575420618057251,
+      "rms": 0.1375063552546971,
+      "clipped": 0,
+      "leadingSilence": 0.012426303854875283,
+      "trailingSilence": 0.022811791383219954
+    },
+    {
+      "file": "cries/exeggutor.mp3",
+      "bytes": 12432,
+      "duration": 1.6378231292517007,
+      "peak": 0.567533016204834,
+      "rms": 0.13072939429679567,
+      "clipped": 0,
+      "leadingSilence": 0.011700680272108844,
+      "trailingSilence": 0.033242630385487526
+    },
+    {
+      "file": "cries/feebas.mp3",
+      "bytes": 4580,
+      "duration": 0.5835827664399093,
+      "peak": 0.5898624062538147,
+      "rms": 0.11895609692326177,
+      "clipped": 0,
+      "leadingSilence": 0.013696145124716553,
+      "trailingSilence": 0.11324263038548753
+    },
+    {
+      "file": "cries/feraligatr.mp3",
+      "bytes": 10752,
+      "duration": 1.5193650793650795,
+      "peak": 0.62348872423172,
+      "rms": 0.15743029149665463,
+      "clipped": 0,
+      "leadingSilence": 0.010612244897959184,
+      "trailingSilence": 0.0004988662131519275
+    },
+    {
+      "file": "cries/ferroseed.mp3",
+      "bytes": 6738,
+      "duration": 0.8425396825396826,
+      "peak": 0.64434415102005,
+      "rms": 0.11794383741082035,
+      "clipped": 0,
+      "leadingSilence": 0.011065759637188208,
+      "trailingSilence": 0.022811791383219954
+    },
+    {
+      "file": "cries/ferrothorn.mp3",
+      "bytes": 10015,
+      "duration": 1.4896145124716553,
+      "peak": 0.6084437966346741,
+      "rms": 0.12912580670964086,
+      "clipped": 0,
+      "leadingSilence": 0.013424036281179138,
+      "trailingSilence": 0.035873015873015876
+    },
+    {
+      "file": "cries/flaaffy.mp3",
+      "bytes": 7656,
+      "duration": 1.0960544217687074,
+      "peak": 0.5378147959709167,
+      "rms": 0.12796863426317814,
+      "clipped": 0,
+      "leadingSilence": 0.030022675736961452,
+      "trailingSilence": 0.10108843537414966
+    },
+    {
+      "file": "cries/flapple.mp3",
+      "bytes": 5204,
+      "duration": 0.694875283446712,
+      "peak": 0.6994994878768921,
+      "rms": 0.11618491081331614,
+      "clipped": 0,
+      "leadingSilence": 0,
+      "trailingSilence": 0.06335600907029479
+    },
+    {
+      "file": "cries/flareon.mp3",
+      "bytes": 9364,
+      "duration": 1.4713832199546486,
+      "peak": 0.6502412557601929,
+      "rms": 0.11979736393497621,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.11732426303854876
+    },
+    {
+      "file": "cries/floatzel.mp3",
+      "bytes": 10656,
+      "duration": 1.4965986394557824,
+      "peak": 0.6238141059875488,
+      "rms": 0.16189125323240647,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.09210884353741497
+    },
+    {
+      "file": "cries/flygon.mp3",
+      "bytes": 9780,
+      "duration": 1.4389115646258503,
+      "peak": 0.6358983516693115,
+      "rms": 0.16071712453217177,
+      "clipped": 0,
+      "leadingSilence": 0.012335600907029478,
+      "trailingSilence": 0.08947845804988662
+    },
+    {
+      "file": "cries/froslass.mp3",
+      "bytes": 13836,
+      "duration": 1.9956462585034014,
+      "peak": 0.6036820411682129,
+      "rms": 0.15754994836938882,
+      "clipped": 0,
+      "leadingSilence": 0.011337868480725623,
+      "trailingSilence": 0.1071655328798186
+    },
+    {
+      "file": "cries/frosmoth.mp3",
+      "bytes": 17066,
+      "duration": 2.178231292517007,
+      "peak": 0.1579301506280899,
+      "rms": 0.026331665304682002,
+      "clipped": 0,
+      "leadingSilence": 0.03501133786848073,
+      "trailingSilence": 0.22979591836734695
+    },
+    {
+      "file": "cries/furret.mp3",
+      "bytes": 4440,
+      "duration": 0.4965986394557823,
+      "peak": 0.6419300436973572,
+      "rms": 0.11386656641128821,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.06072562358276644
+    },
+    {
+      "file": "cries/gabite.mp3",
+      "bytes": 5400,
+      "duration": 0.7387755102040816,
+      "peak": 0.6114029884338379,
+      "rms": 0.15728119602454887,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.07015873015873016
+    },
+    {
+      "file": "cries/gallade.mp3",
+      "bytes": 11990,
+      "duration": 1.7410430839002267,
+      "peak": 0.6661829352378845,
+      "rms": 0.12114434597933821,
+      "clipped": 0,
+      "leadingSilence": 0.011519274376417234,
+      "trailingSilence": 0.11659863945578232
+    },
+    {
+      "file": "cries/galvantula.mp3",
+      "bytes": 7910,
+      "duration": 1.0530612244897959,
+      "peak": 0.64081871509552,
+      "rms": 0.10603169034463454,
+      "clipped": 0,
+      "leadingSilence": 0.020136054421768707,
+      "trailingSilence": 0.03197278911564626
+    },
+    {
+      "file": "cries/garbodor.mp3",
+      "bytes": 8012,
+      "duration": 1.3501133786848072,
+      "peak": 0.6421717405319214,
+      "rms": 0.1841370509062576,
+      "clipped": 0,
+      "leadingSilence": 0.029659863945578232,
+      "trailingSilence": 0.07986394557823129
+    },
+    {
+      "file": "cries/garchomp.mp3",
+      "bytes": 7584,
+      "duration": 1.0848979591836734,
+      "peak": 0.5836001634597778,
+      "rms": 0.15253187279956398,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.08077097505668934
+    },
+    {
+      "file": "cries/gardevoir.mp3",
+      "bytes": 9312,
+      "duration": 1.4058956916099774,
+      "peak": 0.5983649492263794,
+      "rms": 0.1589258371814601,
+      "clipped": 0,
+      "leadingSilence": 0.012517006802721088,
+      "trailingSilence": 0.06390022675736962
+    },
+    {
+      "file": "cries/gastly.mp3",
+      "bytes": 10144,
+      "duration": 1.4669387755102041,
+      "peak": 0.6945439577102661,
+      "rms": 0.1426134651797663,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.06299319727891156
+    },
+    {
+      "file": "cries/gastrodon.mp3",
+      "bytes": 12022,
+      "duration": 1.536780045351474,
+      "peak": 0.5887342095375061,
+      "rms": 0.15131507871030273,
+      "clipped": 0,
+      "leadingSilence": 0.012426303854875283,
+      "trailingSilence": 0.11596371882086168
+    },
+    {
+      "file": "cries/gengar.mp3",
+      "bytes": 6583,
+      "duration": 0.8958730158730158,
+      "peak": 0.7073073387145996,
+      "rms": 0.17032727945504803,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.03188208616780045
+    },
+    {
+      "file": "cries/geodude.mp3",
+      "bytes": 10200,
+      "duration": 1.457687074829932,
+      "peak": 0.6292453408241272,
+      "rms": 0.14546643920261715,
+      "clipped": 0,
+      "leadingSilence": 0.011247165532879818,
+      "trailingSilence": 0.1036281179138322
+    },
+    {
+      "file": "cries/gible.mp3",
+      "bytes": 4824,
+      "duration": 0.5693424036281179,
+      "peak": 0.5752487778663635,
+      "rms": 0.1418428290679111,
+      "clipped": 0,
+      "leadingSilence": 0.012426303854875283,
+      "trailingSilence": 0.02761904761904762
+    },
+    {
+      "file": "cries/gigalith.mp3",
+      "bytes": 12276,
+      "duration": 2.0117913832199545,
+      "peak": 0.6560606956481934,
+      "rms": 0.1626117333877919,
+      "clipped": 0,
+      "leadingSilence": 0.01070294784580499,
+      "trailingSilence": 0.08022675736961452
+    },
+    {
+      "file": "cries/girafarig.mp3",
+      "bytes": 8016,
+      "duration": 0.9122902494331065,
+      "peak": 0.6131783723831177,
+      "rms": 0.13473194429086338,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.039863945578231294
+    },
+    {
+      "file": "cries/glaceon.mp3",
+      "bytes": 14620,
+      "duration": 2.010702947845805,
+      "peak": 0.615317165851593,
+      "rms": 0.16745731812299655,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.07496598639455783
+    },
+    {
+      "file": "cries/glalie.mp3",
+      "bytes": 8922,
+      "duration": 1.2897959183673469,
+      "peak": 0.6432775259017944,
+      "rms": 0.12363299239085271,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.09755102040816327
+    },
+    {
+      "file": "cries/gligar.mp3",
+      "bytes": 5352,
+      "duration": 0.6751020408163265,
+      "peak": 0.6098883748054504,
+      "rms": 0.13505191001890668,
+      "clipped": 0,
+      "leadingSilence": 0.012879818594104309,
+      "trailingSilence": 0.04321995464852608
+    },
+    {
+      "file": "cries/gliscor.mp3",
+      "bytes": 11088,
+      "duration": 1.4338321995464853,
+      "peak": 0.5702109336853027,
+      "rms": 0.1237716871412489,
+      "clipped": 0,
+      "leadingSilence": 0.013786848072562358,
+      "trailingSilence": 0.041043083900226755
+    },
+    {
+      "file": "cries/gloom.mp3",
+      "bytes": 6167,
+      "duration": 0.8133333333333334,
+      "peak": 0.5938332080841064,
+      "rms": 0.10783206751393236,
+      "clipped": 0,
+      "leadingSilence": 0.013333333333333334,
+      "trailingSilence": 0.09773242630385487
+    },
+    {
+      "file": "cries/golbat.mp3",
+      "bytes": 8328,
+      "duration": 1.0938775510204082,
+      "peak": 0.5360874533653259,
+      "rms": 0.12113665666903697,
+      "clipped": 0,
+      "leadingSilence": 0.011065759637188208,
+      "trailingSilence": 0.05011337868480726
+    },
+    {
+      "file": "cries/goldeen.mp3",
+      "bytes": 5256,
+      "duration": 0.6692063492063492,
+      "peak": 0.645190417766571,
+      "rms": 0.15265594238470026,
+      "clipped": 0,
+      "leadingSilence": 0.014512471655328799,
+      "trailingSilence": 0.058458049886621316
+    },
+    {
+      "file": "cries/golduck.mp3",
+      "bytes": 6312,
+      "duration": 0.854421768707483,
+      "peak": 0.6373931765556335,
+      "rms": 0.1421863069891365,
+      "clipped": 0,
+      "leadingSilence": 0.013786848072562358,
+      "trailingSilence": 0.10199546485260771
+    },
+    {
+      "file": "cries/golem.mp3",
+      "bytes": 9000,
+      "duration": 1.2390022675736962,
+      "peak": 0.5979945659637451,
+      "rms": 0.12573443757280825,
+      "clipped": 0,
+      "leadingSilence": 0.010068027210884354,
+      "trailingSilence": 0.10154195011337869
+    },
+    {
+      "file": "cries/gorebyss.mp3",
+      "bytes": 8760,
+      "duration": 1.2338321995464852,
+      "peak": 0.6357765793800354,
+      "rms": 0.16299345414849434,
+      "clipped": 0,
+      "leadingSilence": 0.012335600907029478,
+      "trailingSilence": 0.1
+    },
+    {
+      "file": "cries/gossifleur.mp3",
+      "bytes": 9989,
+      "duration": 1.248344671201814,
+      "peak": 0.56670081615448,
+      "rms": 0.12668041781854567,
+      "clipped": 0,
+      "leadingSilence": 0.021678004535147392,
+      "trailingSilence": 0.00022675736961451248
+    },
+    {
+      "file": "cries/gothita.mp3",
+      "bytes": 4113,
+      "duration": 0.5513832199546486,
+      "peak": 0.5789133310317993,
+      "rms": 0.10967760461712736,
+      "clipped": 0,
+      "leadingSilence": 0.027120181405895692,
+      "trailingSilence": 0.0927437641723356
+    },
+    {
+      "file": "cries/gothitelle.mp3",
+      "bytes": 13575,
+      "duration": 2.0677551020408163,
+      "peak": 0.3690465986728668,
+      "rms": 0.05724250251316047,
+      "clipped": 0,
+      "leadingSilence": 0.01614512471655329,
+      "trailingSilence": 0.12122448979591836
+    },
+    {
+      "file": "cries/gothorita.mp3",
+      "bytes": 5594,
+      "duration": 0.8087074829931973,
+      "peak": 0.5837869048118591,
+      "rms": 0.13765868344813112,
+      "clipped": 0,
+      "leadingSilence": 0.019954648526077097,
+      "trailingSilence": 0.06426303854875283
+    },
+    {
+      "file": "cries/graveler.mp3",
+      "bytes": 11832,
+      "duration": 1.6659410430839001,
+      "peak": 0.6475358605384827,
+      "rms": 0.1504698650358288,
+      "clipped": 0,
+      "leadingSilence": 0.010612244897959184,
+      "trailingSilence": 0.09963718820861678
+    },
+    {
+      "file": "cries/grimer.mp3",
+      "bytes": 4896,
+      "duration": 0.6461678004535147,
+      "peak": 0.6547343730926514,
+      "rms": 0.15799269015057885,
+      "clipped": 0,
+      "leadingSilence": 0.013786848072562358,
+      "trailingSilence": 0.03977324263038549
+    },
+    {
+      "file": "cries/grookey.mp3",
+      "bytes": 6565,
+      "duration": 0.7039455782312926,
+      "peak": 0.13083507120609283,
+      "rms": 0.015497520684052232,
+      "clipped": 0,
+      "leadingSilence": 0.012970521541950114,
+      "trailingSilence": 0.12049886621315192
+    },
+    {
+      "file": "cries/grotle.mp3",
+      "bytes": 6768,
+      "duration": 0.850702947845805,
+      "peak": 0.6378424763679504,
+      "rms": 0.1408093704613313,
+      "clipped": 0,
+      "leadingSilence": 0.010884353741496598,
+      "trailingSilence": 0.08249433106575964
+    },
+    {
+      "file": "cries/grovyle.mp3",
+      "bytes": 8352,
+      "duration": 1.1597278911564626,
+      "peak": 0.5866324305534363,
+      "rms": 0.11969490898076539,
+      "clipped": 0,
+      "leadingSilence": 0.013696145124716553,
+      "trailingSilence": 0.04739229024943311
+    },
+    {
+      "file": "cries/growlithe.mp3",
+      "bytes": 6348,
+      "duration": 0.8647619047619047,
+      "peak": 0.5189687609672546,
+      "rms": 0.11647266869110533,
+      "clipped": 0,
+      "leadingSilence": 0.013151927437641724,
+      "trailingSilence": 0.0945578231292517
+    },
+    {
+      "file": "cries/grubbin.mp3",
+      "bytes": 8438,
+      "duration": 0.890249433106576,
+      "peak": 0.5898381471633911,
+      "rms": 0.10713991354555892,
+      "clipped": 0,
+      "leadingSilence": 0.010068027210884354,
+      "trailingSilence": 0.09011337868480726
+    },
+    {
+      "file": "cries/grumpig.mp3",
+      "bytes": 5568,
+      "duration": 0.7645351473922902,
+      "peak": 0.6642196178436279,
+      "rms": 0.17117079889965112,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.09909297052154195
+    },
+    {
+      "file": "cries/gulpin.mp3",
+      "bytes": 4680,
+      "duration": 0.5545578231292517,
+      "peak": 0.6397027969360352,
+      "rms": 0.15640905455974768,
+      "clipped": 0,
+      "leadingSilence": 0.016780045351473923,
+      "trailingSilence": 0.03151927437641723
+    },
+    {
+      "file": "cries/gumshoos.mp3",
+      "bytes": 12864,
+      "duration": 1.9072108843537414,
+      "peak": 0.6106563806533813,
+      "rms": 0.1261538468830914,
+      "clipped": 0,
+      "leadingSilence": 0.011065759637188208,
+      "trailingSilence": 0.12140589569160998
+    },
+    {
+      "file": "cries/gurdurr.mp3",
+      "bytes": 8635,
+      "duration": 1.4499773242630385,
+      "peak": 0.6200321912765503,
+      "rms": 0.10696234060940382,
+      "clipped": 0,
+      "leadingSilence": 0.011700680272108844,
+      "trailingSilence": 0.08648526077097506
+    },
+    {
+      "file": "cries/gyarados.mp3",
+      "bytes": 8507,
+      "duration": 1.1783219954648525,
+      "peak": 0.5859443545341492,
+      "rms": 0.15069870789459208,
+      "clipped": 0,
+      "leadingSilence": 0.012517006802721088,
+      "trailingSilence": 0.05764172335600907
+    },
+    {
+      "file": "cries/hariyama.mp3",
+      "bytes": 6504,
+      "duration": 0.8959637188208617,
+      "peak": 0.6075088381767273,
+      "rms": 0.17687563219086921,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.017913832199546485
+    },
+    {
+      "file": "cries/haunter.mp3",
+      "bytes": 10855,
+      "duration": 1.3606349206349206,
+      "peak": 0.5913670063018799,
+      "rms": 0.129981494695112,
+      "clipped": 0,
+      "leadingSilence": 0.012063492063492064,
+      "trailingSilence": 0.06090702947845805
+    },
+    {
+      "file": "cries/heracross.mp3",
+      "bytes": 7584,
+      "duration": 0.9785034013605443,
+      "peak": 0.6606509685516357,
+      "rms": 0.18104414019889312,
+      "clipped": 0,
+      "leadingSilence": 0.012517006802721088,
+      "trailingSilence": 0.046122448979591835
+    },
+    {
+      "file": "cries/herdier.mp3",
+      "bytes": 3768,
+      "duration": 0.5668934240362812,
+      "peak": 0.565331220626831,
+      "rms": 0.11748346423434229,
+      "clipped": 0,
+      "leadingSilence": 0.02839002267573696,
+      "trailingSilence": 0.1089795918367347
+    },
+    {
+      "file": "cries/hitmonchan.mp3",
+      "bytes": 7336,
+      "duration": 1.0374603174603174,
+      "peak": 0.6001408100128174,
+      "rms": 0.16846540960784814,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.05909297052154195
+    },
+    {
+      "file": "cries/hitmonlee.mp3",
+      "bytes": 7962,
+      "duration": 1.1197278911564625,
+      "peak": 0.6616321802139282,
+      "rms": 0.15221370786876795,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.10535147392290249
+    },
+    {
+      "file": "cries/hitmontop.mp3",
+      "bytes": 6845,
+      "duration": 0.8865306122448979,
+      "peak": 0.6539217233657837,
+      "rms": 0.1459640686277168,
+      "clipped": 0,
+      "leadingSilence": 0.012517006802721088,
+      "trailingSilence": 0.10408163265306122
+    },
+    {
+      "file": "cries/honchkrow.mp3",
+      "bytes": 9384,
+      "duration": 1.3979138321995466,
+      "peak": 0.6606709957122803,
+      "rms": 0.1606670798130339,
+      "clipped": 0,
+      "leadingSilence": 0.011882086167800454,
+      "trailingSilence": 0.1
+    },
+    {
+      "file": "cries/hoothoot.mp3",
+      "bytes": 5256,
+      "duration": 0.6921541950113379,
+      "peak": 0.657346785068512,
+      "rms": 0.2389136766196178,
+      "clipped": 0,
+      "leadingSilence": 0.013786848072562358,
+      "trailingSilence": 0.04666666666666667
+    },
+    {
+      "file": "cries/horsea.mp3",
+      "bytes": 5688,
+      "duration": 0.6053514739229024,
+      "peak": 0.44940412044525146,
+      "rms": 0.10247439858128775,
+      "clipped": 0,
+      "leadingSilence": 0.012063492063492064,
+      "trailingSilence": 0.034784580498866215
+    },
+    {
+      "file": "cries/houndoom.mp3",
+      "bytes": 8544,
+      "duration": 1.1429478458049886,
+      "peak": 0.6080302000045776,
+      "rms": 0.16119731463452538,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.04231292517006803
+    },
+    {
+      "file": "cries/houndour.mp3",
+      "bytes": 6456,
+      "duration": 0.8118820861678004,
+      "peak": 0.6576794385910034,
+      "rms": 0.15722248345265327,
+      "clipped": 0,
+      "leadingSilence": 0.01850340136054422,
+      "trailingSilence": 0.048480725623582764
+    },
+    {
+      "file": "cries/huntail.mp3",
+      "bytes": 6888,
+      "duration": 0.8554195011337868,
+      "peak": 0.61005699634552,
+      "rms": 0.14376718617012796,
+      "clipped": 0,
+      "leadingSilence": 0.013333333333333334,
+      "trailingSilence": 0.0345124716553288
+    },
+    {
+      "file": "cries/hypno.mp3",
+      "bytes": 11496,
+      "duration": 1.617687074829932,
+      "peak": 0.6111270189285278,
+      "rms": 0.17818395178933896,
+      "clipped": 0,
+      "leadingSilence": 0.009705215419501133,
+      "trailingSilence": 0.027528344671201813
+    },
+    {
+      "file": "cries/incineroar.mp3",
+      "bytes": 12406,
+      "duration": 1.8858956916099774,
+      "peak": 0.6302152276039124,
+      "rms": 0.18153433028465168,
+      "clipped": 0,
+      "leadingSilence": 0.010430839002267574,
+      "trailingSilence": 0.06843537414965986
+    },
+    {
+      "file": "cries/infernape.mp3",
+      "bytes": 12264,
+      "duration": 1.7103854875283446,
+      "peak": 0.639951229095459,
+      "rms": 0.1549986600597667,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.03614512471655329
+    },
+    {
+      "file": "cries/inteleon.mp3",
+      "bytes": 7051,
+      "duration": 0.9487528344671202,
+      "peak": 0.4794204831123352,
+      "rms": 0.06867738426015138,
+      "clipped": 0,
+      "leadingSilence": 0.01804988662131519,
+      "trailingSilence": 0.11886621315192744
+    },
+    {
+      "file": "cries/ivysaur.mp3",
+      "bytes": 6790,
+      "duration": 0.9108390022675737,
+      "peak": 0.46797898411750793,
+      "rms": 0.10123648588288582,
+      "clipped": 0,
+      "leadingSilence": 0.008707482993197279,
+      "trailingSilence": 0.03396825396825397
+    },
+    {
+      "file": "cries/jolteon.mp3",
+      "bytes": 7518,
+      "duration": 1.0403628117913832,
+      "peak": 0.6448191404342651,
+      "rms": 0.14088671744295528,
+      "clipped": 0,
+      "leadingSilence": 0.011428571428571429,
+      "trailingSilence": 0.1127891156462585
+    },
+    {
+      "file": "cries/joltik.mp3",
+      "bytes": 4712,
+      "duration": 0.5289795918367347,
+      "peak": 0.5428429245948792,
+      "rms": 0.06603355734109691,
+      "clipped": 0,
+      "leadingSilence": 0.017233560090702947,
+      "trailingSilence": 0.08394557823129252
+    },
+    {
+      "file": "cries/jynx.mp3",
+      "bytes": 17712,
+      "duration": 2.4438095238095237,
+      "peak": 0.5973626971244812,
+      "rms": 0.13927669541101403,
+      "clipped": 0,
+      "leadingSilence": 0.012063492063492064,
+      "trailingSilence": 0.11079365079365079
+    },
+    {
+      "file": "cries/kadabra.mp3",
+      "bytes": 9576,
+      "duration": 1.277732426303855,
+      "peak": 0.5288761854171753,
+      "rms": 0.11246142333657547,
+      "clipped": 0,
+      "leadingSilence": 0.013696145124716553,
+      "trailingSilence": 0.05002267573696145
+    },
+    {
+      "file": "cries/kakuna.mp3",
+      "bytes": 7968,
+      "duration": 1.125170068027211,
+      "peak": 0.5753178596496582,
+      "rms": 0.11650576797680716,
+      "clipped": 0,
+      "leadingSilence": 0.027301587301587302,
+      "trailingSilence": 0.0945578231292517
+    },
+    {
+      "file": "cries/karrablast.mp3",
+      "bytes": 4683,
+      "duration": 0.6319274376417233,
+      "peak": 0.6127398014068604,
+      "rms": 0.1598762083517429,
+      "clipped": 0,
+      "leadingSilence": 0.025759637188208617,
+      "trailingSilence": 0.12285714285714286
+    },
+    {
+      "file": "cries/kecleon.mp3",
+      "bytes": 4896,
+      "duration": 0.6545124716553288,
+      "peak": 0.6221665143966675,
+      "rms": 0.12868194279365255,
+      "clipped": 0,
+      "leadingSilence": 0.012426303854875283,
+      "trailingSilence": 0.1253968253968254
+    },
+    {
+      "file": "cries/kingdra.mp3",
+      "bytes": 6768,
+      "duration": 0.9375056689342404,
+      "peak": 0.6131048202514648,
+      "rms": 0.13757285872431663,
+      "clipped": 0,
+      "leadingSilence": 0.011247165532879818,
+      "trailingSilence": 0.085578231292517
+    },
+    {
+      "file": "cries/kingler.mp3",
+      "bytes": 9390,
+      "duration": 1.3575510204081633,
+      "peak": 0.5385769605636597,
+      "rms": 0.1325395856678316,
+      "clipped": 0,
+      "leadingSilence": 0.010884353741496598,
+      "trailingSilence": 0.08793650793650794
+    },
+    {
+      "file": "cries/kirlia.mp3",
+      "bytes": 5151,
+      "duration": 0.7099319727891157,
+      "peak": 0.6577498912811279,
+      "rms": 0.197590142242558,
+      "clipped": 0,
+      "leadingSilence": 0.01850340136054422,
+      "trailingSilence": 0.081859410430839
+    },
+    {
+      "file": "cries/koffing.mp3",
+      "bytes": 8220,
+      "duration": 1.1575510204081632,
+      "peak": 0.610621452331543,
+      "rms": 0.15597524120926715,
+      "clipped": 0,
+      "leadingSilence": 0.013514739229024943,
+      "trailingSilence": 0.09736961451247166
+    },
+    {
+      "file": "cries/krabby.mp3",
+      "bytes": 11960,
+      "duration": 1.3491156462585034,
+      "peak": 0.6976767778396606,
+      "rms": 0.12345799180406747,
+      "clipped": 0,
+      "leadingSilence": 0.012335600907029478,
+      "trailingSilence": 0.08267573696145125
+    },
+    {
+      "file": "cries/krokorok.mp3",
+      "bytes": 7344,
+      "duration": 1.0591383219954649,
+      "peak": 0.5600999593734741,
+      "rms": 0.14018991634358838,
+      "clipped": 0,
+      "leadingSilence": 0.027210884353741496,
+      "trailingSilence": 0.03741496598639456
+    },
+    {
+      "file": "cries/krookodile.mp3",
+      "bytes": 10728,
+      "duration": 1.659138321995465,
+      "peak": 0.6087771654129028,
+      "rms": 0.12869927047254226,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.1273015873015873
+    },
+    {
+      "file": "cries/lairon.mp3",
+      "bytes": 8640,
+      "duration": 1.1913832199546486,
+      "peak": 0.6002512574195862,
+      "rms": 0.15154455956305196,
+      "clipped": 0,
+      "leadingSilence": 0.012879818594104309,
+      "trailingSilence": 0.08984126984126985
+    },
+    {
+      "file": "cries/lampent.mp3",
+      "bytes": 10612,
+      "duration": 1.507845804988662,
+      "peak": 0.6145132780075073,
+      "rms": 0.11276216367831907,
+      "clipped": 0,
+      "leadingSilence": 0.02947845804988662,
+      "trailingSilence": 0.07188208616780045
+    },
+    {
+      "file": "cries/lanturn.mp3",
+      "bytes": 5646,
+      "duration": 0.8318367346938775,
+      "peak": 0.6369671821594238,
+      "rms": 0.1074206121421562,
+      "clipped": 0,
+      "leadingSilence": 0.03074829931972789,
+      "trailingSilence": 0.08494331065759637
+    },
+    {
+      "file": "cries/lapras.mp3",
+      "bytes": 6660,
+      "duration": 0.9642630385487528,
+      "peak": 0.6216213703155518,
+      "rms": 0.1371689401691127,
+      "clipped": 0,
+      "leadingSilence": 0.012335600907029478,
+      "trailingSilence": 0.07387755102040816
+    },
+    {
+      "file": "cries/leafeon.mp3",
+      "bytes": 8869,
+      "duration": 1.27437641723356,
+      "peak": 0.6170496344566345,
+      "rms": 0.153230214722727,
+      "clipped": 0,
+      "leadingSilence": 0.013605442176870748,
+      "trailingSilence": 0.09990929705215419
+    },
+    {
+      "file": "cries/leavanny.mp3",
+      "bytes": 9744,
+      "duration": 1.1463038548752835,
+      "peak": 0.622482180595398,
+      "rms": 0.10051712461696553,
+      "clipped": 0,
+      "leadingSilence": 0.010884353741496598,
+      "trailingSilence": 0.0033106575963718823
+    },
+    {
+      "file": "cries/ledian.mp3",
+      "bytes": 5280,
+      "duration": 0.6296598639455783,
+      "peak": 0.6220160722732544,
+      "rms": 0.11341766957090217,
+      "clipped": 0,
+      "leadingSilence": 0.01197278911564626,
+      "trailingSilence": 0.1034467120181406
+    },
+    {
+      "file": "cries/ledyba.mp3",
+      "bytes": 4464,
+      "duration": 0.5034920634920635,
+      "peak": 0.6158913969993591,
+      "rms": 0.12257784701767432,
+      "clipped": 0,
+      "leadingSilence": 0.011882086167800454,
+      "trailingSilence": 0.085578231292517
+    },
+    {
+      "file": "cries/liepard.mp3",
+      "bytes": 5906,
+      "duration": 0.8805442176870748,
+      "peak": 0.6697934865951538,
+      "rms": 0.14434992489775478,
+      "clipped": 0,
+      "leadingSilence": 0.026485260770975058,
+      "trailingSilence": 0.04276643990929705
+    },
+    {
+      "file": "cries/lileep.mp3",
+      "bytes": 4824,
+      "duration": 0.6286621315192744,
+      "peak": 0.6989955902099609,
+      "rms": 0.11836553861194848,
+      "clipped": 0,
+      "leadingSilence": 0.012879818594104309,
+      "trailingSilence": 0.11034013605442176
+    },
+    {
+      "file": "cries/lillipup.mp3",
+      "bytes": 3984,
+      "duration": 0.4819047619047619,
+      "peak": 0.6208476424217224,
+      "rms": 0.12645202772855552,
+      "clipped": 0,
+      "leadingSilence": 0.012335600907029478,
+      "trailingSilence": 0.08503401360544217
+    },
+    {
+      "file": "cries/linoone.mp3",
+      "bytes": 10976,
+      "duration": 1.640453514739229,
+      "peak": 0.6544113755226135,
+      "rms": 0.15742205814327323,
+      "clipped": 0,
+      "leadingSilence": 0.011247165532879818,
+      "trailingSilence": 0.09065759637188209
+    },
+    {
+      "file": "cries/litten.mp3",
+      "bytes": 8091,
+      "duration": 1.0781859410430839,
+      "peak": 0.627875030040741,
+      "rms": 0.13810040152515488,
+      "clipped": 0,
+      "leadingSilence": 0.011065759637188208,
+      "trailingSilence": 0.06770975056689342
+    },
+    {
+      "file": "cries/litwick.mp3",
+      "bytes": 5907,
+      "duration": 0.8881632653061224,
+      "peak": 0.6158609390258789,
+      "rms": 0.14317216695100105,
+      "clipped": 0,
+      "leadingSilence": 0.020317460317460317,
+      "trailingSilence": 0.07786848072562358
+    },
+    {
+      "file": "cries/lombre.mp3",
+      "bytes": 6660,
+      "duration": 0.959092970521542,
+      "peak": 0.6103790402412415,
+      "rms": 0.14235554886554713,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.10027210884353742
+    },
+    {
+      "file": "cries/lopunny.mp3",
+      "bytes": 11520,
+      "duration": 1.6816326530612244,
+      "peak": 0.6125544309616089,
+      "rms": 0.1402695967817751,
+      "clipped": 0,
+      "leadingSilence": 0.011882086167800454,
+      "trailingSilence": 0.017732426303854874
+    },
+    {
+      "file": "cries/lotad.mp3",
+      "bytes": 3410,
+      "duration": 0.374875283446712,
+      "peak": 0.6172459721565247,
+      "rms": 0.1287628482429237,
+      "clipped": 0,
+      "leadingSilence": 0.010612244897959184,
+      "trailingSilence": 0.06390022675736962
+    },
+    {
+      "file": "cries/lucario.mp3",
+      "bytes": 5308,
+      "duration": 0.7301587301587301,
+      "peak": 0.5923357009887695,
+      "rms": 0.15176912142135549,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.03659863945578231
+    },
+    {
+      "file": "cries/ludicolo.mp3",
+      "bytes": 7310,
+      "duration": 0.9458503401360544,
+      "peak": 0.5741048455238342,
+      "rms": 0.1578557250822718,
+      "clipped": 0,
+      "leadingSilence": 0.012335600907029478,
+      "trailingSilence": 0.035147392290249435
+    },
+    {
+      "file": "cries/lunatone.mp3",
+      "bytes": 8584,
+      "duration": 1.280453514739229,
+      "peak": 0.6089448928833008,
+      "rms": 0.180345169758873,
+      "clipped": 0,
+      "leadingSilence": 0.012063492063492064,
+      "trailingSilence": 0.07560090702947846
+    },
+    {
+      "file": "cries/luvdisc.mp3",
+      "bytes": 3360,
+      "duration": 0.32997732426303855,
+      "peak": 0.6006815433502197,
+      "rms": 0.13331661581263501,
+      "clipped": 0,
+      "leadingSilence": 0.011428571428571429,
+      "trailingSilence": 0.01746031746031746
+    },
+    {
+      "file": "cries/luxio.mp3",
+      "bytes": 12576,
+      "duration": 1.7485714285714287,
+      "peak": 0.6766176819801331,
+      "rms": 0.13261510571180535,
+      "clipped": 0,
+      "leadingSilence": 0.012970521541950114,
+      "trailingSilence": 0.05482993197278912
+    },
+    {
+      "file": "cries/luxray.mp3",
+      "bytes": 12960,
+      "duration": 1.8239455782312926,
+      "peak": 0.6334214806556702,
+      "rms": 0.1540860657114293,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.059365079365079364
+    },
+    {
+      "file": "cries/machamp.mp3",
+      "bytes": 7102,
+      "duration": 0.9795918367346939,
+      "peak": 0.590868353843689,
+      "rms": 0.14152497762955135,
+      "clipped": 0,
+      "leadingSilence": 0.010158730158730159,
+      "trailingSilence": 0.0691609977324263
+    },
+    {
+      "file": "cries/machoke.mp3",
+      "bytes": 5750,
+      "duration": 0.7713378684807256,
+      "peak": 0.6666576862335205,
+      "rms": 0.17849336180708786,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.03297052154195011
+    },
+    {
+      "file": "cries/machop.mp3",
+      "bytes": 6868,
+      "duration": 0.889795918367347,
+      "peak": 0.5898810625076294,
+      "rms": 0.125776790451353,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.07215419501133787
+    },
+    {
+      "file": "cries/magcargo.mp3",
+      "bytes": 9288,
+      "duration": 1.1541950113378685,
+      "peak": 0.5568816661834717,
+      "rms": 0.1369831019530247,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.06326530612244897
+    },
+    {
+      "file": "cries/magikarp.mp3",
+      "bytes": 9157,
+      "duration": 1.30140589569161,
+      "peak": 0.6110639572143555,
+      "rms": 0.12016566744535027,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.06335600907029479
+    },
+    {
+      "file": "cries/magnemite.mp3",
+      "bytes": 8088,
+      "duration": 1.0876190476190477,
+      "peak": 0.578669548034668,
+      "rms": 0.14503829901132018,
+      "clipped": 0,
+      "leadingSilence": 0.010612244897959184,
+      "trailingSilence": 0.024081632653061225
+    },
+    {
+      "file": "cries/magneton.mp3",
+      "bytes": 10464,
+      "duration": 1.4405442176870749,
+      "peak": 0.5466128587722778,
+      "rms": 0.13107484794225763,
+      "clipped": 0,
+      "leadingSilence": 0.011428571428571429,
+      "trailingSilence": 0.07034013605442177
+    },
+    {
+      "file": "cries/magnezone.mp3",
+      "bytes": 12648,
+      "duration": 1.743310657596372,
+      "peak": 0.6476988792419434,
+      "rms": 0.12720602319649607,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.06698412698412698
+    },
+    {
+      "file": "cries/makuhita.mp3",
+      "bytes": 3960,
+      "duration": 0.5278004535147393,
+      "peak": 0.599410355091095,
+      "rms": 0.14814920869565976,
+      "clipped": 0,
+      "leadingSilence": 0.013333333333333334,
+      "trailingSilence": 0.09582766439909297
+    },
+    {
+      "file": "cries/mamoswine.mp3",
+      "bytes": 11314,
+      "duration": 1.7691609977324263,
+      "peak": 0.6035494804382324,
+      "rms": 0.14823094074206405,
+      "clipped": 0,
+      "leadingSilence": 0.011519274376417234,
+      "trailingSilence": 0.05945578231292517
+    },
+    {
+      "file": "cries/mandibuzz.mp3",
+      "bytes": 8714,
+      "duration": 1.272562358276644,
+      "peak": 0.6432159543037415,
+      "rms": 0.16254021050256193,
+      "clipped": 0,
+      "leadingSilence": 0.019954648526077097,
+      "trailingSilence": 0.10054421768707483
+    },
+    {
+      "file": "cries/manectric.mp3",
+      "bytes": 9286,
+      "duration": 1.388843537414966,
+      "peak": 0.6154667139053345,
+      "rms": 0.13727197043652697,
+      "clipped": 0,
+      "leadingSilence": 0.011247165532879818,
+      "trailingSilence": 0.12176870748299319
+    },
+    {
+      "file": "cries/mankey.mp3",
+      "bytes": 7272,
+      "duration": 0.9654421768707483,
+      "peak": 0.43535304069519043,
+      "rms": 0.07941443823301224,
+      "clipped": 0,
+      "leadingSilence": 0.014149659863945578,
+      "trailingSilence": 0.08612244897959184
+    },
+    {
+      "file": "cries/mareep.mp3",
+      "bytes": 5400,
+      "duration": 0.6503401360544218,
+      "peak": 0.4165106415748596,
+      "rms": 0.09384908810556143,
+      "clipped": 0,
+      "leadingSilence": 0.030476190476190476,
+      "trailingSilence": 0.0946485260770975
+    },
+    {
+      "file": "cries/marill.mp3",
+      "bytes": 7608,
+      "duration": 0.7822222222222223,
+      "peak": 0.5381356477737427,
+      "rms": 0.13179313591038608,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.046031746031746035
+    },
+    {
+      "file": "cries/marshtomp.mp3",
+      "bytes": 7272,
+      "duration": 0.9831292517006802,
+      "peak": 0.604252278804779,
+      "rms": 0.12244320798807326,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.028072562358276643
+    },
+    {
+      "file": "cries/masquerain.mp3",
+      "bytes": 7920,
+      "duration": 0.9658049886621315,
+      "peak": 0.6282037496566772,
+      "rms": 0.11999558403824755,
+      "clipped": 0,
+      "leadingSilence": 0.014240362811791384,
+      "trailingSilence": 0.03197278911564626
+    },
+    {
+      "file": "cries/medicham.mp3",
+      "bytes": 7224,
+      "duration": 0.9502947845804989,
+      "peak": 0.65000981092453,
+      "rms": 0.17948906695178388,
+      "clipped": 0,
+      "leadingSilence": 0.012879818594104309,
+      "trailingSilence": 0.04439909297052154
+    },
+    {
+      "file": "cries/meditite.mp3",
+      "bytes": 4824,
+      "duration": 0.6109750566893424,
+      "peak": 0.6223018169403076,
+      "rms": 0.13675776364190345,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.09546485260770975
+    },
+    {
+      "file": "cries/meganium.mp3",
+      "bytes": 7464,
+      "duration": 1.05578231292517,
+      "peak": 0.6429818272590637,
+      "rms": 0.16810442629229147,
+      "clipped": 0,
+      "leadingSilence": 0.012970521541950114,
+      "trailingSilence": 0.10916099773242631
+    },
+    {
+      "file": "cries/meowth.mp3",
+      "bytes": 5672,
+      "duration": 0.700952380952381,
+      "peak": 0.5538212060928345,
+      "rms": 0.13723124494846659,
+      "clipped": 0,
+      "leadingSilence": 0.014965986394557823,
+      "trailingSilence": 0.07306122448979592
+    },
+    {
+      "file": "cries/metagross.mp3",
+      "bytes": 13968,
+      "duration": 1.9899319727891156,
+      "peak": 0.6330597400665283,
+      "rms": 0.1461061465182455,
+      "clipped": 0,
+      "leadingSilence": 0.010340136054421769,
+      "trailingSilence": 0.08766439909297052
+    },
+    {
+      "file": "cries/metang.mp3",
+      "bytes": 7368,
+      "duration": 1.006077097505669,
+      "peak": 0.5808433294296265,
+      "rms": 0.15802551946137838,
+      "clipped": 0,
+      "leadingSilence": 0.013151927437641724,
+      "trailingSilence": 0.03804988662131519
+    },
+    {
+      "file": "cries/metapod.mp3",
+      "bytes": 9209,
+      "duration": 1.2815419501133787,
+      "peak": 0.559144139289856,
+      "rms": 0.0971072876702091,
+      "clipped": 0,
+      "leadingSilence": 0.012335600907029478,
+      "trailingSilence": 0.0435827664399093
+    },
+    {
+      "file": "cries/mew.mp3",
+      "bytes": 13066,
+      "duration": 1.6171428571428572,
+      "peak": 0.6007224321365356,
+      "rms": 0.115970293115521,
+      "clipped": 0,
+      "leadingSilence": 0.012063492063492064,
+      "trailingSilence": 0.10535147392290249
+    },
+    {
+      "file": "cries/mienfoo.mp3",
+      "bytes": 8928,
+      "duration": 1.3666213151927438,
+      "peak": 0.6293083429336548,
+      "rms": 0.10666944229556433,
+      "clipped": 0,
+      "leadingSilence": 0.020045351473922904,
+      "trailingSilence": 0.07369614512471655
+    },
+    {
+      "file": "cries/mienshao.mp3",
+      "bytes": 6792,
+      "duration": 1.0753741496598639,
+      "peak": 0.6156368255615234,
+      "rms": 0.08808676196624876,
+      "clipped": 0,
+      "leadingSilence": 0.030204081632653063,
+      "trailingSilence": 0.10943310657596372
+    },
+    {
+      "file": "cries/mightyena.mp3",
+      "bytes": 7392,
+      "duration": 1.1386848072562359,
+      "peak": 0.6187435388565063,
+      "rms": 0.13519022460889993,
+      "clipped": 0,
+      "leadingSilence": 0.012063492063492064,
+      "trailingSilence": 0.09129251700680271
+    },
+    {
+      "file": "cries/milotic.mp3",
+      "bytes": 12458,
+      "duration": 1.9682539682539681,
+      "peak": 0.6390833258628845,
+      "rms": 0.18360177816333073,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.10408163265306122
+    },
+    {
+      "file": "cries/miltank.mp3",
+      "bytes": 7392,
+      "duration": 0.986938775510204,
+      "peak": 0.6083122491836548,
+      "rms": 0.1937579048637695,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.10063492063492063
+    },
+    {
+      "file": "cries/mimejr.mp3",
+      "bytes": 6661,
+      "duration": 0.9056689342403628,
+      "peak": 0.5121670961380005,
+      "rms": 0.1211972679565916,
+      "clipped": 0,
+      "leadingSilence": 0.013514739229024943,
+      "trailingSilence": 0.10308390022675737
+    },
+    {
+      "file": "cries/misdreavus.mp3",
+      "bytes": 6720,
+      "duration": 0.8039909297052155,
+      "peak": 0.6191128492355347,
+      "rms": 0.13874350048439948,
+      "clipped": 0,
+      "leadingSilence": 0.011791383219954649,
+      "trailingSilence": 0.07931972789115646
+    },
+    {
+      "file": "cries/mismagius.mp3",
+      "bytes": 11040,
+      "duration": 1.5616326530612246,
+      "peak": 0.5845921635627747,
+      "rms": 0.12163987233312071,
+      "clipped": 0,
+      "leadingSilence": 0.011700680272108844,
+      "trailingSilence": 0.035510204081632656
+    },
+    {
+      "file": "cries/monferno.mp3",
+      "bytes": 10488,
+      "duration": 1.3249886621315192,
+      "peak": 0.6350429058074951,
+      "rms": 0.15065164866698907,
+      "clipped": 0,
+      "leadingSilence": 0.013151927437641724,
+      "trailingSilence": 0.09619047619047619
+    },
+    {
+      "file": "cries/mrmime.mp3",
+      "bytes": 8039,
+      "duration": 1.121904761904762,
+      "peak": 0.6435246467590332,
+      "rms": 0.12978887344032894,
+      "clipped": 0,
+      "leadingSilence": 0.014058956916099773,
+      "trailingSilence": 0.07950113378684807
+    },
+    {
+      "file": "cries/mrrime.mp3",
+      "bytes": 8454,
+      "duration": 1.2578684807256235,
+      "peak": 0.5896345973014832,
+      "rms": 0.1189964602517231,
+      "clipped": 0,
+      "leadingSilence": 0.017777777777777778,
+      "trailingSilence": 0.019909297052154194
+    },
+    {
+      "file": "cries/mudkip.mp3",
+      "bytes": 4296,
+      "duration": 0.5160090702947846,
+      "peak": 0.6043766140937805,
+      "rms": 0.12139745440578607,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.022267573696145123
+    },
+    {
+      "file": "cries/muk.mp3",
+      "bytes": 7128,
+      "duration": 0.9803174603174604,
+      "peak": 0.6286348700523376,
+      "rms": 0.15109639452629814,
+      "clipped": 0,
+      "leadingSilence": 0.011700680272108844,
+      "trailingSilence": 0.08394557823129252
+    },
+    {
+      "file": "cries/munna.mp3",
+      "bytes": 7206,
+      "duration": 1.0578684807256236,
+      "peak": 0.6556721925735474,
+      "rms": 0.13157972761589384,
+      "clipped": 0,
+      "leadingSilence": 0.029750566893424035,
+      "trailingSilence": 0.04240362811791383
+    },
+    {
+      "file": "cries/murkrow.mp3",
+      "bytes": 7176,
+      "duration": 0.9764172335600907,
+      "peak": 0.7057552337646484,
+      "rms": 0.14699181109070794,
+      "clipped": 0,
+      "leadingSilence": 0.029387755102040815,
+      "trailingSilence": 0.06390022675736962
+    },
+    {
+      "file": "cries/musharna.mp3",
+      "bytes": 11469,
+      "duration": 2.0249433106575965,
+      "peak": 0.6221698522567749,
+      "rms": 0.16442326521285724,
+      "clipped": 0,
+      "leadingSilence": 0.019138321995464853,
+      "trailingSilence": 0.06054421768707483
+    },
+    {
+      "file": "cries/natu.mp3",
+      "bytes": 5697,
+      "duration": 0.756734693877551,
+      "peak": 0.6757137775421143,
+      "rms": 0.1513601870272178,
+      "clipped": 0,
+      "leadingSilence": 0.030204081632653063,
+      "trailingSilence": 0.10653061224489796
+    },
+    {
+      "file": "cries/nidoking.mp3",
+      "bytes": 10152,
+      "duration": 1.442721088435374,
+      "peak": 0.4447048306465149,
+      "rms": 0.10177860005497888,
+      "clipped": 0,
+      "leadingSilence": 0.013605442176870748,
+      "trailingSilence": 0.06952380952380953
+    },
+    {
+      "file": "cries/nidoqueen.mp3",
+      "bytes": 7440,
+      "duration": 0.9546485260770975,
+      "peak": 0.49210885167121887,
+      "rms": 0.1248001783910198,
+      "clipped": 0,
+      "leadingSilence": 0.013696145124716553,
+      "trailingSilence": 0.040317460317460314
+    },
+    {
+      "file": "cries/nidoranf.mp3",
+      "bytes": 5736,
+      "duration": 0.6850793650793651,
+      "peak": 0.5697824954986572,
+      "rms": 0.1163743488264299,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.07959183673469387
+    },
+    {
+      "file": "cries/nidoranm.mp3",
+      "bytes": 5616,
+      "duration": 0.686530612244898,
+      "peak": 0.4500564634799957,
+      "rms": 0.09421706919959277,
+      "clipped": 0,
+      "leadingSilence": 0.011065759637188208,
+      "trailingSilence": 0.07678004535147392
+    },
+    {
+      "file": "cries/nidorina.mp3",
+      "bytes": 6648,
+      "duration": 0.8445351473922903,
+      "peak": 0.4642288088798523,
+      "rms": 0.10418879443665684,
+      "clipped": 0,
+      "leadingSilence": 0.012970521541950114,
+      "trailingSilence": 0.1035374149659864
+    },
+    {
+      "file": "cries/nidorino.mp3",
+      "bytes": 7104,
+      "duration": 0.9164625850340136,
+      "peak": 0.4993917942047119,
+      "rms": 0.09976996016962074,
+      "clipped": 0,
+      "leadingSilence": 0.010612244897959184,
+      "trailingSilence": 0.09410430839002268
+    },
+    {
+      "file": "cries/ninetales.mp3",
+      "bytes": 9728,
+      "duration": 1.3732426303854874,
+      "peak": 0.6116774678230286,
+      "rms": 0.146004585560495,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.08412698412698413
+    },
+    {
+      "file": "cries/noctowl.mp3",
+      "bytes": 8194,
+      "duration": 1.1661678004535148,
+      "peak": 0.6130944490432739,
+      "rms": 0.18152016823723374,
+      "clipped": 0,
+      "leadingSilence": 0.011247165532879818,
+      "trailingSilence": 0.09891156462585034
+    },
+    {
+      "file": "cries/nosepass.mp3",
+      "bytes": 5904,
+      "duration": 0.8365532879818595,
+      "peak": 0.6122926473617554,
+      "rms": 0.16316394554994654,
+      "clipped": 0,
+      "leadingSilence": 0.013786848072562358,
+      "trailingSilence": 0.06761904761904762
+    },
+    {
+      "file": "cries/numel.mp3",
+      "bytes": 4632,
+      "duration": 0.6656689342403628,
+      "peak": 0.6040846109390259,
+      "rms": 0.14410582023510235,
+      "clipped": 0,
+      "leadingSilence": 0.015510204081632653,
+      "trailingSilence": 0.10090702947845805
+    },
+    {
+      "file": "cries/nuzleaf.mp3",
+      "bytes": 6406,
+      "duration": 0.7721541950113379,
+      "peak": 0.6334998607635498,
+      "rms": 0.1497501148604465,
+      "clipped": 0,
+      "leadingSilence": 0.012426303854875283,
+      "trailingSilence": 0.10816326530612246
+    },
+    {
+      "file": "cries/oddish.mp3",
+      "bytes": 7284,
+      "duration": 0.9830385487528345,
+      "peak": 0.520894467830658,
+      "rms": 0.06755283696094878,
+      "clipped": 0,
+      "leadingSilence": 0.011882086167800454,
+      "trailingSilence": 0.10498866213151928
+    },
+    {
+      "file": "cries/onix.mp3",
+      "bytes": 10301,
+      "duration": 1.521814058956916,
+      "peak": 0.6194996237754822,
+      "rms": 0.16058791076044854,
+      "clipped": 0,
+      "leadingSilence": 0.013514739229024943,
+      "trailingSilence": 0.11396825396825397
+    },
+    {
+      "file": "cries/oricorio-pau.mp3",
+      "bytes": 14448,
+      "duration": 2.072380952380952,
+      "peak": 0.6002459526062012,
+      "rms": 0.20586016713002098,
+      "clipped": 0,
+      "leadingSilence": 0.019863945578231294,
+      "trailingSilence": 0.05727891156462585
+    },
+    {
+      "file": "cries/oshawott.mp3",
+      "bytes": 4656,
+      "duration": 0.5433106575963719,
+      "peak": 0.6332285404205322,
+      "rms": 0.1264230113335475,
+      "clipped": 0,
+      "leadingSilence": 0.009705215419501133,
+      "trailingSilence": 0.0891156462585034
+    },
+    {
+      "file": "cries/palossand.mp3",
+      "bytes": 14184,
+      "duration": 2.097142857142857,
+      "peak": 0.632381796836853,
+      "rms": 0.16660600743841056,
+      "clipped": 0,
+      "leadingSilence": 0.009705215419501133,
+      "trailingSilence": 0.10163265306122449
+    },
+    {
+      "file": "cries/palpitoad.mp3",
+      "bytes": 7310,
+      "duration": 1.0297505668934241,
+      "peak": 0.6369572877883911,
+      "rms": 0.1516699854980923,
+      "clipped": 0,
+      "leadingSilence": 0.013605442176870748,
+      "trailingSilence": 0.029705215419501135
+    },
+    {
+      "file": "cries/patrat.mp3",
+      "bytes": 4968,
+      "duration": 0.6547845804988662,
+      "peak": 0.5543546080589294,
+      "rms": 0.10123257409265536,
+      "clipped": 0,
+      "leadingSilence": 0.030022675736961452,
+      "trailingSilence": 0.08521541950113379
+    },
+    {
+      "file": "cries/pelipper.mp3",
+      "bytes": 5255,
+      "duration": 0.7675283446712018,
+      "peak": 0.6511431336402893,
+      "rms": 0.16504690270506817,
+      "clipped": 0,
+      "leadingSilence": 0.030113378684807256,
+      "trailingSilence": 0.08195011337868481
+    },
+    {
+      "file": "cries/persian.mp3",
+      "bytes": 8376,
+      "duration": 1.1063038548752835,
+      "peak": 0.5903074145317078,
+      "rms": 0.12606112731248542,
+      "clipped": 0,
+      "leadingSilence": 0.013877551020408163,
+      "trailingSilence": 0.09727891156462586
+    },
+    {
+      "file": "cries/pichu.mp3",
+      "bytes": 4944,
+      "duration": 0.6072562358276644,
+      "peak": 0.5157065391540527,
+      "rms": 0.11639685179803677,
+      "clipped": 0,
+      "leadingSilence": 0.00798185941043084,
+      "trailingSilence": 0.0817687074829932
+    },
+    {
+      "file": "cries/pidgeot.mp3",
+      "bytes": 8136,
+      "duration": 1.0789115646258503,
+      "peak": 0.63874351978302,
+      "rms": 0.12085891517734683,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.07333333333333333
+    },
+    {
+      "file": "cries/pidgeotto.mp3",
+      "bytes": 7296,
+      "duration": 0.8820861678004536,
+      "peak": 0.5752081274986267,
+      "rms": 0.10939771037083945,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.040680272108843535
+    },
+    {
+      "file": "cries/pidgey.mp3",
+      "bytes": 3816,
+      "duration": 0.5025850340136054,
+      "peak": 0.5240688323974609,
+      "rms": 0.13179823630850127,
+      "clipped": 0,
+      "leadingSilence": 0.02666666666666667,
+      "trailingSilence": 0.11242630385487529
+    },
+    {
+      "file": "cries/pidove.mp3",
+      "bytes": 5709,
+      "duration": 0.5499319727891157,
+      "peak": 0.6124549508094788,
+      "rms": 0.12670189880061822,
+      "clipped": 0,
+      "leadingSilence": 0.02929705215419501,
+      "trailingSilence": 0.021904761904761906
+    },
+    {
+      "file": "cries/pignite.mp3",
+      "bytes": 8952,
+      "duration": 1.2318367346938774,
+      "peak": 0.6529459953308105,
+      "rms": 0.14768005073772028,
+      "clipped": 0,
+      "leadingSilence": 0.010612244897959184,
+      "trailingSilence": 0.1127891156462585
+    },
+    {
+      "file": "cries/pikachu.mp3",
+      "bytes": 7080,
+      "duration": 0.9260770975056689,
+      "peak": 0.5275998711585999,
+      "rms": 0.11308297365730363,
+      "clipped": 0,
+      "leadingSilence": 0,
+      "trailingSilence": 0.00013605442176870748
+    },
+    {
+      "file": "cries/pikipek.mp3",
+      "bytes": 7128,
+      "duration": 0.936780045351474,
+      "peak": 0.5947048664093018,
+      "rms": 0.09458484749245492,
+      "clipped": 0,
+      "leadingSilence": 0.007619047619047619,
+      "trailingSilence": 0.1799092970521542
+    },
+    {
+      "file": "cries/piloswine.mp3",
+      "bytes": 5855,
+      "duration": 0.7879365079365079,
+      "peak": 0.5399153232574463,
+      "rms": 0.12014301963281049,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.06807256235827665
+    },
+    {
+      "file": "cries/piplup.mp3",
+      "bytes": 5880,
+      "duration": 0.7422222222222222,
+      "peak": 0.6360359191894531,
+      "rms": 0.12920906006641486,
+      "clipped": 0,
+      "leadingSilence": 0.013333333333333334,
+      "trailingSilence": 0.1360997732426304
+    },
+    {
+      "file": "cries/politoed.mp3",
+      "bytes": 7944,
+      "duration": 1.14421768707483,
+      "peak": 0.6308270692825317,
+      "rms": 0.19299072104359558,
+      "clipped": 0,
+      "leadingSilence": 0.015056689342403628,
+      "trailingSilence": 0.07551020408163266
+    },
+    {
+      "file": "cries/poliwag.mp3",
+      "bytes": 5976,
+      "duration": 0.7783219954648526,
+      "peak": 0.43695324659347534,
+      "rms": 0.09439284946957642,
+      "clipped": 0,
+      "leadingSilence": 0.014512471655328799,
+      "trailingSilence": 0.09419501133786848
+    },
+    {
+      "file": "cries/poliwhirl.mp3",
+      "bytes": 4728,
+      "duration": 0.5874829931972789,
+      "peak": 0.49461981654167175,
+      "rms": 0.09013467010035335,
+      "clipped": 0,
+      "leadingSilence": 0.013877551020408163,
+      "trailingSilence": 0.09673469387755101
+    },
+    {
+      "file": "cries/poliwrath.mp3",
+      "bytes": 6528,
+      "duration": 0.9094784580498866,
+      "peak": 0.4460243284702301,
+      "rms": 0.08396098990368221,
+      "clipped": 0,
+      "leadingSilence": 0.014421768707482994,
+      "trailingSilence": 0.11478458049886621
+    },
+    {
+      "file": "cries/ponyta.mp3",
+      "bytes": 10612,
+      "duration": 1.6030839002267574,
+      "peak": 0.6053164005279541,
+      "rms": 0.11707178743915644,
+      "clipped": 0,
+      "leadingSilence": 0.011428571428571429,
+      "trailingSilence": 0.0618140589569161
+    },
+    {
+      "file": "cries/poochyena.mp3",
+      "bytes": 4776,
+      "duration": 0.6272108843537415,
+      "peak": 0.6422576308250427,
+      "rms": 0.14067737317864087,
+      "clipped": 0,
+      "leadingSilence": 0.012426303854875283,
+      "trailingSilence": 0.04557823129251701
+    },
+    {
+      "file": "cries/popplio.mp3",
+      "bytes": 6614,
+      "duration": 0.7945578231292517,
+      "peak": 0.627638041973114,
+      "rms": 0.13113352544558493,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.03659863945578231
+    },
+    {
+      "file": "cries/primarina.mp3",
+      "bytes": 11912,
+      "duration": 1.6187755102040817,
+      "peak": 0.6300408840179443,
+      "rms": 0.21155504178846182,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.08739229024943311
+    },
+    {
+      "file": "cries/primeape.mp3",
+      "bytes": 8040,
+      "duration": 1.0523356009070295,
+      "peak": 0.6380714178085327,
+      "rms": 0.1283553552318825,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.09945578231292516
+    },
+    {
+      "file": "cries/prinplup.mp3",
+      "bytes": 7320,
+      "duration": 1.028390022675737,
+      "peak": 0.5890724062919617,
+      "rms": 0.13488330375354163,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.08421768707482993
+    },
+    {
+      "file": "cries/probopass.mp3",
+      "bytes": 11328,
+      "duration": 1.7482086167800452,
+      "peak": 0.5833258032798767,
+      "rms": 0.1585117937098635,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.06
+    },
+    {
+      "file": "cries/psyduck.mp3",
+      "bytes": 6960,
+      "duration": 0.9777777777777777,
+      "peak": 0.5539838075637817,
+      "rms": 0.13625399463729942,
+      "clipped": 0,
+      "leadingSilence": 0.03056689342403628,
+      "trailingSilence": 0.11469387755102041
+    },
+    {
+      "file": "cries/purrloin.mp3",
+      "bytes": 3643,
+      "duration": 0.4942403628117914,
+      "peak": 0.5829309225082397,
+      "rms": 0.1052809897664754,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.000045351473922902495
+    },
+    {
+      "file": "cries/quagsire.mp3",
+      "bytes": 6037,
+      "duration": 0.8314739229024943,
+      "peak": 0.6089218258857727,
+      "rms": 0.1716409664591944,
+      "clipped": 0,
+      "leadingSilence": 0.013242630385487529,
+      "trailingSilence": 0.07424036281179139
+    },
+    {
+      "file": "cries/quilava.mp3",
+      "bytes": 6744,
+      "duration": 0.922358276643991,
+      "peak": 0.6056084632873535,
+      "rms": 0.10908780272091245,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.08113378684807256
+    },
+    {
+      "file": "cries/raboot.mp3",
+      "bytes": 6114,
+      "duration": 0.7807709750566894,
+      "peak": 0.5749924182891846,
+      "rms": 0.08922944556299137,
+      "clipped": 0,
+      "leadingSilence": 0.010430839002267574,
+      "trailingSilence": 0.01310657596371882
+    },
+    {
+      "file": "cries/raichu.mp3",
+      "bytes": 8766,
+      "duration": 1.1572789115646258,
+      "peak": 0.45113319158554077,
+      "rms": 0.06767869005075651,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.0163718820861678
+    },
+    {
+      "file": "cries/ralts.mp3",
+      "bytes": 4633,
+      "duration": 0.5521995464852608,
+      "peak": 0.5911159515380859,
+      "rms": 0.10728347343524575,
+      "clipped": 0,
+      "leadingSilence": 0.020045351473922904,
+      "trailingSilence": 0.02253968253968254
+    },
+    {
+      "file": "cries/rampardos.mp3",
+      "bytes": 12240,
+      "duration": 1.7521995464852607,
+      "peak": 0.6276998519897461,
+      "rms": 0.16853411676779317,
+      "clipped": 0,
+      "leadingSilence": 0.012063492063492064,
+      "trailingSilence": 0.07034013605442177
+    },
+    {
+      "file": "cries/rapidash.mp3",
+      "bytes": 9260,
+      "duration": 1.3537414965986394,
+      "peak": 0.594752311706543,
+      "rms": 0.15355939129224314,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.06
+    },
+    {
+      "file": "cries/raticate.mp3",
+      "bytes": 4968,
+      "duration": 0.6364625850340137,
+      "peak": 0.4885730743408203,
+      "rms": 0.12218811656498577,
+      "clipped": 0,
+      "leadingSilence": 0.013786848072562358,
+      "trailingSilence": 0.07950113378684807
+    },
+    {
+      "file": "cries/rattata.mp3",
+      "bytes": 4200,
+      "duration": 0.5278004535147393,
+      "peak": 0.5741836428642273,
+      "rms": 0.11264060670601451,
+      "clipped": 0,
+      "leadingSilence": 0.013605442176870748,
+      "trailingSilence": 0.07315192743764172
+    },
+    {
+      "file": "cries/relicanth.mp3",
+      "bytes": 7728,
+      "duration": 1.0833560090702947,
+      "peak": 0.6227778792381287,
+      "rms": 0.14841918600530454,
+      "clipped": 0,
+      "leadingSilence": 0.011791383219954649,
+      "trailingSilence": 0.07659863945578231
+    },
+    {
+      "file": "cries/reuniclus.mp3",
+      "bytes": 8639,
+      "duration": 1.098049886621315,
+      "peak": 0.640754759311676,
+      "rms": 0.16990986519300072,
+      "clipped": 0,
+      "leadingSilence": 0.011882086167800454,
+      "trailingSilence": 0.09319727891156462
+    },
+    {
+      "file": "cries/rhydon.mp3",
+      "bytes": 9442,
+      "duration": 1.406077097505669,
+      "peak": 0.6377922296524048,
+      "rms": 0.1476978680965223,
+      "clipped": 0,
+      "leadingSilence": 0.011247165532879818,
+      "trailingSilence": 0.05238095238095238
+    },
+    {
+      "file": "cries/rhyhorn.mp3",
+      "bytes": 8402,
+      "duration": 1.2606802721088435,
+      "peak": 0.6044397354125977,
+      "rms": 0.13795121331402777,
+      "clipped": 0,
+      "leadingSilence": 0.011700680272108844,
+      "trailingSilence": 0.12077097505668934
+    },
+    {
+      "file": "cries/rhyperior.mp3",
+      "bytes": 9910,
+      "duration": 1.413514739229025,
+      "peak": 0.6037026047706604,
+      "rms": 0.12248942519673128,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.06299319727891156
+    },
+    {
+      "file": "cries/rillaboom.mp3",
+      "bytes": 9389,
+      "duration": 1.4995918367346939,
+      "peak": 0.6135422587394714,
+      "rms": 0.07960800874366838,
+      "clipped": 0,
+      "leadingSilence": 0.010884353741496598,
+      "trailingSilence": 0.08485260770975056
+    },
+    {
+      "file": "cries/riolu.mp3",
+      "bytes": 4867,
+      "duration": 0.5918367346938775,
+      "peak": 0.6310272216796875,
+      "rms": 0.14246669529203862,
+      "clipped": 0,
+      "leadingSilence": 0.011791383219954649,
+      "trailingSilence": 0.09546485260770975
+    },
+    {
+      "file": "cries/roggenrola.mp3",
+      "bytes": 6532,
+      "duration": 0.9910204081632653,
+      "peak": 0.5919728875160217,
+      "rms": 0.07905161743523832,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.050748299319727894
+    },
+    {
+      "file": "cries/rookidee.mp3",
+      "bytes": 11194,
+      "duration": 1.4672108843537415,
+      "peak": 0.5682353377342224,
+      "rms": 0.1761420166453653,
+      "clipped": 0,
+      "leadingSilence": 0.0014512471655328798,
+      "trailingSilence": 0.00022675736961451248
+    },
+    {
+      "file": "cries/roselia.mp3",
+      "bytes": 5153,
+      "duration": 0.6689342403628118,
+      "peak": 0.7555125951766968,
+      "rms": 0.17344034024513516,
+      "clipped": 0,
+      "leadingSilence": 0.012517006802721088,
+      "trailingSilence": 0.10752834467120181
+    },
+    {
+      "file": "cries/roserade.mp3",
+      "bytes": 8350,
+      "duration": 1.3601814058956916,
+      "peak": 0.6819379329681396,
+      "rms": 0.1101111358428616,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.08938775510204082
+    },
+    {
+      "file": "cries/rowlet.mp3",
+      "bytes": 6582,
+      "duration": 0.8938775510204081,
+      "peak": 0.666426420211792,
+      "rms": 0.14395990202275893,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.11160997732426303
+    },
+    {
+      "file": "cries/sableye.mp3",
+      "bytes": 5906,
+      "duration": 0.7631746031746032,
+      "peak": 0.5589017868041992,
+      "rms": 0.13745398485477592,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.0837641723356009
+    },
+    {
+      "file": "cries/salamence.mp3",
+      "bytes": 9456,
+      "duration": 1.4151473922902493,
+      "peak": 0.6378755569458008,
+      "rms": 0.1661250652665432,
+      "clipped": 0,
+      "leadingSilence": 0.012335600907029478,
+      "trailingSilence": 0.09510204081632653
+    },
+    {
+      "file": "cries/samurott.mp3",
+      "bytes": 15480,
+      "duration": 2.4649433106575964,
+      "peak": 0.5987100005149841,
+      "rms": 0.14842516110066584,
+      "clipped": 0,
+      "leadingSilence": 0.011065759637188208,
+      "trailingSilence": 0.06308390022675738
+    },
+    {
+      "file": "cries/sandile.mp3",
+      "bytes": 4776,
+      "duration": 0.6448979591836734,
+      "peak": 0.6219528913497925,
+      "rms": 0.08492678364308855,
+      "clipped": 0,
+      "leadingSilence": 0.027210884353741496,
+      "trailingSilence": 0.07378684807256236
+    },
+    {
+      "file": "cries/sandshrew.mp3",
+      "bytes": 5088,
+      "duration": 0.6100680272108844,
+      "peak": 0.5071289539337158,
+      "rms": 0.11540267524619463,
+      "clipped": 0,
+      "leadingSilence": 0.010612244897959184,
+      "trailingSilence": 0.03541950113378685
+    },
+    {
+      "file": "cries/sandslash.mp3",
+      "bytes": 6240,
+      "duration": 0.803718820861678,
+      "peak": 0.5545532703399658,
+      "rms": 0.07616184016681109,
+      "clipped": 0,
+      "leadingSilence": 0.010793650793650795,
+      "trailingSilence": 0.07405895691609977
+    },
+    {
+      "file": "cries/sandygast.mp3",
+      "bytes": 11064,
+      "duration": 1.624126984126984,
+      "peak": 0.5860947370529175,
+      "rms": 0.10344249695288499,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.09074829931972789
+    },
+    {
+      "file": "cries/sawk.mp3",
+      "bytes": 7231,
+      "duration": 1.1143764172335602,
+      "peak": 0.5961037278175354,
+      "rms": 0.21812405709657112,
+      "clipped": 0,
+      "leadingSilence": 0.029659863945578232,
+      "trailingSilence": 0.10154195011337869
+    },
+    {
+      "file": "cries/sawsbuck.mp3",
+      "bytes": 6384,
+      "duration": 1.0620408163265307,
+      "peak": 0.630818247795105,
+      "rms": 0.16557560313633746,
+      "clipped": 0,
+      "leadingSilence": 0.030294784580498866,
+      "trailingSilence": 0.06036281179138322
+    },
+    {
+      "file": "cries/sceptile.mp3",
+      "bytes": 9408,
+      "duration": 1.435374149659864,
+      "peak": 0.6339079141616821,
+      "rms": 0.16276888218474853,
+      "clipped": 0,
+      "leadingSilence": 0.015238095238095238,
+      "trailingSilence": 0.0964625850340136
+    },
+    {
+      "file": "cries/scizor.mp3",
+      "bytes": 8952,
+      "duration": 1.2164172335600907,
+      "peak": 0.6090489029884338,
+      "rms": 0.12798014548755643,
+      "clipped": 0,
+      "leadingSilence": 0.010884353741496598,
+      "trailingSilence": 0.05727891156462585
+    },
+    {
+      "file": "cries/scolipede.mp3",
+      "bytes": 14232,
+      "duration": 2.1202721088435372,
+      "peak": 0.6218541860580444,
+      "rms": 0.17937044336393357,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.11124716553287982
+    },
+    {
+      "file": "cries/scorbunny.mp3",
+      "bytes": 5750,
+      "duration": 0.8053514739229025,
+      "peak": 0.5552555322647095,
+      "rms": 0.07786869528806331,
+      "clipped": 0,
+      "leadingSilence": 0.00018140589569160998,
+      "trailingSilence": 0.049931972789115646
+    },
+    {
+      "file": "cries/scyther.mp3",
+      "bytes": 6936,
+      "duration": 0.8649433106575963,
+      "peak": 0.6181252598762512,
+      "rms": 0.13538466345251496,
+      "clipped": 0,
+      "leadingSilence": 0.01197278911564626,
+      "trailingSilence": 0.0746938775510204
+    },
+    {
+      "file": "cries/seadra.mp3",
+      "bytes": 5280,
+      "duration": 0.6443537414965986,
+      "peak": 0.5827649235725403,
+      "rms": 0.14346813026716354,
+      "clipped": 0,
+      "leadingSilence": 0.011519274376417234,
+      "trailingSilence": 0.038231292517006805
+    },
+    {
+      "file": "cries/seaking.mp3",
+      "bytes": 7830,
+      "duration": 1.0760090702947847,
+      "peak": 0.5726058483123779,
+      "rms": 0.13963875532445222,
+      "clipped": 0,
+      "leadingSilence": 0.010793650793650795,
+      "trailingSilence": 0.08639455782312926
+    },
+    {
+      "file": "cries/sealeo.mp3",
+      "bytes": 5448,
+      "duration": 0.740498866213152,
+      "peak": 0.6405255198478699,
+      "rms": 0.16660954774338269,
+      "clipped": 0,
+      "leadingSilence": 0.011700680272108844,
+      "trailingSilence": 0.08630385487528344
+    },
+    {
+      "file": "cries/seedot.mp3",
+      "bytes": 5416,
+      "duration": 0.654421768707483,
+      "peak": 0.6278266906738281,
+      "rms": 0.11730239106959085,
+      "clipped": 0,
+      "leadingSilence": 0.012426303854875283,
+      "trailingSilence": 0.09945578231292516
+    },
+    {
+      "file": "cries/seel.mp3",
+      "bytes": 7872,
+      "duration": 1.0829024943310657,
+      "peak": 0.577683687210083,
+      "rms": 0.13603133963493944,
+      "clipped": 0,
+      "leadingSilence": 0.01197278911564626,
+      "trailingSilence": 0.10163265306122449
+    },
+    {
+      "file": "cries/seismitoad.mp3",
+      "bytes": 6036,
+      "duration": 0.9280725623582766,
+      "peak": 0.6359274387359619,
+      "rms": 0.1464692531585383,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.07714285714285714
+    },
+    {
+      "file": "cries/sentret.mp3",
+      "bytes": 3768,
+      "duration": 0.4533333333333333,
+      "peak": 0.5553763508796692,
+      "rms": 0.09651370847802247,
+      "clipped": 0,
+      "leadingSilence": 0.010612244897959184,
+      "trailingSilence": 0.1071655328798186
+    },
+    {
+      "file": "cries/serperior.mp3",
+      "bytes": 9960,
+      "duration": 1.3983673469387754,
+      "peak": 0.7009236812591553,
+      "rms": 0.15202953859963492,
+      "clipped": 0,
+      "leadingSilence": 0.01052154195011338,
+      "trailingSilence": 0.11034013605442176
+    },
+    {
+      "file": "cries/servine.mp3",
+      "bytes": 8904,
+      "duration": 1.1472108843537414,
+      "peak": 0.5729308128356934,
+      "rms": 0.1141167103026062,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.0528344671201814
+    },
+    {
+      "file": "cries/sewaddle.mp3",
+      "bytes": 3696,
+      "duration": 0.4684807256235828,
+      "peak": 0.6422604322433472,
+      "rms": 0.11875056757365968,
+      "clipped": 0,
+      "leadingSilence": 0.030385487528344673,
+      "trailingSilence": 0.02580498866213152
+    },
+    {
+      "file": "cries/shelgon.mp3",
+      "bytes": 7704,
+      "duration": 1.095328798185941,
+      "peak": 0.66725754737854,
+      "rms": 0.1698293045560878,
+      "clipped": 0,
+      "leadingSilence": 0.013424036281179138,
+      "trailingSilence": 0.06190476190476191
+    },
+    {
+      "file": "cries/shellder.mp3",
+      "bytes": 7102,
+      "duration": 0.9580952380952381,
+      "peak": 0.5890513062477112,
+      "rms": 0.12971236054469876,
+      "clipped": 0,
+      "leadingSilence": 0.012063492063492064,
+      "trailingSilence": 0.0528344671201814
+    },
+    {
+      "file": "cries/shellos.mp3",
+      "bytes": 5544,
+      "duration": 0.6918820861678004,
+      "peak": 0.6635006070137024,
+      "rms": 0.1685457837872158,
+      "clipped": 0,
+      "leadingSilence": 0.009523809523809525,
+      "trailingSilence": 0.06099773242630385
+    },
+    {
+      "file": "cries/shieldon.mp3",
+      "bytes": 7560,
+      "duration": 1.0891609977324264,
+      "peak": 0.5654091835021973,
+      "rms": 0.09780349588716462,
+      "clipped": 0,
+      "leadingSilence": 0.012335600907029478,
+      "trailingSilence": 0.10707482993197279
+    },
+    {
+      "file": "cries/shiftry.mp3",
+      "bytes": 7961,
+      "duration": 1.0546031746031745,
+      "peak": 0.6190077066421509,
+      "rms": 0.16877862126445117,
+      "clipped": 0,
+      "leadingSilence": 0.012970521541950114,
+      "trailingSilence": 0.08303854875283447
+    },
+    {
+      "file": "cries/shinx.mp3",
+      "bytes": 6840,
+      "duration": 0.7720634920634921,
+      "peak": 0.6014652252197266,
+      "rms": 0.13873727112312628,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.09746031746031746
+    },
+    {
+      "file": "cries/shroomish.mp3",
+      "bytes": 4776,
+      "duration": 0.6097959183673469,
+      "peak": 0.6464588642120361,
+      "rms": 0.1459189727317429,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.04494331065759637
+    },
+    {
+      "file": "cries/shuckle.mp3",
+      "bytes": 5464,
+      "duration": 0.7262585034013606,
+      "peak": 0.578420102596283,
+      "rms": 0.1304603265406651,
+      "clipped": 0,
+      "leadingSilence": 0.012879818594104309,
+      "trailingSilence": 0.09709750566893424
+    },
+    {
+      "file": "cries/shuppet.mp3",
+      "bytes": 6312,
+      "duration": 0.8510657596371882,
+      "peak": 0.6223821640014648,
+      "rms": 0.1101361509588885,
+      "clipped": 0,
+      "leadingSilence": 0.013242630385487529,
+      "trailingSilence": 0.11741496598639456
+    },
+    {
+      "file": "cries/sigilyph.mp3",
+      "bytes": 8791,
+      "duration": 1.384671201814059,
+      "peak": 0.6324491500854492,
+      "rms": 0.12649418937515164,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.03913832199546485
+    },
+    {
+      "file": "cries/silcoon.mp3",
+      "bytes": 7056,
+      "duration": 0.9834013605442177,
+      "peak": 0.6170011162757874,
+      "rms": 0.10047630807420396,
+      "clipped": 0,
+      "leadingSilence": 0.013877551020408163,
+      "trailingSilence": 0.10126984126984127
+    },
+    {
+      "file": "cries/skarmory.mp3",
+      "bytes": 9528,
+      "duration": 1.240453514739229,
+      "peak": 0.6319381594657898,
+      "rms": 0.12573753108661936,
+      "clipped": 0,
+      "leadingSilence": 0.011519274376417234,
+      "trailingSilence": 0.03378684807256236
+    },
+    {
+      "file": "cries/skorupi.mp3",
+      "bytes": 12290,
+      "duration": 1.2574149659863945,
+      "peak": 0.4905388057231903,
+      "rms": 0.09428790412644608,
+      "clipped": 0,
+      "leadingSilence": 0.013242630385487529,
+      "trailingSilence": 0.08893424036281179
+    },
+    {
+      "file": "cries/slaking.mp3",
+      "bytes": 5424,
+      "duration": 0.7334240362811791,
+      "peak": 0.6218352913856506,
+      "rms": 0.12506807382534763,
+      "clipped": 0,
+      "leadingSilence": 0.013424036281179138,
+      "trailingSilence": 0.09111111111111111
+    },
+    {
+      "file": "cries/slakoth.mp3",
+      "bytes": 4488,
+      "duration": 0.5590929705215419,
+      "peak": 0.6558570265769958,
+      "rms": 0.12505981549784922,
+      "clipped": 0,
+      "leadingSilence": 0.012335600907029478,
+      "trailingSilence": 0.07578231292517007
+    },
+    {
+      "file": "cries/slowbro.mp3",
+      "bytes": 6528,
+      "duration": 0.8766439909297052,
+      "peak": 0.6312828660011292,
+      "rms": 0.14994935494164457,
+      "clipped": 0,
+      "leadingSilence": 0.011700680272108844,
+      "trailingSilence": 0.09664399092970521
+    },
+    {
+      "file": "cries/slowking.mp3",
+      "bytes": 9720,
+      "duration": 1.3891156462585035,
+      "peak": 0.664103627204895,
+      "rms": 0.14396196408400155,
+      "clipped": 0,
+      "leadingSilence": 0.013514739229024943,
+      "trailingSilence": 0.12077097505668934
+    },
+    {
+      "file": "cries/slowpoke.mp3",
+      "bytes": 4680,
+      "duration": 0.5709750566893425,
+      "peak": 0.6191504001617432,
+      "rms": 0.14234238629233667,
+      "clipped": 0,
+      "leadingSilence": 0.014875283446712018,
+      "trailingSilence": 0.07541950113378684
+    },
+    {
+      "file": "cries/slugma.mp3",
+      "bytes": 10272,
+      "duration": 1.0126077097505668,
+      "peak": 0.6382566690444946,
+      "rms": 0.1526872294418194,
+      "clipped": 0,
+      "leadingSilence": 0.011791383219954649,
+      "trailingSilence": 0.025714285714285714
+    },
+    {
+      "file": "cries/smoochum.mp3",
+      "bytes": 6696,
+      "duration": 0.8363718820861678,
+      "peak": 0.6225547790527344,
+      "rms": 0.14092757795281116,
+      "clipped": 0,
+      "leadingSilence": 0.00943310657596372,
+      "trailingSilence": 0.15505668934240363
+    },
+    {
+      "file": "cries/sneasel.mp3",
+      "bytes": 5152,
+      "duration": 0.6356462585034014,
+      "peak": 0.6014225482940674,
+      "rms": 0.1302372236441679,
+      "clipped": 0,
+      "leadingSilence": 0.011519274376417234,
+      "trailingSilence": 0.10281179138321996
+    },
+    {
+      "file": "cries/snivy.mp3",
+      "bytes": 5760,
+      "duration": 0.7185487528344672,
+      "peak": 0.6028728485107422,
+      "rms": 0.13099930138210894,
+      "clipped": 0,
+      "leadingSilence": 0.013242630385487529,
+      "trailingSilence": 0.11523809523809524
+    },
+    {
+      "file": "cries/snom.mp3",
+      "bytes": 8850,
+      "duration": 1.1205442176870748,
+      "peak": 0.31386223435401917,
+      "rms": 0.05135642237350425,
+      "clipped": 0,
+      "leadingSilence": 0.007165532879818594,
+      "trailingSilence": 0.00031746031746031746
+    },
+    {
+      "file": "cries/snorunt.mp3",
+      "bytes": 7284,
+      "duration": 1.000453514739229,
+      "peak": 0.48278290033340454,
+      "rms": 0.10011275088544234,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.03931972789115646
+    },
+    {
+      "file": "cries/snover.mp3",
+      "bytes": 5542,
+      "duration": 0.7248072562358276,
+      "peak": 0.626929759979248,
+      "rms": 0.13487501423312914,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.07179138321995465
+    },
+    {
+      "file": "cries/sobble.mp3",
+      "bytes": 6583,
+      "duration": 0.833015873015873,
+      "peak": 0.3634670376777649,
+      "rms": 0.06348169661147593,
+      "clipped": 0,
+      "leadingSilence": 0.0030839002267573695,
+      "trailingSilence": 0.07433106575963719
+    },
+    {
+      "file": "cries/solosis.mp3",
+      "bytes": 6452,
+      "duration": 0.8787301587301587,
+      "peak": 0.5735812187194824,
+      "rms": 0.12461582823613933,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.10308390022675737
+    },
+    {
+      "file": "cries/solrock.mp3",
+      "bytes": 6426,
+      "duration": 0.8839002267573696,
+      "peak": 0.5763183832168579,
+      "rms": 0.12509651796138924,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.0491156462585034
+    },
+    {
+      "file": "cries/spheal.mp3",
+      "bytes": 3384,
+      "duration": 0.3961904761904762,
+      "peak": 0.5965677499771118,
+      "rms": 0.13477334711528333,
+      "clipped": 0,
+      "leadingSilence": 0.011247165532879818,
+      "trailingSilence": 0.024444444444444446
+    },
+    {
+      "file": "cries/spinarak.mp3",
+      "bytes": 6672,
+      "duration": 0.8791836734693877,
+      "peak": 0.5868909955024719,
+      "rms": 0.1453413578580648,
+      "clipped": 0,
+      "leadingSilence": 0.012426303854875283,
+      "trailingSilence": 0.11034013605442176
+    },
+    {
+      "file": "cries/spinda.mp3",
+      "bytes": 6480,
+      "duration": 0.809795918367347,
+      "peak": 0.6541712880134583,
+      "rms": 0.14994651240030657,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.10281179138321996
+    },
+    {
+      "file": "cries/spiritomb.mp3",
+      "bytes": 13128,
+      "duration": 1.9702494331065759,
+      "peak": 0.6094182729721069,
+      "rms": 0.16212291139320412,
+      "clipped": 0,
+      "leadingSilence": 0.011700680272108844,
+      "trailingSilence": 0.05800453514739229
+    },
+    {
+      "file": "cries/spoink.mp3",
+      "bytes": 4584,
+      "duration": 0.5588208616780045,
+      "peak": 0.5803519487380981,
+      "rms": 0.13434388464125507,
+      "clipped": 0,
+      "leadingSilence": 0.01197278911564626,
+      "trailingSilence": 0.10843537414965987
+    },
+    {
+      "file": "cries/squirtle.mp3",
+      "bytes": 7388,
+      "duration": 1.0089795918367348,
+      "peak": 0.5147031545639038,
+      "rms": 0.11333149874779382,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.12249433106575963
+    },
+    {
+      "file": "cries/stantler.mp3",
+      "bytes": 8520,
+      "duration": 1.15718820861678,
+      "peak": 0.5637057423591614,
+      "rms": 0.14549579164305665,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.05582766439909297
+    },
+    {
+      "file": "cries/staraptor.mp3",
+      "bytes": 13464,
+      "duration": 1.8054421768707483,
+      "peak": 0.5864565968513489,
+      "rms": 0.1997250589610508,
+      "clipped": 0,
+      "leadingSilence": 0.012698412698412698,
+      "trailingSilence": 0.04965986394557823
+    },
+    {
+      "file": "cries/staravia.mp3",
+      "bytes": 10728,
+      "duration": 1.3891156462585035,
+      "peak": 0.5102185010910034,
+      "rms": 0.09720168200535748,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.05419501133786848
+    },
+    {
+      "file": "cries/starly.mp3",
+      "bytes": 9888,
+      "duration": 1.2299319727891156,
+      "peak": 0.586557149887085,
+      "rms": 0.12083350580507578,
+      "clipped": 0,
+      "leadingSilence": 0.011428571428571429,
+      "trailingSilence": 0.13882086167800453
+    },
+    {
+      "file": "cries/starmie.mp3",
+      "bytes": 8952,
+      "duration": 1.1848526077097505,
+      "peak": 0.6147350072860718,
+      "rms": 0.14266397981441975,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.01746031746031746
+    },
+    {
+      "file": "cries/staryu.mp3",
+      "bytes": 8160,
+      "duration": 1.1239002267573697,
+      "peak": 0.6604993343353271,
+      "rms": 0.1477912708726235,
+      "clipped": 0,
+      "leadingSilence": 0.013968253968253968,
+      "trailingSilence": 0.09392290249433106
+    },
+    {
+      "file": "cries/steelix.mp3",
+      "bytes": 12458,
+      "duration": 1.854875283446712,
+      "peak": 0.5695415139198303,
+      "rms": 0.15465559054276584,
+      "clipped": 0,
+      "leadingSilence": 0.011882086167800454,
+      "trailingSilence": 0.08140589569160998
+    },
+    {
+      "file": "cries/stoutland.mp3",
+      "bytes": 7824,
+      "duration": 1.2219501133786848,
+      "peak": 0.642493486404419,
+      "rms": 0.14602992906426782,
+      "clipped": 0,
+      "leadingSilence": 0.02331065759637188,
+      "trailingSilence": 0.020090702947845804
+    },
+    {
+      "file": "cries/suicune.mp3",
+      "bytes": 8208,
+      "duration": 1.0838095238095238,
+      "peak": 0.6048297882080078,
+      "rms": 0.15799391482934325,
+      "clipped": 0,
+      "leadingSilence": 0.011337868480725623,
+      "trailingSilence": 0.04929705215419501
+    },
+    {
+      "file": "cries/surskit.mp3",
+      "bytes": 6000,
+      "duration": 0.7449433106575963,
+      "peak": 0.6065967082977295,
+      "rms": 0.12597660521217335,
+      "clipped": 0,
+      "leadingSilence": 0.012244897959183673,
+      "trailingSilence": 0.11768707482993197
+    },
+    {
+      "file": "cries/swablu.mp3",
+      "bytes": 4344,
+      "duration": 0.47129251700680275,
+      "peak": 0.6011816263198853,
+      "rms": 0.13535314535559206,
+      "clipped": 0,
+      "leadingSilence": 0.012970521541950114,
+      "trailingSilence": 0.09836734693877551
+    },
+    {
+      "file": "cries/swadloon.mp3",
+      "bytes": 6216,
+      "duration": 0.8142403628117914,
+      "peak": 0.624432384967804,
+      "rms": 0.11997857572813253,
+      "clipped": 0,
+      "leadingSilence": 0.022403628117913833,
+      "trailingSilence": 0.12294784580498866
+    },
+    {
+      "file": "cries/swalot.mp3",
+      "bytes": 7008,
+      "duration": 1.0398185941043083,
+      "peak": 0.6050693988800049,
+      "rms": 0.16173637618659545,
+      "clipped": 0,
+      "leadingSilence": 0.011337868480725623,
+      "trailingSilence": 0.10761904761904761
+    },
+    {
+      "file": "cries/swampert.mp3",
+      "bytes": 8856,
+      "duration": 1.2613151927437642,
+      "peak": 0.6394315361976624,
+      "rms": 0.1504326524523499,
+      "clipped": 0,
+      "leadingSilence": 0.012063492063492064,
+      "trailingSilence": 0.06798185941043083
+    },
+    {
+      "file": "cries/swanna.mp3",
+      "bytes": 8880,
+      "duration": 1.1719727891156462,
+      "peak": 0.5855240225791931,
+      "rms": 0.15874560140320076,
+      "clipped": 0,
+      "leadingSilence": 0.01904761904761905,
+      "trailingSilence": 0.11433106575963718
+    },
+    {
+      "file": "cries/swellow.mp3",
+      "bytes": 4872,
+      "duration": 0.6142403628117914,
+      "peak": 0.6893529891967773,
+      "rms": 0.19241258652252793,
+      "clipped": 0,
+      "leadingSilence": 0.013877551020408163,
+      "trailingSilence": 0.06689342403628118
+    },
+    {
+      "file": "cries/swinub.mp3",
+      "bytes": 5932,
+      "duration": 0.8193197278911565,
+      "peak": 0.5777239203453064,
+      "rms": 0.12213027908888088,
+      "clipped": 0,
+      "leadingSilence": 0.014875283446712018,
+      "trailingSilence": 0.0618140589569161
+    },
+    {
+      "file": "cries/swoobat.mp3",
+      "bytes": 8687,
+      "duration": 1.2224036281179138,
+      "peak": 0.630886435508728,
+      "rms": 0.15628604524777184,
+      "clipped": 0,
+      "leadingSilence": 0.028843537414965988,
+      "trailingSilence": 0.09682539682539683
+    },
+    {
+      "file": "cries/sylveon.mp3",
+      "bytes": 11600,
+      "duration": 1.7179138321995464,
+      "peak": 0.613133430480957,
+      "rms": 0.09036200927792204,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.2473015873015873
+    },
+    {
+      "file": "cries/taillow.mp3",
+      "bytes": 3912,
+      "duration": 0.4580498866213152,
+      "peak": 0.5751379728317261,
+      "rms": 0.13999460310805187,
+      "clipped": 0,
+      "leadingSilence": 0.012879818594104309,
+      "trailingSilence": 0.04929705215419501
+    },
+    {
+      "file": "cries/tangela.mp3",
+      "bytes": 7608,
+      "duration": 1.0272108843537415,
+      "peak": 0.5691111087799072,
+      "rms": 0.14642915394970998,
+      "clipped": 0,
+      "leadingSilence": 0.011519274376417234,
+      "trailingSilence": 0.08503401360544217
+    },
+    {
+      "file": "cries/tangrowth.mp3",
+      "bytes": 10464,
+      "duration": 1.5151927437641723,
+      "peak": 0.6351472735404968,
+      "rms": 0.12126784075671329,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.09918367346938775
+    },
+    {
+      "file": "cries/tentacool.mp3",
+      "bytes": 8712,
+      "duration": 1.2252154195011338,
+      "peak": 0.6000974774360657,
+      "rms": 0.13390082525733663,
+      "clipped": 0,
+      "leadingSilence": 0.010793650793650795,
+      "trailingSilence": 0.10462585034013605
+    },
+    {
+      "file": "cries/tentacruel.mp3",
+      "bytes": 10128,
+      "duration": 1.4321995464852608,
+      "peak": 0.5376758575439453,
+      "rms": 0.12592331627554326,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.04657596371882086
+    },
+    {
+      "file": "cries/tepig.mp3",
+      "bytes": 3912,
+      "duration": 0.4598639455782313,
+      "peak": 0.6030100584030151,
+      "rms": 0.10116281635839013,
+      "clipped": 0,
+      "leadingSilence": 0.013151927437641724,
+      "trailingSilence": 0.037505668934240365
+    },
+    {
+      "file": "cries/throh.mp3",
+      "bytes": 5463,
+      "duration": 0.9005895691609977,
+      "peak": 0.6206158399581909,
+      "rms": 0.15266155033320178,
+      "clipped": 0,
+      "leadingSilence": 0.029659863945578232,
+      "trailingSilence": 0.040680272108843535
+    },
+    {
+      "file": "cries/thwackey.mp3",
+      "bytes": 9188,
+      "duration": 1.0565986394557823,
+      "peak": 0.3030146360397339,
+      "rms": 0.048594557558473625,
+      "clipped": 0,
+      "leadingSilence": 0.004625850340136055,
+      "trailingSilence": 0.04657596371882086
+    },
+    {
+      "file": "cries/timburr.mp3",
+      "bytes": 5105,
+      "duration": 0.5921995464852607,
+      "peak": 0.5819071531295776,
+      "rms": 0.11754552040939242,
+      "clipped": 0,
+      "leadingSilence": 0.01052154195011338,
+      "trailingSilence": 0.03070294784580499
+    },
+    {
+      "file": "cries/togekiss.mp3",
+      "bytes": 14851,
+      "duration": 1.999092970521542,
+      "peak": 0.6253283619880676,
+      "rms": 0.14765507925861082,
+      "clipped": 0,
+      "leadingSilence": 0.013696145124716553,
+      "trailingSilence": 0.10498866213151928
+    },
+    {
+      "file": "cries/togepi.mp3",
+      "bytes": 5620,
+      "duration": 0.724625850340136,
+      "peak": 0.6756064891815186,
+      "rms": 0.14158112168739237,
+      "clipped": 0,
+      "leadingSilence": 0.02947845804988662,
+      "trailingSilence": 0.050748299319727894
+    },
+    {
+      "file": "cries/togetic.mp3",
+      "bytes": 4763,
+      "duration": 0.593469387755102,
+      "peak": 0.5729199647903442,
+      "rms": 0.13843529700421872,
+      "clipped": 0,
+      "leadingSilence": 0.025941043083900227,
+      "trailingSilence": 0.10390022675736961
+    },
+    {
+      "file": "cries/torchic.mp3",
+      "bytes": 5112,
+      "duration": 0.6807256235827664,
+      "peak": 0.624108076095581,
+      "rms": 0.16074827907006603,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.067437641723356
+    },
+    {
+      "file": "cries/torkoal.mp3",
+      "bytes": 5334,
+      "duration": 0.714920634920635,
+      "peak": 0.5984331965446472,
+      "rms": 0.15870014116689338,
+      "clipped": 0,
+      "leadingSilence": 0.013151927437641724,
+      "trailingSilence": 0.07587301587301587
+    },
+    {
+      "file": "cries/torracat.mp3",
+      "bytes": 11132,
+      "duration": 1.6503401360544219,
+      "peak": 0.5659273862838745,
+      "rms": 0.11014887851712347,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.051564625850340134
+    },
+    {
+      "file": "cries/torterra.mp3",
+      "bytes": 13080,
+      "duration": 1.8542403628117914,
+      "peak": 0.7031875252723694,
+      "rms": 0.15290389486231803,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.1017233560090703
+    },
+    {
+      "file": "cries/totodile.mp3",
+      "bytes": 8928,
+      "duration": 0.974421768707483,
+      "peak": 0.6519179344177246,
+      "rms": 0.15235046532666172,
+      "clipped": 0,
+      "leadingSilence": 0.010975056689342403,
+      "trailingSilence": 0.026621315192743765
+    },
+    {
+      "file": "cries/toucannon.mp3",
+      "bytes": 12744,
+      "duration": 1.8252154195011339,
+      "peak": 0.5518040060997009,
+      "rms": 0.1158324191721049,
+      "clipped": 0,
+      "leadingSilence": 0.009614512471655328,
+      "trailingSilence": 0.08158730158730158
+    },
+    {
+      "file": "cries/toxicroak.mp3",
+      "bytes": 12434,
+      "duration": 1.7159183673469387,
+      "peak": 0.6152318120002747,
+      "rms": 0.13281879480372757,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.05310657596371882
+    },
+    {
+      "file": "cries/tranquill.mp3",
+      "bytes": 5728,
+      "duration": 0.6692063492063492,
+      "peak": 0.599532425403595,
+      "rms": 0.10998547766372584,
+      "clipped": 0,
+      "leadingSilence": 0.02839002267573696,
+      "trailingSilence": 0.02598639455782313
+    },
+    {
+      "file": "cries/trapinch.mp3",
+      "bytes": 5207,
+      "duration": 0.6086167800453515,
+      "peak": 0.6212260723114014,
+      "rms": 0.1827325078122973,
+      "clipped": 0,
+      "leadingSilence": 0.012970521541950114,
+      "trailingSilence": 0.04430839002267574
+    },
+    {
+      "file": "cries/treecko.mp3",
+      "bytes": 6408,
+      "duration": 0.8700226757369615,
+      "peak": 0.6173847913742065,
+      "rms": 0.12804151562411512,
+      "clipped": 0,
+      "leadingSilence": 0.013696145124716553,
+      "trailingSilence": 0.10834467120181406
+    },
+    {
+      "file": "cries/tropius.mp3",
+      "bytes": 11184,
+      "duration": 1.6671201814058958,
+      "peak": 0.6807242035865784,
+      "rms": 0.20460655803484806,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.02326530612244898
+    },
+    {
+      "file": "cries/trubbish.mp3",
+      "bytes": 9679,
+      "duration": 1.316281179138322,
+      "peak": 0.6290106773376465,
+      "rms": 0.14899140088311746,
+      "clipped": 0,
+      "leadingSilence": 0.029569160997732425,
+      "trailingSilence": 0.08784580498866214
+    },
+    {
+      "file": "cries/trumbeak.mp3",
+      "bytes": 9480,
+      "duration": 1.1972789115646258,
+      "peak": 0.6173785924911499,
+      "rms": 0.14069374736070347,
+      "clipped": 0,
+      "leadingSilence": 0.010068027210884354,
+      "trailingSilence": 0.002131519274376417
+    },
+    {
+      "file": "cries/turtwig.mp3",
+      "bytes": 5832,
+      "duration": 0.7070294784580499,
+      "peak": 0.6605899930000305,
+      "rms": 0.1305144553236019,
+      "clipped": 0,
+      "leadingSilence": 0.013424036281179138,
+      "trailingSilence": 0.04485260770975057
+    },
+    {
+      "file": "cries/tympole.mp3",
+      "bytes": 5801,
+      "duration": 0.7743310657596372,
+      "peak": 0.6071562767028809,
+      "rms": 0.13125766851394235,
+      "clipped": 0,
+      "leadingSilence": 0.029659863945578232,
+      "trailingSilence": 0.07197278911564625
+    },
+    {
+      "file": "cries/typhlosion.mp3",
+      "bytes": 14880,
+      "duration": 2.006530612244898,
+      "peak": 0.5865299701690674,
+      "rms": 0.14291216857607159,
+      "clipped": 0,
+      "leadingSilence": 0.012789115646258504,
+      "trailingSilence": 0.1165079365079365
+    },
+    {
+      "file": "cries/tyrogue.mp3",
+      "bytes": 7752,
+      "duration": 0.9961904761904762,
+      "peak": 0.5733342170715332,
+      "rms": 0.13766735360143922,
+      "clipped": 0,
+      "leadingSilence": 0.011609977324263039,
+      "trailingSilence": 0.08122448979591837
+    },
+    {
+      "file": "cries/umbreon.mp3",
+      "bytes": 6790,
+      "duration": 0.9357823129251701,
+      "peak": 0.6211373805999756,
+      "rms": 0.15158402972586926,
+      "clipped": 0,
+      "leadingSilence": 0.012517006802721088,
+      "trailingSilence": 0.06716553287981859
+    },
+    {
+      "file": "cries/unfezant.mp3",
+      "bytes": 7102,
+      "duration": 0.9201814058956916,
+      "peak": 0.6810064911842346,
+      "rms": 0.14876573985280012,
+      "clipped": 0,
+      "leadingSilence": 0.030204081632653063,
+      "trailingSilence": 0.05609977324263039
+    },
+    {
+      "file": "cries/vaporeon.mp3",
+      "bytes": 13711,
+      "duration": 1.704671201814059,
+      "peak": 0.5854524970054626,
+      "rms": 0.1352041959518593,
+      "clipped": 0,
+      "leadingSilence": 0.006893424036281179,
+      "trailingSilence": 0.05482993197278912
+    },
+    {
+      "file": "cries/venipede.mp3",
+      "bytes": 6240,
+      "duration": 0.7904761904761904,
+      "peak": 0.5860792398452759,
+      "rms": 0.13155391112991996,
+      "clipped": 0,
+      "leadingSilence": 0.008979591836734694,
+      "trailingSilence": 0.09410430839002268
+    },
+    {
+      "file": "cries/venomoth.mp3",
+      "bytes": 8400,
+      "duration": 1.1369614512471655,
+      "peak": 0.4438306391239166,
+      "rms": 0.07034059474179659,
+      "clipped": 0,
+      "leadingSilence": 0.013605442176870748,
+      "trailingSilence": 0.09374149659863945
+    },
+    {
+      "file": "cries/venonat.mp3",
+      "bytes": 9024,
+      "duration": 1.1824943310657596,
+      "peak": 0.4899439811706543,
+      "rms": 0.10214978083566663,
+      "clipped": 0,
+      "leadingSilence": 0.012607709750566893,
+      "trailingSilence": 0.0491156462585034
+    },
+    {
+      "file": "cries/venusaur.mp3",
+      "bytes": 8090,
+      "duration": 1.1220861678004534,
+      "peak": 0.602421760559082,
+      "rms": 0.1097024504656943,
+      "clipped": 0,
+      "leadingSilence": 0.011337868480725623,
+      "trailingSilence": 0.05591836734693877
+    },
+    {
+      "file": "cries/vibrava.mp3",
+      "bytes": 7051,
+      "duration": 0.9880272108843537,
+      "peak": 0.6361677646636963,
+      "rms": 0.130090542533894,
+      "clipped": 0,
+      "leadingSilence": 0.011882086167800454,
+      "trailingSilence": 0.027891156462585033
+    },
+    {
+      "file": "cries/victreebel.mp3",
+      "bytes": 8544,
+      "duration": 1.1366893424036282,
+      "peak": 0.570996880531311,
+      "rms": 0.14368653532082282,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.042585034013605444
+    },
+    {
+      "file": "cries/vigoroth.mp3",
+      "bytes": 6264,
+      "duration": 0.8845351473922902,
+      "peak": 0.5942460298538208,
+      "rms": 0.13797288155831125,
+      "clipped": 0,
+      "leadingSilence": 0.029569160997732425,
+      "trailingSilence": 0.11424036281179138
+    },
+    {
+      "file": "cries/vikavolt.mp3",
+      "bytes": 10535,
+      "duration": 1.4113378684807256,
+      "peak": 0.5604193210601807,
+      "rms": 0.12959801852178954,
+      "clipped": 0,
+      "leadingSilence": 0.007437641723356009,
+      "trailingSilence": 0.00040816326530612246
+    },
+    {
+      "file": "cries/vileplume.mp3",
+      "bytes": 9754,
+      "duration": 1.3834920634920636,
+      "peak": 0.5301638841629028,
+      "rms": 0.14097321549296704,
+      "clipped": 0,
+      "leadingSilence": 0.013333333333333334,
+      "trailingSilence": 0.10870748299319728
+    },
+    {
+      "file": "cries/voltorb.mp3",
+      "bytes": 11064,
+      "duration": 1.364172335600907,
+      "peak": 0.5573426485061646,
+      "rms": 0.12119903861489395,
+      "clipped": 0,
+      "leadingSilence": 0.011156462585034013,
+      "trailingSilence": 0.05609977324263039
+    },
+    {
+      "file": "cries/vullaby.mp3",
+      "bytes": 9262,
+      "duration": 1.2318367346938774,
+      "peak": 0.6193899512290955,
+      "rms": 0.0998899112756453,
+      "clipped": 0,
+      "leadingSilence": 0.015328798185941043,
+      "trailingSilence": 0.02489795918367347
+    },
+    {
+      "file": "cries/vulpix.mp3",
+      "bytes": 10255,
+      "duration": 1.3532879818594103,
+      "peak": 0.5105960369110107,
+      "rms": 0.09866678469965028,
+      "clipped": 0,
+      "leadingSilence": 0.013151927437641724,
+      "trailingSilence": 0.07678004535147392
+    },
+    {
+      "file": "cries/wailmer.mp3",
+      "bytes": 9858,
+      "duration": 1.5808616780045353,
+      "peak": 0.6259088516235352,
+      "rms": 0.20737571270231575,
+      "clipped": 0,
+      "leadingSilence": 0.014965986394557823,
+      "trailingSilence": 0.09673469387755101
+    },
+    {
+      "file": "cries/wailord.mp3",
+      "bytes": 12458,
+      "duration": 2.0907936507936506,
+      "peak": 0.633622407913208,
+      "rms": 0.17668761881354625,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.09664399092970521
+    },
+    {
+      "file": "cries/walrein.mp3",
+      "bytes": 12816,
+      "duration": 1.8856235827664398,
+      "peak": 0.6136245727539062,
+      "rms": 0.1673602500965875,
+      "clipped": 0,
+      "leadingSilence": 0.013242630385487529,
+      "trailingSilence": 0.0599092970521542
+    },
+    {
+      "file": "cries/wartortle.mp3",
+      "bytes": 8326,
+      "duration": 1.1154648526077098,
+      "peak": 0.5673120021820068,
+      "rms": 0.12213086414254108,
+      "clipped": 0,
+      "leadingSilence": 0.013242630385487529,
+      "trailingSilence": 0.11523809523809524
+    },
+    {
+      "file": "cries/watchog.mp3",
+      "bytes": 4656,
+      "duration": 0.6236734693877551,
+      "peak": 0.6310034990310669,
+      "rms": 0.14205081455412483,
+      "clipped": 0,
+      "leadingSilence": 0.030204081632653063,
+      "trailingSilence": 0.059727891156462584
+    },
+    {
+      "file": "cries/weavile.mp3",
+      "bytes": 6296,
+      "duration": 0.8421768707482993,
+      "peak": 0.5600572824478149,
+      "rms": 0.12158251108290705,
+      "clipped": 0,
+      "leadingSilence": 0.013333333333333334,
+      "trailingSilence": 0.02743764172335601
+    },
+    {
+      "file": "cries/weedle.mp3",
+      "bytes": 7536,
+      "duration": 0.9565532879818595,
+      "peak": 0.5951009392738342,
+      "rms": 0.1291302116155183,
+      "clipped": 0,
+      "leadingSilence": 0.012154195011337868,
+      "trailingSilence": 0.07333333333333333
+    },
+    {
+      "file": "cries/weepinbell.mp3",
+      "bytes": 7320,
+      "duration": 0.999546485260771,
+      "peak": 0.5987774729728699,
+      "rms": 0.1213068337104997,
+      "clipped": 0,
+      "leadingSilence": 0.010340136054421769,
+      "trailingSilence": 0.09510204081632653
+    },
+    {
+      "file": "cries/weezing.mp3",
+      "bytes": 8792,
+      "duration": 1.2629478458049888,
+      "peak": 0.5661216974258423,
+      "rms": 0.13985773789221245,
+      "clipped": 0,
+      "leadingSilence": 0.011882086167800454,
+      "trailingSilence": 0.10852607709750567
+    },
+    {
+      "file": "cries/whirlipede.mp3",
+      "bytes": 10008,
+      "duration": 1.372607709750567,
+      "peak": 0.6197839975357056,
+      "rms": 0.15277278365030822,
+      "clipped": 0,
+      "leadingSilence": 0.012335600907029478,
+      "trailingSilence": 0.10126984126984127
+    },
+    {
+      "file": "cries/whiscash.mp3",
+      "bytes": 8116,
+      "duration": 1.172517006802721,
+      "peak": 0.663959264755249,
+      "rms": 0.150720134756158,
+      "clipped": 0,
+      "leadingSilence": 0.010340136054421769,
+      "trailingSilence": 0.10834467120181406
+    },
+    {
+      "file": "cries/wingull.mp3",
+      "bytes": 5542,
+      "duration": 0.71718820861678,
+      "peak": 0.6554219722747803,
+      "rms": 0.15033127416796027,
+      "clipped": 0,
+      "leadingSilence": 0.010793650793650795,
+      "trailingSilence": 0.06480725623582767
+    },
+    {
+      "file": "cries/woobat.mp3",
+      "bytes": 7469,
+      "duration": 0.9164625850340136,
+      "peak": 0.6774953603744507,
+      "rms": 0.1306342357122457,
+      "clipped": 0,
+      "leadingSilence": 0.029024943310657598,
+      "trailingSilence": 0.08294784580498867
+    },
+    {
+      "file": "cries/wooloo.mp3",
+      "bytes": 8609,
+      "duration": 1.1372335600907029,
+      "peak": 0.5360686779022217,
+      "rms": 0.12617792695536587,
+      "clipped": 0,
+      "leadingSilence": 0.0005442176870748299,
+      "trailingSilence": 0.018458049886621315
+    },
+    {
+      "file": "cries/wooper.mp3",
+      "bytes": 5024,
+      "duration": 0.5970975056689343,
+      "peak": 0.5817676782608032,
+      "rms": 0.13875494612601733,
+      "clipped": 0,
+      "leadingSilence": 0.013242630385487529,
+      "trailingSilence": 0.09446712018140589
+    },
+    {
+      "file": "cries/wurmple.mp3",
+      "bytes": 4992,
+      "duration": 0.5886621315192744,
+      "peak": 0.6129930019378662,
+      "rms": 0.14616716429145593,
+      "clipped": 0,
+      "leadingSilence": 0.013151927437641724,
+      "trailingSilence": 0.025351473922902493
+    },
+    {
+      "file": "cries/xatu.mp3",
+      "bytes": 6972,
+      "duration": 0.9254421768707483,
+      "peak": 0.5924090147018433,
+      "rms": 0.14923946401968194,
+      "clipped": 0,
+      "leadingSilence": 0.010612244897959184,
+      "trailingSilence": 0.10934240362811791
+    },
+    {
+      "file": "cries/yamper.mp3",
+      "bytes": 6435,
+      "duration": 0.6380045351473923,
+      "peak": 0.6514362096786499,
+      "rms": 0.09951595260913561,
+      "clipped": 0,
+      "leadingSilence": 0.00925170068027211,
+      "trailingSilence": 0.04213151927437642
+    },
+    {
+      "file": "cries/yanma.mp3",
+      "bytes": 8040,
+      "duration": 1.0253968253968253,
+      "peak": 0.5284804105758667,
+      "rms": 0.08977924613644524,
+      "clipped": 0,
+      "leadingSilence": 0.030385487528344673,
+      "trailingSilence": 0.08077097505668934
+    },
+    {
+      "file": "cries/yanmega.mp3",
+      "bytes": 13008,
+      "duration": 1.8001814058956915,
+      "peak": 0.6169382333755493,
+      "rms": 0.15495483894470566,
+      "clipped": 0,
+      "leadingSilence": 0.013605442176870748,
+      "trailingSilence": 0.02471655328798186
+    },
+    {
+      "file": "cries/yungoos.mp3",
+      "bytes": 9432,
+      "duration": 1.2570521541950113,
+      "peak": 0.6304442882537842,
+      "rms": 0.10194691029860352,
+      "clipped": 0,
+      "leadingSilence": 0.011791383219954649,
+      "trailingSilence": 0.10136054421768707
+    },
+    {
+      "file": "cries/zebstrika.mp3",
+      "bytes": 10656,
+      "duration": 1.5031292517006802,
+      "peak": 0.5645647048950195,
+      "rms": 0.16296027724544726,
+      "clipped": 0,
+      "leadingSilence": 0.029659863945578232,
+      "trailingSilence": 0.1073469387755102
+    },
+    {
+      "file": "cries/zigzagoon.mp3",
+      "bytes": 4918,
+      "duration": 0.6495238095238095,
+      "peak": 0.6151008009910583,
+      "rms": 0.1604858291548981,
+      "clipped": 0,
+      "leadingSilence": 0.01197278911564626,
+      "trailingSilence": 0.058458049886621316
+    },
+    {
+      "file": "cries/zubat.mp3",
+      "bytes": 8784,
+      "duration": 1.1104761904761904,
+      "peak": 0.4642114043235779,
+      "rms": 0.09168347866474277,
+      "clipped": 0,
+      "leadingSilence": 0.013061224489795919,
+      "trailingSilence": 0.1018140589569161
+    },
+    {
+      "file": "fanfares/badge.mp3",
+      "bytes": 88546,
+      "duration": 6.256326530612245,
+      "peak": 0.30585426092147827,
+      "rms": 0.0569236539972783,
+      "clipped": 0,
+      "leadingSilence": 0.03224489795918367,
+      "trailingSilence": 0.07691609977324262
+    },
+    {
+      "file": "fanfares/caught.mp3",
+      "bytes": 69529,
+      "duration": 4.898956916099773,
+      "peak": 0.35293102264404297,
+      "rms": 0.05144630800792587,
+      "clipped": 0,
+      "leadingSilence": 0.027029478458049885,
+      "trailingSilence": 0.11197278911564626
+    },
+    {
+      "file": "fanfares/evolved.mp3",
+      "bytes": 84889,
+      "duration": 6,
+      "peak": 0.37429293990135193,
+      "rms": 0.053521315233094426,
+      "clipped": 0,
+      "leadingSilence": 0.004036281179138322,
+      "trailingSilence": 0.03605442176870748
+    },
+    {
+      "file": "fanfares/item.mp3",
+      "bytes": 32592,
+      "duration": 2.2663038548752836,
+      "peak": 0.5979924201965332,
+      "rms": 0.07783810201608679,
+      "clipped": 0,
+      "leadingSilence": 0.053922902494331064,
+      "trailingSilence": 0.12167800453514739
+    },
+    {
+      "file": "fanfares/recovery.mp3",
+      "bytes": 50146,
+      "duration": 3.525714285714286,
+      "peak": 0.47146734595298767,
+      "rms": 0.059980254814150244,
+      "clipped": 0,
+      "leadingSilence": 0.0617687074829932,
+      "trailingSilence": 0.030113378684807256
+    },
+    {
+      "file": "music/cave.mp3",
+      "bytes": 2140934,
+      "duration": 152.85496598639455,
+      "peak": 0.4097598195075989,
+      "rms": 0.06807714168772555,
+      "clipped": 0,
+      "leadingSilence": 0.07102040816326531,
+      "trailingSilence": 0.0025850340136054422
+    },
+    {
+      "file": "music/center.mp3",
+      "bytes": 886169,
+      "duration": 63.23637188208617,
+      "peak": 0.4899982810020447,
+      "rms": 0.06564774635380076,
+      "clipped": 0,
+      "leadingSilence": 0.04739229024943311,
+      "trailingSilence": 0.0008163265306122449
+    },
+    {
+      "file": "music/cerulean.mp3",
+      "bytes": 961140,
+      "duration": 68.59555555555555,
+      "peak": 0.41037121415138245,
+      "rms": 0.06876144491460627,
+      "clipped": 0,
+      "leadingSilence": 0.0419047619047619,
+      "trailingSilence": 0.0016780045351473922
+    },
+    {
+      "file": "music/champion.mp3",
+      "bytes": 2061574,
+      "duration": 147.17496598639457,
+      "peak": 0.3195091784000397,
+      "rms": 0.06263609779680347,
+      "clipped": 0,
+      "leadingSilence": 0.04857142857142857,
+      "trailingSilence": 0.0029478458049886623
+    },
+    {
+      "file": "music/ending.mp3",
+      "bytes": 3432272,
+      "duration": 245.1043990929705,
+      "peak": 0.4964132606983185,
+      "rms": 0.0674786318298219,
+      "clipped": 0,
+      "leadingSilence": 0.02253968253968254,
+      "trailingSilence": 0.001179138321995465
+    },
+    {
+      "file": "music/forest.mp3",
+      "bytes": 2184454,
+      "duration": 155.97469387755103,
+      "peak": 0.638710081577301,
+      "rms": 0.06749107788852454,
+      "clipped": 0,
+      "leadingSilence": 0.006031746031746032,
+      "trailingSilence": 0.007800453514739229
+    },
+    {
+      "file": "music/gym.mp3",
+      "bytes": 1611014,
+      "duration": 115.01460317460318,
+      "peak": 0.43074092268943787,
+      "rms": 0.06612705884291738,
+      "clipped": 0,
+      "leadingSilence": 0.026122448979591838,
+      "trailingSilence": 0.01197278911564626
+    },
+    {
+      "file": "music/hall.mp3",
+      "bytes": 743906,
+      "duration": 53.0744671201814,
+      "peak": 0.3634188175201416,
+      "rms": 0.07145967568481135,
+      "clipped": 0,
+      "leadingSilence": 0.05319727891156462,
+      "trailingSilence": 0.0031746031746031746
+    },
+    {
+      "file": "music/legendary.mp3",
+      "bytes": 688683,
+      "duration": 49.13433106575964,
+      "peak": 0.36407211422920227,
+      "rms": 0.07115108818554255,
+      "clipped": 0,
+      "leadingSilence": 0.04,
+      "trailingSilence": 0.0007709750566893424
+    },
+    {
+      "file": "music/opening.mp3",
+      "bytes": 1215312,
+      "duration": 86.73523809523809,
+      "peak": 0.41905009746551514,
+      "rms": 0.06847825442572862,
+      "clipped": 0,
+      "leadingSilence": 0.021315192743764172,
+      "trailingSilence": 0.0015419501133786847
+    },
+    {
+      "file": "music/pallet.mp3",
+      "bytes": 1180934,
+      "duration": 84.28625850340136,
+      "peak": 0.3901459574699402,
+      "rms": 0.06322142357056311,
+      "clipped": 0,
+      "leadingSilence": 0.046802721088435376,
+      "trailingSilence": 0.0013151927437641724
+    },
+    {
+      "file": "music/pewter.mp3",
+      "bytes": 1631494,
+      "duration": 116.46585034013606,
+      "peak": 0.4240413308143616,
+      "rms": 0.0718027742445687,
+      "clipped": 0,
+      "leadingSilence": 0.05836734693877551,
+      "trailingSilence": 0.0010884353741496598
+    },
+    {
+      "file": "music/route1.mp3",
+      "bytes": 633826,
+      "duration": 45.21414965986394,
+      "peak": 0.5303890705108643,
+      "rms": 0.07008140613708382,
+      "clipped": 0,
+      "leadingSilence": 0.046077097505668935,
+      "trailingSilence": 0.0013605442176870747
+    },
+    {
+      "file": "music/route12.mp3",
+      "bytes": 871906,
+      "duration": 62.20417233560091,
+      "peak": 0.41184335947036743,
+      "rms": 0.06283680131909808,
+      "clipped": 0,
+      "leadingSilence": 0.05247165532879819,
+      "trailingSilence": 0.0016780045351473922
+    },
+    {
+      "file": "music/route3.mp3",
+      "bytes": 871540,
+      "duration": 62.18648526077097,
+      "peak": 0.37567299604415894,
+      "rms": 0.05831767214377123,
+      "clipped": 0,
+      "leadingSilence": 0.025396825396825397,
+      "trailingSilence": 0.0013151927437641724
+    },
+    {
+      "file": "music/surf.mp3",
+      "bytes": 881414,
+      "duration": 62.89487528344671,
+      "peak": 0.3475979268550873,
+      "rms": 0.06761173476554852,
+      "clipped": 0,
+      "leadingSilence": 0.05854875283446712,
+      "trailingSilence": 0.0021768707482993197
+    },
+    {
+      "file": "music/trainer.mp3",
+      "bytes": 2553094,
+      "duration": 182.2962358276644,
+      "peak": 0.3819223940372467,
+      "rms": 0.06289136907211258,
+      "clipped": 0,
+      "leadingSilence": 0.03260770975056689,
+      "trailingSilence": 0.0012244897959183673
+    },
+    {
+      "file": "music/victory.mp3",
+      "bytes": 703677,
+      "duration": 50.19646258503401,
+      "peak": 0.45775526762008667,
+      "rms": 0.07270715678136269,
+      "clipped": 0,
+      "leadingSilence": 0.02385487528344671,
+      "trailingSilence": 0.0025850340136054422
+    },
+    {
+      "file": "music/welcome.mp3",
+      "bytes": 761460,
+      "duration": 54.31619047619048,
+      "peak": 0.376433789730072,
+      "rms": 0.06092312940317203,
+      "clipped": 0,
+      "leadingSilence": 0.039909297052154194,
+      "trailingSilence": 0.0013151927437641724
+    },
+    {
+      "file": "music/wild.mp3",
+      "bytes": 1147654,
+      "duration": 81.89496598639455,
+      "peak": 0.3962821364402771,
+      "rms": 0.0704740021481427,
+      "clipped": 0,
+      "leadingSilence": 0.025714285714285714,
+      "trailingSilence": 0.001179138321995465
+    }
+  ],
+  "note": "PCM float estéreo a 11025 Hz; limite de silêncio -60 dB. Cries preservam bytes de Showdown; música normalizada pelo importador. Não substitui escuta em aparelhos físicos."
+}

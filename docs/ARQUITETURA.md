@@ -1,5 +1,11 @@
 # Arquitetura do Pokébobo
 
+## Áudio — 0.18.0
+
+`features/audio/AudioProvider` cria/destrói o mixer no ciclo de vida da aplicação; expõe comandos por contexto, guarda preferências fora do save e deriva a trilha em `audioScene`. `AudioEngine` usa Web Audio + dois media elements, transições, mute, ducking, cache/token por cena e visibilidade. O contexto só nasce no gesto. `chipEffects` contém síntese própria; tracks/cryIndex contêm apenas índices locais. Motor/game não importa áudio/DOM nem muda RNG.
+
+`useAnimationAudio` recebe os mesmos ticks desenhados por `usePixelCanvas.onFrame`; `audioCues` deriva o som de captureTimeline e dos eventos de batalha. Desmontagem cancela cues/cries atrasados; fanfare de sucesso tem escopo separado para sobreviver ao retorno ao campo. `useBattlePresentation` toca somente os eventos novos, sem reexecutar o replay salvo. AudioButton/AudioDialog/AudioOptions são os controles, com CSS na cascata existente. Origem, importação, budget, comportamento e limites em [AUDIO.md](AUDIO.md).
+
 ## Pokédex e jornadas compartilhadas — 0.17.0
 
 `features/pokedex/dexModel.js` deriva um índice normal/shiny da coleção permanente, deduplica aliases, atribui regionais à região da forma e aplica filtros sem alterar o save. `DexProgress`, `DexDetails` e `DexVariants` compõem a janela; comparação depende dos dois registros reais. Sprite 2D local conserva formas, e loading lazy limita a lista.

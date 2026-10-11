@@ -1,5 +1,12 @@
 # Onde editar
 
+## Áudio — 0.18.0
+
+- Mixer, autoplay, crossfade, mute, cache e visibilidade: `features/audio/AudioEngine.js`; integração, cenas e preferências: AudioProvider/audioScene/audioPreferences. Nunca importar isso em `game/`.
+- Receita dos efeitos: `chipEffects.js`; sincronização: `audioCues.js`, `useAnimationAudio.js`, `features/encounters/usePixelCanvas.js` e `features/battle/useBattlePresentation.js`. Os ticks/resultado existentes continuam sendo a fonte da verdade.
+- Controles: AudioButton/AudioOptions/AudioDialog, AppHeader e SettingsDialog; `styles/features/audio.css` mantém desktop em duas colunas e celular em uma. Cries de consulta em DexDetails/StarterCard.
+- Assets e fontes: `public/audio`, `scripts/audio-sources.json`, import-audio.mjs e audit-audio.mjs. Índices em features/audio/*.json. Guia/limites em [AUDIO.md](AUDIO.md), hashes/fontes no manifesto e testes em `tests/audio.test.js`.
+
 ## Pokédex e compartilhamento — 0.17.0
 
 - Coleção, variantes, regiões, aliases e filtros: `features/pokedex/dexModel.js`; composição em PokedexDialog/DexProgress/DexDetails/DexVariants. CSS próprio em `styles/features/pokedex.css`, junto da cascata existente.

@@ -1,0 +1,40 @@
+{
+  "url": "https://www.youtube.com/watch?v=xaznXXCHnoo",
+  "uploader": "F4m1LyGuy10",
+  "title": "Full Pokémon FireRed & LeafGreen OST",
+  "tracks": [
+    ["opening", "Opening", "Início", 26, 115],
+    ["welcome", "Welcome to the World of Pokémon", "Sua região", 165, 222],
+    ["pallet", "Pallet Town", "Cidade", 230, 317],
+    ["route1", "Route 1", "Exploração", 712, 759],
+    ["route3", "Route 3", "Exploração", 1711, 1776],
+    ["route12", "Route 12", "Exploração", 2964, 3028],
+    ["forest", "Viridian Forest", "Floresta", 918, 1076],
+    ["cave", "Mt. Moon", "Serra e neve", 1811, 1966],
+    ["pewter", "Pewter City", "Cidade", 773, 892],
+    ["cerulean", "Cerulean City", "Cidade", 3047, 3118],
+    ["center", "Pokémon Center", "Equipe", 1243, 1309],
+    ["surf", "Surf", "Lago e litoral", 3133, 3198],
+    ["wild", "Battle (VS Wild Pokémon)", "Captura", 1084, 1168],
+    [
+      "legendary",
+      "Battle (VS Legendary Pokémon)",
+      "Encontro secreto",
+      3206,
+      3257
+    ],
+    ["trainer", "Battle (VS Trainer)", "Batalha", 476, 661],
+    ["gym", "Battle (VS Gym Leader)", "Ginásio e Liga", 1473, 1590],
+    ["champion", "Last Battle (VS Rival)", "Campeão", 4237, 4386],
+    ["victory", "Victory (VS Gym Leader)", "Vitória", 1598, 1651],
+    ["hall", "Induction Into the Hall of Fame", "Hall da Fama", 4462, 4517],
+    ["ending", "Ending", "Fim da jornada", 4525, 4772]
+  ],
+  "fanfares": [
+    ["caught", "Fanfare Pokémon Get", "Captura concluída", 3265, 3273],
+    ["item", "Fanfare Item Get 1", "Item", 767, 772],
+    ["badge", "Fanfare Badge Get", "Insígnia", 1659, 1668],
+    ["evolved", "Fanfare Evolution Congratulations", "Evolução", 1704, 1710],
+    ["recovery", "Pokémon Recovery", "Recuperação", 1328, 1334]
+  ]
+}

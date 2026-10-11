@@ -1,4 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
+import { useAudio } from "../audio/AudioContext.js";
+import { battleAudioCue } from "../audio/audioCues.js";
 import { restoreBattle } from "../../game/battle/restore.js";
 import { battleSnapshot } from "../../game/battle/snapshot.js";
 import {
@@ -22,6 +24,11 @@ function previewChoice(spec, choice) {
 }
 
 export function useBattlePresentation({ battleSpec, snap, act }) {
+  const audio = useAudio(),
+    liveAudio = useRef(audio),
+    audioScope = useId();
+  liveAudio.current = audio;
+  const entranceTimers = useRef([]);
   const [displaySnap, setDisplaySnap] = useState(snap);
   const [message, setMessage] = useState(
     snap.log.slice(-2).join(" ") || "Escolha seu primeiro golpe.",
@@ -36,15 +43,34 @@ export function useBattlePresentation({ battleSpec, snap, act }) {
   useEffect(
     () => () => {
       sequence.current++;
+      entranceTimers.current.forEach(clearTimeout);
+      liveAudio.current?.stopScope(audioScope);
     },
     [],
   );
 
+  const battleKey = battleSpec.seed.join("-");
+  useEffect(() => {
+    liveAudio.current?.preloadCry(snap.foe?.name);
+    liveAudio.current?.preloadCry(snap.active?.name);
+    // Não reexecuta o histórico de golpes ao carregar um save.
+    liveAudio.current?.cue("encounter", { scope: audioScope });
+    entranceTimers.current = [
+      setTimeout(
+        () => liveAudio.current?.cry(snap.foe?.name, { scope: audioScope }),
+        180,
+      ),
+      setTimeout(
+        () => liveAudio.current?.cry(snap.active?.name, { scope: audioScope }),
+        1050,
+      ),
+    ];
+    return () => entranceTimers.current.forEach(clearTimeout);
+  }, [battleKey, audioScope]);
+
   useEffect(() => {
     setDisplaySnap(snap);
-    setMessage(
-      snap.log.slice(-2).join(" ") || "Escolha seu primeiro golpe.",
-    );
+    setMessage(snap.log.slice(-2).join(" ") || "Escolha seu primeiro golpe.");
     setEffect(null);
     setLocked(false);
   }, [battleSpec.choices.length, snap]);
@@ -60,6 +86,7 @@ export function useBattlePresentation({ battleSpec, snap, act }) {
   const move = async (choice) => {
     if (locked) return;
     const token = ++sequence.current;
+    entranceTimers.current.forEach(clearTimeout);
     setLocked(true);
 
     let preview;
@@ -82,6 +109,9 @@ export function useBattlePresentation({ battleSpec, snap, act }) {
       shown = applyBattleEvent(shown, event, preview);
       setDisplaySnap(shown);
       setEffect(battleEffect(event));
+      const cue = battleAudioCue(event);
+      if (cue.sound) liveAudio.current?.cue(cue.sound, { scope: audioScope });
+      if (cue.cry) liveAudio.current?.cry(cue.cry, { scope: audioScope });
       const duration = battleEventDuration(event.type, speed);
       await new Promise((resolve) =>
         setTimeout(resolve, reducedMotion ? Math.min(duration, 120) : duration),
