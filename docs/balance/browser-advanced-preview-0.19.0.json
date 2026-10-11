@@ -1,0 +1,22 @@
+{
+  "tag": "final-preview",
+  "base": "http://localhost:4174/pokebobo/",
+  "flows": [
+    "reload: uma aplicação, HP/PP/RNG/replay exatos",
+    "pagehide: uma aplicação, HP/PP/RNG/replay exatos",
+    "double-click: uma aplicação, HP/PP/RNG/replay exatos",
+    "reload no golpe fatal abre resultado correto",
+    "reload no desmaio → troca forçada → segundo comando correto",
+    "bloqueio real de Protect no caderno; Fechar visível depois de rolar",
+    "404 deliberado na chama original usa partículas próprias e resolve turno"
+  ],
+  "errors": [],
+  "network": [],
+  "expectedFailures": [
+    {
+      "url": "http://localhost:4174/pokebobo/battle-effects/fire.png",
+      "status": 404
+    },
+    "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+}

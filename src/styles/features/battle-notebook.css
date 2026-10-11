@@ -1,0 +1,161 @@
+.battle-notebook {
+  width: min(720px, calc(100vw - 24px));
+}
+.notebook-pages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin: 4px 0 16px;
+}
+.notebook-pages button {
+  min-height: 44px;
+  padding: 8px;
+  border: 1px solid var(--lcd-line);
+  border-radius: 5px;
+  background: var(--lcd);
+  color: var(--ink);
+  font: 600 12px var(--display);
+}
+.notebook-pages button[aria-pressed="true"] {
+  background: var(--rubber);
+  color: var(--amber);
+  border-color: var(--rubber);
+}
+.notebook-pages button:hover {
+  box-shadow: inset 0 0 0 1px var(--ink-soft);
+}
+.notebook-caption {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}
+.notebook-moves details {
+  border: 1px solid var(--lcd-line);
+  background: var(--lcd-bright);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.notebook-moves summary {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  cursor: pointer;
+  min-height: 52px;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+.notebook-moves summary::before {
+  content: "›";
+  font: 700 22px var(--display);
+}
+.notebook-moves details[open] summary::before {
+  transform: rotate(90deg);
+}
+.notebook-moves summary::marker,
+.notebook-moves summary::-webkit-details-marker {
+  display: none;
+  content: "";
+}
+.notebook-moves summary strong {
+  overflow-wrap: anywhere;
+}
+.notebook-moves summary > span:last-child {
+  margin-left: auto;
+  font: 11px var(--mono);
+  white-space: nowrap;
+}
+.notebook-moves summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: -3px;
+}
+.move-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 4px 12px 12px;
+}
+.move-facts dt {
+  font-size: 10px;
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+.move-facts dd {
+  margin: 0;
+  font: 600 13px var(--display);
+}
+.notebook-moves ul {
+  padding: 0 12px 0 28px;
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.notebook-moves li + li {
+  margin-top: 4px;
+}
+.notebook-moves details > p {
+  margin: 8px 12px 12px;
+}
+.notebook-unavailable {
+  color: var(--danger);
+  font-size: 12px;
+}
+.notebook-field {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.notebook-field > section {
+  padding: 12px;
+  background: var(--lcd-bright);
+  border: 1px solid var(--lcd-line);
+  border-radius: 6px;
+}
+.notebook-field h3 {
+  margin: 6px 0 8px;
+  overflow-wrap: anywhere;
+  font-size: 17px;
+}
+.notebook-field h3 small {
+  font: 10px var(--mono);
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.notebook-field p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+.field-stages {
+  margin: 12px 0 0;
+}
+.field-stages > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 12px;
+}
+.field-stages dd {
+  margin: 0;
+  font: 600 12px var(--mono);
+}
+.stage-up {
+  color: var(--hp);
+}
+.stage-down {
+  color: var(--danger);
+}
+.notebook-field > .notebook-caption {
+  grid-column: 1 / -1;
+}
+@media (max-width: 440px) {
+  .move-facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .notebook-field {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,6 +1,6 @@
 import { VERSION, RELEASE_NAME } from "../../app/version.js";
 import { Modal } from "../../components/ui/Modal.jsx";
-import { Download, Trophy, Compass, Music2 } from "lucide-react";
+import { Download, Upload, Trophy, Compass, Music2 } from "lucide-react";
 import { SaveSlots } from "./SaveSlots.jsx";
 import { BattleSpriteOptions } from "./BattleSpriteOptions.jsx";
 
@@ -16,6 +16,7 @@ export function SettingsDialog({
   changeSpriteStyle,
   spritePreferenceSaved,
   onChallenge,
+  saving = true,
 }) {
   return (
     <Modal title="Opções e progresso" onClose={() => setModal(null)}>
@@ -40,12 +41,20 @@ export function SettingsDialog({
         onSwitch={switchSaveSlot}
       />
       <p>
-        O Slot {activeSlot} fica salvo neste navegador, inclusive no meio de uma
-        batalha.
+        {saving
+          ? `O Slot ${activeSlot} fica salvo neste navegador, inclusive no meio de uma batalha.`
+          : "O navegador não está salvando esta jornada. Exporte o progresso antes de fechar."}
       </p>
       <button className="button secondary full" onClick={exportSave}>
         <Download size={18} />
         Exportar Slot {activeSlot}
+      </button>
+      <button
+        className="button secondary full"
+        onClick={() => setModal("import-save")}
+      >
+        <Upload size={18} />
+        Restaurar backup
       </button>
       <div className="record-grid">
         <div>

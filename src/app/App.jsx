@@ -24,6 +24,7 @@ import { ChallengeDialog } from "../features/onboarding/ChallengeDialog.jsx";
 import { ShareJourneyDialog } from "../features/history/ShareJourneyDialog.jsx";
 import { AudioProvider } from "../features/audio/AudioProvider.jsx";
 import { AudioDialog } from "../features/audio/AudioDialog.jsx";
+import { ImportSaveDialog } from "../features/settings/ImportSaveDialog.jsx";
 
 export function App() {
   const { spriteStyle, changeSpriteStyle, spritePreferenceSaved } =
@@ -50,6 +51,8 @@ export function App() {
     run,
     act,
     exportSave,
+    exportSaveSlot,
+    importSave,
     activeSlot,
     saveSlots,
     switchSaveSlot,
@@ -79,6 +82,14 @@ export function App() {
     run?.phase === "battle" && battleSidebar?.key === battleKey
       ? battleSidebar
       : null;
+  const navigate = (nextTab) => {
+    battleControlRef.current?.finishTurn();
+    setTab(nextTab);
+  };
+  const openModal = (nextModal) => {
+    if (nextModal) battleControlRef.current?.finishTurn();
+    setModal(nextModal);
+  };
 
   return (
     <AudioProvider run={run} tab={tab} modal={modal} slot={activeSlot}>
@@ -90,7 +101,7 @@ export function App() {
             : "app-shell"
         }
       >
-        <AppHeader setModal={setModal} />
+        <AppHeader setModal={openModal} />
         {error && (
           <div className="error-banner" role="alert">
             {error}
@@ -107,6 +118,7 @@ export function App() {
         )}
         {!run ? (
           <Welcome
+            saving={saving}
             name={name}
             setName={setName}
             mode={mode}
@@ -154,7 +166,7 @@ export function App() {
               battle={liveBattleSidebar}
               onTeam={(id) => {
                 setSelectedMonId(id || null);
-                setTab("team");
+                navigate("team");
               }}
               onReorder={(sourceId, targetId) =>
                 act({ type: "REORDER_PARTY", sourceId, targetId })
@@ -165,7 +177,7 @@ export function App() {
             />
           </div>
         )}
-        {playing && <GameNavigation tab={tab} setTab={setTab} run={run} />}
+        {playing && <GameNavigation tab={tab} setTab={navigate} run={run} />}
         {run?.pendingEvolutionChoices?.length > 0 && run.phase !== "ended" && (
           <EvolutionDialog run={run} act={act} />
         )}
@@ -200,8 +212,18 @@ export function App() {
         )}
         {modal === "help" && <HelpDialog setModal={setModal} />}
         {modal === "audio" && <AudioDialog onClose={() => setModal(null)} />}
+        {modal === "import-save" && (
+          <ImportSaveDialog
+            slots={saveSlots}
+            activeSlot={activeSlot}
+            onImport={importSave}
+            onExportSlot={exportSaveSlot}
+            onClose={() => setModal(null)}
+          />
+        )}
         {modal === "settings" && (
           <SettingsDialog
+            saving={saving}
             spriteStyle={spriteStyle}
             changeSpriteStyle={changeSpriteStyle}
             spritePreferenceSaved={spritePreferenceSaved}

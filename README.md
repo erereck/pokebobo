@@ -1,6 +1,8 @@
-# Pokébobo — 0.18.1 · Pokémon em destaque
+# Pokébobo — 0.19.0 · Jornada mais viva
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.19.0 traz **efeitos de golpes, caderno de batalha e restauração de backups**. Fogo, água, eletricidade e os outros tipos têm partículas e sons próprios; cura, proteção, status e Future Sight seguem os eventos reais. O caderno explica seus golpes e mostra mudanças de atributos. Pular, trocar de tela ou recarregar preserva o comando escolhido. Opções → Restaurar backup abre o JSON, mostra a jornada e permite escolher um slot. Controles segurados mais consistentes e carregamento mais leve: JavaScript principal cerca de 41% menor. [Efeitos](docs/images/batalha-efeitos-0.19-desktop.png) · [Caderno](docs/images/caderno-0.19-celular.png) · [Backup](docs/images/backup-0.19-celular.png) · [Funcionamento e limites](docs/BATALHAS-E-BACKUPS.md).
 
 A 0.18.1 amplia **a presença dos Pokémon na arena**, especialmente o 3D de Pignite e Geodude. A escala acompanha o espaço da batalha em tela cheia, sem os antigos tetos em pixels; pequenos continuam menores e gigantes respeitam a caixa. Normal/shiny compartilham o limite de largura para manter altura consistente. [Critérios de escala](docs/ESCALA-DOS-SPRITES.md).
 
@@ -34,7 +36,7 @@ Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde edit
 
 ## Jogar
 
-**Saves deixam de ser descartados só porque a versão mudou.** A 0.5.0 usa schema 4 e migra saves reconhecíveis para a estrutura atual, completando campos ausentes sem apagar run, equipe, seed ou histórico. Antes de uma migração, o JSON anterior é guardado em `pokebobo.save.backup.v1`; até um JSON corrompido é preservado ali antes do fallback. A partir daqui, novas mudanças de schema devem ganhar migração em vez de reset. Opções → Zerar progresso de teste continua existindo, mas só por ação explícita.
+**Saves compatíveis são preservados.** O jogo usa schema 4 e normaliza campos reconhecíveis sem apagar run, equipe, seed ou histórico. A 0.19.0 mantém esse schema; restaurar arquivos exige a versão atual. Existe uma única regra ativa: mudanças futuras incompatíveis devem incrementar SAVE_VERSION e rejeitar os arquivos incompatíveis, sem manter motores paralelos. Opções → Zerar progresso de teste continua existindo, mas só por ação explícita.
 
 Requer Node.js 22.13+ e npm. Para rodar o jogo:
 
@@ -47,7 +49,7 @@ npm run dev
 
 Abra o endereço exibido pelo Vite (por padrão, http://localhost:4173/). No celular conectado à mesma rede Wi-Fi, use o endereço de rede exibido. O servidor precisa continuar aberto e não reinicia sozinho depois que o computador é desligado.
 
-O save fica no navegador. Há três slots independentes de carreira; o Hall da Fama é compartilhado entre eles neste aparelho. **Opções → Exportar progresso** guarda uma cópia em JSON do slot atual. Saves de cada endereço/navegador são separados. O repositório contém o código-fonte, não uma hospedagem do jogo.
+O save fica no navegador. Há três slots independentes de carreira; o Hall da Fama é compartilhado entre eles neste aparelho. **Opções → Exportar progresso** guarda uma cópia em JSON do slot atual. **Restaurar backup** recebe um arquivo compatível e oferece prévia e escolha de slot. Saves de cada endereço/navegador são separados. [Jogue no GitHub Pages](https://erereck.github.io/pokebobo/).
 
 **A partir de 15/09/2026, o HTML standalone deixou de ser atualizado ou distribuído, por decisão do usuário.** O fluxo oficial é a aplicação web. O script legado de standalone permanece apenas como referência e não participa da verificação.
 
@@ -67,7 +69,7 @@ O save fica no navegador. Há três slots independentes de carreira; o Hall da F
 - Limite de três semanas por cidade. Depois da última ação e da resolução de eventual acontecimento, a viagem ou o ginásio começa automaticamente.
 - Treino (+1 a 3 níveis na equipe; +2 a 4 na Correria), exploração, captura, busca de itens e preparação com berries. Viagem e emboscada: zero níveis. Vitória em ginásio ou Liga: +1.
 - Níveis originais por Pokémon do líder. Se o maior nível do jogador exceder o ás original em 10 ou mais, o líder recebe +6 em todos, uma vez. Não há limite de nível por etapa.
-- Quatro golpes juntos na batalha, trocas em grade, troca por arrastar na Equipe Conectada, HP ao vivo dos seis e registro completo em uma janela separada. Cada turno é apresentado em sequência (ataque, HP, status, queda e troca), com velocidade 1×/2×.
+- Quatro golpes juntos na batalha, trocas em grade, troca por arrastar na Equipe Conectada, HP ao vivo dos seis e caderno com registro, descrição dos golpes e estágios. Cada turno é apresentado em sequência (ataque, HP, status, queda e troca), com efeitos por tipo, velocidade 1×/2× e Pular.
 - Duas ou três oportunidades ocultas por rota, com áreas contínuas de mato alto e lago. Encontros são sorteados ao caminhar, com intervalo após encontros e proteção contra espera excessiva. A caminhada inteira custa uma semana e termina após 50 passos válidos ou saída manual. Falhar permite outro lançamento contra o mesmo Pokémon, sem nova semana ou nível: 67% de chance base por bola (eventos podem elevar até 98%; lendários mantêm 48%). Capturar, fugir ou gastar a última bola encerra o encontro. Fishing Rod na terceira insígnia; Surf na quinta. Pesca e Surf compartilham a oportunidade do lago. Equipe de até seis; com time e reserva cheios, escolha quem sai apenas se a captura der certo.
 - Batalhas aleatórias: chance de 10% após uma ação elegível, com intervalo mínimo de três semanas entre emboscadas.
 - Batalhas reais do Pokémon Showdown via `@pkmn/sim`, inteiramente no navegador. Golpes, PP, habilidades, tipos, status, prioridade, dano, trocas e itens seguem o motor.
@@ -104,7 +106,7 @@ npm run verify
 
 No PowerShell com política de scripts restrita, use `npm.cmd`.
 
-`npm run verify` executa verificação de arquitetura, testes e build Vite. `npm run build` gera a aplicação estática em `dist/`, que pode ser servida em qualquer hospedagem estática; `npm run preview` permite conferir esse build localmente. Não há servidor de batalha nem variáveis secretas. `node_modules/`, `dist/`, ZIPs de distribuição e o HTML standalone ficam fora do Git.
+`npm run verify` executa arquitetura, todos os testes, regressões também com o motor empacotado e build Vite. `npm run test:browser-simulator` verifica separadamente o motor leve. `npm run build` gera a aplicação estática em `dist/`, que pode ser servida em hospedagem estática; `npm run preview` permite conferir esse build localmente. Para reproduzir Pages, defina `VITE_BASE=/pokebobo/` no build e no preview. Não há servidor de batalha nem variáveis secretas. `node_modules/`, `dist/`, ZIPs de distribuição e o HTML standalone ficam fora do Git.
 
 ### Estrutura
 
@@ -128,7 +130,7 @@ No PowerShell com política de scripts restrita, use `npm.cmd`.
 | `scripts/check-architecture.mjs`                             | Verifica imports locais, ciclos e dependências entre camadas                 |
 | `scripts/audit-progression.mjs`                              | Mede orçamento de níveis de quatro estratégias                               |
 | `scripts/monte-carlo.mjs` e `simulation/`                    | Campanhas com combates reais, políticas, seeds e relatório JSON              |
-| `tests/`                                                     | 87 testes por domínio; fixtures históricas da 0.1 arquivadas em docs/archive |
+| `tests/`                                                     | 171 testes por domínio; fixtures históricas da 0.1 arquivadas em docs/archive |
 | `docs/`                                                      | Guia de edição, arquitetura, backlog e pesquisa de assets                    |
 
 As APIs antigas em `game/engine.js`, `data.js`, `pokemon.js` e `battle.js` continuam como reexports pequenos. Consulte [ONDE-EDITAR.md](docs/ONDE-EDITAR.md) para encontrar o arquivo de cada alteração.
@@ -144,7 +146,7 @@ O conceito e o recorte vieram da conversa **Ideia do Pokébobo**. A filosofia de
 - [React](https://github.com/facebook/react): MIT.
 - [Lucide](https://github.com/lucide-icons/lucide): ISC.
 - Silkscreen, DM Sans e Space Grotesk: SIL Open Font License, cópias em `licenses/`.
-- Paisagens e elementos de interface: SVG criado para o protótipo.
+- Cidades: imagens oficiais por lugar, com fontes em `public/covers/README.md`. Campo/captura e partículas de batalha: artes FRLG, fontes/transformações em `licenses/FRLG-ASSETS.md`. Elementos de carcaça e interface: código próprio.
 
 Pokébobo é um projeto de fã e não é afiliado à Nintendo, Game Freak ou The Pokémon Company. Licenças dos componentes estão em `licenses/`; a licença dos motores não transfere direitos sobre personagens e sprites.
 

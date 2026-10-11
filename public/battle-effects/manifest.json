@@ -1,0 +1,395 @@
+{
+  "revision": "037335f4c725d7c9aecdac87066f2002b4bd7e14",
+  "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/",
+  "transformation": "Paleta embutida preservada; índice zero transparente; sem suavização. Tempos/trajetórias adaptados pelo Pokébobo.",
+  "files": {
+    "fire.png": {
+      "file": "fire.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 8,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/fire.png",
+      "sourceSha256": "6d547fd21ab13be12e64c7a40689dc9941cea28e77ff032238627f0e3dc27e82",
+      "sha256": "796513a45364b428bf873692f496c956f2e58fb386c193f3fb4491871dc37f4b",
+      "size": [
+        32,
+        256
+      ],
+      "bytes": 3509
+    },
+    "bubble.png": {
+      "file": "bubble.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 1,
+      "frames": 3,
+      "sequence": [
+        0,
+        1,
+        2
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/bubble.png",
+      "sourceSha256": "de27df738f681bcf962f36dd991f95fe4099c07ad9c36dbacfa72b2c847c3900",
+      "sha256": "9892c8eab975654bd65bdc7b4d3fd9713b85a582defac055ed3e59c789f607bc",
+      "size": [
+        16,
+        48
+      ],
+      "bytes": 413
+    },
+    "electricity.png": {
+      "file": "electricity.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 4,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/electricity.png",
+      "sourceSha256": "47e031374352a8d36214ad7c59c3944bcd8eb8450302131491e9ebfeef62bc6b",
+      "sha256": "5911ea50e275ca7b3dac4208a6d907d5be75c26533ac97252396a48c8c91f80e",
+      "size": [
+        32,
+        128
+      ],
+      "bytes": 889
+    },
+    "ice_crystals_0.png": {
+      "file": "ice_crystals_0.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/ice_crystals_0.png",
+      "sourceSha256": "79adc6a4936a0f9c47a50982975dd4e3ef3f27d035469cdce2f9dc5673814d53",
+      "sha256": "032296605187f73c4582eec2b8af980d84de317a5b3c54abab27108ee5a9e251",
+      "size": [
+        16,
+        16
+      ],
+      "bytes": 204
+    },
+    "razor_leaf.png": {
+      "file": "razor_leaf.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 2,
+      "frames": 2,
+      "sequence": [
+        0,
+        1
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/razor_leaf.png",
+      "sourceSha256": "be3f0557a9c412e809297b8096aa4adfde9c6ccbef241f7414a6c4d6c01aa391",
+      "sha256": "326efb3964252ae22775f385062a9ac718f20b26984c0676670d5357686df179",
+      "size": [
+        32,
+        16
+      ],
+      "bytes": 320
+    },
+    "shadow_ball.png": {
+      "file": "shadow_ball.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/shadow_ball.png",
+      "sourceSha256": "c5d6442e40756112517cd87c7741d6d28e45e30313516c573661c2c4caa33c86",
+      "sha256": "b6807bf2e037acac31c35d059a548a79e27ce2ecfaa790e75344fdb92f4db572",
+      "size": [
+        32,
+        32
+      ],
+      "bytes": 540
+    },
+    "rocks.png": {
+      "file": "rocks.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 6,
+      "sequence": [
+        0
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/rocks.png",
+      "sourceSha256": "19737d1c20f58c67da01fc637e17e71fc4d7045b8ff49c2e589d44facb460b2e",
+      "sha256": "5369ecd68b03e85fede95d61752676a1c1de416a0fad52de3c791805c491fcc4",
+      "size": [
+        32,
+        192
+      ],
+      "bytes": 2092
+    },
+    "poison_bubble.png": {
+      "file": "poison_bubble.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 1,
+      "frames": 3,
+      "sequence": [
+        0,
+        1,
+        2
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/poison_bubble.png",
+      "sourceSha256": "d66d2dfb3b2953f3159044988a87b6328acb524dd169ac84d990a1d116d3ce88",
+      "sha256": "92d69fef24aac5bed2ba478b00f988edbdb8f14119654ed5fc512a4dd219f729",
+      "size": [
+        16,
+        48
+      ],
+      "bytes": 420
+    },
+    "air_wave.png": {
+      "file": "air_wave.png",
+      "frame": [
+        32,
+        16
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/air_wave.png",
+      "sourceSha256": "c08a2ed99d2bb082eef09f79fbf10007b90c04ac05aa8e52da2dc503d3ac287f",
+      "sha256": "0d60273b9e2d3cd25982ef30942f457e8c9d9a8030fe632f57c0f93ea9af8539",
+      "size": [
+        32,
+        16
+      ],
+      "bytes": 218
+    },
+    "ring.png": {
+      "file": "ring.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 1,
+      "frames": 3,
+      "sequence": [
+        0,
+        1,
+        2
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/ring.png",
+      "sourceSha256": "6d7a44c0a75b80d0a90c16b12fe5b06735494cbb45c88e274a7b637ea20751d9",
+      "sha256": "b1a09699f82ef2502c39e855f6464144cb64152d69b5458d60019a2c07928936",
+      "size": [
+        16,
+        48
+      ],
+      "bytes": 336
+    },
+    "needle.png": {
+      "file": "needle.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/needle.png",
+      "sourceSha256": "979862f33b2ccba13214f26234add6f43234d93e9f8adc44ae4413200e6aedc6",
+      "sha256": "5c6267b27a12fc1b943d59ba23704b29fcd3b264716d94e1272dee41909717ab",
+      "size": [
+        16,
+        16
+      ],
+      "bytes": 135
+    },
+    "punch_impact.png": {
+      "file": "punch_impact.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/punch_impact.png",
+      "sourceSha256": "cac6ca9d318595218124ba9f01f4c7706ff997b9e4acfef69d3e3ba30db24899",
+      "sha256": "81c96d96795ceb27a69aec6dd134ca50a6df4a57ab326c9ac4a2deb396de6e12",
+      "size": [
+        32,
+        32
+      ],
+      "bytes": 590
+    },
+    "blue_flames.png": {
+      "file": "blue_flames.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 2,
+      "sequence": [
+        0,
+        1
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/blue_flames.png",
+      "sourceSha256": "824475ed8cba1ab968dc44a12fc7c64ec0adb01f270619b8257a707154aad9c4",
+      "sha256": "7f270ede14d3d2131a04088a97c2e95ecd591d3b179cd23390d978e5f317a569",
+      "size": [
+        32,
+        64
+      ],
+      "bytes": 1176
+    },
+    "claw_slash.png": {
+      "file": "claw_slash.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 5,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/claw_slash.png",
+      "sourceSha256": "a89d375ec58f5194540719ea505e1b5c6d8dabbd5ddbe3c55e21d2825b858ce3",
+      "sha256": "6385e174ee7e5b20559865f2c26f3fa37effbb32d5835a8c3f193a1b223b9ccf",
+      "size": [
+        32,
+        160
+      ],
+      "bytes": 1263
+    },
+    "cross_impact.png": {
+      "file": "cross_impact.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/cross_impact.png",
+      "sourceSha256": "98b6560114359b9a5092e1e52c3dc5c4488dbd996557f4c59359dfc825fb470f",
+      "sha256": "cde243bd7474d98731de305cf306d85c3eff0a566f00e83967a937e3edee5665",
+      "size": [
+        32,
+        32
+      ],
+      "bytes": 278
+    },
+    "blue_star.png": {
+      "file": "blue_star.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 7,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/blue_star.png",
+      "sourceSha256": "d1675d7ef89ce38c40197a8795255ee2c9e296ebca54e84adfd0b85de3f404e9",
+      "sha256": "f69e345e5f6f68158d2d5a6f49b3774ee00db31d644089d66a1f4a39f88aa1c7",
+      "size": [
+        32,
+        224
+      ],
+      "bytes": 1427
+    },
+    "circle_impact.png": {
+      "file": "circle_impact.png",
+      "frame": [
+        8,
+        8
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/circle_impact.png",
+      "sourceSha256": "be74aa90719571aeec45d1ca6bbbcda44f2277c8739d470b1d05075664f5dc57",
+      "sha256": "fadc61fc49a2c5c1a3967a3a454c20dad49f7904ef8da4b4f477221fc8fdbddf",
+      "size": [
+        8,
+        8
+      ],
+      "bytes": 158
+    },
+    "impact.png": {
+      "file": "impact.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ],
+      "source": "https://raw.githubusercontent.com/pret/pokefirered/037335f4c725d7c9aecdac87066f2002b4bd7e14/graphics/battle_anims/sprites/impact.png",
+      "sourceSha256": "8f2a0eb54120d2cc50d24ccd92e2934d9b5c94c13f008198b6306c193fd8721d",
+      "sha256": "731f31def6c296794eb636407aca1432b4e0834cd3079cd3a83f521ac6c26406",
+      "size": [
+        32,
+        32
+      ],
+      "bytes": 430
+    }
+  }
+}

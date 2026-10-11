@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { browserStorage } from "../../shared/browserStorage.js";
+import { restoreSaveSlot } from "../../game/persistence/importSave.js";
 import { loadSave } from "../../game/persistence/loadSave.js";
 import { writeSave } from "../../game/persistence/writeSave.js";
 import {
@@ -31,13 +33,15 @@ const KEEP_TAB_ACTIONS = new Set([
 
 export function useGameSession() {
   const [activeSlot, setActiveSlot] = useState(() =>
-    loadActiveSaveSlot(localStorage),
+    loadActiveSaveSlot(browserStorage),
   );
-  const [state, setState] = useState(() => loadSave(localStorage, activeSlot));
+  const [state, setState] = useState(() =>
+    loadSave(browserStorage, activeSlot),
+  );
   const [tab, setTab] = useState("journey");
   const [modal, setModal] = useState(null);
   const [error, setError] = useState("");
-  const saving = useAutosave(state, activeSlot);
+  const { saving, persistNow } = useAutosave(state, activeSlot);
   const [name, setName] = useState("");
   const [mode, setMode] = useState("normal");
   const [moveLearningMode, setMoveLearningMode] = useState(
@@ -54,6 +58,9 @@ export function useGameSession() {
           stateCollection(next, activeSlot),
         );
       setState(next);
+      // O progresso de uma ação válida é gravado antes de um possível
+      // pagehide/reload; a effect evita gravar essa mesma referência de novo.
+      if (next !== state) persistNow(next);
       setError("");
       if (!KEEP_TAB_ACTIONS.has(action.type)) {
         setTab("journey");
@@ -73,9 +80,9 @@ export function useGameSession() {
     const nextSlot = normalizeSaveSlot(slot);
     if (nextSlot === activeSlot) return false;
     try {
-      writeSave(localStorage, state, activeSlot);
-      writeActiveSaveSlot(localStorage, nextSlot);
-      const nextState = loadSave(localStorage, nextSlot);
+      writeSave(browserStorage, state, activeSlot);
+      writeActiveSaveSlot(browserStorage, nextSlot);
+      const nextState = loadSave(browserStorage, nextSlot);
       setActiveSlot(nextSlot);
       setState(nextState);
       setTab("journey");
@@ -90,9 +97,30 @@ export function useGameSession() {
     }
   };
 
-  const saveSlots = allSaveSlotSummaries(localStorage, activeSlot, state);
+  const saveSlots = allSaveSlotSummaries(browserStorage, activeSlot, state);
   const exportSave = () =>
     downloadJson(state, `pokebobo-slot-${activeSlot}-save.json`);
+  const exportSaveSlot = (slot) =>
+    downloadJson(
+      slot === activeSlot ? state : loadSave(browserStorage, slot),
+      `pokebobo-slot-${slot}-save.json`,
+    );
+  const importSave = (incoming, slot) => {
+    const nextSlot = normalizeSaveSlot(slot);
+    restoreSaveSlot(browserStorage, incoming, nextSlot);
+    const next = loadSave(browserStorage, nextSlot);
+    setActiveSlot(nextSlot);
+    setState(next);
+    setTab("journey");
+    setError("");
+    setSelectedPreferences(next);
+    return true;
+  };
+  const setSelectedPreferences = (next) => {
+    setName("");
+    setMode("normal");
+    setMoveLearningMode(next.meta.moveLearningMode || "manual");
+  };
 
   return {
     state,
@@ -113,6 +141,8 @@ export function useGameSession() {
     run,
     act,
     exportSave,
+    exportSaveSlot,
+    importSave,
     activeSlot,
     saveSlots,
     switchSaveSlot,

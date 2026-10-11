@@ -1,5 +1,9 @@
 # Capas de cidades e exploração de campo
 
+## 0.19.0 — partículas de batalha
+
+Dezoito folhas de efeitos originais FRLG, convertidas sem mudar índices/paletas, com índice 0 transparente. Total PNG: 14.398 bytes. Fonte `pret/pokefirered` congelada em `037335f4c725d7c9aecdac87066f2002b4bd7e14`; hashes da fonte/saída, dimensões e cortes por frame em `public/battle-effects/manifest.json`. Importador reproduzível em `scripts/import-battle-effects.py`. Nenhuma ROM ou desenho gerado usado. Trajetórias, tempos, proteção/cura e adaptação de Fairy são próprios do Pokébobo; não reproduzem todos os scripts de cada ataque do cartucho. [Créditos/termos](../public/battle-effects/README.md) e [FRLG-ASSETS](../licenses/FRLG-ASSETS.md).
+
 ## 0.18.0 — áudio local
 
 Vinte músicas e cinco fanfares de FireRed / LeafGreen via gravação publicada no YouTube, obtida com yt-dlp; 481 cries via Showdown cobrem todo o catálogo. MP3, manifesto com fonte/cortes/SHA-256, importador, auditoria PCM e créditos incluídos no build. Efeitos de ações são síntese original do Pokébobo, sem novos gráficos. Direitos das músicas/cries permanecem com os titulares, separados da licença do simulador. [Créditos e termos](../public/audio/README.md) · [Integração e orçamento](AUDIO.md).

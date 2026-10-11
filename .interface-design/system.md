@@ -72,3 +72,11 @@ Pokédex conserva rubi/LCD/fontes: três contagens, progresso regional em detail
 Cartão: canvas 1080×1350, carcaça rubi/lente, visor LCD e equipe 3×2 como foco, insígnias em oito encaixes. Fundo âmbar e estrela nas posições shiny. PNG local, QR de módulos inteiros/quiet zone, marca/endereço do jogo. Preview à esquerda e ações à direita no PC; uma coluna no celular, PNG/convite como CTAs. Modal mantém Fechar visível; botões de exportar/compartilhar com 48 px. Gerador começa com preparo, falha permite retry e canvas provisório evita publicar um resultado após fechar.
 
 Convite é uma decisão explícita: preserva slot ativo, permite selecionar outro e mostra origem, modo e seed antes de começar; jogador escolhe o próprio inicial. Uma seed manual informa que o draft continua sendo escolhido pelo jogador. Formato técnico/contador do RNG ficam fora da UI.
+
+## Batalha e backups — 0.19.0
+
+Manter a carcaça/rubi/LCD e escala de corpo da 0.18.1. Efeitos pixelados acompanham o corpo e deixam nomes/HP limpos; não ampliar caixas nem cobrir comandos. Movimento usa a duração de cada evento e cancela ao Pular; preferência reduzida evita partículas/translação. Pular ocupa a posição da velocidade só durante o turno, conservando os quatro comandos no mesmo lugar.
+
+Caderno em dialog nativo: três páginas com botões aria-pressed, descrição em details, fatos em dl e dois lados em campo. Quatro fatos por linha no PC, dois no celular; lados em uma coluna abaixo de 440 px. Valores positivos/negativos têm sinal além da cor. PP pertence à batalha atual; não misturar previsões de dano com fatos básicos.
+
+Backup: entrada de arquivo nativa, prévia compacta e três botões de slot com nome/estado. Priorizar primeiro vazio; ação de substituição nomeia o slot e oferece exportação do conteúdo atual. Erros mantêm a janela aberta. Cabeçalho sticky conserva Fechar/Escape e retorno de foco em listas extensas. Ações de 44 px, sem modal de confirmação extra.

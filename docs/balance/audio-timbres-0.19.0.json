@@ -1,0 +1,146 @@
+{
+  "browser": "155.0.4283.45",
+  "method": "OfflineAudioContext real, 48 kHz mono, cada receita isolada antes do mixer",
+  "recipes": [
+    {
+      "name": "attack",
+      "peak": 0.046248458325862885,
+      "rms": 0.0018196716911976893,
+      "nonzero": 4655,
+      "invalid": 0
+    },
+    {
+      "name": "attack-fire",
+      "peak": 0.07057740539312363,
+      "rms": 0.004627219625637509,
+      "nonzero": 9859,
+      "invalid": 0
+    },
+    {
+      "name": "attack-water",
+      "peak": 0.07228542119264603,
+      "rms": 0.0050385300513480545,
+      "nonzero": 9423,
+      "invalid": 0
+    },
+    {
+      "name": "attack-grass",
+      "peak": 0.05589284375309944,
+      "rms": 0.0036892909881713833,
+      "nonzero": 7823,
+      "invalid": 0
+    },
+    {
+      "name": "attack-electric",
+      "peak": 0.10398268699645996,
+      "rms": 0.006744257614665656,
+      "nonzero": 9925,
+      "invalid": 0
+    },
+    {
+      "name": "attack-ice",
+      "peak": 0.04956149682402611,
+      "rms": 0.0052467068007694155,
+      "nonzero": 9609,
+      "invalid": 0
+    },
+    {
+      "name": "attack-fighting",
+      "peak": 0.11916141957044601,
+      "rms": 0.007990783900240559,
+      "nonzero": 6566,
+      "invalid": 0
+    },
+    {
+      "name": "attack-poison",
+      "peak": 0.05902718007564545,
+      "rms": 0.0056690410965742595,
+      "nonzero": 8788,
+      "invalid": 0
+    },
+    {
+      "name": "attack-ground",
+      "peak": 0.09190014004707336,
+      "rms": 0.007538459994976185,
+      "nonzero": 10773,
+      "invalid": 0
+    },
+    {
+      "name": "attack-flying",
+      "peak": 0.09836968779563904,
+      "rms": 0.0047141005413993,
+      "nonzero": 7994,
+      "invalid": 0
+    },
+    {
+      "name": "attack-psychic",
+      "peak": 0.05891869217157364,
+      "rms": 0.007195682366351707,
+      "nonzero": 12234,
+      "invalid": 0
+    },
+    {
+      "name": "attack-bug",
+      "peak": 0.05249723419547081,
+      "rms": 0.004472723969072275,
+      "nonzero": 8391,
+      "invalid": 0
+    },
+    {
+      "name": "attack-rock",
+      "peak": 0.06934897601604462,
+      "rms": 0.0047218902909064026,
+      "nonzero": 8596,
+      "invalid": 0
+    },
+    {
+      "name": "attack-ghost",
+      "peak": 0.07392629981040955,
+      "rms": 0.006840367309688055,
+      "nonzero": 11699,
+      "invalid": 0
+    },
+    {
+      "name": "attack-dragon",
+      "peak": 0.07274515181779861,
+      "rms": 0.0061224037435817944,
+      "nonzero": 10568,
+      "invalid": 0
+    },
+    {
+      "name": "attack-dark",
+      "peak": 0.04876483976840973,
+      "rms": 0.004082524587609359,
+      "nonzero": 7762,
+      "invalid": 0
+    },
+    {
+      "name": "attack-steel",
+      "peak": 0.09609191864728928,
+      "rms": 0.006448538238368354,
+      "nonzero": 8832,
+      "invalid": 0
+    },
+    {
+      "name": "attack-fairy",
+      "peak": 0.04311937466263771,
+      "rms": 0.004720707086013935,
+      "nonzero": 12478,
+      "invalid": 0
+    },
+    {
+      "name": "guard",
+      "peak": 0.05336107313632965,
+      "rms": 0.005477760423341102,
+      "nonzero": 10428,
+      "invalid": 0
+    },
+    {
+      "name": "failure",
+      "peak": 0.04312902316451073,
+      "rms": 0.002733400349861567,
+      "nonzero": 4857,
+      "invalid": 0
+    }
+  ]
+}

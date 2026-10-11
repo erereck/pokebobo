@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { holdDirection, releaseDirection } from "./heldDirections.js";
 
 const keys = {
   ArrowUp: [0, -1],
@@ -15,7 +16,7 @@ export function useFieldControls(exploration, act) {
   const held = useRef(null);
   const lastSent = useRef(-1);
   const nextRepeat = useRef(0);
-  const pressed = useRef(new Set());
+  const pressed = useRef(new Map());
   const [isHolding, setIsHolding] = useState(false);
   useEffect(() => {
     latest.current = { exploration, act };
@@ -32,7 +33,9 @@ export function useFieldControls(exploration, act) {
     const blocked = () =>
       Boolean(
         document.querySelector("dialog[open]") ||
-          document.activeElement?.closest("input,textarea,select"),
+          document.activeElement?.closest(
+            'input,textarea,select,[contenteditable="true"]',
+          ),
       );
     const down = (event) => {
       const direction =
@@ -47,15 +50,18 @@ export function useFieldControls(exploration, act) {
         return;
       event.preventDefault();
       if (event.repeat) return;
-      pressed.current.add(event.key.toLowerCase());
+      held.current = holdDirection(
+        pressed.current,
+        event.key.toLowerCase(),
+        direction,
+      );
       setIsHolding(true);
-      held.current = { direction, key: event.key.toLowerCase() };
       move(...direction);
     };
     const up = (event) => {
-      pressed.current.delete(event.key.toLowerCase());
+      if (!pressed.current.has(event.key.toLowerCase())) return;
+      held.current = releaseDirection(pressed.current, event.key.toLowerCase());
       setIsHolding(pressed.current.size > 0);
-      if (held.current?.key === event.key.toLowerCase()) held.current = null;
     };
     const stop = () => {
       held.current = null;
@@ -92,15 +98,21 @@ export function useFieldControls(exploration, act) {
     press: (event, dx, dy) => {
       if (event.button !== 0) return;
       event.currentTarget.setPointerCapture(event.pointerId);
-      pressed.current.add(`pointer-${event.pointerId}`);
+      held.current = holdDirection(
+        pressed.current,
+        `pointer-${event.pointerId}`,
+        [dx, dy],
+      );
       setIsHolding(true);
-      held.current = { direction: [dx, dy], pointer: event.pointerId };
       move(dx, dy);
     },
     release: (event) => {
-      pressed.current.delete(`pointer-${event.pointerId}`);
+      if (!pressed.current.has(`pointer-${event.pointerId}`)) return;
+      held.current = releaseDirection(
+        pressed.current,
+        `pointer-${event.pointerId}`,
+      );
       setIsHolding(pressed.current.size > 0);
-      if (held.current?.pointer === event.pointerId) held.current = null;
     },
   };
 }

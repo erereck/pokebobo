@@ -75,6 +75,7 @@ export function battleSpriteLayout({
     transformOrigin: `${((left + right) / 2) * scale}px ${bottom * scale}px`,
     visibleWidth: (right - left) * scale,
     visibleHeight: (bottom - top) * scale,
+    visibleBottom: height * 0.17 + lift,
     geometryKey: key,
   };
 }

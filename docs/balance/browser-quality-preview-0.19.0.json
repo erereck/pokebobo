@@ -1,0 +1,312 @@
+{
+  "tag": "final-preview",
+  "base": "http://localhost:4174/pokebobo/",
+  "screens": [
+    {
+      "name": "registro-1280",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "golpes-1280",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "campo-1280",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "campo-boost-1280",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "registro-390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "golpes-390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "campo-390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "campo-boost-390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "registro-320",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "golpes-320",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "campo-320",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "campo-boost-320",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "registro-844",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "golpes-844",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "campo-844",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "campo-boost-844",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "direcoes-retomadas",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": [],
+      "broken": []
+    },
+    {
+      "name": "backup-invalido-1280",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "backup-preview-1280",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "slot-restaurado-1280",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "backup-invalido-390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "backup-preview-390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "slot-restaurado-390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "backup-invalido-320",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "backup-preview-320",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "slot-restaurado-320",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "backup-invalido-844",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "backup-preview-844",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "slot-restaurado-844",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    },
+    {
+      "name": "getter-storage-bloqueado",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": [
+        false
+      ],
+      "broken": []
+    }
+  ],
+  "flows": [
+    "caderno: três páginas, quatro visores, foco/Escape, boost real +2",
+    "direções seguradas: retoma direita ao soltar cima, voltar bloqueado até release, parada estável",
+    "restaurar backup: inválido sem alteração, prévia, slot vazio 2, slot 1 intacto, reload e download real em quatro visores",
+    "getter de storage bloqueado: nova jornada em memória, aviso verdadeiro e exportação real"
+  ],
+  "errors": [],
+  "network": []
+}

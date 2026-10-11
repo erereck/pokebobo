@@ -1,6 +1,6 @@
 {
   "name": "pokebobo",
-  "version": "0.18.1",
+  "version": "0.19.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,7 +11,8 @@
     "standalone": "npm run build && node scripts/standalone.mjs",
     "check": "node scripts/check-architecture.mjs",
     "balance:audit": "node scripts/audit-progression.mjs",
-    "verify": "npm run check && npm test && npm run build",
+    "test:browser-simulator": "node scripts/verifyBrowserSimulator.mjs",
+    "verify": "npm run check && npm test && npm run test:browser-simulator && npm run build",
     "balance:monte-carlo": "node scripts/monte-carlo.mjs"
   },
   "dependencies": {
