@@ -1,0 +1,172 @@
+.hall-share-button {
+  margin-top: 12px;
+  min-height: 44px;
+}
+.share-journey-dialog {
+  width: min(980px, calc(100% - 24px));
+}
+.share-journey-dialog > .modal-head,
+.challenge-dialog > .modal-head {
+  position: sticky;
+  top: -20px;
+  z-index: 2;
+  background: var(--lcd);
+  padding-block: 20px 12px;
+}
+.share-journey-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(240px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.journey-card-preview {
+  min-width: 0;
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  background: var(--lcd-dim);
+  padding: 8px;
+  border-radius: 10px;
+}
+.journey-card-preview canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.journey-card-preview canvas[hidden] {
+  display: none;
+}
+.journey-card-preview > p,
+.journey-card-preview > div {
+  text-align: center;
+  padding: 16px;
+}
+.share-journey-actions {
+  min-width: 0;
+}
+.share-journey-actions h3 {
+  margin: 8px 0 12px;
+  font: 700 30px/1.1 var(--display);
+}
+.share-journey-actions > p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.share-journey-actions > .button {
+  margin-bottom: 8px;
+  min-height: 48px;
+}
+.share-link-label {
+  display: block;
+  margin-top: 8px;
+  color: var(--ink-soft);
+  font: 700 10px var(--display);
+}
+.share-link-label input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin-top: 4px;
+  min-height: 44px;
+  background: var(--lcd-dim);
+  font: 400 12px var(--body);
+}
+.share-journey-actions .share-feedback {
+  min-height: 24px;
+  margin: 8px 0;
+  color: var(--hp);
+  font-weight: 600;
+}
+.invitation-input {
+  margin: 12px 0;
+  padding: 8px 0;
+  border-block: 1px solid var(--lcd-line);
+}
+.invitation-input summary {
+  min-height: 44px;
+  align-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.invitation-input summary svg {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.invitation-input label {
+  display: block;
+  font: 700 10px var(--display);
+  color: var(--ink-soft);
+  margin: 8px 0;
+}
+.invitation-field {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.invitation-field input {
+  min-width: 0;
+  flex: 1;
+  font-size: 14px;
+  min-height: 44px;
+  width: 100%;
+}
+.invitation-field .icon-button {
+  flex-shrink: 0;
+}
+.invitation-status,
+.invitation-error {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.invitation-status {
+  color: var(--ink-soft);
+}
+.invitation-error {
+  color: var(--danger);
+}
+.challenge-dialog form > label {
+  display: block;
+  margin-bottom: 4px;
+  font: 700 11px var(--display);
+}
+.challenge-dialog form > input {
+  width: 100%;
+  min-height: 44px;
+}
+@media (max-width: 650px) {
+  .share-journey-dialog {
+    padding: 12px;
+    width: calc(100% - 16px);
+  }
+  .share-journey-dialog > .modal-head {
+    top: -12px;
+    padding-top: 12px;
+  }
+  .share-journey-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .journey-card-preview canvas {
+    width: auto;
+    max-width: 100%;
+    max-height: 62dvh;
+  }
+  .share-journey-actions h3 {
+    font-size: 24px;
+  }
+  .share-journey-actions h3 br {
+    display: none;
+  }
+  .invitation-field input,
+  .challenge-dialog input,
+  .share-link-label input {
+    font-size: 16px;
+  }
+}

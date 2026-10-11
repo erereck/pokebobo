@@ -1,0 +1,252 @@
+{
+  "url": "http://localhost:4174/pokebobo/",
+  "reports": [
+    {
+      "name": "pokedex-comparacao-1280",
+      "width": 1280,
+      "height": 800,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Comparar"
+    },
+    {
+      "name": "pokedex-filtros-1280",
+      "width": 1280,
+      "height": 800,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Limpar filtros"
+    },
+    {
+      "name": "pokedex-regioes-1280",
+      "width": 1280,
+      "height": 800,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Progresso por região Catálogo disponível no jogo"
+    },
+    {
+      "name": "compartilhar-jornada-1280",
+      "width": 1280,
+      "height": 800,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "pokedex-comparacao-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Comparar"
+    },
+    {
+      "name": "pokedex-filtros-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Limpar filtros"
+    },
+    {
+      "name": "pokedex-regioes-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Progresso por região Catálogo disponível no jogo"
+    },
+    {
+      "name": "compartilhar-jornada-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "pokedex-comparacao-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Comparar"
+    },
+    {
+      "name": "pokedex-filtros-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Limpar filtros"
+    },
+    {
+      "name": "pokedex-regioes-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Progresso por região Catálogo disponível no jogo"
+    },
+    {
+      "name": "compartilhar-jornada-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "pokedex-comparacao-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Comparar"
+    },
+    {
+      "name": "pokedex-filtros-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Limpar filtros"
+    },
+    {
+      "name": "pokedex-regioes-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Progresso por região Catálogo disponível no jogo"
+    },
+    {
+      "name": "compartilhar-jornada-844",
+      "width": 844,
+      "height": 390,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "pokedex-vazia-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    },
+    {
+      "name": "pokedex-catalogo-familia-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "pokébobo.POKÉDEX DE CAMPO v0.17.0PokédexTela cheiaHallAjudaOpções SISTEMA ONLINE"
+    },
+    {
+      "name": "convite-novo-jogador-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": ""
+    },
+    {
+      "name": "convite-regiao-pronta-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "pokébobo.POKÉDEX DE CAMPO v0.17.0PokédexTela cheiaHallAjudaOpçõesSua origemSeu p"
+    },
+    {
+      "name": "convite-nova-jornada-390",
+      "width": 390,
+      "height": 844,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "pokébobo.POKÉDEX DE CAMPO v0.17.0PokédexTela cheiaHallAjudaOpçõesPalletSEM. 10/8"
+    },
+    {
+      "name": "convite-protege-slot-320",
+      "width": 320,
+      "height": 568,
+      "docOverflow": false,
+      "dialogOverflow": false,
+      "broken": [],
+      "active": "Fechar"
+    }
+  ],
+  "flows": [
+    {
+      "name": "colecao-cartao-convite-1280",
+      "download": "pokebobo-run-1-seed-1234.png",
+      "link": "https://erereck.github.io/pokebobo/#desafio=PB1.ya.c.1e3pa8z.pallet~sandgem~oreburgh~azalea~hearthome~celadon~driftveil~olivine~cinnabar~blackthorn",
+      "runPreserved": true
+    },
+    {
+      "name": "colecao-cartao-convite-390",
+      "download": "pokebobo-run-1-seed-1234.png",
+      "link": "https://erereck.github.io/pokebobo/#desafio=PB1.ya.c.1e3pa8z.pallet~sandgem~oreburgh~azalea~hearthome~celadon~driftveil~olivine~cinnabar~blackthorn",
+      "runPreserved": true
+    },
+    {
+      "name": "colecao-cartao-convite-320",
+      "download": "pokebobo-run-1-seed-1234.png",
+      "link": "https://erereck.github.io/pokebobo/#desafio=PB1.ya.c.1e3pa8z.pallet~sandgem~oreburgh~azalea~hearthome~celadon~driftveil~olivine~cinnabar~blackthorn",
+      "runPreserved": true
+    },
+    {
+      "name": "colecao-cartao-convite-844",
+      "download": "pokebobo-run-1-seed-1234.png",
+      "link": "https://erereck.github.io/pokebobo/#desafio=PB1.ya.c.1e3pa8z.pallet~sandgem~oreburgh~azalea~hearthome~celadon~driftveil~olivine~cinnabar~blackthorn",
+      "runPreserved": true
+    },
+    {
+      "name": "amigo-link-inicial-pronto-jornada-reload",
+      "seed": 1234,
+      "route": [
+        "pallet",
+        "sandgem",
+        "oreburgh",
+        "azalea",
+        "hearthome",
+        "celadon",
+        "driftveil",
+        "olivine",
+        "cinnabar",
+        "blackthorn"
+      ],
+      "starter": "Charmander"
+    },
+    {
+      "name": "convite-protege-slot-usa-slot2",
+      "originalPreserved": true
+    }
+  ],
+  "errors": [],
+  "network": []
+}

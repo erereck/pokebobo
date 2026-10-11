@@ -56,3 +56,11 @@ Tela cheia imediatamente após Pokédex, com estado da API nativa. Movimento seg
 ## Escala de batalha — 0.16.0
 
 Corpos preservam proporção e mantêm escala fixa no ciclo. Tabela por espécie/estilo/lado; union de pixels visíveis de todos os quadros. Apoio no centro da plataforma a 17% da altura da caixa; costas com perspectiva 1,12. Máximo de largura 90% e altura 81% menos elevação, piso legível 16 px subordinado ao espaço disponível. Referência responsive 160/140/94/84 px. Não dimensionar todos os sprites por percentuais semelhantes da caixa nem usar metros como única regra. Metadados fixos + ResizeObserver/load; movimentos de ataques continuam em transform/opacity. Fallback deve usar geometria da fonte efetivamente carregada.
+
+## Coleção e cartões — 0.17.0
+
+Pokédex conserva rubi/LCD/fontes: três contagens, progresso regional em details, filtros de estado e quatro selects nativos de 44 px; dois selects por linha no celular. Lista com imagem sob demanda e ficha em coluna no PC, uma coluna no celular; cabeçalho sticky e Fechar visível ao rolar. Normal/shiny com marca textual de registro e Comparar só quando ambas existem. Estágio 120 px por sprite, duas metades no comparativo; brilho âmbar identifica raridade.
+
+Cartão: canvas 1080×1350, carcaça rubi/lente, visor LCD e equipe 3×2 como foco, insígnias em oito encaixes. Fundo âmbar e estrela nas posições shiny. PNG local, QR de módulos inteiros/quiet zone, marca/endereço do jogo. Preview à esquerda e ações à direita no PC; uma coluna no celular, PNG/convite como CTAs. Modal mantém Fechar visível; botões de exportar/compartilhar com 48 px. Gerador começa com preparo, falha permite retry e canvas provisório evita publicar um resultado após fechar.
+
+Convite é uma decisão explícita: preserva slot ativo, permite selecionar outro e mostra origem, modo e seed antes de começar; jogador escolhe o próprio inicial. Uma seed manual informa que o draft continua sendo escolhido pelo jogador. Formato técnico/contador do RNG ficam fora da UI.

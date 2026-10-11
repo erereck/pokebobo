@@ -1,5 +1,32 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## 0.17.0 — Histórias para compartilhar · 10/10/2026
+
+As prioridades 4 e 8 escolhidas pelo usuário estão implementadas: uma Pokédex para completar e jornadas prontas para divulgar.
+
+- **Coleção:** 485 espécies/formas únicas, progresso pelas oito regiões do catálogo, registros faltantes, busca por nome/número, filtros combináveis de região/tipo/variante e ordem por número/nome/últimas descobertas. Formas de Alola/Galar pertencem à região da forma; aliases não inflam contagens.
+- **Normal e shiny:** variantes registradas separadamente. Comparar aparece quando ambas foram obtidas, com sprites reais lado a lado e jornadas por variante. Ter só um shiny não concede um registro normal. A família evolutiva mostra os oito ramos de Eevee, com navegação que resolve filtros incompatíveis.
+- **Divulgação:** Compartilhar jornada na tela final e em cada entrada do Hall. Cartão PNG 1080×1350 com treinador, resultado, equipe/reserva, shinies, níveis, insígnias, modo, semana e seed. QR local e convite copiável; compartilhamento de arquivo quando o navegador oferece. Sprites/fontes locais existentes, nenhuma imagem externa para compor o cartão.
+- **Desafios:** link guarda dez cidades, modo, seed e RNG anterior à primeira rota. Amigo escolhe seu inicial e começa uma aventura nova com a mesma configuração; suas decisões podem mudar o resultado. Seed numérica também aceita: ofertas reproduzíveis entre slots, sem depender do número de runs anteriores. Slots em andamento não podem ser sobrescritos pelo convite.
+- **Saves e versões:** schema 4 preservado, sem migração destrutiva. Novos registros guardam `challengeStartRng`; os antigos compartilham as cidades/seed quando existem, informando a ausência do sorteio inicial. Históricos incompletos continuam exportando cartão com QR para a página inicial, sem inventar equipe, níveis ou capturas.
+
+### Validação
+
+145 testes e build para `/pokebobo/`; auditoria do orçamento de níveis preservada. Treze testes novos de coleção/convites e seed manual: combinações de filtros, aliases/regionais, variantes/slots, família evolutiva, PNG/modelo antigo, codecs/rejeições, origem de RNG, reload/Hall, três modos e um turno real restaurado. Conferência local em 1280×800, 390×844, 320×568 e 844×390: 31 registros, download real dos PNGs, clipboard/fallback, slots preservados, convite → inicial → região → carreira → reload. Fluxos nativos de compartilhar foram simulados com sucesso/cancelamento/falha; uma imagem inválida foi injetada e recuperada por Tentar novamente. Zero erros inesperados de console/rede ou overflow horizontal. Relatórios em `docs/balance/browser-sharing*-0.17.0.json`.
+
+Os mesmos 31 registros passaram no preview do build sob `/pokebobo/`, com fontes, imagens, import dinâmico e convites resolvidos pelo caminho da hospedagem.
+
+QR decodificado do PNG inteiro em 1080, 720, 540 e 390 px de largura, sempre com o convite correto. Reduções nearest-neighbor sem compressão JPEG; isso não substitui verificar a imagem depois de cada rede social recomprimir. Fontes/licenças do QR incluídas no build. Gerador/QR em chunk carregado apenas ao abrir um cartão.
+
+### Limites e próximas sugestões
+
+- Sem teste em aparelho físico/iOS ou envio real a WhatsApp/Instagram; a exportação/download é real, os testes de Web Share usam mocks. PNG + link continuam disponíveis quando a API nativa não existe. Catálogo mostra o recorte jogável, não uma Pokédex nacional completa.
+- Convites não são multiplayer, ranking ou replay de decisões. Um modo recebido pode ser jogado nessa jornada mesmo sem título local; não desbloqueia os modos para aventuras comuns. Saves continuam locais e editáveis pelo dono do aparelho.
+- O formato atual é PB1. Se regras/dados iniciais mudarem de forma incompatível no futuro, incrementar o formato e rejeitar com aviso; não prometer que a mesma seed atravessa versões arbitrárias.
+- Depois destas prioridades, ficam os outros seis itens combinados: áudio; efeitos próprios dos golpes; exploração/segredos mais ricos; IA estratégica; balanceamento com campanhas humanas; celular físico/desempenho/controles. Minha primeira sugestão para a rodada seguinte é áudio e efeitos dos golpes.
+
+Guia completo: [POKEDEX-E-COMPARTILHAMENTO.md](POKEDEX-E-COMPARTILHAMENTO.md).
+
 ## Entrega de 10/10/2026 — 0.16.0: Batalha na medida
 
 **Pedido:** melhorar o tamanho dos Pokémon em batalha, especialmente Pidgey gigante, aplicando a proposta de escala visual por espécie, geometria visível, estabilidade e apoio. Integração direta permanece autorizada; último update da noite.

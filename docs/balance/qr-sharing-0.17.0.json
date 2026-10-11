@@ -1,0 +1,25 @@
+{
+  "resize": "nearest-neighbor, PNG sem compressão JPEG",
+  "results": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "decoded": "https://erereck.github.io/pokebobo/#desafio=PB1.ya.c.1e3pa8z.pallet~sandgem~oreburgh~azalea~hearthome~celadon~driftveil~olivine~cinnabar~blackthorn"
+    },
+    {
+      "width": 720,
+      "height": 900,
+      "decoded": "https://erereck.github.io/pokebobo/#desafio=PB1.ya.c.1e3pa8z.pallet~sandgem~oreburgh~azalea~hearthome~celadon~driftveil~olivine~cinnabar~blackthorn"
+    },
+    {
+      "width": 540,
+      "height": 675,
+      "decoded": "https://erereck.github.io/pokebobo/#desafio=PB1.ya.c.1e3pa8z.pallet~sandgem~oreburgh~azalea~hearthome~celadon~driftveil~olivine~cinnabar~blackthorn"
+    },
+    {
+      "width": 390,
+      "height": 488,
+      "decoded": "https://erereck.github.io/pokebobo/#desafio=PB1.ya.c.1e3pa8z.pallet~sandgem~oreburgh~azalea~hearthome~celadon~driftveil~olivine~cinnabar~blackthorn"
+    }
+  ]
+}

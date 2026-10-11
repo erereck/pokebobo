@@ -1,12 +1,19 @@
 import { CAMPAIGN_RULES } from "../config/campaign.js";
 import { ORIGINS } from "../data/origins.js";
 import { sample } from "../random/sample.js";
+import {
+  validateRegionChallenge,
+  challengeRoute,
+} from "../world/regionChallenge.js";
 
 export function handleNew(s, action, state) {
   let r = s.run;
   if (action.type === "NEW") {
-    const mode =
-      s.meta.wins && ["rush", "nuzlocke"].includes(action.mode)
+    const challenge = validateRegionChallenge(action.challenge);
+    if (action.challenge && !challenge) return state;
+    const mode = challenge
+      ? challenge.mode
+      : s.meta.wins && ["rush", "nuzlocke"].includes(action.mode)
         ? action.mode
         : "normal";
     const moveLearningMode = ["manual", "automatic"].includes(
@@ -23,7 +30,7 @@ export function handleNew(s, action, state) {
       name: (action.name || "Treinador").trim().slice(0, 24) || "Treinador",
       mode,
       moveLearningMode,
-      rng: action.seed >>> 0 || Date.now() >>> 0 || 1,
+      rng: challenge?.seed || action.seed >>> 0 || Date.now() >>> 0 || 1,
       phase: "origin",
       route: [],
       offers: [],
@@ -63,8 +70,16 @@ export function handleNew(s, action, state) {
     };
     r.seed = r.rng;
     r.offers = (
-      s.meta.runs === 1 ? ORIGINS.slice(0, 3) : sample(r, ORIGINS, 3)
+      s.meta.runs === 1 && !action.fixedSeedDraft
+        ? ORIGINS.slice(0, 3)
+        : sample(r, ORIGINS, 3)
     ).map((x) => x.id);
+    if (challenge) {
+      r.challenge = challenge;
+      r.phase = "starter";
+      r.route = challengeRoute(challenge).slice(0, 1);
+      r.offers = [];
+    }
     return s;
   }
   return state;

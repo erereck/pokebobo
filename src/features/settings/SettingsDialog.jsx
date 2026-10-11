@@ -1,6 +1,6 @@
 import { VERSION, RELEASE_NAME } from "../../app/version.js";
 import { Modal } from "../../components/ui/Modal.jsx";
-import { Download, Trophy } from "lucide-react";
+import { Download, Trophy, Compass } from "lucide-react";
 import { SaveSlots } from "./SaveSlots.jsx";
 import { BattleSpriteOptions } from "./BattleSpriteOptions.jsx";
 
@@ -15,6 +15,7 @@ export function SettingsDialog({
   spriteStyle,
   changeSpriteStyle,
   spritePreferenceSaved,
+  onChallenge,
 }) {
   return (
     <Modal title="Opções e progresso" onClose={() => setModal(null)}>
@@ -23,6 +24,9 @@ export function SettingsDialog({
         onChange={changeSpriteStyle}
         saved={spritePreferenceSaved}
       />
+      <button className="button secondary full" onClick={onChallenge}>
+        <Compass size={18} /> Jogar desafio de um amigo
+      </button>
       <SaveSlots
         activeSlot={activeSlot}
         slots={saveSlots}

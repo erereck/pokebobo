@@ -1,5 +1,13 @@
 # Histórico
 
+## 0.17.0 — Histórias para compartilhar · 10/10/2026
+
+- Pokédex com 485 espécies/formas únicas, progresso por região, filtros combináveis e registros faltantes. Normal/shiny separados, comparação lado a lado e jornadas por variante. Família evolutiva completa, incluindo os oito destinos de Eevee; formas regionais usam sprites próprios.
+- Cartão PNG 1080×1350 em Compartilhar jornada, na tela final e no Hall: equipe/reserva, shinies, níveis, resultado, insígnias, semana, modo, seed e QR para o jogo. Download, convite copiável e compartilhamento nativo de arquivo quando disponível; falha/cancelamento com fallback.
+- Convite PB1 traz região e modo, além da seed/RNG inicial. Amigo escolhe inicial; resultados continuam dependendo das decisões. Slots ativos protegidos, origem do RNG guardada em novos históricos e fallback honesto para antigos. Seed digitada oferece draft igual entre slots com históricos diferentes.
+- Janela da Pokédex mantém Fechar visível ao rolar; consultas da família resolvem filtros que ocultavam o Pokémon selecionado. Imagens da lista carregam sob demanda. QR só entra no navegador ao abrir um cartão; licenças MIT incluídas no build.
+- 145 testes, auditoria de progressão e build web; 31 registros de navegador nos quatro visores, PNGs exportados e QR decodificado após reduções. Sem standalone. Relatório e limites em VALIDACAO e docs/ROADMAP.
+
 ## 0.16.0 — Batalha na medida · 10/10/2026
 
 - Escala visual por espécie, estilo 2D/3D e frente/costas. Pidgey e pequenos deixam de preencher quase toda a caixa; evoluções ficam progressivamente maiores. Ajustes próprios para gigantes e espécies compridas.

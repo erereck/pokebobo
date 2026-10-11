@@ -9,6 +9,17 @@ export function HelpDialog({ setModal }) {
       <div className="help-content">
         <h3>Controles da Pokédex</h3>
         <p>
+          A Pokédex reúne os registros dos três slots. Consulte o progresso por
+          região e combine filtros de tipo e variante; quando registrar normal e
+          shiny da mesma espécie, use Comparar na ficha.
+        </p>
+        <p>
+          Ao terminar uma jornada, use Compartilhar jornada para baixar o cartão
+          ou copiar o convite. O QR e o link levam às mesmas cidades e modo; seu
+          amigo escolhe o inicial. Você também pode colar o convite ou uma seed
+          em Nova aventura ou Opções → Jogar desafio de um amigo.
+        </p>
+        <p>
           Use as cinco teclas inferiores para abrir Jornada, Equipe, Mapa,
           Mochila e Diário. Durante uma luta, Jornada vira Batalha para você
           voltar aos comandos.
@@ -194,6 +205,24 @@ export function HelpDialog({ setModal }) {
           ·{" "}
           <a href="https://lucide.dev" target="_blank" rel="noreferrer">
             Lucide (ISC)
+          </a>
+          .
+        </p>
+        <p>
+          <a
+            href={`${import.meta.env.BASE_URL}licenses/qrcode-MIT.txt`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            QR code: node-qrcode (MIT)
+          </a>{" "}
+          ·{" "}
+          <a
+            href={`${import.meta.env.BASE_URL}licenses/dijkstrajs-MIT.txt`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            dijkstrajs (MIT)
           </a>
           .
         </p>
