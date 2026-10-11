@@ -30,4 +30,6 @@ Referências de implementação: [ciclo de service workers](https://developer.mo
 
 ## Verificação
 
+O manifesto omite `id` explícito: o navegador usa a URL inicial como identidade, com a pasta de publicação. `id: "./"` não serve aqui porque é resolvido contra a origem e identificaria a raiz do domínio. A conferência nativa exige identidade, URL inicial e escopo iguais ao endereço do jogo; o preview também foi reconhecido como instalável sem erro de manifesto.
+
 Testes em `field-layouts.test.js`, `public-conditions.test.js`, `offline-worker.test.js` e `offline-client.test.js` cobrem conectividade/seed/save, quadros/hashes, condições de batalhas reais, camadas públicas, limites de cache, leituras concorrentes, Range, publicação incompleta, conservação de caches de outros apps, aquecimento após controle e rede aparente sem acesso. Evidências reais de navegador e limites de aparelhos estão em [VALIDACAO](../VALIDACAO.md). Não equivalem a uma campanha humana ou instalação em telefone físico.
