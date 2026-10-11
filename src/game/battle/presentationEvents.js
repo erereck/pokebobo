@@ -16,6 +16,16 @@ const STATS = {
   accuracy: "precisão",
   evasion: "evasão",
 };
+const GUARDS = new Set([
+  "Protect",
+  "Detect",
+  "King's Shield",
+  "Spiky Shield",
+  "Baneful Bunker",
+  "Obstruct",
+  "Wide Guard",
+  "Quick Guard",
+]);
 
 const sideOf = (ref = "") => (ref.startsWith("p1") ? "player" : "enemy");
 const targetId = (ref = "") => ref.replace(/^p[12][a-z]?: /, "");
@@ -45,6 +55,7 @@ export function presentationEvents(log) {
   const lastMoves = new Map();
   const futureMoves = new Map();
   const futureNames = new Set(["Future Sight", "Doom Desire"]);
+  let visualMove;
 
   const named = (ref = "") => {
     const id = targetId(ref);
@@ -77,6 +88,7 @@ export function presentationEvents(log) {
     }
 
     if (type === "move") {
+      const recipient = p[4] || "";
       lastMoves.set(ref, {
         name: p[3],
         targetSide: p[4]
@@ -88,7 +100,47 @@ export function presentationEvents(log) {
       push(index, "move", {
         side,
         targetId: id,
+        move: p[3],
+        targetSide: recipient ? sideOf(recipient) : side,
+        recipientId: targetId(recipient) || id,
         text: `${named(ref)} usou ${p[3]}.`,
+      });
+      visualMove = events.at(-1);
+      return;
+    }
+
+    if (type === "-prepare" && visualMove) {
+      visualMove.outcome = "prepare";
+      return;
+    }
+    if (
+      type === "-activate" &&
+      GUARDS.has((p[3] || "").replace(/^move: /, ""))
+    ) {
+      const guard = (p[3] || "").replace(/^move: /, "");
+      if (visualMove && visualMove.targetSide === side)
+        visualMove.outcome = "blocked";
+      push(index, "message", {
+        side,
+        targetId: id,
+        text: `${named(ref)} bloqueou o golpe com ${guard}.`,
+      });
+      return;
+    }
+    if (type === "cant") {
+      const reason =
+        {
+          slp: "está dormindo",
+          par: "ficou paralisado",
+          frz: "está congelado",
+          flinch: "recuou",
+          recharge: "precisa recarregar",
+          "move: Taunt": "não pode usar esse golpe de status sob provocação",
+        }[p[3]] || "não conseguiu agir";
+      push(index, "message", {
+        side,
+        targetId: id,
+        text: `${named(ref)} ${reason}.`,
       });
       return;
     }
@@ -108,6 +160,7 @@ export function presentationEvents(log) {
       return;
     }
     if (type === "-end" && futureNames.has(futureName)) {
+      visualMove = null;
       futureMoves.delete(side);
       push(index, "futurehit", {
         side,
@@ -118,6 +171,7 @@ export function presentationEvents(log) {
       return;
     }
     if (type === "-fail") {
+      if (visualMove) visualMove.outcome = "fail";
       const previous = lastMoves.get(ref);
       push(index, "message", {
         text:
@@ -130,10 +184,24 @@ export function presentationEvents(log) {
     }
 
     if (type === "-damage") {
+      const source = p
+        .slice(4)
+        .find((part) => part.startsWith("[from] "))
+        ?.slice(7);
+      const cause = {
+        brn: "queimadura",
+        psn: "veneno",
+        tox: "veneno",
+        confusion: "confusão",
+        "move: Leech Seed": "Leech Seed",
+        Sandstorm: "tempestade de areia",
+        Hail: "granizo",
+      }[source];
       push(index, "damage", {
         side,
         targetId: id,
         health: parseHealth(p[3]),
+        ...(cause ? { text: `${named(ref)} sofreu dano de ${cause}.` } : {}),
       });
       return;
     }
@@ -185,6 +253,8 @@ export function presentationEvents(log) {
       return;
     }
     if (type === "-immune") {
+      if (visualMove && visualMove.targetSide === side)
+        visualMove.outcome = "immune";
       push(index, "message", { text: "Não teve efeito." });
       return;
     }
@@ -193,17 +263,24 @@ export function presentationEvents(log) {
       return;
     }
     if (type === "-miss") {
+      if (visualMove) visualMove.outcome = "miss";
       push(index, "message", { text: "O golpe errou!" });
       return;
     }
     if (type === "-boost") {
       push(index, "message", {
+        side,
+        targetId: id,
+        change: "boost",
         text: `${named(ref)} melhorou ${STATS[p[3]] || p[3]}.`,
       });
       return;
     }
     if (type === "-unboost") {
       push(index, "message", {
+        side,
+        targetId: id,
+        change: "unboost",
         text: `${named(ref)} perdeu ${STATS[p[3]] || p[3]}.`,
       });
       return;

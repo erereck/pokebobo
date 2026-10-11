@@ -9,11 +9,13 @@ function effectClass(effect, side) {
 }
 
 export function BattleArena({ r, snap, current, effect, spriteStyle }) {
+  const arenaRef = useRef(null);
+  useBattleMotion(arenaRef, effect);
   const showEnemy = combatantSpriteVisible(snap.foe, effect, "enemy");
   const showPlayer = combatantSpriteVisible(current, effect, "player");
 
   return (
-    <div className="arena">
+    <div className="arena" ref={arenaRef}>
       <div className="arena-scenery">
         <RouteCover place={r.inLeague ? { id: "indigo" } : city(r)} />
       </div>
@@ -43,6 +45,10 @@ export function BattleArena({ r, snap, current, effect, spriteStyle }) {
         />
       </div>
       <div className="arena-floor" />
+      <BattleEffects effect={effect} arenaRef={arenaRef} />
     </div>
   );
 }
+import { useRef } from "react";
+import { BattleEffects } from "./BattleEffects.jsx";
+import { useBattleMotion } from "./useBattleMotion.js";

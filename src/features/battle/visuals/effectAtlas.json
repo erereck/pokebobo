@@ -1,0 +1,268 @@
+{
+  "types": {
+    "Normal": "circle_impact",
+    "Fire": "fire",
+    "Water": "bubble",
+    "Grass": "razor_leaf",
+    "Electric": "electricity",
+    "Ice": "ice_crystals_0",
+    "Fighting": "punch_impact",
+    "Poison": "poison_bubble",
+    "Ground": "rocks",
+    "Flying": "air_wave",
+    "Psychic": "ring",
+    "Bug": "needle",
+    "Rock": "rocks",
+    "Ghost": "shadow_ball",
+    "Dragon": "blue_flames",
+    "Dark": "claw_slash",
+    "Steel": "cross_impact",
+    "Fairy": "blue_star"
+  },
+  "sheets": {
+    "fire": {
+      "file": "fire.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 8,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "bubble": {
+      "file": "bubble.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 1,
+      "frames": 3,
+      "sequence": [
+        0,
+        1,
+        2
+      ]
+    },
+    "electricity": {
+      "file": "electricity.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 4,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "ice_crystals_0": {
+      "file": "ice_crystals_0.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ]
+    },
+    "razor_leaf": {
+      "file": "razor_leaf.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 2,
+      "frames": 2,
+      "sequence": [
+        0,
+        1
+      ]
+    },
+    "shadow_ball": {
+      "file": "shadow_ball.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ]
+    },
+    "rocks": {
+      "file": "rocks.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 6,
+      "sequence": [
+        0
+      ]
+    },
+    "poison_bubble": {
+      "file": "poison_bubble.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 1,
+      "frames": 3,
+      "sequence": [
+        0,
+        1,
+        2
+      ]
+    },
+    "air_wave": {
+      "file": "air_wave.png",
+      "frame": [
+        32,
+        16
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ]
+    },
+    "ring": {
+      "file": "ring.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 1,
+      "frames": 3,
+      "sequence": [
+        0,
+        1,
+        2
+      ]
+    },
+    "needle": {
+      "file": "needle.png",
+      "frame": [
+        16,
+        16
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ]
+    },
+    "punch_impact": {
+      "file": "punch_impact.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ]
+    },
+    "blue_flames": {
+      "file": "blue_flames.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 2,
+      "sequence": [
+        0,
+        1
+      ]
+    },
+    "claw_slash": {
+      "file": "claw_slash.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 5,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "cross_impact": {
+      "file": "cross_impact.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ]
+    },
+    "blue_star": {
+      "file": "blue_star.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 7,
+      "sequence": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "circle_impact": {
+      "file": "circle_impact.png",
+      "frame": [
+        8,
+        8
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ]
+    },
+    "impact": {
+      "file": "impact.png",
+      "frame": [
+        32,
+        32
+      ],
+      "columns": 1,
+      "frames": 1,
+      "sequence": [
+        0
+      ]
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { browserStorage } from "../../shared/browserStorage.js";
 import { GameAudioContext } from "./AudioContext.js";
 import { AudioEngine } from "./AudioEngine.js";
 import {
@@ -13,7 +14,7 @@ import { battleVictory } from "../../game/selectors/battleVictory.js";
 
 export function AudioProvider({ run, tab, modal, slot, children }) {
   const [preferences, setPreferences] = useState(() =>
-    readAudioPreferences(localStorage, tracks),
+    readAudioPreferences(browserStorage, tracks),
   );
   const [saved, setSaved] = useState(true);
   const [status, setStatus] = useState({
@@ -33,7 +34,7 @@ export function AudioProvider({ run, tab, modal, slot, children }) {
     );
     prefs.current = next;
     setPreferences(next);
-    setSaved(writeAudioPreferences(localStorage, next));
+    setSaved(writeAudioPreferences(browserStorage, next));
     engine.current?.setPreferences(next);
   }, []);
   const advance = useCallback(

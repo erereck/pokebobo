@@ -1,5 +1,15 @@
 # Onde editar
 
+## Jornada mais viva — 0.19.0
+
+- Golpes/partículas: `features/battle/visuals/`, `BattleEffects.jsx` e `useBattleMotion.js`. Protocolo em `game/battle/presentationEvents.js`; não consumir RNG ou antecipar HP na animação. Fonte local/importador em `public/battle-effects` e `scripts/import-battle-effects.py`.
+- Caderno: `BattleNotebook.jsx`, `moveGuide.js`, `styles/features/battle-notebook.css`; fatos Gen 8, estado público e textos em português. Não importar UI em game.
+- Cancelamento/Pular/navegação/reload: `useBattlePresentation.js`, `turnPresentation.js`, `app/App.jsx` e `useAutosave.js`. Preservar comando único e gravar antes de pagehide.
+- Backups: `game/persistence/importSave.js`, `features/settings/ImportSaveDialog.jsx`, `app/hooks/useGameSession.js`, `styles/features/backups.css`. Testar arquivo inválido, troca de slot, quota e replay; guia em [BATALHAS-E-BACKUPS](BATALHAS-E-BACKUPS.md).
+- Preferências/storage negado: `shared/browserStorage.js` e `app/preferences/battleSpeed.js`. Acesso ao getter fica dentro das operações já protegidas; não retornar sucesso de gravação em memória.
+- Direções simultâneas: `features/encounters/heldDirections.js`/`useFieldControls.js`; soltar a última retoma a anterior, blur/janela/hidden limpa tudo.
+- Bundle: `scripts/browserSimulatorPlugin.mjs`, `checkCompiledLearnsets.mjs` e `verifyBrowserSimulator.mjs`. Execute `npm run verify`, que também testa o motor empacotado; Node conserva dados completos para gerar catálogo.
+
 ## Presença na arena — 0.18.1
 
 Referência da caixa, piso do 3D e limite comum normal/shiny em `components/pokemon/battleSpriteLayout.js`; medição em `features/battle/BattlePokemonSprite.jsx`. Não há mais --battle-sprite-limit nos breakpoints. Tabelas/imagens são as mesmas, sem mudanças em gameplay. [Guia atual](ESCALA-DOS-SPRITES.md); testes em battle-sprite-scale.test.js.

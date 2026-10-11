@@ -73,7 +73,7 @@ export function MoveLearnDialog({ run, act }) {
             : `Poder ${learned?.power || "—"}`}{" "}
           ·{" "}
           {learned?.accuracy === true
-            ? "não erra"
+            ? "sem teste de precisão"
             : `${learned?.accuracy || "—"}% precisão`}
         </small>
       </div>

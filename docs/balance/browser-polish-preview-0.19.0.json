@@ -1,0 +1,947 @@
+{
+  "tag": "final-preview",
+  "base": "http://localhost:4174/pokebobo/",
+  "screens": [
+    {
+      "name": "flamethrower",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "beam",
+        "element": "Fire"
+      }
+    },
+    {
+      "name": "watergun",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "beam",
+        "element": "Water"
+      }
+    },
+    {
+      "name": "thunderbolt",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "projectile",
+        "element": "Electric"
+      }
+    },
+    {
+      "name": "icebeam",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "beam",
+        "element": "Ice"
+      }
+    },
+    {
+      "name": "leafblade",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "strike",
+        "element": "Grass"
+      }
+    },
+    {
+      "name": "psybeam",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "beam",
+        "element": "Psychic"
+      }
+    },
+    {
+      "name": "shadowball",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "projectile",
+        "element": "Ghost"
+      }
+    },
+    {
+      "name": "crunch",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "strike",
+        "element": "Dark"
+      }
+    },
+    {
+      "name": "dazzlinggleam",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "projectile",
+        "element": "Fairy"
+      }
+    },
+    {
+      "name": "flashcannon",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "beam",
+        "element": "Steel"
+      }
+    },
+    {
+      "name": "dragonpulse",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "beam",
+        "element": "Dragon"
+      }
+    },
+    {
+      "name": "karatechop",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "strike",
+        "element": "Fighting"
+      }
+    },
+    {
+      "name": "bugbuzz",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "projectile",
+        "element": "Bug"
+      }
+    },
+    {
+      "name": "rockthrow",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "strike",
+        "element": "Rock"
+      }
+    },
+    {
+      "name": "dig",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "charge",
+        "element": "Ground"
+      }
+    },
+    {
+      "name": "gust",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "projectile",
+        "element": "Flying"
+      }
+    },
+    {
+      "name": "sludgebomb",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "projectile",
+        "element": "Poison"
+      }
+    },
+    {
+      "name": "tackle",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "strike",
+        "element": "Normal"
+      }
+    },
+    {
+      "name": "fogo-1920-3d",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "beam",
+        "element": "Fire"
+      }
+    },
+    {
+      "name": "fim-1920-3d",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "",
+        "element": ""
+      }
+    },
+    {
+      "name": "fogo-390-2d",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 64
+        },
+        {
+          "visible": true,
+          "height": 64
+        },
+        {
+          "visible": true,
+          "height": 64
+        },
+        {
+          "visible": true,
+          "height": 64
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "beam",
+        "element": "Fire"
+      }
+    },
+    {
+      "name": "fim-390-2d",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 64
+        },
+        {
+          "visible": true,
+          "height": 64
+        },
+        {
+          "visible": true,
+          "height": 64
+        },
+        {
+          "visible": true,
+          "height": 64
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "",
+        "element": ""
+      }
+    },
+    {
+      "name": "fogo-320-3d",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 58
+        },
+        {
+          "visible": true,
+          "height": 58
+        },
+        {
+          "visible": true,
+          "height": 58
+        },
+        {
+          "visible": true,
+          "height": 58
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "beam",
+        "element": "Fire"
+      }
+    },
+    {
+      "name": "fim-320-3d",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 58
+        },
+        {
+          "visible": true,
+          "height": 58
+        },
+        {
+          "visible": true,
+          "height": 58
+        },
+        {
+          "visible": true,
+          "height": 58
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "",
+        "element": ""
+      }
+    },
+    {
+      "name": "fogo-844-2d",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 93
+        },
+        {
+          "visible": true,
+          "height": 93
+        },
+        {
+          "visible": true,
+          "height": 87
+        },
+        {
+          "visible": true,
+          "height": 87
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "beam",
+        "element": "Fire"
+      }
+    },
+    {
+      "name": "fim-844-2d",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 93
+        },
+        {
+          "visible": true,
+          "height": 93
+        },
+        {
+          "visible": true,
+          "height": 87
+        },
+        {
+          "visible": true,
+          "height": 87
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "",
+        "element": ""
+      }
+    },
+    {
+      "name": "fogo-667-3d",
+      "width": 667,
+      "height": 375,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 85.5
+        },
+        {
+          "visible": true,
+          "height": 85.5
+        },
+        {
+          "visible": true,
+          "height": 79.5
+        },
+        {
+          "visible": true,
+          "height": 79.5
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "beam",
+        "element": "Fire"
+      }
+    },
+    {
+      "name": "fim-667-3d",
+      "width": 667,
+      "height": 375,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 85.5
+        },
+        {
+          "visible": true,
+          "height": 85.5
+        },
+        {
+          "visible": true,
+          "height": 79.5
+        },
+        {
+          "visible": true,
+          "height": 79.5
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "",
+        "element": ""
+      }
+    },
+    {
+      "name": "storage-reduce",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 64
+        },
+        {
+          "visible": true,
+          "height": 64
+        },
+        {
+          "visible": true,
+          "height": 64
+        },
+        {
+          "visible": true,
+          "height": 64
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "",
+        "element": ""
+      }
+    },
+    {
+      "name": "future-preparo",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "charge",
+        "element": "Psychic"
+      }
+    },
+    {
+      "name": "future-chegada",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "moves": [
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        },
+        {
+          "visible": true,
+          "height": 66
+        }
+      ],
+      "broken": [],
+      "effect": {
+        "effect": "arrival",
+        "element": "Psychic"
+      }
+    }
+  ],
+  "flows": [
+    "18 tipos: comando real, partículas visíveis, controles contidos, pular aplica uma vez e limpa canvas",
+    "PC/celular/paisagem, ambos estilos, efeito e retorno aos quatro comandos",
+    "sair durante turno → Equipe → dano correto, uma aplicação e reload",
+    "sair durante turno → Sua Pokédex → dano correto, uma aplicação e reload",
+    "sair durante turno → Opções e progresso → dano correto, uma aplicação e reload",
+    "storage bloqueado, troca de velocidade e movimento reduzido sem partículas",
+    "Future Sight preparação e chegada no terceiro turno"
+  ],
+  "errors": [],
+  "network": []
+}

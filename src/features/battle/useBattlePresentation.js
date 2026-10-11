@@ -1,16 +1,19 @@
 import { useEffect, useId, useRef, useState } from "react";
+import { browserStorage } from "../../shared/browserStorage.js";
 import { useAudio } from "../audio/AudioContext.js";
 import { battleAudioCue } from "../audio/audioCues.js";
 import { restoreBattle } from "../../game/battle/restore.js";
 import { battleSnapshot } from "../../game/battle/snapshot.js";
+import {
+  readBattleSpeed,
+  writeBattleSpeed,
+} from "../../app/preferences/battleSpeed.js";
 import {
   applyBattleEvent,
   battleEffect,
   battleEventDuration,
   newBattleEvents,
 } from "./turnPresentation.js";
-
-const SPEED_KEY = "pokebobo:battle-speed";
 
 function previewChoice(spec, choice) {
   const preview = structuredClone(spec);
@@ -35,14 +38,23 @@ export function useBattlePresentation({ battleSpec, snap, act }) {
   );
   const [effect, setEffect] = useState(null);
   const [locked, setLocked] = useState(false);
-  const [speed, setSpeed] = useState(
-    () => localStorage.getItem(SPEED_KEY) || "normal",
-  );
+  const [speed, setSpeed] = useState(() => readBattleSpeed(browserStorage));
   const sequence = useRef(0);
+  const pending = useRef(null);
+  const liveFinish = useRef(null);
+  const wait = useRef(null);
+  const cancelWait = () => {
+    if (!wait.current) return;
+    clearTimeout(wait.current.timer);
+    wait.current.resolve();
+    wait.current = null;
+  };
 
   useEffect(
     () => () => {
       sequence.current++;
+      pending.current = null;
+      cancelWait();
       entranceTimers.current.forEach(clearTimeout);
       liveAudio.current?.stopScope(audioScope);
     },
@@ -78,13 +90,47 @@ export function useBattlePresentation({ battleSpec, snap, act }) {
   const toggleSpeed = () => {
     setSpeed((current) => {
       const next = current === "fast" ? "normal" : "fast";
-      localStorage.setItem(SPEED_KEY, next);
+      writeBattleSpeed(browserStorage, next);
       return next;
     });
   };
 
+  // Um comando escolhido é aplicado uma única vez, inclusive ao pular ou
+  // abrir outra tela. Sair da arena não permite desfazer o turno previsto.
+  const finishTurn = () => {
+    const turn = pending.current;
+    if (!turn) return false;
+    pending.current = null;
+    sequence.current++;
+    cancelWait();
+    liveAudio.current?.stopScope(audioScope);
+    setDisplaySnap(turn.preview);
+    setEffect(null);
+    setMessage(
+      turn.preview.log.slice(-2).join(" ") || "Escolha seu próximo comando.",
+    );
+    const committed = turn.commit();
+    setLocked(false);
+    return committed;
+  };
+  liveFinish.current = finishTurn;
+  useEffect(() => {
+    const finish = () => liveFinish.current?.();
+    const visibility = () => {
+      if (document.hidden) finish();
+    };
+    window.addEventListener("beforeunload", finish);
+    window.addEventListener("pagehide", finish);
+    document.addEventListener("visibilitychange", visibility);
+    return () => {
+      window.removeEventListener("beforeunload", finish);
+      window.removeEventListener("pagehide", finish);
+      document.removeEventListener("visibilitychange", visibility);
+    };
+  }, []);
+
   const move = async (choice) => {
-    if (locked) return;
+    if (locked || pending.current) return;
     const token = ++sequence.current;
     entranceTimers.current.forEach(clearTimeout);
     setLocked(true);
@@ -93,9 +139,14 @@ export function useBattlePresentation({ battleSpec, snap, act }) {
     try {
       preview = previewChoice(battleSpec, choice);
     } catch {
-      if (act({ type: "BATTLE_CHOICE", choice }) === false) setLocked(false);
+      act({ type: "BATTLE_CHOICE", choice });
+      setLocked(false);
       return;
     }
+    pending.current = {
+      preview,
+      commit: () => act({ type: "BATTLE_CHOICE", choice }),
+    };
 
     const events = newBattleEvents(snap, preview);
     let shown = structuredClone(snap);
@@ -108,25 +159,28 @@ export function useBattlePresentation({ battleSpec, snap, act }) {
       if (event.text) setMessage(event.text);
       shown = applyBattleEvent(shown, event, preview);
       setDisplaySnap(shown);
-      setEffect(battleEffect(event));
+      const duration = battleEventDuration(event.type, speed);
+      const actualDuration = reducedMotion ? Math.min(duration, 120) : duration;
+      const nextEffect = battleEffect(event);
+      setEffect(
+        nextEffect ? { ...nextEffect, duration: actualDuration } : null,
+      );
       const cue = battleAudioCue(event);
       if (cue.sound) liveAudio.current?.cue(cue.sound, { scope: audioScope });
       if (cue.cry) liveAudio.current?.cry(cue.cry, { scope: audioScope });
-      const duration = battleEventDuration(event.type, speed);
-      await new Promise((resolve) =>
-        setTimeout(resolve, reducedMotion ? Math.min(duration, 120) : duration),
-      );
+      await new Promise((resolve) => {
+        wait.current = {
+          resolve,
+          timer: setTimeout(() => {
+            wait.current = null;
+            resolve();
+          }, actualDuration),
+        };
+      });
     }
 
     if (token !== sequence.current) return;
-    setDisplaySnap(preview);
-    setEffect(null);
-    setMessage(
-      preview.log.slice(-2).join(" ") || "Escolha seu próximo comando.",
-    );
-
-    const committed = act({ type: "BATTLE_CHOICE", choice });
-    if (committed === false) setLocked(false);
+    finishTurn();
   };
 
   return {
@@ -136,6 +190,7 @@ export function useBattlePresentation({ battleSpec, snap, act }) {
     locked,
     speed,
     toggleSpeed,
+    finishTurn,
     move,
   };
 }

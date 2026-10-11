@@ -114,18 +114,29 @@ export function applyBattleEvent(currentSnapshot, event, finalSnapshot) {
 }
 
 export function battleEffect(event) {
-  if (event.type === "move") return { type: "attack", side: event.side };
-  if (event.type === "damage") return { type: "hit", side: event.side };
-  if (event.type === "heal") return { type: "heal", side: event.side };
-  if (event.type === "status") return { type: "status", side: event.side };
-  if (event.type === "faint") return { type: "faint", side: event.side };
-  if (event.type === "switch") return { type: "switch", side: event.side };
-  return null;
+  const visual = battleVisual(event);
+  const type =
+    event.type === "move"
+      ? visual.category === "Physical" &&
+        !["fail", "immune", "prepare"].includes(event.outcome)
+        ? "attack"
+        : "cast"
+      : {
+          damage: "hit",
+          heal: "heal",
+          curestatus: "heal",
+          status: "status",
+          faint: "faint",
+          switch: "switch",
+        }[event.type];
+  return type || visual
+    ? { type: type || "cast", side: event.side, visual, key: event.index }
+    : null;
 }
 
 export function battleEventDuration(type, speed = "normal") {
   const normal = {
-    move: 360,
+    move: 480,
     damage: 420,
     heal: 420,
     status: 500,
@@ -141,3 +152,4 @@ export function battleEventDuration(type, speed = "normal") {
     ? Math.max(90, Math.round(duration * 0.45))
     : duration;
 }
+import { battleVisual } from "./visuals/moveVisualProfile.js";

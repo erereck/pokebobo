@@ -214,7 +214,11 @@ test("jornada recebida chega ao primeiro ginásio, executa um turno real e resta
   const loaded = migrateSave(JSON.parse(JSON.stringify(state)));
   const before = restoreBattle(state.run.battle);
   const after = restoreBattle(loaded.run.battle);
-  assert.deepEqual(after.log, before.log);
+  // O relógio real do protocolo não faz parte do replay determinístico.
+  const combatLog = (battle) =>
+    battle.log.filter((line) => !line.startsWith("|t:|"));
+  assert.deepEqual(combatLog(after), combatLog(before));
+  assert.deepEqual(after.prng.getSeed(), before.prng.getSeed());
   assert.equal(after.turn, before.turn);
   assert.deepEqual(
     after.p1.pokemon.map((mon) => mon.hp),

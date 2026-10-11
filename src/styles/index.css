@@ -8,6 +8,8 @@
 @import "./features/events.css";
 @import "./features/draft.css";
 @import "./features/battle.css";
+@import "./features/battle-notebook.css";
+@import "./features/backups.css";
 @import "./features/team.css";
 @import "./features/secondary.css";
 @import "./features/equipe-viva.css";

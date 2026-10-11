@@ -51,8 +51,11 @@ export function HelpDialog({ setModal }) {
         </p>
         <p>
           No PC, as teclas 1 a 4 escolhem os golpes. Os atalhos ficam
-          desativados enquanto uma janela estiver aberta. Trocar e o registro
-          completo ficam junto dos golpes.
+          desativados enquanto uma janela estiver aberta. Trocar e o caderno
+          ficam junto dos golpes. O caderno reúne o registro, precisão,
+          prioridade, efeitos dos seus golpes e os estágios dos Pokémon em
+          campo. Pular resolve a animação do turno inteiro; abrir outra tela
+          também aplica o comando que você já escolheu.
         </p>
         <p>
           <b>Monte a região. Sobreviva às consequências.</b> Escolha uma origem,
@@ -137,6 +140,13 @@ export function HelpDialog({ setModal }) {
           único do navegador: jornadas encerradas em qualquer slot aparecem
           juntas no mesmo arquivo.
         </p>
+        <p>
+          Em Opções, use Exportar Slot para guardar um backup JSON. Restaurar
+          backup mostra a jornada e deixa escolher o slot de destino. Os outros
+          slots ficam intactos; o conteúdo anterior do destino fica como cópia
+          de recuperação quando era válido. Se o navegador bloquear o save,
+          exporte antes de fechar.
+        </p>
         <h3>Sobre este protótipo</h3>
         <p>
           {GYMS.length} ginásios, 7 conjuntos de iniciais, 11 membros de Elite e
@@ -167,6 +177,18 @@ export function HelpDialog({ setModal }) {
           License).
         </p>
         <CoverCredits />
+        <p>
+          Partículas dos golpes: gráficos de FireRed / LeafGreen via
+          pret/pokefirered, com tempos e trajetórias adaptados para o Pokébobo.{" "}
+          <a
+            href={`${import.meta.env.BASE_URL}battle-effects/README.md`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Fontes e créditos dos efeitos
+          </a>
+          .
+        </p>
         <p>
           Música e fanfares: Pokémon FireRed / LeafGreen, Go Ichinose, Junichi
           Masuda e Morikazu Aoki; gravação publicada por F4m1LyGuy10, obtida com

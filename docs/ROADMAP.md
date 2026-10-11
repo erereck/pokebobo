@@ -1,5 +1,19 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## 0.19.0 — Jornada mais viva · 11/10/2026
+
+**Pedido:** usar a janela de duas horas autorizada para melhorar/revisar o jogo por julgamento próprio e publicar diretamente o que estiver pronto. Prioridades escolhidas: efeitos de golpes, clareza do combate, segurança do progresso, controles e carregamento. A rodada conserva níveis, IA, regras e schema, permitindo comparar resultados sem uma mudança de balanceamento junto.
+
+**Entrega:** partículas para os 18 tipos usando 18 folhas originais FRLG, trajetória ancorada no corpo, HUD limpo, cura/proteção/status/boosts e sons próprios por tipo. Movimento acompanha o tempo do evento em 1×/2×; falha de asset usa partículas próprias. Caderno reúne registro, descrição dos golpes/PP/precisão/prioridade e estágios reais dos lados em campo. Protect, sono e causas residuais têm mensagens específicas. Pular, navegação, ocultar a aba e reload concluem o comando uma única vez; o save é escrito imediatamente.
+
+**Progresso/controles:** restauração de backup com prévia, três slots, exportação antes de substituir e tentativa de reversão ao falhar. Getter bloqueado de storage permite jogar/exportar em memória com aviso. Direções seguradas retomam a anterior quando a última é solta; Voltar só libera depois de todas. Fechar fica visível ao rolar janelas extensas.
+
+**Desempenho:** catálogo já tinha aprendizado pré-compilado; retirar somente learnsets/legality redundantes do build reduz JS principal em 40,75% (gzip 31,1%). Motor de publicação agora passa também pela suíte: 166 testes adicionais ao normal, sem modificar scripts/dados de combate. Comparação de três pares com cache desligado, rede limitada e CPU 4×: mediana de entrada 10,97→9,03 s e heap 33,34→17,03 MB no mesmo estágio. Ganho medido naquele cenário, sem promessa universal.
+
+**Evidência:** 171 testes, 243 módulos, build Pages e orçamento de progressão. Preview em seis tamanhos/ambos os estilos: 61 registros/11 fluxos, mais sete casos de durabilidade/fallback e 13 registros/sete fluxos de áudio real. Matriz anterior de presença repetida (24 registros/oito fluxos), incluindo tela cheia, pequenos/gigantes/shiny. Jornada iniciada do zero pela UI, draft completo, 50 passos e retorno automático, exportação/fim/Hall; derrota real também abre Hall (seis registros/três fluxos). 20 timbres renderizados sem clipping. 360 campanhas reais automatizadas, sem execução travada; Clássico teve 1/10/3/0 vitórias por 30 em treino/equilíbrio/cobertura/aleatória, outros modos zero nessa amostra. Essas políticas não representam pessoas e não justificam um nerf nesta rodada. Relatórios completos em [VALIDACAO](../VALIDACAO.md) e [BATALHAS-E-BACKUPS](BATALHAS-E-BACKUPS.md).
+
+**Limites/próximas sugestões:** partículas originais, composição/ritmo próprios; não são todos os scripts cartucho por cartucho. Caderno mostra fatos públicos básicos e não substitui uma descrição completa de cada interação de habilidade/item. Backups continuam locais/editáveis; falha persistente de storage pode impedir rollback. Telefone físico/iOS ainda pendente. Com áudio, coleção/compartilhamento e efeitos entregues, próximos trabalhos: testar uma campanha real no celular, colher decisões humanas antes de calibrar dificuldade, enriquecer segredos da exploração e melhorar IA com casos concretos. Sugestões antigas/relatórios preservados abaixo.
+
 ## 0.18.1 — Pokémon em destaque · 11/10/2026
 
 **Pedido:** corrigir Pokémon pequenos demais na arena; captura anexada mostra Pignite/Geodude em tela cheia. Publicação direta continua autorizada.

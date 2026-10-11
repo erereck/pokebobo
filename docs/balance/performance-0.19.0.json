@@ -1,0 +1,153 @@
+{
+  "browser": "155.0.4283.45",
+  "scenario": "390×844, CPU 4×, download 200 KB/s, upload 100 KB/s, latência 80 ms, gzip HTTP, cache desativado; até formulário interativo/fontes prontas",
+  "samples": [
+    {
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 1588
+        }
+      ],
+      "javascript": [
+        {
+          "name": "index-DaOQYGu4.js",
+          "bytes": 1465973,
+          "duration": 7789
+        }
+      ],
+      "version": "0.18.1",
+      "readyMs": 10972.39,
+      "heapBytes": 29133440,
+      "sample": 1
+    },
+    {
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 396
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 7572
+        }
+      ],
+      "javascript": [
+        {
+          "name": "index-DUVdx71R.js",
+          "bytes": 1010017,
+          "duration": 5323
+        }
+      ],
+      "version": "0.19.0",
+      "readyMs": 8561.2061,
+      "heapBytes": 17029372,
+      "sample": 1
+    },
+    {
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 504
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 10432
+        }
+      ],
+      "javascript": [
+        {
+          "name": "index-DaOQYGu4.js",
+          "bytes": 1465973,
+          "duration": 7593.10000000149
+        }
+      ],
+      "version": "0.18.1",
+      "readyMs": 10601.016,
+      "heapBytes": 33342100,
+      "sample": 2
+    },
+    {
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 496
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 7812
+        }
+      ],
+      "javascript": [
+        {
+          "name": "index-DUVdx71R.js",
+          "bytes": 1010017,
+          "duration": 5328
+        }
+      ],
+      "version": "0.19.0",
+      "readyMs": 9222.850299999998,
+      "heapBytes": 17039340,
+      "sample": 2
+    },
+    {
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 496
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 10904
+        }
+      ],
+      "javascript": [
+        {
+          "name": "index-DaOQYGu4.js",
+          "bytes": 1465973,
+          "duration": 7624.29999999702
+        }
+      ],
+      "version": "0.18.1",
+      "readyMs": 11099.844099999995,
+      "heapBytes": 33376556,
+      "sample": 3
+    },
+    {
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 516
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 7484
+        }
+      ],
+      "javascript": [
+        {
+          "name": "index-DUVdx71R.js",
+          "bytes": 1010017,
+          "duration": 5381.29999999702
+        }
+      ],
+      "version": "0.19.0",
+      "readyMs": 9032.674299999999,
+      "heapBytes": 16976136,
+      "sample": 3
+    }
+  ],
+  "medians": {
+    "0.18.1": {
+      "readyMs": 10972.39,
+      "heapBytes": 33342100,
+      "jsTransferred": 1465973
+    },
+    "0.19.0": {
+      "readyMs": 9032.674299999999,
+      "heapBytes": 17029372,
+      "jsTransferred": 1010017
+    }
+  },
+  "readyReductionPercent": 17.67815125054797
+}

@@ -1,8 +1,8 @@
-import { translateLog } from "./translateLog.js";
 import { presentationEvents } from "./presentationEvents.js";
 import { Dex } from "@pkmn/sim";
 
 export function battleSnapshot(b) {
+  const events = presentationEvents(b.log);
   const mon = (p) => ({
     id: p.name,
     name: p.species.name,
@@ -14,6 +14,8 @@ export function battleSnapshot(b) {
     fainted: p.fainted,
     active: p.isActive,
     item: p.item,
+    types: p.getTypes(),
+    boosts: { ...p.boosts },
   });
   return {
     turn: b.turn,
@@ -39,7 +41,10 @@ export function battleSnapshot(b) {
           ]
         : [];
     }),
-    log: translateLog(b.log).slice(-60),
-    events: presentationEvents(b.log).slice(-120),
+    log: events
+      .map((event) => event.text)
+      .filter(Boolean)
+      .slice(-60),
+    events: events.slice(-120),
   };
 }

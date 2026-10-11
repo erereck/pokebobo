@@ -79,7 +79,7 @@ export function PokemonDetails({ mon, run, act }) {
                     : "Poder " + (m.power || "—")}{" "}
                   ·{" "}
                   {m.accuracy === true
-                    ? "Não erra"
+                    ? "Sem teste de precisão"
                     : (m.accuracy || "—") + "% precisão"}
                 </small>
               </div>

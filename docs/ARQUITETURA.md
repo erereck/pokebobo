@@ -1,5 +1,15 @@
 # Arquitetura do Pokébobo
 
+## Batalha, backups e bundle — 0.19.0
+
+`presentationEvents` enriquece o protocolo com golpe, alvo, resultado visual e causas públicas; não calcula dano. `battleSnapshot` interpreta o log uma vez e copia tipos/boosts. `useBattlePresentation` controla uma única sequência cancelável, concluída por fim, Pular, navegação ou pagehide/visibility. `useAutosave.persistNow` grava ações válidas antes de depender de uma renderização posterior. Não reexecutar histórico ao carregar.
+
+`BattleEffects` desenha canvas transparente de até 480 px lógicos, mede corpos/apoio do sprite carregado e limpa os retângulos de HP. `visuals/` reúne perfis puros, geometria, desenhos e índice/preload local dos 18 atlas. `useBattleMotion` anima sprites no mesmo tempo do evento; cancela movimentos anteriores e respeita movimento reduzido. `BattleNotebook` consulta dados Gen 8/estado público via `moveGuide`; não revela sets secretos nem prevê dano. Áudio continua separado em `features/audio`; `battleTimbres` contém receitas próprias.
+
+`game/persistence/importSave` valida JSON, versão atual, estrutura básica e replay de batalha, sem DOM. Restauração guarda chaves afetadas e tenta revertê-las se a escrita falhar. `ImportSaveDialog` apresenta arquivo/destino e exportação; só muda a sessão após sucesso. `shared/browserStorage` adia o acesso ao getter, permitindo tratamento de navegadores que negam a própria leitura. Detalhes em [BATALHAS-E-BACKUPS](BATALHAS-E-BACKUPS.md).
+
+Somente no build, `browserSimulatorPlugin` substitui learnsets/legality do simulador por tabelas vazias: a aplicação usa catálogo pré-compilado e não TeamValidator. Dados/scripts de combate permanecem. `checkCompiledLearnsets` barra consultas removidas em src; `test:browser-simulator` empacota o mesmo motor e repete os testes, exceto os cinco do gerador Node que precisam das tabelas completas. O teste normal conserva esses cinco. Não remover tabelas de movimentos/regras/espécies ou mudar o Node para reduzir bundle.
+
 ## Presença na arena — 0.18.1
 
 `battleSpriteLayout` deriva escala diretamente da caixa medida, sem teto fixo CSS. Perfil 2D atua como piso de presença do 3D da mesma espécie/lado; normal/shiny compartilham o aspecto mais largo para estabilidade. `BattlePokemonSprite` mede somente width/height. Limites de corpo, proporção/apoio/frames e renderer das animações continuam os mesmos. [Critérios atuais](ESCALA-DOS-SPRITES.md); descrição da 0.16 abaixo é histórica.

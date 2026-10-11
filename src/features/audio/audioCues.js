@@ -30,6 +30,20 @@ export function captureCues(frames) {
 
 export function battleAudioCue(event) {
   if (event.type === "switch") return { sound: "send", cry: event.name };
+  if (event.type === "move") {
+    if (event.outcome === "fail" || event.outcome === "immune")
+      return { sound: "failure" };
+    const profile = moveVisualProfile(event.move);
+    if (profile.shape === "shield") return { sound: "guard" };
+    if (profile.shape === "heal" || profile.shape === "splash")
+      return { sound: "status" };
+    return {
+      sound:
+        profile.type === "Normal"
+          ? "attack"
+          : `attack-${profile.type.toLowerCase()}`,
+    };
+  }
   return {
     sound: {
       move: "attack",
@@ -55,3 +69,4 @@ export function crossedCues(cues, previousTick, tick, jumped = false) {
         .slice(-1)
     : crossed;
 }
+import { moveVisualProfile } from "../battle/visuals/moveVisualProfile.js";

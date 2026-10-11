@@ -59,7 +59,7 @@ const tones = {
   flee: [[900, 200, 0.14, 0.1, "noise"]],
 };
 export function createChipEffect(context, destination, name) {
-  const recipe = tones[name];
+  const recipe = tones[name] || BATTLE_TIMBRES[name];
   if (!recipe) return [];
   const nodes = [];
   for (const [from, to, duration, volume, type, delay = 0] of recipe) {
@@ -114,3 +114,4 @@ export function createChipEffect(context, destination, name) {
   }
   return nodes;
 }
+import { BATTLE_TIMBRES } from "./battleTimbres.js";

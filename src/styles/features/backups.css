@@ -1,0 +1,99 @@
+.backup-file-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background: var(--lcd-bright);
+  border: 1px solid var(--lcd-line);
+  border-radius: 6px;
+  font: 600 13px var(--display);
+}
+.backup-file-label input {
+  width: 100%;
+  min-width: 0;
+  padding: 8px 0;
+  font-size: 12px;
+}
+.backup-file-label input::file-selector-button {
+  min-height: 44px;
+  padding: 8px 12px;
+  margin-right: 8px;
+  color: var(--ink);
+  background: var(--lcd);
+  border: 1px solid var(--lcd-line);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.backup-preview {
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid var(--lcd-line);
+  background: var(--lcd-bright);
+  border-radius: 6px;
+}
+.backup-preview .section-label {
+  overflow-wrap: anywhere;
+}
+.backup-preview h3 {
+  margin: 8px 0;
+  font-size: 20px;
+  overflow-wrap: anywhere;
+}
+.backup-preview p,
+.backup-replacement p {
+  margin: 8px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.backup-destination {
+  border: 0;
+  margin: 16px 0;
+  padding: 0;
+  min-width: 0;
+}
+.backup-destination legend {
+  font: 600 13px var(--display);
+  margin-bottom: 8px;
+}
+.backup-destination > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.backup-destination button {
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--lcd-line);
+  background: var(--lcd-bright);
+  color: var(--ink);
+  text-align: left;
+}
+.backup-destination button span {
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+.backup-destination button[aria-pressed="true"] {
+  background: var(--rubber);
+  color: var(--lcd);
+  border-color: var(--rubber);
+}
+.backup-destination button[aria-pressed="true"] strong {
+  color: var(--amber);
+}
+.backup-destination button:hover {
+  box-shadow: inset 0 0 0 1px var(--ink-soft);
+}
+.backup-replacement {
+  padding: 8px 0;
+}
+.backup-error {
+  color: var(--danger);
+  font-size: 13px;
+}

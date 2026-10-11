@@ -1,5 +1,15 @@
 # Histórico
 
+## 0.19.0 — Jornada mais viva · 11/10/2026
+
+- Efeitos de golpes para os 18 tipos, com 18 folhas originais de FRLG, impactos, proteção, cura, status e mudanças de atributos. Frente/costas e trajetória acompanham o corpo visível; partículas não cobrem nome/HP. Movimentos e som usam a duração real do evento, inclusive em 2×; movimento reduzido e falha de imagem têm alternativas.
+- Caderno de batalha com registro, descrição dos quatro golpes e Pokémon em campo: categoria, poder, precisão, prioridade, PP, efeitos, tipos, status e estágios. Precisão sem teste não promete atravessar Protect ou imunidades. Bloqueios, impedimentos por sono e origem de dano residual entram nas mensagens.
+- Pular conclui o turno uma única vez. Abrir equipe, outra tela ou janela, ocultar a aba e recarregar preservam o comando escolhido. HP/PP/replay/RNG conferidos, inclusive nocaute e troca forçada; gravação imediata evita depender do próximo efeito React.
+- Restaurar backup JSON em Opções, com prévia, escolha de um dos três slots e exportação antes de substituir. Versão e dados básicos/replay são validados; outros slots e preferências permanecem. Falhas de gravação tentam reverter as chaves afetadas e mantêm a jornada aberta em memória.
+- Storage bloqueado desde o getter deixa o jogo utilizável em memória, com aviso e exportação. Velocidade de batalha não causa erro nesse caso. Controles de campo retomam a direção ainda segurada ao soltar a mais recente; Voltar aguarda todas serem soltas. Cabeçalhos das janelas mantêm Fechar visível ao rolar.
+- Sons próprios dos golpes por tipo, proteção e falha, com envelopes curtos. Partículas gráficas originais têm fonte congelada, hashes, importador e créditos separados da licença do código; trajetórias e ritmos são adaptações do Pokébobo.
+- JavaScript principal 9,15→5,42 MB (gzip 1,47→1,01 MB), retirando apenas tabelas de aprendizado/legality que o catálogo já substitui no navegador. Novo teste roda a suíte também com o motor empacotado. 171 testes, 166 repetidos no motor de publicação e 360 campanhas reais sem execução travada. Regras, níveis, RNG e schema 4 preservados.
+
 ## 0.18.1 — Pokémon em destaque · 11/10/2026
 
 - Pokémon maiores na arena, especialmente Pignite e Geodude em 3D. Perfil 2D funciona como piso de presença para a mesma espécie/lado; a escala acompanha a caixa real, inclusive em tela cheia, sem tetos fixos em pixels.

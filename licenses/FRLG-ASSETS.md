@@ -1,5 +1,9 @@
 # Gráficos e animações de campo/captura — FireRed / LeafGreen
 
+## Partículas de batalha — 0.19.0
+
+18 folhas originais de `graphics/battle_anims/sprites/` na mesma revisão congelada, sem ROM. `scripts/import-battle-effects.py` conserva paletas embutidas/folhas completas e torna o índice zero transparente. Hashes, fontes, quadros e termos em [public/battle-effects/README.md](../public/battle-effects/README.md) e manifesto. Canvas usa chamas, bolhas, folhas, cristais, pedras, ondas, impactos, estrelas e outras partículas; trajetórias/tempos e famílias de golpes são adaptações do Pokébobo. Não há promessa de reproduzir cada animação do cartucho; gráficos de gerações posteriores/Fada são representados com estas partículas existentes. Áudio dos golpes é síntese própria, separada dos gráficos.
+
 Os gráficos são de Pokémon FireRed / LeafGreen, de Game Freak / Nintendo / The Pokémon Company. A extração e organização consultadas são do projeto comunitário [pret/pokefirered](https://github.com/pret/pokefirered), commit `037335f4c725d7c9aecdac87066f2002b4bd7e14`, consultado em 09/10/2026.
 
 Fontes congeladas, todas relativas ao mesmo commit:

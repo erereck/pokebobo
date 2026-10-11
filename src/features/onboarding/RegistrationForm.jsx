@@ -16,6 +16,7 @@ export function RegistrationForm({
   setMoveLearningMode,
   invitationText,
   setInvitationText,
+  saving = true,
 }) {
   let invitation, invitationError;
   try {
@@ -133,8 +134,10 @@ export function RegistrationForm({
         </button>
       </form>
       <div className="registration-foot">
-        <span className="save-dot" />
-        Salvo automaticamente neste aparelho.
+        {saving && <span className="save-dot" />}
+        {saving
+          ? "Salvo automaticamente neste aparelho."
+          : "Esta visita está em memória. Exporte em Opções antes de fechar."}
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from "react";
-import { BookOpen, Gauge, RotateCcw } from "lucide-react";
+import { BookOpen, Gauge, RotateCcw, FastForward } from "lucide-react";
 import { restoreBattle } from "../../game/battle/restore.js";
 import { battleSnapshot } from "../../game/battle/snapshot.js";
 import { useBattleKeys } from "./useBattleKeys.js";
@@ -10,7 +10,7 @@ import { BattleArena } from "./BattleArena.jsx";
 import { BattleBench } from "./BattleBench.jsx";
 import { MoveOptions } from "./MoveOptions.jsx";
 import { SwitchOptions } from "./SwitchOptions.jsx";
-import { Modal } from "../../components/ui/Modal.jsx";
+import { BattleNotebook } from "./BattleNotebook.jsx";
 
 export function BattleScreen({
   run: r,
@@ -29,8 +29,16 @@ export function BattleScreen({
   }, [r.battle]);
   const [switching, setSwitching] = useState(false);
   const [logOpen, setLogOpen] = useState(false);
-  const { displaySnap, message, effect, locked, speed, toggleSpeed, move } =
-    useBattlePresentation({ battleSpec: r.battle, snap, act });
+  const {
+    displaySnap,
+    message,
+    effect,
+    locked,
+    speed,
+    toggleSpeed,
+    move,
+    finishTurn,
+  } = useBattlePresentation({ battleSpec: r.battle, snap, act });
   const forced = Boolean(displaySnap.request?.forceSwitch);
   const trapped = Boolean(displaySnap.request?.active?.[0]?.trapped);
   const current = displaySnap.active;
@@ -43,7 +51,7 @@ export function BattleScreen({
     return true;
   };
 
-  if (battleControlRef) battleControlRef.current = { switchTo };
+  if (battleControlRef) battleControlRef.current = { switchTo, finishTurn };
 
   useEffect(() => {
     onSidebarState?.({
@@ -116,19 +124,30 @@ export function BattleScreen({
                   : current.name + " vai…"}
           </h2>
           <div className="battle-tools">
-            <button
-              className="text-button battle-speed"
-              disabled={locked}
-              onClick={toggleSpeed}
-              aria-label={
-                "Velocidade da animação: " +
-                (speed === "fast" ? "rápida" : "normal")
-              }
-              title="Velocidade da animação"
-            >
-              <Gauge size={15} />
-              {speed === "fast" ? "2×" : "1×"}
-            </button>
+            {locked ? (
+              <button
+                className="text-button battle-skip"
+                onClick={finishTurn}
+                aria-label="Pular animação do turno"
+                title="Aplica o turno completo"
+              >
+                <FastForward size={16} /> Pular
+              </button>
+            ) : (
+              <button
+                className="text-button battle-speed"
+                disabled={locked}
+                onClick={toggleSpeed}
+                aria-label={
+                  "Velocidade da animação: " +
+                  (speed === "fast" ? "rápida" : "normal")
+                }
+                title="Velocidade da animação"
+              >
+                <Gauge size={15} />
+                {speed === "fast" ? "2×" : "1×"}
+              </button>
+            )}
             {!forced && (
               <button
                 className="text-button"
@@ -141,8 +160,8 @@ export function BattleScreen({
             )}
             <button
               className="icon-button"
-              aria-label="Ver registro da batalha"
-              title="Registro da batalha"
+              aria-label="Abrir caderno de batalha"
+              title="Registro, golpes e condições em campo"
               disabled={locked}
               onClick={() => setLogOpen(true)}
             >
@@ -162,13 +181,7 @@ export function BattleScreen({
         )}
       </section>
       {logOpen && (
-        <Modal title="Registro da batalha" onClose={() => setLogOpen(false)}>
-          <div className="turn-history">
-            {snap.log.map((line, index) => (
-              <p key={index}>{line}</p>
-            ))}
-          </div>
-        </Modal>
+        <BattleNotebook snap={snap} onClose={() => setLogOpen(false)} />
       )}
     </section>
   );

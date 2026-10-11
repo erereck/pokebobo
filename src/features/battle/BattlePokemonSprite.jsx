@@ -34,14 +34,20 @@ export function BattlePokemonSprite({
     box && image
       ? battleSpriteLayout({ name: mon.name, back, ...box, ...image })
       : null;
-  const { visibleWidth, visibleHeight, geometryKey, ...position } =
-    layout || {};
+  const {
+    visibleWidth,
+    visibleHeight,
+    visibleBottom,
+    geometryKey,
+    ...position
+  } = layout || {};
   return (
     <div
       className="battle-sprite"
       ref={container}
       data-visible-width={visibleWidth}
       data-visible-height={visibleHeight}
+      data-visible-bottom={visibleBottom}
       data-geometry={geometryKey}
     >
       {visible && (
