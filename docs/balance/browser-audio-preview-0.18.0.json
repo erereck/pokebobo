@@ -1,0 +1,348 @@
+{
+  "tag": "preview",
+  "base": "http://localhost:4174/pokebobo/",
+  "errors": [],
+  "network": [],
+  "flows": [
+    {
+      "name": "playlist, volumes, cry, mute/reload, visibilidade, save intacto",
+      "wave": {
+        "peak": 0.1407259702682495,
+        "rms": 0.011256150282193289,
+        "nonzero": 39827
+      },
+      "requests": 5
+    },
+    {
+      "name": "passo animado com efeito audível",
+      "state": {
+        "contexts": 1,
+        "state": "running",
+        "time": 1.112,
+        "gains": [
+          1,
+          0.6499999761581421,
+          0.33000001311302185,
+          0,
+          0.41999998688697815,
+          0.00009999999747378752
+        ],
+        "media": [
+          {
+            "src": "",
+            "paused": true,
+            "time": 0
+          },
+          {
+            "src": "http://localhost:4174/pokebobo/audio/music/route1.mp3",
+            "paused": false,
+            "time": 1.114558
+          }
+        ],
+        "sources": 1
+      }
+    },
+    {
+      "name": "encounter",
+      "state": {
+        "contexts": 1,
+        "state": "running",
+        "time": 8.770666666666667,
+        "gains": [
+          1,
+          0.6499999761581421,
+          0.33000001311302185,
+          0,
+          0.15960000455379486,
+          1,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.8500000238418579
+        ],
+        "media": [
+          {
+            "src": "",
+            "paused": true,
+            "time": 0
+          },
+          {
+            "src": "http://localhost:4174/pokebobo/audio/music/wild.mp3",
+            "paused": false,
+            "time": 8.721995
+          }
+        ],
+        "sources": 16
+      },
+      "requests": [
+        "http://localhost:4174/pokebobo/audio/music/wild.mp3",
+        "http://localhost:4174/pokebobo/audio/cries/pidgey.mp3",
+        "http://localhost:4174/pokebobo/audio/fanfares/caught.mp3"
+      ]
+    },
+    {
+      "name": "capture",
+      "state": {
+        "contexts": 1,
+        "state": "running",
+        "time": 7.08,
+        "gains": [
+          1,
+          0.6499999761581421,
+          0.33000001311302185,
+          0,
+          0.15960000455379486,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.8500000238418579
+        ],
+        "media": [
+          {
+            "src": "http://localhost:4174/pokebobo/audio/music/route1.mp3",
+            "paused": false,
+            "time": 0
+          },
+          {
+            "src": "http://localhost:4174/pokebobo/audio/music/wild.mp3",
+            "paused": false,
+            "time": 7.082086
+          }
+        ],
+        "sources": 15
+      },
+      "requests": [
+        "http://localhost:4174/pokebobo/audio/music/wild.mp3",
+        "http://localhost:4174/pokebobo/audio/fanfares/caught.mp3",
+        "http://localhost:4174/pokebobo/audio/music/route1.mp3"
+      ]
+    },
+    {
+      "name": "failure",
+      "state": {
+        "contexts": 1,
+        "state": "running",
+        "time": 6.992,
+        "gains": [
+          1,
+          0.6499999761581421,
+          0.33000001311302185,
+          0,
+          0.41999998688697815,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752
+        ],
+        "media": [
+          {
+            "src": "",
+            "paused": true,
+            "time": 0
+          },
+          {
+            "src": "http://localhost:4174/pokebobo/audio/music/wild.mp3",
+            "paused": false,
+            "time": 6.995011
+          }
+        ],
+        "sources": 14
+      },
+      "requests": [
+        "http://localhost:4174/pokebobo/audio/music/wild.mp3",
+        "http://localhost:4174/pokebobo/audio/fanfares/caught.mp3",
+        "http://localhost:4174/pokebobo/audio/cries/pidgey.mp3"
+      ]
+    },
+    {
+      "name": "turno real com efeitos e cries",
+      "state": {
+        "contexts": 1,
+        "state": "running",
+        "time": 7.530666666666667,
+        "gains": [
+          1,
+          0.6499999761581421,
+          0.33000001311302185,
+          0,
+          0.41999998688697815,
+          1,
+          0.00009999999747378752,
+          0.00010009641846409068,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.00009999999747378752,
+          0.04820750281214714,
+          1
+        ],
+        "media": [
+          {
+            "src": "",
+            "paused": true,
+            "time": 0
+          },
+          {
+            "src": "http://localhost:4174/pokebobo/audio/music/gym.mp3",
+            "paused": false,
+            "time": 7.531973
+          }
+        ],
+        "sources": 8
+      }
+    },
+    {
+      "name": "mute lembrado não baixa nem toca áudio"
+    }
+  ],
+  "screens": [
+    {
+      "name": "playlist-desktop",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "jornada-390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "playlist-390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "jornada-320",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "playlist-320",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "jornada-844",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "playlist-844",
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "passo",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "encounter",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "capture",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "failure",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "batalha",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "mute-respeitado",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    }
+  ]
+}

@@ -22,6 +22,8 @@ import { useBattleSpriteStyle } from "./hooks/useBattleSpriteStyle.js";
 import { useRegionInvitation } from "./hooks/useRegionInvitation.js";
 import { ChallengeDialog } from "../features/onboarding/ChallengeDialog.jsx";
 import { ShareJourneyDialog } from "../features/history/ShareJourneyDialog.jsx";
+import { AudioProvider } from "../features/audio/AudioProvider.jsx";
+import { AudioDialog } from "../features/audio/AudioDialog.jsx";
 
 export function App() {
   const { spriteStyle, changeSpriteStyle, spritePreferenceSaved } =
@@ -79,167 +81,170 @@ export function App() {
       : null;
 
   return (
-    <div
-      className={
-        playing
-          ? "app-shell is-playing" +
-            (tab === "journey" && run.phase === "battle" ? " is-battle" : "")
-          : "app-shell"
-      }
-    >
-      <AppHeader setModal={setModal} />
-      {error && (
-        <div className="error-banner" role="alert">
-          {error}
-          <button onClick={() => setError("")} aria-label="Dispensar erro">
-            <X size={16} />
-          </button>
-        </div>
-      )}
-      {!saving && (
-        <div className="error-banner" role="alert">
-          O navegador não conseguiu salvar. Exporte seu progresso em Opções
-          antes de fechar.
-        </div>
-      )}
-      {!run ? (
-        <Welcome
-          name={name}
-          setName={setName}
-          mode={mode}
-          setMode={setMode}
-          moveLearningMode={moveLearningMode}
-          setMoveLearningMode={setMoveLearningMode}
-          meta={state.meta}
-          invitationText={invitationText}
-          setInvitationText={setInvitationText}
-          onStart={startJourney}
-        />
-      ) : setup ? (
-        <Setup run={run} act={act} />
-      ) : run.phase === "ended" ? (
-        <Ending
-          run={run}
-          meta={state.meta}
-          onHall={() => setModal("hall")}
-          onShare={() => setModal("share-ended")}
-          onNew={() => {
-            setName(run.name);
-            setState((s) => ({
-              ...s,
-              run: null,
-            }));
-          }}
-        />
-      ) : (
-        <div className="game-shell">
-          <div className="dex-main-panel">
-            <MissionHUD run={run} saving={saving} />
-            <RunContent
-              spriteStyle={spriteStyle}
-              tab={tab}
+    <AudioProvider run={run} tab={tab} modal={modal} slot={activeSlot}>
+      <div
+        className={
+          playing
+            ? "app-shell is-playing" +
+              (tab === "journey" && run.phase === "battle" ? " is-battle" : "")
+            : "app-shell"
+        }
+      >
+        <AppHeader setModal={setModal} />
+        {error && (
+          <div className="error-banner" role="alert">
+            {error}
+            <button onClick={() => setError("")} aria-label="Dispensar erro">
+              <X size={16} />
+            </button>
+          </div>
+        )}
+        {!saving && (
+          <div className="error-banner" role="alert">
+            O navegador não conseguiu salvar. Exporte seu progresso em Opções
+            antes de fechar.
+          </div>
+        )}
+        {!run ? (
+          <Welcome
+            name={name}
+            setName={setName}
+            mode={mode}
+            setMode={setMode}
+            moveLearningMode={moveLearningMode}
+            setMoveLearningMode={setMoveLearningMode}
+            meta={state.meta}
+            invitationText={invitationText}
+            setInvitationText={setInvitationText}
+            onStart={startJourney}
+          />
+        ) : setup ? (
+          <Setup run={run} act={act} />
+        ) : run.phase === "ended" ? (
+          <Ending
+            run={run}
+            meta={state.meta}
+            onHall={() => setModal("hall")}
+            onShare={() => setModal("share-ended")}
+            onNew={() => {
+              setName(run.name);
+              setState((s) => ({
+                ...s,
+                run: null,
+              }));
+            }}
+          />
+        ) : (
+          <div className="game-shell">
+            <div className="dex-main-panel">
+              <MissionHUD run={run} saving={saving} />
+              <RunContent
+                spriteStyle={spriteStyle}
+                tab={tab}
+                run={run}
+                act={act}
+                selectedMonId={selectedMonId}
+                battleControlRef={battleControlRef}
+                onBattleSidebarChange={setBattleSidebar}
+              />
+            </div>
+            <div className="dex-hinge" aria-hidden="true" />
+            <TeamSidebar
               run={run}
-              act={act}
-              selectedMonId={selectedMonId}
-              battleControlRef={battleControlRef}
-              onBattleSidebarChange={setBattleSidebar}
+              battle={liveBattleSidebar}
+              onTeam={(id) => {
+                setSelectedMonId(id || null);
+                setTab("team");
+              }}
+              onReorder={(sourceId, targetId) =>
+                act({ type: "REORDER_PARTY", sourceId, targetId })
+              }
+              onBattleSwitch={(monId) =>
+                battleControlRef.current?.switchTo(monId)
+              }
             />
           </div>
-          <div className="dex-hinge" aria-hidden="true" />
-          <TeamSidebar
-            run={run}
-            battle={liveBattleSidebar}
-            onTeam={(id) => {
-              setSelectedMonId(id || null);
-              setTab("team");
-            }}
-            onReorder={(sourceId, targetId) =>
-              act({ type: "REORDER_PARTY", sourceId, targetId })
-            }
-            onBattleSwitch={(monId) =>
-              battleControlRef.current?.switchTo(monId)
-            }
+        )}
+        {playing && <GameNavigation tab={tab} setTab={setTab} run={run} />}
+        {run?.pendingEvolutionChoices?.length > 0 && run.phase !== "ended" && (
+          <EvolutionDialog run={run} act={act} />
+        )}
+        {!run?.pendingEvolutionChoices?.length &&
+          run?.pendingMoveChoices?.length > 0 &&
+          run.phase !== "ended" && <MoveLearnDialog run={run} act={act} />}
+        {modal === "pokedex" && (
+          <PokedexDialog
+            state={state}
+            slot={activeSlot}
+            onClose={() => setModal(null)}
           />
-        </div>
-      )}
-      {playing && <GameNavigation tab={tab} setTab={setTab} run={run} />}
-      {run?.pendingEvolutionChoices?.length > 0 && run.phase !== "ended" && (
-        <EvolutionDialog run={run} act={act} />
-      )}
-      {!run?.pendingEvolutionChoices?.length &&
-        run?.pendingMoveChoices?.length > 0 &&
-        run.phase !== "ended" && <MoveLearnDialog run={run} act={act} />}
-      {modal === "pokedex" && (
-        <PokedexDialog
-          state={state}
-          slot={activeSlot}
-          onClose={() => setModal(null)}
-        />
-      )}
-      {modal === "hall" && (
-        <HallOfFameDialog
-          history={state.meta.history}
-          onClose={() => setModal(null)}
-        />
-      )}
-      {modal === "share-ended" && run?.phase === "ended" && (
-        <ShareJourneyDialog
-          run={
-            state.meta.history.find(
-              (entry) =>
-                entry.id === run.number &&
-                entry.seed === run.seed &&
-                (!entry.slot || entry.slot === activeSlot),
-            ) || { ...run, id: run.number, team: run.party }
-          }
-          onClose={() => setModal(null)}
-        />
-      )}
-      {modal === "help" && <HelpDialog setModal={setModal} />}
-      {modal === "settings" && (
-        <SettingsDialog
-          spriteStyle={spriteStyle}
-          changeSpriteStyle={changeSpriteStyle}
-          spritePreferenceSaved={spritePreferenceSaved}
-          setModal={setModal}
-          exportSave={exportSave}
-          state={state}
-          playing={playing}
-          activeSlot={activeSlot}
-          saveSlots={saveSlots}
-          switchSaveSlot={switchSaveSlot}
-          onChallenge={() => setModal("challenge")}
-        />
-      )}
-      {(modal === "challenge" || (incomingInvitation && Boolean(run))) && (
-        <ChallengeDialog
-          state={state}
-          activeSlot={activeSlot}
-          saveSlots={saveSlots}
-          switchSaveSlot={switchInvitationSlot}
-          value={invitationText}
-          onChange={setInvitationText}
-          name={name}
-          setName={setName}
-          onStart={startJourney}
-          onClose={closeInvitation}
-        />
-      )}
-      {modal === "abandon" && <AbandonDialog setModal={setModal} act={act} />}
-      {modal === "reset" && (
-        <ResetDialog
-          onClose={() => setModal("settings")}
-          onReset={() => {
-            const blank = initialState();
-            blank.meta.history = state.meta.history;
-            blank.meta.dex = state.meta.dex;
-            setState(blank);
-            setTab("journey");
-            setModal(null);
-            setError("");
-          }}
-        />
-      )}
-    </div>
+        )}
+        {modal === "hall" && (
+          <HallOfFameDialog
+            history={state.meta.history}
+            onClose={() => setModal(null)}
+          />
+        )}
+        {modal === "share-ended" && run?.phase === "ended" && (
+          <ShareJourneyDialog
+            run={
+              state.meta.history.find(
+                (entry) =>
+                  entry.id === run.number &&
+                  entry.seed === run.seed &&
+                  (!entry.slot || entry.slot === activeSlot),
+              ) || { ...run, id: run.number, team: run.party }
+            }
+            onClose={() => setModal(null)}
+          />
+        )}
+        {modal === "help" && <HelpDialog setModal={setModal} />}
+        {modal === "audio" && <AudioDialog onClose={() => setModal(null)} />}
+        {modal === "settings" && (
+          <SettingsDialog
+            spriteStyle={spriteStyle}
+            changeSpriteStyle={changeSpriteStyle}
+            spritePreferenceSaved={spritePreferenceSaved}
+            setModal={setModal}
+            exportSave={exportSave}
+            state={state}
+            playing={playing}
+            activeSlot={activeSlot}
+            saveSlots={saveSlots}
+            switchSaveSlot={switchSaveSlot}
+            onChallenge={() => setModal("challenge")}
+          />
+        )}
+        {(modal === "challenge" || (incomingInvitation && Boolean(run))) && (
+          <ChallengeDialog
+            state={state}
+            activeSlot={activeSlot}
+            saveSlots={saveSlots}
+            switchSaveSlot={switchInvitationSlot}
+            value={invitationText}
+            onChange={setInvitationText}
+            name={name}
+            setName={setName}
+            onStart={startJourney}
+            onClose={closeInvitation}
+          />
+        )}
+        {modal === "abandon" && <AbandonDialog setModal={setModal} act={act} />}
+        {modal === "reset" && (
+          <ResetDialog
+            onClose={() => setModal("settings")}
+            onReset={() => {
+              const blank = initialState();
+              blank.meta.history = state.meta.history;
+              blank.meta.dex = state.meta.dex;
+              setState(blank);
+              setTab("journey");
+              setModal(null);
+              setError("");
+            }}
+          />
+        )}
+      </div>
+    </AudioProvider>
   );
 }

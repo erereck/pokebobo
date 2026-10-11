@@ -1,5 +1,13 @@
 # Histórico
 
+## 0.18.0 — A jornada tem som · 10/10/2026
+
+- Vinte músicas e cinco fanfares de FireRed / LeafGreen, baixadas com yt-dlp e incorporadas localmente. Seleção automática por cena/bioma, ginásio/Liga/campeão, lendários, vitória e Hall; playlist livre com escolha, anterior/próxima e avanço circular. Crossfade e retorno à posição da rota após captura.
+- Cries reais locais para todo o catálogo (481 arquivos / 486 entradas). Intro selvagem, envio/troca em batalha, escolha do inicial e Ouvir cry na Pokédex. Efeitos próprios com envelopes de pulso/ruído para passos, grama, água, transição, arremesso, impacto, absorção, quicados, shakes, captura/escape, golpes, status, cura, desmaio e ataques atrasados.
+- Som no cabeçalho, Opções → Som e playlist, três volumes independentes, mute lembrado entre slots, testes de efeito/Pikachu e créditos. Playlist ao lado dos volumes no PC; uma coluna no celular. Cabeçalho conserva todos os seis controles em 320 px.
+- Primeiro gesto libera áudio; nenhum MP3 antes disso ou com mute lembrado. Pausa em segundo plano, cancelamento de sons atrasados por cena, cache limitado, ducking da música para cries/fanfares e recuperação de autoplay/storage. Pular animação não acumula efeitos. Música sem pausas do álbum nas bordas e volume padronizado; arquivos sob demanda (29,89 MiB no conjunto).
+- 152 testes, arquitetura/build web e PCM decodificado dos 506 arquivos; zero amostras saturadas nas músicas/fanfares, silêncio inicial máximo 71,1 ms. Verificação em Edge, desktop/mobile/paisagem, com Web Audio real e vídeo do mixer/canvas. Saves, RNG, regras e standalone preservados. Limites em VALIDACAO e docs/AUDIO.
+
 ## 0.17.0 — Histórias para compartilhar · 10/10/2026
 
 - Pokédex com 485 espécies/formas únicas, progresso por região, filtros combináveis e registros faltantes. Normal/shiny separados, comparação lado a lado e jornadas por variante. Família evolutiva completa, incluindo os oito destinos de Eevee; formas regionais usam sprites próprios.

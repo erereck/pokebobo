@@ -1,4 +1,14 @@
-# Validação — Pokébobo 0.16.0
+# Validação — Pokébobo 0.18.0
+
+## 0.18.0 — A jornada tem som · 10/10/2026
+
+- `npm run verify` com `VITE_BASE=/pokebobo/`: 228 módulos, arquitetura sem ciclos/UI no motor, 152/152 testes e build Vite. Sete novos testes: preferências/storage, cenas sem consumo de RNG, captura/skip/ticks, cobertura/hash dos assets, gesto/mute/visibilidade/posição, cancelamento de cries/rede e corrida/autoplay/playlist. Nenhuma mudança em game/, schema, regras ou fixtures antigas; nenhum standalone.
+- 506 MP3 decodificados com FFmpeg: 20 músicas, cinco fanfares e 481 cries. `docs/balance/audio-assets-0.18.0.json`: 31.346.756 bytes / 29,89 MiB; zero amostras saturadas em músicas/fanfares e silêncio inicial máximo 71,1 ms. Cries preservam fontes originais; medição PCM estéreo 11025 Hz. Importador removeu pausas de álbum (Opening originalmente tinha ~2,29 s de silêncio). Hashes/fontes no manifesto.
+- Edge/Playwright com AudioContext/media elements reais: 13 registros em 1280×800, 390×844, 320×568 e 844×390. Zero downloads de áudio antes do gesto ou com mute lembrado; reprodução, volumes/zero, cries, playlist/next, mute/reload, passos, captura sucesso/escape e turno real de batalha. Waveform com sinal não nulo/pico abaixo de 1, save inalterado pelas opções. Visibilidade hidden foi simulada com evento, verificando suspensão/retomada reais do contexto. `docs/balance/browser-audio-0.18.0.json`.
+- Casos adicionais: teclado, equipe→rota com posição retomada, fim da faixa avançando sozinho, trocas rápidas/reinício, movimento reduzido, duas tentativas/pular/reload sem duplicar bola e storage negado só nas preferências. Dois registros adicionais. Canvas + saída real do mixer gravados juntos em WebM/MP4; amostra de captura sem saturação (pico ~0,199 no dev). `docs/balance/browser-audio-extra-0.18.0.json`.
+- Os mesmos 15 registros e 12 fluxos passaram no preview do build em `/pokebobo/`, incluindo MP3, sprites, fontes e créditos sob o prefixo da hospedagem. `browser-audio-preview-0.18.0.json` e `browser-audio-extra-preview-0.18.0.json`. Sem erros inesperados de console/rede, imagens quebradas ou overflow horizontal; seis controles do topo dentro de 320 px.
+- Bundle principal 9.145,38 kB / 1.465,88 kB gzip; CSS 115,87 kB / 22,55 kB gzip. MP3 fora do JS, sob demanda; cache decodificado limitado a 48. Sem nova dependência de runtime. Ferramentas, gravação original e vídeos de QA não entram no build/repositório.
+- Limites: sem escuta/teste em celular físico, iOS, Bluetooth ou hardware externo. Medição PCM/mixer e emulação mobile não cobrem esses aparelhos. Autoplay rejeitado e rede ruim foram testados no mixer com dependências controladas; contexto/playback normais são reais no Edge. Música é gravação de álbum com crossfade, sem emulador/loop points originais; efeitos sintetizados próprios, sem afirmar extração oficial de cada golpe. Sem YouTube em runtime.
 
 ## 0.17.0 — Histórias para compartilhar · 10/10/2026
 

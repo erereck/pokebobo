@@ -1,5 +1,9 @@
 # Pokébobo — sistema de interface 0.3.0
 
+## Som e playlist — 0.18.0
+
+Mute no cabeçalho como botão físico de 44 px (40 px no visor de 320), com estado acessível; logo vira Poké Bola no cabeçalho até 500 px para conservar seis controles. Opções abre Som e playlist. Modal de 840 px, cabeçalho sticky: faixa/transportes no topo, volumes/modos à esquerda, biblioteca à direita; até 640 px vira uma coluna. Ranges nativos com rótulo/percentual, três canais, seleção verde LCD e transportes de 48 px. Playlist com índice, título oficial, contexto e duração; lista rola separadamente. Mantém tipos/cores existentes e foco visível. Sem detalhes técnicos de codecs/cortes nas ações do jogador; fontes/termos em link próprio.
+
 ## Intenção e assinatura
 
 Treinador em uma run curta, no celular ou PC: localizar a próxima decisão, preparar a equipe, lutar e continuar. Sensação de dispositivo de aventura. Domínio: Pokédex, lente de leitura, cartucho, insígnias, scanner, mapa de rotas, turno e Poké Bolas.

@@ -1,6 +1,8 @@
-# Pokébobo — 0.17.0 · Histórias para compartilhar
+# Pokébobo — 0.18.0 · A jornada tem som
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.18.0 traz **música, cries e efeitos sincronizados**. Vinte músicas de FireRed / LeafGreen acompanham as cenas; em Opções → Som e playlist você pode escolher uma faixa e ouvir a sequência livre, ajustar três volumes ou silenciar tudo pelo topo. Cries reais de todo o catálogo, passos em grama/água, arremesso, quicados, shakes, captura, golpes, cura, desmaio e fanfares. Preferências lembradas, transições suaves, pausa ao sair da aba e retomada da trilha da rota. Arquivos locais obtidos com yt-dlp/Showdown, sem YouTube durante a partida. [Controles](docs/images/audio-0.18-desktop.png) · [Como funciona](docs/AUDIO.md) · [Fontes e créditos](public/audio/README.md).
 
 A 0.17.0 traz uma **Pokédex para completar e jornadas para compartilhar**: comparação normal/shiny, progresso pelas oito regiões do catálogo e filtros por tipo, região e variantes. **Compartilhar jornada**, na tela final ou no Hall, gera um PNG com equipe, shinies, insígnias, modo e seed. O QR e o convite permitem jogar as mesmas cidades com um inicial à sua escolha. Também é possível digitar uma seed em Nova aventura ou Opções → Jogar desafio de um amigo; slots em andamento ficam protegidos. [Pokédex](docs/images/pokedex-comparacao-0.17-celular.png) · [Cartão de exemplo](docs/images/cartao-jornada-0.17.png) · [Como funciona](docs/POKEDEX-E-COMPARTILHAMENTO.md).
 

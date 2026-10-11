@@ -9,6 +9,13 @@ export function HelpDialog({ setModal }) {
       <div className="help-content">
         <h3>Controles da Pokédex</h3>
         <p>
+          O botão Som no topo ativa ou silencia tudo. Em Opções → Som e
+          playlist, ajuste música, efeitos e cries separadamente. Seguir o jogo
+          escolhe a trilha de cada cena; Playlist livre toca as 20 músicas de
+          FireRed / LeafGreen em sequência. A escolha fica lembrada entre os
+          três slots.
+        </p>
+        <p>
           A Pokédex reúne os registros dos três slots. Consulte o progresso por
           região e combine filtros de tipo e variante; quando registrar normal e
           shiny da mesma espécie, use Comparar na ficha.
@@ -160,6 +167,21 @@ export function HelpDialog({ setModal }) {
           License).
         </p>
         <CoverCredits />
+        <p>
+          Música e fanfares: Pokémon FireRed / LeafGreen, Go Ichinose, Junichi
+          Masuda e Morikazu Aoki; gravação publicada por F4m1LyGuy10, obtida com
+          yt-dlp. Cries reais via Pokémon Showdown. Efeitos de ações
+          sintetizados para o Pokébobo. Tudo local, com volume padronizado na
+          trilha e pausa ao sair da aba.{" "}
+          <a
+            href={`${import.meta.env.BASE_URL}audio/README.md`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Fontes, processamento e termos do áudio
+          </a>
+          .
+        </p>
         <p>
           Sprites 2D de batalha: gráficos de Game Freak / Nintendo / The Pokémon
           Company e adaptações em pixel art dos artistas da comunidade, via{" "}

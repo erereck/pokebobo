@@ -6,15 +6,16 @@ export function usePixelCanvas({
   animationKey,
   draw,
   onComplete,
+  onFrame,
   duration = Infinity,
   skip = false,
 }) {
   const canvasRef = useRef(null);
-  const callbacks = useRef({ draw, onComplete });
+  const callbacks = useRef({ draw, onComplete, onFrame });
   const surface = useRef(null);
   const [error, setError] = useState("");
   useEffect(() => {
-    callbacks.current = { draw, onComplete };
+    callbacks.current = { draw, onComplete, onFrame };
     const frame = surface.current;
     if (frame?.key === `${animationKey}|${sources.join("|")}`)
       draw(frame.ctx, frame.images, frame.tick);
@@ -57,6 +58,7 @@ export function usePixelCanvas({
             tick,
           };
           callbacks.current.draw(ctx, images, tick);
+          callbacks.current.onFrame?.(tick, skip || reduced);
           if (tick >= duration && !completed) {
             completed = true;
             callbacks.current.onComplete?.();

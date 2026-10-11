@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
 import { DexVariants } from "./DexVariants.jsx";
+import { Volume2 } from "lucide-react";
+import { useAudio } from "../audio/AudioContext.js";
 import {
   dexRegion,
   dexRuns,
@@ -10,6 +12,7 @@ import {
 } from "./dexModel.js";
 
 export function DexDetails({ entry, index, preferShiny, onSelect }) {
+  const audio = useAudio();
   const owned = index.get(entry.name);
   const [variant, setVariant] = useState(
     (preferShiny && owned?.shiny) || (!owned?.normal && owned?.shiny)
@@ -24,6 +27,19 @@ export function DexDetails({ entry, index, preferShiny, onSelect }) {
         {owned ? "REGISTRADO" : "A DESCOBRIR"}
       </span>
       <h3>{entry.name}</h3>
+      <button
+        className="text-button cry-button"
+        data-audio-silent
+        disabled={audio?.preferences.muted || !audio?.preferences.cries}
+        onClick={() => {
+          audio?.activate();
+          audio?.cry(entry.name, { scope: "preview" });
+        }}
+        aria-label={`Ouvir cry de ${entry.name}`}
+      >
+        <Volume2 size={15} />
+        Ouvir cry
+      </button>
       <div className="types">
         {entry.types.map((type) => (
           <TypeTag key={type} type={type} />

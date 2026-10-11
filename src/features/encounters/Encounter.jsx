@@ -3,8 +3,10 @@ import { CaptureCanvas } from "./CaptureCanvas.jsx";
 import { PixelViewport } from "./PixelViewport.jsx";
 import { targetLevel } from "../../game/selectors/targetLevel.js";
 import { CAMPAIGN_RULES } from "../../game/config/campaign.js";
+import { useAudio } from "../audio/AudioContext.js";
 
 export function Encounter({ run: r, act }) {
+  const audio = useAudio();
   const [replaceId, setReplaceId] = useState("");
   const [selected, setSelected] = useState(() =>
     r.encounters.findIndex((e) => !e.used),
@@ -99,7 +101,10 @@ export function Encounter({ run: r, act }) {
                 disabled={!ready}
                 onPointerEnter={() => setSelectedAction("run")}
                 onFocus={() => setSelectedAction("run")}
-                onClick={() => act({ type: "SKIP_ENCOUNTER" })}
+                onClick={() => {
+                  audio?.cue("flee");
+                  act({ type: "SKIP_ENCOUNTER" });
+                }}
               >
                 <span className="sr-only">Fugir</span>
               </button>

@@ -1,0 +1,49 @@
+{
+  "tag": "dev",
+  "base": "http://localhost:4173/",
+  "errors": [],
+  "network": [],
+  "flows": [
+    {
+      "name": "teclado, auto→equipe→auto retoma posição, fim avança, trocas rápidas/reinício"
+    },
+    {
+      "name": "captura com mixer/canvas gravados, sem clipping na amostra",
+      "wave": {
+        "peak": 0.19878126680850983,
+        "rms": 0.04313633364144835,
+        "nonzero": 40865
+      },
+      "videoBytes": 273898
+    },
+    {
+      "name": "movimento reduzido mantém resultado/estoque e não despeja efeitos"
+    },
+    {
+      "name": "escape→nova bola→pular→reload, estoque preservado"
+    },
+    {
+      "name": "storage indisponível: mensagem, canal zero, som continua"
+    }
+  ],
+  "screens": [
+    {
+      "name": "playlist-extra",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    },
+    {
+      "name": "storage-indisponivel",
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "dialogOverflow": false,
+      "headerFit": true,
+      "broken": []
+    }
+  ]
+}

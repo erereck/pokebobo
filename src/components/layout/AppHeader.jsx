@@ -9,11 +9,12 @@ import {
 import { useFullscreen } from "../../app/hooks/useFullscreen.js";
 import { Brand } from "../brand/Brand.jsx";
 import { VERSION } from "../../app/version.js";
+import { AudioButton } from "../../features/audio/AudioButton.jsx";
 export function AppHeader({ setModal }) {
   const fullscreen = useFullscreen();
   const FullscreenIcon = fullscreen.active ? Minimize : Maximize;
   return (
-    <header className="dex-header">
+    <header className="dex-header has-audio-tools">
       <div className="dex-sensors" aria-hidden="true">
         <div className="dex-lens">
           <i />
@@ -24,13 +25,14 @@ export function AppHeader({ setModal }) {
           <i />
         </div>
       </div>
-      <div className="dex-brand">
+      <div className="dex-brand" aria-label="Pokébobo">
         <Brand />
         <span>
           POKÉDEX DE CAMPO <b>v{VERSION}</b>
         </span>
       </div>
       <div className="dex-header-tools">
+        <AudioButton />
         <button
           className="hardware-button"
           aria-label="Sua Pokédex"
