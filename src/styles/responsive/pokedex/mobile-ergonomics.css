@@ -1,0 +1,61 @@
+/* Carcaça e decisões dentro da área visível, sem disputar o zoom nativo. */
+@media (max-width: 900px), (max-height: 500px) {
+  .app-shell {
+    height: var(--visible-height, 100dvh);
+    padding-top: var(--safe-top);
+    padding-left: max(8px, var(--safe-left));
+    padding-right: max(8px, var(--safe-right));
+    padding-bottom: max(8px, var(--safe-bottom));
+  }
+}
+:root:fullscreen .app-shell { height: var(--visible-height, 100dvh); }
+
+@media (hover: none) and (pointer: coarse) {
+  .dex-header-tools .hardware-button,
+  .battle-tools button,
+  .game-navigation button { min-height: 44px; height: auto; }
+  .dex-header-tools .hardware-button { min-width: 44px; width: 44px; }
+  .battle-control-heading { min-height: 46px; }
+  .evolution-actions {
+    position: sticky;
+    bottom: 0;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    gap: 8px;
+    padding: 8px 0;
+    margin-top: 12px;
+    background: var(--lcd);
+    border-top: 1px solid var(--lcd-line);
+  }
+  .evolution-actions .button { min-width: 0; padding: 10px 6px; gap: 4px; font-size: 12px; }
+  .evolution-actions .button svg { display: none; }
+  .evolution-grid { overflow-y: auto; overscroll-behavior: contain; padding: 3px; }
+  .evolution-dialog { scroll-padding-bottom: 80px; }
+  .wild-screen .replace-choice select { min-height: 44px; font-size: 16px; }
+  .audio-volume input { height: 44px; }
+  .cry-button { min-height: 44px; }
+}
+@media (hover: none) and (pointer: coarse) and (max-width: 360px) {
+  .dex-header .dex-brand { display: none; }
+  .dex-header-tools { margin-inline: auto; }
+}
+@media (hover: none) and (pointer: coarse) and (max-height: 500px) and (min-width: 600px) {
+  .dex-header { height: 52px; }
+  .game-navigation { height: 52px; padding-top: 4px; }
+  .battle-screen { grid-template-rows: 26px minmax(0, 1fr) 26px; }
+  .battle-topline h1 { font-size: 16px; }
+  .battle-controls { padding-top: 0; }
+  .evolution-option { padding: 8px 6px; gap: 4px; }
+  .evolution-option > .sprite { width: 48px; height: 48px; }
+}
+@media (max-height: 360px) and (min-width: 600px) {
+  .wild-screen .pixel-viewport { min-height: 155px; }
+  .exploration-screen { grid-template-rows: auto minmax(91px, 1fr) auto; }
+  .exploration-screen .pixel-screen-heading { grid-column: 1; grid-row: 1; }
+  .exploration-screen .field-status { grid-column: 2; grid-row: 1; align-self: center; }
+  .exploration-screen .pixel-viewport { grid-row: 2 / 4; }
+  .exploration-screen .field-controls { grid-row: 2; }
+  .exploration-screen .field-guide { display: none; }
+  .exploration-screen .field-lake-guide { grid-row: 3; font-size: 10px; }
+}

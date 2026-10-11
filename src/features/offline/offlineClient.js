@@ -79,8 +79,9 @@ export function startOffline() {
           if (worker.state === "redundant")
             publish({
               preparing: false,
-              error:
-                "Não foi possível preparar o acesso sem conexão. Você pode continuar jogando online.",
+              error: registration.active
+                ? "Não foi possível preparar a atualização. Sua versão atual continua disponível."
+                : "Não foi possível preparar o acesso sem conexão. Você pode continuar jogando online.",
             });
         });
       };

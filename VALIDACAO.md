@@ -1,4 +1,13 @@
-# Validação — Pokébobo 0.20.0
+# Validação — Pokébobo 0.20.1
+
+## Na palma da mão — 11/10/2026
+
+- `npm run verify`, com `VITE_BASE=/pokebobo/`: 253 módulos, 184 testes normais e 179 do motor empacotado, todos aprovados; build web concluído. JavaScript principal 5.433,97 kB/gzip 1.015,34; CSS 123,20 kB/gzip 23,78. Schema 4 e regras do jogo preservados; não houve novo ajuste de balanceamento.
+- Geometria com contexto móvel/DPR 2: cinco visores (320×568, 390×664, 412×780, 667×320, 844×340) × batalha/campo/captura, 15 registros. Cabeçalho, ferramentas de batalha, navegação e comandos dessas cenas medidos com mínimo de 44 px, dentro do visor. Sem overflow horizontal; o conteúdo da captura de 667 px excede o painel em 1 px. Mais seis registros com recortes simulados: 44/34 px em vertical e 47/47/21 px em paisagem, sem overflow.
+- Build final em Edge e WebKit Windows: dez registros/seis fluxos em cada navegador, com toques nativos emulados. Espaçamento interno/arrasto não fecham o dialog; fundo fecha. Edge usa gesto de rolagem CDP; WebKit usa rolagem programática. As oito evoluções são selecionadas em 320×568, 390×664 e 844×340; confirmação permanece acessível e Vaporeon evolui realmente. Viewport sintético cobre teclado de registro/Pokédex, deslocamento de 74 px e zoom 2×; recortes de paisagem e ajuste real de volume por toque passam. Sem console/rede inesperados ou imagem quebrada.
+- Regressões: 30 registros/quatro fluxos de caderno/backups/controles/storage negado e 22/seis de coleção/cartão/convite em dev; áudio no preview com 13/sete. Regras de evolução/captura/batalha seguem as existentes. A campanha completa de 0.20.0 permanece como referência anterior, sem alegar repetição nesta entrega.
+- Revisão offline encontrou shell em cache mas JavaScript indisponível após reload: Vary: Origin fazia a leitura rejeitar módulos pedidos com Origin. Leituras agora ignoram Vary apenas no cache de arquivos estáticos locais permitidos. Teste reproduz ausência/presença de Origin e música Range. Build final repetido no preview: quatro registros/três fluxos, reload sem rede/save preservado, turno/caderno/exportação, Range 206/200 bytes e HTMLAudioElement com readyState 4/currentTime crescente. Novo teste também confirma mensagem de falha de atualização com versão atual pronta.
+- [Evidências da rodada](docs/balance/mobile-validation-0.20.1.json). Limites: visores, teclado e recortes emulados; WebKit Windows não equivale a Safari/iPhone. Sem aparelho físico ou instalação real nesta rodada. Uma primeira navegação WebKit expirou sob carga de compilação, repetida com sucesso depois; isso não foi contado como aprovação. Offline depende do preparo e dos arquivos já usados, sem promessa de catálogo inteiro.
 
 ## Novos caminhos — 11/10/2026
 

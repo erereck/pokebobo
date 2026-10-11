@@ -1,0 +1,644 @@
+[
+  {
+    "w": 390,
+    "h": 664,
+    "kind": "battle",
+    "overflow": false,
+    "mainOverflow": 0,
+    "targets": [
+      {
+        "label": "Ativar som",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Sua Pokédex",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Entrar em tela cheia",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Hall da Fama",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Como jogar e créditos",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Opções e progresso",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Velocidade da animação: normal",
+        "width": 44.328125,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Trocar",
+        "width": 70.96875,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Abrir caderno de batalha",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "1Tackle56/56 PPNormalPoder 40",
+        "width": 164,
+        "height": 58,
+        "inView": true
+      },
+      {
+        "label": "2Growl64/64 PPPoder —",
+        "width": 164,
+        "height": 58,
+        "inView": true
+      },
+      {
+        "label": "3Protect16/16 PPPoder —",
+        "width": 164,
+        "height": 58,
+        "inView": true
+      },
+      {
+        "label": "4Splash64/64 PPPoder —",
+        "width": 164,
+        "height": 58,
+        "inView": true
+      },
+      {
+        "label": "Batalha",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Equipe",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Mapa",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Mochila",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Diário",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      }
+    ]
+  },
+  {
+    "w": 390,
+    "h": 664,
+    "kind": "exploration",
+    "overflow": false,
+    "mainOverflow": 0,
+    "targets": [
+      {
+        "label": "Ativar som",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Sua Pokédex",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Entrar em tela cheia",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Hall da Fama",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Como jogar e créditos",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Opções e progresso",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Caminhar para cima",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Caminhar para esquerda",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Caminhar para baixo",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Caminhar para direita",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Pescar",
+        "width": 96.5,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Surf",
+        "width": 96.5,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Voltar à jornada",
+        "width": 196,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Jornada",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Equipe",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Mapa",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Mochila",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Diário",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      }
+    ]
+  },
+  {
+    "w": 390,
+    "h": 664,
+    "kind": "encounter",
+    "overflow": false,
+    "mainOverflow": 0,
+    "targets": [
+      {
+        "label": "Ativar som",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Sua Pokédex",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Entrar em tela cheia",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Hall da Fama",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Como jogar e créditos",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Opções e progresso",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Lançar Poké Bola",
+        "width": 101.390625,
+        "height": 67.59375,
+        "inView": true
+      },
+      {
+        "label": "Fugir do encontro",
+        "width": 101.40625,
+        "height": 67.59375,
+        "inView": true
+      },
+      {
+        "label": "Jornada",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Equipe",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Mapa",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Mochila",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      },
+      {
+        "label": "Diário",
+        "width": 70,
+        "height": 50,
+        "inView": true
+      }
+    ]
+  },
+  {
+    "w": 844,
+    "h": 390,
+    "kind": "battle",
+    "overflow": false,
+    "mainOverflow": 0,
+    "targets": [
+      {
+        "label": "Ativar som",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Sua Pokédex",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Entrar em tela cheia",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Hall da Fama",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Como jogar e créditos",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Opções e progresso",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Velocidade da animação: normal",
+        "width": 44.328125,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Trocar",
+        "width": 70.96875,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Abrir caderno de batalha",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "1Tackle56/56 PPNormalPoder 40",
+        "width": 171.5,
+        "height": 76.5,
+        "inView": true
+      },
+      {
+        "label": "2Growl64/64 PPPoder —",
+        "width": 171.5,
+        "height": 76.5,
+        "inView": true
+      },
+      {
+        "label": "3Protect16/16 PPPoder —",
+        "width": 171.5,
+        "height": 70.5,
+        "inView": true
+      },
+      {
+        "label": "4Splash64/64 PPPoder —",
+        "width": 171.5,
+        "height": 70.5,
+        "inView": true
+      },
+      {
+        "label": "Batalha",
+        "width": 145.1875,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Equipe",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Mapa",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Mochila",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Diário",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      }
+    ]
+  },
+  {
+    "w": 844,
+    "h": 390,
+    "kind": "exploration",
+    "overflow": false,
+    "mainOverflow": 0,
+    "targets": [
+      {
+        "label": "Ativar som",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Sua Pokédex",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Entrar em tela cheia",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Hall da Fama",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Como jogar e créditos",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Opções e progresso",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Caminhar para cima",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Caminhar para esquerda",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Caminhar para baixo",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Caminhar para direita",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Pescar",
+        "width": 86.609375,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Surf",
+        "width": 86.609375,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Voltar à jornada",
+        "width": 176.21875,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Jornada",
+        "width": 145.1875,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Equipe",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Mapa",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Mochila",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Diário",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      }
+    ]
+  },
+  {
+    "w": 844,
+    "h": 390,
+    "kind": "encounter",
+    "overflow": false,
+    "mainOverflow": 0,
+    "targets": [
+      {
+        "label": "Ativar som",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Sua Pokédex",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Entrar em tela cheia",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Hall da Fama",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Como jogar e créditos",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Opções e progresso",
+        "width": 44,
+        "height": 44,
+        "inView": true
+      },
+      {
+        "label": "Lançar Poké Bola",
+        "width": 87.59375,
+        "height": 58.390625,
+        "inView": true
+      },
+      {
+        "label": "Fugir do encontro",
+        "width": 87.59375,
+        "height": 58.390625,
+        "inView": true
+      },
+      {
+        "label": "Jornada",
+        "width": 145.1875,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Equipe",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Mapa",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Mochila",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      },
+      {
+        "label": "Diário",
+        "width": 145.203125,
+        "height": 46,
+        "inView": true
+      }
+    ]
+  }
+]

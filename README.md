@@ -1,6 +1,8 @@
-# Pokébobo — 0.20.0 · Novos caminhos
+# Pokébobo — 0.20.1 · Na palma da mão
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.20.1 melhora **toque, teclado e paisagem**: comandos principais com 44 px, respeito aos recortes do aparelho, janelas que acompanham a área visível e evoluções com confirmação acessível. Arrastar dentro de uma janela não a fecha por acidente. A reabertura offline também funciona quando o servidor distingue pedidos pelo cabeçalho Origin. [Celular e limites](docs/MOBILE.md) · [Eevee](docs/images/eevee-0.20.1-celular.png) · [Paisagem](docs/images/mobile-0.20.1-paisagem.png).
 
 A 0.20.0 varia a exploração com **quatro desenhos de trilhas, clareiras e lago**, escolhidos pela seed e rota. Red usa os quadros originais da vara antes de pescar; Surf também tem preparação. Uma faixa acima do campo conserva a cabeça do treinador na borda. **Novo golpe** compara categoria, poder, precisão e prioridade dos quatro atuais; o caderno mostra confusão, sementes, telas, hazards, clima e terreno. **Opções → Leve o Pokébobo com você** explica a instalação e confirma quando o jogo está pronto para reabrir sem conexão. Artes e músicas usadas ficam em cache limitado; conteúdos ainda não usados podem precisar de internet. Atualizações entram após fechar todas as abas e reabrir. Níveis, IA, captura de 67%, 50 passos ocultos, escala da batalha e schema 4 preservados. [Guia e limites](docs/CAMPO-E-OFFLINE.md).
 

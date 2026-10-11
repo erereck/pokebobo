@@ -1,5 +1,11 @@
 # Pokébobo — sistema de interface 0.3.0
 
+## Na palma da mão — 0.20.1
+
+Intenção: jogador no telefone toca comandos, escolhe evolução e escreve sem perder a ação para teclado/recortes. Conserva rubi/LCD/âmbar, DM Sans/Space Grotesk e espaçamento existente. Em ponteiro coarse sem hover, comandos principais têm 44 px; cabeçalho de 320 px omite a lente para acomodar seis ícones com nomes acessíveis. Paisagem curta compacta instrumentação para conservar cena e comandos.
+
+Áreas seguras entram por tokens; VisualViewport publica altura/deslocamento visíveis, deixa zoom nativo livre e aproxima campo focado quando o teclado reduz a área. Dialog nativo conserva foco/Escape, apenas gesto completo no fundo fecha. Evoluções usam lista rolável e rodapé de confirmação sticky, sem mudar decisões. Volume recebe área de toque de 44 px. Conferência emulada não substitui teste físico de teclado/Safari.
+
 ## Novos caminhos — 0.20.0
 
 Campo mantém a carcaça/rubi/LCD e todos os controles: quatro composições de tiles, canvas 192×144 com faixa superior de uma casa, grade clicável 12×8 alinhada. Preparação da vara usa offsets originais, feedback de mordida em pixels e bloqueio breve dos controles; movimento reduzido conclui imediatamente. Nenhuma contagem de encontros/passos visível.

@@ -11,6 +11,7 @@ export function Modal({
   dismissible = true,
 }) {
   const ref = useRef();
+  const backdropPointer = useRef(null);
   const titleId = useId();
   useEffect(() => {
     const dialog = ref.current;
@@ -19,7 +20,7 @@ export function Modal({
     return () => {
       dialog.close();
       if (trigger instanceof HTMLElement && trigger.isConnected)
-        trigger.focus();
+        trigger.focus({ preventScroll: true });
     };
   }, []);
   return (
@@ -32,9 +33,27 @@ export function Modal({
         if (!dismissible) event.preventDefault();
         else onClose();
       }}
-      onClick={(event) => {
-        if (dismissible && event.target === ref.current) onClose();
+      onPointerDown={(event) => {
+        const bounds = ref.current.getBoundingClientRect();
+        backdropPointer.current =
+          dismissible && event.target === ref.current &&
+          (event.clientX < bounds.left || event.clientX > bounds.right ||
+            event.clientY < bounds.top || event.clientY > bounds.bottom)
+            ? { id: event.pointerId, released: false } : null;
       }}
+      onPointerUp={(event) => {
+        const bounds = ref.current.getBoundingClientRect();
+        const outside = event.clientX < bounds.left || event.clientX > bounds.right ||
+          event.clientY < bounds.top || event.clientY > bounds.bottom;
+        if (backdropPointer.current?.id === event.pointerId)
+          backdropPointer.current.released = outside;
+      }}
+      onClick={(event) => {
+        if (dismissible && event.target === ref.current &&
+            backdropPointer.current?.released) onClose();
+        backdropPointer.current = null;
+      }}
+      onPointerCancel={() => { backdropPointer.current = null; }}
     >
       <div className="modal-head">
         <h2 id={titleId}>{title}</h2>

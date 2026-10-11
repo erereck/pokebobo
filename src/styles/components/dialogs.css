@@ -6,9 +6,19 @@ dialog {
   color: var(--ink);
   padding: 20px;
   width: min(560px, calc(100% - 24px));
-  max-height: calc(100dvh - 32px);
+  position: fixed;
+  left: var(--safe-left);
+  right: var(--safe-right);
+  max-width: calc(100vw - 24px - var(--safe-left) - var(--safe-right));
+  top: calc(var(--visible-top, 0px) + var(--safe-top) + (var(--visible-height, 100dvh) - var(--safe-top) - var(--safe-bottom)) / 2);
+  bottom: auto;
+  margin-block: 0;
+  transform: translateY(-50%);
+  max-height: calc(var(--visible-height, 100dvh) - var(--safe-top) - var(--safe-bottom) - 32px);
   box-shadow: 0 20px 80px #0007;
   overflow: auto;
+  overscroll-behavior: contain;
+  scroll-padding-block: 88px 16px;
   scrollbar-width: thin;
 }
 dialog::backdrop {

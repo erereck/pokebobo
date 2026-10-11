@@ -142,6 +142,7 @@
 .forget-move-button:hover { border-color: var(--amber); }
 .forget-move-content { display: grid; gap: 6px; min-width: 0; }
 .forget-move-name { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+.evolution-actions { display: grid; gap: 8px; margin-top: 12px; }
 .move-summary { display: grid; gap: 6px; font-size: 12px; line-height: 1.45; color: var(--ink-soft); font-weight: 400; }
 .new-move-card > .move-summary { margin-top: 8px; }
 .new-move-card > .move-summary > span + span { color: var(--ink); }

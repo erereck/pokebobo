@@ -6,18 +6,26 @@ const template = readFileSync(
   new URL("../scripts/serviceWorker.js", import.meta.url),
   "utf8",
 );
-function worker({ broken = false } = {}) {
+function worker({ broken = false, varyOrigin = false } = {}) {
   const mutations = { puts: 0, deletes: 0 };
   const handlers = new Map(),
     stores = new Map(),
+    requestOrigins = new Map(),
     scope = "https://example.test/pokebobo/";
   const caches = {
     open: async (name) => {
       if (!stores.has(name)) stores.set(name, new Map());
+      if (!requestOrigins.has(name)) requestOrigins.set(name, new Map());
       const store = stores.get(name),
         key = (r) => (typeof r === "string" ? r : r.href || r.url);
+      const origins = requestOrigins.get(name);
       return {
-        match: async (r) => store.get(key(r))?.clone(),
+        match: async (r, options = {}) => {
+          const response = store.get(key(r));
+          if (response?.headers.get("Vary") === "Origin" && !options.ignoreVary &&
+              (r.headers?.get("Origin") || "") !== (origins.get(key(r)) || "")) return undefined;
+          return response?.clone();
+        },
         delete: async (r) => {
           mutations.deletes++;
           return store.delete(key(r));
@@ -26,12 +34,14 @@ function worker({ broken = false } = {}) {
         put: async (r, value) => {
           mutations.puts++;
           store.set(key(r), value.clone());
+          origins.set(key(r), r.headers?.get("Origin") || "");
         },
         addAll: async (requests) => {
           for (const r of requests) {
             const response = await network(r);
             if (!response.ok) throw Error("bad asset");
             store.set(key(r), response.clone());
+            origins.set(key(r), r.headers?.get("Origin") || "");
           }
         },
       };
@@ -47,13 +57,14 @@ function worker({ broken = false } = {}) {
     const url = typeof request === "string" ? request : request.url;
     if (url.endsWith("index.html"))
       return new Response('<script src="assets/main.js"></script>', {
-        headers: { "Content-Type": "text/html" },
+        headers: { "Content-Type": "text/html", ...(varyOrigin ? { Vary: "Origin" } : {}) },
       });
     if (broken && url.endsWith("main.js"))
       return new Response("missing", { status: 404 });
     return new Response(new Uint8Array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]), {
       headers: {
         "Content-Type": url.endsWith("mp3") ? "audio/mpeg" : "image/png",
+        ...(varyOrigin ? { Vary: "Origin" } : {}),
       },
     });
   }
@@ -199,4 +210,28 @@ test("instalação incompleta não remove o shell anterior e ativação conserva
   assert.equal(good.stores.has("pokebobo-shell-old1"), false);
   assert.ok(good.stores.has("pokebobo-shell-old2"));
   assert.ok(good.stores.has("other-app"));
+});
+
+test("arquivos estáticos com Vary Origin funcionam offline em módulos CORS e mídia", async () => {
+  const w = worker({ varyOrigin: true });
+  await w.send("install");
+  const moduleRequest = new Request(w.scope + "assets/main.js", {
+    headers: { Origin: "https://example.test" },
+  });
+  const shell = await w.caches.open("pokebobo-shell-test");
+  assert.equal(await shell.match(moduleRequest), undefined, "cache padrão distingue o header");
+  w.setOffline(true);
+  assert.equal((await w.send("fetch", moduleRequest)).status, 200);
+  w.setOffline(false);
+  await w.send("fetch", new Request(w.scope + "audio/track.mp3", {
+    headers: { Origin: "https://example.test" },
+  }));
+  const media = await w.caches.open("pokebobo-media-v1");
+  assert.equal(await media.match(new Request(w.scope + "audio/track.mp3")), undefined);
+  w.setOffline(true);
+  const response = await w.send("fetch", new Request(w.scope + "audio/track.mp3", {
+    headers: { Range: "bytes=1-3" },
+  }));
+  assert.equal(response.status, 206);
+  assert.deepEqual([...new Uint8Array(await response.arrayBuffer())], [1, 2, 3]);
 });

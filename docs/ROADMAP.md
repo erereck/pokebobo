@@ -1,5 +1,17 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## 0.20.1 — Na palma da mão · 11/10/2026
+
+**Pedido:** até mais uma hora de refinamento com foco na experiência mobile, revisão e publicação autorizada.
+
+**Entrega e motivo:** comandos principais com 44 px para facilitar toque, áreas seguras e VisualViewport para conservar campos/ações com teclado aberto. Paisagem curta ganha espaço para arena/captura/campo. Eevee mantém oito caminhos roláveis e confirmação acessível. Arrastos e toques no espaçamento interno deixam de fechar janelas acidentalmente; foco retorna sem salto.
+
+**Confiabilidade:** falha de atualização preserva o aviso sobre a versão atual. Conferência encontrou diferença de Origin no cache estático e corrigiu a leitura, com teste que reproduz módulos e Range offline. Sem alteração do motor, RNG, níveis, captura ou saves.
+
+**Verificação:** 253 módulos, 184 testes normais/179 empacotados e build Pages. Quinze registros de geometria móvel, seis com recortes simulados, dez registros/seis fluxos de toque em cada um de Edge/WebKit; todas as escolhas do Eevee, registro/busca com viewport de teclado, zoom e volume. Regressões de PC/backups/coleção/áudio e quatro registros/três fluxos offline reais no build final. [Validação e limites](../VALIDACAO.md), [guia mobile](MOBILE.md).
+
+**Próximos trabalhos:** teste humano num Android e iPhone, incluindo teclado físico do sistema, instalação, rotação com janela aberta e sessões longas. A emulação não confirma esses aparelhos. Depois, aprofundar eventos/segredos do campo e avaliação factual da IA sugeridos na rodada anterior. Evitar ampliar cabeçalho já ocupado ou mudar regras sem casos de campanha/replay.
+
 ## 0.20.0 — Novos caminhos · 11/10/2026
 
 **Pedido:** repetir a rodada autônoma de duas horas de refinamento, revisão e publicação direta. Prioridades escolhidas: variedade/ritmo do campo, clareza de decisões, compatibilidade e acesso sem conexão.
