@@ -14,6 +14,8 @@
 
 **Limites/próximas sugestões:** partículas originais, composição/ritmo próprios; não são todos os scripts cartucho por cartucho. Caderno mostra fatos públicos básicos e não substitui uma descrição completa de cada interação de habilidade/item. Backups continuam locais/editáveis; falha persistente de storage pode impedir rollback. Telefone físico/iOS ainda pendente. Com áudio, coleção/compartilhamento e efeitos entregues, próximos trabalhos: testar uma campanha real no celular, colher decisões humanas antes de calibrar dificuldade, enriquecer segredos da exploração e melhorar IA com casos concretos. Sugestões antigas/relatórios preservados abaixo.
 
+**Após publicar:** PR 22/main/Pages verdes. Site público passou em 114 registros/37 fluxos, incluindo dois dedos emulados, Enter e seis tamanhos adicionais. Campanha completa pela UI teve 85 comandos/14 batalhas, oito ginásios e Liga, terminando campeã com equipe/níveis iguais à política simulada. O roteiro precisou selecionar corretamente os encontros extras; nenhuma correção de código foi necessária após publicar. Resultado e limites em `balance/browser-production-0.19.0.json`.
+
 ## 0.18.1 — Pokémon em destaque · 11/10/2026
 
 **Pedido:** corrigir Pokémon pequenos demais na arena; captura anexada mostra Pignite/Geodude em tela cheia. Publicação direta continua autorizada.

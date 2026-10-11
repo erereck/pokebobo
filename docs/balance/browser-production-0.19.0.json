@@ -1,0 +1,398 @@
+{
+  "version": "0.19.0",
+  "appCommit": "d7c34eae810bdbccef48a6d0ea78408519ed02f3",
+  "pr": "https://github.com/erereck/pokebobo/pull/22",
+  "site": "https://erereck.github.io/pokebobo/",
+  "verifiedAt": "2026-10-11T08:38:10.778Z",
+  "github": {
+    "prVerify": 38124061569,
+    "mainVerify": 38124129940,
+    "pages": 38124129922,
+    "status": "success"
+  },
+  "cases": {
+    "effects": {
+      "screens": 31,
+      "flows": [
+        "18 tipos: comando real, partículas visíveis, controles contidos, pular aplica uma vez e limpa canvas",
+        "PC/celular/paisagem, ambos estilos, efeito e retorno aos quatro comandos",
+        "sair durante turno → Equipe → dano correto, uma aplicação e reload",
+        "sair durante turno → Sua Pokédex → dano correto, uma aplicação e reload",
+        "sair durante turno → Opções e progresso → dano correto, uma aplicação e reload",
+        "storage bloqueado, troca de velocidade e movimento reduzido sem partículas",
+        "Future Sight preparação e chegada no terceiro turno"
+      ],
+      "errors": [],
+      "network": []
+    },
+    "notebookBackup": {
+      "screens": 30,
+      "flows": [
+        "caderno: três páginas, quatro visores, foco/Escape, boost real +2",
+        "direções seguradas: retoma direita ao soltar cima, voltar bloqueado até release, parada estável",
+        "restaurar backup: inválido sem alteração, prévia, slot vazio 2, slot 1 intacto, reload e download real em quatro visores",
+        "getter de storage bloqueado: nova jornada em memória, aviso verdadeiro e exportação real"
+      ],
+      "errors": [],
+      "network": []
+    },
+    "durability": {
+      "screens": 0,
+      "flows": [
+        "reload: uma aplicação, HP/PP/RNG/replay exatos",
+        "pagehide: uma aplicação, HP/PP/RNG/replay exatos",
+        "double-click: uma aplicação, HP/PP/RNG/replay exatos",
+        "reload no golpe fatal abre resultado correto",
+        "reload no desmaio → troca forçada → segundo comando correto",
+        "bloqueio real de Protect no caderno; Fechar visível depois de rolar",
+        "404 deliberado na chama original usa partículas próprias e resolve turno"
+      ],
+      "errors": [],
+      "network": [],
+      "expectedFailures": [
+        {
+          "url": "https://erereck.github.io/pokebobo/battle-effects/fire.png",
+          "status": 404
+        },
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ]
+    },
+    "session": {
+      "screens": 6,
+      "flows": [
+        "começo novo → origem/inicial → nove escolhas → região com dez cidades → 50 passos válidos → retorno automático/reload → exportação → encerramento/Hall → nova aventura",
+        "batalha real perdida → resultado → fim → Hall funciona",
+        "efeito real não desenha sobre HP/nome nem intercepta cliques"
+      ],
+      "errors": [],
+      "network": []
+    },
+    "additionalInputs": {
+      "screens": 12,
+      "flows": [
+        "seis visores adicionais, 2D/3D, seis Pokémon; comandos dentro da tela e sem overflow",
+        "dois dedos emulados via CDP: soltar cima retoma direita, Voltar espera ambos",
+        "botão do D-pad funciona por foco e Enter"
+      ],
+      "errors": [],
+      "network": []
+    },
+    "audio": {
+      "screens": 13,
+      "flows": [
+        "playlist, volumes, cry, mute/reload, visibilidade, save intacto",
+        "passo animado com efeito audível",
+        "encounter",
+        "capture",
+        "failure",
+        "turno real com efeitos e cries",
+        "mute lembrado não baixa nem toca áudio"
+      ],
+      "errors": [],
+      "network": []
+    },
+    "collectionSharing": {
+      "screens": 22,
+      "flows": [
+        "colecao-cartao-convite-1280",
+        "colecao-cartao-convite-390",
+        "colecao-cartao-convite-320",
+        "colecao-cartao-convite-844",
+        "amigo-link-inicial-pronto-jornada-reload",
+        "convite-protege-slot-usa-slot2"
+      ],
+      "errors": [],
+      "network": []
+    }
+  },
+  "totalScreens": 114,
+  "campaign": {
+    "url": "https://erereck.github.io/pokebobo/",
+    "seed": 4075877915,
+    "origin": "Hau’oli",
+    "starter": "Litten",
+    "method": "Campanha completa pela UI pública; política training e IA observável p1, seed vencedora identificada na amostra; oferta de origem fixada como no simulador, sem mudar níveis/equipe/RNG",
+    "commands": 85,
+    "actions": 195,
+    "battles": [
+      {
+        "name": "Treinadora Lia",
+        "turn": 2,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Torracat",
+            "level": 31
+          },
+          {
+            "name": "Pelipper",
+            "level": 29
+          }
+        ]
+      },
+      {
+        "name": "Brock",
+        "turn": 2,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Torracat",
+            "level": 32
+          },
+          {
+            "name": "Pelipper",
+            "level": 30
+          }
+        ]
+      },
+      {
+        "name": "Gardenia",
+        "turn": 3,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 36
+          },
+          {
+            "name": "Pelipper",
+            "level": 34
+          },
+          {
+            "name": "Bellsprout",
+            "level": 21
+          }
+        ]
+      },
+      {
+        "name": "Whitney",
+        "turn": 3,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 44
+          },
+          {
+            "name": "Pelipper",
+            "level": 42
+          },
+          {
+            "name": "Weepinbell",
+            "level": 29
+          }
+        ]
+      },
+      {
+        "name": "Maylene",
+        "turn": 3,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 49
+          },
+          {
+            "name": "Pelipper",
+            "level": 47
+          },
+          {
+            "name": "Victreebel",
+            "level": 34
+          }
+        ]
+      },
+      {
+        "name": "Norman",
+        "turn": 5,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 56
+          },
+          {
+            "name": "Pelipper",
+            "level": 54
+          },
+          {
+            "name": "Victreebel",
+            "level": 41
+          }
+        ]
+      },
+      {
+        "name": "Skyla",
+        "turn": 3,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 64
+          },
+          {
+            "name": "Pelipper",
+            "level": 62
+          },
+          {
+            "name": "Victreebel",
+            "level": 49
+          }
+        ]
+      },
+      {
+        "name": "Candice",
+        "turn": 4,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 69
+          },
+          {
+            "name": "Pelipper",
+            "level": 67
+          },
+          {
+            "name": "Victreebel",
+            "level": 54
+          }
+        ]
+      },
+      {
+        "name": "Clair",
+        "turn": 12,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 76
+          },
+          {
+            "name": "Pelipper",
+            "level": 74
+          },
+          {
+            "name": "Victreebel",
+            "level": 61
+          }
+        ]
+      },
+      {
+        "name": "Agatha",
+        "turn": 6,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 77
+          },
+          {
+            "name": "Pelipper",
+            "level": 75
+          },
+          {
+            "name": "Victreebel",
+            "level": 62
+          }
+        ]
+      },
+      {
+        "name": "Karen",
+        "turn": 12,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 78
+          },
+          {
+            "name": "Pelipper",
+            "level": 76
+          },
+          {
+            "name": "Victreebel",
+            "level": 63
+          }
+        ]
+      },
+      {
+        "name": "Bruno",
+        "turn": 9,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 79
+          },
+          {
+            "name": "Pelipper",
+            "level": 77
+          },
+          {
+            "name": "Victreebel",
+            "level": 64
+          }
+        ]
+      },
+      {
+        "name": "Marshal",
+        "turn": 7,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 80
+          },
+          {
+            "name": "Pelipper",
+            "level": 78
+          },
+          {
+            "name": "Victreebel",
+            "level": 65
+          }
+        ]
+      },
+      {
+        "name": "Steven",
+        "turn": 10,
+        "winner": "Você",
+        "party": [
+          {
+            "name": "Incineroar",
+            "level": 81
+          },
+          {
+            "name": "Pelipper",
+            "level": 79
+          },
+          {
+            "name": "Victreebel",
+            "level": 66
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "network": [],
+    "won": true,
+    "badges": 8,
+    "week": 31,
+    "party": [
+      {
+        "name": "Incineroar",
+        "level": 82
+      },
+      {
+        "name": "Pelipper",
+        "level": 80
+      },
+      {
+        "name": "Victreebel",
+        "level": 67
+      }
+    ]
+  },
+  "limits": "Edge com emulação; sem telefone físico/iOS. Web Share nativo usa mocks, download real. Dois dedos geram eventos do navegador via CDP; não são pessoas/tela física. Campanha usa seed já vencedora e política automatizada, não mede dificuldade humana. O primeiro roteiro escolheu espécies diferentes antes de aguardar montagem do seletor; comparação foi repetida aguardando a UI."
+}
