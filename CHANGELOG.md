@@ -1,5 +1,14 @@
 # Histórico
 
+## 0.20.1 — Na palma da mão · 11/10/2026
+
+- Controles principais de toque com pelo menos 44 px, inclusive cabeçalho em 320 px, ferramentas de batalha, navegação e volumes. Captura e exploração ganham composição mais compacta na horizontal curta.
+- Carcaça e janelas respeitam áreas seguras do aparelho. Área visível acompanha teclado/barra do navegador via VisualViewport; campo focado é trazido para leitura e o zoom nativo conserva seu comportamento.
+- Evoluções múltiplas mantêm confirmação acessível e lista rolável no celular. Oito escolhas do Eevee conferidas por toque em três visores, com evolução real para Vaporeon.
+- Janelas não fecham ao tocar seu espaçamento interno nem ao começar um arrasto dentro e soltar fora. Toque completo no fundo e Escape continuam fechando; foco retorna sem deslocar a página.
+- Cache estático atende pedidos com diferenças no cabeçalho Origin, corrigindo reabertura offline em servidores com Vary: Origin. Falha ao preparar atualização informa que a versão atual continua disponível.
+- 184 testes normais e 179 do motor empacotado; Edge/WebKit em visores móveis emulados e regressões de PC, áudio, coleção/backups e offline. Regras, RNG e schema 4 preservados. [Comportamento e limites](docs/MOBILE.md).
+
 ## 0.20.0 — Novos caminhos · 11/10/2026
 
 - Quatro desenhos de campo com trilhas, clareiras e margens diferentes, escolhidos por seed/rota sem sorteio adicional. Terreno seco acessível, margens reais nas quatro direções e pelo menos vinte casas de mato por mapa. Caminhadas abertas conservam desenho/posição; 50 passos invisíveis, encontros e captura de 67% preservados.

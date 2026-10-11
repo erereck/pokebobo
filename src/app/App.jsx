@@ -25,8 +25,10 @@ import { ShareJourneyDialog } from "../features/history/ShareJourneyDialog.jsx";
 import { AudioProvider } from "../features/audio/AudioProvider.jsx";
 import { AudioDialog } from "../features/audio/AudioDialog.jsx";
 import { ImportSaveDialog } from "../features/settings/ImportSaveDialog.jsx";
+import { useVisualViewport } from "./hooks/useVisualViewport.js";
 
 export function App() {
+  useVisualViewport();
   const { spriteStyle, changeSpriteStyle, spritePreferenceSaved } =
     useBattleSpriteStyle();
   const [selectedMonId, setSelectedMonId] = useState(null);

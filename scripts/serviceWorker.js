@@ -21,7 +21,7 @@ self.addEventListener("install", (event) => {
         await cache.addAll(
           urls.map((url) => new Request(url, { cache: "reload" })),
         );
-        const html = await cache.match(new URL("index.html", ROOT));
+        const html = await cache.match(new URL("index.html", ROOT), { ignoreVary: true });
         if (!(await html.text()).includes(ENTRY))
           throw Error(
             "Publicação em andamento; cache será preparado novamente.",
@@ -62,7 +62,7 @@ async function rememberMedia(request, response) {
   let bytes = 0;
   const entries = await Promise.all(
     keys.map(async (key) => {
-      const response = await cache.match(key);
+      const response = await cache.match(key, { ignoreVary: true });
       return {
         key,
         bytes: Number(response.headers.get("x-pokebobo-bytes")) || 0,
@@ -125,7 +125,7 @@ self.addEventListener("fetch", (event) => {
         .open(SHELL)
         .then(
           async (cache) =>
-            (await cache.match(new URL("index.html", ROOT))) || fetch(request),
+            (await cache.match(new URL("index.html", ROOT), { ignoreVary: true })) || fetch(request),
         ),
     );
     return;
@@ -134,7 +134,8 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       caches
         .open(SHELL)
-        .then(async (cache) => (await cache.match(request)) || fetch(request)),
+        // Arquivos locais fixos não mudam entre pedidos CORS e sem Origin.
+        .then(async (cache) => (await cache.match(request, { ignoreVary: true })) || fetch(request)),
     );
     return;
   }
@@ -156,7 +157,7 @@ self.addEventListener("fetch", (event) => {
     try {
       return { result: await fetch(fullRequest), cached: false };
     } catch (error) {
-      const cached = await (await caches.open(MEDIA)).match(fullRequest);
+      const cached = await (await caches.open(MEDIA)).match(fullRequest, { ignoreVary: true });
       if (cached) return { result: cached, cached: true };
       throw error;
     }

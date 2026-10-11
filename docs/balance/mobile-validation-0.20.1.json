@@ -1,0 +1,57 @@
+{
+  "version": "0.20.1",
+  "date": "2026-10-11",
+  "verify": {
+    "modules": 253,
+    "tests": 184,
+    "compiledTests": 179
+  },
+  "methods": "Edge/WebKit Windows, contextos móveis DPR 2, toque nativo emulado; teclado e recortes sintéticos. Offline real em Edge.",
+  "limitations": [
+    "Sem telefone físico/Safari iOS/instalação no aparelho.",
+    "Campanha completa não repetida nesta rodada; regras e schema 4 preservados.",
+    "Captura de 667×320 excede o painel em 1 px."
+  ],
+  "checks": [
+    {
+      "file": "mobile-audit-021-after.json",
+      "records": 15,
+      "assertions": "Sem overflow horizontal, alvos medidos >=44 px/inView, painel excede no máximo 1 px."
+    },
+    {
+      "file": "mobile-audit-021-safe.json",
+      "records": 6,
+      "assertions": "Sem overflow horizontal, alvos medidos >=44 px/inView, painel excede no máximo 1 px."
+    },
+    {
+      "file": "browser-mobile-preview021-final-edge-0.20.1.json",
+      "records": 10,
+      "flows": 6
+    },
+    {
+      "file": "browser-mobile-preview021-final-webkit-0.20.1.json",
+      "records": 10,
+      "flows": 6
+    },
+    {
+      "file": "browser-offline-preview021-final.json",
+      "records": 4,
+      "flows": 3
+    },
+    {
+      "file": "browser-quality-dev021.json",
+      "records": 30,
+      "flows": 4
+    },
+    {
+      "file": "browser-sharing-0.19.0.json",
+      "flows": 6,
+      "records": 22
+    },
+    {
+      "file": "audio-preview021-0.18.0.json",
+      "records": 13,
+      "flows": 7
+    }
+  ]
+}

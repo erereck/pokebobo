@@ -93,26 +93,28 @@ export function EvolutionDialog({ run, act }) {
           );
         })}
       </div>
-      <button
-        className="button primary full"
-        disabled={!selected}
-        onClick={() => {
-          act({ type: "EVOLUTION_CHOICE", monId: mon.id, name: selected.name });
-          setSelection(null);
-        }}
-      >
-        <ArrowRight size={18} />
-        {selected ? `Evoluir para ${selected.name}` : "Selecione um caminho"}
-      </button>
-      <button
-        className="button secondary full"
-        onClick={() => {
-          act({ type: "EVOLUTION_CHOICE", monId: mon.id, defer: true });
-          setSelection(null);
-        }}
-      >
-        Escolher depois
-      </button>
+      <div className="evolution-actions">
+        <button
+          className="button primary full"
+          disabled={!selected}
+          onClick={() => {
+            act({ type: "EVOLUTION_CHOICE", monId: mon.id, name: selected.name });
+            setSelection(null);
+          }}
+        >
+          <ArrowRight size={18} />
+          {selected ? `Evoluir para ${selected.name}` : "Selecione um caminho"}
+        </button>
+        <button
+          className="button secondary full"
+          onClick={() => {
+            act({ type: "EVOLUTION_CHOICE", monId: mon.id, defer: true });
+            setSelection(null);
+          }}
+        >
+          Escolher depois
+        </button>
+      </div>
       <p className="fine-print">
         A escolha também aparece na reserva. Você pode reabrir a decisão na
         ficha do Pokémon ou esperar o próximo nível.

@@ -68,7 +68,7 @@ function environment({
   const emit = (type) => {
     for (const listener of events.get(type) || []) listener();
   };
-  return { client: context.client, timers, fetches, serviceWorker, emit };
+  return { client: context.client, timers, fetches, serviceWorker, registration, emit };
 }
 
 test("primeiras imagens só são aquecidas depois de a página ser controlada, sem pedidos externos", async () => {
@@ -104,4 +104,21 @@ test("primeiro preparo com rede indisponível informa falha sem aquecer arquivos
   assert.equal(env.client.offlineSnapshot().preparing, false);
   assert.match(env.client.offlineSnapshot().error, /continuar jogando online/);
   assert.deepEqual(env.fetches, []);
+});
+
+test("falha de instalação de uma atualização não anuncia perda da cópia offline ativa", async () => {
+  const env = environment({ existing: true, controlled: true });
+  env.client.startOffline();
+  await env.timers.shift()();
+  let onStateChange;
+  env.registration.installing = {
+    state: "installing",
+    addEventListener: (_type, listener) => { onStateChange = listener; },
+  };
+  env.emit("updatefound");
+  env.registration.installing.state = "redundant";
+  onStateChange();
+  assert.equal(env.client.offlineSnapshot().ready, true);
+  assert.equal(env.client.offlineSnapshot().preparing, false);
+  assert.match(env.client.offlineSnapshot().error, /atualização.*versão atual continua disponível/);
 });
