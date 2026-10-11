@@ -1,5 +1,5 @@
 {
-  "id": "./", "name": "Pokébobo", "short_name": "Pokébobo",
+  "name": "Pokébobo", "short_name": "Pokébobo",
   "description": "Sua região, suas consequências. Uma jornada Pokémon no seu aparelho.",
   "lang": "pt-BR", "start_url": "./", "scope": "./", "display": "standalone",
   "background_color": "#c62f45", "theme_color": "#c62f45",
