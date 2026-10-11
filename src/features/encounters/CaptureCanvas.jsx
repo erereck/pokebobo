@@ -111,7 +111,7 @@ export function CaptureCanvas({
         if (!fieldFrame.current || fieldFrame.current.key !== exploration) {
           const native = document.createElement("canvas");
           native.width = 192;
-          native.height = 128;
+          native.height = 144;
           drawField(
             native.getContext("2d"),
             fieldImages,
@@ -123,7 +123,17 @@ export function CaptureCanvas({
           snapshot.height = 160;
           const surface = snapshot.getContext("2d");
           surface.imageSmoothingEnabled = false;
-          surface.drawImage(native, 0, 0, 240, 160);
+          surface.drawImage(
+            native,
+            0,
+            exploration?.y === 0 ? 0 : 16,
+            192,
+            128,
+            0,
+            0,
+            240,
+            160,
+          );
           fieldFrame.current = { key: exploration, image: snapshot };
         }
         drawEncounterTransition(ctx, fieldFrame.current.image, tick * 2, water);

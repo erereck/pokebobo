@@ -1,5 +1,13 @@
 # Pokébobo — sistema de interface 0.3.0
 
+## Novos caminhos — 0.20.0
+
+Campo mantém a carcaça/rubi/LCD e todos os controles: quatro composições de tiles, canvas 192×144 com faixa superior de uma casa, grade clicável 12×8 alinhada. Preparação da vara usa offsets originais, feedback de mordida em pixels e bloqueio breve dos controles; movimento reduzido conclui imediatamente. Nenhuma contagem de encontros/passos visível.
+
+Aprendizado conserva dialog obrigatório e ações diretas. Cabeçalho mostra parceiro/nível sem repetir nome do golpe novo; comparação atual em quatro botões com resumo 12 px, descrição do novo no cartão âmbar. Caderno agrupa clima/terreno no topo e condições de cada lado junto dos estágios; detalhes podem rolar, Fechar conserva 44 px sem encolher. WOFF2 recebe formato correto na declaração da fonte.
+
+Instalação/conexão ficam em Opções, dentro de um painel LCD rebaixado com texto curto e estado com ícone/rótulo. Botão nativo de instalar somente quando o prompt existe; alternativa por menu nos demais casos. Pronto para reabrir offline é uma confirmação do worker ativo; conteúdos não usados podem exigir internet. Atualização informa fechar todas as janelas e reabrir, sem recarga no meio da jornada. Não adicionar controles ao cabeçalho já ocupado.
+
 ## Presença dos Pokémon — 0.18.1
 
 Arena usa referência proporcional à caixa, sem tetos por dispositivo: min(altura×0,90, largura×0,95). Piso de ratio 2D para o 3D da mesma espécie/lado evita corpos nativos compactos virarem miniaturas. Mantém limites de corpo 90%/81%, apoio/perspectiva/union dos quadros e pequenos/grandes. Aspecto mais largo de normal/shiny impede altura variar pela paleta. Não ampliar por transform CSS; o renderer aplica offsets sobre a fonte real, preservando as animações dos golpes.

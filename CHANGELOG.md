@@ -1,5 +1,15 @@
 # Histórico
 
+## 0.20.0 — Novos caminhos · 11/10/2026
+
+- Quatro desenhos de campo com trilhas, clareiras e margens diferentes, escolhidos por seed/rota sem sorteio adicional. Terreno seco acessível, margens reais nas quatro direções e pelo menos vinte casas de mato por mapa. Caminhadas abertas conservam desenho/posição; 50 passos invisíveis, encontros e captura de 67% preservados.
+- Vara com 12 poses originais de Red e offsets do cartucho, lançamento/espera/mordida breves e preparação de Surf. Ação do lago conclui uma vez, sem custo/sorteio antecipado. Movimento reduzido/falha de asset continuam o fluxo. Campo ganha faixa superior para não cortar a cabeça na borda; transição recorta sem esticar.
+- Novo golpe compara categoria, poder, precisão e prioridade dos quatro atuais, com descrição do novo. Cabeçalho mais compacto em telefone. Regras de aprender/esquecer/ignorar permanecem.
+- Caderno mostra condições públicas, clima/terreno, telas, hazards/camadas e efeitos gerais. Não expõe duração interna ou itens/habilidades escondidos. Fonte WOFF2 declarada corretamente; Fechar não encolhe em títulos longos.
+- Manifesto e ícones para instalação; Opções oferece prompt nativo ou instruções pelo menu. Cache permite reabrir o jogo, fontes e cenas sem rede após preparo; imagens/sons usados entram em até 200 arquivos/60 MiB. Conteúdos novos podem precisar de internet. Música aceita Range; gravação inteira e leituras offline preservam entradas concorrentes.
+- Atualizações preparam shell próprio e entram ao fechar todas as abas/janelas e reabrir, com aviso em Opções. Nenhuma recarga forçada durante a partida. Worker não lê ou substitui saves. Código, template e assets participam da identidade do cache; publicação incompleta não remove o shell anterior.
+- Schema 4, IA, níveis, regras de captura, escala dos Pokémon e áudio existentes preservados. 182 testes normais/177 do motor empacotado, auditoria de progressão e 60 campanhas automatizadas sem censura; campanha completa na UI do build manteve oito ginásios/Liga e equipe final de referência. Conferência Edge/WebKit em PC/celular/paisagem e fluxo offline com áudio real. [Detalhes e limites](docs/CAMPO-E-OFFLINE.md).
+
 ## 0.19.0 — Jornada mais viva · 11/10/2026
 
 - Efeitos de golpes para os 18 tipos, com 18 folhas originais de FRLG, impactos, proteção, cura, status e mudanças de atributos. Frente/costas e trajetória acompanham o corpo visível; partículas não cobrem nome/HP. Movimentos e som usam a duração real do evento, inclusive em 2×; movimento reduzido e falha de imagem têm alternativas.

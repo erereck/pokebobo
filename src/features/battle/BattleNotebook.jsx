@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Modal } from "../../components/ui/Modal.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
 import { moveGuide, STAT_LABELS, STATUS_LABELS } from "./moveGuide.js";
+import { FieldConditions } from "./FieldConditions.jsx";
 
 export function BattleNotebook({ snap, onClose }) {
   const [page, setPage] = useState("log");
@@ -90,6 +91,7 @@ export function BattleNotebook({ snap, onClose }) {
       )}
       {page === "field" && (
         <div className="notebook-field">
+          <FieldConditions field={snap.field} />
           {[snap.active, snap.foe].map((mon, index) => (
             <section key={mon.id}>
               <span className="section-label">
@@ -107,6 +109,11 @@ export function BattleNotebook({ snap, onClose }) {
                 {mon.hp}/{mon.maxhp} HP ·{" "}
                 {STATUS_LABELS[mon.status] || "Sem condição de status"}
               </p>
+              <FieldConditions
+                mon={mon}
+                field={snap.field}
+                side={index === 0 ? "player" : "enemy"}
+              />
               <dl className="field-stages">
                 {Object.entries(STAT_LABELS).map(([stat, label]) => {
                   const stage = mon.boosts?.[stat] || 0;

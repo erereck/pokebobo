@@ -3,6 +3,7 @@ import { Modal } from "../../components/ui/Modal.jsx";
 import { Download, Upload, Trophy, Compass, Music2 } from "lucide-react";
 import { SaveSlots } from "./SaveSlots.jsx";
 import { BattleSpriteOptions } from "./BattleSpriteOptions.jsx";
+import { OfflineOptions } from "../offline/OfflineOptions.jsx";
 
 export function SettingsDialog({
   setModal,
@@ -35,6 +36,7 @@ export function SettingsDialog({
       <button className="button secondary full" onClick={onChallenge}>
         <Compass size={18} /> Jogar desafio de um amigo
       </button>
+      <OfflineOptions />
       <SaveSlots
         activeSlot={activeSlot}
         slots={saveSlots}

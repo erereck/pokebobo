@@ -1,0 +1,974 @@
+{
+  "base": "http://localhost:4173/",
+  "tag": "webkit020",
+  "browser": "webkit",
+  "screens": [
+    {
+      "name": "clearing-1280",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 696,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "clearing-390",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "clearing-320",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 132,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "clearing-844",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 104.53125,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 104.53125,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 212.0625,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "winding-1280",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 696,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "winding-390",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "winding-320",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 132,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "winding-844",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 104.53125,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 104.53125,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 212.0625,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "lakeside-1280",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 696,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "lakeside-390",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "lakeside-320",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 132,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "lakeside-844",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 104.53125,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 104.53125,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 212.0625,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "meadow-1280",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 346.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 696,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "meadow-390",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "meadow-320",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 64.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 132,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "meadow-844",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 104.53125,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 104.53125,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 212.0625,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pesca-north",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pesca-east",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pesca-south",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "pesca-west",
+      "overflow": false,
+      "buttons": [
+        {
+          "label": "Caminhar para cima",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para esquerda",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para baixo",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Caminhar para direita",
+          "width": 44,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Pescar",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": "Surf",
+          "width": 90.5,
+          "height": 44,
+          "visible": true
+        },
+        {
+          "label": " Voltar",
+          "width": 184,
+          "height": 44,
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "flows": [
+    "quatro campos, quatro visores, controles visíveis, números ocultos, reload não altera save",
+    "vara nas quatro direções: prévia bloqueia passos/voltar, sem RNG/bola antes da conclusão, encontro único, fugir retorna",
+    "Surf com movimento reduzido conclui imediatamente e conserva regras"
+  ],
+  "errors": [],
+  "network": []
+}

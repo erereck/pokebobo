@@ -24,6 +24,12 @@ WebP sem perdas ocupa 6,03 MiB no conjunto e conserva cada pixel RGBA em resolu�
 
 O atlas de terreno passou de seis para 32 quadros. Treze bordas originais de trilha permitem cruzamentos, casas estreitas e cantos internos. Outros treze quadros combinam o contorno irregular de grama dessas bordas com a textura original de água. `terrainPresentation.js` escolhe cada quadrante a partir dos vizinhos, e `drawField.js` desenha sem interpolação. A colisão e a localização do lago permanecem em `game/world/exploration.js`; nenhum sorteio depende dos gráficos. O campo atual usa canvas, compartilhado com a transição de captura. Fonte congelada, transformações e termos em [FRLG-ASSETS](../licenses/FRLG-ASSETS.md).
 
+## 0.20.0 — novos caminhos e vara de pesca
+
+Quatro desenhos autorais de campo recompõem os tiles locais existentes. Não são mapas oficiais vinculados a cada cidade/bioma. Grade de 12×8 com faixa superior de 16 px conserva a cabeça de Red na borda. Os 12 quadros originais de pesca de Red foram importados da mesma revisão FRLG congelada: PNG RGBA de 384×32, índice zero transparente, sem suavização. `public/field/fishing-manifest.json` registra hashes/fonte; `scripts/import-fishing.py` reproduz a conversão. Sequências/offsets do lançamento preservados; espera/mordida encurtadas. [Créditos e termos](../licenses/FRLG-ASSETS.md), [guia](CAMPO-E-OFFLINE.md).
+
+Ícones de instalação em `public/icons` derivam da geometria do favicon do Pokébobo, com cores da carcaça e zona segura. São renderizados por Pillow a partir de formas vetoriais; não são novos gráficos de Pokémon extraídos de terceiros.
+
 ## 0.9.0 — campo com tiles de FireRed / LeafGreen
 
 A caminhada usa metatiles e os sprites de Red originais de FRLG, extraídos de uma referência congelada de `pret/pokefirered`. Os mapas pequenos, os matinhos e as oportunidades são uma curadoria procedural do Pokébobo. São três PNGs locais em `public/field/`; fonte, titularidade, transformação e termos estão em [FRLG-ASSETS](../licenses/FRLG-ASSETS.md). O importador reproduzível é `scripts/import-field-assets.py`.

@@ -1,0 +1,8 @@
+.offline-options { margin-top: 12px; padding: 12px; background: var(--lcd-dim); border: 1px solid var(--lcd-line); border-radius: 6px; }
+.offline-heading { display: flex; gap: 8px; align-items: center; }
+.offline-heading h3 { font-size: 16px; margin: 0 0 4px; }
+.offline-heading span, .offline-installed { display: flex; gap: 4px; align-items: center; }
+.offline-heading span { color: var(--ink-soft); font-size: 11px; }
+.offline-options p { margin: 8px 0; font-size: 12px; line-height: 1.5; }
+.offline-options .offline-manual { color: var(--ink-soft); }
+.offline-options .button { margin-top: 8px; }

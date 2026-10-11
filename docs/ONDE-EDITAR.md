@@ -1,5 +1,12 @@
 # Onde editar
 
+## Novos caminhos — 0.20.0
+
+- Campo: matrizes em `game/data/fieldLayouts.js`, hash/leitura em `world/fieldLayout.js`, colisão/margem em `world/exploration.js`. Preservar concordância entre terreno visível e movimentos; `layoutId` ausente conserva a caminhada aberta. Testes: `field-layouts.test.js` e suítes anteriores de exploração.
+- Vara/Surf: `features/encounters/lakePresentation.js`, `FieldCanvas` e `ExplorationScreen`. Preparação não altera gameplay até emitir a ação existente. `drawField`/CSS `adventure.css` usam faixa superior de 16 px e grade 12×8. Assets: `public/field/red_fish_sheet.png`, manifesto, `scripts/import-fishing.py` e termos FRLG.
+- Condições: `game/battle/publicConditions.js`, rótulos em `game/data/battleConditions.js`, `FieldConditions` e `BattleNotebook`. Não mostrar durações/fontes/itens ocultos. `MoveSummary`/`MoveLearnDialog` reutilizam o guia factual Gen 8.
+- Instalação/cache: `scripts/offlinePlugin.mjs`/`serviceWorker.js`, `features/offline`, manifesto/ícones em public. Testar o build com caminho de Pages e sem rede; não registrar worker no dev. Após editar política de cache, a identidade do shell também deve mudar. Cache nunca toca os saves. Referências, limites e fontes no [guia](CAMPO-E-OFFLINE.md).
+
 ## Jornada mais viva — 0.19.0
 
 - Golpes/partículas: `features/battle/visuals/`, `BattleEffects.jsx` e `useBattleMotion.js`. Protocolo em `game/battle/presentationEvents.js`; não consumir RNG ou antecipar HP na animação. Fonte local/importador em `public/battle-effects` e `scripts/import-battle-effects.py`.

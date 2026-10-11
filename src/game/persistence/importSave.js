@@ -5,6 +5,7 @@ import { VILLAGES } from "../data/villages.js";
 import { GYMS } from "../data/gyms/index.js";
 import { CAMPAIGN_RULES } from "../config/campaign.js";
 import { EXPLORATION_RULES } from "../config/exploration.js";
+import { fieldLayout } from "../world/fieldLayout.js";
 import { migrateSave } from "./migrateSave.js";
 import { restoreBattle } from "../battle/restore.js";
 import { writeSave } from "./writeSave.js";
@@ -146,6 +147,7 @@ export function parseSaveBackup(text) {
       !Array.isArray(e.spots)
     )
       fail();
+    if (e.layoutId !== undefined && !fieldLayout(e.layoutId)) fail();
     if (
       e.walk &&
       (!integer(e.walk.fromX, 0, EXPLORATION_RULES.width - 1) ||

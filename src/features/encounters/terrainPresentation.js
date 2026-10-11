@@ -2,10 +2,10 @@ import { terrainAt } from "../../game/world/exploration.js";
 
 // Cada quarto usa uma borda original de FRLG. Isso permite trilhas de uma
 // casa, cruzamentos e cantos internos sem alterar a colisão do mapa.
-export function terrainQuadrants(x, y) {
-  const terrain = terrainAt(x, y);
+export function terrainQuadrants(x, y, exploration) {
+  const terrain = terrainAt(x, y, exploration);
   if (terrain === "grass") return null;
-  const same = (dx, dy) => terrainAt(x + dx, y + dy) === terrain;
+  const same = (dx, dy) => terrainAt(x + dx, y + dy, exploration) === terrain;
   const offset = terrain === "path" ? 6 : 19;
   return [
     [-1, -1, 0, 1, 3, 9],

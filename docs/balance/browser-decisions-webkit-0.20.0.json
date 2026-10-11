@@ -1,0 +1,60 @@
+{
+  "base": "http://localhost:4173/",
+  "tag": "webkit020",
+  "screens": [
+    {
+      "name": "aprendizado-1280",
+      "overflow": false,
+      "dialogOverflow": false,
+      "broken": []
+    },
+    {
+      "name": "aprendizado-390",
+      "overflow": false,
+      "dialogOverflow": false,
+      "broken": []
+    },
+    {
+      "name": "aprendizado-320",
+      "overflow": false,
+      "dialogOverflow": false,
+      "broken": []
+    },
+    {
+      "name": "aprendizado-844",
+      "overflow": false,
+      "dialogOverflow": false,
+      "broken": []
+    },
+    {
+      "name": "condicoes-1280",
+      "overflow": false,
+      "dialogOverflow": false,
+      "broken": []
+    },
+    {
+      "name": "condicoes-390",
+      "overflow": false,
+      "dialogOverflow": false,
+      "broken": []
+    },
+    {
+      "name": "condicoes-320",
+      "overflow": false,
+      "dialogOverflow": false,
+      "broken": []
+    },
+    {
+      "name": "condicoes-844",
+      "overflow": false,
+      "dialogOverflow": false,
+      "broken": []
+    }
+  ],
+  "flows": [
+    "comparação de golpe: 5 resumos, descrição do novo, quatro visores e substituição real de Ember por Flamethrower",
+    "caderno com Chuva, Reflect e Spikes reais, quatro visores/fechar"
+  ],
+  "errors": [],
+  "network": []
+}
