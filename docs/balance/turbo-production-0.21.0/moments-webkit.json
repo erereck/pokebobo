@@ -1,0 +1,637 @@
+{
+  "base": "https://erereck.github.io/pokebobo/",
+  "tag": "turbo-public",
+  "engine": "webkit",
+  "screens": [
+    {
+      "name": "treino-Ivysaur-320-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 32.75,
+          "bottom": 535.25,
+          "left": 12,
+          "right": 308,
+          "width": 296,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 451.25,
+            "bottom": 499.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Charmeleon-320-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 32.75,
+          "bottom": 535.25,
+          "left": 12,
+          "right": 308,
+          "width": 296,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 451.25,
+            "bottom": 499.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Wartortle-320-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 32.75,
+          "bottom": 535.25,
+          "left": 12,
+          "right": 308,
+          "width": 296,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 451.25,
+            "bottom": 499.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Ivysaur-320-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 32.75,
+          "bottom": 535.25,
+          "left": 12,
+          "right": 308,
+          "width": 296,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 451.25,
+            "bottom": 499.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Charmeleon-320-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 32.75,
+          "bottom": 535.25,
+          "left": 12,
+          "right": 308,
+          "width": 296,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 451.25,
+            "bottom": 499.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Wartortle-320-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 32.75,
+          "bottom": 535.25,
+          "left": 12,
+          "right": 308,
+          "width": 296,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 451.25,
+            "bottom": 499.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Ivysaur-390-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 170.75,
+          "bottom": 673.25,
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 589.25,
+            "bottom": 637.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Charmeleon-390-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 170.75,
+          "bottom": 673.25,
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 589.25,
+            "bottom": 637.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Wartortle-390-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 170.75,
+          "bottom": 673.25,
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 589.25,
+            "bottom": 637.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Ivysaur-390-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 170.75,
+          "bottom": 673.25,
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 589.25,
+            "bottom": 637.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Charmeleon-390-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 170.75,
+          "bottom": 673.25,
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 589.25,
+            "bottom": 637.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Wartortle-390-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 170.75,
+          "bottom": 673.25,
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 589.25,
+            "bottom": 637.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Ivysaur-844-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 37.25,
+          "bottom": 302.75,
+          "left": 112,
+          "right": 732,
+          "width": 620,
+          "height": 265.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 230.75,
+            "bottom": 278.75,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Charmeleon-844-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 37.25,
+          "bottom": 302.75,
+          "left": 112,
+          "right": 732,
+          "width": 620,
+          "height": 265.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 230.75,
+            "bottom": 278.75,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Wartortle-844-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 37.25,
+          "bottom": 302.75,
+          "left": 112,
+          "right": 732,
+          "width": 620,
+          "height": 265.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 230.75,
+            "bottom": 278.75,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Ivysaur-844-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 37.25,
+          "bottom": 302.75,
+          "left": 112,
+          "right": 732,
+          "width": 620,
+          "height": 265.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 230.75,
+            "bottom": 278.75,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Charmeleon-844-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 37.25,
+          "bottom": 302.75,
+          "left": 112,
+          "right": 732,
+          "width": 620,
+          "height": 265.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 230.75,
+            "bottom": 278.75,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Wartortle-844-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 37.25,
+          "bottom": 302.75,
+          "left": 112,
+          "right": 732,
+          "width": 620,
+          "height": 265.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 230.75,
+            "bottom": 278.75,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Ivysaur-1280-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 148.75,
+          "bottom": 651.25,
+          "left": 400,
+          "right": 880,
+          "width": 480,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 567.25,
+            "bottom": 615.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Charmeleon-1280-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 148.75,
+          "bottom": 651.25,
+          "left": 400,
+          "right": 880,
+          "width": 480,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 567.25,
+            "bottom": 615.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Wartortle-1280-no-preference",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 148.75,
+          "bottom": 651.25,
+          "left": 400,
+          "right": 880,
+          "width": 480,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 567.25,
+            "bottom": 615.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Ivysaur-1280-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 148.75,
+          "bottom": 651.25,
+          "left": 400,
+          "right": 880,
+          "width": 480,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 567.25,
+            "bottom": 615.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Charmeleon-1280-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 148.75,
+          "bottom": 651.25,
+          "left": 400,
+          "right": 880,
+          "width": 480,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 567.25,
+            "bottom": 615.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "treino-Wartortle-1280-reduce",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 148.75,
+          "bottom": 651.25,
+          "left": 400,
+          "right": 880,
+          "width": 480,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 567.25,
+            "bottom": 615.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "eevee-shiny-320",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 32.75,
+          "bottom": 535.25,
+          "left": 12,
+          "right": 308,
+          "width": 296,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 451.25,
+            "bottom": 499.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "eevee-shiny-390",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 170.75,
+          "bottom": 673.25,
+          "left": 12,
+          "right": 378,
+          "width": 366,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 589.25,
+            "bottom": 637.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "eevee-shiny-844",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 37.25,
+          "bottom": 302.75,
+          "left": 112,
+          "right": 732,
+          "width": 620,
+          "height": 265.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 230.75,
+            "bottom": 278.75,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "eevee-shiny-1280",
+      "overflow": false,
+      "broken": [],
+      "dialogs": [
+        {
+          "top": 148.75,
+          "bottom": 651.25,
+          "left": 400,
+          "right": 880,
+          "width": 480,
+          "height": 502.5,
+          "overflowX": false,
+          "overflowY": 0,
+          "cta": {
+            "top": 567.25,
+            "bottom": 615.25,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "name": "ficha-golpes",
+      "overflow": false,
+      "broken": [],
+      "dialogs": []
+    }
+  ],
+  "flows": [
+    "treino real evolui equipe e reserva em ordem, salvo antes da cena; oito combinações de visor/movimento, CTA imediato, sem ação duplicada/repetição no reload",
+    "Eevee shiny→Vaporeon salvo, atalho 1 não interfere, Enter fecha sem nova ação em quatro visores",
+    "quatro descrições factuais na ficha abrem por summary sem alterar save"
+  ],
+  "errors": [],
+  "network": [],
+  "method": "Contextos isolados; toques móveis emulados, jogo/motor real em fixtures de apresentação; níveis das fixtures não avaliam balanceamento."
+}

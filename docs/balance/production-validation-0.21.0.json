@@ -1,0 +1,251 @@
+{
+  "version": "0.21.0",
+  "url": "https://erereck.github.io/pokebobo/",
+  "pullRequest": "https://github.com/erereck/pokebobo/pull/26",
+  "applicationCommit": "1f22d5e4c3029f40765c08611ab54a854297f671",
+  "verifiedAt": "2026-10-12T01:25:25.519Z",
+  "ci": {
+    "pullRequest": {
+      "run": 38191296281,
+      "status": "success"
+    },
+    "main": {
+      "run": 38191404579,
+      "status": "success"
+    },
+    "pages": {
+      "run": 38191404567,
+      "status": "success"
+    }
+  },
+  "reports": [
+    {
+      "name": "session",
+      "file": "turbo-production-0.21.0/session.json",
+      "records": 6,
+      "flows": 3,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "offline",
+      "file": "turbo-production-0.21.0/offline.json",
+      "records": 4,
+      "flows": 3,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "audio",
+      "file": "turbo-production-0.21.0/audio.json",
+      "records": 13,
+      "flows": 7,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "campaign",
+      "file": "turbo-production-0.21.0/campaign.json",
+      "records": 0,
+      "flows": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "team-edge",
+      "file": "turbo-production-0.21.0/team-edge.json",
+      "records": 0,
+      "flows": 2,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "mobile-webkit",
+      "file": "turbo-production-0.21.0/mobile-webkit.json",
+      "records": 12,
+      "flows": 7,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "moments-edge",
+      "file": "turbo-production-0.21.0/moments-edge.json",
+      "records": 29,
+      "flows": 3,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "keyboard-edge",
+      "file": "turbo-production-0.21.0/keyboard-edge.json",
+      "records": 0,
+      "flows": 6,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "boot-edge",
+      "file": "turbo-production-0.21.0/boot-edge.json",
+      "records": 5,
+      "flows": 5,
+      "intentionalFailures": 1
+    },
+    {
+      "name": "resilience-edge",
+      "file": "turbo-production-0.21.0/resilience-edge.json",
+      "records": 0,
+      "flows": 3,
+      "intentionalFailures": 10
+    },
+    {
+      "name": "capture-forms-edge",
+      "file": "turbo-production-0.21.0/capture-forms-edge.json",
+      "records": 10,
+      "flows": 10,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "moments-webkit",
+      "file": "turbo-production-0.21.0/moments-webkit.json",
+      "records": 29,
+      "flows": 3,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "keyboard-webkit",
+      "file": "turbo-production-0.21.0/keyboard-webkit.json",
+      "records": 0,
+      "flows": 6,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "boot-webkit",
+      "file": "turbo-production-0.21.0/boot-webkit.json",
+      "records": 5,
+      "flows": 5,
+      "intentionalFailures": 1
+    },
+    {
+      "name": "resilience-webkit",
+      "file": "turbo-production-0.21.0/resilience-webkit.json",
+      "records": 0,
+      "flows": 3,
+      "intentionalFailures": 10
+    },
+    {
+      "name": "capture-forms-webkit",
+      "file": "turbo-production-0.21.0/capture-forms-webkit.json",
+      "records": 10,
+      "flows": 10,
+      "intentionalFailures": 0
+    }
+  ],
+  "totals": {
+    "records": 123,
+    "flows": 76
+  },
+  "artifacts": {
+    "base": "https://erereck.github.io/pokebobo/",
+    "version": "0.21.0-1c7bd254d286",
+    "files": [
+      {
+        "file": "index.html",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2822,
+        "sha256": "6f50eacb27a196163a8478671838b3b2bc28d76e8ae3c76fceea04009458c0c1"
+      },
+      {
+        "file": "assets/index-BJ54PCYO.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8",
+        "bytes": 5441086,
+        "sha256": "19af5243c5b33465a7f8b037ae03f62ecaa1381e3d149579e096ee442863105c"
+      },
+      {
+        "file": "assets/index-D_q9_Uou.css",
+        "status": 200,
+        "contentType": "text/css; charset=utf-8",
+        "bytes": 132853,
+        "sha256": "5c2665cd23ad424aebb5cc22e2d24cff2914a8a0f4695a2aad71f8858714142a"
+      },
+      {
+        "file": "manifest.webmanifest",
+        "status": 200,
+        "contentType": "application/manifest+json; charset=utf-8",
+        "bytes": 513,
+        "sha256": "fea6e5924345de768857dcfe1d5e284591bd6b7365d0f2f86eec3f3f9707b4ec"
+      },
+      {
+        "file": "icons/pokebobo-192.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 9251,
+        "sha256": "59fe4589998cf02e630fd606df9d5116ebc66291c07e314ee55cd7125ccfbb05"
+      },
+      {
+        "file": "icons/pokebobo-512.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 24546,
+        "sha256": "58fa53ac2550736606ec2a5b98e723539c3a56bdd529340445fbd8ffc6e2dfb7"
+      },
+      {
+        "file": "field/red_fish_sheet.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2835,
+        "sha256": "09653a49fd8b5518ecea1b42b4344b442233b9c44c94cedb77f2911580f7e06e"
+      },
+      {
+        "file": "sprites/forms-manifest.json",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 2765,
+        "sha256": "2b2eb42fe08217f5295c1ac8f05fa03b4d830099006d4203a256ef9d6129b71a"
+      },
+      {
+        "file": "sprites/forms/raichu-alola.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2097,
+        "sha256": "baefb431acf46b231e702be1fa2754380f68bf22f73d4618b51f0d8eba029486"
+      },
+      {
+        "file": "sprites/forms/weezing-galar.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2743,
+        "sha256": "2c33a22581e5473d56b0b658a55286646b0ac30771d235c35d936eafea53e31d"
+      },
+      {
+        "file": "sprites/forms/exeggutor-alola.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2907,
+        "sha256": "dfd62d619afb2c670fac9842c1e4bdc319c4fb35a5ad9f92a243e1a2fee38135"
+      },
+      {
+        "file": "sprites/forms/mrmime-galar.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2097,
+        "sha256": "e52296b742a028bac3ee111315f1027ff039c34b7d575ef3528958aaf71c18b7"
+      },
+      {
+        "file": "sprites/forms/oricorio-pau.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 1441,
+        "sha256": "1c84d3a3643af16cdb7a70ad9cc0b9aad824f52f352e8e1eb710f5a9327ec1eb"
+      }
+    ],
+    "method": "Hash SHA-256 dos arquivos servidos comparado ao build local final; worker identificado por versão, sem exigir hash entre plataformas"
+  },
+  "campaign": {
+    "commands": 85,
+    "actions": 195,
+    "battles": 14,
+    "badges": 8,
+    "won": true,
+    "partyMatchesReference": true
+  },
+  "limits": [
+    "Edge/WebKit Windows com visores/toques emulados; não confirma Android/iPhone físico.",
+    "Offline real confirmado em Edge; WebKit offline permanece pendente pelo limite anterior do harness Windows.",
+    "Carga/imagem bloqueadas são falhas deliberadas, segregadas dos erros inesperados.",
+    "Campanha automatizada com política/seed preexistentes verifica conservação/transições, não dificuldade humana."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "base": "https://erereck.github.io/pokebobo/",
+  "tag": "turbo-public",
+  "engine": "webkit",
+  "flows": [
+    {
+      "name": "Enter segurado não gasta mais semanas; soltar/pressionar novamente confirma uma",
+      "first": 2,
+      "second": 3
+    },
+    {
+      "name": "Espaço confirma no keyup, repetição não age antes de soltar",
+      "first": 2,
+      "second": 3
+    },
+    {
+      "name": "Enter segurado caminha e mantém Voltar bloqueado até soltar",
+      "steps": 3
+    },
+    {
+      "name": "Space segurado caminha e mantém Voltar bloqueado até soltar",
+      "steps": 4
+    },
+    {
+      "name": "ArrowRight segurado caminha e mantém Voltar bloqueado até soltar",
+      "steps": 4
+    },
+    {
+      "name": "Enter repetido não fecha cena nem treina de novo; Pular demais encerra três cenas sem alterar progresso"
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "method": "Teclas reais via Playwright, incluindo keydown repetido e keyup; nenhuma chamada direta ao handler."
+}

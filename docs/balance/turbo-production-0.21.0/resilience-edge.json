@@ -1,0 +1,22 @@
+{
+  "engine": "edge",
+  "base": "https://erereck.github.io/pokebobo/",
+  "flows": [
+    "Falha de imagem durante evolução mantém confirmação e save; evento online recupera sprite sem alterar a run.",
+    "Pular cenas de evolução preserva a fila manual de golpes; uma decisão resolve somente um golpe.",
+    "Arena sem imagens mostra dois indicadores visíveis de 44px; comando real e recuperação online preservam HP/PP/RNG/replay."
+  ],
+  "errors": [],
+  "expectedFailures": [
+    "https://erereck.github.io/pokebobo/battle-sprites/back/ivysaur.gif",
+    "https://erereck.github.io/pokebobo/sprites/2.png",
+    "https://erereck.github.io/pokebobo/battle-sprites/front/ivysaur.gif",
+    "https://erereck.github.io/pokebobo/sprites/2.png",
+    "https://erereck.github.io/pokebobo/battle-sprites/front/weezing-galar.gif",
+    "https://erereck.github.io/pokebobo/battle-sprites/back/raichu-alola.gif",
+    "https://erereck.github.io/pokebobo/sprites/forms/raichu-alola.png",
+    "https://erereck.github.io/pokebobo/sprites/forms/weezing-galar.png",
+    "https://erereck.github.io/pokebobo/battle-sprites/front/raichu-alola.gif",
+    "https://erereck.github.io/pokebobo/sprites/forms/raichu-alola.png"
+  ]
+}

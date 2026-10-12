@@ -2,6 +2,8 @@
 
 ## 0.21.0 — Cada conquista conta · 11/10/2026
 
+**Publicação:** PR 26 mergeada com CI aprovado; CI main e Pages verdes. Site público passou 123 registros/76 fluxos em Edge/WebKit e campanha completa de 85 comandos/14 batalhas. Treze hashes publicados iguais ao build e offline real em Edge, com turno/save/exportação/música preservados. [Evidência pública](balance/production-validation-0.21.0.json).
+
 **Pedido:** revisão autônoma de três horas, com animações e polimento geral, publicação direta autorizada. Prioridade escolhida: reconhecer conquistas sem atrasar a jornada, corrigir ações de teclado e problemas visuais reais, preservar a campanha.
 
 **Entrega e motivo:** evoluções de equipe/reserva são observadas após uma ação já gravada e apresentadas em fila. Continuar/Pular demais não executam regras, e a fila manual de golpes permanece intacta. Vitória identifica a nova insígnia; janelas, draft, ficha e mapa têm entradas breves. Todos respeitam movimento reduzido.
