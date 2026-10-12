@@ -191,7 +191,7 @@ export function App() {
             key={moment.id}
             moment={moment}
             remaining={remaining}
-            onClose={dismiss}
+            onClose={() => dismiss(moment.id)}
             onSkipAll={clear}
           />
         )}

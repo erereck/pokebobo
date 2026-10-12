@@ -100,3 +100,7 @@ Backup: entrada de arquivo nativa, prévia compacta e três botões de slot com 
 Conservar rubi/LCD/âmbar e fontes da aplicação. Entrada de janelas 160 ms, cartas 220 ms com até 35 ms entre itens; sem fill final que impeça pressão. Conquista 440 ms e partículas finitas, cidade atual duas pulsações de 800 ms. Evolução de 1 s só inicia após ambas as imagens carregarem; confirmação sempre disponível, escolhas de gameplay não dependem da animação. Movimento reduzido mostra conteúdo final estático.
 
 Evolução: nome/nível/tipos claros, duas ações de pelo menos 44 px quando há fila; em paisagem curta, estágio e anúncio lado a lado. Resultado separa recibo rolável e CTA; mochila sem ações disponíveis usa uma grade própria de consulta. Descrições na ficha usam details/summary, sem tooltips obrigatórios. Imagem indisponível evita ícone quebrado, arena usa indicador discreto de 44 px sobre a plataforma. Abertura usa carcaça/LCD e fonte do sistema antes das fontes do jogo, sem progresso numérico inventado.
+
+## Avanço de evolução — 0.21.1
+
+Barra de 5 px sob os comandos, abrangendo ambas as colunas, com track LCD e preenchimento âmbar escuro. Quatro segundos por cena, independente do carregamento dos sprites; contador isolado em MomentProgress para não redesenhar a ficha a cada frame. Aba oculta pausa; movimento reduzido usa quatro etapas. Nunca confirmar uma decisão manual de gameplay automaticamente.

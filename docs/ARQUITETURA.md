@@ -198,3 +198,7 @@ usePixelCanvas pausa o relógio com document.hidden, limita saltos de tempo e ma
 `spriteSources` centraliza fontes do Sprite e evita arte comum por número para formas regionais. `SpriteImage` percorre fontes, mostra estado indisponível e assina online somente durante falha. `BattlePokemonSprite` fornece enquadramento de 44 px para esse estado, separado da geometria do Pokémon carregado. Cinco PNGs têm índice/geometria próprios; os perfis anteriores não são regenerados. Captura conserva fontes FRLG e recorre à forma local para espécies posteriores.
 
 A abertura de `index.html` cobre a carga do módulo principal; seu CSS é escopado em boot.css. Listener/timeout/observer são removidos quando React substitui a abertura. Nenhum acesso ao save e nenhuma recarga automática. `keyboardActivation` evita ativação nativa repetida de button/summary; o direcional usa sua própria cadência em useFieldControls.
+
+## Contagem de evolução — 0.21.1
+
+MomentProgress guarda seu próprio progresso e acumula quatro segundos via RAF somente com document.hidden falso. onComplete fica em ref; carregamento dos sprites não reinicia o efeito. Cleanup cancela frame/listener. App associa Continuar ao ID da cena e useJourneyMoments só remove a cabeça correspondente, protegendo contra fechamento atrasado. O contador não dispara reducer nem resolve escolhas manuais.

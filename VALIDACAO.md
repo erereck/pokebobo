@@ -1,4 +1,12 @@
-# Validação — Pokébobo 0.21.0
+# Validação — Pokébobo 0.21.1
+
+## Evolução no ritmo — 11/10/2026
+
+- Edge e WebKit no build: quatro registros/sete fluxos por motor, zero erros inesperados/overflow/imagens indisponíveis. [Edge](docs/balance/auto-evolution-0.21.1/edge.json), [WebKit](docs/balance/auto-evolution-0.21.1/webkit.json), [verificação](docs/balance/auto-evolution-0.21.1/verify.txt), [celular](docs/images/avanco-evolucao-0.21.1-celular.png), [paisagem](docs/images/avanco-evolucao-0.21.1-paisagem.png).
+
+- `npm run verify` com base `/pokebobo/`: 263 módulos, 193 testes normais/188 empacotados, todos aprovados; build web. Sem mudança no motor, RNG, escala ou schema 4; standalone não executado.
+- Quatro visores (320×568, 390×844, 844×340, 1280×800), incluindo movimento reduzido. Cada treino real evolui equipe e reserva; barra reinicia por cena e três cenas avançam em aproximadamente quatro segundos cada, sem alterar a run já gravada. Capturas da barra/CTA conferem limites do visor, mínimo de 44 px nos botões, imagens carregadas e ausência de overflow horizontal.
+- Continuar antes do prazo não deixa contador antigo pular a próxima cena. Pular demais cancela a fila. Avanço automático abre o aprendizado manual e nunca decide pelo jogador. `document.hidden`/visibilitychange simulados pausam a contagem, que retoma o restante; não substitui teste de alternância física em Android/iPhone.
 
 ## Cada conquista conta — 11/10/2026
 

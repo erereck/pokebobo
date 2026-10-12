@@ -1,6 +1,6 @@
-# Cada conquista conta — 0.21.0
+# Cada conquista conta — 0.21.1
 
-Evoluir ganha uma apresentação de aproximadamente um segundo: a espécie anterior clareia, a nova forma aparece e a ficha identifica nível e tipos. Continuar funciona desde o início. Quando uma ação evolui vários Pokémon, inclusive da reserva, as cenas aparecem na ordem da equipe e depois da reserva. Pular demais encerra somente essas cenas.
+Evoluir ganha uma apresentação de aproximadamente um segundo: a espécie anterior clareia, a nova forma aparece e a ficha identifica nível e tipos. Continuar funciona desde o início. Quando uma ação evolui vários Pokémon, inclusive da reserva, as cenas aparecem na ordem da equipe e depois da reserva. Pular demais encerra somente essas cenas. Na 0.21.1, uma barra discreta preenche durante quatro segundos e executa o mesmo avanço de Continuar. Cada cena reinicia a contagem; clicar antes ou pular a fila cancela a anterior.
 
 [Demonstração com áudio real](images/evolucoes-0.21-celular.mp4) · [Evolução](images/evolucao-0.21-celular.jpg) · [Vitória](images/vitoria-0.21-celular.png) · [Forma regional](images/raichu-alola-0.21-celular.png) · [Abertura](images/abertura-0.21-celular.png).
 
@@ -8,7 +8,7 @@ Evoluir ganha uma apresentação de aproximadamente um segundo: a espécie anter
 
 A cena observa diferenças entre a run anterior e a ação já confirmada. Não sorteia, evolui, aprende golpes nem concede níveis. O resultado é salvo antes de aparecer; reabrir o jogo conserva o Pokémon evoluído sem repetir a celebração. Escolhas manuais de golpes e outras evoluções ramificadas seguem depois das cenas. Troca de slot, importação e nova aventura limpam a apresentação temporária.
 
-Movimento reduzido mostra a nova espécie diretamente, sem transformação ou partículas. Uma falha de imagem não desabilita Continuar. A UI indica imagem indisponível e tenta novamente ao receber o evento de conexão do navegador; fechar ou navegar não altera o save.
+Movimento reduzido mostra a nova espécie diretamente, sem transformação ou partículas, e a barra avança em quatro etapas. A contagem pausa com a aba oculta e retoma o tempo restante ao voltar; escolhas de golpes nunca avançam sozinhas. Uma falha de imagem não desabilita Continuar. A UI indica imagem indisponível e tenta novamente ao receber o evento de conexão do navegador; fechar ou navegar não altera o save.
 
 ## Controles e espaço
 

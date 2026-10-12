@@ -1,6 +1,8 @@
-# Pokébobo — 0.21.0 · Cada conquista conta
+# Pokébobo — 0.21.1 · Cada conquista conta
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.21.1 mostra uma barra em cada evolução e avança automaticamente após quatro segundos. Continuar e Pular demais continuam disponíveis; a contagem pausa ao sair da aba e não confirma escolhas de golpes.
 
 A 0.21.0 dá mais destaque às **evoluções e conquistas**, com cenas curtas que podem ser puladas, animações discretas e descrições de golpes na ficha. Formas regionais têm retratos corretos; teclado segurado, tela de resultado e mochila recebem correções. Uma abertura com nova tentativa cobre a primeira carga lenta. Regras e saves preservados. [Como funciona e limites](docs/MOMENTOS-E-POLIMENTO.md).
 
