@@ -58,6 +58,13 @@ export function BattlePokemonSprite({
           animated
           battleStyle={spriteStyle}
           style={{ ...position, visibility: layout ? "visible" : "hidden" }}
+          fallbackStyle={{
+            width: 44,
+            height: 44,
+            left: "calc(50% - 22px)",
+            bottom: "17%",
+            transformOrigin: "center",
+          }}
           onLoad={(event) => {
             const element = event.currentTarget;
             setImage({

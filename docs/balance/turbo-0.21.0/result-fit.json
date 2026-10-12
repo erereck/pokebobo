@@ -1,0 +1,2389 @@
+{
+  "base": "http://localhost:4174/pokebobo/",
+  "tag": "turbo-final",
+  "screens": [
+    {
+      "name": "vitoria",
+      "w": 320,
+      "h": 568,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Continuar a jornada",
+          "width": 266,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "reward-ring",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "name": "derrota",
+      "w": 320,
+      "h": 568,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Registrar esta história",
+          "width": 266,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "mochila-bloqueada",
+      "w": 320,
+      "h": 568,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Batalha",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 56,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "vitoria",
+      "w": 390,
+      "h": 844,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Continuar a jornada",
+          "width": 326,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "reward-ring",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "name": "derrota",
+      "w": 390,
+      "h": 844,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Registrar esta história",
+          "width": 326,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "mochila-bloqueada",
+      "w": 390,
+      "h": 844,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Batalha",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 70,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "vitoria",
+      "w": 412,
+      "h": 780,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Continuar a jornada",
+          "width": 348,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 74.390625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 74.40625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 74.390625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 74.40625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 74.40625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "reward-ring",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "name": "derrota",
+      "w": 412,
+      "h": 780,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Registrar esta história",
+          "width": 348,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 74.390625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 74.40625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 74.390625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 74.40625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 74.40625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "mochila-bloqueada",
+      "w": 412,
+      "h": 780,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Batalha",
+          "width": 74.390625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 74.40625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 74.390625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 74.40625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 74.40625,
+          "height": 52,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "vitoria",
+      "w": 667,
+      "h": 320,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Continuar a jornada",
+          "width": 613,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 125.390625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 125.40625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 125.390625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 125.40625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 125.40625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "reward-ring",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "name": "derrota",
+      "w": 667,
+      "h": 320,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Registrar esta história",
+          "width": 613,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 125.390625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 125.40625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 125.390625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 125.40625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 125.40625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "mochila-bloqueada",
+      "w": 667,
+      "h": 320,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Batalha",
+          "width": 125.390625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 125.40625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 125.390625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 125.40625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 125.40625,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "vitoria",
+      "w": 844,
+      "h": 390,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Continuar a jornada",
+          "width": 668,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 160.8125,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "reward-ring",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "name": "derrota",
+      "w": 844,
+      "h": 390,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Registrar esta história",
+          "width": 668,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 160.8125,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "mochila-bloqueada",
+      "w": 844,
+      "h": 390,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 44,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Batalha",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 160.8125,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 160.796875,
+          "height": 46,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "vitoria",
+      "w": 1280,
+      "h": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 79.546875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 102.5625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 111.515625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 75.4375,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 87.421875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 98.921875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Continuar a jornada",
+          "width": 648,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "01ScizorAbre a batalhaLv.100",
+          "width": 270,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Consultar equipe, reserva e golpes",
+          "width": 282,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "reward-ring",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "name": "derrota",
+      "w": 1280,
+      "h": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 79.546875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 102.5625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 111.515625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 75.4375,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 87.421875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 98.921875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Registrar esta história",
+          "width": 648,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "01MagikarpAbre a batalhaLv.1",
+          "width": 270,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Consultar equipe, reserva e golpes",
+          "width": 282,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "mochila-bloqueada",
+      "w": 1280,
+      "h": 800,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 79.546875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 102.5625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 111.515625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 75.4375,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 87.421875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 98.921875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "01PidgeyAbre a batalhaLv.30",
+          "width": 270,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "02Raichu-AlolaPronto para a jornadaLv.30",
+          "width": 270,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "03Weezing-GalarPronto para a jornadaLv.30",
+          "width": 270,
+          "height": 66,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "04Exeggutor-AlolaPronto para a jornadaLv.30",
+          "width": 270,
+          "height": 66,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "05Mr. Mime-GalarPronto para a jornadaLv.30",
+          "width": 270,
+          "height": 66,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "06Oricorio-PauPronto para a jornadaLv.30",
+          "width": 270,
+          "height": 50,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Consultar equipe, reserva e golpes",
+          "width": 282,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Batalha",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 120,
+          "height": 54,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "vitoria",
+      "w": 1920,
+      "h": 1080,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 79.546875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 102.5625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 111.515625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 75.4375,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 87.421875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 98.921875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Continuar a jornada",
+          "width": 648,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "01ScizorAbre a batalhaLv.100",
+          "width": 270,
+          "height": 60,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Consultar equipe, reserva e golpes",
+          "width": 282,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": [
+        {
+          "name": "reward-ring",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        },
+        {
+          "name": "reward-spark",
+          "iterations": 1
+        }
+      ]
+    },
+    {
+      "name": "derrota",
+      "w": 1920,
+      "h": 1080,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 79.546875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 102.5625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 111.515625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 75.4375,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 87.421875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 98.921875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Registrar esta história",
+          "width": 648,
+          "height": 48,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "01MagikarpAbre a batalhaLv.1",
+          "width": 270,
+          "height": 60,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Consultar equipe, reserva e golpes",
+          "width": 282,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Jornada",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    },
+    {
+      "name": "mochila-bloqueada",
+      "w": 1920,
+      "h": 1080,
+      "overflow": false,
+      "mainOverflow": 0,
+      "unavailable": 0,
+      "broken": [],
+      "targets": [
+        {
+          "name": "Ativar som",
+          "width": 79.546875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Sua Pokédex",
+          "width": 102.5625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Entrar em tela cheia",
+          "width": 111.515625,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Hall da Fama",
+          "width": 75.4375,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Como jogar e créditos",
+          "width": 87.421875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Opções e progresso",
+          "width": 98.921875,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "01PidgeyAbre a batalhaLv.30",
+          "width": 270,
+          "height": 60,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "02Raichu-AlolaPronto para a jornadaLv.30",
+          "width": 270,
+          "height": 70,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "03Weezing-GalarPronto para a jornadaLv.30",
+          "width": 270,
+          "height": 70,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "04Exeggutor-AlolaPronto para a jornadaLv.30",
+          "width": 270,
+          "height": 70,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "05Mr. Mime-GalarPronto para a jornadaLv.30",
+          "width": 270,
+          "height": 70,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "06Oricorio-PauPronto para a jornadaLv.30",
+          "width": 270,
+          "height": 70,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Consultar equipe, reserva e golpes",
+          "width": 282,
+          "height": 44,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Batalha",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Equipe",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mapa",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Mochila",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        },
+        {
+          "name": "Diário",
+          "width": 120,
+          "height": 62,
+          "inView": true,
+          "disabled": false
+        }
+      ],
+      "animations": []
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "method": "Fixtures de apresentação carregadas na UI; resultados/finais derivam de comandos reais em confrontos de nível alto/baixo, sem alegação de balanceamento humano."
+}

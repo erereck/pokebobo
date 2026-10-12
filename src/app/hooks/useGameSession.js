@@ -31,7 +31,7 @@ const KEEP_TAB_ACTIONS = new Set([
   "ROUTE_STEP_COMPLETE",
 ]);
 
-export function useGameSession() {
+export function useGameSession({ onActionCommitted, onSessionChange } = {}) {
   const [activeSlot, setActiveSlot] = useState(() =>
     loadActiveSaveSlot(browserStorage),
   );
@@ -61,6 +61,7 @@ export function useGameSession() {
       // O progresso de uma ação válida é gravado antes de um possível
       // pagehide/reload; a effect evita gravar essa mesma referência de novo.
       if (next !== state) persistNow(next);
+      if (next !== state) onActionCommitted?.(state, next, action);
       setError("");
       if (!KEEP_TAB_ACTIONS.has(action.type)) {
         setTab("journey");
@@ -85,6 +86,7 @@ export function useGameSession() {
       const nextState = loadSave(browserStorage, nextSlot);
       setActiveSlot(nextSlot);
       setState(nextState);
+      onSessionChange?.();
       setTab("journey");
       setError("");
       setName("");
@@ -111,6 +113,7 @@ export function useGameSession() {
     const next = loadSave(browserStorage, nextSlot);
     setActiveSlot(nextSlot);
     setState(next);
+    onSessionChange?.();
     setTab("journey");
     setError("");
     setSelectedPreferences(next);

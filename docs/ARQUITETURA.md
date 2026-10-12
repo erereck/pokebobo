@@ -190,3 +190,11 @@ Encounter/CaptureCanvas apresentam o resultado produzido por actions/capture.js.
 São 194 módulos JS/JSX. useFieldControls coordena teclado/ponteiro e dispara MOVE_ROUTE apenas quando termina o passo anterior; listeners e RAF são removidos na desmontagem. fieldPresentation calcula pose e interseção da região dos pés; drawField é compartilhado por FieldCanvas e a transição da captura. encounterTransition usa uma imagem local do campo, sem persistir canvas no save.
 
 usePixelCanvas pausa o relógio com document.hidden, limita saltos de tempo e mantém o último quadro para atualizar seleção/foco sem reiniciar a animação. captureTimeline copia a posição da bola por quadro. PixelViewport mede o contêiner com ResizeObserver; nenhuma dimensão de tela entra no motor. useFullscreen acompanha a API nativa. TeamScreen guarda somente seleção/ficha/reserva localmente e delega a gestão às mesmas ações existentes.
+
+## Momentos confirmados — 0.21.0
+
+`useGameSession` observa uma ação válida depois de `persistNow`. `actionMoments` compara IDs/nomes de equipe e reserva, sem modificar run/RNG. `useJourneyMoments` mantém uma fila temporária; `EvolutionMoment` só remove apresentações. Decisões ramificadas/manuais seguem quando a fila termina. Importação, troca de slot e nova aventura limpam a fila; reload nunca a restaura.
+
+`spriteSources` centraliza fontes do Sprite e evita arte comum por número para formas regionais. `SpriteImage` percorre fontes, mostra estado indisponível e assina online somente durante falha. `BattlePokemonSprite` fornece enquadramento de 44 px para esse estado, separado da geometria do Pokémon carregado. Cinco PNGs têm índice/geometria próprios; os perfis anteriores não são regenerados. Captura conserva fontes FRLG e recorre à forma local para espécies posteriores.
+
+A abertura de `index.html` cobre a carga do módulo principal; seu CSS é escopado em boot.css. Listener/timeout/observer são removidos quando React substitui a abertura. Nenhum acesso ao save e nenhuma recarga automática. `keyboardActivation` evita ativação nativa repetida de button/summary; o direcional usa sua própria cadência em useFieldControls.

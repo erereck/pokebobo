@@ -4,8 +4,7 @@ import {
   drawEncounterTransition,
   encounterTransitionDuration,
 } from "./encounterTransition.js";
-import catalog from "../../game/catalog.json" with { type: "json" };
-import { spriteFileId } from "../../components/pokemon/battleSpriteSources.js";
+import { captureSpriteSource } from "./captureSpriteSource.js";
 import species from "./frlg-species.json" with { type: "json" };
 import { fieldAsset, tintedPixelImage } from "./pixelAssets.js";
 import { usePixelCanvas } from "./usePixelCanvas.js";
@@ -33,16 +32,13 @@ export function CaptureCanvas({
   ballDisabled = false,
 }) {
   const fieldFrame = useRef(null);
-  const num = catalog[name].num;
   const original = species[name];
   const monY = 40 + (original?.offset || 0);
   const timeline = useMemo(
     () => (attempt ? captureTimeline(attempt, monY) : null),
     [attempt, monY],
   );
-  const sprite = shiny
-    ? `${import.meta.env.BASE_URL}sprites/${original ? `frlg-shiny/${num}` : `shiny/${spriteFileId(name)}`}.png`
-    : `${import.meta.env.BASE_URL}sprites/${original ? "frlg/" : ""}${num}.png`;
+  const sprite = captureSpriteSource(name, shiny, import.meta.env.BASE_URL);
   const transitionDuration =
     exploration && !returning
       ? Math.ceil(encounterTransitionDuration(water) / 2)

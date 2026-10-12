@@ -1,0 +1,104 @@
+{
+  "tag": "turbo-final",
+  "base": "http://localhost:4174/pokebobo/",
+  "screens": [
+    {
+      "name": "Raichu-Alola",
+      "shiny": false,
+      "src": "/pokebobo/sprites/forms/raichu-alola.png",
+      "expected": "/sprites/forms/raichu-alola.png",
+      "correct": true,
+      "overflow": false
+    },
+    {
+      "name": "Weezing-Galar",
+      "shiny": false,
+      "src": "/pokebobo/sprites/forms/weezing-galar.png",
+      "expected": "/sprites/forms/weezing-galar.png",
+      "correct": true,
+      "overflow": false
+    },
+    {
+      "name": "Exeggutor-Alola",
+      "shiny": false,
+      "src": "/pokebobo/sprites/forms/exeggutor-alola.png",
+      "expected": "/sprites/forms/exeggutor-alola.png",
+      "correct": true,
+      "overflow": false
+    },
+    {
+      "name": "Mr. Mime-Galar",
+      "shiny": false,
+      "src": "/pokebobo/sprites/forms/mrmime-galar.png",
+      "expected": "/sprites/forms/mrmime-galar.png",
+      "correct": true,
+      "overflow": false
+    },
+    {
+      "name": "Oricorio-Pau",
+      "shiny": false,
+      "src": "/pokebobo/sprites/forms/oricorio-pau.png",
+      "expected": "/sprites/forms/oricorio-pau.png",
+      "correct": true,
+      "overflow": false
+    },
+    {
+      "name": "Nidoran-F",
+      "shiny": false,
+      "src": "/pokebobo/sprites/29.png",
+      "expected": "/sprites/29.png",
+      "correct": true,
+      "overflow": false
+    },
+    {
+      "name": "Raichu-Alola",
+      "shiny": true,
+      "src": "/pokebobo/sprites/shiny/raichu-alola.png",
+      "expected": "/sprites/shiny/raichu-alola.png",
+      "correct": true,
+      "overflow": false
+    },
+    {
+      "name": "Weezing-Galar",
+      "shiny": true,
+      "src": "/pokebobo/sprites/shiny/weezing-galar.png",
+      "expected": "/sprites/shiny/weezing-galar.png",
+      "correct": true,
+      "overflow": false
+    },
+    {
+      "name": "Exeggutor-Alola",
+      "shiny": true,
+      "src": "/pokebobo/sprites/shiny/exeggutor-alola.png",
+      "expected": "/sprites/shiny/exeggutor-alola.png",
+      "correct": true,
+      "overflow": false
+    },
+    {
+      "name": "Mr. Mime-Galar",
+      "shiny": true,
+      "src": "/pokebobo/sprites/shiny/mrmime-galar.png",
+      "expected": "/sprites/shiny/mrmime-galar.png",
+      "correct": true,
+      "overflow": false
+    },
+    {
+      "name": "Oricorio-Pau",
+      "shiny": true,
+      "src": "/pokebobo/sprites/shiny/oricorio-pau.png",
+      "expected": "/sprites/shiny/oricorio-pau.png",
+      "correct": true,
+      "overflow": false
+    },
+    {
+      "name": "Nidoran-F",
+      "shiny": true,
+      "src": "/pokebobo/sprites/shiny/nidoranf.png",
+      "expected": "/sprites/shiny/nidoranf.png",
+      "correct": true,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "network": []
+}

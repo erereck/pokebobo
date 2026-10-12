@@ -26,9 +26,13 @@ import { AudioProvider } from "../features/audio/AudioProvider.jsx";
 import { AudioDialog } from "../features/audio/AudioDialog.jsx";
 import { ImportSaveDialog } from "../features/settings/ImportSaveDialog.jsx";
 import { useVisualViewport } from "./hooks/useVisualViewport.js";
+import { useJourneyMoments } from "../features/moments/useJourneyMoments.js";
+import { EvolutionMoment } from "../features/moments/EvolutionMoment.jsx";
+import { preventRepeatedActivation } from "../shared/keyboardActivation.js";
 
 export function App() {
   useVisualViewport();
+  const { moment, remaining, recordAction, dismiss, clear } = useJourneyMoments();
   const { spriteStyle, changeSpriteStyle, spritePreferenceSaved } =
     useBattleSpriteStyle();
   const [selectedMonId, setSelectedMonId] = useState(null);
@@ -58,7 +62,7 @@ export function App() {
     activeSlot,
     saveSlots,
     switchSaveSlot,
-  } = useGameSession();
+  } = useGameSession({ onActionCommitted: recordAction, onSessionChange: clear });
   const {
     invitationText,
     setInvitationText,
@@ -96,6 +100,7 @@ export function App() {
   return (
     <AudioProvider run={run} tab={tab} modal={modal} slot={activeSlot}>
       <div
+        onKeyDownCapture={preventRepeatedActivation}
         className={
           playing
             ? "app-shell is-playing" +
@@ -141,6 +146,7 @@ export function App() {
             onHall={() => setModal("hall")}
             onShare={() => setModal("share-ended")}
             onNew={() => {
+              clear();
               setName(run.name);
               setState((s) => ({
                 ...s,
@@ -180,10 +186,19 @@ export function App() {
           </div>
         )}
         {playing && <GameNavigation tab={tab} setTab={navigate} run={run} />}
-        {run?.pendingEvolutionChoices?.length > 0 && run.phase !== "ended" && (
+        {moment && !modal && (
+          <EvolutionMoment
+            key={moment.id}
+            moment={moment}
+            remaining={remaining}
+            onClose={dismiss}
+            onSkipAll={clear}
+          />
+        )}
+        {!moment && run?.pendingEvolutionChoices?.length > 0 && run.phase !== "ended" && (
           <EvolutionDialog run={run} act={act} />
         )}
-        {!run?.pendingEvolutionChoices?.length &&
+        {!moment && !run?.pendingEvolutionChoices?.length &&
           run?.pendingMoveChoices?.length > 0 &&
           run.phase !== "ended" && <MoveLearnDialog run={run} act={act} />}
         {modal === "pokedex" && (
@@ -258,6 +273,7 @@ export function App() {
           <ResetDialog
             onClose={() => setModal("settings")}
             onReset={() => {
+              clear();
               const blank = initialState();
               blank.meta.history = state.meta.history;
               blank.meta.dex = state.meta.dex;

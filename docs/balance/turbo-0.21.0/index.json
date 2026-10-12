@@ -1,0 +1,281 @@
+{
+  "version": "0.21.0",
+  "baseCommit": "45a40924bbcc7de6549f628af59a180ae2484bb4",
+  "verify": {
+    "modules": 262,
+    "normalTests": 193,
+    "bundledTests": 188,
+    "failed": 0
+  },
+  "workerVersion": "0.21.0-1c7bd254d286",
+  "buildFiles": [
+    {
+      "file": "index.html",
+      "bytes": 2822,
+      "sha256": "6f50eacb27a196163a8478671838b3b2bc28d76e8ae3c76fceea04009458c0c1"
+    },
+    {
+      "file": "assets/index-BJ54PCYO.js",
+      "bytes": 5441086,
+      "sha256": "19af5243c5b33465a7f8b037ae03f62ecaa1381e3d149579e096ee442863105c"
+    },
+    {
+      "file": "assets/index-D_q9_Uou.css",
+      "bytes": 132853,
+      "sha256": "5c2665cd23ad424aebb5cc22e2d24cff2914a8a0f4695a2aad71f8858714142a"
+    }
+  ],
+  "reports": [
+    {
+      "name": "matrix",
+      "file": "matrix.json",
+      "sourceHelperReport": "browser-matrix-turbo-final-all-0.21.0.json",
+      "records": 126,
+      "flows": 0,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "result-fit",
+      "file": "result-fit.json",
+      "sourceHelperReport": "browser-matrix-turbo-final-0.21.0.json",
+      "records": 21,
+      "flows": 0,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "portraits",
+      "file": "portraits.json",
+      "sourceHelperReport": "browser-form-portraits-turbo-final-0.21.0.json",
+      "records": 12,
+      "flows": 0,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "quality",
+      "file": "quality.json",
+      "sourceHelperReport": "browser-quality-turbo-final.json",
+      "records": 30,
+      "flows": 4,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "presence",
+      "file": "presence.json",
+      "sourceHelperReport": "battle-presence-turbo-final-0.18.1.json",
+      "records": 24,
+      "flows": 8,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "durability",
+      "file": "durability.json",
+      "sourceHelperReport": "browser-advanced-turbo-final.json",
+      "records": 0,
+      "flows": 7,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 2
+    },
+    {
+      "name": "audio",
+      "file": "audio.json",
+      "sourceHelperReport": "audio-turbo-final-0.18.0.json",
+      "records": 13,
+      "flows": 7,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "sharing",
+      "file": "sharing.json",
+      "sourceHelperReport": "browser-sharing-0.19.0.json",
+      "records": 22,
+      "flows": 6,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "offline",
+      "file": "offline.json",
+      "sourceHelperReport": "browser-offline-turbo-final.json",
+      "records": 4,
+      "flows": 3,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "session",
+      "file": "session.json",
+      "sourceHelperReport": "browser-session-turbo-final.json",
+      "records": 6,
+      "flows": 3,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "campaign",
+      "file": "campaign.json",
+      "sourceHelperReport": "browser-campaign-turbo-0210.json",
+      "records": 0,
+      "flows": 0,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "mobile-webkit",
+      "file": "mobile-webkit.json",
+      "sourceHelperReport": "browser-mobile-turbo-final-webkit-0.20.1.json",
+      "records": 12,
+      "flows": 7,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "moments-edge",
+      "file": "moments-edge.json",
+      "sourceHelperReport": "browser-moments-turbo-final-edge-0.21.0.json",
+      "records": 29,
+      "flows": 3,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "keyboard-edge",
+      "file": "keyboard-edge.json",
+      "sourceHelperReport": "browser-keyboard-turbo-final-edge-0.21.0.json",
+      "records": 0,
+      "flows": 6,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "boot-edge",
+      "file": "boot-edge.json",
+      "sourceHelperReport": "browser-boot-turbo-final-edge-0.21.0.json",
+      "records": 5,
+      "flows": 5,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 1
+    },
+    {
+      "name": "capture-forms-edge",
+      "file": "capture-forms-edge.json",
+      "sourceHelperReport": "browser-capture-forms-turbo-final-edge-0.21.0.json",
+      "records": 10,
+      "flows": 10,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "moments-webkit",
+      "file": "moments-webkit.json",
+      "sourceHelperReport": "browser-moments-turbo-final-webkit-0.21.0.json",
+      "records": 29,
+      "flows": 3,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "keyboard-webkit",
+      "file": "keyboard-webkit.json",
+      "sourceHelperReport": "browser-keyboard-turbo-final-webkit-0.21.0.json",
+      "records": 0,
+      "flows": 6,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "boot-webkit",
+      "file": "boot-webkit.json",
+      "sourceHelperReport": "browser-boot-turbo-final-webkit-0.21.0.json",
+      "records": 5,
+      "flows": 5,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 1
+    },
+    {
+      "name": "capture-forms-webkit",
+      "file": "capture-forms-webkit.json",
+      "sourceHelperReport": "browser-capture-forms-turbo-final-webkit-0.21.0.json",
+      "records": 10,
+      "flows": 10,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "resilience-edge",
+      "file": "resilience-edge.json",
+      "sourceHelperReport": "browser-resilience-turbo-final-battle-edge-0.21.0.json",
+      "records": 0,
+      "flows": 3,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 10
+    },
+    {
+      "name": "team-details-edge",
+      "file": "team-details-edge.json",
+      "sourceHelperReport": "browser-team-details-final-edge-0.21.0.json",
+      "records": 0,
+      "flows": 2,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    },
+    {
+      "name": "resilience-webkit",
+      "file": "resilience-webkit.json",
+      "sourceHelperReport": "browser-resilience-turbo-final-battle-webkit-0.21.0.json",
+      "records": 0,
+      "flows": 3,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 10
+    },
+    {
+      "name": "team-details-webkit",
+      "file": "team-details-webkit.json",
+      "sourceHelperReport": "browser-team-details-final-webkit-0.21.0.json",
+      "records": 0,
+      "flows": 2,
+      "unexpectedErrors": 0,
+      "unexpectedResponses": 0,
+      "intentionalFailures": 0
+    }
+  ],
+  "totals": {
+    "records": 358,
+    "flows": 103
+  },
+  "limits": [
+    "Fixtures de apresentação/campanha automatizada não avaliam dificuldade humana.",
+    "Edge/WebKit Windows e toque/viewport emulados não confirmam Android/iPhone físico.",
+    "Offline real confirmado somente em Edge nesta rodada.",
+    "Relatórios de helpers anteriores mantêm seus nomes originais no índice; foram executados contra a versão 0.21.0.",
+    "Campanha completa conta 85 comandos/195 ações/14 batalhas separadamente dos fluxos/quadros."
+  ]
+}

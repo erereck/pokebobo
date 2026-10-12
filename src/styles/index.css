@@ -39,3 +39,5 @@
 @import "./responsive/pokedex/pixel-screens.css";
 @import "./responsive/pokedex/panel-fit.css";
 @import "./responsive/pokedex/mobile-ergonomics.css";
+@import "./features/moments.css";
+@import "./components/interface-motion.css";

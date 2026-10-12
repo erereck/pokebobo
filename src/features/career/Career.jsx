@@ -34,7 +34,7 @@ export function Career({ run: r, act }) {
       <CityHero inLeague={inLeague} c={c} r={r} next={next} />
       <WeekBudget inLeague={inLeague} r={r} remaining={remaining} />
       {r.notice && (
-        <div className="notice" role="status">
+        <div key={`${r.week}-${r.notice}`} className="notice" role="status">
           <BookOpen size={17} />
           <p>{r.notice}</p>
         </div>

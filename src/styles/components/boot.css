@@ -1,0 +1,63 @@
+/* Abertura disponível antes do módulo do jogo; sem acesso ao progresso. */
+.boot-screen {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #c62f45;
+  color: #203a32;
+  font-family: system-ui, sans-serif;
+}
+.boot-card {
+  box-sizing: border-box;
+  width: min(420px, 100%);
+  padding: 22px;
+  border: 2px solid #e88191;
+  border-radius: 20px;
+  background: #ad233c;
+  box-shadow: 0 6px 0 #8c1c32;
+}
+.boot-lens {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 18px;
+  border: 5px solid #e8e8d2;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 25%, #fff 0 6%, #5ed7e3 10%, #288ca5 75%);
+  box-shadow: 0 0 0 3px #213c3b;
+}
+.boot-display {
+  padding: 24px 20px;
+  border: 7px solid #1c2d33;
+  border-radius: 12px;
+  background: #eef0dc;
+}
+.boot-display h1 { margin: 0 0 10px; font-size: 22px; line-height: 1.25; }
+.boot-display p { margin: 0; font-size: 14px; line-height: 1.5; }
+.boot-dots { display: flex; gap: 7px; margin-top: 20px; }
+.boot-dots i { width: 6px; height: 6px; border-radius: 50%; background: #4b8660; }
+.boot-screen.has-error .boot-dots { display: none; }
+#boot-retry {
+  min-height: 44px;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #ab934b;
+  border-radius: 6px;
+  background: #f0d16b;
+  color: #3e321b;
+  font: 700 14px system-ui, sans-serif;
+  cursor: pointer;
+}
+#boot-retry:focus-visible { outline: 3px solid #23666e; outline-offset: 3px; }
+@media (prefers-reduced-motion: no-preference) {
+  .boot-dots i { animation: boot-dot 900ms ease-in-out infinite alternate; }
+  .boot-dots i:nth-child(2) { animation-delay: 150ms; }
+  .boot-dots i:nth-child(3) { animation-delay: 300ms; }
+}
+@keyframes boot-dot { from { opacity: .3; } to { opacity: 1; } }
+@media (max-height: 360px) {
+  .boot-card { padding: 14px; }
+  .boot-lens { width: 30px; height: 30px; margin-bottom: 12px; }
+  .boot-display { padding: 16px; }
+}

@@ -1,5 +1,16 @@
 # Histórico
 
+## 0.21.0 — Cada conquista conta · 11/10/2026
+
+- Evoluções ganham uma cena curta com a espécie anterior, nova forma, nível e tipos. Equipe e reserva entram na mesma fila; Continuar e Pular demais ficam disponíveis imediatamente. Progresso salvo antes da apresentação, sem repetir a evolução ao reabrir e sem perder escolhas manuais de golpes.
+- Insígnia recebida na vitória, brilho breve na conquista, entrada suave de janelas/cartas do draft/ficha e sinal da cidade atual. Efeitos respeitam movimento reduzido e não prolongam decisões.
+- Segurar Enter/Espaço deixa de confirmar repetidamente ações como treinar ou procurar itens. No direcional do campo, Enter/Espaço segurados caminham e mantêm Voltar bloqueado até soltar, como setas/WASD/toque.
+- Cinco formas regionais recebem retratos próprios extraídos dos sprites locais. Captura também conserva a forma correta; fallback de batalha não troca uma forma por sua espécie base. Imagem indisponível tem estado discreto e nova tentativa ao voltar a conexão.
+- Ficha da equipe permite abrir a descrição de cada golpe, incluindo os atributos usados por Body Press, Foul Play e Psyshock. Trocar de Pokémon retorna ao início da ficha.
+- Resultado conserva o botão de continuar enquanto o recibo pode rolar; mochila consultada durante batalha/Liga organiza estoque, equipamentos e aviso sem sobreposição. Texto de bolas reflete tentativas enquanto houver estoque.
+- Abertura aparece antes do módulo do jogo e oferece nova tentativa se a carga falhar ou demorar. Não altera progresso nem força recarga.
+- Motor, IA, RNG, schema 4, captura de 67%, 50 passos ocultos e perfis de escala preservados. [Comportamento e limites](docs/MOMENTOS-E-POLIMENTO.md).
+
 ## 0.20.1 — Na palma da mão · 11/10/2026
 
 - Controles principais de toque com pelo menos 44 px, inclusive cabeçalho em 320 px, ferramentas de batalha, navegação e volumes. Captura e exploração ganham composição mais compacta na horizontal curta.

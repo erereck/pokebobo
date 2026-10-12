@@ -106,7 +106,7 @@ export function ExplorationScreen({ run: r, act }) {
           ? "Vara lançada… algo puxou a linha!"
           : preparation === "surf"
             ? "Preparando Surf…"
-            : "Segure as setas ou WASD. Entre e saia do mato para encontrar Pokémon."}
+            : "Segure setas, WASD ou um botão. Entre e saia do mato para encontrar Pokémon."}
       </p>
       <div className="field-controls">
         <div className="field-dpad" aria-label="Controles da caminhada">
@@ -115,8 +115,11 @@ export function ExplorationScreen({ run: r, act }) {
               key={label}
               className="hardware-button"
               aria-label={label}
+              title={`${label} · segure Enter ou Espaço`}
               disabled={!!preparation}
               onPointerDown={(event) => controls.press(event, dx, dy)}
+              data-field-dx={dx}
+              data-field-dy={dy}
               onPointerUp={controls.release}
               onPointerCancel={controls.release}
               onLostPointerCapture={controls.release}

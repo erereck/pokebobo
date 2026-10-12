@@ -1,0 +1,43 @@
+{
+  "base": "http://localhost:4174/pokebobo/",
+  "tag": "turbo-final",
+  "flows": [
+    "começo novo → origem/inicial → nove escolhas → região com dez cidades → 50 passos válidos → retorno automático/reload → exportação → encerramento/Hall → nova aventura",
+    "batalha real perdida → resultado → fim → Hall funciona",
+    "efeito real não desenha sobre HP/nome nem intercepta cliques"
+  ],
+  "screens": [
+    {
+      "name": "origens",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "name": "regiao",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "name": "retorno-50",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "name": "hall",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "name": "derrota",
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "name": "hall-derrota",
+      "overflow": false,
+      "broken": []
+    }
+  ],
+  "errors": [],
+  "network": []
+}

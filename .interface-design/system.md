@@ -94,3 +94,9 @@ Manter a carcaça/rubi/LCD e escala de corpo da 0.18.1. Efeitos pixelados acompa
 Caderno em dialog nativo: três páginas com botões aria-pressed, descrição em details, fatos em dl e dois lados em campo. Quatro fatos por linha no PC, dois no celular; lados em uma coluna abaixo de 440 px. Valores positivos/negativos têm sinal além da cor. PP pertence à batalha atual; não misturar previsões de dano com fatos básicos.
 
 Backup: entrada de arquivo nativa, prévia compacta e três botões de slot com nome/estado. Priorizar primeiro vazio; ação de substituição nomeia o slot e oferece exportação do conteúdo atual. Erros mantêm a janela aberta. Cabeçalho sticky conserva Fechar/Escape e retorno de foco em listas extensas. Ações de 44 px, sem modal de confirmação extra.
+
+## Cada conquista conta — 0.21.0
+
+Conservar rubi/LCD/âmbar e fontes da aplicação. Entrada de janelas 160 ms, cartas 220 ms com até 35 ms entre itens; sem fill final que impeça pressão. Conquista 440 ms e partículas finitas, cidade atual duas pulsações de 800 ms. Evolução de 1 s só inicia após ambas as imagens carregarem; confirmação sempre disponível, escolhas de gameplay não dependem da animação. Movimento reduzido mostra conteúdo final estático.
+
+Evolução: nome/nível/tipos claros, duas ações de pelo menos 44 px quando há fila; em paisagem curta, estágio e anúncio lado a lado. Resultado separa recibo rolável e CTA; mochila sem ações disponíveis usa uma grade própria de consulta. Descrições na ficha usam details/summary, sem tooltips obrigatórios. Imagem indisponível evita ícone quebrado, arena usa indicador discreto de 44 px sobre a plataforma. Abertura usa carcaça/LCD e fonte do sistema antes das fontes do jogo, sem progresso numérico inventado.

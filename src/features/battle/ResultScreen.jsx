@@ -1,6 +1,5 @@
 import { cx } from "../../shared/classNames.js";
-import { Flag } from "lucide-react";
-import { Footprints } from "lucide-react";
+import { VictoryEmblem } from "../../components/progress/VictoryEmblem.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { ArrowRight } from "lucide-react";
 import { PROGRESSION } from "../../game/config/progression.js";
@@ -25,72 +24,72 @@ export function ResultScreen({ run: r, act }) {
   const reward = levelGainLabel(levelGains(eligible, amount));
   return (
     <div className="result-screen">
-      <div className={cx("result-emblem", !won && "lost")}>
-        {won ? <Flag size={42} /> : <Footprints size={42} />}
-      </div>
-      <span className="eyebrow">
-        {r.battle.kind === "gym"
-          ? "DESAFIO DE GINÁSIO"
-          : r.battle.kind === "league"
-            ? "LIGA POKÉMON"
-            : "BATALHA NO CAMINHO"}
-      </span>
-      <h1>{won ? "Vitória!" : "Fim da aventura"}</h1>
-      <p>
-        {won
-          ? `${r.battle.name} ficou pelo caminho.`
-          : noSurvivors(r)
-            ? "Seu último Pokémon caiu. Sem sobreviventes, a run termina aqui."
-            : `${r.battle.name} levou a melhor.`}
-      </p>
-      <div className="result-team">
-        {r.outcome.player.map((m, i) => (
-          <div className={cx(m.fainted && "fainted")} key={i}>
-            <Sprite name={m.name} shiny={m.shiny} />
-            <small>{m.fainted ? "Caiu" : "De pé"}</small>
-          </div>
-        ))}
-      </div>
-      <div className="result-receipt">
-        <div>
-          <span>Turnos de batalha</span>
-          <b>{r.outcome.turn}</b>
-        </div>
-        <div>
-          <span>{won ? "Recompensa" : "Insígnias conquistadas"}</span>
-          <b>
-            {won
-              ? r.battle.kind === "gym"
-                ? `Insígnia ${r.badges + 1}/8 · ${reward}`
-                : r.battle.kind === "league"
-                  ? reward
-                  : "Equipe recuperada"
-              : `${r.badges}/8`}
-          </b>
-        </div>
+      <div className="result-content">
+        <VictoryEmblem won={won} kind={r.battle.kind} badge={r.badges + 1} />
+        <span className="eyebrow">
+          {r.battle.kind === "gym"
+            ? "DESAFIO DE GINÁSIO"
+            : r.battle.kind === "league"
+              ? "LIGA POKÉMON"
+              : "BATALHA NO CAMINHO"}
+        </span>
+        <h1>{won ? "Vitória!" : "Fim da aventura"}</h1>
         <p>
           {won
-            ? r.mode === "nuzlocke"
-              ? "Quem caiu deixa a equipe. Os sobreviventes continuam."
-              : "Sua equipe se recupera para a próxima parada."
-            : "O save não apaga a derrota. A próxima história começa em outro mapa."}
+            ? `${r.battle.name} ficou pelo caminho.`
+            : noSurvivors(r)
+              ? "Seu último Pokémon caiu. Sem sobreviventes, a run termina aqui."
+              : `${r.battle.name} levou a melhor.`}
         </p>
-        {won &&
-          r.battle.kind === "gym" &&
-          r.badges + 1 === EXPLORATION_RULES.fishingBadges && (
-            <p className="equipment-reward">
-              <b>Nova recompensa: Fishing Rod!</b> Pescar nos lagos das rotas
-              está liberado.
-            </p>
-          )}
-        {won &&
-          r.battle.kind === "gym" &&
-          r.badges + 1 === EXPLORATION_RULES.surfBadges && (
-            <p className="equipment-reward">
-              <b>Novo acesso: Surf!</b> Explore o lago para encontrar outras
-              espécies.
-            </p>
-          )}
+        <div className="result-team">
+          {r.outcome.player.map((m, i) => (
+            <div className={cx(m.fainted && "fainted")} key={i}>
+              <Sprite name={m.name} shiny={m.shiny} />
+              <small>{m.fainted ? "Caiu" : "De pé"}</small>
+            </div>
+          ))}
+        </div>
+        <div className="result-receipt">
+          <div>
+            <span>Turnos de batalha</span>
+            <b>{r.outcome.turn}</b>
+          </div>
+          <div>
+            <span>{won ? "Recompensa" : "Insígnias conquistadas"}</span>
+            <b>
+              {won
+                ? r.battle.kind === "gym"
+                  ? `Insígnia ${r.badges + 1}/8 · ${reward}`
+                  : r.battle.kind === "league"
+                    ? reward
+                    : "Equipe recuperada"
+                : `${r.badges}/8`}
+            </b>
+          </div>
+          <p>
+            {won
+              ? r.mode === "nuzlocke"
+                ? "Quem caiu deixa a equipe. Os sobreviventes continuam."
+                : "Sua equipe se recupera para a próxima parada."
+              : "O save não apaga a derrota. A próxima história começa em outro mapa."}
+          </p>
+          {won &&
+            r.battle.kind === "gym" &&
+            r.badges + 1 === EXPLORATION_RULES.fishingBadges && (
+              <p className="equipment-reward">
+                <b>Nova recompensa: Fishing Rod!</b> Pescar nos lagos das rotas
+                está liberado.
+              </p>
+            )}
+          {won &&
+            r.battle.kind === "gym" &&
+            r.badges + 1 === EXPLORATION_RULES.surfBadges && (
+              <p className="equipment-reward">
+                <b>Novo acesso: Surf!</b> Explore o lago para encontrar outras
+                espécies.
+              </p>
+            )}
+        </div>
       </div>
       <button
         className="button primary full"

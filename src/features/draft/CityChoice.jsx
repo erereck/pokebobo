@@ -7,6 +7,7 @@ export function CityChoice({ c, act, origin, i }) {
     <button
       key={c.id}
       className="city-choice"
+      style={{ "--choice-delay": `${i * 35}ms` }}
       onClick={() =>
         act({
           type: origin ? "ORIGIN" : "DRAFT",
