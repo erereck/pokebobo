@@ -1,4 +1,5 @@
 import geometry from "./spriteGeometry.json" with { type: "json" };
+import formGeometry from "./staticFormSpriteGeometry.json" with { type: "json" };
 import speciesScale from "./battleSpeciesScale.json" with { type: "json" };
 import { spriteFileId } from "./battleSpriteSources.js";
 
@@ -20,7 +21,7 @@ export function battleSpriteLayout({
   back = false,
 }) {
   const key = spriteGeometryKey(source);
-  const known = geometry[key];
+  const known = geometry[key] || formGeometry[key];
   const matchesImage =
     known &&
     (!naturalWidth ||
@@ -48,8 +49,10 @@ export function battleSpriteLayout({
   const reference = Math.min(height * 0.9, width * 0.95);
   const desiredHeight = Math.max(16, reference * ratio * (back ? 1.12 : 1));
   const lift = reference * (profile?.lift || 0);
-  const normalKey = key.replace("-shiny/", "/");
-  const shinyKey = normalKey.replace(
+  const formKey = key.replace("sprites/shiny/", "sprites/forms/");
+  const staticForm = Boolean(formGeometry[formKey]);
+  const normalKey = staticForm ? formKey : key.replace("-shiny/", "/");
+  const shinyKey = staticForm ? normalKey.replace("/forms/", "/shiny/") : normalKey.replace(
     /\/(front|back|ani|ani-back)\//,
     "/$1-shiny/",
   );
@@ -58,7 +61,7 @@ export function battleSpriteLayout({
   const aspect = Math.max(
     (right - left) / (bottom - top),
     ...[normalKey, shinyKey].map((variant) => {
-      const bounds = matchesImage && geometry[variant]?.bounds;
+      const bounds = matchesImage && (geometry[variant] || formGeometry[variant])?.bounds;
       return bounds ? (bounds[2] - bounds[0]) / (bounds[3] - bounds[1]) : 0;
     }),
   );

@@ -1,5 +1,17 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## 0.21.0 — Cada conquista conta · 11/10/2026
+
+**Pedido:** revisão autônoma de três horas, com animações e polimento geral, publicação direta autorizada. Prioridade escolhida: reconhecer conquistas sem atrasar a jornada, corrigir ações de teclado e problemas visuais reais, preservar a campanha.
+
+**Entrega e motivo:** evoluções de equipe/reserva são observadas após uma ação já gravada e apresentadas em fila. Continuar/Pular demais não executam regras, e a fila manual de golpes permanece intacta. Vitória identifica a nova insígnia; janelas, draft, ficha e mapa têm entradas breves. Todos respeitam movimento reduzido.
+
+**Correções:** Enter repetido podia treinar várias semanas; agora uma confirmação exige uma nova pressão. Direcional aceita Enter/Espaço segurados. Cinco retratos de formas regionais e captura deixam de usar a espécie base; originais de escala protegidos. Falha de imagem mantém estado legível e recupera com conexão. Resultado fixa seu CTA, mochila de consulta conserva espaço para equipamentos/aviso. Ficha abre explicações de golpes e reinicia sua rolagem ao trocar. Abertura cobre carga lenta/falha com retry explícito, sem acesso ao save.
+
+**Verificação:** 262 módulos, 193 testes normais/188 empacotados, build Pages. Motor real confirma atributos de Body Press/Foul Play/Psyshock. Campanha pela UI venceu oito ginásios/Liga, 85 comandos/14 batalhas, com equipe final de referência. Matriz de apresentação: 126 telas em sete visores; correções de resultado/mochila repetidas em 21 telas. [Resultados e limites](../VALIDACAO.md), [guia](MOMENTOS-E-POLIMENTO.md), [origem dos retratos](../public/sprites/FORMS-ASSETS.md).
+
+**Próximos trabalhos:** sessões humanas em Android/iPhone e uma campanha completa com aprendizado manual; avaliar clareza e ritmo, instalação, teclado e rotação física. Depois, aprofundar segredos/eventos com exemplos reais. Mudança de IA exige preservar decisões já salvas e avaliação específica; nenhuma fórmula foi alterada nesta entrega.
+
 ## 0.20.1 — Na palma da mão · 11/10/2026
 
 **Publicação:** PR 25 mergeada após CI aprovado; CI main e Pages verdes. Site público: 28 registros/17 fluxos em Edge/WebKit, incluindo rotação com janela aberta e offline Edge com música/exportação reais; sete hashes publicados conferem com o build. [Evidência final](balance/production-validation-0.20.1.json).

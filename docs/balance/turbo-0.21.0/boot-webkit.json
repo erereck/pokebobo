@@ -1,0 +1,92 @@
+{
+  "base": "http://localhost:4174/pokebobo/",
+  "engine": "webkit",
+  "flows": [
+    "Carga bloqueada→abertura→jogo em 320×568, no-preference, sem tocar no save",
+    "Carga bloqueada→abertura→jogo em 667×320, reduce, sem tocar no save",
+    "Carga bloqueada→abertura→jogo em 1280×800, no-preference, sem tocar no save",
+    "Demora real de 15 segundos oferece retry sem recarregar automaticamente ou alterar save",
+    "Entrada abortada mostra falha e retry real abre jogo preservando save"
+  ],
+  "screens": [
+    {
+      "name": "carregando-320",
+      "overflow": false,
+      "running": 3,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568,
+        "top": 0,
+        "right": 320,
+        "bottom": 568,
+        "left": 0
+      }
+    },
+    {
+      "name": "carregando-667",
+      "overflow": false,
+      "running": 0,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 667,
+        "height": 320,
+        "top": 0,
+        "right": 667,
+        "bottom": 320,
+        "left": 0
+      }
+    },
+    {
+      "name": "carregando-1280",
+      "overflow": false,
+      "running": 3,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 800,
+        "top": 0,
+        "right": 1280,
+        "bottom": 800,
+        "left": 0
+      }
+    },
+    {
+      "name": "demora",
+      "overflow": false,
+      "running": 0,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      }
+    },
+    {
+      "name": "falha",
+      "overflow": false,
+      "running": 0,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      }
+    }
+  ],
+  "errors": [],
+  "expectedFailures": [
+    "http://localhost:4174/pokebobo/assets/index-DOePyuG0.js"
+  ]
+}

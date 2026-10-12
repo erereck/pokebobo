@@ -1,0 +1,288 @@
+{
+  "url": "http://localhost:4174/pokebobo/",
+  "seed": 4075877915,
+  "origin": "Hau’oli",
+  "starter": "Litten",
+  "method": "Campanha completa pela UI 0.21.0; política training e IA observável p1, seed vencedora identificada na amostra; oferta de origem fixada como no simulador, sem mudar níveis/equipe/RNG",
+  "commands": 85,
+  "actions": 195,
+  "battles": [
+    {
+      "name": "Treinadora Lia",
+      "turn": 2,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Torracat",
+          "level": 31
+        },
+        {
+          "name": "Pelipper",
+          "level": 29
+        }
+      ]
+    },
+    {
+      "name": "Brock",
+      "turn": 2,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Torracat",
+          "level": 32
+        },
+        {
+          "name": "Pelipper",
+          "level": 30
+        }
+      ]
+    },
+    {
+      "name": "Gardenia",
+      "turn": 3,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 36
+        },
+        {
+          "name": "Pelipper",
+          "level": 34
+        },
+        {
+          "name": "Bellsprout",
+          "level": 21
+        }
+      ]
+    },
+    {
+      "name": "Whitney",
+      "turn": 3,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 44
+        },
+        {
+          "name": "Pelipper",
+          "level": 42
+        },
+        {
+          "name": "Weepinbell",
+          "level": 29
+        }
+      ]
+    },
+    {
+      "name": "Maylene",
+      "turn": 3,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 49
+        },
+        {
+          "name": "Pelipper",
+          "level": 47
+        },
+        {
+          "name": "Victreebel",
+          "level": 34
+        }
+      ]
+    },
+    {
+      "name": "Norman",
+      "turn": 5,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 56
+        },
+        {
+          "name": "Pelipper",
+          "level": 54
+        },
+        {
+          "name": "Victreebel",
+          "level": 41
+        }
+      ]
+    },
+    {
+      "name": "Skyla",
+      "turn": 3,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 64
+        },
+        {
+          "name": "Pelipper",
+          "level": 62
+        },
+        {
+          "name": "Victreebel",
+          "level": 49
+        }
+      ]
+    },
+    {
+      "name": "Candice",
+      "turn": 4,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 69
+        },
+        {
+          "name": "Pelipper",
+          "level": 67
+        },
+        {
+          "name": "Victreebel",
+          "level": 54
+        }
+      ]
+    },
+    {
+      "name": "Clair",
+      "turn": 12,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 76
+        },
+        {
+          "name": "Pelipper",
+          "level": 74
+        },
+        {
+          "name": "Victreebel",
+          "level": 61
+        }
+      ]
+    },
+    {
+      "name": "Agatha",
+      "turn": 6,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 77
+        },
+        {
+          "name": "Pelipper",
+          "level": 75
+        },
+        {
+          "name": "Victreebel",
+          "level": 62
+        }
+      ]
+    },
+    {
+      "name": "Karen",
+      "turn": 12,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 78
+        },
+        {
+          "name": "Pelipper",
+          "level": 76
+        },
+        {
+          "name": "Victreebel",
+          "level": 63
+        }
+      ]
+    },
+    {
+      "name": "Bruno",
+      "turn": 9,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 79
+        },
+        {
+          "name": "Pelipper",
+          "level": 77
+        },
+        {
+          "name": "Victreebel",
+          "level": 64
+        }
+      ]
+    },
+    {
+      "name": "Marshal",
+      "turn": 7,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 80
+        },
+        {
+          "name": "Pelipper",
+          "level": 78
+        },
+        {
+          "name": "Victreebel",
+          "level": 65
+        }
+      ]
+    },
+    {
+      "name": "Steven",
+      "turn": 10,
+      "winner": "Você",
+      "party": [
+        {
+          "name": "Incineroar",
+          "level": 81
+        },
+        {
+          "name": "Pelipper",
+          "level": 79
+        },
+        {
+          "name": "Victreebel",
+          "level": 66
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "won": true,
+  "badges": 8,
+  "week": 31,
+  "party": [
+    {
+      "name": "Incineroar",
+      "level": 82
+    },
+    {
+      "name": "Pelipper",
+      "level": 80
+    },
+    {
+      "name": "Victreebel",
+      "level": 67
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "base": "http://localhost:4174/pokebobo/",
+  "engine": "edge",
+  "screens": [
+    {
+      "name": "Raichu-Alola",
+      "shiny": false,
+      "source": "/pokebobo/sprites/forms/raichu-alola.png",
+      "width": 240,
+      "height": 160,
+      "nonempty": true,
+      "overflow": false
+    },
+    {
+      "name": "Raichu-Alola",
+      "shiny": true,
+      "source": "/pokebobo/sprites/shiny/raichu-alola.png",
+      "width": 240,
+      "height": 160,
+      "nonempty": true,
+      "overflow": false
+    },
+    {
+      "name": "Weezing-Galar",
+      "shiny": false,
+      "source": "/pokebobo/sprites/forms/weezing-galar.png",
+      "width": 240,
+      "height": 160,
+      "nonempty": true,
+      "overflow": false
+    },
+    {
+      "name": "Weezing-Galar",
+      "shiny": true,
+      "source": "/pokebobo/sprites/shiny/weezing-galar.png",
+      "width": 240,
+      "height": 160,
+      "nonempty": true,
+      "overflow": false
+    },
+    {
+      "name": "Exeggutor-Alola",
+      "shiny": false,
+      "source": "/pokebobo/sprites/forms/exeggutor-alola.png",
+      "width": 240,
+      "height": 160,
+      "nonempty": true,
+      "overflow": false
+    },
+    {
+      "name": "Exeggutor-Alola",
+      "shiny": true,
+      "source": "/pokebobo/sprites/shiny/exeggutor-alola.png",
+      "width": 240,
+      "height": 160,
+      "nonempty": true,
+      "overflow": false
+    },
+    {
+      "name": "Mr. Mime-Galar",
+      "shiny": false,
+      "source": "/pokebobo/sprites/forms/mrmime-galar.png",
+      "width": 240,
+      "height": 160,
+      "nonempty": true,
+      "overflow": false
+    },
+    {
+      "name": "Mr. Mime-Galar",
+      "shiny": true,
+      "source": "/pokebobo/sprites/shiny/mrmime-galar.png",
+      "width": 240,
+      "height": 160,
+      "nonempty": true,
+      "overflow": false
+    },
+    {
+      "name": "Oricorio-Pau",
+      "shiny": false,
+      "source": "/pokebobo/sprites/forms/oricorio-pau.png",
+      "width": 240,
+      "height": 160,
+      "nonempty": true,
+      "overflow": false
+    },
+    {
+      "name": "Oricorio-Pau",
+      "shiny": true,
+      "source": "/pokebobo/sprites/shiny/oricorio-pau.png",
+      "width": 240,
+      "height": 160,
+      "nonempty": true,
+      "overflow": false
+    }
+  ],
+  "flows": [
+    {
+      "name": "Raichu-Alola",
+      "shiny": false,
+      "success": true,
+      "method": "Fonte correta no canvas; arremesso real, run final idêntica ao reducer, sem novo RNG"
+    },
+    {
+      "name": "Raichu-Alola",
+      "shiny": true,
+      "success": true,
+      "method": "Fonte correta no canvas; arremesso real, run final idêntica ao reducer, sem novo RNG"
+    },
+    {
+      "name": "Weezing-Galar",
+      "shiny": false,
+      "success": true,
+      "method": "Fonte correta no canvas; arremesso real, run final idêntica ao reducer, sem novo RNG"
+    },
+    {
+      "name": "Weezing-Galar",
+      "shiny": true,
+      "success": true,
+      "method": "Fonte correta no canvas; arremesso real, run final idêntica ao reducer, sem novo RNG"
+    },
+    {
+      "name": "Exeggutor-Alola",
+      "shiny": false,
+      "success": true,
+      "method": "Fonte correta no canvas; arremesso real, run final idêntica ao reducer, sem novo RNG"
+    },
+    {
+      "name": "Exeggutor-Alola",
+      "shiny": true,
+      "success": true,
+      "method": "Fonte correta no canvas; arremesso real, run final idêntica ao reducer, sem novo RNG"
+    },
+    {
+      "name": "Mr. Mime-Galar",
+      "shiny": false,
+      "success": true,
+      "method": "Fonte correta no canvas; arremesso real, run final idêntica ao reducer, sem novo RNG"
+    },
+    {
+      "name": "Mr. Mime-Galar",
+      "shiny": true,
+      "success": true,
+      "method": "Fonte correta no canvas; arremesso real, run final idêntica ao reducer, sem novo RNG"
+    },
+    {
+      "name": "Oricorio-Pau",
+      "shiny": false,
+      "success": true,
+      "method": "Fonte correta no canvas; arremesso real, run final idêntica ao reducer, sem novo RNG"
+    },
+    {
+      "name": "Oricorio-Pau",
+      "shiny": true,
+      "success": true,
+      "method": "Fonte correta no canvas; arremesso real, run final idêntica ao reducer, sem novo RNG"
+    }
+  ],
+  "errors": [],
+  "network": []
+}

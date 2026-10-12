@@ -143,3 +143,14 @@ D02: fonte e calendário em `scripts/catalog/learnsetPolicy.mjs`; política em `
 - Enquadramento: PixelViewport.jsx e styles/responsive/pokedex/pixel-screens.css.
 - Ficha/reserva: TeamScreen.jsx, PokemonDetails.jsx e ReservePanel.jsx; altura de equipe/mochila/mapa/jornada horizontal em panel-fit.css.
 - Regressões visuais puras: tests/pixel-presentation.test.js; navegador em docs/balance/browser-\*-0.11.0.json.
+
+## Cada conquista conta — 0.21.0
+
+- Momentos: features/moments/actionMoments.js, useJourneyMoments.js e EvolutionMoment.jsx; observação após gravação em app/hooks/useGameSession.js, fila de janelas em App.jsx.
+- Motion/resultado: styles/components/interface-motion.css, features/moments.css e components/progress/VictoryEmblem.jsx. Preferência reduzida não depende de timers de gameplay.
+- Teclado: shared/keyboardActivation.js, useFieldControls.js e atributos do direcional em ExplorationScreen.jsx.
+- Retratos/fontes: components/pokemon/spriteSources.js, SpriteImage.jsx, staticFormSprites.json/staticFormSpriteGeometry.json; extração em scripts/import-form-portraits.py, créditos em public/sprites/FORMS-ASSETS.md. Não regenerar as tabelas históricas de escala para adicionar uma fonte.
+- Captura: features/encounters/captureSpriteSource.js; timelines/offsets permanecem em seus módulos anteriores.
+- Golpes da ficha: features/team/EquippedMove.jsx reutiliza battle/moveGuide.js. Sem fórmula de dano duplicada na UI.
+- Abertura: index.html e styles/components/boot.css; não editar dist nem standalone.
+- Evidências/limites: VALIDACAO.md, MOMENTOS-E-POLIMENTO.md e balance/turbo-0.21.0/.

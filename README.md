@@ -1,6 +1,8 @@
-# Pokébobo — 0.20.1 · Na palma da mão
+# Pokébobo — 0.21.0 · Cada conquista conta
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.21.0 dá mais destaque às **evoluções e conquistas**, com cenas curtas que podem ser puladas, animações discretas e descrições de golpes na ficha. Formas regionais têm retratos corretos; teclado segurado, tela de resultado e mochila recebem correções. Uma abertura com nova tentativa cobre a primeira carga lenta. Regras e saves preservados. [Como funciona e limites](docs/MOMENTOS-E-POLIMENTO.md).
 
 A 0.20.1 melhora **toque, teclado e paisagem**: comandos principais com 44 px, respeito aos recortes do aparelho, janelas que acompanham a área visível e evoluções com confirmação acessível. Arrastar dentro de uma janela não a fecha por acidente. A reabertura offline também funciona quando o servidor distingue pedidos pelo cabeçalho Origin. [Celular e limites](docs/MOBILE.md) · [Eevee](docs/images/eevee-0.20.1-celular.png) · [Paisagem](docs/images/mobile-0.20.1-paisagem.png).
 

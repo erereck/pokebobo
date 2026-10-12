@@ -1,1 +1,59 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><meta name="theme-color" content="#c62f45"/><meta name="description" content="Monte sua própria região. Depois sobreviva às consequências. Um roguelike de carreira Pokémon."/><link rel="icon" href="./favicon.svg"/><link rel="manifest" href="./manifest.webmanifest"/><link rel="apple-touch-icon" href="./icons/pokebobo-192.png"/><title>Pokébobo — sua região, suas consequências.</title></head><body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#c62f45" />
+    <meta name="description" content="Monte sua própria região. Depois sobreviva às consequências. Um roguelike de carreira Pokémon." />
+    <link rel="icon" href="./favicon.svg" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/pokebobo-192.png" />
+    <link rel="stylesheet" href="/src/styles/components/boot.css" />
+    <title>Pokébobo — sua região, suas consequências.</title>
+  </head>
+  <body>
+    <div id="root">
+      <main class="boot-screen" id="boot-screen" aria-labelledby="boot-title">
+        <div class="boot-card">
+          <div class="boot-lens" aria-hidden="true"></div>
+          <div class="boot-display">
+            <h1 id="boot-title">Abrindo a Pokédex</h1>
+            <p id="boot-status" role="status">Preparando sua aventura.</p>
+            <div class="boot-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <button id="boot-retry" type="button" hidden>Tentar novamente</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      (() => {
+        const root = document.getElementById("root");
+        const screen = document.getElementById("boot-screen");
+        const status = document.getElementById("boot-status");
+        const retry = document.getElementById("boot-retry");
+        const failed = (event) => {
+          if (!screen.isConnected || (event.target !== window && event.target.tagName !== "SCRIPT")) return;
+          screen.classList.add("has-error");
+          status.textContent = "Não foi possível abrir o jogo. Confira a conexão e tente novamente.";
+          retry.hidden = false;
+        };
+        window.addEventListener("error", failed, true);
+        const timer = setTimeout(() => {
+          if (!screen.isConnected || screen.classList.contains("has-error")) return;
+          status.textContent = "Está demorando um pouco. Aguarde ou tente novamente.";
+          retry.hidden = false;
+        }, 15000);
+        retry.addEventListener("click", () => { if (screen.isConnected) location.reload(); });
+        retry.addEventListener("keydown", event => { if (event.repeat) event.preventDefault(); });
+        const observer = new MutationObserver(() => {
+          if (screen.isConnected) return;
+          clearTimeout(timer);
+          window.removeEventListener("error", failed, true);
+          observer.disconnect();
+        });
+        observer.observe(root, { childList: true });
+      })();
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

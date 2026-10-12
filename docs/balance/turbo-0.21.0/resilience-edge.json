@@ -1,0 +1,22 @@
+{
+  "engine": "edge",
+  "base": "http://localhost:4174/pokebobo/",
+  "flows": [
+    "Falha de imagem durante evolução mantém confirmação e save; evento online recupera sprite sem alterar a run.",
+    "Pular cenas de evolução preserva a fila manual de golpes; uma decisão resolve somente um golpe.",
+    "Arena sem imagens mostra dois indicadores visíveis de 44px; comando real e recuperação online preservam HP/PP/RNG/replay."
+  ],
+  "errors": [],
+  "expectedFailures": [
+    "http://localhost:4174/pokebobo/battle-sprites/back/ivysaur.gif",
+    "http://localhost:4174/pokebobo/sprites/2.png",
+    "http://localhost:4174/pokebobo/battle-sprites/front/ivysaur.gif",
+    "http://localhost:4174/pokebobo/sprites/2.png",
+    "http://localhost:4174/pokebobo/battle-sprites/front/weezing-galar.gif",
+    "http://localhost:4174/pokebobo/battle-sprites/back/raichu-alola.gif",
+    "http://localhost:4174/pokebobo/sprites/forms/raichu-alola.png",
+    "http://localhost:4174/pokebobo/sprites/forms/weezing-galar.png",
+    "http://localhost:4174/pokebobo/battle-sprites/front/raichu-alola.gif",
+    "http://localhost:4174/pokebobo/sprites/forms/raichu-alola.png"
+  ]
+}

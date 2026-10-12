@@ -14,7 +14,7 @@ import { ScreenHeading } from "../../components/ui/ScreenHeading.jsx";
 export function BagScreen({ run: r, act }) {
   const canUse = r.phase === "career" && !r.inLeague;
   return (
-    <section className="bag-screen">
+    <section className={`bag-screen${canUse ? "" : " is-readonly"}`}>
       <ScreenHeading
         eyebrow="SUPRIMENTOS DE VIAGEM"
         title="Sua mochila"
@@ -28,7 +28,7 @@ export function BagScreen({ run: r, act }) {
             <strong>{r.balls}</strong>
           </div>
           <h2>Poké Bolas</h2>
-          <p>Explore e capture com 1 bola por encontro.</p>
+          <p>Cada arremesso usa 1 bola. Tente enquanto tiver estoque.</p>
           <button
             className="button primary full"
             disabled={!canUse || !r.balls || !r.encounters.some((e) => !e.used)}

@@ -28,6 +28,24 @@ const CONDITIONS = {
   focusenergy: "chance maior de acerto crítico",
 };
 const SPECIFICS = {
+  bodypress:
+    "Calcula o dano com a Defesa do usuário, incluindo seus estágios. Continua sendo um golpe físico.",
+  foulplay:
+    "Usa o Ataque e os estágios do alvo para calcular o dano. Habilidade, item e queimadura do usuário ainda se aplicam.",
+  gyroball:
+    "Fica mais forte quanto menor for a Velocidade do usuário em relação à do alvo, até poder 150.",
+  electroball:
+    "Fica mais forte quanto maior for a Velocidade do usuário em relação à do alvo, com poder de 40 a 150.",
+  storedpower:
+    "Começa com poder 20 e soma 20 por estágio positivo do usuário. Estágios negativos não reduzem esse bônus.",
+  powertrip:
+    "Começa com poder 20 e soma 20 por estágio positivo do usuário. Estágios negativos não reduzem esse bônus.",
+  counter:
+    "Se o último ataque recebido neste turno foi físico, devolve o dobro do HP perdido (mínimo 1), contando só o último acerto. Falha sem esse ataque; imunidades ainda se aplicam.",
+  mirrorcoat:
+    "Se o último ataque recebido neste turno foi especial, devolve o dobro do HP perdido (mínimo 1), contando só o último acerto. Falha sem esse ataque; imunidades ainda se aplicam.",
+  metalburst:
+    "Devolve 1,5 vez o HP perdido para o último ataque de um adversário neste turno. Precisa receber dano antes de agir.",
   futuresight:
     "Prepara um ataque que chega ao fim do terceiro turno, no Pokémon que estiver ocupando o lado alvo.",
   doomdesire:
@@ -121,6 +139,8 @@ export function moveGuide(id) {
     notes.push("Força o alvo a trocar quando as condições permitem.");
   if (move.selfSwitch) notes.push("Permite trocar o usuário após o golpe.");
   if (move.critRatio > 1) notes.push("Tem chance maior de acerto crítico.");
+  if (move.overrideDefensiveStat === "def")
+    notes.push("Calcula o dano contra a Defesa do alvo, mesmo sendo um golpe especial.");
   for (const secondary of move.secondaries || []) {
     const text = secondaryText(secondary);
     if (text) notes.push(text);

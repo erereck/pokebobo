@@ -12,7 +12,7 @@ import { Share2 } from "lucide-react";
 export function Ending({ run: r, meta, onNew, onHall, onShare }) {
   return (
     <main className="ending">
-      <div className={cx("result-emblem", !r.won && "lost")}>
+      <div className={cx("result-emblem", r.won && "victory-emblem", !r.won && "lost")}>
         {r.won ? <Trophy size={43} /> : <Flag size={43} />}
       </div>
       <span className="eyebrow">

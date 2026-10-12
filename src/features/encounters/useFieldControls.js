@@ -39,8 +39,12 @@ export function useFieldControls(exploration, act, enabled = true) {
           ),
       );
     const down = (event) => {
+      const button = ["Enter", " "].includes(event.key)
+        ? event.target.closest?.(".field-dpad button") : null;
       const direction =
-        keys[event.key.length === 1 ? event.key.toLowerCase() : event.key];
+        button
+          ? [Number(button.dataset.fieldDx), Number(button.dataset.fieldDy)]
+          : keys[event.key.length === 1 ? event.key.toLowerCase() : event.key];
       if (
         !direction ||
         event.ctrlKey ||
@@ -61,6 +65,7 @@ export function useFieldControls(exploration, act, enabled = true) {
     };
     const up = (event) => {
       if (!pressed.current.has(event.key.toLowerCase())) return;
+      event.preventDefault();
       held.current = releaseDirection(pressed.current, event.key.toLowerCase());
       setIsHolding(pressed.current.size > 0);
     };

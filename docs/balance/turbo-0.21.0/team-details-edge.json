@@ -1,0 +1,9 @@
+{
+  "engine": "edge",
+  "base": "http://localhost:4174/pokebobo/",
+  "flows": [
+    "Enter segurado no summary não abre/fecha repetidamente a descrição",
+    "Trocar de Pokémon reinicia rolagem e descrições abertas; save permanece intacto"
+  ],
+  "errors": []
+}

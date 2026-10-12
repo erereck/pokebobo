@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Exeggutor-Alola",
+    "file": "forms/exeggutor-alola.png",
+    "sourceFile": "battle-sprites/front/exeggutor-alola.gif",
+    "sourceUrl": "https://play.pokemonshowdown.com/sprites/gen5ani/exeggutor-alola.gif",
+    "sourceSha256": "7ce8f94b0307d44ab7134e7ad5de9ae0ceb578b57f05d2168b9f1dec6af3ddfe",
+    "sourceFrame": 0,
+    "bytes": 2907,
+    "sha256": "dfd62d619afb2c670fac9842c1e4bdc319c4fb35a5ad9f92a243e1a2fee38135",
+    "size": [
+      113,
+      113
+    ],
+    "bounds": [
+      17,
+      9,
+      110,
+      107
+    ],
+    "frames": 1
+  },
+  {
+    "name": "Mr. Mime-Galar",
+    "file": "forms/mrmime-galar.png",
+    "sourceFile": "battle-sprites/front/mrmime-galar.png",
+    "sourceUrl": "https://play.pokemonshowdown.com/sprites/gen5/mrmime-galar.png",
+    "sourceSha256": "8ccc8c1da33389972768c436440de7bbe83438814abedacb27f64b2f580ca06c",
+    "sourceFrame": 0,
+    "bytes": 2097,
+    "sha256": "e52296b742a028bac3ee111315f1027ff039c34b7d575ef3528958aaf71c18b7",
+    "size": [
+      96,
+      96
+    ],
+    "bounds": [
+      22,
+      21,
+      75,
+      75
+    ],
+    "frames": 1
+  },
+  {
+    "name": "Oricorio-Pa'u",
+    "file": "forms/oricorio-pau.png",
+    "sourceFile": "battle-sprites/front/oricorio-pau.gif",
+    "sourceUrl": "https://play.pokemonshowdown.com/sprites/gen5ani/oricorio-pau.gif",
+    "sourceSha256": "aed9ff6f893e954d251da585ce736a11e0a8f8f14e382be9d24444036420ffef",
+    "sourceFrame": 0,
+    "bytes": 1441,
+    "sha256": "1c84d3a3643af16cdb7a70ad9cc0b9aad824f52f352e8e1eb710f5a9327ec1eb",
+    "size": [
+      54,
+      54
+    ],
+    "bounds": [
+      4,
+      0,
+      51,
+      54
+    ],
+    "frames": 1
+  },
+  {
+    "name": "Raichu-Alola",
+    "file": "forms/raichu-alola.png",
+    "sourceFile": "battle-sprites/front/raichu-alola.gif",
+    "sourceUrl": "https://play.pokemonshowdown.com/sprites/gen5ani/raichu-alola.gif",
+    "sourceSha256": "344b29d01fd7f101aea9af2e51333bbefcb03d6b2d0e2c486fe991494f442463",
+    "sourceFrame": 0,
+    "bytes": 2097,
+    "sha256": "baefb431acf46b231e702be1fa2754380f68bf22f73d4618b51f0d8eba029486",
+    "size": [
+      105,
+      105
+    ],
+    "bounds": [
+      18,
+      28,
+      86,
+      98
+    ],
+    "frames": 1
+  },
+  {
+    "name": "Weezing-Galar",
+    "file": "forms/weezing-galar.png",
+    "sourceFile": "battle-sprites/front/weezing-galar.gif",
+    "sourceUrl": "https://play.pokemonshowdown.com/sprites/gen5ani/weezing-galar.gif",
+    "sourceSha256": "8fd106480a0aefabba5fa7b2b708c9de317dce1590438fcc0170c6941504c856",
+    "sourceFrame": 0,
+    "bytes": 2743,
+    "sha256": "2c33a22581e5473d56b0b658a55286646b0ac30771d235c35d936eafea53e31d",
+    "size": [
+      93,
+      93
+    ],
+    "bounds": [
+      1,
+      1,
+      90,
+      93
+    ],
+    "frames": 1
+  }
+]

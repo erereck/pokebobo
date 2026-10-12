@@ -65,7 +65,7 @@ export function TeamScreen({ run, act, selectedMonId }) {
         </button>
       </div>
       {panel === "details" && mon && (
-        <PokemonDetails mon={mon} run={run} act={act} />
+        <PokemonDetails key={`${mon.id}-${mon.name}`} mon={mon} run={run} act={act} />
       )}
 
       {panel === "reserve" && (

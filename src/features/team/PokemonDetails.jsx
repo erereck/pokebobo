@@ -1,26 +1,10 @@
 import { ShinyMark } from "../../components/pokemon/ShinyMark.jsx";
-import { Dex } from "@pkmn/sim";
 import catalog from "../../game/catalog.json" with { type: "json" };
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
 import { Flag, ArrowUp, Sparkles } from "lucide-react";
 import { evolutionOptions } from "../../game/pokemon/evolution.js";
-
-function displayMove(data, id) {
-  const local = data.moves.find((move) => move.id === id);
-  if (local) return local;
-  const dex = Dex.moves.get(id);
-  return dex?.exists
-    ? {
-        id,
-        name: dex.name,
-        type: dex.type,
-        category: dex.category,
-        power: dex.basePower,
-        accuracy: dex.accuracy,
-      }
-    : { id, name: id };
-}
+import { EquippedMove } from "./EquippedMove.jsx";
 
 export function PokemonDetails({ mon, run, act }) {
   const data = catalog[mon.name],
@@ -67,24 +51,7 @@ export function PokemonDetails({ mon, run, act }) {
           <span className="mono">{mon.moves.length}/4</span>
         </div>
         <div className="equipped-moves">
-          {mon.moves.map((id) => {
-            const m = displayMove(data, id);
-            return (
-              <div key={id}>
-                <strong>{m.name || id}</strong>
-                {m.type && <TypeTag type={m.type} />}
-                <small>
-                  {m.category === "Status"
-                    ? "Status"
-                    : "Poder " + (m.power || "—")}{" "}
-                  ·{" "}
-                  {m.accuracy === true
-                    ? "Sem teste de precisão"
-                    : (m.accuracy || "—") + "% precisão"}
-                </small>
-              </div>
-            );
-          })}
+          {mon.moves.map(id => <EquippedMove key={`${mon.id}-${id}`} id={id} />)}
         </div>
         <div className="pokemon-management">
           <button
