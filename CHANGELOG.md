@@ -1,5 +1,11 @@
 # Histórico
 
+## 0.21.1 — Evolução no ritmo · 11/10/2026
+
+- Barra discreta avança durante quatro segundos em cada cena de evolução; completar equivale a Continuar. Cada Pokémon recebe uma contagem nova, inclusive na reserva.
+- Continuar e Pular demais permanecem disponíveis e cancelam a contagem anterior. Encerramento confere o ID da cena para evitar pular outra evolução por um callback atrasado.
+- Contagem pausa com a aba oculta. Movimento reduzido preenche a barra em quatro etapas. Escolhas de evolução/golpes, progresso e regras permanecem manuais e preservados.
+
 ## 0.21.0 — Cada conquista conta · 11/10/2026
 
 - Evoluções ganham uma cena curta com a espécie anterior, nova forma, nível e tipos. Equipe e reserva entram na mesma fila; Continuar e Pular demais ficam disponíveis imediatamente. Progresso salvo antes da apresentação, sem repetir a evolução ao reabrir e sem perder escolhas manuais de golpes.

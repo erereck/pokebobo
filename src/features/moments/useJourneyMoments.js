@@ -22,7 +22,9 @@ export function useJourneyMoments() {
     );
     if (moments.length) setQueue((current) => [...current, ...moments]);
   }, []);
-  const dismiss = useCallback(() => setQueue((current) => current.slice(1)), []);
+  const dismiss = useCallback((id) => setQueue((current) =>
+    current[0]?.id === id ? current.slice(1) : current,
+  ), []);
   const clear = useCallback(() => setQueue([]), []);
   return { moment: queue[0], remaining: queue.length, recordAction, dismiss, clear };
 }

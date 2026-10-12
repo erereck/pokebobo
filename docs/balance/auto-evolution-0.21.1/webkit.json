@@ -1,0 +1,160 @@
+{
+  "base": "http://localhost:4174/pokebobo/",
+  "engine": "webkit",
+  "tag": "preview",
+  "screens": [
+    {
+      "name": "320-no-preference",
+      "overflow": false,
+      "dialogOverflow": false,
+      "progress": 40,
+      "bar": {
+        "x": 38,
+        "y": 500.5,
+        "width": 244,
+        "height": 5,
+        "top": 500.5,
+        "right": 282,
+        "bottom": 505.5,
+        "left": 38
+      },
+      "cta": {
+        "x": 38,
+        "y": 444.5,
+        "width": 118,
+        "height": 48,
+        "top": 444.5,
+        "right": 156,
+        "bottom": 492.5,
+        "left": 38
+      },
+      "unavailable": 0
+    },
+    {
+      "name": "390-reduce",
+      "overflow": false,
+      "dialogOverflow": false,
+      "progress": 25,
+      "bar": {
+        "x": 38,
+        "y": 638.5,
+        "width": 314,
+        "height": 5,
+        "top": 638.5,
+        "right": 352,
+        "bottom": 643.5,
+        "left": 38
+      },
+      "cta": {
+        "x": 38,
+        "y": 582.5,
+        "width": 153,
+        "height": 48,
+        "top": 582.5,
+        "right": 191,
+        "bottom": 630.5,
+        "left": 38
+      },
+      "unavailable": 0
+    },
+    {
+      "name": "844-reduce",
+      "overflow": false,
+      "dialogOverflow": false,
+      "progress": 25,
+      "bar": {
+        "x": 374,
+        "y": 280,
+        "width": 336,
+        "height": 5,
+        "top": 280,
+        "right": 710,
+        "bottom": 285,
+        "left": 374
+      },
+      "cta": {
+        "x": 374,
+        "y": 224,
+        "width": 164,
+        "height": 48,
+        "top": 224,
+        "right": 538,
+        "bottom": 272,
+        "left": 374
+      },
+      "unavailable": 0
+    },
+    {
+      "name": "1280-no-preference",
+      "overflow": false,
+      "dialogOverflow": false,
+      "progress": 40,
+      "bar": {
+        "x": 426,
+        "y": 616.5,
+        "width": 428,
+        "height": 5,
+        "top": 616.5,
+        "right": 854,
+        "bottom": 621.5,
+        "left": 426
+      },
+      "cta": {
+        "x": 426,
+        "y": 560.5,
+        "width": 210,
+        "height": 48,
+        "top": 560.5,
+        "right": 636,
+        "bottom": 608.5,
+        "left": 426
+      },
+      "unavailable": 0
+    }
+  ],
+  "flows": [
+    {
+      "name": "três evoluções automáticas · 320×568 · no-preference",
+      "durations": [
+        4053,
+        4139,
+        4057
+      ]
+    },
+    {
+      "name": "três evoluções automáticas · 390×844 · reduce",
+      "durations": [
+        4062,
+        4129,
+        4079
+      ]
+    },
+    {
+      "name": "três evoluções automáticas · 844×340 · reduce",
+      "durations": [
+        4036,
+        4118,
+        4077
+      ]
+    },
+    {
+      "name": "três evoluções automáticas · 1280×800 · no-preference",
+      "durations": [
+        4165,
+        4139,
+        4135
+      ]
+    },
+    {
+      "name": "continuar manual cancela contador antigo; pular demais cancela os restantes"
+    },
+    {
+      "name": "avanço automático abre escolha manual de golpe e nunca decide por ela"
+    },
+    {
+      "name": "visibilitychange/hidden simulados pausam e retomam contador, sem alterar save"
+    }
+  ],
+  "errors": [],
+  "network": []
+}

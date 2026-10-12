@@ -4,6 +4,7 @@ import { Modal } from "../../components/ui/Modal.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { ShinyMark } from "../../components/pokemon/ShinyMark.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
+import { MomentProgress } from "./MomentProgress.jsx";
 import catalog from "../../game/catalog.json" with { type: "json" };
 
 export function EvolutionMoment({ moment, remaining, onClose, onSkipAll }) {
@@ -47,6 +48,7 @@ export function EvolutionMoment({ moment, remaining, onClose, onSkipAll }) {
         {remaining > 1 && (
           <button className="button secondary" onClick={onSkipAll}>Pular demais</button>
         )}
+        <MomentProgress onComplete={onClose} />
       </div>
     </Modal>
   );

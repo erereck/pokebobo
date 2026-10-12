@@ -1,5 +1,15 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## 0.21.1 — Evolução no ritmo · 11/10/2026
+
+**Pedido:** barra automática e avanço após quatro segundos, como Continuar.
+
+**Entrega:** contador de apresentação isolado em MomentProgress, barra de 5 px sob os comandos e quatro segundos por evolução de equipe/reserva. Continuar/Pular demais cancelam a cena; ID protege contra callback atrasado. Aba oculta pausa; preferência reduzida usa quatro etapas. Nenhuma decisão manual de golpe/evolução é confirmada automaticamente, e o progresso já salvo permanece intacto.
+
+**Verificação:** `npm run verify`, base Pages, 263 módulos/193 testes normais/188 empacotados. Navegador confere quatro visores (320×568, 390×844, 844×340, 1280×800), movimento normal/reduzido, três evoluções consecutivas, cancelamento manual, aprendizado manual e visibilitychange simulado. Relatórios/limites em [VALIDACAO](../VALIDACAO.md).
+
+**Próximos trabalhos:** experimentar o ritmo numa sessão humana em celular físico. Este ajuste é apresentação; regras, RNG, schema 4 e escolhas continuam preservados.
+
 ## 0.21.0 — Cada conquista conta · 11/10/2026
 
 **Publicação:** PR 26 mergeada com CI aprovado; CI main e Pages verdes. Site público passou 123 registros/76 fluxos em Edge/WebKit e campanha completa de 85 comandos/14 batalhas. Treze hashes publicados iguais ao build e offline real em Edge, com turno/save/exportação/música preservados. [Evidência pública](balance/production-validation-0.21.0.json).

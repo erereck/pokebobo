@@ -30,6 +30,19 @@
 .moment-actions { display: grid; gap: 8px; margin: 8px 0; }
 .moment-actions.can-skip { grid-template-columns: 1fr 1fr; }
 .moment-actions.can-skip .button { min-width: 0; padding: 10px 8px; gap: 6px; font-size: 12px; }
+.moment-progress {
+  grid-column: 1 / -1;
+  height: 5px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--lcd-line);
+}
+.moment-progress > span {
+  display: block;
+  height: 100%;
+  background: var(--amber-ink);
+  transform-origin: left center;
+}
 .victory-emblem { position: relative; isolation: isolate; }
 .reward-badge {
   width: 56%;
