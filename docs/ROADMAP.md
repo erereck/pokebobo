@@ -2,6 +2,8 @@
 
 ## 0.21.1 — Evolução no ritmo · 11/10/2026
 
+**Publicação:** PR 27 mergeada com CI aprovado; CI main e Pages verdes. Oito registros/14 fluxos aprovados no site público em Edge/WebKit, treze hashes iguais ao build. [Evidência](balance/production-validation-0.21.1.json).
+
 **Pedido:** barra automática e avanço após quatro segundos, como Continuar.
 
 **Entrega:** contador de apresentação isolado em MomentProgress, barra de 5 px sob os comandos e quatro segundos por evolução de equipe/reserva. Continuar/Pular demais cancelam a cena; ID protege contra callback atrasado. Aba oculta pausa; preferência reduzida usa quatro etapas. Nenhuma decisão manual de golpe/evolução é confirmada automaticamente, e o progresso já salvo permanece intacto.

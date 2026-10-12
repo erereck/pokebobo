@@ -2,6 +2,8 @@
 
 ## Evolução no ritmo — 11/10/2026
 
+- Publicada pela [PR 27](https://github.com/erereck/pokebobo/pull/27), commit `64eec28`; CI da PR/main e Pages verdes. Site público repetido em Edge/WebKit: oito registros/14 fluxos, quatro visores por motor; três evoluções automáticas, cancelamento manual, escolhas de golpes preservadas e pausa/retomada simuladas. Treze hashes publicados iguais ao build, worker `0.21.1-7e01ae8d2327`. [Relatório público](docs/balance/production-validation-0.21.1.json).
+
 - Edge e WebKit no build: quatro registros/sete fluxos por motor, zero erros inesperados/overflow/imagens indisponíveis. [Edge](docs/balance/auto-evolution-0.21.1/edge.json), [WebKit](docs/balance/auto-evolution-0.21.1/webkit.json), [verificação](docs/balance/auto-evolution-0.21.1/verify.txt), [celular](docs/images/avanco-evolucao-0.21.1-celular.png), [paisagem](docs/images/avanco-evolucao-0.21.1-paisagem.png).
 
 - `npm run verify` com base `/pokebobo/`: 263 módulos, 193 testes normais/188 empacotados, todos aprovados; build web. Sem mudança no motor, RNG, escala ou schema 4; standalone não executado.

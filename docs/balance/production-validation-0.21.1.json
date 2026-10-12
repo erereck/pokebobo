@@ -1,0 +1,162 @@
+{
+  "version": "0.21.1",
+  "url": "https://erereck.github.io/pokebobo/",
+  "applicationCommit": "64eec28efb15a6799b73011fb4b9d0a777b05af8",
+  "pullRequest": "https://github.com/erereck/pokebobo/pull/27",
+  "verifiedAt": "2026-10-12T02:24:48.046Z",
+  "ci": {
+    "pr": 38195249051,
+    "main": 38195341535,
+    "pages": 38195341541,
+    "conclusion": "success"
+  },
+  "reports": [
+    {
+      "engine": "edge",
+      "file": "auto-evolution-0.21.1/public-edge.json",
+      "records": 4,
+      "flows": 7,
+      "durations": [
+        3997.7000000029802,
+        4016.0999999940395,
+        4010.2999999970198,
+        4004.5,
+        4009.3999999910593,
+        4017.9000000059605,
+        4002.0999999940395,
+        4011.5,
+        4009,
+        3964.7000000029802,
+        4027.8999999910593,
+        4010.5
+      ]
+    },
+    {
+      "engine": "webkit",
+      "file": "auto-evolution-0.21.1/public-webkit.json",
+      "records": 4,
+      "flows": 7,
+      "durations": [
+        4053,
+        4118,
+        4104,
+        4052,
+        4151,
+        4103,
+        4063,
+        4136,
+        4104,
+        4120,
+        4140,
+        4197
+      ]
+    }
+  ],
+  "totals": {
+    "records": 8,
+    "flows": 14
+  },
+  "artifacts": {
+    "base": "https://erereck.github.io/pokebobo/",
+    "version": "0.21.1-7e01ae8d2327",
+    "files": [
+      {
+        "file": "index.html",
+        "status": 200,
+        "contentType": "text/html; charset=utf-8",
+        "bytes": 2822,
+        "sha256": "37397999c9d017b5c5243c5f40e8c96ae9109c7048accba1222fe75d59140477"
+      },
+      {
+        "file": "assets/index-K1XA33tI.js",
+        "status": 200,
+        "contentType": "application/javascript; charset=utf-8",
+        "bytes": 5442095,
+        "sha256": "eface25e49784bca6d2de700494b35c9513b7c73faf06de605b3916fe800e918"
+      },
+      {
+        "file": "assets/index-BH-VnpRg.css",
+        "status": 200,
+        "contentType": "text/css; charset=utf-8",
+        "bytes": 133066,
+        "sha256": "ed5b869736e0faafdcb3bb79c09813c6c1a92779f967b2c97c17ea9e4c14ad49"
+      },
+      {
+        "file": "manifest.webmanifest",
+        "status": 200,
+        "contentType": "application/manifest+json; charset=utf-8",
+        "bytes": 513,
+        "sha256": "fea6e5924345de768857dcfe1d5e284591bd6b7365d0f2f86eec3f3f9707b4ec"
+      },
+      {
+        "file": "icons/pokebobo-192.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 9251,
+        "sha256": "59fe4589998cf02e630fd606df9d5116ebc66291c07e314ee55cd7125ccfbb05"
+      },
+      {
+        "file": "icons/pokebobo-512.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 24546,
+        "sha256": "58fa53ac2550736606ec2a5b98e723539c3a56bdd529340445fbd8ffc6e2dfb7"
+      },
+      {
+        "file": "field/red_fish_sheet.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2835,
+        "sha256": "09653a49fd8b5518ecea1b42b4344b442233b9c44c94cedb77f2911580f7e06e"
+      },
+      {
+        "file": "sprites/forms-manifest.json",
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "bytes": 2765,
+        "sha256": "2b2eb42fe08217f5295c1ac8f05fa03b4d830099006d4203a256ef9d6129b71a"
+      },
+      {
+        "file": "sprites/forms/raichu-alola.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2097,
+        "sha256": "baefb431acf46b231e702be1fa2754380f68bf22f73d4618b51f0d8eba029486"
+      },
+      {
+        "file": "sprites/forms/weezing-galar.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2743,
+        "sha256": "2c33a22581e5473d56b0b658a55286646b0ac30771d235c35d936eafea53e31d"
+      },
+      {
+        "file": "sprites/forms/exeggutor-alola.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2907,
+        "sha256": "dfd62d619afb2c670fac9842c1e4bdc319c4fb35a5ad9f92a243e1a2fee38135"
+      },
+      {
+        "file": "sprites/forms/mrmime-galar.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 2097,
+        "sha256": "e52296b742a028bac3ee111315f1027ff039c34b7d575ef3528958aaf71c18b7"
+      },
+      {
+        "file": "sprites/forms/oricorio-pau.png",
+        "status": 200,
+        "contentType": "image/png",
+        "bytes": 1441,
+        "sha256": "1c84d3a3643af16cdb7a70ad9cc0b9aad824f52f352e8e1eb710f5a9327ec1eb"
+      }
+    ],
+    "method": "Hash SHA-256 dos arquivos servidos comparado ao build local final; worker identificado por versão, sem exigir hash entre plataformas"
+  },
+  "limits": [
+    "Visores/movimento/toques emulados em Edge/WebKit Windows, sem confirmação de aparelhos físicos.",
+    "hidden/visibilitychange simulados; não afirmamos alternância física no iPhone/Android.",
+    "Contagem de apresentação não muda motor/RNG/save nem decide aprendizado manual."
+  ]
+}
