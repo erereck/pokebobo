@@ -111,6 +111,12 @@ export function HelpDialog({ setModal }) {
             para a Elite 4 encerra as compras. Então vêm quatro membros da Elite
             e um campeão sorteados. Vencer libera Correria e Nuzlocke.
           </li>
+          <li>
+            O Mercado também vende Rare Candy por ₽ 700: escolha um Pokémon da
+            equipe ou reserva para ganhar +1 nível na hora. Você pode comprar
+            mais enquanto houver saldo. No nível 100, o uso fica bloqueado.
+            Evoluções e novos golpes seguem as escolhas normais do jogo.
+          </li>
         </ol>
         <p>
           Seu time se recupera após vitórias. Em Nuzlocke, os Pokémon que caíram

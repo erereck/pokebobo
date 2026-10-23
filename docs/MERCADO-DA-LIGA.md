@@ -1,4 +1,4 @@
-# Mercado da Liga — 0.22.0
+# Mercado da Liga — 0.22.1
 
 Depois de confirmar a vitória no oitavo ginásio e resolver as escolhas de evolução/golpes, a Jornada abre o Mercado da Liga. Negociar não gasta semanas ou RNG. Você pode consultar a equipe, trocar o líder e organizar a reserva. **Seguir para a Elite 4** encerra o mercado; ele não reabre entre as cinco batalhas.
 
@@ -23,6 +23,16 @@ Compatibilidade vem das fontes de máquina (`M`) de geração 8, com fallback pa
 Golpes ensinados ficam marcados em `mon.tmMoves`. O modo automático conserva os que ainda estão equipados ao subir de nível/evoluir, preenchendo os outros espaços com sua seleção normal. No modo manual, o treinador pode substituí-los explicitamente num aprendizado posterior.
 
 ## Medições e limites
+
+### Rare Candy
+
+O balcão **Comprar itens** oferece Rare Candy por **₽ 700**, equivalente a **0,7 TM média**. Cada compra concede **+1 nível a um único Pokémon**, escolhido entre equipe e reserva. É possível comprar novamente enquanto houver saldo; não há estoque fixo para o doce. O uso é imediato, sem item guardado ou gasto de semana. Pokémon no nível 100 ficam indisponíveis e não geram cobrança. Fechar/cancelar antes da confirmação preserva saldo e níveis.
+
+O mesmo crescimento do treino cuida de evoluções, registro na Pokédex e novos golpes. Evoluções ramificadas e aprendizado manual continuam exigindo decisão; novas compras e a entrada na Liga aguardam essas decisões. A celebração da evolução acontece depois de salvar. TMs equipadas são conservadas no aprendizado automático. Nenhum campo novo ou mudança de schema é necessário.
+
+`npm run market:candy-audit` compara 22 pares de combates reais contra os 11 membros possíveis da Elite na primeira posição, nos níveis 45/50. A política com Rare Candy vende duas reservas e compra três doces, um para cada um dos três iniciais da equipe fixa. Adversários e seeds são iguais em cada par; ambas as políticas usam a IA existente. A amostra não estima dificuldade humana nem chance de completar a Liga. [Medição específica](balance/rare-candy-0.22.1/economy-and-combat.json).
+
+### TMs e valor de venda
 
 `npm run market:audit` mede 12 espécies intermediárias evoluídas: Pidgeot, Arbok, Raichu, Sandslash, Golduck, Machamp, Golem, Rapidash, Muk, Hypno, Seaking e Victreebel.
 

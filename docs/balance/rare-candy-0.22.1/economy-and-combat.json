@@ -1,0 +1,346 @@
+{
+  "method": "22 pares de combates reais contra os 11 membros possíveis da Elite na primeira posição, níveis 45/50, mesma seed/adversário. Equipe fixa de seis: antes sem compras; depois vende duas reservas e compra três Rare Candy, um em cada inicial. Ambas as políticas usam a IA do jogo. Não mede dificuldade humana nem chance de completar a Liga.",
+  "rareCandy": {
+    "price": 700,
+    "levels": 1
+  },
+  "averageTm": 1000,
+  "tmRatio": 0.7,
+  "combatCount": 44,
+  "wins": {
+    "before": 11,
+    "candy": 12
+  },
+  "combats": [
+    {
+      "level": 45,
+      "elite": "Lorelei",
+      "proceeds": 2500,
+      "spent": 2100,
+      "remaining": 400,
+      "before": {
+        "winner": "Lorelei",
+        "turns": 12
+      },
+      "candy": {
+        "winner": "Lorelei",
+        "turns": 16
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Bruno",
+      "proceeds": 2500,
+      "spent": 2100,
+      "remaining": 400,
+      "before": {
+        "winner": "Bruno",
+        "turns": 24
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 24
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Agatha",
+      "proceeds": 2500,
+      "spent": 2100,
+      "remaining": 400,
+      "before": {
+        "winner": "Agatha",
+        "turns": 26
+      },
+      "candy": {
+        "winner": "Agatha",
+        "turns": 26
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Will",
+      "proceeds": 2500,
+      "spent": 2100,
+      "remaining": 400,
+      "before": {
+        "winner": "Will",
+        "turns": 17
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 13
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Karen",
+      "proceeds": 2500,
+      "spent": 2100,
+      "remaining": 400,
+      "before": {
+        "winner": "Karen",
+        "turns": 22
+      },
+      "candy": {
+        "winner": "Karen",
+        "turns": 19
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Sidney",
+      "proceeds": 2500,
+      "spent": 2100,
+      "remaining": 400,
+      "before": {
+        "winner": "Sidney",
+        "turns": 12
+      },
+      "candy": {
+        "winner": "Sidney",
+        "turns": 12
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Phoebe",
+      "proceeds": 2500,
+      "spent": 2100,
+      "remaining": 400,
+      "before": {
+        "winner": "Você",
+        "turns": 21
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 20
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Drake",
+      "proceeds": 2500,
+      "spent": 2100,
+      "remaining": 400,
+      "before": {
+        "winner": "Drake",
+        "turns": 10
+      },
+      "candy": {
+        "winner": "Drake",
+        "turns": 10
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Caitlin",
+      "proceeds": 2500,
+      "spent": 2100,
+      "remaining": 400,
+      "before": {
+        "winner": "Você",
+        "turns": 41
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 32
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Marshal",
+      "proceeds": 2500,
+      "spent": 2100,
+      "remaining": 400,
+      "before": {
+        "winner": "Você",
+        "turns": 18
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 18
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Kahili",
+      "proceeds": 2500,
+      "spent": 2100,
+      "remaining": 400,
+      "before": {
+        "winner": "Kahili",
+        "turns": 19
+      },
+      "candy": {
+        "winner": "Kahili",
+        "turns": 23
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Lorelei",
+      "proceeds": 2650,
+      "spent": 2100,
+      "remaining": 550,
+      "before": {
+        "winner": "Lorelei",
+        "turns": 17
+      },
+      "candy": {
+        "winner": "Lorelei",
+        "turns": 17
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Bruno",
+      "proceeds": 2650,
+      "spent": 2100,
+      "remaining": 550,
+      "before": {
+        "winner": "Você",
+        "turns": 23
+      },
+      "candy": {
+        "winner": "Bruno",
+        "turns": 22
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Agatha",
+      "proceeds": 2650,
+      "spent": 2100,
+      "remaining": 550,
+      "before": {
+        "winner": "Você",
+        "turns": 15
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 15
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Will",
+      "proceeds": 2650,
+      "spent": 2100,
+      "remaining": 550,
+      "before": {
+        "winner": "Você",
+        "turns": 16
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 11
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Karen",
+      "proceeds": 2650,
+      "spent": 2100,
+      "remaining": 550,
+      "before": {
+        "winner": "Você",
+        "turns": 12
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 12
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Sidney",
+      "proceeds": 2650,
+      "spent": 2100,
+      "remaining": 550,
+      "before": {
+        "winner": "Sidney",
+        "turns": 15
+      },
+      "candy": {
+        "winner": "Sidney",
+        "turns": 17
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Phoebe",
+      "proceeds": 2650,
+      "spent": 2100,
+      "remaining": 550,
+      "before": {
+        "winner": "Você",
+        "turns": 14
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 14
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Drake",
+      "proceeds": 2650,
+      "spent": 2100,
+      "remaining": 550,
+      "before": {
+        "winner": "Drake",
+        "turns": 12
+      },
+      "candy": {
+        "winner": "Drake",
+        "turns": 12
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Caitlin",
+      "proceeds": 2650,
+      "spent": 2100,
+      "remaining": 550,
+      "before": {
+        "winner": "Você",
+        "turns": 14
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 14
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Marshal",
+      "proceeds": 2650,
+      "spent": 2100,
+      "remaining": 550,
+      "before": {
+        "winner": "Você",
+        "turns": 37
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 37
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Kahili",
+      "proceeds": 2650,
+      "spent": 2100,
+      "remaining": 550,
+      "before": {
+        "winner": "Você",
+        "turns": 21
+      },
+      "candy": {
+        "winner": "Você",
+        "turns": 21
+      }
+    }
+  ]
+}

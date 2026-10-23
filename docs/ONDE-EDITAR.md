@@ -1,5 +1,12 @@
 # Onde editar
 
+## Rare Candy — 0.22.1
+
+- Preço/ganho: `MARKET_RARE_CANDY` em `game/config/market.js`; transação `MARKET_BUY_CANDY` em `game/actions/market-candy.js`, registrada no reducer.
+- Oferta/escolha: `features/market/RareCandyOffer.jsx`, `RareCandyDialog.jsx` e `MarketScreen.jsx`. Compra usa imediatamente em um alvo; sem inventário novo.
+- Crescimento: `pokemon/moveLearning.js` já trata evolução/golpes e preservação de TMs; celebração observa a nova ação em `features/moments/actionMoments.js`.
+- Regressões em `tests/market-candy.test.js`; auditoria com `npm run market:candy-audit`, evidências em `docs/balance/rare-candy-0.22.1/`.
+
 ## Mercado da Liga — 0.22.0
 
 - Abertura/saída: `game/actions/result.js`, `actions/market.js` e `state/reducer.js`; fase `market` precede `inLeague`.

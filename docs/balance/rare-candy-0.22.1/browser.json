@@ -1,0 +1,107 @@
+{
+  "url": "http://localhost:4174/pokebobo/",
+  "browser": "Edge/Chromium headless",
+  "method": "Fixtures do Mercado, ações reais de compra/uso no navegador, visores emulados.",
+  "report": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "flows": [
+        "exigir alvo",
+        "bloquear nível 100",
+        "cancelar sem cobrança",
+        "Escape devolve foco",
+        "comprar e usar +1 no alvo",
+        "compra repetida",
+        "evoluir reserva e exibir conquista",
+        "bloquear saldo insuficiente",
+        "recarregar sem duplicar"
+      ],
+      "geometry": {
+        "width": 1280,
+        "scroll": 1280,
+        "main": 870,
+        "mainScroll": 870,
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "flows": [
+        "exigir alvo",
+        "bloquear nível 100",
+        "cancelar sem cobrança",
+        "Escape devolve foco",
+        "comprar e usar +1 no alvo",
+        "compra repetida",
+        "evoluir reserva e exibir conquista",
+        "bloquear saldo insuficiente",
+        "recarregar sem duplicar"
+      ],
+      "geometry": {
+        "width": 390,
+        "scroll": 390,
+        "main": 362,
+        "mainScroll": 362,
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "flows": [
+        "exigir alvo",
+        "bloquear nível 100",
+        "cancelar sem cobrança",
+        "Escape devolve foco",
+        "comprar e usar +1 no alvo",
+        "compra repetida",
+        "evoluir reserva e exibir conquista",
+        "bloquear saldo insuficiente",
+        "recarregar sem duplicar"
+      ],
+      "geometry": {
+        "width": 320,
+        "scroll": 320,
+        "main": 294,
+        "mainScroll": 294,
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 375
+      },
+      "flows": [
+        "exigir alvo",
+        "bloquear nível 100",
+        "cancelar sem cobrança",
+        "Escape devolve foco",
+        "comprar e usar +1 no alvo",
+        "compra repetida",
+        "evoluir reserva e exibir conquista",
+        "bloquear saldo insuficiente",
+        "recarregar sem duplicar"
+      ],
+      "geometry": {
+        "width": 844,
+        "scroll": 844,
+        "main": 818,
+        "mainScroll": 818,
+        "broken": []
+      },
+      "errors": []
+    }
+  ]
+}
