@@ -2,6 +2,8 @@
 
 ## 0.22.0 — Mercado da Liga · 23/10/2026
 
+**Publicação:** [PR 28](https://github.com/erereck/pokebobo/pull/28) mergeada em `ccb37f5`, com CI da PR/main e GitHub Pages aprovados. No site público, os oito fluxos do mercado passaram em cada um dos quatro visores do Edge/Chromium: 32 verificações, incluindo cancelamentos, venda, aprendizado obrigatório, recarga e entrada na Elite 4 com a TM. Sem erros de console/requisições, sprites quebrados ou overflow horizontal. [Evidência pública](balance/market-0.22.0/production.json). A emulação não substitui uma sessão humana em aparelho físico; a recomendação de avaliar decisões de venda/cobertura permanece.
+
 **Pedido:** uma fase entre o oitavo ginásio e a Elite 4, com venda de Pokémon e compra de TMs aplicadas imediatamente; valor maior para Pokémon melhores e aproximadamente 1,3 TMs por Pokémon intermediário.
 
 **Entrega e motivo:** a vitória final de ginásio abre `market` antes de liberar a Liga. A tela usa os componentes e tokens existentes, com balcões de venda/compra, avaliação por espécie/nível, saldo e confirmação nominal. As 12 ofertas têm preços entre ₽ 600 e ₽ 1.400 e uma unidade por jornada. Compra seleciona um alvo compatível e um golpe a substituir, quando necessário; aplicação, débito e consumo são atômicos. Último Pokémon ativo protegido e coleção preservada. Organização da equipe/reserva funciona durante a preparação. TMs sobrevivem ao aprendizado automático entre vitórias.
