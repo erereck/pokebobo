@@ -6,7 +6,7 @@ export function MissionHUD({ run, saving }) {
     <div className="mission-hud">
       <div className="mission-place">
         <MapPin size={16} />
-        <strong>{run.inLeague ? "Liga Pokémon" : city(run).name}</strong>
+        <strong>{run.phase === "market" ? "Mercado da Liga" : run.inLeague ? "Liga Pokémon" : city(run).name}</strong>
         <span className="hud-week">SEM. {run.week}</span>
       </div>
       <div className="mission-stock">

@@ -1,5 +1,11 @@
 # Arquitetura do Pokébobo
 
+## Mercado da Liga — 0.22.0
+
+`actions/result` sorteia os mesmos adversários após a oitava insígnia e abre a fase `market`. `actions/market` aplica venda, compra/ensino e saída; `market/market` concentra avaliação, compatibilidade e disponibilidade. Os parâmetros/ofertas estão em `config/market`. A seleção do alvo/golpe pertence à UI até a transação única, sem estado de compra pendente. `money`, `marketPurchases` e `mon.tmMoves` são dados aditivos; crescimento automático preserva TMs ainda equipadas. Box, líder e evolução podem ser gerenciados durante a parada.
+
+`scripts/market-catalog.mjs` compila fontes de máquina da linhagem para `data/marketCompatibility.json`; `check` verifica a correspondência sem regravar o arquivo. Learnsets completos continuam fora do browser. `features/market` usa Modal, Sprite, TypeTag, RouteCover e MoveSummary existentes; CSS entra após career na cascata. `market:audit` mede economia e combates reais pareados. O simulador base usa MARKET_LEAVE sem negociar. [Regras e limites](MERCADO-DA-LIGA.md).
+
 ## Área visível e gestos — 0.20.1
 
 `useVisualViewport` pertence à apresentação e escreve apenas altura/deslocamento visíveis em CSS. Atualizações são agrupadas por requestAnimationFrame, eventos/variáveis limpos ao desmontar; zoom mantém viewport nativo. Carcaça e dialog combinam essas medidas com tokens de áreas seguras. Sem essa API, CSS usa dvh. Nenhum dado entra em save ou no motor.

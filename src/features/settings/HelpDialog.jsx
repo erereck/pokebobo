@@ -103,8 +103,13 @@ export function HelpDialog({ setModal }) {
           </li>
           <li>Qualquer derrota encerra a run. Não existe revanche.</li>
           <li>
-            Depois de oito insígnias: quatro membros da Elite e um campeão
-            sorteados. Vencer libera Correria e Nuzlocke.
+            Depois da oitava insígnia, o Mercado da Liga permite vender Pokémon
+            da equipe ou reserva e comprar TMs de uso único. Nível e atributos
+            da espécie definem o valor. Escolha um Pokémon compatível e o golpe
+            substituído para concluir a compra; cancelar não cobra nada. Há uma
+            unidade de cada TM. Mantenha pelo menos um Pokémon ativo. Seguir
+            para a Elite 4 encerra as compras. Então vêm quatro membros da Elite
+            e um campeão sorteados. Vencer libera Correria e Nuzlocke.
           </li>
         </ol>
         <p>
@@ -159,9 +164,10 @@ export function HelpDialog({ setModal }) {
           O adversário recebe golpes automaticamente pelo nível. Em cada save,
           você escolhe como o seu time aprende ataques: no modo Manual, vagas
           livres são preenchidas sem interromper a run e, com quatro golpes,
-          você escolhe qual esquecer; no Automático, o jogo recalcula sozinho os
-          até quatro melhores golpes disponíveis sempre que o Pokémon sobe de
-          nível ou evolui. Evoluções normais e especiais acontecem por nível:
+          você escolhe qual esquecer; no Automático, o jogo preenche os
+          espaços livres com golpes disponíveis sempre que o Pokémon sobe de
+          nível ou evolui, preservando as TMs ensinadas que continuam equipadas.
+          Evoluções normais e especiais acontecem por nível:
           troca, pedra, amizade e outras condições foram comprimidas em níveis
           diretos para manter a run rápida.
         </p>

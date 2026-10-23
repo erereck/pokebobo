@@ -1,0 +1,598 @@
+{
+  "method": "Economia com 12 espécies intermediárias evoluídas, níveis 35/45/55. Combates reais pareados contra os 11 membros da Elite na primeira posição, com os mesmos adversários e seeds, equipes de seis nos níveis 45/50 e duas reservas vendidas por Earthquake/Shadow Ball. Ambas as políticas usam a IA do jogo. Não é amostra de jogadores nem mede a chance de completar toda a Liga.",
+  "reference": {
+    "referenceValue": 1300,
+    "referenceStats": 480,
+    "referenceLevel": 45,
+    "statsExponent": 1.35,
+    "levelExponent": 0.65,
+    "priceStep": 50,
+    "minimumValue": 200
+  },
+  "tmCount": 12,
+  "averageTm": 1000,
+  "prices": [
+    {
+      "level": 35,
+      "average": 1104.17,
+      "tmsPerPokemon": 1.104,
+      "sales": [
+        {
+          "name": "Pidgeot",
+          "level": 35,
+          "value": 1100
+        },
+        {
+          "name": "Arbok",
+          "level": 35,
+          "value": 1000
+        },
+        {
+          "name": "Raichu",
+          "level": 35,
+          "value": 1100
+        },
+        {
+          "name": "Sandslash",
+          "level": 35,
+          "value": 1000
+        },
+        {
+          "name": "Golduck",
+          "level": 35,
+          "value": 1150
+        },
+        {
+          "name": "Machamp",
+          "level": 35,
+          "value": 1200
+        },
+        {
+          "name": "Golem",
+          "level": 35,
+          "value": 1150
+        },
+        {
+          "name": "Rapidash",
+          "level": 35,
+          "value": 1150
+        },
+        {
+          "name": "Muk",
+          "level": 35,
+          "value": 1150
+        },
+        {
+          "name": "Hypno",
+          "level": 35,
+          "value": 1100
+        },
+        {
+          "name": "Seaking",
+          "level": 35,
+          "value": 1000
+        },
+        {
+          "name": "Victreebel",
+          "level": 35,
+          "value": 1150
+        }
+      ]
+    },
+    {
+      "level": 45,
+      "average": 1304.17,
+      "tmsPerPokemon": 1.304,
+      "sales": [
+        {
+          "name": "Pidgeot",
+          "level": 45,
+          "value": 1300
+        },
+        {
+          "name": "Arbok",
+          "level": 45,
+          "value": 1200
+        },
+        {
+          "name": "Raichu",
+          "level": 45,
+          "value": 1300
+        },
+        {
+          "name": "Sandslash",
+          "level": 45,
+          "value": 1200
+        },
+        {
+          "name": "Golduck",
+          "level": 45,
+          "value": 1350
+        },
+        {
+          "name": "Machamp",
+          "level": 45,
+          "value": 1400
+        },
+        {
+          "name": "Golem",
+          "level": 45,
+          "value": 1350
+        },
+        {
+          "name": "Rapidash",
+          "level": 45,
+          "value": 1350
+        },
+        {
+          "name": "Muk",
+          "level": 45,
+          "value": 1350
+        },
+        {
+          "name": "Hypno",
+          "level": 45,
+          "value": 1300
+        },
+        {
+          "name": "Seaking",
+          "level": 45,
+          "value": 1200
+        },
+        {
+          "name": "Victreebel",
+          "level": 45,
+          "value": 1350
+        }
+      ]
+    },
+    {
+      "level": 55,
+      "average": 1487.5,
+      "tmsPerPokemon": 1.488,
+      "sales": [
+        {
+          "name": "Pidgeot",
+          "level": 55,
+          "value": 1500
+        },
+        {
+          "name": "Arbok",
+          "level": 55,
+          "value": 1350
+        },
+        {
+          "name": "Raichu",
+          "level": 55,
+          "value": 1500
+        },
+        {
+          "name": "Sandslash",
+          "level": 55,
+          "value": 1350
+        },
+        {
+          "name": "Golduck",
+          "level": 55,
+          "value": 1550
+        },
+        {
+          "name": "Machamp",
+          "level": 55,
+          "value": 1600
+        },
+        {
+          "name": "Golem",
+          "level": 55,
+          "value": 1550
+        },
+        {
+          "name": "Rapidash",
+          "level": 55,
+          "value": 1550
+        },
+        {
+          "name": "Muk",
+          "level": 55,
+          "value": 1550
+        },
+        {
+          "name": "Hypno",
+          "level": 55,
+          "value": 1500
+        },
+        {
+          "name": "Seaking",
+          "level": 55,
+          "value": 1350
+        },
+        {
+          "name": "Victreebel",
+          "level": 55,
+          "value": 1500
+        }
+      ]
+    }
+  ],
+  "combatCount": 44,
+  "combats": [
+    {
+      "level": 45,
+      "elite": "Lorelei",
+      "proceeds": 2500,
+      "spent": 2400,
+      "remaining": 100,
+      "baseline": {
+        "winner": "Lorelei",
+        "turns": 12,
+        "fainted": 6
+      },
+      "market": {
+        "winner": "Lorelei",
+        "turns": 16,
+        "fainted": 6
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Bruno",
+      "proceeds": 2500,
+      "spent": 2400,
+      "remaining": 100,
+      "baseline": {
+        "winner": "Bruno",
+        "turns": 24,
+        "fainted": 6
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 13,
+        "fainted": 1
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Agatha",
+      "proceeds": 2500,
+      "spent": 2400,
+      "remaining": 100,
+      "baseline": {
+        "winner": "Agatha",
+        "turns": 26,
+        "fainted": 6
+      },
+      "market": {
+        "winner": "Agatha",
+        "turns": 17,
+        "fainted": 6
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Will",
+      "proceeds": 2500,
+      "spent": 2400,
+      "remaining": 100,
+      "baseline": {
+        "winner": "Will",
+        "turns": 17,
+        "fainted": 6
+      },
+      "market": {
+        "winner": "Will",
+        "turns": 15,
+        "fainted": 6
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Karen",
+      "proceeds": 2500,
+      "spent": 2400,
+      "remaining": 100,
+      "baseline": {
+        "winner": "Karen",
+        "turns": 22,
+        "fainted": 6
+      },
+      "market": {
+        "winner": "Karen",
+        "turns": 19,
+        "fainted": 6
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Sidney",
+      "proceeds": 2500,
+      "spent": 2400,
+      "remaining": 100,
+      "baseline": {
+        "winner": "Sidney",
+        "turns": 12,
+        "fainted": 6
+      },
+      "market": {
+        "winner": "Sidney",
+        "turns": 12,
+        "fainted": 6
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Phoebe",
+      "proceeds": 2500,
+      "spent": 2400,
+      "remaining": 100,
+      "baseline": {
+        "winner": "Você",
+        "turns": 21,
+        "fainted": 3
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 21,
+        "fainted": 3
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Drake",
+      "proceeds": 2500,
+      "spent": 2400,
+      "remaining": 100,
+      "baseline": {
+        "winner": "Drake",
+        "turns": 10,
+        "fainted": 6
+      },
+      "market": {
+        "winner": "Drake",
+        "turns": 10,
+        "fainted": 6
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Caitlin",
+      "proceeds": 2500,
+      "spent": 2400,
+      "remaining": 100,
+      "baseline": {
+        "winner": "Você",
+        "turns": 41,
+        "fainted": 4
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 11,
+        "fainted": 2
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Marshal",
+      "proceeds": 2500,
+      "spent": 2400,
+      "remaining": 100,
+      "baseline": {
+        "winner": "Você",
+        "turns": 18,
+        "fainted": 3
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 18,
+        "fainted": 2
+      }
+    },
+    {
+      "level": 45,
+      "elite": "Kahili",
+      "proceeds": 2500,
+      "spent": 2400,
+      "remaining": 100,
+      "baseline": {
+        "winner": "Kahili",
+        "turns": 19,
+        "fainted": 6
+      },
+      "market": {
+        "winner": "Kahili",
+        "turns": 18,
+        "fainted": 6
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Lorelei",
+      "proceeds": 2650,
+      "spent": 2400,
+      "remaining": 250,
+      "baseline": {
+        "winner": "Lorelei",
+        "turns": 17,
+        "fainted": 6
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 14,
+        "fainted": 4
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Bruno",
+      "proceeds": 2650,
+      "spent": 2400,
+      "remaining": 250,
+      "baseline": {
+        "winner": "Você",
+        "turns": 23,
+        "fainted": 5
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 16,
+        "fainted": 3
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Agatha",
+      "proceeds": 2650,
+      "spent": 2400,
+      "remaining": 250,
+      "baseline": {
+        "winner": "Você",
+        "turns": 15,
+        "fainted": 3
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 8,
+        "fainted": 0
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Will",
+      "proceeds": 2650,
+      "spent": 2400,
+      "remaining": 250,
+      "baseline": {
+        "winner": "Você",
+        "turns": 16,
+        "fainted": 4
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 11,
+        "fainted": 1
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Karen",
+      "proceeds": 2650,
+      "spent": 2400,
+      "remaining": 250,
+      "baseline": {
+        "winner": "Você",
+        "turns": 12,
+        "fainted": 3
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 16,
+        "fainted": 4
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Sidney",
+      "proceeds": 2650,
+      "spent": 2400,
+      "remaining": 250,
+      "baseline": {
+        "winner": "Sidney",
+        "turns": 15,
+        "fainted": 6
+      },
+      "market": {
+        "winner": "Sidney",
+        "turns": 16,
+        "fainted": 6
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Phoebe",
+      "proceeds": 2650,
+      "spent": 2400,
+      "remaining": 250,
+      "baseline": {
+        "winner": "Você",
+        "turns": 14,
+        "fainted": 1
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 13,
+        "fainted": 1
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Drake",
+      "proceeds": 2650,
+      "spent": 2400,
+      "remaining": 250,
+      "baseline": {
+        "winner": "Drake",
+        "turns": 12,
+        "fainted": 6
+      },
+      "market": {
+        "winner": "Drake",
+        "turns": 15,
+        "fainted": 6
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Caitlin",
+      "proceeds": 2650,
+      "spent": 2400,
+      "remaining": 250,
+      "baseline": {
+        "winner": "Você",
+        "turns": 14,
+        "fainted": 3
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 10,
+        "fainted": 2
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Marshal",
+      "proceeds": 2650,
+      "spent": 2400,
+      "remaining": 250,
+      "baseline": {
+        "winner": "Você",
+        "turns": 37,
+        "fainted": 1
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 37,
+        "fainted": 1
+      }
+    },
+    {
+      "level": 50,
+      "elite": "Kahili",
+      "proceeds": 2650,
+      "spent": 2400,
+      "remaining": 250,
+      "baseline": {
+        "winner": "Você",
+        "turns": 21,
+        "fainted": 5
+      },
+      "market": {
+        "winner": "Você",
+        "turns": 21,
+        "fainted": 5
+      }
+    }
+  ],
+  "wins": {
+    "baseline": 11,
+    "market": 13
+  }
+}

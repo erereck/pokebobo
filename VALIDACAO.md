@@ -1,4 +1,11 @@
-# Validação — Pokébobo 0.21.1
+# Validação — Pokébobo 0.22.0
+
+## Mercado da Liga — 23/10/2026
+
+- `npm run verify`: arquitetura e compatibilidade compilada, 203 testes normais e 198 no motor empacotado, todos aprovados; build web. `npm run balance:audit`: orçamento de níveis preservado. `npm run market:audit`: média de **1,304 TMs** por Pokémon intermediário no nível 45 e 44 combates reais pareados. [Economia/combates](docs/balance/market-0.22.0/economy-and-combat.json).
+- Dez testes novos cobrem valores, vendas únicas, Pokédex/último ativo, preço/saldo/estoque, alvo e substituição obrigatórios, incompatibilidade, formas regionais, vaga livre/reserva, persistência de TMs no automático/evolução, esquecimento manual, organização e bloqueios do mercado, exportação e restauração. O teste de campanha existente atravessa os oito ginásios, mercado, quatro Elite e campeão com equipe nível 100: verifica transições, não dificuldade.
+- Edge/Chromium em 1280×800, 390×844, 320×568 e 844×375; oito fluxos por visor a partir de fixture da nova fase, com ações reais na UI. Cancela venda/compra sem cobrança, vende reserva, exige alvo/golpe, compra/aplica, recarrega e entra na Elite com a TM. Sem erros de console/requisição, sprites quebrados ou overflow horizontal. [Relatório](docs/balance/market-0.22.0/browser.json), [PC](docs/images/mercado-0.22-1280.png), [celular](docs/images/mercado-0.22-390.png), [aprendizado](docs/images/tm-0.22-celular.png).
+- Não houve teste em aparelho físico nem inferência de dificuldade humana. Auditoria de combates usa IA em equipe fixa, em 22 pares: 11/22 vitórias antes e 13/22 com duas compras. O simulador base não negocia. Compatibilidade gerada no Node; navegador usa tabela local sem learnsets completos. Novos dados são aditivos no schema 4; partidas já na Liga seguem sem reabrir o mercado. [Regras e limites](docs/MERCADO-DA-LIGA.md).
 
 ## Evolução no ritmo — 11/10/2026
 

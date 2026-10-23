@@ -10,6 +10,7 @@ export function PokemonDetails({ mon, run, act }) {
   const data = catalog[mon.name],
     lead = run.party[0]?.id === mon.id;
   const evolutions = evolutionOptions(mon);
+  const canManage = ["career", "market"].includes(run.phase);
   return (
     <section className="pokemon-details" aria-label={"Ficha de " + mon.name}>
       <div className="pokemon-scan">
@@ -59,17 +60,17 @@ export function PokemonDetails({ mon, run, act }) {
             aria-label={
               lead
                 ? "Abre as batalhas"
-                : run.phase !== "career"
+                : !canManage
                   ? "Troque a ordem entre batalhas"
                   : "Colocar na frente · grátis"
             }
-            disabled={lead || run.phase !== "career"}
+            disabled={lead || !canManage}
             onClick={() => act({ type: "LEAD", id: mon.id })}
           >
             {lead ? <Flag size={17} /> : <ArrowUp size={17} />}{" "}
             {lead
               ? "Abre as batalhas"
-              : run.phase !== "career"
+              : !canManage
                 ? "Ordem bloqueada"
                 : "Colocar na frente"}
           </button>
@@ -78,7 +79,7 @@ export function PokemonDetails({ mon, run, act }) {
               <button
                 className="button secondary full"
                 aria-label="Escolher evolução · grátis"
-                disabled={run.phase !== "career"}
+                disabled={!canManage}
                 onClick={() =>
                   act({ type: "EVOLUTION_REQUEST", monId: mon.id })
                 }

@@ -1,0 +1,106 @@
+{
+  "browser": "Microsoft Edge / Chromium headless",
+  "method": "Fixtures da fase; ações pelo navegador. Não é uma campanha jogada integralmente.",
+  "report": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "flows": [
+        "cancelar venda",
+        "vender reserva",
+        "exigir alvo",
+        "exigir golpe",
+        "cancelar compra sem cobrança",
+        "comprar e aplicar TM",
+        "persistir e recarregar",
+        "entrar na Elite 4 com TM"
+      ],
+      "geometry": {
+        "pageWidth": 1280,
+        "scrollWidth": 1280,
+        "mainWidth": 870,
+        "mainScrollWidth": 870,
+        "brokenImages": []
+      },
+      "errors": [],
+      "requests": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "flows": [
+        "cancelar venda",
+        "vender reserva",
+        "exigir alvo",
+        "exigir golpe",
+        "cancelar compra sem cobrança",
+        "comprar e aplicar TM",
+        "persistir e recarregar",
+        "entrar na Elite 4 com TM"
+      ],
+      "geometry": {
+        "pageWidth": 390,
+        "scrollWidth": 390,
+        "mainWidth": 362,
+        "mainScrollWidth": 362,
+        "brokenImages": []
+      },
+      "errors": [],
+      "requests": []
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "flows": [
+        "cancelar venda",
+        "vender reserva",
+        "exigir alvo",
+        "exigir golpe",
+        "cancelar compra sem cobrança",
+        "comprar e aplicar TM",
+        "persistir e recarregar",
+        "entrar na Elite 4 com TM"
+      ],
+      "geometry": {
+        "pageWidth": 320,
+        "scrollWidth": 320,
+        "mainWidth": 294,
+        "mainScrollWidth": 294,
+        "brokenImages": []
+      },
+      "errors": [],
+      "requests": []
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 375
+      },
+      "flows": [
+        "cancelar venda",
+        "vender reserva",
+        "exigir alvo",
+        "exigir golpe",
+        "cancelar compra sem cobrança",
+        "comprar e aplicar TM",
+        "persistir e recarregar",
+        "entrar na Elite 4 com TM"
+      ],
+      "geometry": {
+        "pageWidth": 844,
+        "scrollWidth": 844,
+        "mainWidth": 818,
+        "mainScrollWidth": 818,
+        "brokenImages": []
+      },
+      "errors": [],
+      "requests": []
+    }
+  ]
+}

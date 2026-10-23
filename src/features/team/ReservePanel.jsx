@@ -3,7 +3,7 @@ import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { CAMPAIGN_RULES } from "../../game/config/campaign.js";
 export function ReservePanel({ run, mon, act, onSelect }) {
   const box = run.box || [];
-  const canManage = run.phase === "career";
+  const canManage = ["career", "market"].includes(run.phase);
   const canSendSelected =
     canManage &&
     mon &&

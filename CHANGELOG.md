@@ -1,5 +1,13 @@
 # Histórico
 
+## 0.22.0 — Mercado da Liga · 23/10/2026
+
+- Nova parada obrigatória depois da oitava insígnia, antes da Elite 4: venda de Pokémon da equipe/reserva e 12 TMs de uso único, com uma unidade de cada por jornada. Negociar não consome semanas.
+- Valor de venda cresce com nível e atributos base da espécie. Referência de ₽ 1.300 para TMs de preço médio ₽ 1.000; a amostra intermediária de nível 45 mediu 1,304 TMs por venda.
+- Compra exige alvo compatível e escolha do golpe substituído; dinheiro e estoque só são consumidos junto do aprendizado. Cancelar não cobra. O modo automático preserva TMs equipadas ao subir de nível/evoluir.
+- Mercado reutiliza carcaça, LCD, fontes, sprites, capa de Indigo Plateau e janelas do jogo. Último integrante ativo protegido; Pokédex preservada; organização de equipe/reserva disponível. Seguir para a Elite 4 encerra as compras.
+- Compatibilidade de máquinas compilada dos learnsets existentes; saves aditivos no schema 4, sem mudar batalhas já salvas. Auditoria econômica, 44 combates reais pareados e fluxo em quatro visores no Edge. [Regras e limites](docs/MERCADO-DA-LIGA.md).
+
 ## 0.21.1 — Evolução no ritmo · 11/10/2026
 
 - Barra discreta avança durante quatro segundos em cada cena de evolução; completar equivale a Continuar. Cada Pokémon recebe uma contagem nova, inclusive na reserva.

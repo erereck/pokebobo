@@ -23,7 +23,11 @@ test("campanha completa: 8 ginásios, 4 Elite, campeão e modos desbloqueados", 
     });
     s = finishBattle(s);
     assert.equal(s.run.badges, i + 1);
+    if (i < 7) assert.equal(s.run.phase, "career");
   }
+  assert.equal(s.run.phase, "market");
+  assert.equal(s.run.inLeague, false);
+  s = reducer(s, { type: "MARKET_LEAVE" });
   assert.equal(s.run.inLeague, true);
   assert.equal(s.run.league.length, 5);
   for (let i = 0; i < 5; i++) {

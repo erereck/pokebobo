@@ -9,6 +9,7 @@ import { RegionScreen } from "../features/region/RegionScreen.jsx";
 import { Journal } from "../features/journal/Journal.jsx";
 import { WeekEventScreen } from "../features/events/WeekEventScreen.jsx";
 import { ExplorationScreen } from "../features/encounters/ExplorationScreen.jsx";
+import { MarketScreen } from "../features/market/MarketScreen.jsx";
 
 export function RunContent({
   tab,
@@ -44,6 +45,8 @@ export function RunContent({
           <ExplorationScreen run={run} act={act} />
         ) : ["encounter", "capture"].includes(run.phase) ? (
           <Encounter run={run} act={act} />
+        ) : run.phase === "market" ? (
+          <MarketScreen run={run} act={act} />
         ) : run.phase === "event" ? (
           <WeekEventScreen run={run} act={act} />
         ) : (

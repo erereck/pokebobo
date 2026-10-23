@@ -1,6 +1,8 @@
-# Pokébobo — 0.21.1 · Cada conquista conta
+# Pokébobo — 0.22.0 · Mercado da Liga
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.22.0 adiciona o **Mercado da Liga entre a oitava insígnia e a Elite 4**. Venda Pokémon da equipe/reserva e compre 12 TMs de uso único, com preços de ₽ 600 a ₽ 1.400. Nível e atributos da espécie determinam a venda; a amostra intermediária de nível 45 rende 1,304 TMs médias. Cada compra exige escolher um Pokémon compatível e, quando necessário, o golpe que será substituído. Só há cobrança ao concluir o aprendizado. [Como funciona e balanceamento](docs/MERCADO-DA-LIGA.md) · [Mercado no celular](docs/images/mercado-0.22-390.png) · [Aprendizado](docs/images/tm-0.22-celular.png).
 
 A 0.21.1 mostra uma barra em cada evolução e avança automaticamente após quatro segundos. Continuar e Pular demais continuam disponíveis; a contagem pausa ao sair da aba e não confirma escolhas de golpes.
 
@@ -92,7 +94,7 @@ O save fica no navegador. Há três slots independentes de carreira; o Hall da F
 
 ## Recorte consciente do protótipo
 
-As batalhas usam regras singles da geração 8. Não há multiplayer, Dynamax, Mega Evolução nem editor de golpes. Os golpes são escolhidos automaticamente a partir dos learnsets por nível do Showdown, buscando STAB e cobertura, e não reproduzem um moveset histórico único. O gerador escolhe uma geração comum à linhagem (8, com fallback para 7), conserva níveis herdados e distingue golpes de evolução dos lembretes. Lembretes exclusivos ficam fora da seleção automática. A origem de cada golpe está no catálogo e na auditoria; veja REGRAS-DE-GOLPES.md. Mossdeep conserva o elenco de Emerald em batalha singles. Ainda não há todas as equipes de todas as gerações.
+As batalhas usam regras singles da geração 8. Não há multiplayer, Dynamax, Mega Evolução nem editor livre de golpes; as TMs do Mercado da Liga oferecem escolhas pontuais antes da Elite 4. Os golpes são escolhidos automaticamente a partir dos learnsets por nível do Showdown, buscando STAB e cobertura, e não reproduzem um moveset histórico único. O gerador escolhe uma geração comum à linhagem (8, com fallback para 7), conserva níveis herdados e distingue golpes de evolução dos lembretes. Lembretes exclusivos ficam fora da seleção automática. A origem de cada golpe está no catálogo e na auditoria; veja REGRAS-DE-GOLPES.md. Mossdeep conserva o elenco de Emerald em batalha singles. Ainda não há todas as equipes de todas as gerações.
 
 Todas as evoluções do recorte jogável são resolvidas por nível. Métodos originais como troca, pedra/item, amizade, golpe conhecido e outras condições recebem níveis substitutos; quando o dado original já possui nível mínimo, ele é mantido. Linhas ramificadas aguardam uma escolha do treinador. Existe uma reserva compacta de três Pokémon, que acompanha ganhos de nível da equipe. Capturas com seis ativos usam a reserva antes de exigir liberação. Toda vitória recupera a equipe, com exceção dos removidos pelo Nuzlocke. Na rodada 0.2.2 foram simuladas 800 campanhas com batalhas reais no Clássico; a rodada anterior dos três modos fica como referência histórica. Isso testa políticas automáticas e identifica problemas; não determina a taxa de vitória de pessoas. As políticas automáticas ainda precisam ser ajustadas à economia da Correria e à sobrevivência da Nuzlocke.
 

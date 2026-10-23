@@ -144,6 +144,9 @@ export function runCampaign(seed, strategy, mode = "normal", maxTurns = 180) {
       run.outcome = result.snapshot;
       run.phase = "result";
       act({ type: "RESULT" });
+    } else if (run.phase === "market") {
+      // Política base: conserva a equipe e segue sem negociar.
+      act({ type: "MARKET_LEAVE" });
     } else if (run.phase === "career") {
       if (run.party.length < 6 && run.box?.length) {
         act({ type: "BOX_TO_PARTY", id: run.box[0].id });

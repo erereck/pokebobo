@@ -16,7 +16,7 @@ export function TeamSidebar({
   const battleSnap = battle?.snap || null;
   const activeBattleId = battleSnap?.active?.id || null;
   const inBattle = run.phase === "battle" && Boolean(battleSnap);
-  const canReorder = run.phase === "career" && run.party.length > 1;
+  const canReorder = ["career", "market"].includes(run.phase) && run.party.length > 1;
 
   const liveMon = (id) =>
     battleSnap?.player?.find((candidate) => candidate.id === id) || null;
