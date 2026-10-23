@@ -1,6 +1,6 @@
 // A apresentação lê uma ação já confirmada; nunca sorteia nem altera a run.
 const GROWTH_ACTIONS = new Set([
-  "TRAIN", "RESULT", "EVOLUTION_CHOICE", "EVENT_CHOICE",
+  "TRAIN", "RESULT", "EVOLUTION_CHOICE", "EVENT_CHOICE", "MARKET_BUY_CANDY",
 ]);
 
 export function actionMoments(before, after, action) {

@@ -1,5 +1,11 @@
 # Histórico
 
+## 0.22.1 — Rare Candy no Mercado · 23/10/2026
+
+- Rare Candy por ₽ 700, ou 0,7 do preço médio das TMs, no balcão Comprar itens. Escolha um Pokémon da equipe/reserva e confirme: o dinheiro é debitado junto do ganho de +1 nível, sem gastar semana ou guardar item.
+- Compra repetível enquanto houver saldo. Pokémon no nível 100 ficam bloqueados; cancelar ou fechar a janela não cobra. Evoluções e aprendizados usam o fluxo existente, incluindo escolhas manuais e celebração da evolução. TMs equipadas são preservadas no modo automático.
+- Preços/estoques das TMs e schema 4 preservados. Novas regressões e auditoria específica de economia/combates; [regras do Mercado](docs/MERCADO-DA-LIGA.md).
+
 ## 0.22.0 — Mercado da Liga · 23/10/2026
 
 - Nova parada obrigatória depois da oitava insígnia, antes da Elite 4: venda de Pokémon da equipe/reserva e 12 TMs de uso único, com uma unidade de cada por jornada. Negociar não consome semanas.

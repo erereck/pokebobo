@@ -1,6 +1,6 @@
 {
   "name": "pokebobo",
-  "version": "0.22.0",
+  "version": "0.22.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,6 +12,7 @@
     "check": "node scripts/check-architecture.mjs && node scripts/market-catalog.mjs --check",
     "market:catalog": "node scripts/market-catalog.mjs",
     "market:audit": "node scripts/audit-market.mjs",
+    "market:candy-audit": "node scripts/audit-rare-candy.mjs",
     "balance:audit": "node scripts/audit-progression.mjs",
     "test:browser-simulator": "node scripts/verifyBrowserSimulator.mjs",
     "verify": "npm run check && npm test && npm run test:browser-simulator && npm run build",

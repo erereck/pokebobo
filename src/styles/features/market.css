@@ -265,6 +265,18 @@
 .market-recipient:hover:not(:disabled) {
   background: var(--lcd-dim);
 }
+.market-recipient[aria-pressed="true"] {
+  background: var(--lcd-dim);
+  border-color: var(--hp);
+  box-shadow: inset 3px 0 var(--hp);
+}
+.market-candy h2 {
+  font-size: 18px;
+}
+.market-candy p {
+  font-size: 12px;
+  color: var(--ink-soft);
+}
 .market-recipient .sprite {
   width: 48px;
   height: 48px;

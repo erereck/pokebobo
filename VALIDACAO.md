@@ -1,4 +1,11 @@
-# Validação — Pokébobo 0.22.0
+# Validação — Pokébobo 0.22.1
+
+## Rare Candy no Mercado — 23/10/2026
+
+- `npm run verify` aprovado: 275 módulos, 210 testes normais/205 com motor empacotado, compatibilidade e build com base `/pokebobo/`. Sete testes novos cobrem preço de 0,7 TM, alvo/saldo/fase, compra repetida e ganho individual sem semana/RNG, teto 100, reserva/evolução, TMs e backup preservados, aprendizado manual e evolução ramificada. [Log](docs/balance/rare-candy-0.22.1/verify.txt).
+- `npm run balance:audit` preserva o orçamento base. `npm run market:candy-audit`: ₽ 700 contra TM média de ₽ 1.000; 44 combates reais em 22 pares, mesmas seeds/adversários, equipe fixa de seis nos níveis 45/50 e três Rare Candy em três integrantes após vender duas reservas. Vitórias 11/22 antes e 12/22 depois. Não é estimativa humana nem campanha completa. [Dados](docs/balance/rare-candy-0.22.1/economy-and-combat.json).
+- Edge/Chromium no build em 1280×800, 390×844, 320×568 e 844×375: nove fluxos por visor (36 no total). Compra exige alvo, bloqueia nível 100, cancelar/Escape não cobra e devolve foco, só o alvo ganha nível, repetição cobra cada unidade, reserva evolui com celebração, saldo insuficiente bloqueia, recarga preserva o resultado sem repetir. Sem erros de console/requisição, sprites quebrados ou overflow horizontal. [Relatório](docs/balance/rare-candy-0.22.1/browser.json), [PC](docs/images/rare-candy-0.22.1-1280.png), [celular](docs/images/rare-candy-0.22.1-390.png), [seleção](docs/images/rare-candy-0.22.1-selecao.png).
+- As telas partem de fixture do Mercado, com ações reais na UI; não substituem sessões em aparelhos físicos. Schema 4 e política base de campanha preservados. Não foram criados inventário de doces ou compra pendente persistida.
 
 ## Mercado da Liga — 23/10/2026
 

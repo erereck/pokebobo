@@ -1,5 +1,9 @@
 # Arquitetura do Pokébobo
 
+## Rare Candy — 0.22.1
+
+`MARKET_RARE_CANDY` em `config/market` define preço/ganho. `actions/market-candy` valida fase, dinheiro e alvo abaixo do teto antes de usar `growWithLearning` somente naquele indivíduo e debitar o valor. O reducer existente bloqueia compras enquanto houver escolhas pendentes. `actionMoments` observa essa nova ação após a gravação para apresentar evolução. `RareCandyOffer`/`RareCandyDialog` reutilizam os estilos e o Modal do mercado; não criam inventário ou estado persistido de compra. `market:candy-audit` mede o preço relativo e combates reais pareados.
+
 ## Mercado da Liga — 0.22.0
 
 `actions/result` sorteia os mesmos adversários após a oitava insígnia e abre a fase `market`. `actions/market` aplica venda, compra/ensino e saída; `market/market` concentra avaliação, compatibilidade e disponibilidade. Os parâmetros/ofertas estão em `config/market`. A seleção do alvo/golpe pertence à UI até a transação única, sem estado de compra pendente. `money`, `marketPurchases` e `mon.tmMoves` são dados aditivos; crescimento automático preserva TMs ainda equipadas. Box, líder e evolução podem ser gerenciados durante a parada.

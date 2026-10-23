@@ -1,5 +1,15 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## 0.22.1 — Rare Candy no Mercado · 23/10/2026
+
+**Pedido:** acrescentar Rare Candy por aproximadamente 0,7 TM.
+
+**Entrega e motivo:** oferta de ₽ 700 no balcão Comprar itens, exatamente 0,7 da média de ₽ 1.000 das TMs. Escolha obrigatória de um Pokémon da equipe/reserva; confirmar debita o valor junto do ganho de +1 nível. Compra repetível enquanto houver saldo, sem inventário ou semana adicional. Cancelar/fechar não cobra e nível 100 fica bloqueado. Crescimento usa as regras existentes de evolução, aprendizado manual/automático, Pokédex e preservação de TMs; a evolução recebe a mesma celebração após salvar.
+
+**Verificação e medições:** `npm run verify` aprovado com 275 módulos, 210 testes normais/205 empacotados e build Pages. `npm run balance:audit` preserva o orçamento base; `npm run market:candy-audit` confirma a razão 0,7 e resolve 44 combates reais pareados nos níveis 45/50, contra os 11 membros possíveis da Elite. Foram 11/22 vitórias antes e 12/22 com três doces distribuídos entre três integrantes após vender duas reservas. Edge no build em quatro visores, nove fluxos por visor: alvo obrigatório, teto, cancelamento, Escape/foco, uso no alvo, repetição, evolução da reserva, saldo e recarga. Sem erros de console/requisição, sprites quebrados ou overflow horizontal. [Dados](balance/rare-candy-0.22.1/economy-and-combat.json), [navegador](balance/rare-candy-0.22.1/browser.json), [validação](../VALIDACAO.md).
+
+**Limites e próximas sugestões:** testes de navegador usam fixtures e visores emulados; combates usam IA e equipe fixa, sem estimar dificuldade humana ou a chance de completar toda a Liga. A política base de campanha continua sem negociar. Avaliar em sessões humanas a escolha entre cobertura por TM e +1 nível individual, mantendo o preço pedido até haver evidência para mudar. Schema 4, estoque/preço das TMs, RNG e standalone preservados; sem novas dependências ou artes.
+
 ## 0.22.0 — Mercado da Liga · 23/10/2026
 
 **Publicação:** [PR 28](https://github.com/erereck/pokebobo/pull/28) mergeada em `ccb37f5`, com CI da PR/main e GitHub Pages aprovados. No site público, os oito fluxos do mercado passaram em cada um dos quatro visores do Edge/Chromium: 32 verificações, incluindo cancelamentos, venda, aprendizado obrigatório, recarga e entrada na Elite 4 com a TM. Sem erros de console/requisições, sprites quebrados ou overflow horizontal. [Evidência pública](balance/market-0.22.0/production.json). A emulação não substitui uma sessão humana em aparelho físico; a recomendação de avaliar decisões de venda/cobertura permanece.

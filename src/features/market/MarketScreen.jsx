@@ -6,11 +6,14 @@ import { TmShop } from "./TmShop.jsx";
 import { SellPokemonDialog } from "./SellPokemonDialog.jsx";
 import { TeachTmDialog } from "./TeachTmDialog.jsx";
 import { formatMoney } from "./formatMoney.js";
+import { RareCandyOffer } from "./RareCandyOffer.jsx";
+import { RareCandyDialog } from "./RareCandyDialog.jsx";
 
 export function MarketScreen({ run, act }) {
   const [section, setSection] = useState("sell");
   const [saleId, setSaleId] = useState(null);
   const [tm, setTm] = useState(null);
+  const [candyOpen, setCandyOpen] = useState(false);
   const saleMon = [...run.party, ...(run.box || [])].find(
     (mon) => mon.id === saleId,
   );
@@ -29,7 +32,7 @@ export function MarketScreen({ run, act }) {
             Mercado da Liga<span>.</span>
           </h1>
           <p>
-            Transforme despedidas em novos golpes. A próxima batalha merece o
+            Transforme despedidas em golpes e níveis. A próxima batalha merece o
             seu melhor time.
           </p>
         </div>
@@ -41,7 +44,7 @@ export function MarketScreen({ run, act }) {
           <strong>{formatMoney(run.money || 0)}</strong>
         </div>
         <p>
-          Venda Pokémon para comprar TMs.
+          Venda Pokémon para comprar TMs e Rare Candy.
           <br />
           Sem gastar semanas.
         </p>
@@ -57,7 +60,7 @@ export function MarketScreen({ run, act }) {
           aria-pressed={section === "tms"}
           onClick={() => setSection("tms")}
         >
-          <Disc3 size={17} /> Comprar TMs
+          <Disc3 size={17} /> Comprar itens
         </button>
       </div>
       {run.notice && (
@@ -68,7 +71,10 @@ export function MarketScreen({ run, act }) {
       {section === "sell" ? (
         <PokemonSaleList run={run} onSell={setSaleId} />
       ) : (
-        <TmShop run={run} onChoose={setTm} />
+        <div className="market-inventory">
+          <RareCandyOffer run={run} onChoose={() => setCandyOpen(true)} />
+          <TmShop run={run} onChoose={setTm} />
+        </div>
       )}
       <footer className="market-exit">
         <button
@@ -96,6 +102,13 @@ export function MarketScreen({ run, act }) {
           run={run}
           act={act}
           onClose={() => setTm(null)}
+        />
+      )}
+      {candyOpen && (
+        <RareCandyDialog
+          run={run}
+          act={act}
+          onClose={() => setCandyOpen(false)}
         />
       )}
     </section>

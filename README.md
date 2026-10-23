@@ -1,6 +1,8 @@
-# Pokébobo — 0.22.0 · Mercado da Liga
+# Pokébobo — 0.22.1 · Mercado da Liga
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.22.1 acrescenta **Rare Candy por ₽ 700**, equivalente a 0,7 TM média, no balcão **Comprar itens** do Mercado da Liga. Escolha um Pokémon da equipe ou reserva e confirme a compra para ganhar +1 nível imediatamente. Pode repetir enquanto houver saldo; nível 100 fica bloqueado. Evoluções, novos golpes e TMs equipadas seguem as regras existentes.
 
 A 0.22.0 adiciona o **Mercado da Liga entre a oitava insígnia e a Elite 4**. Venda Pokémon da equipe/reserva e compre 12 TMs de uso único, com preços de ₽ 600 a ₽ 1.400. Nível e atributos da espécie determinam a venda; a amostra intermediária de nível 45 rende 1,304 TMs médias. Cada compra exige escolher um Pokémon compatível e, quando necessário, o golpe que será substituído. Só há cobrança ao concluir o aprendizado. [Como funciona e balanceamento](docs/MERCADO-DA-LIGA.md) · [Mercado no celular](docs/images/mercado-0.22-390.png) · [Aprendizado](docs/images/tm-0.22-celular.png).
 

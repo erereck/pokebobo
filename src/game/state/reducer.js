@@ -22,6 +22,7 @@ import { handleReorderParty } from "../actions/reorder-party.js";
 import { handleEvolutionChoice } from "../actions/evolution-choice.js";
 import { handleExploration } from "../actions/exploration.js";
 import { handleMarket } from "../actions/market.js";
+import { handleMarketCandy } from "../actions/market-candy.js";
 
 const handlers = {
   NEW: handleNew,
@@ -56,6 +57,7 @@ const handlers = {
   REORDER_PARTY: handleReorderParty,
   MARKET_SELL: handleMarket,
   MARKET_BUY_TM: handleMarket,
+  MARKET_BUY_CANDY: handleMarketCandy,
   MARKET_LEAVE: handleMarket,
 };
 export function reducer(state, action) {

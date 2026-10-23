@@ -24,3 +24,6 @@ export const MARKET_TMS = Object.freeze([
   { id: "thunderbolt", name: "Thunderbolt", type: "Electric", price: 1200 },
   { id: "earthquake", name: "Earthquake", type: "Ground", price: 1400 },
 ]);
+
+// ₽ 700 = 0,7 do preço médio das TMs (₽ 1.000).
+export const MARKET_RARE_CANDY = Object.freeze({ price: 700, levels: 1 });
