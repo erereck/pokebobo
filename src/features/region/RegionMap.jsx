@@ -2,13 +2,13 @@ import { Check, Trophy, MapPin } from "lucide-react";
 export function RegionMap({ run }) {
   const nodes = [
     ...run.route,
-    { id: "league", name: "Liga Pokémon", region: "Desafio final" },
+    { id: "league", name: run.phase === "market" ? "Mercado da Liga" : "Liga Pokémon", region: "Mercado e desafio final" },
   ].map((n, i) => {
     const row = Math.floor(i / 3),
       column = row % 2 ? 2 - (i % 3) : i % 3;
     return { ...n, index: i, x: 16 + column * 34, y: 11 + row * 25 };
   });
-  const current = run.inLeague ? 10 : run.position;
+  const current = run.inLeague || run.phase === "market" ? 10 : run.position;
   return (
     <div className="region-map" aria-label="Percurso da região">
       <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">

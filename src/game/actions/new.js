@@ -47,6 +47,8 @@ export function handleNew(s, action, state) {
       badges: 0,
       balls: CAMPAIGN_RULES.initialBalls,
       berries: CAMPAIGN_RULES.initialBerryKits,
+      money: 0,
+      marketPurchases: [],
       leagueIndex: 0,
       league: [],
       journal: [],

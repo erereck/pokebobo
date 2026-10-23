@@ -63,11 +63,11 @@ export function handleResult(s, action, state) {
           ...sample(r, ELITES, CAMPAIGN_RULES.eliteCount),
           pick(r, CHAMPIONS),
         ];
-        r.inLeague = true;
-        r.phase = "career";
+        r.inLeague = false;
+        r.phase = "market";
         note(
           r,
-          "Oito insígnias. Os portões da Liga se abriram. Cinco batalhas separam você do título.",
+          "Oito insígnias! O Mercado da Liga está aberto. Venda Pokémon e ensine TMs antes da Elite 4.",
         );
       } else advance(r);
     } else if (kind === "league") {

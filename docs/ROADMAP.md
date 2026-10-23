@@ -1,5 +1,17 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## 0.22.0 — Mercado da Liga · 23/10/2026
+
+**Pedido:** uma fase entre o oitavo ginásio e a Elite 4, com venda de Pokémon e compra de TMs aplicadas imediatamente; valor maior para Pokémon melhores e aproximadamente 1,3 TMs por Pokémon intermediário.
+
+**Entrega e motivo:** a vitória final de ginásio abre `market` antes de liberar a Liga. A tela usa os componentes e tokens existentes, com balcões de venda/compra, avaliação por espécie/nível, saldo e confirmação nominal. As 12 ofertas têm preços entre ₽ 600 e ₽ 1.400 e uma unidade por jornada. Compra seleciona um alvo compatível e um golpe a substituir, quando necessário; aplicação, débito e consumo são atômicos. Último Pokémon ativo protegido e coleção preservada. Organização da equipe/reserva funciona durante a preparação. TMs sobrevivem ao aprendizado automático entre vitórias.
+
+**Medições:** amostra de 12 espécies intermediárias no nível 45 vende por ₽ 1.304,17 em média, contra preço médio de TM de ₽ 1.000: **1,304 TMs/venda**. Nos níveis 35/55: 1,104/1,488. Foram 44 combates reais pareados contra os 11 membros possíveis da Elite, equipe fixa nos níveis 45/50: 11/22 vitórias antes, 13/22 após vender duas reservas e ensinar duas TMs. Não representa taxa de vitória humana ou campanha completa. [Dados](balance/market-0.22.0/economy-and-combat.json).
+
+**Verificação:** `npm run verify`, `npm run balance:audit` e `npm run market:audit`; regressões para transações inválidas/duplicadas, alvo, substituição, estoque, reserva, último ativo, crescimento/evolução, bloqueios de fase e backup. Navegador Edge em quatro visores: cancelar/vender/comprar/ensinar/recarregar e entrar na Liga, sem erros de console, sprites quebrados ou overflow horizontal. [Evidências e limites](../VALIDACAO.md), [funcionamento](MERCADO-DA-LIGA.md).
+
+**Limites e próximas sugestões:** o simulador de campanha base passa sem negociar; o estudo específico isola duas compras. Testar decisões humanas de vender integrantes ativos, guardar reservas e escolher cobertura antes da Liga; só ajustar preços com evidência. Jornadas já na Liga continuam; schema 4 e replays existentes preservados. Sem novas artes, novas dependências ou standalone.
+
 ## 0.21.1 — Evolução no ritmo · 11/10/2026
 
 **Publicação:** PR 27 mergeada com CI aprovado; CI main e Pages verdes. Oito registros/14 fluxos aprovados no site público em Edge/WebKit, treze hashes iguais ao build. [Evidência](balance/production-validation-0.21.1.json).

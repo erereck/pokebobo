@@ -59,7 +59,8 @@ export function learnGrowthMoves(r, before, after) {
   ensureMoveLearningState(r);
 
   if (r.moveLearningMode === "automatic") {
-    after.moves = movesFor(after.name, after.level);
+    const taught = (after.tmMoves || []).filter((id) => after.moves.includes(id));
+    after.moves = [...taught, ...movesFor(after.name, after.level).filter((id) => !taught.includes(id))].slice(0, 4);
     r.pendingMoveChoices = r.pendingMoveChoices.filter(
       (choice) => choice.monId !== after.id,
     );

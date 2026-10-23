@@ -144,6 +144,8 @@ function normalizeRun(run, fallbackMoveLearningMode = "manual") {
       Math.trunc(number(run.berries, CAMPAIGN_RULES.initialBerryKits)),
     ),
     leagueIndex: Math.max(0, Math.trunc(number(run.leagueIndex))),
+    money: Math.max(0, Math.trunc(number(run.money))),
+    marketPurchases: list(run.marketPurchases),
     league: list(run.league),
     journal: list(run.journal),
     notice: typeof run.notice === "string" ? run.notice : "",

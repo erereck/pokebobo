@@ -1,5 +1,14 @@
 # Onde editar
 
+## Mercado da Liga — 0.22.0
+
+- Abertura/saída: `game/actions/result.js`, `actions/market.js` e `state/reducer.js`; fase `market` precede `inLeague`.
+- Fórmula/ofertas: `game/config/market.js`, seletores em `game/market/market.js`. `npm run market:audit` mede valores e 44 combates reais pareados.
+- Compatibilidade: `scripts/market-catalog.mjs` → `game/data/marketCompatibility.json`; regenerar com `npm run market:catalog`. `check` detecta arquivo desatualizado.
+- Tela/janelas: `features/market/`, `app/RunContent.jsx`, `styles/features/market.css`; reutilizar primitivas/fontes/tokens existentes.
+- Golpes comprados: `mon.tmMoves` em `actions/market.js` e `pokemon/moveLearning.js`; esquecimento manual em `actions/move-choice.js`. Schema aditivo 4, incluindo fase do backup em `persistence/importSave.js`.
+- Regressões: `tests/market.test.js`, `tests/league.test.js`; regras/medição em [MERCADO-DA-LIGA.md](MERCADO-DA-LIGA.md).
+
 ## Na palma da mão — 0.20.1
 
 - Área visível: `app/hooks/useVisualViewport.js`, chamado por `App`; altura/deslocamento em variáveis CSS, limpeza de eventos e zoom nativo. Tokens de áreas seguras em `styles/foundations/tokens.css`; geometria das janelas em `styles/components/dialogs.css`.

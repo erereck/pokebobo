@@ -5,6 +5,7 @@ import { Modal } from "../../components/ui/Modal.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
 import { MoveSummary } from "./MoveSummary.jsx";
+import { moveGuide } from "../battle/moveGuide.js";
 
 function findMon(run, id) {
   return (
@@ -76,7 +77,7 @@ export function MoveLearnDialog({ run, act }) {
         {mon.moves.map((id) => {
           const move = currentData?.moves.find(
             (candidate) => candidate.id === id,
-          );
+          ) || moveGuide(id);
           return (
             <button
               className="forget-move-button"

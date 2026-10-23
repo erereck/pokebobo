@@ -28,6 +28,7 @@ const phases = new Set([
   "draft",
   "ready",
   "career",
+  "market",
   "exploration",
   "encounter",
   "capture",

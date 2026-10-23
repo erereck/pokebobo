@@ -1,4 +1,5 @@
 import catalog from "../catalog.json" with { type: "json" };
+import { MARKET_TMS } from "../config/market.js";
 import { beginBattle } from "../battle/beginBattle.js";
 import { note } from "../career/journal.js";
 import {
@@ -13,7 +14,8 @@ function findMon(r, id) {
 }
 
 function moveName(species, id) {
-  return catalog[species]?.moves.find((move) => move.id === id)?.name || id;
+  return catalog[species]?.moves.find((move) => move.id === id)?.name ||
+    MARKET_TMS.find((tm) => tm.id === id)?.name || id;
 }
 
 export function handleMoveChoice(s, action, state) {
@@ -45,6 +47,7 @@ export function handleMoveChoice(s, action, state) {
       if (index < 0) return state;
       const forgotten = mon.moves[index];
       mon.moves[index] = pending.moveId;
+      if (mon.tmMoves) mon.tmMoves = mon.tmMoves.filter((id) => id !== forgotten);
       note(
         r,
         `${mon.name} esqueceu ${moveName(mon.name, forgotten)} e aprendeu ${moveName(pending.species, pending.moveId)}!`,
