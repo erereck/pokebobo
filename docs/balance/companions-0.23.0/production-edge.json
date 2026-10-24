@@ -1,0 +1,509 @@
+{
+  "url": "https://erereck.github.io/pokebobo/",
+  "engine": "edge",
+  "method": "Fixtures de partida pronta/campanha/Mercado; comandos e combates reais pela UI, visores emulados. Equipe nível 100 verifica integração, não dificuldade. Sem envio a apps sociais; download PNG real.",
+  "cases": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "escolha do rival",
+      "flows": 3,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 1280,
+            "scrollWidth": 1280
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "revanche e legado",
+      "flows": 15,
+      "commands": 4,
+      "cardHash": "523b152898731a6df137342f3523f9006866cd5af9bc7385226ce3f0192b7041",
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 1280,
+            "scrollWidth": 1280
+          },
+          {
+            "element": "DIALOG",
+            "width": 908,
+            "scrollWidth": 908
+          },
+          {
+            "element": "DIALOG",
+            "width": 968,
+            "scrollWidth": 968
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "Mercado e Liga",
+      "flows": 12,
+      "commands": 4,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 1280,
+            "scrollWidth": 1280
+          },
+          {
+            "element": "MAIN",
+            "width": 870,
+            "scrollWidth": 870
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "memorial Nuzlocke",
+      "flows": 3,
+      "commands": 6,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 1280,
+            "scrollWidth": 1280
+          },
+          {
+            "element": "DIALOG",
+            "width": 908,
+            "scrollWidth": 908
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "scenario": "Focus Sash e feito de 1 HP",
+      "flows": 3,
+      "commands": 2,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 1280,
+            "scrollWidth": 1280
+          },
+          {
+            "element": "DIALOG",
+            "width": 908,
+            "scrollWidth": 908
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scenario": "escolha do rival",
+      "flows": 3,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 390,
+            "scrollWidth": 390
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scenario": "revanche e legado",
+      "flows": 15,
+      "commands": 4,
+      "cardHash": "523b152898731a6df137342f3523f9006866cd5af9bc7385226ce3f0192b7041",
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 390,
+            "scrollWidth": 390
+          },
+          {
+            "element": "DIALOG",
+            "width": 354,
+            "scrollWidth": 354
+          },
+          {
+            "element": "DIALOG",
+            "width": 354,
+            "scrollWidth": 354
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scenario": "Mercado e Liga",
+      "flows": 12,
+      "commands": 4,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 390,
+            "scrollWidth": 390
+          },
+          {
+            "element": "MAIN",
+            "width": 362,
+            "scrollWidth": 362
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scenario": "memorial Nuzlocke",
+      "flows": 3,
+      "commands": 6,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 390,
+            "scrollWidth": 390
+          },
+          {
+            "element": "DIALOG",
+            "width": 354,
+            "scrollWidth": 354
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scenario": "Focus Sash e feito de 1 HP",
+      "flows": 3,
+      "commands": 2,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 390,
+            "scrollWidth": 390
+          },
+          {
+            "element": "DIALOG",
+            "width": 354,
+            "scrollWidth": 354
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scenario": "escolha do rival",
+      "flows": 3,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 320,
+            "scrollWidth": 320
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scenario": "revanche e legado",
+      "flows": 15,
+      "commands": 4,
+      "cardHash": "523b152898731a6df137342f3523f9006866cd5af9bc7385226ce3f0192b7041",
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 320,
+            "scrollWidth": 320
+          },
+          {
+            "element": "DIALOG",
+            "width": 284,
+            "scrollWidth": 284
+          },
+          {
+            "element": "DIALOG",
+            "width": 284,
+            "scrollWidth": 284
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scenario": "Mercado e Liga",
+      "flows": 12,
+      "commands": 4,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 320,
+            "scrollWidth": 320
+          },
+          {
+            "element": "MAIN",
+            "width": 294,
+            "scrollWidth": 294
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scenario": "memorial Nuzlocke",
+      "flows": 3,
+      "commands": 6,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 320,
+            "scrollWidth": 320
+          },
+          {
+            "element": "DIALOG",
+            "width": 284,
+            "scrollWidth": 284
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "scenario": "Focus Sash e feito de 1 HP",
+      "flows": 3,
+      "commands": 2,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 320,
+            "scrollWidth": 320
+          },
+          {
+            "element": "DIALOG",
+            "width": 284,
+            "scrollWidth": 284
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 375
+      },
+      "scenario": "escolha do rival",
+      "flows": 3,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 844,
+            "scrollWidth": 844
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 375
+      },
+      "scenario": "revanche e legado",
+      "flows": 15,
+      "commands": 4,
+      "cardHash": "523b152898731a6df137342f3523f9006866cd5af9bc7385226ce3f0192b7041",
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 844,
+            "scrollWidth": 844
+          },
+          {
+            "element": "DIALOG",
+            "width": 808,
+            "scrollWidth": 808
+          },
+          {
+            "element": "DIALOG",
+            "width": 808,
+            "scrollWidth": 808
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 375
+      },
+      "scenario": "Mercado e Liga",
+      "flows": 12,
+      "commands": 4,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 844,
+            "scrollWidth": 844
+          },
+          {
+            "element": "MAIN",
+            "width": 818,
+            "scrollWidth": 818
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 375
+      },
+      "scenario": "memorial Nuzlocke",
+      "flows": 3,
+      "commands": 6,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 844,
+            "scrollWidth": 844
+          },
+          {
+            "element": "DIALOG",
+            "width": 808,
+            "scrollWidth": 808
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 375
+      },
+      "scenario": "Focus Sash e feito de 1 HP",
+      "flows": 3,
+      "commands": 2,
+      "geometry": {
+        "boxes": [
+          {
+            "element": "HTML",
+            "width": 844,
+            "scrollWidth": 844
+          },
+          {
+            "element": "DIALOG",
+            "width": 808,
+            "scrollWidth": 808
+          }
+        ],
+        "broken": []
+      },
+      "errors": []
+    }
+  ],
+  "totalFlows": 144,
+  "passed": true
+}
