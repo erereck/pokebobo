@@ -23,6 +23,9 @@ import { handleEvolutionChoice } from "../actions/evolution-choice.js";
 import { handleExploration } from "../actions/exploration.js";
 import { handleMarket } from "../actions/market.js";
 import { handleMarketCandy } from "../actions/market-candy.js";
+import { handleEquipment } from "../actions/equipment.js";
+import { handleRival } from "../actions/rival.js";
+import { handleNickname } from "../actions/nickname.js";
 
 const handlers = {
   NEW: handleNew,
@@ -59,6 +62,12 @@ const handlers = {
   MARKET_BUY_TM: handleMarket,
   MARKET_BUY_CANDY: handleMarketCandy,
   MARKET_LEAVE: handleMarket,
+  EQUIP_ITEM: handleEquipment,
+  UNEQUIP_ITEM: handleEquipment,
+  MARKET_BUY_ITEM: handleEquipment,
+  RIVAL_CHOOSE: handleRival,
+  RIVAL_CHALLENGE: handleRival,
+  POKEMON_NICKNAME: handleNickname,
 };
 export function reducer(state, action) {
   const r = state.run;

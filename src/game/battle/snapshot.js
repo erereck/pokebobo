@@ -1,5 +1,6 @@
 import { presentationEvents } from "./presentationEvents.js";
 import { Dex } from "@pkmn/sim";
+import { battleFeats } from "../heroes/battleFeats.js";
 import {
   publicMonConditions,
   publicFieldConditions,
@@ -10,6 +11,7 @@ export function battleSnapshot(b) {
   const mon = (p) => ({
     id: p.name,
     name: p.species.name,
+    nickname: p.side.id === "p1" ? b.pokeboboNicknames?.[p.name] || "" : "",
     shiny: p.set.shiny === true,
     hp: p.hp,
     maxhp: p.maxhp,
@@ -25,6 +27,7 @@ export function battleSnapshot(b) {
   return {
     turn: b.turn,
     ended: b.ended,
+    ...(b.ended ? { feats: battleFeats(b) } : {}),
     winner: b.winner,
     player: b.p1.pokemon.map(mon),
     enemy: b.p2.pokemon.map(mon),

@@ -9,6 +9,9 @@ export function startBattle(spec) {
     p1: { name: "Você", team: spec.player.map(battleSet) },
     p2: { name: spec.name, team: spec.enemy.map(battleSet) },
   });
+  battle.pokeboboNicknames = Object.fromEntries(
+    spec.player.map((mon) => [mon.id, mon.nickname || ""]),
+  );
   if (battle.requestState === "teampreview")
     battle.makeChoices("team 123456", "team 123456");
   settle(battle);

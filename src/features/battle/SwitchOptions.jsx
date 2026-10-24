@@ -1,5 +1,6 @@
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { ArrowRight } from "lucide-react";
+import { pokemonName } from "../../game/heroes/heroes.js";
 
 export function SwitchOptions({ snap, locked, move }) {
   return (
@@ -12,7 +13,7 @@ export function SwitchOptions({ snap, locked, move }) {
         >
           <Sprite name={p.name} shiny={p.shiny} />
           <span>
-            <b>{p.name}</b>
+            <b>{pokemonName(p)}</b>
             <small>
               {p.fainted ? "Fora de combate" : `${p.hp} / ${p.maxhp} HP`}
             </small>

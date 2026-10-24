@@ -1,4 +1,6 @@
 import { note } from "../career/journal.js";
+import { returnEquipment } from "../equipment/equipment.js";
+import { heroRecord } from "../heroes/heroes.js";
 import {
   canSellPokemon,
   marketIsOpen,
@@ -20,6 +22,8 @@ export function handleMarket(s, action, state) {
     const mon = source[index];
     const price = pokemonSalePrice(mon);
     if (!price) return state;
+    heroRecord(r, mon, "sold");
+    returnEquipment(r, mon);
     source.splice(index, 1);
     r.money = (r.money || 0) + price;
     note(

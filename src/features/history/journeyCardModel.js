@@ -14,6 +14,7 @@ export function journeyMons(names, levels = []) {
     .map((mon, index) => ({
       name: typeof mon === "string" ? mon : mon?.name,
       shiny: mon?.shiny === true,
+      ...(mon?.nickname ? { nickname: mon.nickname } : {}),
       level: Math.min(100, integer(recordedLevels[index] ?? mon?.level)),
     }))
     .filter((mon) => typeof mon.name === "string" && mon.name);
@@ -63,6 +64,7 @@ export function journeyCardModel(run) {
     opponent: String(run.opponent || "").slice(0, 48),
     challenge: regionChallengeOf(run),
     legacyChallenge: !run.challengeStartRng,
+    hero: run.hero || null,
   };
 }
 

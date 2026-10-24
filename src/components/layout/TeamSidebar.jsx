@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Sprite } from "../pokemon/Sprite.jsx";
 import { BadgeStrip } from "../progress/BadgeStrip.jsx";
 import { ChevronRight, GripVertical, Radio } from "lucide-react";
+import { pokemonName } from "../../game/heroes/heroes.js";
 
 export function TeamSidebar({
   run,
@@ -16,7 +17,8 @@ export function TeamSidebar({
   const battleSnap = battle?.snap || null;
   const activeBattleId = battleSnap?.active?.id || null;
   const inBattle = run.phase === "battle" && Boolean(battleSnap);
-  const canReorder = ["career", "market"].includes(run.phase) && run.party.length > 1;
+  const canReorder =
+    ["career", "market"].includes(run.phase) && run.party.length > 1;
 
   const liveMon = (id) =>
     battleSnap?.player?.find((candidate) => candidate.id === id) || null;
@@ -156,7 +158,7 @@ export function TeamSidebar({
               </span>
               <Sprite name={m.name} shiny={m.shiny} />
               <span>
-                <strong>{m.name}</strong>
+                <strong>{pokemonName(m)}</strong>
                 <small>
                   {inBattle && live
                     ? live.fainted

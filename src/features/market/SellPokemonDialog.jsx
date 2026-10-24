@@ -2,6 +2,8 @@ import { Modal } from "../../components/ui/Modal.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { canSellPokemon, pokemonSalePrice } from "../../game/market/market.js";
 import { formatMoney } from "./formatMoney.js";
+import { heldItem, itemName } from "../../game/equipment/equipment.js";
+import { pokemonName } from "../../game/heroes/heroes.js";
 
 export function SellPokemonDialog({ mon, run, act, onClose }) {
   const price = pokemonSalePrice(mon);
@@ -14,13 +16,19 @@ export function SellPokemonDialog({ mon, run, act, onClose }) {
           <span className="section-label">
             {reserve ? "RESERVA" : "EQUIPE"} · NV. {mon.level}
           </span>
-          <h3>{mon.name}</h3>
+          <h3>{pokemonName(mon)}</h3>
         </div>
       </div>
       <p>
-        {mon.name} sairá da sua {reserve ? "reserva" : "equipe"}{" "}
+        {pokemonName(mon)} sairá da sua {reserve ? "reserva" : "equipe"}{" "}
         definitivamente. O registro na Pokédex continua com você.
       </p>
+      {heldItem(mon.item) && (
+        <p>
+          {itemName(mon.item)} volta para sua mochila. Os feitos desse parceiro
+          continuam no registro da jornada.
+        </p>
+      )}
       <dl className="market-receipt">
         <div>
           <dt>Você recebe</dt>

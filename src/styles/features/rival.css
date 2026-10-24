@@ -1,0 +1,142 @@
+.rival-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--lcd-line);
+  border-left: 4px solid var(--amber);
+  border-radius: 8px;
+  background: var(--lcd-bright);
+}
+.rival-card > .sprite {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+}
+.rival-card > div {
+  min-width: 0;
+}
+.rival-card h3 {
+  font-size: 18px;
+  margin: 4px 0;
+}
+.rival-card p {
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+.rival-card > .button {
+  margin-left: auto;
+  flex-shrink: 0;
+  min-height: 44px;
+}
+.rival-card .section-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+}
+.rival-introduction {
+  border-top: 1px solid var(--lcd-line);
+  margin-top: 16px;
+  padding-top: 16px;
+  text-align: left;
+}
+.rival-introduction h3 {
+  font: 700 16px var(--display);
+}
+.rival-profiles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  margin: 12px 0;
+}
+.rival-profiles button {
+  display: grid;
+  gap: 4px;
+  min-height: 48px;
+  padding: 8px 4px;
+  border: 1px solid var(--lcd-line);
+  border-radius: 6px;
+  background: var(--lcd);
+  color: var(--ink);
+}
+.rival-profiles strong {
+  font: 700 14px var(--display);
+}
+.rival-profiles small {
+  font-size: 10px;
+}
+.rival-profiles [aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--lcd-bright);
+  border-color: var(--ink);
+}
+.rival-intro-copy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rival-intro-copy p {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  margin: 0;
+}
+.rival-introduction > small {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 11px;
+  margin-top: 8px;
+}
+.rival-dialog .rival-quote {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.rival-roster {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 20px 0;
+}
+.rival-roster > div {
+  display: grid;
+  place-items: center;
+  align-content: start;
+  gap: 4px;
+  text-align: center;
+  min-width: 0;
+}
+.rival-roster .sprite {
+  width: 64px;
+  height: 64px;
+}
+.rival-roster b {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.rival-roster small {
+  color: var(--ink-soft);
+  font-size: 11px;
+}
+.rival-stakes {
+  border-left: 3px solid var(--danger);
+  padding-left: 12px;
+  line-height: 1.6;
+}
+.rival-stakes b {
+  display: block;
+  color: var(--danger);
+}
+.rival-dialog .new-move-card p {
+  margin: 8px 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.rival-dialog .new-move-card small {
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+.rival-profiles button:hover:not([aria-pressed="true"]),
+.equipment-choices button:hover:not(:disabled) {
+  background: var(--lcd-dim);
+}

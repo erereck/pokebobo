@@ -7,6 +7,7 @@ import { tmEligibility } from "../../game/market/market.js";
 import { MoveSummary } from "../team/MoveSummary.jsx";
 import { moveGuide } from "../battle/moveGuide.js";
 import { formatMoney } from "./formatMoney.js";
+import { pokemonName } from "../../game/heroes/heroes.js";
 
 export function TeachTmDialog({ tm, run, act, onClose }) {
   const [monId, setMonId] = useState(null);
@@ -56,9 +57,10 @@ export function TeachTmDialog({ tm, run, act, onClose }) {
               >
                 <Sprite name={candidate.name} shiny={candidate.shiny} />
                 <span>
-                  <strong>{candidate.name}</strong>
+                  <strong>{pokemonName(candidate)}</strong>
                   <small>
-                    Nv. {candidate.level} ·{" "}
+                    {candidate.nickname ? `${candidate.name} · ` : ""}Nv.{" "}
+                    {candidate.level} ·{" "}
                     {run.box?.some((m) => m.id === candidate.id)
                       ? "Reserva"
                       : "Equipe"}
@@ -77,7 +79,7 @@ export function TeachTmDialog({ tm, run, act, onClose }) {
           <div className="market-partner">
             <Sprite name={mon.name} shiny={mon.shiny} />
             <div>
-              <h3>{mon.name}</h3>
+              <h3>{pokemonName(mon)}</h3>
               <small>
                 Nv. {mon.level} · Recebe {tm.name}
               </small>

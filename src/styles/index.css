@@ -6,6 +6,8 @@
 @import "./features/welcome.css";
 @import "./features/career.css";
 @import "./features/market.css";
+@import "./features/rival.css";
+@import "./features/equipment.css";
 @import "./features/events.css";
 @import "./features/draft.css";
 @import "./features/battle.css";
@@ -13,6 +15,7 @@
 @import "./features/backups.css";
 @import "./features/offline.css";
 @import "./features/team.css";
+@import "./features/heroes.css";
 @import "./features/secondary.css";
 @import "./features/equipe-viva.css";
 @import "./features/adventure.css";
@@ -40,5 +43,6 @@
 @import "./responsive/pokedex/pixel-screens.css";
 @import "./responsive/pokedex/panel-fit.css";
 @import "./responsive/pokedex/mobile-ergonomics.css";
+@import "./responsive/pokedex/journey-additions.css";
 @import "./features/moments.css";
 @import "./components/interface-motion.css";

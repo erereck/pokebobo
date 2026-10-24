@@ -1,3 +1,3 @@
 import packageInfo from "../../package.json" with { type: "json" };
 export const VERSION = packageInfo.version;
-export const RELEASE_NAME = "Mercado da Liga";
+export const RELEASE_NAME = "Companheiros de jornada";

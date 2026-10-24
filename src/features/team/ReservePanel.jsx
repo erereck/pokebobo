@@ -1,6 +1,7 @@
 import { Archive, ArrowDownToLine, ArrowUpFromLine } from "lucide-react";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { CAMPAIGN_RULES } from "../../game/config/campaign.js";
+import { pokemonName } from "../../game/heroes/heroes.js";
 export function ReservePanel({ run, mon, act, onSelect }) {
   const box = run.box || [];
   const canManage = ["career", "market"].includes(run.phase);
@@ -39,7 +40,7 @@ export function ReservePanel({ run, mon, act, onSelect }) {
               ? "O último Pokémon precisa ficar na equipe"
               : !canManage
                 ? "Mexa na reserva entre batalhas"
-                : `Mandar ${mon.name} para a reserva`}
+                : `Mandar ${pokemonName(mon)} para a reserva`}
         </button>
       )}
 
@@ -48,7 +49,7 @@ export function ReservePanel({ run, mon, act, onSelect }) {
           <article className="reserve-card" key={reserveMon.id}>
             <Sprite name={reserveMon.name} shiny={reserveMon.shiny} />
             <div>
-              <strong>{reserveMon.name}</strong>
+              <strong>{pokemonName(reserveMon)}</strong>
               <small>Lv. {reserveMon.level}</small>
             </div>
             <button
@@ -73,7 +74,7 @@ export function ReservePanel({ run, mon, act, onSelect }) {
               {run.party.length < CAMPAIGN_RULES.partySize
                 ? "Trazer"
                 : mon
-                  ? `Trocar por ${mon.name}`
+                  ? `Trocar por ${pokemonName(mon)}`
                   : "Selecione alguém"}
             </button>
           </article>

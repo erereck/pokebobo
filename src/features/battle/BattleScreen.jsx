@@ -11,6 +11,7 @@ import { BattleBench } from "./BattleBench.jsx";
 import { MoveOptions } from "./MoveOptions.jsx";
 import { SwitchOptions } from "./SwitchOptions.jsx";
 import { BattleNotebook } from "./BattleNotebook.jsx";
+import { pokemonName } from "../../game/heroes/heroes.js";
 
 export function BattleScreen({
   run: r,
@@ -86,7 +87,9 @@ export function BattleScreen({
               ? "GINÁSIO"
               : r.battle.kind === "league"
                 ? "LIGA"
-                : "NO CAMINHO"}
+                : r.battle.kind === "rival"
+                  ? "REVANCHE"
+                  : "NO CAMINHO"}
             {r.battle.boost ? " · LÍDER +" + r.battle.boost : ""}
           </span>
           <h1>
@@ -121,7 +124,7 @@ export function BattleScreen({
                 ? "Quem continua?"
                 : switching
                   ? "Quem entra?"
-                  : current.name + " vai…"}
+                  : pokemonName(current) + " vai…"}
           </h2>
           <div className="battle-tools">
             {locked ? (

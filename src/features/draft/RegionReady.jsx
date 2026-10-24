@@ -2,6 +2,7 @@ import { RouteList } from "../region/RouteList.jsx";
 import { RouteCover } from "../../components/scenery/RouteCover.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { ArrowRight } from "lucide-react";
+import { RivalIntroduction } from "../rival/RivalIntroduction.jsx";
 
 export function RegionReady({ r, act }) {
   return (
@@ -23,6 +24,7 @@ export function RegionReady({ r, act }) {
             <br />
             Tudo o que acontecer começa aqui.
           </p>
+          <RivalIntroduction run={r} act={act} />
           <button
             className="button primary full"
             onClick={() =>

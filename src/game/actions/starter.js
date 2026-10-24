@@ -5,6 +5,7 @@ import { sample } from "../random/sample.js";
 import { VILLAGES } from "../data/villages.js";
 import { registerPokemon } from "../pokemon/collection.js";
 import { challengeRoute } from "../world/regionChallenge.js";
+import { createRival } from "../rival/rival.js";
 
 export function handleStarter(s, action, state) {
   let r = s.run;
@@ -17,6 +18,7 @@ export function handleStarter(s, action, state) {
       makeMon(action.name, PROGRESSION.initialLevel, "mon0", rollShiny(r)),
     ];
     registerPokemon(r, r.party[0], "starter");
+    r.rival = createRival(r, action.name);
     r.phase = "draft";
     r.offers = sample(r, VILLAGES, 3).map((x) => x.id);
     if (r.challenge) {

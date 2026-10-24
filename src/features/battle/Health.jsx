@@ -1,5 +1,6 @@
 import { ShinyMark } from "../../components/pokemon/ShinyMark.jsx";
 import { Hourglass } from "lucide-react";
+import { pokemonName } from "../../game/heroes/heroes.js";
 
 export function Health({ mon: m, future }) {
   const ratio = Math.max(0, Math.min(1, m.hp / m.maxhp));
@@ -7,7 +8,7 @@ export function Health({ mon: m, future }) {
     <div className="health-card">
       <div>
         <strong>
-          {m.name} <ShinyMark shiny={m.shiny} />
+          {pokemonName(m)} <ShinyMark shiny={m.shiny} />
         </strong>
         <span>NV. {m.level}</span>
       </div>

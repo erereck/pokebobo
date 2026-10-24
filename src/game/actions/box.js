@@ -1,5 +1,6 @@
 import { CAMPAIGN_RULES } from "../config/campaign.js";
 import { note } from "../career/journal.js";
+import { heldItem } from "../equipment/equipment.js";
 
 function ensureBox(r) {
   if (!Array.isArray(r.box)) r.box = [];
@@ -21,14 +22,15 @@ export function handleBox(s, action, state) {
     )
       return state;
     const [mon] = r.party.splice(partyIndex, 1);
-    r.box.push({ ...mon, item: "" });
+    r.box.push({ ...mon, item: heldItem(mon.item) ? mon.item : "" });
     note(r, `${mon.name} foi para a reserva. Continua treinando com a equipe.`);
     return s;
   }
 
   if (action.type === "BOX_TO_PARTY") {
     const boxIndex = r.box.findIndex((mon) => mon.id === action.id);
-    if (boxIndex < 0 || r.party.length >= CAMPAIGN_RULES.partySize) return state;
+    if (boxIndex < 0 || r.party.length >= CAMPAIGN_RULES.partySize)
+      return state;
     const [mon] = r.box.splice(boxIndex, 1);
     r.party.push(mon);
     note(r, `${mon.name} voltou da reserva para a equipe.`);
@@ -41,7 +43,13 @@ export function handleBox(s, action, state) {
   const partyMon = r.party[partyIndex];
   const boxMon = r.box[boxIndex];
   r.party[partyIndex] = boxMon;
-  r.box[boxIndex] = { ...partyMon, item: "" };
-  note(r, `${boxMon.name} entrou na equipe. ${partyMon.name} ficou na reserva.`);
+  r.box[boxIndex] = {
+    ...partyMon,
+    item: heldItem(partyMon.item) ? partyMon.item : "",
+  };
+  note(
+    r,
+    `${boxMon.name} entrou na equipe. ${partyMon.name} ficou na reserva.`,
+  );
   return s;
 }

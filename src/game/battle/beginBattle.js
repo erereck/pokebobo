@@ -9,6 +9,7 @@ import { random } from "../random/random.js";
 import { note } from "../career/journal.js";
 import { gymChallenge } from "../selectors/gymChallenge.js";
 import { ensureMoveLearningState } from "../pokemon/moveLearning.js";
+import { rivalStage, rivalProfile, rivalTeam } from "../rival/rival.js";
 
 export function beginBattle(r, kind) {
   ensureMoveLearningState(r);
@@ -29,7 +30,13 @@ export function beginBattle(r, kind) {
     source = "",
     levels,
     boost = 0;
-  if (kind === "gym") {
+  const duel = kind === "rival" ? rivalStage(r) : null;
+  if (kind === "rival" && !duel) return;
+  if (kind === "rival") {
+    name = `Rival ${rivalProfile(r).name}`;
+    roster = [];
+    source = "Revanche da jornada";
+  } else if (kind === "gym") {
     const c = city(r);
     name = c.leader;
     roster = c.team;
@@ -49,7 +56,7 @@ export function beginBattle(r, kind) {
     name = pick(r, [
       "Treinadora Lia",
       "Mochileiro Caio",
-      "Rival Nico",
+      "Pesquisador Rui",
       "Treinadora Bia",
     ]);
     roster = sample(r, POOLS[city(r).biome], r.badges > 3 ? 3 : 2);
@@ -57,19 +64,22 @@ export function beginBattle(r, kind) {
     if (r.pendingEventBattleName) name = r.pendingEventBattleName;
     r.pendingEventBattleName = null;
   }
-  const enemy = roster.map((n, i) =>
-    makeMon(
-      n,
-      levels?.[i] ??
-        level + (i === roster.length - 1 ? PROGRESSION.aceBonus : 0),
-      `foe${i}`,
-    ),
-  );
+  const enemy = duel
+    ? rivalTeam(r, duel)
+    : roster.map((n, i) =>
+        makeMon(
+          n,
+          levels?.[i] ??
+            level + (i === roster.length - 1 ? PROGRESSION.aceBonus : 0),
+          `foe${i}`,
+        ),
+      );
   r.battle = {
     kind,
     name,
     source,
     boost,
+    ...(duel ? { rivalStage: duel.badges, rivalReward: duel.reward } : {}),
     enemy,
     player: structuredClone(r.party),
     seed: Array.from(

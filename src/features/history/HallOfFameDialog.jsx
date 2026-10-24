@@ -4,6 +4,7 @@ import { ShareJourneyDialog } from "./ShareJourneyDialog.jsx";
 import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { Modal } from "../../components/ui/Modal.jsx";
 import { cx } from "../../shared/classNames.js";
+import { JourneyLegacy } from "../heroes/JourneyLegacy.jsx";
 
 const MODE_LABELS = {
   normal: "Clássico",
@@ -18,6 +19,7 @@ function monsOf(names, levels) {
     .map((mon, index) => ({
       name: typeof mon === "string" ? mon : mon?.name,
       shiny: mon?.shiny === true,
+      nickname: mon?.nickname || "",
       level:
         levels?.[index] ?? (typeof mon === "object" && mon ? mon.level : null),
     }))
@@ -42,7 +44,9 @@ function MonStrip({ mons }) {
   return mons.map((mon, monIndex) => (
     <div key={`${mon.name}-${monIndex}`}>
       <Sprite name={mon.name} shiny={mon.shiny} />
-      <small>{mon.level ? `Lv.${mon.level}` : mon.name}</small>
+      <small>
+        {mon.nickname || (mon.level ? `Lv.${mon.level}` : mon.name)}
+      </small>
     </div>
   ));
 }
@@ -138,6 +142,7 @@ export function HallOfFameDialog({ history = [], onClose }) {
                   <span>semana {run.week || 1}</span>
                   {run.seed ? <span>seed {run.seed}</span> : null}
                 </div>
+                <JourneyLegacy record={run} />
                 {run.opponent ? (
                   <small className="hall-opponent">
                     Último rival: <b>{run.opponent}</b>

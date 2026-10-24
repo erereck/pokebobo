@@ -9,6 +9,7 @@ import {
   drawSprite,
 } from "./cardDrawing.js";
 import { GAME_URL } from "../../shared/regionInvitation.js";
+import { countLabel } from "../../shared/countLabel.js";
 
 function loadImage(source) {
   return new Promise((resolve, reject) => {
@@ -140,7 +141,7 @@ export async function renderJourneyCard(canvas, model, link) {
       else text(ctx, "?", x + 136, y + 92, 46, C.soft, 700);
       text(
         ctx,
-        mon.name,
+        mon.nickname || mon.name,
         x + 16,
         y + 161,
         22,
@@ -151,7 +152,8 @@ export async function renderJourneyCard(canvas, model, link) {
       );
       text(
         ctx,
-        mon.level ? "Nível " + mon.level : "Nível não registrado",
+        (mon.nickname ? mon.name + " · " : "") +
+          (mon.level ? "Nv. " + mon.level : "Nível não registrado"),
         x + 16,
         y + 185,
         18,
@@ -221,7 +223,7 @@ export async function renderJourneyCard(canvas, model, link) {
     ctx,
     "SEED " + (model.seed || "NÃO REGISTRADA"),
     64,
-    1034,
+    model.hero ? 1016 : 1034,
     25,
     C.ink,
     700,
@@ -239,7 +241,30 @@ export async function renderJourneyCard(canvas, model, link) {
             (model.shinySpecies > 1 ? "s" : "")
           : "")
       : "Registro preservado de uma aventura anterior";
-  text(ctx, collection, 64, 1070, 21, C.soft, 500, "DM Sans", 660);
+  if (model.hero) {
+    text(
+      ctx,
+      `DESTAQUE · ${model.hero.nickname || model.hero.name}`,
+      64,
+      1050,
+      24,
+      C.ink,
+      700,
+      "Space Grotesk",
+      660,
+    );
+    text(
+      ctx,
+      `${model.hero.epithet} · ${countLabel(model.hero.knockouts, "nocaute direto", "nocautes diretos")}`,
+      64,
+      1076,
+      20,
+      C.soft,
+      500,
+      "DM Sans",
+      660,
+    );
+  } else text(ctx, collection, 64, 1070, 21, C.soft, 500, "DM Sans", 660);
   const qr = document.createElement("canvas");
   await QRCode.toCanvas(qr, link || GAME_URL, {
     errorCorrectionLevel: "M",

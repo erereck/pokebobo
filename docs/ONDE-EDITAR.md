@@ -1,5 +1,14 @@
 # Onde editar
 
+## Companheiros de jornada — 0.23.0
+
+- Rival: parâmetros em `game/config/rival.js`, conteúdo em `data/rivals.js`, montagem/memória em `rival/rival.js`, comandos em `actions/rival.js`. Apresentação em `features/rival/`; aparece na região pronta, carreira e Mercado.
+- Equipamentos: ofertas em `config/equipment.js`, estoque/preparo/devolução em `equipment/equipment.js`, transações em `actions/equipment.js`. Integrações em preparo/eventos, box, captura, venda e resultado. UI em `features/equipment` e `market/HeldItemShop`/`BuyHeldItemDialog`.
+- Feitos/apelidos: `heroes/battleFeats.js` lê protocolo completo, `heroes/heroes.js` agrega/classifica; `actions/nickname.js` altera só apresentação. Resultado agrega uma vez; `finishRun` persiste legado. UI em `features/heroes`, Hall/Ending e `history/renderJourneyCard`.
+- Persistência: campos aditivos no schema 4; `checkJourneyAdditions.js` valida novos campos no backup. `useGameSession` mantém a aba após apelidar/equipar. Não alterar a IA sem resolver compatibilidade de replay.
+- Estilos: `features/rival.css`, `equipment.css`, `heroes.css` e ajustes de enquadramento em `responsive/pokedex/journey-additions.css`. Seguir tokens/Modal existentes.
+- Verificação: `tests/rival.test.js`, `equipment.test.js`, `heroes.test.js`; `npm run companions:audit` e `scripts/qa-journey.mjs` com Playwright externo. [Regras e limites](COMPANHEIROS-DE-JORNADA.md).
+
 ## Rare Candy — 0.22.1
 
 - Preço/ganho: `MARKET_RARE_CANDY` em `game/config/market.js`; transação `MARKET_BUY_CANDY` em `game/actions/market-candy.js`, registrada no reducer.

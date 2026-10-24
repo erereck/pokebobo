@@ -29,6 +29,9 @@ const KEEP_TAB_ACTIONS = new Set([
   "BATTLE_CHOICE",
   "MOVE_ROUTE",
   "ROUTE_STEP_COMPLETE",
+  "EQUIP_ITEM",
+  "UNEQUIP_ITEM",
+  "POKEMON_NICKNAME",
 ]);
 
 export function useGameSession({ onActionCommitted, onSessionChange } = {}) {
