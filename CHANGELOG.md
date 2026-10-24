@@ -1,5 +1,10 @@
 # Histórico
 
+## Documentação — revisão de ideias · 24/10/2026
+
+- Revisão dos sistemas principais e dez propostas priorizadas, com escopo inicial, base de implementação, critérios de sucesso e limitações. Recomendação: rival persistente, itens equipáveis e uma missão no campo. [Relatório](docs/REVISAO-E-IDEIAS-2026-10-24.md).
+- Registrado um caso reproduzível na estimativa de Body Press da IA e a necessidade de tratar a compatibilidade de replay antes de mudar a política. Verificação completa aprovada; esta entrega contém documentação e evidências, sem nova funcionalidade ou versão do jogo.
+
 ## 0.22.1 — Rare Candy no Mercado · 23/10/2026
 
 - Rare Candy por ₽ 700, ou 0,7 do preço médio das TMs, no balcão Comprar itens. Escolha um Pokémon da equipe/reserva e confirme: o dinheiro é debitado junto do ganho de +1 nível, sem gastar semana ou guardar item.

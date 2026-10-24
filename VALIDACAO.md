@@ -1,5 +1,11 @@
 # Validação — Pokébobo 0.22.1
 
+## Revisão do projeto e ideias — 24/10/2026
+
+- Revisão documental e dos sistemas principais na base `4b66531`, sem alteração de gameplay/UI. `npm run check` e `npm run verify` executados: 275 módulos, compatibilidade de 12 TMs/486 entradas, 210 testes normais e 205 com motor empacotado, build web aprovado. As suítes se sobrepõem; não são 415 testes distintos. [Log](docs/reviews/2026-10-24/verify.txt).
+- Inventário e consultas ao Dex instalado confirmam 485 espécies/formas únicas, 37 ginásios, 69 eventos (12 de aventura incluídos) e suporte a Leftovers/Focus Sash/Choice Scarf. Sonda sintética reproduz `estimateDamage` de Body Press reagindo ao Ataque do usuário em vez da Defesa. Achado limitado à heurística da IA; não é erro no dano aplicado pelo motor. [Diagnóstico](docs/reviews/2026-10-24/diagnostico.json), [análise/propostas](docs/REVISAO-E-IDEIAS-2026-10-24.md).
+- Sem teste novo de navegador, sessão humana/aparelho físico, campanha de dificuldade, benchmark ou nova auditoria de economia/progressão. Evidências de UI e Mercado das versões anteriores não foram reexecutadas. Nenhuma ideia foi implementada ou publicada como funcionalidade; versão 0.22.1 preservada.
+
 ## Rare Candy no Mercado — 23/10/2026
 
 - `npm run verify` aprovado: 275 módulos, 210 testes normais/205 com motor empacotado, compatibilidade e build com base `/pokebobo/`. Sete testes novos cobrem preço de 0,7 TM, alvo/saldo/fase, compra repetida e ganho individual sem semana/RNG, teto 100, reserva/evolução, TMs e backup preservados, aprendizado manual e evolução ramificada. [Log](docs/balance/rare-candy-0.22.1/verify.txt).

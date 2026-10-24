@@ -1,0 +1,72 @@
+{
+  "data": "2026-10-24",
+  "commitBase": "4b66531befbb999bce88b16c8410945dab5ca120",
+  "metodo": "Inventário estático, consultas ao Dex instalado e sonda sintética da estimativa da IA. Não mede dificuldade, desempenho no aparelho ou dano de batalha real.",
+  "diagnostico": {
+    "sourceModules": 275,
+    "modulesByArea": {
+      "app": 12,
+      "components": 19,
+      "features": 117,
+      "game": 120,
+      "main.jsx": 1,
+      "shared": 6
+    },
+    "catalogEntries": 486,
+    "uniqueSpecies": 485,
+    "gyms": 37,
+    "origins": 7,
+    "fieldLayouts": 4,
+    "weekEvents": 69,
+    "adventureEvents": 12,
+    "eventEffects": {
+      "setFlags": 10,
+      "berries": 38,
+      "balls": 38,
+      "specialEncounter": 2,
+      "clearFlags": 14,
+      "boosts": 46,
+      "battle": 5,
+      "leadLevels": 13,
+      "prepared": 7,
+      "spentDelta": 3,
+      "extraWeek": 2,
+      "bonusEncounter": 4,
+      "teamLevels": 14
+    },
+    "heldItemsVerified": [
+      {
+        "name": "Leftovers",
+        "exists": true,
+        "generation": 2
+      },
+      {
+        "name": "Focus Sash",
+        "exists": true,
+        "generation": 4
+      },
+      {
+        "name": "Choice Scarf",
+        "exists": true,
+        "generation": 4
+      }
+    ],
+    "aiBodyPressProbe": {
+      "baseline": 44.622,
+      "onlyOwnAttackRaised": 200.91000000000003,
+      "onlyOwnDefenseRaised": 44.622,
+      "engineMoveUses": "def"
+    },
+    "weekEventsSourceSha256": "9a67611d37f7cd0793c2e414a560a88cf4ca848dea9c6078ff91d34e78316f5d"
+  },
+  "verificacao": {
+    "comando": "npm run verify",
+    "codigoSaida": 0,
+    "modulosArquitetura": 275,
+    "testesNormais": 210,
+    "testesMotorEmpacotado": 205,
+    "falhas": 0,
+    "buildWeb": "aprovado",
+    "arquivoLog": "verify.txt"
+  }
+}

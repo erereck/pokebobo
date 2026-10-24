@@ -1,5 +1,15 @@
 # Pokébobo — sugestões e relatório de refinamentos
 
+## Revisão geral e novas ideias · 24/10/2026
+
+**Pedido:** revisar o projeto em busca de ideias para melhorar o jogo. **Entrega e motivo:** [relatório de revisão](REVISAO-E-IDEIAS-2026-10-24.md) com dez propostas, base existente, primeira versão, esforço relativo e critérios de sucesso. Prioridade recomendada: rival persistente, três itens equipáveis e uma missão com desfecho no campo; cavernas opcionais/relíquias como expansão posterior. Propostas ainda não implementadas nem balanceadas. Esta entrada foi acrescentada sem substituir os relatórios anteriores.
+
+**Escopo e medições:** revisão transversal de arquitetura, campanha, progressão, exploração/eventos, combate/IA/replay, Mercado, UI, coleção/Hall/convites e persistência/offline. Inventário de 275 módulos JS/JSX, 485 espécies/formas únicas, 37 ginásios e 69 eventos, incluindo os 12 de aventura. Motor instalado reconhece Leftovers/Focus Sash/Choice Scarf. Uma sonda reproduziu a estimativa da IA para Body Press reagindo a Ataque em vez de Defesa; o dano do motor real permanece correto. Mudanças futuras de IA precisam tratar o replay, que recalcula decisões. [Diagnóstico](reviews/2026-10-24/diagnostico.json).
+
+**Validação executada:** `npm run check` e `npm run verify`, com 210 testes normais/205 do motor empacotado, arquitetura/compatibilidade/build web aprovados. [Log](reviews/2026-10-24/verify.txt). Sem mudança nas regras, sprites, saves ou standalone.
+
+**Limites e próximas sugestões:** revisão dos sistemas principais, não auditoria de cada linha. Sem nova campanha humana, navegador, aparelho físico ou benchmark. Nenhuma proposta tem dificuldade/economia validada; não foram repetidos os estudos anteriores de progressão ou Mercado. Próxima implementação deve validar o fluxo completo PC/celular, preservação de saves ou incompatibilidade explícita, orçamento e combates reais quando alterar progressão/IA. Avaliar decisões humanas antes de mudar os preços atuais de TMs/doces.
+
 ## 0.22.1 — Rare Candy no Mercado · 23/10/2026
 
 **Pedido:** acrescentar Rare Candy por aproximadamente 0,7 TM.
