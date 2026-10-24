@@ -3,6 +3,8 @@ import { note } from "../career/journal.js";
 import { finishWildEncounter } from "./exploration.js";
 import { registerPokemon } from "../pokemon/collection.js";
 import { queueEvolution } from "../pokemon/moveLearning.js";
+import { heldItem, returnEquipment } from "../equipment/equipment.js";
+import { heroRecord } from "../heroes/heroes.js";
 
 export function completeCapture(r, attempt) {
   const { mon, name, replaceId, bonus, theft } = attempt;
@@ -14,10 +16,16 @@ export function completeCapture(r, attempt) {
       const leaving = r.party[replacement];
       r.party[replacement] = mon;
       if (r.box.length < CAMPAIGN_RULES.boxSize) {
-        r.box.push({ ...leaving, item: "" });
+        r.box.push({
+          ...leaving,
+          item: heldItem(leaving.item) ? leaving.item : "",
+        });
         destination = `${leaving.name} foi para a reserva.`;
-      } else
+      } else {
+        heroRecord(r, leaving, "released");
+        returnEquipment(r, leaving);
         destination = `${leaving.name} seguiu seu próprio caminho; equipe e reserva estavam lotadas.`;
+      }
     } else {
       r.box.push(mon);
       destination = `${name} foi direto para a reserva (${r.box.length}/${CAMPAIGN_RULES.boxSize}).`;

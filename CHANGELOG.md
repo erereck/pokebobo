@@ -1,5 +1,17 @@
 # Histórico
 
+## 0.23.0 — Companheiros de jornada · 24/10/2026
+
+- Escolha Nico, Lia ou Caio antes de partir. O rival conserva seu inicial, evolui a equipe e lembra os duelos anteriores. Revanches opcionais após 2, 5 e 8 insígnias dão Leftovers, Focus Sash e Choice Scarf; uma vitória por etapa, sem semanas/níveis extras. Derrota segue as regras da jornada.
+- Os três equipamentos também estão no Mercado por ₽ 1.200/700/1.000, uma unidade de cada. Compra exige alvo e equipa imediatamente. Ficha/Mochila permitem transferir sem semana entre batalhas; reserva conserva equipamento e venda/liberação o devolvem. Preparo normal/de eventos só dá berries a quem está sem item. Consumo/remoção/troca durante batalha seguem o motor.
+- Apelidos acompanham evolução, reserva, batalha, Hall e cartão. Feitos individuais registram participação, nocautes diretos, vitórias e resistência com 1 HP em vitórias. Hall/encerramento/PNG destacam um parceiro com epíteto cosmético; memorial guarda quem caiu no Nuzlocke. Não há contagem duplicada ao pular animação/recarregar.
+- Dados aditivos no schema 4; IA, regras de níveis, preço de TMs/Rare Candy e standalone preservados. O rival começa nas jornadas novas; estatísticas históricas ausentes não são inventadas. [Regras e limites](docs/COMPANHEIROS-DE-JORNADA.md).
+
+## Documentação — revisão de ideias · 24/10/2026
+
+- Revisão dos sistemas principais e dez propostas priorizadas, com escopo inicial, base de implementação, critérios de sucesso e limitações. Recomendação: rival persistente, itens equipáveis e uma missão no campo. [Relatório](docs/REVISAO-E-IDEIAS-2026-10-24.md).
+- Registrado um caso reproduzível na estimativa de Body Press da IA e a necessidade de tratar a compatibilidade de replay antes de mudar a política. Verificação completa aprovada; esta entrega contém documentação e evidências, sem nova funcionalidade ou versão do jogo.
+
 ## 0.22.1 — Rare Candy no Mercado · 23/10/2026
 
 - Rare Candy por ₽ 700, ou 0,7 do preço médio das TMs, no balcão Comprar itens. Escolha um Pokémon da equipe/reserva e confirme: o dinheiro é debitado junto do ganho de +1 nível, sem gastar semana ou guardar item.

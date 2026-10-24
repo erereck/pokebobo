@@ -12,6 +12,7 @@ import { Trophy } from "lucide-react";
 import { Swords } from "lucide-react";
 import { Footprints } from "lucide-react";
 import { ArrowRight } from "lucide-react";
+import { RivalCard } from "../rival/RivalCard.jsx";
 
 export function Career({ run: r, act }) {
   const c = city(r),
@@ -33,6 +34,7 @@ export function Career({ run: r, act }) {
       </div>
       <CityHero inLeague={inLeague} c={c} r={r} next={next} />
       <WeekBudget inLeague={inLeague} r={r} remaining={remaining} />
+      {!inLeague && <RivalCard run={r} act={act} />}
       {r.notice && (
         <div key={`${r.week}-${r.notice}`} className="notice" role="status">
           <BookOpen size={17} />

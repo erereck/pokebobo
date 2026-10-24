@@ -46,7 +46,7 @@ export const WEEK_EVENTS = [
       {
         id: "recipe",
         label: "Aprender a receita",
-        hint: "Equipe fica preparada sem gastar kit.",
+        hint: "Berries nas vagas sem item, sem gastar kit.",
         effect: { prepared: true },
         result:
           "Você passa a tarde aprendendo a preparar berries. A equipe já sai pronta para a próxima luta.",
@@ -251,7 +251,7 @@ export const WEEK_EVENTS = [
       {
         id: "eat",
         label: "Ficar para comer",
-        hint: "Equipe preparada para a próxima luta.",
+        hint: "Berries nas vagas sem item para a próxima luta.",
         effect: { prepared: true },
         result:
           "A equipe descansa e sai com berries preparadas para a próxima batalha.",
@@ -533,7 +533,7 @@ export const WEEK_EVENTS = [
       {
         id: "quick",
         label: "Dar só uma volta",
-        hint: "+1 berry e equipe preparada.",
+        hint: "+1 berry e berries nas vagas sem item.",
         effect: { berries: 1, prepared: true },
         result:
           "Uma volta rápida rende comida, um kit e berries já preparadas para a equipe.",
@@ -638,7 +638,7 @@ export const WEEK_EVENTS = [
       {
         id: "prepare",
         label: "Preparar a equipe ali mesmo",
-        hint: "Equipe preparada · +1 berry.",
+        hint: "Berries nas vagas sem item · +1 berry.",
         effect: { prepared: true, berries: 1 },
         result:
           "Os moradores ajudam a montar as porções. Ainda sobra um kit para a mochila.",
@@ -1355,7 +1355,7 @@ export const WEEK_EVENTS = [
       {
         id: "meal",
         label: "Comer com a equipe",
-        hint: "Equipe preparada.",
+        hint: "Berries nas vagas sem item; preserva equipamentos.",
         effect: { prepared: true },
         result:
           "A equipe sai alimentada e com berries prontas para a próxima batalha.",
@@ -1485,7 +1485,7 @@ export const WEEK_EVENTS = [
       {
         id: "rest",
         label: "Dar uma manhã de folga",
-        hint: "Equipe preparada · próxima emboscada evitada.",
+        hint: "Berries nas vagas sem item · próxima emboscada evitada.",
         effect: { prepared: true, boosts: { ambushShield: 1 } },
         result:
           "O descanso funciona. Quando vocês saem, todo mundo está muito mais atento.",

@@ -11,6 +11,8 @@ import {
 import { EXPLORATION_RULES } from "../../game/config/exploration.js";
 import { Ball } from "../../components/icons/Ball.jsx";
 import { ScreenHeading } from "../../components/ui/ScreenHeading.jsx";
+import { EquipmentInventory } from "../equipment/EquipmentInventory.jsx";
+import { canPrepare } from "../../game/equipment/equipment.js";
 export function BagScreen({ run: r, act }) {
   const canUse = r.phase === "career" && !r.inLeague;
   return (
@@ -18,7 +20,7 @@ export function BagScreen({ run: r, act }) {
       <ScreenHeading
         eyebrow="SUPRIMENTOS DE VIAGEM"
         title="Sua mochila"
-        text="Estoque e ações no mesmo lugar. Usar uma ação aqui também gasta uma semana."
+        text="Ações de viagem gastam semana. Trocar equipamentos é grátis entre batalhas."
       />
       {canUse && <WeekBudget r={r} remaining={weekLimit(r) - r.spent} />}
       <div className="bag-compartments">
@@ -44,10 +46,10 @@ export function BagScreen({ run: r, act }) {
             <strong>{r.berries}</strong>
           </div>
           <h2>Kits de berries</h2>
-          <p>1 kit equipa todo o time com berries de cura.</p>
+          <p>1 kit dá berries a quem está sem item. Preserva equipamentos.</p>
           <button
             className="button primary full"
-            disabled={!canUse || !r.berries}
+            disabled={!canUse || !r.berries || !canPrepare(r)}
             onClick={() => act({ type: "PREPARE" })}
           >
             <Backpack size={17} />
@@ -55,6 +57,7 @@ export function BagScreen({ run: r, act }) {
           </button>
         </article>
       </div>
+      <EquipmentInventory run={r} act={act} />
       <div className="field-equipment">
         <p>
           <Fish size={20} />

@@ -9,6 +9,7 @@ import { fieldLayout } from "../world/fieldLayout.js";
 import { migrateSave } from "./migrateSave.js";
 import { restoreBattle } from "../battle/restore.js";
 import { writeSave } from "./writeSave.js";
+import { checkJourneyAdditions } from "./checkJourneyAdditions.js";
 import { GLOBAL_DEX_KEY, GLOBAL_DEX_BACKUP_KEY } from "./dexStorage.js";
 import {
   SAVE_VERSION,
@@ -115,6 +116,7 @@ export function parseSaveBackup(text) {
     // transformar um backup inválido em uma jornada com Pokémon removidos.
     checkMons(raw.party);
     checkMons(raw.box, CAMPAIGN_RULES.boxSize);
+    if (!checkJourneyAdditions(raw)) fail();
   }
   const state = migrateSave(value),
     r = state.run;

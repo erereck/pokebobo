@@ -1,0 +1,3294 @@
+{
+  "method": "Combates reais, com a mesma IA observadora nos dois lados. 126 duelos opcionais: sete origens, primeiro inicial, três perfis, três marcos e equipes de 3/4/5 nos níveis de referência -2/+2. Elite: 22 pares com mesmos inimigos/seeds, equipe fixa de seis nos níveis 45/50, sem itens versus três equipamentos comprados após vender três reservas. Não representa pessoas, uma campanha completa ou o efeito isolado de cada item. Nenhuma regra foi calibrada automaticamente pelos resultados.",
+  "economy": {
+    "averageTm": 1000,
+    "averageSale": 1304.1666666666667,
+    "tmsPerPokemon": 1.3041666666666667,
+    "rareCandy": 700,
+    "candyPerAverageTm": 0.7,
+    "equipmentPrices": [
+      {
+        "id": "leftovers",
+        "price": 1200
+      },
+      {
+        "id": "focussash",
+        "price": 700
+      },
+      {
+        "id": "choicescarf",
+        "price": 1000
+      }
+    ]
+  },
+  "duels": [
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Nico",
+      "turns": 12,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Nico",
+      "turns": 8,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Nico",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Nico",
+      "turns": 15,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Nico",
+      "turns": 19,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Lia",
+      "turns": 16,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Lia",
+      "turns": 16,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Lia",
+      "turns": 11,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 25,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 20,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Caio",
+      "turns": 12,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 8,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 10,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Caio",
+      "turns": 33,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "pallet",
+      "playerStarter": "Bulbasaur",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Caio",
+      "turns": 29,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Nico",
+      "turns": 18,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 13,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Lia",
+      "turns": 17,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Caio",
+      "turns": 8,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 10,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 10,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Caio",
+      "turns": 29,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "newbark",
+      "playerStarter": "Chikorita",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Caio",
+      "turns": 16,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Nico",
+      "turns": 9,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Nico",
+      "turns": 18,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 14,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Lia",
+      "turns": 11,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 37,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 27,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Caio",
+      "turns": 7,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 8,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 7,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 28,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "littleroot",
+      "playerStarter": "Treecko",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 15,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 15,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Lia",
+      "turns": 10,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Lia",
+      "turns": 8,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Lia",
+      "turns": 11,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 31,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Caio",
+      "turns": 9,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 10,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 8,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Caio",
+      "turns": 25,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "twinleaf",
+      "playerStarter": "Turtwig",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Caio",
+      "turns": 21,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Nico",
+      "turns": 15,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Lia",
+      "turns": 16,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Lia",
+      "turns": 11,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 36,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 14,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Caio",
+      "turns": 8,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 10,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 8,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 15,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "nuvema",
+      "playerStarter": "Snivy",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Caio",
+      "turns": 17,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Nico",
+      "turns": 8,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Nico",
+      "turns": 11,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Nico",
+      "turns": 8,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Nico",
+      "turns": 11,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 32,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Lia",
+      "turns": 9,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Lia",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Lia",
+      "turns": 12,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Caio",
+      "turns": 8,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 8,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 13,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Caio",
+      "turns": 21,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "hauoli",
+      "playerStarter": "Rowlet",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Caio",
+      "turns": 21,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Nico",
+      "turns": 8,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "nico",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "nico",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Nico",
+      "turns": 12,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "nico",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Nico",
+      "turns": 14,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Lia",
+      "turns": 10,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "lia",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Lia",
+      "turns": 9,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "lia",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Lia",
+      "turns": 11,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 14,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "lia",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 16,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Rival Caio",
+      "turns": 9,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "caio",
+      "badges": 2,
+      "playerLevel": 20,
+      "playerSize": 3,
+      "enemyLevels": [
+        18,
+        20
+      ],
+      "enemySize": 2,
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 30,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 10,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "caio",
+      "badges": 5,
+      "playerLevel": 34,
+      "playerSize": 4,
+      "enemyLevels": [
+        32,
+        32,
+        34
+      ],
+      "enemySize": 3,
+      "winner": "Rival Caio",
+      "turns": 9,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 42,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Caio",
+      "turns": 16,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "origin": "postwick",
+      "playerStarter": "Grookey",
+      "profile": "caio",
+      "badges": 8,
+      "playerLevel": 46,
+      "playerSize": 5,
+      "enemyLevels": [
+        44,
+        44,
+        44,
+        46
+      ],
+      "enemySize": 4,
+      "winner": "Rival Caio",
+      "turns": 14,
+      "fainted": 5,
+      "censored": false
+    }
+  ],
+  "gearCombats": [
+    {
+      "level": 45,
+      "elite": "Lorelei",
+      "proceeds": 3850,
+      "spent": 2900,
+      "remaining": 950,
+      "baseline": {
+        "winner": "Lorelei",
+        "turns": 16,
+        "fainted": 6,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Lorelei",
+        "turns": 19,
+        "fainted": 6,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p1",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 45,
+      "elite": "Bruno",
+      "proceeds": 3850,
+      "spent": 2900,
+      "remaining": 950,
+      "baseline": {
+        "winner": "Você",
+        "turns": 20,
+        "fainted": 4,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Bruno",
+        "turns": 19,
+        "fainted": 6,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p3",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 45,
+      "elite": "Agatha",
+      "proceeds": 3850,
+      "spent": 2900,
+      "remaining": 950,
+      "baseline": {
+        "winner": "Agatha",
+        "turns": 15,
+        "fainted": 6,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 22,
+        "fainted": 4,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p3",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 45,
+      "elite": "Will",
+      "proceeds": 3850,
+      "spent": 2900,
+      "remaining": 950,
+      "baseline": {
+        "winner": "Will",
+        "turns": 23,
+        "fainted": 6,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 20,
+        "fainted": 4,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p1",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 45,
+      "elite": "Karen",
+      "proceeds": 3850,
+      "spent": 2900,
+      "remaining": 950,
+      "baseline": {
+        "winner": "Karen",
+        "turns": 16,
+        "fainted": 6,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 16,
+        "fainted": 5,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p3",
+          "item": ""
+        },
+        {
+          "id": "p0",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 45,
+      "elite": "Sidney",
+      "proceeds": 3850,
+      "spent": 2900,
+      "remaining": 950,
+      "baseline": {
+        "winner": "Sidney",
+        "turns": 14,
+        "fainted": 6,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Sidney",
+        "turns": 17,
+        "fainted": 6,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p3",
+          "item": ""
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p1",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 45,
+      "elite": "Phoebe",
+      "proceeds": 3850,
+      "spent": 2900,
+      "remaining": 950,
+      "baseline": {
+        "winner": "Você",
+        "turns": 21,
+        "fainted": 5,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 21,
+        "fainted": 5,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        }
+      ]
+    },
+    {
+      "level": 45,
+      "elite": "Drake",
+      "proceeds": 3850,
+      "spent": 2900,
+      "remaining": 950,
+      "baseline": {
+        "winner": "Drake",
+        "turns": 10,
+        "fainted": 6,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Drake",
+        "turns": 12,
+        "fainted": 6,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p3",
+          "item": ""
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p1",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 45,
+      "elite": "Caitlin",
+      "proceeds": 3850,
+      "spent": 2900,
+      "remaining": 950,
+      "baseline": {
+        "winner": "Você",
+        "turns": 12,
+        "fainted": 3,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 13,
+        "fainted": 3,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p1",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 45,
+      "elite": "Marshal",
+      "proceeds": 3850,
+      "spent": 2900,
+      "remaining": 950,
+      "baseline": {
+        "winner": "Você",
+        "turns": 22,
+        "fainted": 3,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 22,
+        "fainted": 3,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        }
+      ]
+    },
+    {
+      "level": 45,
+      "elite": "Kahili",
+      "proceeds": 3850,
+      "spent": 2900,
+      "remaining": 950,
+      "baseline": {
+        "winner": "Kahili",
+        "turns": 22,
+        "fainted": 6,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Kahili",
+        "turns": 20,
+        "fainted": 6,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": ""
+        },
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "elite": "Lorelei",
+      "proceeds": 4100,
+      "spent": 2900,
+      "remaining": 1200,
+      "baseline": {
+        "winner": "Lorelei",
+        "turns": 19,
+        "fainted": 6,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 22,
+        "fainted": 5,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "elite": "Bruno",
+      "proceeds": 4100,
+      "spent": 2900,
+      "remaining": 1200,
+      "baseline": {
+        "winner": "Bruno",
+        "turns": 24,
+        "fainted": 6,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 23,
+        "fainted": 3,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p1",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "elite": "Agatha",
+      "proceeds": 4100,
+      "spent": 2900,
+      "remaining": 1200,
+      "baseline": {
+        "winner": "Você",
+        "turns": 12,
+        "fainted": 3,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 15,
+        "fainted": 3,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p3",
+          "item": ""
+        },
+        {
+          "id": "p4",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "elite": "Will",
+      "proceeds": 4100,
+      "spent": 2900,
+      "remaining": 1200,
+      "baseline": {
+        "winner": "Você",
+        "turns": 17,
+        "fainted": 5,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 12,
+        "fainted": 2,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p1",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "elite": "Karen",
+      "proceeds": 4100,
+      "spent": 2900,
+      "remaining": 1200,
+      "baseline": {
+        "winner": "Você",
+        "turns": 11,
+        "fainted": 2,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 14,
+        "fainted": 3,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p0",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "elite": "Sidney",
+      "proceeds": 4100,
+      "spent": 2900,
+      "remaining": 1200,
+      "baseline": {
+        "winner": "Você",
+        "turns": 14,
+        "fainted": 3,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 14,
+        "fainted": 3,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p1",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "elite": "Phoebe",
+      "proceeds": 4100,
+      "spent": 2900,
+      "remaining": 1200,
+      "baseline": {
+        "winner": "Você",
+        "turns": 18,
+        "fainted": 2,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 18,
+        "fainted": 2,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p0",
+          "item": ""
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "elite": "Drake",
+      "proceeds": 4100,
+      "spent": 2900,
+      "remaining": 1200,
+      "baseline": {
+        "winner": "Drake",
+        "turns": 16,
+        "fainted": 6,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Drake",
+        "turns": 16,
+        "fainted": 6,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "elite": "Caitlin",
+      "proceeds": 4100,
+      "spent": 2900,
+      "remaining": 1200,
+      "baseline": {
+        "winner": "Você",
+        "turns": 13,
+        "fainted": 3,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 13,
+        "fainted": 3,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "elite": "Marshal",
+      "proceeds": 4100,
+      "spent": 2900,
+      "remaining": 1200,
+      "baseline": {
+        "winner": "Você",
+        "turns": 37,
+        "fainted": 1,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Você",
+        "turns": 37,
+        "fainted": 1,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        },
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "elite": "Kahili",
+      "proceeds": 4100,
+      "spent": 2900,
+      "remaining": 1200,
+      "baseline": {
+        "winner": "Você",
+        "turns": 15,
+        "fainted": 3,
+        "censored": false
+      },
+      "equipped": {
+        "winner": "Kahili",
+        "turns": 22,
+        "fainted": 6,
+        "censored": false
+      },
+      "finalItems": [
+        {
+          "id": "p3",
+          "item": "focussash"
+        },
+        {
+          "id": "p0",
+          "item": ""
+        },
+        {
+          "id": "p5",
+          "item": "choicescarf"
+        },
+        {
+          "id": "p4",
+          "item": ""
+        },
+        {
+          "id": "p1",
+          "item": ""
+        },
+        {
+          "id": "p2",
+          "item": "leftovers"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "duelCombats": 126,
+    "gearCombats": 44,
+    "duelWins": 62,
+    "baselineEliteWins": 12,
+    "equippedEliteWins": 15,
+    "censored": 0
+  }
+}

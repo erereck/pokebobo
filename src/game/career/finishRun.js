@@ -1,3 +1,5 @@
+import { journeyLegacy } from "../heroes/heroes.js";
+
 export function finishRun(s, won, details = won ? "champion" : "defeat") {
   const r = s.run;
   const options =
@@ -26,12 +28,14 @@ export function finishRun(s, won, details = won ? "champion" : "defeat") {
     name: mon.name,
     shiny: mon.shiny === true,
     level: mon.level,
+    ...(mon.nickname ? { nickname: mon.nickname } : {}),
   }));
   const box = (r.box || []).map((mon) => ({
     id: mon.id,
     name: mon.name,
     shiny: mon.shiny === true,
     level: mon.level,
+    ...(mon.nickname ? { nickname: mon.nickname } : {}),
   }));
 
   s.meta.history.unshift({
@@ -41,6 +45,8 @@ export function finishRun(s, won, details = won ? "champion" : "defeat") {
     badges: r.badges,
     week: r.week,
     opponent,
+    ...journeyLegacy(r),
+    rival: r.rival ? structuredClone(r.rival) : null,
     team,
     levels: team.map((mon) => mon.level),
     box,

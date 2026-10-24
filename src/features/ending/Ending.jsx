@@ -8,11 +8,18 @@ import { Lock } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import { Medal } from "lucide-react";
 import { Share2 } from "lucide-react";
+import { JourneyLegacy } from "../heroes/JourneyLegacy.jsx";
 
 export function Ending({ run: r, meta, onNew, onHall, onShare }) {
   return (
     <main className="ending">
-      <div className={cx("result-emblem", r.won && "victory-emblem", !r.won && "lost")}>
+      <div
+        className={cx(
+          "result-emblem",
+          r.won && "victory-emblem",
+          !r.won && "lost",
+        )}
+      >
         {r.won ? <Trophy size={43} /> : <Flag size={43} />}
       </div>
       <span className="eyebrow">
@@ -55,6 +62,11 @@ export function Ending({ run: r, meta, onNew, onHall, onShare }) {
           ))}
         </div>
       </div>
+      <JourneyLegacy
+        record={meta.history.find(
+          (entry) => entry.id === r.number && entry.seed === r.seed,
+        )}
+      />
       {r.won && (
         <div className="unlock-note">
           <Lock size={21} />

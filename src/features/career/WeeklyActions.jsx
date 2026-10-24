@@ -5,6 +5,7 @@ import { Backpack } from "lucide-react";
 import { Search } from "lucide-react";
 import { canTrain } from "../../game/selectors/levelGain.js";
 import { PROGRESSION } from "../../game/config/progression.js";
+import { canPrepare } from "../../game/equipment/equipment.js";
 
 export function WeeklyActions({ act, r }) {
   const trainees = [...r.party, ...(r.box || [])];
@@ -43,8 +44,8 @@ export function WeeklyActions({ act, r }) {
       <Action
         icon={Backpack}
         title="Preparar equipe"
-        detail={`Berry de cura para todos · ${r.berries} kits`}
-        disabled={!r.berries}
+        detail={`Berry nas vagas sem item · ${r.berries} kits`}
+        disabled={!r.berries || !canPrepare(r)}
         onClick={() =>
           act({
             type: "PREPARE",

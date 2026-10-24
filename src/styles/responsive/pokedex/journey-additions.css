@@ -1,0 +1,161 @@
+/* Novos controles seguem o enquadramento existente, sem comprimir ações. */
+.team-screen .pokemon-management {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.team-screen .partner-controls {
+  grid-column: 1 / -1;
+}
+.team-screen .pokemon-management > .button:only-of-type {
+  grid-column: 1 / -1;
+}
+.team-screen .partner-controls .button {
+  grid-column: auto;
+  font-size: 12px;
+  min-height: 44px;
+}
+.team-screen .pokemon-feats {
+  grid-column: 1 / -1;
+}
+.departure-card .rival-introduction {
+  background: var(--lcd);
+  color: var(--ink);
+  padding: 12px;
+  border: 0;
+  border-radius: 6px;
+}
+.departure-card .rival-intro-copy .sprite {
+  position: static;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  margin: 0;
+}
+.departure-card .rival-intro-copy p {
+  margin: 0;
+  font-size: 12px;
+}
+.departure-card .rival-introduction .section-label {
+  margin: 0;
+}
+.bag-screen {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-right: 4px;
+  scrollbar-width: thin;
+}
+.bag-screen > * {
+  flex-shrink: 0;
+}
+.bag-screen .bag-compartments {
+  flex: 0 0 auto;
+}
+.bag-screen .bag-compartments article {
+  min-height: 176px;
+}
+.bag-screen.is-readonly .equipment-inventory {
+  display: block;
+}
+@media (max-width: 700px) {
+  .held-item-offers {
+    grid-template-columns: 1fr;
+  }
+  .held-item-offers article {
+    padding: 12px;
+  }
+  .held-item-offers h3 {
+    font-size: 18px;
+  }
+  .rival-card {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 8px;
+  }
+  .rival-card > .sprite {
+    width: 44px;
+    height: 44px;
+  }
+  .rival-card > .button {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+  .rival-card h3 {
+    font-size: 17px;
+  }
+  .rival-card p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .rival-roster {
+    gap: 4px;
+  }
+  .rival-roster .sprite {
+    width: 48px;
+    height: 48px;
+  }
+  .rival-roster b {
+    font-size: 10px;
+  }
+  .rival-dialog {
+    padding: 12px;
+  }
+  .rival-dialog .rival-quote {
+    font-size: 14px;
+  }
+  .equipment-stock {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .equipment-stock > div {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: center;
+  }
+  .equipment-stock span {
+    font-size: 10px;
+  }
+  .equipment-inventory .section-head {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .equipment-inventory h2 {
+    font-size: 16px;
+  }
+  .equipment-recipients {
+    max-height: 208px;
+  }
+  .journey-hero {
+    padding: 12px 8px;
+    gap: 8px;
+  }
+  .journey-hero > .sprite {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+  .journey-hero h3 {
+    font-size: 19px;
+  }
+  .journey-hero p {
+    font-size: 11px;
+  }
+  .pokemon-name h2 {
+    overflow-wrap: anywhere;
+  }
+  .team-screen .pokemon-feats .section-head {
+    gap: 4px;
+  }
+  .team-screen .pokemon-feats dl {
+    gap: 4px;
+  }
+}
+@media (max-height: 500px) and (min-width: 700px) {
+  .rival-dialog {
+    width: min(700px, calc(100% - 32px));
+  }
+  .equipment-recipients {
+    max-height: 152px;
+  }
+}

@@ -5,6 +5,7 @@ import { random } from "../random/random.js";
 import { train } from "./training.js";
 import { growWithLearning } from "../pokemon/moveLearning.js";
 import { ITEM_RULES } from "../config/items.js";
+import { prepareEmptySlots } from "../equipment/equipment.js";
 import { city } from "../selectors/city.js";
 import { EXPLORATION_RULES } from "../config/exploration.js";
 
@@ -216,8 +217,7 @@ export function applyWeekEventEffect(r, effect = {}) {
   }
 
   if (effect.prepared) {
-    r.party = r.party.map((mon) => ({ ...mon, item: ITEM_RULES.preparedItem }));
-    r.prepared = true;
+    prepareEmptySlots(r);
   }
 
   for (const [key, value] of Object.entries(effect.boosts || {}))

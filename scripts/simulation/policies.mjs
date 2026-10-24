@@ -2,6 +2,7 @@ import catalog from "../../src/game/catalog.json" with { type: "json" };
 import { weekLimit } from "../../src/game/selectors/weekLimit.js";
 import { canTrain } from "../../src/game/selectors/levelGain.js";
 import { CAMPAIGN_RULES } from "../../src/game/config/campaign.js";
+import { canPrepare } from "../../src/game/equipment/equipment.js";
 
 export const STRATEGIES = ["training", "balanced", "coverage", "random"];
 const trainable = (run) => canTrain([...(run.party || []), ...(run.box || [])]);
@@ -15,7 +16,7 @@ export function choosePreparation(run, strategy, rng) {
       ...(trainable(run) ? ["TRAIN"] : []),
       "FORAGE",
       ...(available ? ["EXPLORE"] : []),
-      ...(run.berries ? ["PREPARE"] : []),
+      ...(run.berries && canPrepare(run) ? ["PREPARE"] : []),
     ];
     return { type: actions[Math.floor(rng() * actions.length)] };
   }
@@ -33,6 +34,7 @@ export function choosePreparation(run, strategy, rng) {
   if (
     run.spent === weekLimit(run) - 1 &&
     run.berries &&
+    canPrepare(run) &&
     run.route[run.position].kind === "gym" &&
     !run.prepared
   )

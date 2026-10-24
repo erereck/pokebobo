@@ -101,7 +101,17 @@ export function HelpDialog({ setModal }) {
             compartilham uma oportunidade por rota, sem outra semana ou
             consumível.
           </li>
-          <li>Qualquer derrota encerra a run. Não existe revanche.</li>
+          <li>
+            Qualquer derrota encerra a run. Não é possível tentar a mesma luta
+            novamente.
+          </li>
+          <li>
+            Escolha um rival antes de partir. Após 2, 5 e 8 insígnias, uma
+            revanche opcional oferece equipamento. O inicial dele evolui ao
+            longo da jornada. Não gasta semana nem dá níveis extras; uma derrota
+            encerra a run. Cada marco tem uma recompensa e não acumula revanches
+            anteriores.
+          </li>
           <li>
             Depois da oitava insígnia, o Mercado da Liga permite vender Pokémon
             da equipe ou reserva e comprar TMs de uso único. Nível e atributos
@@ -121,8 +131,26 @@ export function HelpDialog({ setModal }) {
         <p>
           Seu time se recupera após vitórias. Em Nuzlocke, os Pokémon que caíram
           são removidos. Sem sobreviventes, a run termina mesmo que o adversário
-          também tenha caído. Preparar equipa uma berry de cura em cada
-          integrante ativo; entrar na reserva remove o item preparado.
+          também tenha caído. Preparar dá uma Sitrus Berry a cada integrante
+          ativo sem item, sem substituir equipamentos. Entrar na reserva remove
+          berries preparadas, mas conserva Leftovers, Focus Sash e Choice Scarf.
+          Ao vender ou liberar um Pokémon, o equipamento volta à mochila. No
+          Nuzlocke, equipamentos que ainda restarem com quem caiu também voltam
+          após uma vitória.
+        </p>
+        <p>
+          Equipamentos podem ser comprados no Mercado e transferidos sem semana
+          pela Equipe ou Mochila entre batalhas, inclusive durante a Liga.
+          Leftovers custa ₽ 1.200, Focus Sash ₽ 700 e Choice Scarf ₽ 1.000, uma
+          unidade de cada por jornada. Focus Sash é consumido ao ativar; os
+          outros não. Berries retiradas são descartadas.
+        </p>
+        <p>
+          Na ficha da Equipe você pode dar apelidos e acompanhar nocautes por
+          golpes diretos, vitórias em campo e vitórias após resistir a um golpe
+          com 1 HP. O Hall destaca um parceiro e preserva um memorial no
+          Nuzlocke. Feitos são cosméticos; dano residual não conta como nocaute
+          direto e bancos que não entraram não ganham participação.
         </p>
         <p>
           Na Correria, cada treino rende +2 a +4 níveis para compensar as duas
@@ -170,12 +198,12 @@ export function HelpDialog({ setModal }) {
           O adversário recebe golpes automaticamente pelo nível. Em cada save,
           você escolhe como o seu time aprende ataques: no modo Manual, vagas
           livres são preenchidas sem interromper a run e, com quatro golpes,
-          você escolhe qual esquecer; no Automático, o jogo preenche os
-          espaços livres com golpes disponíveis sempre que o Pokémon sobe de
-          nível ou evolui, preservando as TMs ensinadas que continuam equipadas.
-          Evoluções normais e especiais acontecem por nível:
-          troca, pedra, amizade e outras condições foram comprimidas em níveis
-          diretos para manter a run rápida.
+          você escolhe qual esquecer; no Automático, o jogo preenche os espaços
+          livres com golpes disponíveis sempre que o Pokémon sobe de nível ou
+          evolui, preservando as TMs ensinadas que continuam equipadas.
+          Evoluções normais e especiais acontecem por nível: troca, pedra,
+          amizade e outras condições foram comprimidas em níveis diretos para
+          manter a run rápida.
         </p>
         <h3>Feito com projetos abertos</h3>
         <p>

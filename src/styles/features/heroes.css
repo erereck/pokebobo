@@ -1,0 +1,181 @@
+.partner-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.pokemon-species {
+  display: block;
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+.pokemon-feats {
+  border-top: 1px solid var(--lcd-line);
+  padding-top: 12px;
+}
+.pokemon-feats .section-head {
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.pokemon-feats h3 {
+  font-size: 16px;
+}
+.pokemon-feats .tag {
+  font-size: 10px;
+}
+.pokemon-feats dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+.pokemon-feats dl > div {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4px;
+}
+.pokemon-feats dt {
+  font-size: 10px;
+  color: var(--ink-soft);
+}
+.pokemon-feats dd {
+  font: 700 24px var(--display);
+  margin: 0;
+}
+.pokemon-feats > p {
+  margin-top: 12px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.nickname-dialog label {
+  display: block;
+  font: 600 14px var(--display);
+  margin-bottom: 8px;
+}
+.nickname-dialog input {
+  width: 100%;
+  background: var(--lcd-dim);
+  color: var(--ink);
+  border: 1px solid var(--lcd-line);
+  border-radius: 6px;
+  min-height: 48px;
+  padding: 12px;
+  font: 500 18px var(--display);
+}
+.nickname-dialog form > p {
+  margin-top: 8px;
+  line-height: 1.5;
+}
+.journey-legacy {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  text-align: left;
+}
+.journey-legacy:empty {
+  display: none;
+}
+.journey-hero {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid var(--lcd-line);
+  border-left: 4px solid var(--amber);
+  border-radius: 8px;
+  padding: 12px;
+  background: var(--lcd-bright);
+  min-width: 0;
+}
+.journey-hero > .sprite {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+}
+.journey-hero > div {
+  min-width: 0;
+}
+.journey-hero .section-label {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 9px;
+}
+.journey-hero h3 {
+  font: 700 22px var(--display);
+  margin: 4px 0;
+  overflow-wrap: anywhere;
+}
+.journey-hero h3 small {
+  font: 500 11px var(--body);
+  color: var(--ink-soft);
+  display: block;
+  margin-top: 4px;
+}
+.hero-epithet {
+  color: var(--amber-ink);
+  background: var(--amber);
+  font: 700 11px var(--display);
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.journey-hero p {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+.journey-hero small,
+.hero-explanation {
+  font-size: 10px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.journey-memorial {
+  background: var(--lcd-dim);
+  border-radius: 6px;
+  padding: 12px;
+}
+.journey-memorial summary {
+  cursor: pointer;
+  min-height: 32px;
+  font: 600 13px var(--display);
+  padding-block: 8px;
+}
+.journey-memorial > div {
+  display: grid;
+  gap: 4px;
+}
+.journey-memorial > div > div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.journey-memorial .sprite {
+  width: 40px;
+  height: 40px;
+}
+.journey-memorial span {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+.journey-memorial b {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+.journey-memorial small {
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+.rival-record {
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+.ending > .journey-legacy {
+  width: min(560px, 100%);
+  margin-bottom: 16px;
+}
+.hall-team small {
+  overflow-wrap: anywhere;
+}

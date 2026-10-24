@@ -1,5 +1,17 @@
 # Arquitetura do Pokébobo
 
+## Companheiros de jornada — 0.23.0
+
+Três domínios independentes: `rival/` monta linhagens/elencos e guarda lembranças de duelos; `equipment/` administra cópias, equipamento e preparo; `heroes/` lê o protocolo completo e agrega feitos. Configurações ficam em `config/`, perfis narrativos em `data/rivals`. Novos comandos permanecem em arquivos próprios em `actions/`.
+
+O rival é criado ao selecionar o inicial, com perfil determinístico que pode ser escolhido no estado ready. Três janelas opcionais têm nível/prêmio fixos; `beginBattle` e `result` usam kind rival e conservam a fase de retorno ao Mercado/carreira. Não alteram a política da IA. O prêmio e o registro de vitória são aplicados uma vez no RESULT, sem semanas/níveis extras.
+
+Equipamentos usam `mon.item`, com estoque solto em `run.heldItems` e ofertas limitadas em `marketPurchases`. Compra valida alvo/saldo/estoque antes de debitar/equipar. `returnEquipment` trata venda/liberação; a reserva conserva equipamentos e descarta berries preparadas. Preparo normal/de evento só ocupa vagas vazias. Resultado do motor continua autoritativo para consumo/remoção/troca em batalha.
+
+`battleFeats` não depende de UI: lê o log inteiro, elimina linhas públicas duplicadas e atribui somente nocautes diretos. `snapshot` inclui o resumo quando encerrado; `result` agrega em `heroRecords` antes de remover baixas do Nuzlocke. `finishRun` guarda destaque, memorial e rival no Hall. IDs internos continuam sendo as chaves de batalha; apelidos são metadados visuais, sem alteração de set/RNG. Dados são aditivos no schema 4; nenhum histórico recebe feitos inventados.
+
+`features/rival`, `equipment` e `heroes` concentram componentes por arquivo. Hall/encerramento e gerador PNG reutilizam o destaque, ficha/bolsa compartilham a janela de equipamento. `qa-journey.mjs` verifica fluxos de UI com Playwright externo; `audit-companions.mjs` mede economia/confrontos reais. [Guia e limites](COMPANHEIROS-DE-JORNADA.md).
+
 ## Rare Candy — 0.22.1
 
 `MARKET_RARE_CANDY` em `config/market` define preço/ganho. `actions/market-candy` valida fase, dinheiro e alvo abaixo do teto antes de usar `growWithLearning` somente naquele indivíduo e debitar o valor. O reducer existente bloqueia compras enquanto houver escolhas pendentes. `actionMoments` observa essa nova ação após a gravação para apresentar evolução. `RareCandyOffer`/`RareCandyDialog` reutilizam os estilos e o Modal do mercado; não criam inventário ou estado persistido de compra. `market:candy-audit` mede o preço relativo e combates reais pareados.

@@ -4,6 +4,7 @@ import { ShinyMark } from "../../components/pokemon/ShinyMark.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
 import { canSellPokemon, pokemonSalePrice } from "../../game/market/market.js";
 import { formatMoney } from "./formatMoney.js";
+import { pokemonName } from "../../game/heroes/heroes.js";
 
 export function PokemonSaleList({ run, onSell }) {
   return (
@@ -38,10 +39,10 @@ export function PokemonSaleList({ run, onSell }) {
                 <Sprite name={mon.name} shiny={mon.shiny} />
                 <div className="market-mon-info">
                   <strong>
-                    {mon.name} <ShinyMark shiny={mon.shiny} />
+                    {pokemonName(mon)} <ShinyMark shiny={mon.shiny} />
                   </strong>
                   <small>
-                    Nv. {mon.level}
+                    {mon.nickname ? `${mon.name} · ` : ""}Nv. {mon.level}
                     {run.party[0]?.id === mon.id ? " · Líder" : ""}
                   </small>
                   <div className="types">
@@ -59,7 +60,7 @@ export function PokemonSaleList({ run, onSell }) {
                   className="button secondary market-sell-button"
                   disabled={!canSell}
                   onClick={() => onSell(mon.id)}
-                  aria-label={`Vender ${mon.name} por ${formatMoney(pokemonSalePrice(mon))}`}
+                  aria-label={`Vender ${pokemonName(mon)} por ${formatMoney(pokemonSalePrice(mon))}`}
                 >
                   <small>VENDER POR</small>
                   <strong>{formatMoney(pokemonSalePrice(mon))}</strong>

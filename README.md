@@ -1,6 +1,10 @@
-# Pokébobo — 0.22.1 · Mercado da Liga
+# Pokébobo — 0.23.0 · Companheiros de jornada
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
+
+A 0.23.0 traz **rival persistente, equipamentos e feitos da equipe**. Escolha Nico, Lia ou Caio na região pronta e reencontre seu inicial evoluído após 2, 5 e 8 insígnias. Revanches são opcionais e oferecem Leftovers, Focus Sash e Choice Scarf; derrota encerra a jornada. Os três itens também podem ser comprados e equipados no Mercado. Equipe/Mochila permitem transferi-los entre batalhas, sem gastar semana. Preparar berries preserva equipamentos.
+
+Na ficha, dê um **apelido** e acompanhe nocautes diretos e vitórias em campo. O Hall e o cartão lembram o destaque da jornada; Nuzlocke ganha memorial para quem caiu. Feitos são cosméticos e vêm do resultado real, sem duplicar ao recarregar/pular animações. Saves continuam no schema 4; o rival aparece nas jornadas novas. [Regras, preços e limites](docs/COMPANHEIROS-DE-JORNADA.md).
 
 A 0.22.1 acrescenta **Rare Candy por ₽ 700**, equivalente a 0,7 TM média, no balcão **Comprar itens** do Mercado da Liga. Escolha um Pokémon da equipe ou reserva e confirme a compra para ganhar +1 nível imediatamente. Pode repetir enquanto houver saldo; nível 100 fica bloqueado. Evoluções, novos golpes e TMs equipadas seguem as regras existentes.
 
@@ -50,7 +54,7 @@ Para continuar o desenvolvimento: [arquitetura](docs/ARQUITETURA.md), [onde edit
 
 ## Jogar
 
-**Saves compatíveis são preservados.** O jogo usa schema 4 e normaliza campos reconhecíveis sem apagar run, equipe, seed ou histórico. A 0.20.0 mantém esse schema; caminhadas já abertas conservam o desenho anterior. Restaurar arquivos exige a versão atual. Existe uma única regra ativa: mudanças futuras incompatíveis devem incrementar SAVE_VERSION e rejeitar os arquivos incompatíveis, sem manter motores paralelos. Opções → Zerar progresso de teste continua existindo, mas só por ação explícita.
+**Saves compatíveis são preservados.** O jogo usa schema 4 e normaliza campos reconhecíveis sem apagar run, equipe, seed ou histórico. A 0.23.0 mantém esse schema; rival é criado nas jornadas novas e registros antigos não recebem feitos inventados. Restaurar arquivos exige a versão atual. Existe uma única regra ativa: mudanças futuras incompatíveis devem incrementar SAVE_VERSION e rejeitar os arquivos incompatíveis, sem manter motores paralelos. Opções → Zerar progresso de teste continua existindo, mas só por ação explícita.
 
 Requer Node.js 22.13+ e npm. Para rodar o jogo:
 

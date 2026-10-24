@@ -1,0 +1,141 @@
+.held-item-shop h2,
+.equipment-inventory h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.held-item-offers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+.held-item-offers article {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: var(--lcd-bright);
+  border: 1px solid var(--lcd-line);
+  border-radius: 8px;
+  min-width: 0;
+}
+.held-item-offers h3 {
+  font-size: 18px;
+}
+.held-item-offers p {
+  flex: 1;
+  font-size: 12px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.held-item-offers .button {
+  min-height: 48px;
+  font-size: 12px;
+}
+.equipment-inventory {
+  padding: 12px;
+  background: var(--lcd-dim);
+  border: 1px solid var(--lcd-line);
+  border-radius: 8px;
+}
+.equipment-inventory h2 {
+  font-size: 17px;
+}
+.equipment-inventory .section-head {
+  margin-bottom: 8px;
+}
+.equipment-inventory .mono {
+  font-size: 9px;
+}
+.equipment-stock {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.equipment-stock > div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+.equipment-stock b {
+  font: 700 13px var(--display);
+}
+.equipment-stock span {
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+.equipment-inventory > p {
+  margin-top: 8px;
+  line-height: 1.5;
+}
+.equipment-dialog {
+  width: min(640px, calc(100% - 24px));
+}
+.equipment-recipients {
+  max-height: 228px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding: 2px;
+}
+.equipment-recipients .market-recipient {
+  min-height: 64px;
+}
+.equipment-choices {
+  display: grid;
+  gap: 8px;
+}
+.equipment-choices > button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  border: 1px solid var(--lcd-line);
+  border-radius: 6px;
+  padding: 12px;
+  background: var(--lcd-bright);
+  color: var(--ink);
+  gap: 12px;
+}
+.equipment-choices > button > span {
+  display: grid;
+  gap: 4px;
+}
+.equipment-choices strong {
+  font: 700 16px var(--display);
+}
+.equipment-choices small,
+.equipment-choices span > span {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.equipment-choices small {
+  color: var(--ink-soft);
+}
+.equipment-choices svg {
+  flex-shrink: 0;
+}
+.equipment-choices [aria-pressed="true"] {
+  border-color: var(--hp);
+  box-shadow: inset 3px 0 var(--hp);
+  background: var(--lcd-dim);
+}
+.equipment-choices button:disabled {
+  opacity: 0.55;
+}
+.equipment-dialog .market-confirm p {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.notebook-item {
+  padding: 12px;
+  border: 1px solid var(--lcd-line);
+  border-radius: 6px;
+  background: var(--lcd-dim);
+}
+.notebook-item p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 4px;
+}

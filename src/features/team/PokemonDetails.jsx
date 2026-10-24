@@ -5,8 +5,17 @@ import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
 import { Flag, ArrowUp, Sparkles } from "lucide-react";
 import { evolutionOptions } from "../../game/pokemon/evolution.js";
 import { EquippedMove } from "./EquippedMove.jsx";
+import { useState } from "react";
+import { Package, Pencil } from "lucide-react";
+import { itemName } from "../../game/equipment/equipment.js";
+import { pokemonName } from "../../game/heroes/heroes.js";
+import { EquipmentDialog } from "../equipment/EquipmentDialog.jsx";
+import { NicknameDialog } from "../heroes/NicknameDialog.jsx";
+import { PokemonFeats } from "../heroes/PokemonFeats.jsx";
 
 export function PokemonDetails({ mon, run, act }) {
+  const [equipmentOpen, setEquipmentOpen] = useState(false);
+  const [nicknameOpen, setNicknameOpen] = useState(false);
   const data = catalog[mon.name],
     lead = run.party[0]?.id === mon.id;
   const evolutions = evolutionOptions(mon);
@@ -24,8 +33,11 @@ export function PokemonDetails({ mon, run, act }) {
         <div className="pokemon-name">
           <div>
             <h2>
-              {mon.name} <ShinyMark shiny={mon.shiny} />
+              {pokemonName(mon)} <ShinyMark shiny={mon.shiny} />
             </h2>
+            {mon.nickname && (
+              <small className="pokemon-species">{mon.name}</small>
+            )}
             <div className="types">
               {data.types.map((t) => (
                 <TypeTag key={t} type={t} />
@@ -43,8 +55,8 @@ export function PokemonDetails({ mon, run, act }) {
             <b>{data.ability}</b>
           </span>
           <span>
-            <small>ITEM</small>
-            <b>{mon.item ? "Sitrus Berry" : "Nenhum"}</b>
+            <small>{run.phase === "battle" ? "ITEM LEVADO" : "ITEM"}</small>
+            <b>{itemName(mon.item)}</b>
           </span>
         </div>
         <div className="section-head">
@@ -52,9 +64,33 @@ export function PokemonDetails({ mon, run, act }) {
           <span className="mono">{mon.moves.length}/4</span>
         </div>
         <div className="equipped-moves">
-          {mon.moves.map(id => <EquippedMove key={`${mon.id}-${id}`} id={id} />)}
+          {mon.moves.map((id) => (
+            <EquippedMove key={`${mon.id}-${id}`} id={id} />
+          ))}
         </div>
         <div className="pokemon-management">
+          <div className="partner-controls">
+            <button
+              className="button secondary"
+              disabled={!canManage}
+              onClick={(event) => {
+                event.currentTarget.focus({ preventScroll: true });
+                setEquipmentOpen(true);
+              }}
+            >
+              <Package size={16} /> Equipamento
+            </button>
+            <button
+              className="button secondary"
+              disabled={!canManage}
+              onClick={(event) => {
+                event.currentTarget.focus({ preventScroll: true });
+                setNicknameOpen(true);
+              }}
+            >
+              <Pencil size={16} /> Apelido
+            </button>
+          </div>
           <button
             className="button primary full"
             aria-label={
@@ -89,7 +125,23 @@ export function PokemonDetails({ mon, run, act }) {
               </button>
             )}
         </div>
+        <PokemonFeats mon={mon} run={run} />
       </div>
+      {equipmentOpen && (
+        <EquipmentDialog
+          run={run}
+          act={act}
+          monId={mon.id}
+          onClose={() => setEquipmentOpen(false)}
+        />
+      )}
+      {nicknameOpen && (
+        <NicknameDialog
+          mon={mon}
+          act={act}
+          onClose={() => setNicknameOpen(false)}
+        />
+      )}
     </section>
   );
 }

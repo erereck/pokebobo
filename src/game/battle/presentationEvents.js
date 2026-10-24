@@ -285,10 +285,20 @@ export function presentationEvents(log) {
       });
       return;
     }
-    if (type === "-enditem")
+    if (type === "-enditem") {
+      const source = p
+        .slice(4)
+        .find((part) => part.startsWith("[from] move: "))
+        ?.slice(13);
       push(index, "message", {
-        text: `${named(ref)} usou ${p[3]}.`,
+        text:
+          source === "Fling"
+            ? `${named(ref)} arremessou ${p[3]}.`
+            : source
+              ? `${named(ref)} perdeu ${p[3]} por ${source}.`
+              : `${named(ref)} usou ${p[3]}.`,
       });
+    }
   };
 
   for (let i = 0; i < log.length; i++) {

@@ -3,6 +3,7 @@ import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { PokemonDetails } from "./PokemonDetails.jsx";
 import { ReservePanel } from "./ReservePanel.jsx";
 import { CAMPAIGN_RULES } from "../../game/config/campaign.js";
+import { pokemonName } from "../../game/heroes/heroes.js";
 
 export function TeamScreen({ run, act, selectedMonId }) {
   const [selected, setSelected] = useState(selectedMonId || run.party[0]?.id);
@@ -30,13 +31,13 @@ export function TeamScreen({ run, act, selectedMonId }) {
           <button
             key={m.id}
             aria-pressed={mon?.id === m.id}
-            aria-label={`${m.name}, nível ${m.level}${i === 0 ? ", líder" : ""}`}
-            title={`${m.name} · nível ${m.level}`}
+            aria-label={`${pokemonName(m)}${m.nickname ? `, ${m.name}` : ""}, nível ${m.level}${i === 0 ? ", líder" : ""}`}
+            title={`${pokemonName(m)} · ${m.name} · nível ${m.level}`}
             onClick={() => setSelected(m.id)}
           >
             <Sprite name={m.name} shiny={m.shiny} />
             <span>
-              <strong>{m.name}</strong>
+              <strong>{pokemonName(m)}</strong>
               <small>
                 Lv. {m.level}
                 {i === 0 ? " · líder" : ""}
@@ -65,7 +66,12 @@ export function TeamScreen({ run, act, selectedMonId }) {
         </button>
       </div>
       {panel === "details" && mon && (
-        <PokemonDetails key={`${mon.id}-${mon.name}`} mon={mon} run={run} act={act} />
+        <PokemonDetails
+          key={`${mon.id}-${mon.name}`}
+          mon={mon}
+          run={run}
+          act={act}
+        />
       )}
 
       {panel === "reserve" && (

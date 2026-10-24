@@ -5,6 +5,7 @@ import { Sprite } from "../../components/pokemon/Sprite.jsx";
 import { MARKET_RARE_CANDY } from "../../game/config/market.js";
 import { PROGRESSION } from "../../game/config/progression.js";
 import { formatMoney } from "./formatMoney.js";
+import { pokemonName } from "../../game/heroes/heroes.js";
 
 export function RareCandyDialog({ run, act, onClose }) {
   const [monId, setMonId] = useState(null);
@@ -43,8 +44,9 @@ export function RareCandyDialog({ run, act, onClose }) {
             >
               <Sprite name={candidate.name} shiny={candidate.shiny} />
               <span>
-                <strong>{candidate.name}</strong>
+                <strong>{pokemonName(candidate)}</strong>
                 <small>
+                  {candidate.nickname ? `${candidate.name} · ` : ""}
                   {run.box?.some((reserve) => reserve.id === candidate.id)
                     ? "Reserva"
                     : "Equipe"}{" "}
@@ -63,7 +65,7 @@ export function RareCandyDialog({ run, act, onClose }) {
       <footer className="market-confirm">
         <p>
           {mon
-            ? `${mon.name} receberá +${MARKET_RARE_CANDY.levels} nível. `
+            ? `${pokemonName(mon)} receberá +${MARKET_RARE_CANDY.levels} nível. `
             : "Escolha um Pokémon para concluir. "}
           Saldo após a compra:{" "}
           <strong>

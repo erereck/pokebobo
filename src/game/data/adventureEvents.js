@@ -142,9 +142,9 @@ export const ADVENTURE_EVENTS = [
         hint: "Batalha real · vitória libera captura garantida por 1 bola · um roubo por run.",
         requires: { balls: 1 },
         effect: { setFlags: ["theft-used"] },
-          battle: {
-            name: "Contrabandista",
-            reward: { specialEncounter: { name: "Eevee", theft: true } },
+        battle: {
+          name: "Contrabandista",
+          reward: { specialEncounter: { name: "Eevee", theft: true } },
         },
         result: "Você enfrenta o contrabandista. Eevee observa a batalha.",
       },
@@ -332,7 +332,7 @@ export const ADVENTURE_EVENTS = [
       {
         id: "prepare",
         label: "Preparar berries no acampamento",
-        hint: "Gasta 1 berry · equipe preparada e proteção contra 1 emboscada.",
+        hint: "Gasta 1 berry · berries nas vagas sem item e proteção contra 1 emboscada.",
         requires: { berries: 1 },
         effect: { berries: -1, prepared: true, boosts: { ambushShield: 1 } },
         result: "A equipe segue descansada e equipada.",

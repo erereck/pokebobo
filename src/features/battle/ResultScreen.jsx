@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { PROGRESSION } from "../../game/config/progression.js";
 import { EXPLORATION_RULES } from "../../game/config/exploration.js";
 import { levelGains, levelGainLabel } from "../../game/selectors/levelGain.js";
+import { itemName } from "../../game/equipment/equipment.js";
 import {
   battleVictory,
   noSurvivors,
@@ -31,7 +32,9 @@ export function ResultScreen({ run: r, act }) {
             ? "DESAFIO DE GINÁSIO"
             : r.battle.kind === "league"
               ? "LIGA POKÉMON"
-              : "BATALHA NO CAMINHO"}
+              : r.battle.kind === "rival"
+                ? "REVANCHE DA JORNADA"
+                : "BATALHA NO CAMINHO"}
         </span>
         <h1>{won ? "Vitória!" : "Fim da aventura"}</h1>
         <p>
@@ -62,7 +65,9 @@ export function ResultScreen({ run: r, act }) {
                   ? `Insígnia ${r.badges + 1}/8 · ${reward}`
                   : r.battle.kind === "league"
                     ? reward
-                    : "Equipe recuperada"
+                    : r.battle.kind === "rival"
+                      ? `${itemName(r.battle.rivalReward)} · equipe recuperada`
+                      : "Equipe recuperada"
                 : `${r.badges}/8`}
             </b>
           </div>

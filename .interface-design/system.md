@@ -1,5 +1,13 @@
 # Pokébobo — sistema de interface 0.3.0
 
+## Companheiros de jornada — 0.23.0
+
+Mantém rubi/LCD/âmbar e navegação de cinco teclas. Reencontro usa sprite de 56 px (44 no telefone), chamada curta com marca OPCIONAL e botão de 44 px; confirmação mostra equipe em quatro colunas, recompensa e consequência antes de iniciar. A escolha de rival fica em um recorte LCD dentro do cartão de partida, com três botões e seleção explícita.
+
+Equipamentos reutilizam os destinatários e o rodapé sticky do Mercado. Uma transação escolhe alvo antes de cobrar. Equipe/Mochila compartilham um Modal de transferência; alvo, estoque, efeito e destino do item anterior ficam explícitos. Comandos mantêm a aba atual. Disparadores novos recebem foco sem rolagem antes de abrir o Modal para devolver foco corretamente também no WebKit por ponteiro.
+
+Ficha: Equipamento/Apelido em duas colunas, 44 px; feitos ocupam as duas colunas do grid em telefone, com valores de 24 px e rótulos de 10 px. Nome da espécie permanece abaixo do apelido. Destaque do Hall usa sprite 72 px (48 no telefone), epíteto âmbar e explicação da métrica. Memorial é um details nativo. Sem mais botões no cabeçalho ou uma nova skin.
+
 ## Na palma da mão — 0.20.1
 
 Intenção: jogador no telefone toca comandos, escolhe evolução e escreve sem perder a ação para teclado/recortes. Conserva rubi/LCD/âmbar, DM Sans/Space Grotesk e espaçamento existente. Em ponteiro coarse sem hover, comandos principais têm 44 px; cabeçalho de 320 px omite a lente para acomodar seis ícones com nomes acessíveis. Paisagem curta compacta instrumentação para conservar cena e comandos.

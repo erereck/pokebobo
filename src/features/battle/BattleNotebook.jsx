@@ -3,6 +3,7 @@ import { Modal } from "../../components/ui/Modal.jsx";
 import { TypeTag } from "../../components/pokemon/TypeTag.jsx";
 import { moveGuide, STAT_LABELS, STATUS_LABELS } from "./moveGuide.js";
 import { FieldConditions } from "./FieldConditions.jsx";
+import { heldItem, itemName } from "../../game/equipment/equipment.js";
 
 export function BattleNotebook({ snap, onClose }) {
   const [page, setPage] = useState("log");
@@ -37,6 +38,15 @@ export function BattleNotebook({ snap, onClose }) {
       )}
       {page === "moves" && (
         <div className="notebook-moves">
+          {snap.active.item && (
+            <div className="notebook-item">
+              <b>Seu item: {itemName(snap.active.item)}</b>
+              <p>
+                {heldItem(snap.active.item)?.description ||
+                  "Berry preparada: recupera HP automaticamente quando as condições permitem."}
+              </p>
+            </div>
+          )}
           <p className="notebook-caption">
             Precisão e poder básicos. Habilidades, itens e condições da batalha
             podem mudar o efeito.

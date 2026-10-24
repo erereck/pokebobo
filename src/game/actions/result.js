@@ -12,11 +12,20 @@ import { afterWeek } from "../career/afterWeek.js";
 import { battleVictory, noSurvivors } from "../selectors/battleVictory.js";
 import { claimEventBattleReward } from "../career/weekEvents.js";
 import { EXPLORATION_RULES } from "../config/exploration.js";
+import { recordBattleHeroes } from "../heroes/heroes.js";
+import {
+  addEquipment,
+  returnEquipment,
+  itemName,
+} from "../equipment/equipment.js";
+import { rememberRivalDuel } from "../rival/rival.js";
 
 export function handleResult(s, action, state) {
   let r = s.run;
   if (action.type === "RESULT" && r.phase === "result") {
     const won = battleVictory(r);
+    recordBattleHeroes(r, won);
+    if (won && r.battle.kind === "rival") rememberRivalDuel(r);
     if (!won) {
       note(
         r,
@@ -33,14 +42,31 @@ export function handleResult(s, action, state) {
     const survivors = r.outcome.player
       .filter((p) => !p.fainted)
       .map((p) => p.id);
-    if (r.mode === "nuzlocke")
+    if (r.mode === "nuzlocke") {
+      // O item pode ter sido consumido ou trocado no combate. Só devolva
+      // o que o integrante realmente carrega no resultado confirmado.
+      for (const mon of r.party.filter((p) => !survivors.includes(p.id))) {
+        returnEquipment(r, {
+          item: r.outcome.player.find((p) => p.id === mon.id)?.item || "",
+        });
+      }
       r.party = r.party.filter((p) => survivors.includes(p.id));
+    }
     r.party = r.party.map((p) => ({
       ...p,
       item: r.outcome.player.find((m) => m.id === p.id)?.item || "",
     }));
     const kind = r.battle.kind;
-    if (kind === "gym") {
+    if (kind === "rival") {
+      r.rival.victories.push(r.battle.rivalStage);
+      addEquipment(r, r.battle.rivalReward);
+      r.phase = r.rivalReturnPhase === "market" ? "market" : "career";
+      r.rivalReturnPhase = null;
+      note(
+        r,
+        `${r.battle.name} reconhece sua vitória. Você recebeu ${itemName(r.battle.rivalReward)} na mochila. Equipe recuperada; nenhuma semana gasta. O próximo reencontro será diferente.`,
+      );
+    } else if (kind === "gym") {
       r.badges++;
       if (r.badges === EXPLORATION_RULES.fishingBadges)
         note(
