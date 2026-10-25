@@ -8,6 +8,7 @@ export function HelpDialog({ setModal }) {
     <Modal title="Seu guia de bolso" onClose={() => setModal(null)}>
       <div className="help-content">
         <h3>Controles da Pokédex</h3>
+        <p>Fora da trilha oferece a Caverna dos Ecos após duas insígnias e as Ruínas da Aurora após cinco, até a sétima. Cada lugar tem três salas e custa uma semana pela visita inteira. Sair conserva os achados e encerra a visita; o guardião é opcional e derrota encerra a jornada. A passagem no começo das rotas aproveita a semana já gasta, antes de resolver um encontro naquela caminhada.</p>
         <p>
           O botão Som no topo ativa ou silencia tudo. Em Opções → Som e
           playlist, ajuste música, efeitos e cries separadamente. Seguir o jogo

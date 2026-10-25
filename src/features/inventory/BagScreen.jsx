@@ -23,6 +23,10 @@ export function BagScreen({ run: r, act }) {
         text="Ações de viagem gastam semana. Trocar equipamentos é grátis entre batalhas."
       />
       {canUse && <WeekBudget r={r} remaining={weekLimit(r) - r.spent} />}
+      <p className="expedition-wallet">
+        <b>₽ {(r.money || 0).toLocaleString("pt-BR")}</b>
+        <span>Guardado para o Mercado da Liga · após a 8ª insígnia</span>
+      </p>
       <div className="bag-compartments">
         <article>
           <div className="item-display">

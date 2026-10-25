@@ -3,6 +3,7 @@ import { terrainAt, isTallGrass } from "../../game/world/exploration.js";
 import { fieldPose, grassUnderFeet } from "./fieldPresentation.js";
 import { terrainQuadrants } from "./terrainPresentation.js";
 import { drawLakeTrainer } from "./lakePresentation.js";
+import { drawPassage } from "../expeditions/drawExpedition.js";
 
 export function drawField(
   ctx,
@@ -10,6 +11,7 @@ export function drawField(
   e,
   tick,
   preparation,
+  passage = false,
 ) {
   const { width, height } = EXPLORATION_RULES;
   ctx.clearRect(0, 0, width * 16, (height + 1) * 16);
@@ -51,6 +53,7 @@ export function drawField(
       )
         ctx.drawImage(tiles, 64, 0, 16, 16, x * 16, y * 16, 16, 16);
     }
+  if (passage) drawPassage(ctx, 0, 6 * 16);
   if (preparation) {
     drawLakeTrainer(ctx, [trainer, surf, fishing], e, preparation, tick);
     ctx.restore();

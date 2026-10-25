@@ -9,6 +9,7 @@ export function audioScene(run, tab = "journey", modal = null) {
   if (run.phase === "ended")
     return { track: run.won ? "hall" : "ending", label: "Fim da jornada" };
   if (run.phase === "market") return { track: "center", label: "Mercado da Liga" };
+  if (run.phase === "expedition") return { track: "cave", label: "Expedição" };
   if (run.phase === "result")
     return {
       track: battleVictory(run) ? "victory" : "ending",

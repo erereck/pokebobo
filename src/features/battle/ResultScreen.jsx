@@ -34,6 +34,8 @@ export function ResultScreen({ run: r, act }) {
               ? "LIGA POKÉMON"
               : r.battle.kind === "rival"
                 ? "REVANCHE DA JORNADA"
+                : r.battle.kind === "expedition"
+                  ? "GUARDIÃO DA EXPEDIÇÃO"
                 : "BATALHA NO CAMINHO"}
         </span>
         <h1>{won ? "Vitória!" : "Fim da aventura"}</h1>
@@ -67,6 +69,8 @@ export function ResultScreen({ run: r, act }) {
                     ? reward
                     : r.battle.kind === "rival"
                       ? `${itemName(r.battle.rivalReward)} · equipe recuperada`
+                      : r.battle.kind === "expedition"
+                        ? "Tesouro à escolha · equipe recuperada"
                       : "Equipe recuperada"
                 : `${r.badges}/8`}
             </b>

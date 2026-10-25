@@ -89,6 +89,8 @@ export function BattleScreen({
                 ? "LIGA"
                 : r.battle.kind === "rival"
                   ? "REVANCHE"
+                  : r.battle.kind === "expedition"
+                    ? "GUARDIÃO"
                   : "NO CAMINHO"}
             {r.battle.boost ? " · LÍDER +" + r.battle.boost : ""}
           </span>

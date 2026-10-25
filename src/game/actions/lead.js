@@ -2,7 +2,7 @@ import { note } from "../career/journal.js";
 
 export function handleLead(s, action, state) {
   let r = s.run;
-  if (action.type === "LEAD" && ["career", "market"].includes(r.phase)) {
+  if (action.type === "LEAD" && ["career", "market", "expedition"].includes(r.phase)) {
     const idx = r.party.findIndex((m) => m.id === action.id);
     if (idx > 0) {
       const [m] = r.party.splice(idx, 1);

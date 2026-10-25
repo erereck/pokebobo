@@ -1,0 +1,7907 @@
+{
+  "method": "252 combates reais: dois lugares, sete origens (primeiro inicial), três níveis (-3/0/+3 em relação ao segundo guardião), duas composições (rocha/psíquico ou água/sombrio) e três seeds. Equipes de quatro/cinco, linhagens evoluídas, sem itens, mesma IA observadora em ambos os lados, limite 240 turnos. Amostra controlada; não é campanha completa nem taxa de vitória humana. Não usa equipe nível 100 para medir dificuldade.",
+  "economy": [
+    {
+      "site": "echo-cave",
+      "weeklyCost": 1,
+      "visitsPerJourney": 1,
+      "partialMoney": 200,
+      "fullMoney": 400,
+      "fullMoneyPerAverageTm": 0.4,
+      "cacheBalls": 2,
+      "supplyChoice": {
+        "balls": 3,
+        "berries": 2
+      },
+      "equipmentChoice": [
+        "focussash",
+        "leftovers"
+      ]
+    },
+    {
+      "site": "sunken-ruins",
+      "weeklyCost": 1,
+      "visitsPerJourney": 1,
+      "partialMoney": 300,
+      "fullMoney": 600,
+      "fullMoneyPerAverageTm": 0.6,
+      "cacheBalls": 2,
+      "supplyChoice": {
+        "balls": 3,
+        "berries": 2
+      },
+      "equipmentChoice": [
+        "choicescarf",
+        "leftovers"
+      ]
+    }
+  ],
+  "totals": [
+    {
+      "site": "echo-cave",
+      "combats": 126,
+      "wins": 106,
+      "censored": 0,
+      "levels": [
+        {
+          "level": 20,
+          "wins": 23,
+          "combats": 42,
+          "meanFainted": 2.642857142857143
+        },
+        {
+          "level": 23,
+          "wins": 41,
+          "combats": 42,
+          "meanFainted": 0.9523809523809523
+        },
+        {
+          "level": 26,
+          "wins": 42,
+          "combats": 42,
+          "meanFainted": 0.047619047619047616
+        }
+      ]
+    },
+    {
+      "site": "sunken-ruins",
+      "combats": 126,
+      "wins": 92,
+      "censored": 0,
+      "levels": [
+        {
+          "level": 32,
+          "wins": 19,
+          "combats": 42,
+          "meanFainted": 3.4523809523809526
+        },
+        {
+          "level": 35,
+          "wins": 31,
+          "combats": 42,
+          "meanFainted": 2.4761904761904763
+        },
+        {
+          "level": 38,
+          "wins": 42,
+          "combats": 42,
+          "meanFainted": 1.3333333333333333
+        }
+      ]
+    }
+  ],
+  "combats": [
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 13,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 15,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 14,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Ivysaur",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 14,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Bayleef",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 14,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 14,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 14,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grotle",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 14,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 17,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 15,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 14,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 15,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 11,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 16,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 18,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Geodude",
+          "level": 20
+        },
+        {
+          "name": "Kadabra",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 17,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Geodude",
+          "level": 23
+        },
+        {
+          "name": "Kadabra",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Graveler",
+          "level": 26
+        },
+        {
+          "name": "Kadabra",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "Você",
+      "turns": 13,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 14,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 20,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 20
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 20
+        },
+        {
+          "name": "Gyarados",
+          "level": 20
+        },
+        {
+          "name": "Houndour",
+          "level": 20
+        }
+      ],
+      "winner": "echo-cave",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 23,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 23
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 23
+        },
+        {
+          "name": "Gyarados",
+          "level": 23
+        },
+        {
+          "name": "Houndour",
+          "level": 23
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "echo-cave",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 26,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 26
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 26
+        },
+        {
+          "name": "Gyarados",
+          "level": 26
+        },
+        {
+          "name": "Houndoom",
+          "level": 26
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 27,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 25,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 27,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 11,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 11,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 11,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 15,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "pallet",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Venusaur",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 11,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 11,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 11,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 18,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 14,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "newbark",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Meganium",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 21,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 8,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 25,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 10,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 9,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 10,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Sceptile",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 19,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Sceptile",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Sceptile",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 19,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 11,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Grovyle",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Sceptile",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Sceptile",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "littleroot",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Sceptile",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 11,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 11,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 31,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 10,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 32,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "twinleaf",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Torterra",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 8,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 8,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 9,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 8,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Serperior",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Serperior",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Serperior",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Servine",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Serperior",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Serperior",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "nuvema",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Serperior",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 8,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 8,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 8,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Dartrix",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 8,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "hauoli",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Decidueye",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 9,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 9,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Graveler",
+          "level": 32
+        },
+        {
+          "name": "Kadabra",
+          "level": 32
+        },
+        {
+          "name": "Haunter",
+          "level": 32
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 9,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 10,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 10,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Graveler",
+          "level": 35
+        },
+        {
+          "name": "Kadabra",
+          "level": 35
+        },
+        {
+          "name": "Haunter",
+          "level": 35
+        }
+      ],
+      "winner": "sunken-ruins",
+      "turns": 10,
+      "fainted": 5,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 13,
+      "fainted": 4,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "rocha-psiquico",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Golem",
+          "level": 38
+        },
+        {
+          "name": "Alakazam",
+          "level": 38
+        },
+        {
+          "name": "Gengar",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 11,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 32,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Thwackey",
+          "level": 32
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 32
+        },
+        {
+          "name": "Gyarados",
+          "level": 32
+        },
+        {
+          "name": "Houndoom",
+          "level": 32
+        },
+        {
+          "name": "Gloom",
+          "level": 32
+        }
+      ],
+      "winner": "Você",
+      "turns": 10,
+      "fainted": 2,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 12,
+      "fainted": 3,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 35,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 35
+        },
+        {
+          "name": "Pidgeotto",
+          "level": 35
+        },
+        {
+          "name": "Gyarados",
+          "level": 35
+        },
+        {
+          "name": "Houndoom",
+          "level": 35
+        },
+        {
+          "name": "Gloom",
+          "level": 35
+        }
+      ],
+      "winner": "Você",
+      "turns": 7,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 1,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 9,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 2,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 5,
+      "fainted": 1,
+      "censored": false
+    },
+    {
+      "site": "sunken-ruins",
+      "origin": "postwick",
+      "formation": "agua-sombrio",
+      "level": 38,
+      "seed": 3,
+      "player": [
+        {
+          "name": "Rillaboom",
+          "level": 38
+        },
+        {
+          "name": "Pidgeot",
+          "level": 38
+        },
+        {
+          "name": "Gyarados",
+          "level": 38
+        },
+        {
+          "name": "Houndoom",
+          "level": 38
+        },
+        {
+          "name": "Gloom",
+          "level": 38
+        }
+      ],
+      "winner": "Você",
+      "turns": 6,
+      "fainted": 0,
+      "censored": false
+    }
+  ]
+}

@@ -1,5 +1,14 @@
 # Arquitetura do Pokébobo
 
+## Além da trilha — 0.24.0
+
+`config/expeditions` define desbloqueio, posições, orçamento e prêmios; `data/expeditions` guarda texto e mapas. O domínio puro `expeditions/` controla movimento, colisão, coleta e tesouro. `actions/expedition` valida entrada/fase/proximidade, cobra uma semana só na entrada direta e resolve `afterWeek` apenas na saída, sem empilhar evento/emboscada. Entrada pelo campo aproveita o gasto anterior e encerra a caminhada.
+
+`run.expeditions` registra cada visita; `activeExpedition` identifica a sala ativa. Fase expedition inclui exploração e escolha de tesouro após vitória. Baús e bolsa são transações únicas; RESULT marca won sem conceder prêmio, EXPEDITION_REWARD concede item/dinheiro e marca cleared. Saída marca escaped quando não houve guardião. `beginBattle/result` usam kind expedition, preservam feitos, itens e baixas reais e não dão níveis. `finishRun` arquiva visitas; `checkExpeditions` valida backups. Campos aditivos no schema 4.
+
+`features/expeditions` separa acesso, confirmações, cena, controles e tesouro. Reutiliza PixelViewport, useFieldControls, usePixelCanvas, Modal, Sprite e áudio local. Cenografia própria em canvas; Red já local. Equipe/reserva/equipamentos podem mudar na fase de sala, nunca no combate. [Guia](EXPEDICOES.md).
+
+
 ## Companheiros de jornada — 0.23.0
 
 Três domínios independentes: `rival/` monta linhagens/elencos e guarda lembranças de duelos; `equipment/` administra cópias, equipamento e preparo; `heroes/` lê o protocolo completo e agrega feitos. Configurações ficam em `config/`, perfis narrativos em `data/rivals`. Novos comandos permanecem em arquivos próprios em `actions/`.

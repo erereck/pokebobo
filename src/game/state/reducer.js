@@ -26,6 +26,7 @@ import { handleMarketCandy } from "../actions/market-candy.js";
 import { handleEquipment } from "../actions/equipment.js";
 import { handleRival } from "../actions/rival.js";
 import { handleNickname } from "../actions/nickname.js";
+import { handleExpedition } from "../actions/expedition.js";
 
 const handlers = {
   NEW: handleNew,
@@ -68,6 +69,14 @@ const handlers = {
   RIVAL_CHOOSE: handleRival,
   RIVAL_CHALLENGE: handleRival,
   POKEMON_NICKNAME: handleNickname,
+  EXPEDITION_ENTER: handleExpedition,
+  EXPEDITION_MOVE: handleExpedition,
+  EXPEDITION_STEP_COMPLETE: handleExpedition,
+  EXPEDITION_COLLECT: handleExpedition,
+  EXPEDITION_ADVANCE: handleExpedition,
+  EXPEDITION_CHALLENGE: handleExpedition,
+  EXPEDITION_REWARD: handleExpedition,
+  EXPEDITION_LEAVE: handleExpedition,
 };
 export function reducer(state, action) {
   const r = state.run;

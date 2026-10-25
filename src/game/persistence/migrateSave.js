@@ -149,6 +149,8 @@ function normalizeRun(run, fallbackMoveLearningMode = "manual") {
     heldItems: object(run.heldItems),
     heroRecords: object(run.heroRecords),
     rival: run.rival || null,
+    expeditions: object(run.expeditions),
+    activeExpedition: run.activeExpedition || null,
     league: list(run.league),
     journal: list(run.journal),
     notice: typeof run.notice === "string" ? run.notice : "",

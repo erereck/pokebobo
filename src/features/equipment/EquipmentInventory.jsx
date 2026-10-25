@@ -45,9 +45,9 @@ export function EquipmentInventory({ run, act }) {
         Gerenciar equipamentos
       </button>
       <p className="muted small">
-        Ganhe nas revanches ou compre no Mercado da Liga. Trocar não gasta
-        semana. Focus Sash é consumido ao ativar. Itens removidos ou trocados
-        por golpes seguem o resultado da batalha.
+        Ganhe nas revanches e expedições ou compre no Mercado da Liga. Trocar
+        não gasta semana. Focus Sash é consumido ao ativar. Itens removidos ou
+        trocados por golpes seguem o resultado da batalha.
       </p>
       {open && (
         <EquipmentDialog run={run} act={act} onClose={() => setOpen(false)} />

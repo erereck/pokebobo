@@ -1,6 +1,6 @@
 {
   "name": "pokebobo",
-  "version": "0.23.0",
+  "version": "0.24.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,7 +17,8 @@
     "balance:audit": "node scripts/audit-progression.mjs",
     "test:browser-simulator": "node scripts/verifyBrowserSimulator.mjs",
     "verify": "npm run check && npm test && npm run test:browser-simulator && npm run build",
-    "balance:monte-carlo": "node scripts/monte-carlo.mjs"
+    "balance:monte-carlo": "node scripts/monte-carlo.mjs",
+    "expeditions:audit": "node scripts/audit-expeditions.mjs"
   },
   "dependencies": {
     "@pkmn/sim": "0.10.11",

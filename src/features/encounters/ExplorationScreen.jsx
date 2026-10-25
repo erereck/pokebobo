@@ -17,6 +17,8 @@ import {
 } from "../../game/world/exploration.js";
 import { FieldCanvas } from "./FieldCanvas.jsx";
 import { useEffect, useRef, useState } from "react";
+import { ExpeditionAccess } from "../expeditions/ExpeditionAccess.jsx";
+import { availableExpeditions, fieldExpeditionOpen } from "../../game/expeditions/expeditions.js";
 
 export function ExplorationScreen({ run: r, act }) {
   const e = r.exploration;
@@ -73,6 +75,7 @@ export function ExplorationScreen({ run: r, act }) {
             act={act}
             preparation={preparation}
             onPrepared={onPrepared}
+            passage={availableExpeditions(r).length > 0 && fieldExpeditionOpen(r)}
           />
           {Array.from(
             { length: EXPLORATION_RULES.width * EXPLORATION_RULES.height },
@@ -189,6 +192,7 @@ export function ExplorationScreen({ run: r, act }) {
                     ? "Fishing Rod liberada · Surf: 5ª insígnia"
                     : "Escolha pescar ou usar Surf."}
       </p>
+      <ExpeditionAccess run={r} act={act} field busy={!!preparation || !!e.walk || controls.isHolding} />
     </section>
   );
 }

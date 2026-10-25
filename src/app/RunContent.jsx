@@ -10,6 +10,7 @@ import { Journal } from "../features/journal/Journal.jsx";
 import { WeekEventScreen } from "../features/events/WeekEventScreen.jsx";
 import { ExplorationScreen } from "../features/encounters/ExplorationScreen.jsx";
 import { MarketScreen } from "../features/market/MarketScreen.jsx";
+import { ExpeditionScreen } from "../features/expeditions/ExpeditionScreen.jsx";
 
 export function RunContent({
   tab,
@@ -41,6 +42,8 @@ export function RunContent({
           />
         ) : run.phase === "result" ? (
           <ResultScreen run={run} act={act} />
+        ) : run.phase === "expedition" ? (
+          <ExpeditionScreen key={run.activeExpedition} run={run} act={act} />
         ) : run.phase === "exploration" ? (
           <ExplorationScreen run={run} act={act} />
         ) : ["encounter", "capture"].includes(run.phase) ? (

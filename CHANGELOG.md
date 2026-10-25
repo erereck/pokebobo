@@ -1,5 +1,15 @@
 # Histórico
 
+## 0.24.0 — Além da trilha · 24/10/2026
+
+- Caverna dos Ecos (2 insígnias) e Ruínas da Aurora (5), disponíveis até a sétima: três salas caminháveis, baú, escolha de bolsa e guardião opcional. Uma visita por lugar e uma semana pela expedição inteira.
+- Saída conserva os achados e encerra a visita; prêmio final exige escolher um equipamento. Baús, dinheiro, bolsa e tesouro não duplicam ao recarregar. Duas vitórias somam ₽ 1.000, além dos suprimentos e dois equipamentos.
+- Entrada pela Jornada ou passagem no começo do campo. A passagem reutiliza a semana antes de resolver um encontro daquela caminhada; bloqueio impede acumular capturas e expedição completa na mesma ação. Última semana retoma o ginásio/viagem com aviso.
+- Combate real, itens, feitos e memorial existentes; derrota definitiva e baixas Nuzlocke preservadas. Nenhum nível extra. Líder, reserva e equipamentos administráveis antes do duelo.
+- Cenas autorais em canvas, Red e áudio locais já creditados; cena/comandos lado a lado no PC, em sequência no telefone, confirmação/foco/Escape e movimento reduzido. Mochila passa a mostrar dinheiro guardado para o Mercado.
+- Dados aditivos no schema 4, inclusive em jornadas existentes na janela. Backups validam visitas e estados; inicialização e recarga preservam a mesma estrutura. IA, regras dos outros combates e standalone preservados. [Guia e medições](docs/EXPEDICOES.md).
+
+
 ## 0.23.0 — Companheiros de jornada · 24/10/2026
 
 - Escolha Nico, Lia ou Caio antes de partir. O rival conserva seu inicial, evolui a equipe e lembra os duelos anteriores. Revanches opcionais após 2, 5 e 8 insígnias dão Leftovers, Focus Sash e Choice Scarf; uma vitória por etapa, sem semanas/níveis extras. Derrota segue as regras da jornada.

@@ -10,7 +10,7 @@ export const heldItem = (id) => HELD_ITEMS.find((item) => item.id === idOf(id));
 export const itemName = (id) =>
   heldItem(id)?.name ||
   (idOf(id) === "sitrusberry" ? "Sitrus Berry" : id || "Nenhum");
-export const canManageEquipment = (r) => ["career", "market"].includes(r.phase);
+export const canManageEquipment = (r) => ["career", "market", "expedition"].includes(r.phase);
 export const canPrepare = (r) => r.party.some((mon) => !mon.item);
 export const equipmentCount = (r, id) =>
   Math.max(0, Math.trunc(Number(r.heldItems?.[id]) || 0));

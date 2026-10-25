@@ -1,5 +1,12 @@
 # Pokébobo — sistema de interface 0.3.0
 
+## Além da trilha — 0.24.0
+
+Expedições conservam carcaça rubi e visor LCD. Fora da trilha é um recorte da Jornada, com ícone de montanha/ruína, custo e visita única; não cria outra tecla de navegação. Confirmação de entrada apresenta os três momentos, prêmio e risco. Salas usam canvas 192×144, pedras violetas/cristais na caverna e lajes verdes/inscrições nas ruínas; cenografia própria e Red local existente.
+
+Um progresso curto (Achado / Escolha / Guardião) situa a decisão. No PC, campo e comandos ficam lado a lado para manter ambos visíveis; no telefone, em sequência com direcional de 44 px, interações e recibo dos achados. Baús exigem proximidade, saídas não exigem refazer o caminho. Tesouro usa duas escolhas com efeito e uma confirmação de conclusão; avisar se ela disparar o próximo ginásio. Modal nativo conserva foco/Escape e evita confirmar risco ao caminhar.
+
+
 ## Companheiros de jornada — 0.23.0
 
 Mantém rubi/LCD/âmbar e navegação de cinco teclas. Reencontro usa sprite de 56 px (44 no telefone), chamada curta com marca OPCIONAL e botão de 44 px; confirmação mostra equipe em quatro colunas, recompensa e consequência antes de iniciar. A escolha de rival fica em um recorte LCD dentro do cartão de partida, com três botões e seleção explícita.

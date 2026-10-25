@@ -19,7 +19,7 @@ export function PokemonDetails({ mon, run, act }) {
   const data = catalog[mon.name],
     lead = run.party[0]?.id === mon.id;
   const evolutions = evolutionOptions(mon);
-  const canManage = ["career", "market"].includes(run.phase);
+  const canManage = ["career", "market", "expedition"].includes(run.phase);
   return (
     <section className="pokemon-details" aria-label={"Ficha de " + mon.name}>
       <div className="pokemon-scan">
