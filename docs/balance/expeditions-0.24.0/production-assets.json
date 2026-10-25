@@ -1,0 +1,129 @@
+{
+  "url": "https://erereck.github.io/pokebobo/",
+  "version": "0.24.0",
+  "sourceCommit": "52d5bc0844b924e987884c621566a664c67da22e",
+  "method": "Comparação SHA-256 de HTML, worker, manifesto, fontes e bundles/CSS do build Pages local contra os arquivos públicos, sem conta/saves do usuário.",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 2822,
+      "localSha256": "71c7665fc251bc8be8cb6b701c1e93629114f8b1853b10b5b485815cbcb37c1b",
+      "publicSha256": "71c7665fc251bc8be8cb6b701c1e93629114f8b1853b10b5b485815cbcb37c1b",
+      "matches": true
+    },
+    {
+      "path": "sw.js",
+      "status": 200,
+      "bytes": 7467,
+      "localSha256": "fce61483580cd4ab7537f588662ecd10084e7be40e3c405fb2283131fda2d2b8",
+      "publicSha256": "fce61483580cd4ab7537f588662ecd10084e7be40e3c405fb2283131fda2d2b8",
+      "matches": true
+    },
+    {
+      "path": "manifest.webmanifest",
+      "status": 200,
+      "bytes": 513,
+      "localSha256": "fea6e5924345de768857dcfe1d5e284591bd6b7365d0f2f86eec3f3f9707b4ec",
+      "publicSha256": "fea6e5924345de768857dcfe1d5e284591bd6b7365d0f2f86eec3f3f9707b4ec",
+      "matches": true
+    },
+    {
+      "path": "assets/font-0-CB7WfZ8W.woff2",
+      "status": 200,
+      "bytes": 48280,
+      "localSha256": "b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9",
+      "publicSha256": "b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9",
+      "matches": true
+    },
+    {
+      "path": "assets/font-1-DCQhiIS7.woff2",
+      "status": 200,
+      "bytes": 48308,
+      "localSha256": "376427b5322148d8de1e03f263bcca4935a2d60ba71d9f94f4947ab664c711ae",
+      "publicSha256": "376427b5322148d8de1e03f263bcca4935a2d60ba71d9f94f4947ab664c711ae",
+      "matches": true
+    },
+    {
+      "path": "assets/font-2-CYvJJk-g.woff2",
+      "status": 200,
+      "bytes": 48280,
+      "localSha256": "b79a2ea7a38f33fd96a282fadb9ce97626bb0724a44d21075859f0e50239993a",
+      "publicSha256": "b79a2ea7a38f33fd96a282fadb9ce97626bb0724a44d21075859f0e50239993a",
+      "matches": true
+    },
+    {
+      "path": "assets/font-3-BQ0abr9c.woff2",
+      "status": 200,
+      "bytes": 48200,
+      "localSha256": "2a8e7f713ee79fbccdef3cef5c787aff47580299f7da60144961e7db2ec08211",
+      "publicSha256": "2a8e7f713ee79fbccdef3cef5c787aff47580299f7da60144961e7db2ec08211",
+      "matches": true
+    },
+    {
+      "path": "assets/font-4-DpFQlKNO.woff2",
+      "status": 200,
+      "bytes": 69360,
+      "localSha256": "ec926d5065eaca49a48f96e312bbae0bbc5733c24215cf5dfabbdccee926fef7",
+      "publicSha256": "ec926d5065eaca49a48f96e312bbae0bbc5733c24215cf5dfabbdccee926fef7",
+      "matches": true
+    },
+    {
+      "path": "assets/font-5-DnsmCY5X.woff2",
+      "status": 200,
+      "bytes": 69416,
+      "localSha256": "3e699ead1876244fa392243054ddefe7cf631b488438828a8a100731a22ab995",
+      "publicSha256": "3e699ead1876244fa392243054ddefe7cf631b488438828a8a100731a22ab995",
+      "matches": true
+    },
+    {
+      "path": "assets/font-6-DjqJml4C.woff2",
+      "status": 200,
+      "bytes": 69356,
+      "localSha256": "6c0346b8d297ebdc225832833e03e884a26ad99d265ecd3924d46e1ba285ea87",
+      "publicSha256": "6c0346b8d297ebdc225832833e03e884a26ad99d265ecd3924d46e1ba285ea87",
+      "matches": true
+    },
+    {
+      "path": "assets/font-7-Bx5ssXV-.woff2",
+      "status": 200,
+      "bytes": 69308,
+      "localSha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85",
+      "publicSha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85",
+      "matches": true
+    },
+    {
+      "path": "assets/index-CB0Y2AqX.css",
+      "status": 200,
+      "bytes": 153054,
+      "localSha256": "2c1606417806da1b8fd39c454c970f6a6a997f7e18d433cade038d04da7dc2f6",
+      "publicSha256": "2c1606417806da1b8fd39c454c970f6a6a997f7e18d433cade038d04da7dc2f6",
+      "matches": true
+    },
+    {
+      "path": "assets/index-PpdJhwXF.js",
+      "status": 200,
+      "bytes": 5548618,
+      "localSha256": "5c16dc5d4ce09c65d4ab17ad3f89ba9c35f56033dfe2872aac7f2cf171bb0c45",
+      "publicSha256": "5c16dc5d4ce09c65d4ab17ad3f89ba9c35f56033dfe2872aac7f2cf171bb0c45",
+      "matches": true
+    },
+    {
+      "path": "assets/renderJourneyCard-nQ3MCsoI.js",
+      "status": 200,
+      "bytes": 31822,
+      "localSha256": "e78c72c7e90dce87a2f7b8d3a431fa847bae66e7c3c4e8aef4fe501c696a7ed2",
+      "publicSha256": "e78c72c7e90dce87a2f7b8d3a431fa847bae66e7c3c4e8aef4fe501c696a7ed2",
+      "matches": true
+    },
+    {
+      "path": "assets/silkscreen-CXGsBV3a.ttf",
+      "status": 200,
+      "bytes": 31320,
+      "localSha256": "734e6faa40fb5566327330d5b9b6e52fcc5d52ee91f0da1fe696ca33c5f7d258",
+      "publicSha256": "734e6faa40fb5566327330d5b9b6e52fcc5d52ee91f0da1fe696ca33c5f7d258",
+      "matches": true
+    }
+  ],
+  "passed": true
+}

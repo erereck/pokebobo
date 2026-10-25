@@ -1,0 +1,55 @@
+{
+  "engine": "webkit",
+  "url": "https://erereck.github.io/pokebobo/",
+  "method": "Contextos privados, setas reais, controles/diálogos e combates via UI. Equipe nível 80 verifica integração, não dificuldade. Emulação não substitui aparelho físico. WebKit Windows bloqueia service worker; não mede offline.",
+  "cases": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scenario": "três salas e guardião: echo-cave",
+      "flows": 21,
+      "turns": 5,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scenario": "três salas e guardião: sunken-ruins",
+      "flows": 21,
+      "turns": 3,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scenario": "campo, recuo, cancelamento, saldo e recarga",
+      "flows": 8,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scenario": "última semana e ginásio",
+      "flows": 3,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scenario": "derrota definitiva no guardião",
+      "flows": 3,
+      "errors": []
+    }
+  ],
+  "totalFlows": 56
+}
