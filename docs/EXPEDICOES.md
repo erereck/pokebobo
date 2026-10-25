@@ -42,4 +42,6 @@ Cenários, baús, bolsas, sentinela e arco são desenhos próprios em canvas, in
 
 Os lugares não têm encontros selvagens, novo sistema de HP persistente, relíquias passivas ou salas procedurais. O guardião tem níveis fixos: voltar mais tarde dentro da janela pode facilitar o combate. A conferência de UI usa emulação; não substitui toque/teclado virtual em um telefone físico. A matriz WebKit no Windows bloqueia o service worker e não mede offline.
 
+Navegador: [Edge](balance/expeditions-0.24.0/browser-edge.json), [WebKit](balance/expeditions-0.24.0/browser-webkit.json), [regressões do Edge](balance/expeditions-0.24.0/regression-edge.json).
+
 Dados: [combates/economia](balance/expeditions-0.24.0/combat-and-economy.json). Verificação de código e navegador registrada na [validação](../VALIDACAO.md).
