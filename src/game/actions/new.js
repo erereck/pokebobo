@@ -52,6 +52,8 @@ export function handleNew(s, action, state) {
       heldItems: {},
       heroRecords: {},
       rival: null,
+      expeditions: {},
+      activeExpedition: null,
       leagueIndex: 0,
       league: [],
       journal: [],

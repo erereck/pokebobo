@@ -4,7 +4,7 @@ import { CAMPAIGN_RULES } from "../../game/config/campaign.js";
 import { pokemonName } from "../../game/heroes/heroes.js";
 export function ReservePanel({ run, mon, act, onSelect }) {
   const box = run.box || [];
-  const canManage = ["career", "market"].includes(run.phase);
+  const canManage = ["career", "market", "expedition"].includes(run.phase);
   const canSendSelected =
     canManage &&
     mon &&

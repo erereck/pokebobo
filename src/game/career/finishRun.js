@@ -47,6 +47,7 @@ export function finishRun(s, won, details = won ? "champion" : "defeat") {
     opponent,
     ...journeyLegacy(r),
     rival: r.rival ? structuredClone(r.rival) : null,
+    expeditions: structuredClone(r.expeditions || {}),
     team,
     levels: team.map((mon) => mon.level),
     box,

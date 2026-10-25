@@ -1,6 +1,6 @@
 export function handleReorderParty(s, action, state) {
   const r = s.run;
-  if (action.type !== "REORDER_PARTY" || !["career", "market"].includes(r.phase)) return state;
+  if (action.type !== "REORDER_PARTY" || !["career", "market", "expedition"].includes(r.phase)) return state;
   const from = r.party.findIndex((mon) => mon.id === action.sourceId);
   const to = r.party.findIndex((mon) => mon.id === action.targetId);
   if (from < 0 || to < 0 || from === to) return state;

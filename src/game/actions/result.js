@@ -19,6 +19,7 @@ import {
   itemName,
 } from "../equipment/equipment.js";
 import { rememberRivalDuel } from "../rival/rival.js";
+import { activeExpedition } from "../expeditions/expeditions.js";
 
 export function handleResult(s, action, state) {
   let r = s.run;
@@ -27,6 +28,10 @@ export function handleResult(s, action, state) {
     recordBattleHeroes(r, won);
     if (won && r.battle.kind === "rival") rememberRivalDuel(r);
     if (!won) {
+      if (r.battle.kind === "expedition" && activeExpedition(r)) {
+        activeExpedition(r).status = "defeated";
+        r.activeExpedition = null;
+      }
       note(
         r,
         noSurvivors(r)
@@ -57,7 +62,14 @@ export function handleResult(s, action, state) {
       item: r.outcome.player.find((m) => m.id === p.id)?.item || "",
     }));
     const kind = r.battle.kind;
-    if (kind === "rival") {
+    if (kind === "expedition") {
+      activeExpedition(r).status = "won";
+      r.phase = "expedition";
+      note(
+        r,
+        `${r.battle.name} foi derrotada. Escolha seu tesouro. Equipe recuperada; nenhum nível ou semana extra.`,
+      );
+    } else if (kind === "rival") {
       r.rival.victories.push(r.battle.rivalStage);
       addEquipment(r, r.battle.rivalReward);
       r.phase = r.rivalReturnPhase === "market" ? "market" : "career";

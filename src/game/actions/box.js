@@ -10,7 +10,7 @@ export function handleBox(s, action, state) {
   const r = s.run;
   if (!["BOX_TO_RESERVE", "BOX_TO_PARTY", "BOX_SWAP"].includes(action.type))
     return state;
-  if (!["career", "market"].includes(r.phase)) return state;
+  if (!["career", "market", "expedition"].includes(r.phase)) return state;
   ensureBox(r);
 
   if (action.type === "BOX_TO_RESERVE") {

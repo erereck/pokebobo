@@ -13,6 +13,7 @@ import { Swords } from "lucide-react";
 import { Footprints } from "lucide-react";
 import { ArrowRight } from "lucide-react";
 import { RivalCard } from "../rival/RivalCard.jsx";
+import { ExpeditionAccess } from "../expeditions/ExpeditionAccess.jsx";
 
 export function Career({ run: r, act }) {
   const c = city(r),
@@ -49,6 +50,7 @@ export function Career({ run: r, act }) {
             <span className="mono">1 AÇÃO = 1 SEMANA</span>
           </div>
           <WeeklyActions act={act} r={r} />
+          <ExpeditionAccess run={r} act={act} />
           <div className="route-hint">
             <Route size={15} />
             <span>{r.routeName}</span>

@@ -36,6 +36,7 @@ export function createExploration(r) {
     steps: 0,
     grassSteps: 0,
     cooldown: 0,
+    usedAtStart: r.encounters.filter((mon) => mon.used).length,
     spots: r.encounters.map((e, i) =>
       e.habitat === "water" ? null : spots[i],
     ),

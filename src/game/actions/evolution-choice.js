@@ -6,7 +6,7 @@ import { note } from "../career/journal.js";
 
 export function handleEvolutionChoice(s, action, state) {
   const r = s.run;
-  if (action.type === "EVOLUTION_REQUEST" && ["career", "market"].includes(r.phase)) {
+  if (action.type === "EVOLUTION_REQUEST" && ["career", "market", "expedition"].includes(r.phase)) {
     const mon = [...r.party, ...(r.box || [])].find(
       (candidate) => candidate.id === action.monId,
     );

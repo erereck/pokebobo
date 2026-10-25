@@ -1,4 +1,7 @@
-# Pokébobo — 0.23.0 · Companheiros de jornada
+# Pokébobo — 0.24.0 · Além da trilha
+
+A 0.24.0 traz **expedições opcionais**: Caverna dos Ecos após duas insígnias e Ruínas da Aurora após cinco. Caminhe por três salas, escolha suprimentos e decida se sai com os achados ou enfrenta um guardião pelo tesouro. Uma semana pela visita inteira, uma visita por lugar, sem repetir baús ao recarregar. Vitória oferece dinheiro e equipamento à escolha; derrota encerra a jornada. Equipe e Mochila permitem se organizar antes do duelo. [Regras, recompensas e limites](docs/EXPEDICOES.md).
+
 
 Um roguelike de carreira Pokémon, feito para jogar no celular na vertical. Monte sua região, sobreviva às consequências e deixe cada carreira registrada — até quando ela termina antes do título.
 

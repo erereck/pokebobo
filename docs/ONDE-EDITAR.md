@@ -1,5 +1,14 @@
 # Onde editar
 
+## Expedições — 0.24.0
+
+- Lugares, níveis e recompensas: `game/config/expeditions.js`; textos/mapas em `game/data/expeditions.js`.
+- Visita, colisão e transações: `game/expeditions/expeditions.js`, `actions/expedition.js`; integração de combate em `beginBattle`/`result`.
+- Backups: `persistence/checkExpeditions.js`. Não inferir visitas nem recompensas em saves anteriores.
+- Tela/cenografia: `features/expeditions/`, CSS próprio após adventure na cascata. A passagem do campo é desenhada antes do treinador.
+- Testes: `tests/expeditions.test.js`; auditoria `npm run expeditions:audit`; QA com Playwright externo em `scripts/qa-expeditions.mjs`. [Funcionamento e limites](EXPEDICOES.md).
+
+
 ## Companheiros de jornada — 0.23.0
 
 - Rival: parâmetros em `game/config/rival.js`, conteúdo em `data/rivals.js`, montagem/memória em `rival/rival.js`, comandos em `actions/rival.js`. Apresentação em `features/rival/`; aparece na região pronta, carreira e Mercado.

@@ -5,7 +5,13 @@ import { useAnimationAudio } from "../audio/useAnimationAudio.js";
 import { isTallGrass } from "../../game/world/exploration.js";
 import { LAKE_DURATION } from "./lakePresentation.js";
 
-export function FieldCanvas({ exploration: e, act, preparation, onPrepared }) {
+export function FieldCanvas({
+  exploration: e,
+  act,
+  preparation,
+  onPrepared,
+  passage,
+}) {
   const onAudioFrame = useAnimationAudio(
     `field-${e.steps}-${!!e.walk}-${preparation || "walk"}`,
     preparation
@@ -42,7 +48,8 @@ export function FieldCanvas({ exploration: e, act, preparation, onPrepared }) {
       : e.walk
         ? () => act({ type: "ROUTE_STEP_COMPLETE", id: e.walk.id })
         : undefined,
-    draw: (ctx, images, tick) => drawField(ctx, images, e, tick, preparation),
+    draw: (ctx, images, tick) =>
+      drawField(ctx, images, e, tick, preparation, passage),
   });
   return (
     <>

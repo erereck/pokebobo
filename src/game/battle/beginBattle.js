@@ -10,6 +10,12 @@ import { note } from "../career/journal.js";
 import { gymChallenge } from "../selectors/gymChallenge.js";
 import { ensureMoveLearningState } from "../pokemon/moveLearning.js";
 import { rivalStage, rivalProfile, rivalTeam } from "../rival/rival.js";
+import {
+  expeditionSite,
+  guardianTeam,
+  activeExpedition,
+} from "../expeditions/expeditions.js";
+import { EXPEDITION_STORIES } from "../data/expeditions.js";
 
 export function beginBattle(r, kind) {
   ensureMoveLearningState(r);
@@ -31,8 +37,19 @@ export function beginBattle(r, kind) {
     levels,
     boost = 0;
   const duel = kind === "rival" ? rivalStage(r) : null;
+  const site =
+    kind === "expedition" ? expeditionSite(r.activeExpedition) : null;
+  if (
+    kind === "expedition" &&
+    (!site || activeExpedition(r)?.status !== "active")
+  )
+    return;
   if (kind === "rival" && !duel) return;
-  if (kind === "rival") {
+  if (site) {
+    name = EXPEDITION_STORIES[site.id].guardian;
+    roster = [];
+    source = EXPEDITION_STORIES[site.id].name;
+  } else if (kind === "rival") {
     name = `Rival ${rivalProfile(r).name}`;
     roster = [];
     source = "Revanche da jornada";
@@ -64,22 +81,25 @@ export function beginBattle(r, kind) {
     if (r.pendingEventBattleName) name = r.pendingEventBattleName;
     r.pendingEventBattleName = null;
   }
-  const enemy = duel
-    ? rivalTeam(r, duel)
-    : roster.map((n, i) =>
-        makeMon(
-          n,
-          levels?.[i] ??
-            level + (i === roster.length - 1 ? PROGRESSION.aceBonus : 0),
-          `foe${i}`,
-        ),
-      );
+  const enemy = site
+    ? guardianTeam(site)
+    : duel
+      ? rivalTeam(r, duel)
+      : roster.map((n, i) =>
+          makeMon(
+            n,
+            levels?.[i] ??
+              level + (i === roster.length - 1 ? PROGRESSION.aceBonus : 0),
+            `foe${i}`,
+          ),
+        );
   r.battle = {
     kind,
     name,
     source,
     boost,
     ...(duel ? { rivalStage: duel.badges, rivalReward: duel.reward } : {}),
+    ...(site ? { expeditionId: site.id } : {}),
     enemy,
     player: structuredClone(r.party),
     seed: Array.from(

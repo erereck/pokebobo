@@ -1,0 +1,13 @@
+
+> pokebobo@0.24.0 balance:audit
+> node scripts/audit-progression.mjs
+
+┌─────────┬─────────┬──────────────────────┬──────────────────────┬────────────────┬──────────────┐
+│ (index) │ treinos │ 1º ginásio (mediana) │ 8º ginásio (mediana) │ Liga (mediana) │ Liga ≥99 (%) │
+├─────────┼─────────┼──────────────────────┼──────────────────────┼────────────────┼──────────────┤
+│ 0       │ 0       │ 10                   │ 17                   │ 18             │ 0            │
+│ 1       │ 1       │ 16                   │ 37                   │ 38             │ 0            │
+│ 2       │ 2       │ 22                   │ 57                   │ 58             │ 0            │
+│ 3       │ 3       │ 28                   │ 77                   │ 78             │ 0            │
+└─────────┴─────────┴──────────────────────┴──────────────────────┴────────────────┴──────────────┘
+Orçamento de níveis, não simulação de batalhas. Assume todas as vitórias, inicial presente desde a origem, nenhuma emboscada, mesmo número de treinos por cidade. Não mede taxa de vitória.

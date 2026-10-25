@@ -10,6 +10,7 @@ import { migrateSave } from "./migrateSave.js";
 import { restoreBattle } from "../battle/restore.js";
 import { writeSave } from "./writeSave.js";
 import { checkJourneyAdditions } from "./checkJourneyAdditions.js";
+import { checkExpeditions } from "./checkExpeditions.js";
 import { GLOBAL_DEX_KEY, GLOBAL_DEX_BACKUP_KEY } from "./dexStorage.js";
 import {
   SAVE_VERSION,
@@ -31,6 +32,7 @@ const phases = new Set([
   "career",
   "market",
   "exploration",
+  "expedition",
   "encounter",
   "capture",
   "event",
@@ -117,6 +119,7 @@ export function parseSaveBackup(text) {
     checkMons(raw.party);
     checkMons(raw.box, CAMPAIGN_RULES.boxSize);
     if (!checkJourneyAdditions(raw)) fail();
+    if (!checkExpeditions(raw)) fail();
   }
   const state = migrateSave(value),
     r = state.run;
@@ -151,6 +154,7 @@ export function parseSaveBackup(text) {
     )
       fail();
     if (e.layoutId !== undefined && !fieldLayout(e.layoutId)) fail();
+    if (e.usedAtStart !== undefined && (!Array.isArray(r.encounters) || !integer(e.usedAtStart, 0, r.encounters.filter((mon) => mon.used).length))) fail();
     if (
       e.walk &&
       (!integer(e.walk.fromX, 0, EXPLORATION_RULES.width - 1) ||

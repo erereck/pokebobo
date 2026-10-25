@@ -1,0 +1,326 @@
+.expedition-access {
+  margin-top: 16px;
+  padding: 12px;
+  background: var(--lcd-dim, #dce2c8);
+  border: 1px solid #21362f25;
+  border-radius: 12px;
+}
+.expedition-wallet {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  padding: 12px;
+  background: var(--lcd-dim);
+  border-radius: 8px;
+}
+.expedition-wallet b {
+  font: 700 20px var(--mono);
+}
+.expedition-wallet span {
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+.expedition-access .section-head {
+  margin-bottom: 8px;
+}
+.expedition-access h2 {
+  font-size: 15px;
+}
+.expedition-offer {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+.expedition-offer + .expedition-offer {
+  border-top: 1px solid #21362f20;
+}
+.expedition-offer > svg {
+  color: #596958;
+}
+.expedition-offer h3 {
+  margin: 0 0 3px;
+  font-size: 15px;
+}
+.expedition-offer p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: #52634e;
+}
+.expedition-offer .button {
+  min-height: 44px;
+  padding: 8px 12px;
+}
+.expedition-dialog {
+  width: min(640px, calc(100vw - 24px));
+}
+.expedition-prose {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.expedition-itinerary {
+  list-style: none;
+  padding: 0;
+  counter-reset: room;
+}
+.expedition-itinerary li {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  padding: 12px 0 12px 40px;
+  border-bottom: 1px solid #21362f20;
+  line-height: 1.5;
+}
+.expedition-itinerary li::before {
+  counter-increment: room;
+  content: "0" counter(room);
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-family: var(--mono);
+  font-weight: 700;
+  color: #657252;
+}
+.expedition-itinerary span {
+  font-size: 13px;
+}
+.expedition-caution {
+  background: #e7dfb9;
+  border-left: 3px solid #9b783c;
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 4px;
+  line-height: 1.5;
+}
+.expedition-caution p {
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+.expedition-dialog .rival-roster {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.expedition-choices,
+.expedition-treasures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+.expedition-choices .button {
+  min-height: 56px;
+}
+.expedition-screen {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
+.expedition-screen .pixel-screen-heading {
+  margin: 0;
+}
+.expedition-screen .pixel-screen-heading h1 {
+  font-size: 22px;
+}
+.expedition-progress {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid #21362f25;
+}
+.expedition-progress li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 4px;
+  color: #64705a;
+  font-size: 12px;
+  border-bottom: 3px solid transparent;
+}
+.expedition-progress li span {
+  font-family: var(--mono);
+  font-weight: 700;
+  opacity: 0.7;
+}
+.expedition-progress .is-current {
+  border-bottom-color: #ac783a;
+  color: #21362f;
+  font-weight: 700;
+}
+.expedition-progress .is-done {
+  color: #428653;
+}
+.expedition-room-title {
+  font-size: 17px;
+  margin: 0;
+}
+.expedition-screen .pixel-viewport {
+  flex-shrink: 0;
+  height: clamp(184px, 30vh, 296px);
+  min-height: 184px;
+}
+.expedition-room-text {
+  min-height: 42px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.expedition-field {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+.expedition-side {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.expedition-controls {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+}
+.expedition-interactions {
+  display: grid;
+  gap: 8px;
+}
+.expedition-interactions .button {
+  min-height: 44px;
+  padding: 8px;
+  font-size: 13px;
+}
+.expedition-screen .field-guide {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  margin: 0;
+  line-height: 1.4;
+}
+.expedition-screen .field-guide svg {
+  flex-shrink: 0;
+}
+.expedition-receipt {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  background: #dce2c8;
+  border-radius: 8px;
+  border: 1px solid #21362f20;
+}
+.expedition-receipt > span {
+  font: 9px var(--pixel);
+  color: #61704f;
+}
+.expedition-receipt b {
+  font: 600 14px var(--mono);
+}
+.expedition-receipt small {
+  font-size: 11px;
+  color: #52634e;
+}
+.expedition-treasure {
+  padding: 16px 0;
+}
+.expedition-treasure > svg {
+  color: #95703a;
+}
+.expedition-treasure h2 {
+  font-size: 24px;
+  margin: 12px 0;
+}
+.expedition-treasure > p {
+  line-height: 1.6;
+}
+.expedition-treasures .button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  text-align: left;
+  gap: 8px;
+  white-space: normal;
+}
+.expedition-treasures strong {
+  font-size: 18px;
+}
+.expedition-treasures span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.expedition-treasures small {
+  margin-top: auto;
+  color: #64704d;
+}
+@media (max-width: 600px) {
+  .expedition-field {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .expedition-screen {
+    padding: 12px;
+    gap: 10px;
+  }
+  .expedition-screen .pixel-screen-heading h1 {
+    font-size: 18px;
+  }
+  .expedition-screen .pixel-screen-heading > span {
+    font-size: 8px;
+  }
+  .expedition-offer {
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 8px;
+  }
+  .expedition-offer .button {
+    grid-column: 2;
+    justify-self: start;
+  }
+  .expedition-controls {
+    gap: 10px;
+  }
+  .expedition-interactions .button {
+    font-size: 12px;
+  }
+  .expedition-screen .field-dpad {
+    grid-template-columns: repeat(3, 44px);
+    grid-template-rows: repeat(2, 44px);
+    gap: 2px;
+  }
+  .expedition-screen .field-dpad button {
+    width: 44px;
+    height: 44px;
+    min-height: 44px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .expedition-controls {
+    grid-template-columns: 1fr;
+  }
+  .expedition-controls .field-dpad {
+    justify-content: center;
+  }
+}
+@media (max-width: 350px) {
+  .expedition-treasures,
+  .expedition-choices {
+    grid-template-columns: 1fr;
+  }
+  .expedition-controls {
+    grid-template-columns: 1fr;
+  }
+  .expedition-controls .field-dpad {
+    justify-content: center;
+  }
+  .expedition-progress li {
+    gap: 3px;
+    font-size: 11px;
+  }
+}

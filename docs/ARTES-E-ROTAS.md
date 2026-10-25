@@ -1,5 +1,12 @@
 # Capas de cidades e exploração de campo
 
+## 0.24.0 — cenografia de expedições
+
+Caverna dos Ecos e Ruínas da Aurora são lugares fictícios do Pokébobo, com três mapas autorais em `game/data/expeditions.js`. Pedras, lajes, cristais, inscrições, baús, bolsas, arco e sentinela são composições originais em `features/expeditions/drawExpedition.js`, desenhadas no canvas sem novos bitmaps. Origem: criadas no projeto nesta entrega; crédito: Pokébobo. Não reproduzem mapas oficiais nem introduzem termos externos; seguem os termos do código do repositório, que não declara uma licença geral de redistribuição. Entram no bundle web local.
+
+O treinador reutiliza `public/field/red_normal_sheet.png`, sem modificar o arquivo. Direitos continuam Game Freak / Nintendo / The Pokémon Company; fonte congelada, extração e condições em [FRLG-ASSETS](../licenses/FRLG-ASSETS.md). A música reutiliza a faixa local cave, já coberta pelos [créditos de áudio](../public/audio/README.md). Não houve download de assets nesta versão.
+
+
 ## 0.19.0 — partículas de batalha
 
 Dezoito folhas de efeitos originais FRLG, convertidas sem mudar índices/paletas, com índice 0 transparente. Total PNG: 14.398 bytes. Fonte `pret/pokefirered` congelada em `037335f4c725d7c9aecdac87066f2002b4bd7e14`; hashes da fonte/saída, dimensões e cortes por frame em `public/battle-effects/manifest.json`. Importador reproduzível em `scripts/import-battle-effects.py`. Nenhuma ROM ou desenho gerado usado. Trajetórias, tempos, proteção/cura e adaptação de Fairy são próprios do Pokébobo; não reproduzem todos os scripts de cada ataque do cartucho. [Créditos/termos](../public/battle-effects/README.md) e [FRLG-ASSETS](../licenses/FRLG-ASSETS.md).
