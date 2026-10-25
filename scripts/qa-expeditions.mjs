@@ -92,7 +92,7 @@ async function check(page) {
   return geometry;
 }
 async function shot(page, name, viewport) {
-  if (engine === "edge" && [390, 1280].includes(viewport.width))
+  if (engine === "edge" && [390, 844, 1280].includes(viewport.width))
     await page.screenshot({
       path: `${images}/expedicoes-0.24-${name}-${viewport.width}.png`,
     });
@@ -193,7 +193,7 @@ function fixture(id = "echo-cave") {
     lastAmbush: 100,
     money: 0,
     moveLearningMode: "automatic",
-    party: [makeMon("Garchomp", 80, "mon0"), makeMon("Blastoise", 45, "mon1")],
+    party: [makeMon(id === "sunken-ruins" ? "Houndoom" : "Garchomp", 80, "mon0"), makeMon("Blastoise", 45, "mon1")],
     heldItems: { leftovers: 1 },
   });
   return s;
@@ -208,6 +208,8 @@ try {
       const entry = page
         .getByRole("button", { name: "Ver entrada", exact: true })
         .last();
+      await entry.scrollIntoViewIfNeeded();
+      await shot(page, "acesso", viewport);
       await entry.click();
       await check(page);
       await shot(page, "entrada", viewport);
